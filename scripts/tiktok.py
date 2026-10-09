@@ -13,8 +13,8 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 ARQ = RAIZ / "tiktok_token.enc"
-KEY = os.environ.get("TIKTOK_CLIENT_KEY", "")
-SECRET = os.environ.get("TIKTOK_CLIENT_SECRET", "")
+KEY = os.environ.get("TIKTOK_CLIENT_KEY", "").strip()
+SECRET = os.environ.get("TIKTOK_CLIENT_SECRET", "").strip()
 REDIRECT = "https://github.com/pablloleviev/seraphim-publicador"
 API = "https://open.tiktokapis.com"
 # enquanto o app não passa na auditoria do TikTok, só é permitido postar como privado
@@ -48,7 +48,7 @@ def autorizar(code):
     tok = _post_form(f"{API}/v2/oauth/token/", {"client_key": KEY, "client_secret": SECRET, "code": code,
                                                  "grant_type": "authorization_code", "redirect_uri": REDIRECT})
     if "access_token" not in tok:
-        raise RuntimeError(f"TikTok recusou: {tok}")
+        raise RuntimeError(f"TikTok recusou: {tok} | chave: {len(KEY)} caracteres, começa com {KEY[:4]!r}")
     salvar(tok)
     print("TikTok conectado. Conta:", tok.get("open_id", "")[:6] + "…", "escopos:", tok.get("scope"))
 
