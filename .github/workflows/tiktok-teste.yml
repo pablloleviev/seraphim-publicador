@@ -1,0 +1,24 @@
+name: TikTok - teste de postagem
+on:
+  workflow_dispatch:
+    inputs:
+      video: {description: "caminho do vídeo no repositório", required: true}
+permissions:
+  contents: write
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+        run: |
+          pip install -q --break-system-packages cryptography
+          python scripts/tiktok.py teste "${{ github.event.inputs.video }}" 2>&1 | tee tiktok_log.txt
+      - if: always()
+        run: |
+          git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
+          git fetch -q origin main && git reset -q --soft origin/main
+          git add -f tiktok_log.txt tiktok_token.enc
+          git commit -q -m "TikTok: teste" && git push origin HEAD:main
