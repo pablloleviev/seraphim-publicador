@@ -1,0 +1,99 @@
+{
+ "nome": "a-microsoft-antonio",
+ "arroba": "@seraphimtech_",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "SUA OFICINA",
+    "ESTÁ *PERDENDO*",
+    "*DINHEIRO?*"
+   ],
+   "sera": "surpreso",
+   "narracao": "Sua oficina pode estar perdendo dinheiro agora mesmo."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "E VOCÊ",
+    "NEM *PERCEBE*"
+   ],
+   "raios": true,
+   "narracao": "E o pior: você nem percebe."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "3 SINAIS"
+   ],
+   "fundo": "branco",
+   "apoio": "que quase todo dono ignora",
+   "narracao": "Presta atenção nesses três sinais."
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "COBRA NO",
+    "*\"ACHÔMETRO\"*"
+   ],
+   "apoio": "sem somar peça, hora e margem",
+   "narracao": "Primeiro: você cobra no achômetro, sem somar peça, hora de trabalho e margem."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "NÃO SABE",
+    "QUEM *TE DEVE*"
+   ],
+   "sera": "preocupado",
+   "narracao": "Segundo: você não sabe quem te deve. O fiado anotado no caderno some."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "O CLIENTE",
+    "*NÃO VOLTA*"
+   ],
+   "sera": "pensando",
+   "narracao": "Terceiro: o cliente não volta, porque ninguém lembrou ele da revisão."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "FALTA DE",
+    "*CONTROLE.*"
+   ],
+   "fundo": "branco",
+   "narracao": "E sabe o que esses três têm em comum? Falta de controle."
+  },
+  {
+   "modelo": "lista",
+   "linhas": [
+    "COM O *AUTOFLOW*"
+   ],
+   "itens": [
+    "Preço certo em cada serviço",
+    "Cobranças organizadas",
+    "Lembrete de revisão"
+   ],
+   "raios": true,
+   "narracao": "Com o AutoFlow, você tem preço certo, cobrança organizada e lembrete de revisão."
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "PARE DE CONTROLAR",
+    "NO *CADERNO*"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Pare de controlar no caderno. Conheça o AutoFlow, o link tá na bio."
+  }
+ ],
+ "legenda": "3 sinais de que sua oficina está perdendo dinheiro 💸 Qual deles acontece aí? Comenta 👇\n\n#oficinamecanica #gestaodeoficina #autoflow #mecanica",
+ "voz": "edge-antonio",
+ "amostra": true
+}
