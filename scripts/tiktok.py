@@ -112,6 +112,6 @@ def conectado():
 
 if __name__ == "__main__":
     if sys.argv[1] == "autorizar":
-        autorizar(sys.argv[2])
+        autorizar(urllib.parse.unquote(sys.argv[2].strip()))
     elif sys.argv[1] == "teste":
         print("publish_id:", publicar(Path(sys.argv[2]), "Teste Seraphim"))
