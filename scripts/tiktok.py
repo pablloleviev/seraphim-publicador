@@ -76,7 +76,17 @@ def _json(url, corpo, at):
 MODO = ""
 
 
-def publicar(video: Path, legenda: str) -> str:
+NOMES_PRIV = {"PUBLIC_TO_EVERYONE": "🌍 Público", "MUTUAL_FOLLOW_FRIENDS": "👥 Amigos",
+              "FOLLOWER_OF_CREATOR": "👤 Seguidores", "SELF_ONLY": "🔒 Só eu"}
+
+
+def criador():
+    """Dados exigidos pelo TikTok antes de postar: apelido, opções de privacidade, limites."""
+    d = _json(f"{API}/v2/post/publish/creator_info/query/", {}, token())
+    return d.get("data", {})
+
+
+def publicar(video: Path, legenda: str, privacidade: str = None, comentarios=True, dueto=True, costura=True) -> str:
     at = token()
     tam = video.stat().st_size
     pedaco = tam if tam <= 64 * 1024 * 1024 else 10 * 1024 * 1024
@@ -85,8 +95,8 @@ def publicar(video: Path, legenda: str) -> str:
     global MODO
     try:
         init = _json(f"{API}/v2/post/publish/video/init/", {
-            "post_info": {"title": legenda[:2200], "privacy_level": PRIVACIDADE,
-                          "disable_duet": False, "disable_comment": False, "disable_stitch": False},
+            "post_info": {"title": legenda[:2200], "privacy_level": privacidade or PRIVACIDADE,
+                          "disable_duet": not dueto, "disable_comment": not comentarios, "disable_stitch": not costura},
             "source_info": fonte}, at)
         MODO = "direto"
     except RuntimeError as e:
