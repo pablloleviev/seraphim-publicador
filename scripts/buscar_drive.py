@@ -10,11 +10,12 @@ Um .txt com o mesmo nome (sinais.txt) vira a legenda do post.
 
 Segredo: DRIVE_FOLDER_ID (pasta compartilhada como "qualquer pessoa com o link: leitor"). Sem chave de API.
 """
-import json, os, random, re, urllib.parse, urllib.request
+import json, os, random, re, sys, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(RAIZ / "scripts"))
 ESTADO = RAIZ / "estado_drive.json"
 PASTA = os.environ.get("DRIVE_FOLDER_ID", "")
 CHAVE = os.environ.get("GOOGLE_API_KEY", "")
@@ -63,7 +64,8 @@ O dono gravou um vídeo e escreveu este pedido:
 {prompt}
 ---
 Responda SÓ um JSON com as chaves (todas opcionais, omita o que ele não pediu):
-"cenario": um destes: {cenarios}  (escolha o que mais combina se ele descrever um lugar)
+"cenario": um destes já prontos: {cenarios} — use SÓ se o lugar pedido for praticamente igual
+"cenario_novo": se ele pediu outro lugar, descreva o cenário em inglês, detalhado (lugar, luz, clima, época), SEM pessoas
 "titulo": lista de 1 a 3 linhas curtas EM MAIÚSCULAS para o topo; marque a palavra de destaque com *asteriscos*
 "insercoes": lista de telas gráficas por cima, cada uma {{"inicio": seg, "fim": seg, "modelo": "numero"|"impacto"|"lista"|"cta", "numero": "01", "linhas": [...], "itens": [...], "apoio": "..."}}
 "quando": "AAAA-MM-DD HH:MM" se ele pediu horário (hoje é {datetime.now(BRT):%Y-%m-%d})
@@ -76,7 +78,13 @@ Responda SÓ um JSON com as chaves (todas opcionais, omita o que ele não pediu)
     with urllib.request.urlopen(req, timeout=120) as r:
         txt = json.loads(r.read())["candidates"][0]["content"]["parts"][0]["text"]
     d = json.loads(txt)
-    if d.get("cenario") in cenarios:
+    if d.get("cenario_novo"):
+        import gerar_cenario
+        try:
+            d["cenario"] = str(gerar_cenario.gerar(d.pop("cenario_novo")).relative_to(RAIZ))
+        except Exception as e:
+            print(f"[aviso] cenário novo falhou: {e}"); d.pop("cenario", None)
+    elif d.get("cenario") in cenarios:
         d["cenario"] = f"cenarios/{d['cenario']}.jpg"
     else:
         d.pop("cenario", None)
