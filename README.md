@@ -24,7 +24,7 @@ GitHub → este repositório → **Settings → Secrets and variables → Action
 | `TELEGRAM_TOKEN` | Token do bot criado no @BotFather |
 | `TELEGRAM_CHAT_ID` | Seu ID no Telegram (o publicador mostra no log na primeira execução) |
 | `IG_USER_ID` | ID da conta do Instagram na API da Meta |
-| `IG_TOKEN` | Token de acesso da Página "Seraphim Tech" (sem validade, gerado a partir do token longo) |
+| `IG_TOKEN` | Token do Instagram (API com login do Instagram, gerado no painel da Meta) |
 
 ## Arquivos
 - `fila/` — posts aguardando (cada pasta = 1 post com `item.json` + imagens/vídeo)

@@ -26,9 +26,9 @@ REPO = os.environ.get("GITHUB_REPOSITORY", "pablloleviev/seraphim-publicador")
 BRANCH = os.environ.get("GITHUB_REF_NAME", "main")
 TG = os.environ.get("TELEGRAM_TOKEN", "")
 CHAT = os.environ.get("TELEGRAM_CHAT_ID", "")
-IG_USER = os.environ.get("IG_USER_ID", "")
+IG_USER = os.environ.get("IG_USER_ID", "") or "me"
 IG_TOKEN = os.environ.get("IG_TOKEN", "")
-GRAPH = "https://graph.facebook.com/v21.0"
+GRAPH = "https://graph.instagram.com/v21.0"
 
 
 # ---------- utilidades ----------
