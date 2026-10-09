@@ -8,7 +8,7 @@ Nome do arquivo = instruções (tudo opcional):
     sinais.mp4                           -> cenário escolhido automaticamente
 Um .txt com o mesmo nome (sinais.txt) vira a legenda do post.
 
-Segredos: DRIVE_FOLDER_ID, GOOGLE_API_KEY (pasta compartilhada como "qualquer pessoa com o link: leitor").
+Segredo: DRIVE_FOLDER_ID (pasta compartilhada como "qualquer pessoa com o link: leitor"). Sem chave de API.
 """
 import json, os, random, re, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
@@ -28,14 +28,26 @@ def get(url):
 
 
 def listar():
-    q = urllib.parse.quote(f"'{PASTA}' in parents and trashed = false")
-    url = f"{API}?q={q}&fields=files(id,name,mimeType,size,createdTime)&pageSize=200&key={CHAVE}"
-    return json.loads(get(url))["files"]
+    """Lê a página pública da pasta (sem chave de API)."""
+    import html
+    pag = get(f"https://drive.google.com/embeddedfolderview?id={PASTA}#list").decode("utf-8", "ignore")
+    itens = re.findall(r'<div class="flip-entry" id="entry-([\w-]+)".*?<div class="flip-entry-title">(.*?)</div>', pag, re.S)
+    out = []
+    for i, (fid, nome) in enumerate(itens):
+        nome = html.unescape(nome).strip()
+        ext = Path(nome).suffix.lower()
+        mime = "video/" if ext in (".mp4", ".mov", ".m4v", ".webm") else "text/" if ext == ".txt" else "outro"
+        out.append({"id": fid, "name": nome, "mimeType": mime, "createdTime": f"{i:05d}"})
+    return out
+
+
+def url_baixar(fid):
+    return f"https://drive.usercontent.google.com/download?id={fid}&export=download&confirm=t"
 
 
 def baixar(fid, destino):
-    url = f"{API}/{fid}?alt=media&key={CHAVE}"
-    with urllib.request.urlopen(url, timeout=600) as r, open(destino, "wb") as f:
+    req = urllib.request.Request(url_baixar(fid), headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=600) as r, open(destino, "wb") as f:
         while bloco := r.read(1 << 20):
             f.write(bloco)
 
@@ -47,8 +59,8 @@ def slug(s):
 
 
 def main():
-    if not (PASTA and CHAVE):
-        print("Faltam DRIVE_FOLDER_ID / GOOGLE_API_KEY")
+    if not PASTA:
+        print("Falta DRIVE_FOLDER_ID")
         Path(os.environ.get("GITHUB_OUTPUT", "/dev/null")).open("a").write("novos=0\n"); return
     estado = json.loads(ESTADO.read_text()) if ESTADO.exists() else {"vistos": []}
     arquivos = listar()
@@ -75,7 +87,7 @@ def main():
             pedido["quando"] = datetime.now(BRT).strftime("%Y-%m-%d ") + f"{int(h):02d}:{int(m or 0):02d}"
         txt = textos.get(Path(f["name"]).stem)
         if txt:
-            pedido["legenda"] = get(f"{API}/{txt['id']}?alt=media&key={CHAVE}").decode("utf-8", "ignore")
+            pedido["legenda"] = get(url_baixar(txt['id'])).decode("utf-8", "ignore")
         (RAIZ / "gravacoes" / f"{nome}.json").write_text(json.dumps(pedido, ensure_ascii=False, indent=2), encoding="utf-8")
         estado["vistos"].append(f["id"]); novos += 1
     ESTADO.write_text(json.dumps(estado, indent=2))
