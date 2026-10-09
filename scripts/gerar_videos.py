@@ -21,8 +21,7 @@ for pedido in sorted((RAIZ / "pedidos").glob("*.json")):
     quando = datetime.strptime(spec["quando"], "%Y-%m-%d %H:%M") if spec.get("quando") else datetime.now(BRT).replace(tzinfo=None)
     amostra = spec.get("amostra", False)
     destino = (RAIZ / "amostras" / nome) if amostra else RAIZ / "fila" / f"{quando:%Y-%m-%d_%H%M}_{nome}"
-    voz = spec.get("voz") or ("elevenlabs" if os.environ.get("ELEVENLABS_API_KEY")
-                              else "edge") if not os.environ.get("GEMINI_API_KEY") else "gemini"
+    voz = spec.get("voz") or ("gemini" if os.environ.get("GEMINI_API_KEY") else "elevenlabs" if os.environ.get("ELEVENLABS_API_KEY") else "edge")
     print(f"=== {nome} (voz {voz}) ===", flush=True)
     r = subprocess.run([sys.executable, str(RAIZ / "scripts" / "fazer_video.py"), str(pedido),
                         "--voz", voz, "--saida", str(destino / "video.mp4")], capture_output=True, text=True)
