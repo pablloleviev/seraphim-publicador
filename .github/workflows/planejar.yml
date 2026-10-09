@@ -35,18 +35,21 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DIAS: ${{ inputs.dias }}
-        run: python scripts/planejar.py
+        run: |
+          set -o pipefail
+          python scripts/planejar.py 2>&1 | tee planejar_log.txt
       - name: Salvar e mandar gerar os vídeos
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "seraphim-bot"
           git config user.email "bot@users.noreply.github.com"
-          for p in fila pedidos historico.json; do git add -A -- "$p" 2>/dev/null || true; done
+          for p in fila pedidos historico.json planejar_log.txt; do git add -A -- "$p" 2>/dev/null || true; done
           git diff --cached --quiet && exit 0
           git commit -q -m "conteúdo planejado"
           for i in 1 2 3 4 5; do
-            git pull -q --rebase -X theirs origin main && git push origin HEAD:main && { gh workflow run gerar-video.yml -R ${{ github.repository }}; exit 0; }
+            git pull -q --rebase -X theirs origin main && git push origin HEAD:main && { ls pedidos/*.json >/dev/null 2>&1 && gh workflow run gerar-video.yml -R ${{ github.repository }}; exit 0; }
             sleep 5
           done
           exit 1
