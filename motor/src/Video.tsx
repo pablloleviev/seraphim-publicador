@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  AbsoluteFill, Audio, Img, Sequence, interpolate, spring, staticFile,
+  AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, interpolate, spring, staticFile,
   useCurrentFrame, useVideoConfig, Easing, continueRender, delayRender,
 } from 'remotion';
 
@@ -8,7 +8,7 @@ import {
 export type Palavra = {w: string; s: number; e: number};
 export type Cena = {
   inicio: number; fim: number;
-  modelo: 'impacto' | 'numero' | 'imagem' | 'lista' | 'cta';
+  modelo: 'impacto' | 'numero' | 'imagem' | 'lista' | 'cta' | 'gravacao';
   linhas?: string[]; numero?: string; apoio?: string; itens?: string[];
   sera?: string; imagem?: string; fundo?: 'escuro' | 'branco'; raios?: boolean;
 };
@@ -16,6 +16,7 @@ export type Props = {
   fps: number; duracao: number; arroba: string;
   audio: string | null; batida: string | null; sfx: boolean;
   palavras: Palavra[]; cenas: Cena[];
+  video?: string | null;   // gravação já tratada (cinema.py) — som vem dela
 };
 
 // ---------- marca ----------
@@ -287,7 +288,7 @@ export const SeraphimVideo: React.FC<Props> = (props) => {
         const dur = Math.max(1, Math.round((c.fim - c.inicio) * fps));
         return (
           <Sequence key={i} from={from} durationInFrames={dur}>
-            <CenaInner c={c} n={dur} />
+            <CenaInner c={c} n={dur} video={props.video} />
           </Sequence>
         );
       })}
@@ -302,7 +303,8 @@ export const SeraphimVideo: React.FC<Props> = (props) => {
       </div>
       {/* áudio */}
       {props.audio && <Audio src={staticFile(props.audio)} />}
-      {props.batida && <Audio src={staticFile(props.batida)} volume={props.audio ? 0.16 : 0.7} />}
+      {props.video && <Audio src={staticFile(props.video)} />}
+      {props.batida && <Audio src={staticFile(props.batida)} volume={props.audio || props.video ? 0.12 : 0.7} />}
       {props.sfx && props.cenas.map((c, i) => (
         <React.Fragment key={'s' + i}>
           {i > 0 && <Sequence from={Math.max(0, Math.round((c.inicio - 0.22) * fps))}><Audio src={staticFile('sfx/whoosh.wav')} volume={0.45} /></Sequence>}
@@ -313,8 +315,27 @@ export const SeraphimVideo: React.FC<Props> = (props) => {
   );
 };
 
-const CenaInner: React.FC<{c: Cena; n: number}> = ({c, n}) => {
+const CenaInner: React.FC<{c: Cena; n: number; video?: string | null}> = ({c, n, video}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
+  if (c.modelo === 'gravacao' && video) return <CenaGravacao c={c} f={f} fps={fps} n={n} video={video} />;
   return <CenaView c={c} f={f} fps={fps} n={n} />;
+};
+
+// gravação cinematográfica em tela cheia, com título opcional no topo
+const CenaGravacao: React.FC<{c: Cena; f: number; fps: number; n: number; video: string}> = ({c, f, fps, n, video}) => {
+  const linhas = c.linhas || [];
+  const k = interpolate(f, [0, n], [1.0, 1.035]);  // leve avanço de câmera
+  return (
+    <AbsoluteFill>
+      <OffthreadVideo src={staticFile(video)} startFrom={Math.round(c.inicio * fps)} muted
+        style={{width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${k})`}} />
+      <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(10,10,12,.55) 0%, rgba(10,10,12,0) 28%, rgba(10,10,12,0) 70%, rgba(10,10,12,.6) 100%)'}} />
+      {linhas.length > 0 && (
+        <div style={{position: 'absolute', top: 170, left: 0, right: 0, display: 'flex', justifyContent: 'center'}}>
+          <Titulo linhas={linhas} tam={tamanhoTitulo(linhas, 110)} cor={C.branco} f={f} fps={fps} />
+        </div>
+      )}
+    </AbsoluteFill>
+  );
 };

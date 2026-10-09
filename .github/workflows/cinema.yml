@@ -21,6 +21,11 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: motor/package-lock.json
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -30,7 +35,8 @@ jobs:
         run: |
           which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
           pip install -q --index-url https://download.pytorch.org/whl/cpu torch torchvision
-          pip install -q opencv-python-headless numpy
+          pip install -q opencv-python-headless numpy faster-whisper
+          cd motor && npm ci --no-audit --no-fund
       - name: Teste com URLs
         if: ${{ github.event.inputs.video_url != '' }}
         run: |
@@ -40,8 +46,15 @@ jobs:
           curl -sSL -A "$UA" -o /tmp/t/bg.jpg "${{ github.event.inputs.cenario_url }}"
           ffprobe -v error -show_entries format=duration:stream=width,height -of csv=p=0 /tmp/t/in.mp4
           ffmpeg -v error -y -i /tmp/t/in.mp4 -t 12 -c copy /tmp/t/in12.mp4
-          python scripts/cinema.py /tmp/t/in12.mp4 /tmp/t/bg.jpg amostras/cinema/teste.mp4
+          mkdir -p gravacoes cenarios
+          cp /tmp/t/in12.mp4 gravacoes/teste.mp4; cp /tmp/t/bg.jpg cenarios/teste.jpg
+          echo '{"nome":"cinema","video":"gravacoes/teste.mp4","cenario":"cenarios/teste.jpg","amostra":true,"titulo":["SUA OFICINA","ESTÁ *PERDENDO*","*DINHEIRO?*"],"insercoes":[{"inicio":6,"fim":8.5,"modelo":"numero","numero":"01","linhas":["COBRA NO","*ACHÔMETRO*"]}]}' > gravacoes/teste.json
           ffmpeg -v error -y -i /tmp/t/in12.mp4 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" -an amostras/cinema/original.mp4
+          python scripts/fazer_gravacao.py
+          rm -f cenarios/teste.jpg
+      - name: Processar gravações enviadas
+        if: ${{ github.event.inputs.video_url == '' }}
+        run: python scripts/fazer_gravacao.py
       - name: Salvar
         run: |
           git config user.name "seraphim-bot"
