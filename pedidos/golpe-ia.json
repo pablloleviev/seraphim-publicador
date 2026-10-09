@@ -1,0 +1,66 @@
+{
+ "nome": "golpe-ia",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-13 08:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "CUIDADO COM",
+    "GOLPES DE *IA*"
+   ],
+   "narracao": "Cuidado com os golpes que usam inteligência artificial.",
+   "sera": "preocupado"
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "VOZ",
+    "*CLONADA*"
+   ],
+   "apoio": "pedindo dinheiro urgente",
+   "narracao": "Voz clonada de parente pedindo dinheiro com urgência."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "VÍDEO",
+    "*FALSO*"
+   ],
+   "apoio": "de famoso vendendo algo",
+   "narracao": "Vídeo falso de famoso vendendo produto milagroso."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "LINK",
+    "*PERFEITO*"
+   ],
+   "apoio": "que imita banco ou loja",
+   "narracao": "Link perfeito que imita o seu banco ou uma loja."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "NA DÚVIDA,",
+    "*LIGA DE VOLTA*"
+   ],
+   "narracao": "Na dúvida, desliga e liga de volta para a pessoa. E manda esse vídeo pra família.",
+   "fundo": "branco"
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "Cuidado com golpes de IA ⚠️\n\nManda pra família 👨‍👩‍👧\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+}

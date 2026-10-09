@@ -1,0 +1,70 @@
+{
+ "nome": "erro-planilha",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-12 08:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "UM ERRO NA",
+    "*PLANILHA*"
+   ],
+   "narracao": "Um erro na planilha pode custar caro.",
+   "sera": "preocupado"
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "FÓRMULA",
+    "*APAGADA*"
+   ],
+   "apoio": "sem ninguém perceber",
+   "narracao": "Uma fórmula apagada, sem ninguém perceber."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "VERSÃO",
+    "*ERRADA*"
+   ],
+   "apoio": "enviada pro cliente",
+   "narracao": "A versão errada enviada para o cliente."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "DADO",
+    "*DUPLICADO*"
+   ],
+   "apoio": "e o relatório mente",
+   "narracao": "Um dado duplicado, e o relatório mente para você."
+  },
+  {
+   "modelo": "lista",
+   "linhas": [
+    "UM SISTEMA"
+   ],
+   "itens": [
+    "Valida os dados",
+    "Uma versão só",
+    "Relatório automático"
+   ],
+   "raios": true,
+   "narracao": "Um sistema valida os dados, mantém uma versão só e gera o relatório sozinho."
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "Um erro na planilha pode custar caro 📊⚠️\n\nJá passou por isso? 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+}

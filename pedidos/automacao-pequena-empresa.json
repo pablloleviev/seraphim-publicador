@@ -1,0 +1,66 @@
+{
+ "nome": "automacao-pequena-empresa",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-12 19:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "AUTOMAÇÃO NÃO É",
+    "SÓ PRA *GRANDE*"
+   ],
+   "narracao": "Automação não é só para empresa grande.",
+   "sera": "confiante"
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "LEMBRETE",
+    "*AUTOMÁTICO*"
+   ],
+   "apoio": "de pagamento e de horário",
+   "narracao": "Um lembrete automático de pagamento ou de horário já muda o jogo."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "MENSAGEM",
+    "*PRONTA*"
+   ],
+   "apoio": "para as perguntas de sempre",
+   "narracao": "Mensagens prontas para as perguntas de sempre."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "RELATÓRIO",
+    "*SOZINHO*"
+   ],
+   "apoio": "toda segunda no celular",
+   "narracao": "Um relatório que chega sozinho toda segunda no seu celular."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "PEQUENO NEGÓCIO,",
+    "*GRANDE* ORGANIZAÇÃO"
+   ],
+   "narracao": "Pequeno negócio, grande organização.",
+   "raios": true
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "Automação não é só pra empresa grande ⚙️\n\nQual dessas você usaria? 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+}

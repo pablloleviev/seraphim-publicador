@@ -1,0 +1,66 @@
+{
+ "nome": "bastidores-startup",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-11 19:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "COMO É CRIAR",
+    "UMA *STARTUP*"
+   ],
+   "narracao": "Como é criar uma startup de tecnologia do zero?",
+   "sera": "pensando"
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "RESOLVER UM",
+    "*PROBLEMA REAL*"
+   ],
+   "apoio": "não criar app por criar",
+   "narracao": "Primeiro: resolver um problema real, e não criar aplicativo por criar."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "TESTAR",
+    "*RÁPIDO*"
+   ],
+   "apoio": "e ouvir o cliente",
+   "narracao": "Segundo: testar rápido e ouvir o cliente de verdade."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "AUTOMATIZAR",
+    "*TUDO*"
+   ],
+   "apoio": "até o próprio marketing",
+   "narracao": "Terceiro: automatizar tudo. Até este vídeo foi feito por um sistema nosso."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "É ISSO QUE A",
+    "*SERAPHIM* FAZ"
+   ],
+   "narracao": "É isso que a Seraphim faz pelos clientes.",
+   "raios": true
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "Bastidores: como é criar uma startup de tecnologia 🚀\n\nQuer ver mais bastidores? 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+}
