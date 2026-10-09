@@ -36,6 +36,14 @@ jobs:
           which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
           pip install -q --index-url https://download.pytorch.org/whl/cpu torch torchvision
           pip install -q opencv-python-headless numpy faster-whisper
+          python -c "
+          import json,os,urllib.request
+          for n,u in json.load(open('cenarios/lista.json')).items():
+              d=f'cenarios/{n}.jpg'
+              if not os.path.exists(d):
+                  r=urllib.request.Request(u+'?auto=compress&w=2160',headers={'User-Agent':'Mozilla/5.0'})
+                  open(d,'wb').write(urllib.request.urlopen(r).read()); print('cenario',d)
+          "
           cd motor && npm ci --no-audit --no-fund
       - name: Teste com URLs
         if: ${{ github.event.inputs.video_url != '' }}
@@ -59,7 +67,7 @@ jobs:
         run: |
           git config user.name "seraphim-bot"
           git config user.email "bot@users.noreply.github.com"
-          mkdir -p amostras; git add -A amostras fila gravacoes 2>/dev/null || git add -A amostras
+          mkdir -p amostras; git add -A amostras fila gravacoes cenarios
           git diff --cached --quiet && exit 0
           git commit -m "cinema: resultado"
           for i in 1 2 3 4 5; do git pull --rebase -X theirs -q && git push && exit 0; sleep 5; done; exit 1
