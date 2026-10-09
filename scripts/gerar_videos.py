@@ -24,7 +24,10 @@ for pedido in sorted((RAIZ / "pedidos").glob("*.json")):
                               else "gemini" if os.environ.get("GEMINI_API_KEY") else "edge")
     print(f"=== {nome} (voz {voz}) ===", flush=True)
     r = subprocess.run([sys.executable, str(RAIZ / "scripts" / "fazer_video.py"), str(pedido),
-                        "--voz", voz, "--saida", str(destino / "video.mp4")])
+                        "--voz", voz, "--saida", str(destino / "video.mp4")], capture_output=True, text=True)
+    print(r.stdout[-3000:], r.stderr[-3000:], flush=True)
+    destino.mkdir(parents=True, exist_ok=True)
+    (destino / "log.txt").write_text(r.stdout[-3000:] + "\n" + r.stderr[-3000:], encoding="utf-8")
     if r.returncode != 0:
         print(f"[erro] {nome} falhou; o pedido fica para a próxima tentativa"); continue
     if amostra:
