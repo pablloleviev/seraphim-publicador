@@ -126,8 +126,10 @@ def main():
             h, _, m = hora.partition("h")
             pedido["quando"] = datetime.now(BRT).strftime("%Y-%m-%d ") + f"{int(h):02d}:{int(m or 0):02d}"
         txt = textos.get(Path(f["name"]).stem)
-        if txt:
-            prompt = get(url_baixar(txt['id'])).decode("utf-8", "ignore").strip()
+        prompt = get(url_baixar(txt['id'])).decode("utf-8", "ignore").strip() if txt else ""
+        if not cenario and not prompt and len(Path(f["name"]).stem.split()) >= 2:
+            prompt = "Cenário pedido no nome do arquivo: " + Path(f["name"]).stem   # nome do arquivo vira o pedido
+        if prompt:
             try:
                 pedido.update(interpretar(prompt, cenarios))
             except Exception as e:
