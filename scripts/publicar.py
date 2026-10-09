@@ -57,6 +57,20 @@ def responder(cq_id, texto):
         pass  # clique antigo (>15 min): o Telegram não aceita mais resposta, tudo bem
 
 
+def dims(video: Path):
+    """Largura/altura/duração reais, para o Telegram mostrar o vídeo em pé (9:16) e não cortado."""
+    import subprocess
+    try:
+        out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                              "stream=width,height:format=duration", "-of", "json", str(video)],
+                             capture_output=True, text=True).stdout
+        d = json.loads(out)
+        st = d["streams"][0]
+        return {"width": st["width"], "height": st["height"], "duration": int(float(d["format"]["duration"]))}
+    except Exception:
+        return {"width": 1080, "height": 1920}
+
+
 def tg_arquivo(metodo, campo, caminho: Path, **dados):
     """Envia arquivo direto (até 50 MB), sem depender do limite de 20 MB do envio por link."""
     import uuid
@@ -145,7 +159,7 @@ def publicar_instagram(pasta: Path, meta: dict) -> str:
 def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
     nome = pasta.name
     if meta["tipo"] == "reels":
-        tg_arquivo("sendVideo", "video", pasta / "video.mp4", chat_id=CHAT, supports_streaming="true")
+        tg_arquivo("sendVideo", "video", pasta / "video.mp4", chat_id=CHAT, supports_streaming="true", **dims(pasta / "video.mp4"))
     else:
         slides = sorted(pasta.glob("slide-*.jpg"))[:10]
         midia = [{"type": "photo", "media": url_publica(s)} for s in slides]
