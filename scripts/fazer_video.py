@@ -141,7 +141,11 @@ def alinhar(texto, audio):
     import difflib, unicodedata
     from faster_whisper import WhisperModel
     modelo = WhisperModel(os.environ.get("WHISPER_MODELO", "small"), device="cpu", compute_type="int8")
-    segs, _ = modelo.transcribe(str(audio), language="pt", word_timestamps=True, vad_filter=False)
+    import numpy as np
+    pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(audio), "-f", "s16le", "-ac", "1", "-ar", "16000", "-"],
+                         capture_output=True, check=True).stdout
+    onda = np.frombuffer(pcm, np.int16).astype(np.float32) / 32768.0
+    segs, _ = modelo.transcribe(onda, language="pt", word_timestamps=True, vad_filter=False)
     ouvidas = [w for s in segs for w in s.words]
     norm = lambda w: re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKD", w.lower()).encode("ascii", "ignore").decode())
     roteiro = texto.split()
