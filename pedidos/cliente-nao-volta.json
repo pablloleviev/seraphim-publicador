@@ -1,0 +1,71 @@
+{
+ "nome": "cliente-nao-volta",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-11 12:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "SEU CLIENTE",
+    "*NÃO VOLTA*"
+   ],
+   "sera": "pensando",
+   "narracao": "Seu cliente fez a revisão, gostou do serviço, e nunca mais voltou?"
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "ELE NÃO",
+    "*ESQUECEU* DE VOCÊ"
+   ],
+   "fundo": "branco",
+   "apoio": "ele só não foi lembrado",
+   "narracao": "Ele não esqueceu de você. Ele só não foi lembrado."
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "TROCA DE ÓLEO",
+    "*VENCEU*"
+   ],
+   "apoio": "e ninguém avisou",
+   "narracao": "A troca de óleo venceu, ninguém avisou, e ele foi na oficina mais perto."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "REVISÃO",
+    "*ATRASADA*"
+   ],
+   "apoio": "vira cliente do concorrente",
+   "sera": "preocupado",
+   "narracao": "Revisão atrasada é cliente indo para o concorrente."
+  },
+  {
+   "modelo": "lista",
+   "linhas": [
+    "O *AUTOFLOW* LEMBRA"
+   ],
+   "itens": [
+    "Próxima revisão",
+    "Troca de óleo",
+    "Retorno do cliente"
+   ],
+   "raios": true,
+   "narracao": "O AutoFlow lembra você da próxima revisão e da troca de óleo de cada cliente."
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "CLIENTE LEMBRADO",
+    "*VOLTA*"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Cliente lembrado é cliente que volta. Link na bio."
+  }
+ ],
+ "legenda": "Cliente não volta porque não foi lembrado 🔁\n\nQuantos clientes sumiram da sua oficina este ano? 👇\n\n👉 AutoFlow, link na bio.\n\n#oficinamecanica #gestaodeoficina #autoflow #mecanica #donodeoficina"
+}

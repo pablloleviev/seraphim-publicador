@@ -259,10 +259,10 @@ const Legenda: React.FC<{palavras: Palavra[]; cenas: Cena[]; t: number}> = ({pal
         const ja = t >= p.s;
         return (
           <span key={i} style={{
-            fontFamily: 'InterX', fontSize: 66, textTransform: 'lowercase',
+            fontFamily: 'InterX', fontSize: g.reduce((n, p) => n + p.w.length, 0) > 22 ? 54 : 66, textTransform: 'lowercase',
             color: ativa ? C.ouro : (branco ? C.preto : C.branco),
             opacity: ja ? 1 : 0.35,
-            transform: `scale(${ativa ? 1.12 : 1})`, display: 'inline-block',
+            transform: `translateY(${ativa ? -4 : 0}px)`, display: 'inline-block', whiteSpace: 'nowrap',
             WebkitTextStroke: branco ? '0px' : '10px rgba(10,10,12,.9)', paintOrder: 'stroke fill',
             textShadow: branco ? 'none' : '0 6px 20px rgba(0,0,0,.6)',
           }}>{p.w.replace(/[.,!?:;]$/, '')}</span>
