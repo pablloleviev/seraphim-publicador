@@ -99,6 +99,9 @@ def voz_edge(texto, destino, voz=None):
 
 
 # ---------- Gemini (Google) ----------
+# vozes do Gemini: masculina = Charon (grave, segura) | feminina = Kore (firme, clara)
+VOZES_GEMINI = {"masculina": "Charon", "feminina": "Kore"}
+GEMINI_VOZ_ATUAL = os.environ.get("GEMINI_VOZ", "Charon")
 GEMINI_MODELOS = ["gemini-2.5-flash-preview-tts", "gemini-2.5-flash-tts", "gemini-2.5-pro-preview-tts"]
 
 
@@ -113,7 +116,7 @@ def voz_gemini(texto, destino):
     corpo = json.dumps({
         "contents": [{"parts": [{"text": f"{estilo}:\n\n{texto}"}]}],
         "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {
-            "prebuiltVoiceConfig": {"voiceName": os.environ.get("GEMINI_VOZ", "Puck")}}}},
+            "prebuiltVoiceConfig": {"voiceName": GEMINI_VOZ_ATUAL}}}},
     }).encode()
     erro = None
     for modelo in GEMINI_MODELOS:
@@ -200,6 +203,10 @@ def main():
     carregar_env()
 
     spec = json.loads(Path(args.roteiro).read_text(encoding="utf-8"))
+    global GEMINI_VOZ_ATUAL
+    g = spec.get("genero_voz")  # "masculina" | "feminina" | nome de voz do Gemini
+    if g:
+        GEMINI_VOZ_ATUAL = VOZES_GEMINI.get(g, g)
     nome = spec.get("nome", Path(args.roteiro).stem)
     cenas = spec["cenas"]
     shutil.rmtree(JOB, ignore_errors=True); JOB.mkdir(parents=True)
@@ -255,7 +262,7 @@ def main():
 
     saida = Path(args.saida).resolve() if args.saida else RAIZ / "entrega" / "videos" / f"{nome}.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
-    cmd = f'npx remotion render src/index.ts Seraphim "{saida}" --props=public/job/props.json --log=error'
+    cmd = f'npx remotion render src/index.ts Seraphim "{saida}" --props=public/job/props.json --log=error --codec=h264 --crf=14 --jpeg-quality=95 --pixel-format=yuv420p --audio-bitrate=192k'
     if os.environ.get("CHROME_PATH"):
         cmd += f' --browser-executable="{os.environ["CHROME_PATH"]}"'
     print("Editando no motor Remotion... (alguns minutos)")
