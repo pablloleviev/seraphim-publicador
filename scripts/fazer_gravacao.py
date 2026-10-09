@@ -83,7 +83,8 @@ def processar(pedido: Path):
                    cwd=MOTOR, shell=True, check=True)
     if not amostra:
         (destino / "item.json").write_text(json.dumps({"tipo": "reels", "legenda": spec.get("legenda", ""),
-            "quando": quando.strftime("%Y-%m-%dT%H:%M:00-03:00")}, ensure_ascii=False, indent=2), encoding="utf-8")
+            "quando": quando.strftime("%Y-%m-%dT%H:%M:00-03:00"),
+            "nota": spec.get("pedidos_extras", "")}, ensure_ascii=False, indent=2), encoding="utf-8")
     pedido.unlink()
     if bruto.exists(): bruto.unlink()   # o bruto pesa; não precisa ficar no repositório
     print(f"Pronto: {destino}")

@@ -131,7 +131,8 @@ def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
         midia = [{"type": "photo", "media": url_publica(s)} for s in slides]
         tg("sendMediaGroup", chat_id=CHAT, media=midia)
     texto = (f"📌 *{nome}*\nTipo: {meta['tipo']}\n\n{meta.get('legenda','')[:800]}\n\n"
-             f"Publicar no Instagram?")
+             + (f"⚠️ Não feito automaticamente: {meta['nota']}\n\n" if meta.get("nota") else "")
+             + "Publicar no Instagram?")
     msg = tg("sendMessage", chat_id=CHAT, text=texto, parse_mode="Markdown",
              reply_markup={"inline_keyboard": [[
                  {"text": "✅ Publicar", "callback_data": f"ok|{nome}"},
