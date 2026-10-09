@@ -32,6 +32,22 @@
       "status": "aguardando",
       "msg_id": 16,
       "enviado_em": "2026-10-09T16:09:34.937629+00:00"
+    },
+    "2026-10-09_1625_teste-mensagem-unica": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-09T19:31:51.712832+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "seraphimtech",
+          "creator_username": "seraphimtech"
+        }
+      },
+      "msg_id": 21
     }
   }
 }
