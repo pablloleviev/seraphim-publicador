@@ -1,0 +1,66 @@
+{
+ "nome": "whatsapp-24h",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-14 12:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "SEU WHATSAPP",
+    "ATENDE *24H*?"
+   ],
+   "sera": "pensando",
+   "narracao": "Seu WhatsApp atende vinte e quatro horas por dia?"
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "CLIENTE SEM",
+    "RESPOSTA *COMPRA*",
+    "DO CONCORRENTE"
+   ],
+   "raios": true,
+   "narracao": "Cliente sem resposta compra do concorrente."
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "RESPONDE",
+    "*NA HORA*"
+   ],
+   "apoio": "dúvidas, preços, horários",
+   "narracao": "Um assistente com IA responde na hora: dúvidas, preços e horários."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "AGENDA E",
+    "*ENCAMINHA*"
+   ],
+   "apoio": "só chama você quando precisa",
+   "narracao": "Ele agenda e só chama você quando realmente precisa."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "VOCÊ DORME.",
+    "ELE *VENDE*."
+   ],
+   "fundo": "branco",
+   "narracao": "Você dorme. Ele vende."
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "Seu WhatsApp atende 24h? 📲🤖\n\nQuantas mensagens ficam sem resposta por dia aí? 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+}

@@ -1,0 +1,67 @@
+{
+ "nome": "prompt-certo",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-15 12:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "VOCÊ USA IA",
+    "*ERRADO*"
+   ],
+   "sera": "surpreso",
+   "narracao": "A maioria das pessoas usa a inteligência artificial do jeito errado."
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "DIGA",
+    "*QUEM ELA É*"
+   ],
+   "apoio": "aja como um especialista em...",
+   "narracao": "Primeiro: diga quem ela é. Aja como um especialista em vendas, por exemplo."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "DÊ O",
+    "*CONTEXTO*"
+   ],
+   "apoio": "sua empresa, seu cliente",
+   "narracao": "Segundo: dê o contexto. Sua empresa, seu cliente, seu objetivo."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "PEÇA O",
+    "*FORMATO*"
+   ],
+   "apoio": "lista, tabela, 3 opções",
+   "narracao": "Terceiro: peça o formato. Uma lista, uma tabela, três opções."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "PERGUNTA BOA,",
+    "RESPOSTA *BOA*"
+   ],
+   "raios": true,
+   "sera": "confiante",
+   "narracao": "Pergunta boa, resposta boa. Salva esse vídeo."
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "A fórmula do prompt certo 🧠\n\nPapel + contexto + formato. Salva e testa hoje 📌\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+}

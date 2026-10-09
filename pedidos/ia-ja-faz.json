@@ -1,0 +1,68 @@
+{
+ "nome": "ia-ja-faz",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-11 12:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "3 TAREFAS QUE A",
+    "*IA* JÁ FAZ",
+    "NA SUA EMPRESA"
+   ],
+   "sera": "surpreso",
+   "narracao": "Três tarefas que a inteligência artificial já faz hoje na sua empresa."
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "RESPONDER",
+    "*CLIENTES*"
+   ],
+   "apoio": "no WhatsApp, a qualquer hora",
+   "narracao": "Primeira: responder clientes no WhatsApp, a qualquer hora."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "ESCREVER",
+    "*ORÇAMENTOS*"
+   ],
+   "apoio": "e e-mails em segundos",
+   "narracao": "Segunda: escrever orçamentos e e-mails em segundos."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "RESUMIR",
+    "*RELATÓRIOS*"
+   ],
+   "apoio": "e mostrar o que importa",
+   "sera": "pensando",
+   "narracao": "Terceira: resumir relatórios e mostrar só o que importa."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "QUEM NÃO USA,",
+    "*FICA PRA TRÁS*"
+   ],
+   "raios": true,
+   "narracao": "Quem não usa, fica pra trás."
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "3 tarefas que a IA já faz na sua empresa 🤖\n\nQual você já usa? 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+}
