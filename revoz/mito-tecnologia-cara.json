@@ -1,0 +1,67 @@
+{
+ "nome": "mito-tecnologia-cara",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-15 19:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "TECNOLOGIA",
+    "É *CARA*?"
+   ],
+   "narracao": "Tecnologia é cara? Será mesmo?",
+   "sera": "pensando"
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "CARO É",
+    "*O RETRABALHO*"
+   ],
+   "apoio": "todo dia, toda semana",
+   "narracao": "Caro é o retrabalho, todo dia, toda semana."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "CARO É",
+    "*O CLIENTE PERDIDO*"
+   ],
+   "apoio": "por demora ou esquecimento",
+   "narracao": "Caro é o cliente perdido por demora ou esquecimento."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "CARO É",
+    "*O ERRO*"
+   ],
+   "apoio": "que ninguém viu",
+   "narracao": "Caro é o erro que ninguém viu."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "TECNOLOGIA É",
+    "*INVESTIMENTO*"
+   ],
+   "narracao": "Tecnologia bem feita é investimento, não gasto.",
+   "fundo": "branco"
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "Tecnologia é cara? Caro é ficar sem 💸\n\nConcorda? 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech",
+ "destino": "fila/2026-10-15_1900_mito-tecnologia-cara"
+}

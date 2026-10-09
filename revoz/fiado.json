@@ -1,0 +1,71 @@
+{
+ "nome": "fiado",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-13 12:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "O *FIADO*",
+    "ESTÁ QUEBRANDO",
+    "SUA OFICINA"
+   ],
+   "sera": "preocupado",
+   "narracao": "O fiado está quebrando a sua oficina, e você nem percebe."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "ANOTADO NO",
+    "*CADERNO*"
+   ],
+   "raios": true,
+   "narracao": "Anotado no caderno, no papelzinho, na memória."
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "VOCÊ",
+    "*ESQUECE*"
+   ],
+   "apoio": "quem deve e quanto",
+   "narracao": "Uma hora você esquece quem deve e quanto deve."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "COBRAR",
+    "*CONSTRANGE*"
+   ],
+   "apoio": "e você deixa pra lá",
+   "narracao": "Cobrar fica constrangedor, e você deixa pra lá."
+  },
+  {
+   "modelo": "lista",
+   "linhas": [
+    "NO *AUTOFLOW*"
+   ],
+   "itens": [
+    "Quem deve e quanto",
+    "Vencimento de cada valor",
+    "Histórico de pagamentos"
+   ],
+   "raios": true,
+   "narracao": "No AutoFlow você vê quem deve, quanto e quando vence. Sem constrangimento."
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "FIADO",
+    "*CONTROLADO*"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Fiado controlado é dinheiro no caixa. Link na bio."
+  }
+ ],
+ "legenda": "Fiado sem controle quebra oficina 💸📒\n\nVocê ainda anota no caderno? 👇\n\n👉 AutoFlow, link na bio.\n\n#oficinamecanica #gestaodeoficina #autoflow #mecanica #donodeoficina",
+ "destino": "fila/2026-10-13_1200_fiado"
+}

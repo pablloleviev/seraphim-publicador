@@ -1,0 +1,67 @@
+{
+ "nome": "atendimento-lento",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-14 19:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "DEMOROU PRA",
+    "*RESPONDER*?"
+   ],
+   "narracao": "Demorou para responder o cliente?",
+   "sera": "preocupado"
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "ELE JÁ",
+    "*COMPROU*",
+    "EM OUTRO LUGAR"
+   ],
+   "narracao": "Ele provavelmente já comprou em outro lugar.",
+   "raios": true
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "RESPOSTA",
+    "*IMEDIATA*"
+   ],
+   "apoio": "mesmo fora do horário",
+   "narracao": "Com automação, a resposta é imediata, mesmo fora do horário."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "VOCÊ ASSUME",
+    "*DEPOIS*"
+   ],
+   "apoio": "só nos casos importantes",
+   "narracao": "E você assume só nos casos que importam."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "RAPIDEZ",
+    "*VENDE*"
+   ],
+   "narracao": "Rapidez vende.",
+   "fundo": "branco"
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "Demorou pra responder? Ele já comprou em outro lugar ⏱️\n\nQuanto tempo você leva pra responder? 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech",
+ "destino": "fila/2026-10-14_1900_atendimento-lento"
+}

@@ -1,0 +1,66 @@
+{
+ "nome": "ia-nao-vai-te-substituir",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-10 08:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "A IA NÃO VAI",
+    "TE *SUBSTITUIR*"
+   ],
+   "narracao": "A inteligência artificial não vai te substituir.",
+   "sera": "pensando"
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "QUEM USA IA",
+    "*VAI*"
+   ],
+   "narracao": "Quem usa inteligência artificial vai.",
+   "fundo": "branco"
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "FAZ O",
+    "*REPETITIVO*"
+   ],
+   "apoio": "e você faz o estratégico",
+   "narracao": "Ela faz o trabalho repetitivo, e você cuida do estratégico."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "DECIDE",
+    "*MAIS RÁPIDO*"
+   ],
+   "apoio": "com informação organizada",
+   "narracao": "Você decide mais rápido, com a informação organizada."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "COMECE",
+    "*HOJE*"
+   ],
+   "narracao": "O melhor momento para começar é hoje.",
+   "raios": true
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "A IA não vai te substituir. Quem usa IA vai. 🤖\n\nConcorda? 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech",
+ "destino": "fila/2026-10-10_0800_ia-nao-vai-te-substituir"
+}

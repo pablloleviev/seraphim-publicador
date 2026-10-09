@@ -1,0 +1,68 @@
+{
+ "nome": "chatgpt-no-trabalho",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-11 08:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "3 JEITOS DE USAR",
+    "O *CHATGPT*",
+    "NO TRABALHO"
+   ],
+   "narracao": "Três jeitos de usar o ChatGPT no trabalho, hoje mesmo.",
+   "sera": "surpreso"
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "RESPONDER",
+    "*E-MAIL*"
+   ],
+   "apoio": "cole e peça uma resposta educada",
+   "narracao": "Cole o e-mail e peça uma resposta educada e direta."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "CRIAR",
+    "*PROPOSTA*"
+   ],
+   "apoio": "a partir de tópicos seus",
+   "narracao": "Mande seus tópicos e peça uma proposta comercial organizada."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "ORGANIZAR",
+    "*IDEIAS*"
+   ],
+   "apoio": "de uma reunião bagunçada",
+   "narracao": "Cole as anotações da reunião e peça um resumo com próximos passos."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "TESTE",
+    "*AGORA*"
+   ],
+   "narracao": "Testa agora e me conta qual funcionou melhor.",
+   "raios": true
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "3 jeitos de usar o ChatGPT no trabalho 💼🤖\n\nSalva pra testar 📌\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech",
+ "destino": "fila/2026-10-11_0800_chatgpt-no-trabalho"
+}

@@ -1,0 +1,67 @@
+{
+ "nome": "resumo-semana",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-16 19:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "O QUE VOCÊ",
+    "*APRENDEU* ESSA SEMANA"
+   ],
+   "narracao": "O que você aprendeu essa semana aqui no perfil?",
+   "sera": "feliz"
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "IA FAZ O",
+    "*REPETITIVO*"
+   ],
+   "apoio": "você faz o estratégico",
+   "narracao": "A inteligência artificial faz o repetitivo, você faz o estratégico."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "AUTOMAÇÃO É PRA",
+    "*TODO MUNDO*"
+   ],
+   "apoio": "inclusive pequeno negócio",
+   "narracao": "Automação é para todo mundo, inclusive pequeno negócio."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "SISTEMA",
+    "*TRABALHA*"
+   ],
+   "apoio": "planilha só guarda",
+   "narracao": "Planilha só guarda. Sistema trabalha."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "SEGUE PRA",
+    "*MAIS*"
+   ],
+   "narracao": "Segue a Seraphim para mais conteúdo assim toda semana.",
+   "raios": true
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "Resumo da semana 🚀\n\nO que você quer ver na próxima? 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech",
+ "destino": "fila/2026-10-16_1900_resumo-semana"
+}

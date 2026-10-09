@@ -1,0 +1,68 @@
+{
+ "nome": "dashboard",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-15 08:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "VOCÊ SABE",
+    "COMO ESTÁ SUA",
+    "*EMPRESA* HOJE?"
+   ],
+   "narracao": "Você sabe como está a sua empresa hoje, agora?",
+   "sera": "pensando"
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "VENDAS",
+    "*DO DIA*"
+   ],
+   "apoio": "sem esperar o fim do mês",
+   "narracao": "As vendas do dia, sem esperar o fim do mês."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "CONTAS",
+    "*A PAGAR*"
+   ],
+   "apoio": "e a receber",
+   "narracao": "As contas a pagar e a receber."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "METAS",
+    "*NA TELA*"
+   ],
+   "apoio": "num painel só",
+   "narracao": "Suas metas, num painel só."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "DECISÃO COM",
+    "*DADO*, NÃO CHUTE"
+   ],
+   "narracao": "Decisão com dado, não com chute.",
+   "raios": true
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "Você sabe como está sua empresa hoje? 📈\n\nUm painel resolve. 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech",
+ "destino": "fila/2026-10-15_0800_dashboard"
+}

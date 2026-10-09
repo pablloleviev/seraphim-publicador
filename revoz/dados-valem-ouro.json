@@ -1,0 +1,67 @@
+{
+ "nome": "dados-valem-ouro",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-13 19:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "SEUS DADOS",
+    "VALEM *OURO*"
+   ],
+   "narracao": "Os dados da sua empresa valem ouro.",
+   "sera": "pensando"
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "QUEM",
+    "*COMPRA*"
+   ],
+   "apoio": "e com que frequência",
+   "narracao": "Quem compra, e com que frequência."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "O QUE",
+    "*VENDE MAIS*"
+   ],
+   "apoio": "e em qual época",
+   "narracao": "O que vende mais, e em qual época do ano."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "QUEM",
+    "*SUMIU*"
+   ],
+   "apoio": "e pode voltar",
+   "narracao": "Quem sumiu, e pode voltar com uma mensagem."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "SEM SISTEMA,",
+    "*SE PERDEM*"
+   ],
+   "narracao": "Sem um sistema, esses dados se perdem.",
+   "raios": true
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "TECNOLOGIA QUE",
+    "*TRABALHA* POR VOCÊ"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Seraphim: sistemas, automações e inteligência artificial para o seu negócio. Link na bio."
+  }
+ ],
+ "legenda": "Os dados da sua empresa valem ouro 💎📊\n\nVocê usa os seus? 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech",
+ "destino": "fila/2026-10-13_1900_dados-valem-ouro"
+}

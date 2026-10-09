@@ -1,0 +1,72 @@
+{
+ "nome": "caderno-vs-sistema",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-16 12:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "CADERNO",
+    "*OU* SISTEMA?"
+   ],
+   "sera": "pensando",
+   "narracao": "Caderno ou sistema? Vamos comparar."
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "CADERNO",
+    "*MOLHA*"
+   ],
+   "apoio": "rasga, some, ninguém entende a letra",
+   "narracao": "O caderno molha, rasga, some, e ninguém entende a letra."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "CADERNO NÃO",
+    "*AVISA*"
+   ],
+   "apoio": "revisão, cobrança, estoque",
+   "narracao": "O caderno não avisa nada: nem revisão, nem cobrança, nem estoque."
+  },
+  {
+   "modelo": "numero",
+   "numero": "03",
+   "linhas": [
+    "CADERNO NÃO",
+    "*SOMA*"
+   ],
+   "apoio": "você descobre o prejuízo depois",
+   "sera": "preocupado",
+   "narracao": "E o caderno não soma. Você descobre o prejuízo depois."
+  },
+  {
+   "modelo": "lista",
+   "linhas": [
+    "O *AUTOFLOW*"
+   ],
+   "itens": [
+    "Guarda tudo",
+    "Avisa sozinho",
+    "Soma pra você"
+   ],
+   "raios": true,
+   "narracao": "O AutoFlow guarda tudo, avisa sozinho e soma pra você."
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "APOSENTE O",
+    "*CADERNO*"
+   ],
+   "apoio": "link na bio",
+   "sera": "confiante",
+   "narracao": "Está na hora de aposentar o caderno. Conheça o AutoFlow, link na bio."
+  }
+ ],
+ "legenda": "Caderno ou sistema? 📒 vs 📱\n\nTime caderno ou time sistema? Comenta 👇\n\n👉 AutoFlow, link na bio.\n\n#oficinamecanica #gestaodeoficina #autoflow #mecanica #donodeoficina",
+ "destino": "fila/2026-10-16_1200_caderno-vs-sistema"
+}
