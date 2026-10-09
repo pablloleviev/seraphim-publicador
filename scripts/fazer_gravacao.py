@@ -24,7 +24,15 @@ BRT = timezone(timedelta(hours=-3))
 sys.path.insert(0, str(RAIZ / "scripts"))
 
 
+def tem_audio(v):
+    return bool(subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=index",
+                                "-of", "csv=p=0", str(v)], capture_output=True, text=True).stdout.strip())
+
+
 def transcrever(audio):
+    if not tem_audio(audio):
+        print("[aviso] gravação sem áudio: sem legenda")
+        return []
     import numpy as np
     from faster_whisper import WhisperModel
     pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(audio), "-f", "s16le", "-ac", "1", "-ar", "16000", "-"],
@@ -63,13 +71,15 @@ def processar(pedido: Path):
     if spec.get("titulo") and cenas and cenas[0]["modelo"] == "gravacao":
         cenas[0]["linhas"] = spec["titulo"]
     props = {"fps": 30, "duracao": dur, "arroba": spec.get("arroba", "@seraphimtech_"), "audio": None,
-             "video": "job/gravacao.mp4", "batida": "sfx/batida.mp3", "sfx": bool(ins), "palavras": palavras, "cenas": cenas}
+             "video": "job/gravacao.mp4", "video_som": tem_audio(tratado), "batida": "sfx/batida.mp3", "sfx": bool(ins), "palavras": palavras, "cenas": cenas}
     (JOB / "props.json").write_text(json.dumps(props, ensure_ascii=False), encoding="utf-8")
 
     amostra = spec.get("amostra", False)
     quando = datetime.strptime(spec["quando"], "%Y-%m-%d %H:%M") if spec.get("quando") else datetime.now(BRT).replace(tzinfo=None)
     destino = (RAIZ / "amostras" / nome) if amostra else RAIZ / "fila" / f"{quando:%Y-%m-%d_%H%M}_{nome}"
     destino.mkdir(parents=True, exist_ok=True)
+    if amostra:
+        shutil.copy(tratado, destino / "so_cinema.mp4")
     subprocess.run(f'npx remotion render src/index.ts Seraphim "{destino / "video.mp4"}" --props=public/job/props.json '
                    f'--log=error --codec=h264 --crf=14 --jpeg-quality=95 --pixel-format=yuv420p --audio-bitrate=192k',
                    cwd=MOTOR, shell=True, check=True)

@@ -16,7 +16,7 @@ export type Props = {
   fps: number; duracao: number; arroba: string;
   audio: string | null; batida: string | null; sfx: boolean;
   palavras: Palavra[]; cenas: Cena[];
-  video?: string | null;   // gravação já tratada (cinema.py) — som vem dela
+  video?: string | null; video_som?: boolean;   // gravação já tratada (cinema.py) — som vem dela
 };
 
 // ---------- marca ----------
@@ -303,7 +303,7 @@ export const SeraphimVideo: React.FC<Props> = (props) => {
       </div>
       {/* áudio */}
       {props.audio && <Audio src={staticFile(props.audio)} />}
-      {props.video && <Audio src={staticFile(props.video)} />}
+      {props.video && props.video_som && <Audio src={staticFile(props.video)} />}
       {props.batida && <Audio src={staticFile(props.batida)} volume={props.audio || props.video ? 0.12 : 0.7} />}
       {props.sfx && props.cenas.map((c, i) => (
         <React.Fragment key={'s' + i}>
