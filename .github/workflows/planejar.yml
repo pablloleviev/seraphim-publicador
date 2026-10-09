@@ -1,0 +1,52 @@
+name: Planejar conteúdo
+
+on:
+  schedule:
+    - cron: "15 10 * * *"   # 07:15 em Brasília, depois da cota do Gemini renovar
+  workflow_dispatch:
+    inputs:
+      dias:
+        description: "quantos dias à frente planejar (vazio = padrão)"
+        required: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: planejar
+  cancel-in-progress: false
+
+jobs:
+  planejar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar ferramentas
+        run: |
+          pip install -q playwright pillow
+          python -m playwright install --with-deps chromium
+      - name: Planejar
+        id: plano
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DIAS: ${{ inputs.dias }}
+        run: python scripts/planejar.py
+      - name: Salvar e mandar gerar os vídeos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "seraphim-bot"
+          git config user.email "bot@users.noreply.github.com"
+          for p in fila pedidos historico.json; do git add -A -- "$p" 2>/dev/null || true; done
+          git diff --cached --quiet && exit 0
+          git commit -q -m "conteúdo planejado"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase -X theirs origin main && git push origin HEAD:main && { gh workflow run gerar-video.yml -R ${{ github.repository }}; exit 0; }
+            sleep 5
+          done
+          exit 1
