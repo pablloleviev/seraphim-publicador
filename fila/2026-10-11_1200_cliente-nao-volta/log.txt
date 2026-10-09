@@ -1,0 +1,82 @@
+4/721, time remaining: 16s
+Rendered 665/721, time remaining: 16s
+Rendered 666/721, time remaining: 16s
+Rendered 666/721, time remaining: 16s
+Rendered 667/721, time remaining: 15s
+Rendered 668/721, time remaining: 15s
+Rendered 669/721, time remaining: 15s
+Rendered 669/721, time remaining: 15s
+Rendered 670/721, time remaining: 14s
+Rendered 671/721, time remaining: 14s
+Rendered 672/721, time remaining: 14s
+Rendered 673/721, time remaining: 13s
+Rendered 673/721, time remaining: 13s
+Rendered 674/721, time remaining: 13s
+Rendered 675/721, time remaining: 13s
+Rendered 676/721, time remaining: 13s
+Rendered 676/721, time remaining: 13s
+Rendered 677/721, time remaining: 12s
+Rendered 678/721, time remaining: 12s
+Rendered 679/721, time remaining: 12s
+Rendered 680/721, time remaining: 11s
+Rendered 680/721, time remaining: 11s
+Rendered 681/721, time remaining: 11s
+Rendered 682/721, time remaining: 11s
+Rendered 683/721, time remaining: 11s
+Rendered 683/721, time remaining: 11s
+Rendered 684/721, time remaining: 10s
+Rendered 685/721, time remaining: 10s
+Rendered 686/721, time remaining: 10s
+Rendered 687/721, time remaining: 9s
+Rendered 687/721, time remaining: 9s
+Rendered 688/721, time remaining: 9s
+Rendered 689/721, time remaining: 9s
+Rendered 690/721, time remaining: 9s
+Rendered 690/721, time remaining: 9s
+Rendered 691/721, time remaining: 8s
+Rendered 692/721, time remaining: 8s
+Rendered 693/721, time remaining: 8s
+Rendered 693/721, time remaining: 8s
+Rendered 694/721, time remaining: 7s
+Rendered 695/721, time remaining: 7s
+Rendered 696/721, time remaining: 7s
+Rendered 697/721, time remaining: 6s
+Rendered 697/721, time remaining: 6s
+Rendered 698/721, time remaining: 6s
+Rendered 699/721, time remaining: 6s
+Rendered 700/721, time remaining: 6s
+Rendered 701/721, time remaining: 5s
+Rendered 701/721, time remaining: 5s
+Rendered 702/721, time remaining: 5s
+Rendered 703/721, time remaining: 5s
+Rendered 704/721, time remaining: 4s
+Rendered 705/721, time remaining: 4s
+Rendered 705/721, time remaining: 4s
+Rendered 706/721, time remaining: 4s
+Rendered 707/721, time remaining: 4s
+Rendered 708/721, time remaining: 3s
+Rendered 708/721, time remaining: 3s
+Rendered 709/721, time remaining: 3s
+Rendered 710/721, time remaining: 3s
+Rendered 711/721, time remaining: 2s
+Rendered 711/721, time remaining: 2s
+Rendered 712/721, time remaining: 2s
+Rendered 713/721, time remaining: 2s
+Rendered 714/721, time remaining: 2s
+Rendered 715/721, time remaining: 1s
+Rendered 715/721, time remaining: 1s
+Rendered 716/721, time remaining: 1s
+Rendered 717/721, time remaining: 1s
+Rendered 718/721, time remaining: 0s
+Rendered 719/721, time remaining: 0s
+Rendered 719/721, time remaining: 0s
+Rendered 720/721, time remaining: 0s
+Stitched 526/721
+Stitched 538/721
+Stitched 554/721
+Stitched 577/721
+Stitched 721/721
+Voz: gemini (68 palavras)
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-11_1200_cliente-nao-volta/video.mp4 (24.0s)
+

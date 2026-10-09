@@ -1,0 +1,83 @@
+ 16s
+Rendered 550/606, time remaining: 16s
+Rendered 550/606, time remaining: 16s
+Rendered 551/606, time remaining: 16s
+Rendered 552/606, time remaining: 15s
+Rendered 553/606, time remaining: 15s
+Rendered 554/606, time remaining: 15s
+Rendered 554/606, time remaining: 15s
+Rendered 555/606, time remaining: 15s
+Rendered 556/606, time remaining: 14s
+Rendered 557/606, time remaining: 14s
+Rendered 557/606, time remaining: 14s
+Rendered 558/606, time remaining: 14s
+Rendered 559/606, time remaining: 13s
+Rendered 560/606, time remaining: 13s
+Rendered 561/606, time remaining: 13s
+Rendered 561/606, time remaining: 13s
+Rendered 562/606, time remaining: 12s
+Rendered 563/606, time remaining: 12s
+Rendered 564/606, time remaining: 12s
+Rendered 565/606, time remaining: 12s
+Rendered 565/606, time remaining: 12s
+Rendered 566/606, time remaining: 11s
+Rendered 567/606, time remaining: 11s
+Rendered 567/606, time remaining: 11s
+Rendered 568/606, time remaining: 11s
+Rendered 569/606, time remaining: 10s
+Rendered 570/606, time remaining: 10s
+Rendered 571/606, time remaining: 10s
+Rendered 571/606, time remaining: 10s
+Rendered 572/606, time remaining: 10s
+Rendered 573/606, time remaining: 9s
+Rendered 574/606, time remaining: 9s
+Rendered 574/606, time remaining: 9s
+Rendered 575/606, time remaining: 9s
+Rendered 576/606, time remaining: 8s
+Rendered 577/606, time remaining: 8s
+Rendered 578/606, time remaining: 8s
+Rendered 578/606, time remaining: 8s
+Rendered 579/606, time remaining: 7s
+Rendered 580/606, time remaining: 7s
+Rendered 581/606, time remaining: 7s
+Rendered 581/606, time remaining: 7s
+Rendered 582/606, time remaining: 7s
+Rendered 583/606, time remaining: 6s
+Rendered 584/606, time remaining: 6s
+Rendered 585/606, time remaining: 6s
+Rendered 585/606, time remaining: 6s
+Rendered 586/606, time remaining: 5s
+Rendered 587/606, time remaining: 5s
+Rendered 588/606, time remaining: 5s
+Rendered 589/606, time remaining: 5s
+Rendered 589/606, time remaining: 5s
+Rendered 590/606, time remaining: 4s
+Rendered 591/606, time remaining: 4s
+Rendered 591/606, time remaining: 4s
+Rendered 592/606, time remaining: 4s
+Rendered 593/606, time remaining: 3s
+Rendered 594/606, time remaining: 3s
+Rendered 595/606, time remaining: 3s
+Rendered 595/606, time remaining: 3s
+Rendered 596/606, time remaining: 2s
+Rendered 597/606, time remaining: 2s
+Rendered 598/606, time remaining: 2s
+Rendered 599/606, time remaining: 2s
+Rendered 599/606, time remaining: 2s
+Rendered 600/606, time remaining: 1s
+Rendered 601/606, time remaining: 1s
+Rendered 601/606, time remaining: 1s
+Rendered 602/606, time remaining: 1s
+Rendered 603/606, time remaining: 0s
+Rendered 604/606, time remaining: 0s
+Rendered 605/606, time remaining: 0s
+Stitched 432/606
+Stitched 439/606
+Stitched 454/606
+Stitched 474/606
+Stitched 485/606
+Stitched 606/606
+Voz: gemini (57 palavras)
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-12_1200_quanto-vale-sua-hora/video.mp4 (20.2s)
+

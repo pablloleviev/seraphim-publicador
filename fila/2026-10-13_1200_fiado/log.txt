@@ -1,0 +1,78 @@
+5s
+Rendered 614/663, time remaining: 15s
+Rendered 615/663, time remaining: 14s
+Rendered 616/663, time remaining: 14s
+Rendered 616/663, time remaining: 14s
+Rendered 617/663, time remaining: 14s
+Rendered 618/663, time remaining: 13s
+Rendered 619/663, time remaining: 13s
+Rendered 620/663, time remaining: 13s
+Rendered 620/663, time remaining: 13s
+Rendered 621/663, time remaining: 12s
+Rendered 622/663, time remaining: 12s
+Rendered 622/663, time remaining: 12s
+Rendered 623/663, time remaining: 12s
+Rendered 624/663, time remaining: 12s
+Rendered 625/663, time remaining: 11s
+Rendered 626/663, time remaining: 11s
+Rendered 626/663, time remaining: 11s
+Rendered 627/663, time remaining: 11s
+Rendered 628/663, time remaining: 10s
+Rendered 629/663, time remaining: 10s
+Rendered 629/663, time remaining: 10s
+Rendered 630/663, time remaining: 10s
+Rendered 631/663, time remaining: 9s
+Rendered 632/663, time remaining: 9s
+Rendered 632/663, time remaining: 9s
+Rendered 633/663, time remaining: 9s
+Rendered 634/663, time remaining: 8s
+Rendered 635/663, time remaining: 8s
+Rendered 636/663, time remaining: 8s
+Rendered 636/663, time remaining: 8s
+Rendered 637/663, time remaining: 7s
+Rendered 638/663, time remaining: 7s
+Rendered 639/663, time remaining: 7s
+Rendered 639/663, time remaining: 7s
+Rendered 640/663, time remaining: 7s
+Rendered 641/663, time remaining: 6s
+Rendered 642/663, time remaining: 6s
+Rendered 642/663, time remaining: 6s
+Rendered 643/663, time remaining: 6s
+Rendered 644/663, time remaining: 5s
+Rendered 645/663, time remaining: 5s
+Rendered 646/663, time remaining: 5s
+Rendered 646/663, time remaining: 5s
+Rendered 647/663, time remaining: 4s
+Rendered 648/663, time remaining: 4s
+Rendered 649/663, time remaining: 4s
+Rendered 650/663, time remaining: 3s
+Rendered 650/663, time remaining: 3s
+Rendered 651/663, time remaining: 3s
+Rendered 652/663, time remaining: 3s
+Rendered 652/663, time remaining: 3s
+Rendered 653/663, time remaining: 3s
+Rendered 654/663, time remaining: 2s
+Rendered 655/663, time remaining: 2s
+Rendered 656/663, time remaining: 2s
+Rendered 656/663, time remaining: 2s
+Rendered 657/663, time remaining: 1s
+Rendered 658/663, time remaining: 1s
+Rendered 659/663, time remaining: 1s
+Rendered 660/663, time remaining: 0s
+Rendered 660/663, time remaining: 0s
+Rendered 661/663, time remaining: 0s
+Rendered 662/663, time remaining: 0s
+Stitched 479/663
+Stitched 485/663
+Stitched 499/663
+Stitched 518/663
+Stitched 530/663
+Stitched 663/663
+[aviso] voz gemini falhou: gemini-2.5-pro-preview-tts: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Voz: edge (56 palavras)
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-13_1200_fiado/video.mp4 (22.1s)
+
