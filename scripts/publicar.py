@@ -16,6 +16,7 @@ Segredos (GitHub > Settings > Secrets and variables > Actions):
     TELEGRAM_TOKEN, TELEGRAM_CHAT_ID, IG_USER_ID, IG_TOKEN
 """
 import json, os, sys, time, urllib.parse, urllib.request
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -169,6 +170,15 @@ def processar_respostas(estado: dict):
             meta = json.loads((pasta / "item.json").read_text(encoding="utf-8"))
             pid = publicar_instagram(pasta, meta)
             item.update(status="publicado", ig_id=pid, publicado_em=datetime.now(timezone.utc).isoformat())
+            if meta["tipo"] == "reels":
+                try:
+                    import tiktok
+                    if tiktok.conectado():
+                        item["tiktok_id"] = tiktok.publicar(pasta / "video.mp4", meta.get("legenda", ""))
+                        tg("sendMessage", chat_id=CHAT, text=f"🎵 {nome} enviado ao TikTok"
+                           + (" (privado até a auditoria do TikTok)" if tiktok.PRIVACIDADE == "SELF_ONLY" else "") + ".")
+                except Exception as e:
+                    tg("sendMessage", chat_id=CHAT, text=f"⚠️ TikTok falhou para {nome}: {str(e)[:300]}")
             try:
                 tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"], reply_markup={"inline_keyboard": []})
             except Exception:
