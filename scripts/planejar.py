@@ -138,6 +138,7 @@ Exemplo de carrossel: {json.dumps(EXEMPLO_CARROSSEL, ensure_ascii=False)}"""
     rascunho = gemini(regras, 1.0)
     revisao = f"""Você é o diretor criativo exigente da Seraphim. Abaixo está o rascunho do conteúdo do dia.
 Revise CADA post com olhar crítico e devolva a versão MELHORADA no mesmo formato JSON:
+- corrija ortografia, palavras repetidas e frases estranhas (leia em voz alta mentalmente);
 - troque ganchos fracos por ganchos que prendem; corte palavras inúteis; deixe a narração natural, falada;
 - garanta que nenhum post se pareça com outro do dia nem com estes temas já usados: {json.dumps(usados[-80:], ensure_ascii=False)};
 - confira todas as regras: linhas curtas em maiúsculas com 1 *destaque*, pontuação colada, 5-7 cenas, cta final variado, 55-95 palavras de narração;

@@ -71,13 +71,9 @@ Responda SÓ um JSON com as chaves (todas opcionais, omita o que ele não pediu)
 "quando": "AAAA-MM-DD HH:MM" se ele pediu horário (hoje é {datetime.now(BRT):%Y-%m-%d})
 "legenda": a legenda do post do Instagram (curta, com CTA e 3-5 hashtags), se ele pediu ou deu o texto
 "pedidos_extras": texto com o que ele pediu e o sistema não faz sozinho (ex.: trocar roupa, adicionar relógio)"""
-    corpo = json.dumps({"contents": [{"parts": [{"text": instr}]}],
-                        "generationConfig": {"responseMimeType": "application/json"}}).encode()
-    req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
-                                 data=corpo, headers={"x-goog-api-key": chave, "Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        txt = json.loads(r.read())["candidates"][0]["content"]["parts"][0]["text"]
-    d = json.loads(txt)
+    import planejar
+    d = planejar.gemini(instr, 0.4)
+    txt = None
     if d.get("cenario_novo"):
         import gerar_cenario
         try:
