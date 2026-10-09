@@ -194,8 +194,9 @@ def processar_respostas(estado: dict):
                     import tiktok
                     if tiktok.conectado():
                         item["tiktok_id"] = tiktok.publicar(pasta / "video.mp4", meta.get("legenda", ""))
-                        tg("sendMessage", chat_id=CHAT, text=f"🎵 {nome} enviado ao TikTok"
-                           + (" (privado até a auditoria do TikTok)" if tiktok.PRIVACIDADE == "SELF_ONLY" else "") + ".")
+                        tg("sendMessage", chat_id=CHAT, text=(
+                            f"🎵 {nome} está nos RASCUNHOS do TikTok. Abra o app (notificação/caixa de entrada) e toque em Publicar."
+                            if tiktok.MODO == "rascunho" else f"🎵 {nome} publicado no TikTok."))
                 except Exception as e:
                     tg("sendMessage", chat_id=CHAT, text=f"⚠️ TikTok falhou para {nome}: {str(e)[:300]}")
             try:

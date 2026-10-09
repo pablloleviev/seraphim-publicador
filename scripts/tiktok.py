@@ -73,16 +73,28 @@ def _json(url, corpo, at):
         raise RuntimeError(f"{e.code} {e.read().decode()[:400]}")
 
 
+MODO = ""
+
+
 def publicar(video: Path, legenda: str) -> str:
     at = token()
     tam = video.stat().st_size
     pedaco = tam if tam <= 64 * 1024 * 1024 else 10 * 1024 * 1024
     n = 1 if pedaco == tam else tam // pedaco
-    init = _json(f"{API}/v2/post/publish/video/init/", {
-        "post_info": {"title": legenda[:2200], "privacy_level": PRIVACIDADE,
-                      "disable_duet": False, "disable_comment": False, "disable_stitch": False},
-        "source_info": {"source": "FILE_UPLOAD", "video_size": tam, "chunk_size": pedaco, "total_chunk_count": n},
-    }, at)
+    fonte = {"source": "FILE_UPLOAD", "video_size": tam, "chunk_size": pedaco, "total_chunk_count": n}
+    global MODO
+    try:
+        init = _json(f"{API}/v2/post/publish/video/init/", {
+            "post_info": {"title": legenda[:2200], "privacy_level": PRIVACIDADE,
+                          "disable_duet": False, "disable_comment": False, "disable_stitch": False},
+            "source_info": fonte}, at)
+        MODO = "direto"
+    except RuntimeError as e:
+        if "unaudited_client" not in str(e):
+            raise
+        # app ainda sem auditoria: manda como RASCUNHO para a caixa de entrada do TikTok
+        init = _json(f"{API}/v2/post/publish/inbox/video/init/", {"source_info": fonte}, at)
+        MODO = "rascunho"
     if init.get("error", {}).get("code") not in (None, "ok"):
         raise RuntimeError(f"TikTok: {init['error']}")
     pub_id, url = init["data"]["publish_id"], init["data"]["upload_url"]
@@ -98,7 +110,7 @@ def publicar(video: Path, legenda: str) -> str:
     for _ in range(60):
         st = _json(f"{API}/v2/post/publish/status/fetch/", {"publish_id": pub_id}, at)
         s = st.get("data", {}).get("status")
-        if s == "PUBLISH_COMPLETE":
+        if s in ("PUBLISH_COMPLETE", "SEND_TO_USER_INBOX"):
             return pub_id
         if s == "FAILED":
             raise RuntimeError(f"TikTok recusou o vídeo: {st['data'].get('fail_reason')}")
