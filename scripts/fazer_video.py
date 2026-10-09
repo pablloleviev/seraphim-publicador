@@ -80,11 +80,12 @@ def voz_elevenlabs(texto, destino):
     return palavras
 
 
-def voz_edge(texto, destino):
+def voz_edge(texto, destino, voz=None):
     import edge_tts
+    voz = voz or os.environ.get("EDGE_VOICE", "pt-BR-ThalitaMultilingualNeural")
 
     async def run():
-        com = edge_tts.Communicate(texto, "pt-BR-AntonioNeural", rate="+6%", boundary="WordBoundary")
+        com = edge_tts.Communicate(texto, voz, rate="+8%", boundary="WordBoundary")
         palavras = []
         with open(destino, "wb") as f:
             async for ch in com.stream():
@@ -95,6 +96,86 @@ def voz_edge(texto, destino):
                     palavras.append({"w": ch["text"], "s": s, "e": s + ch["duration"] / 1e7})
         return palavras
     return asyncio.run(run())
+
+
+# ---------- Gemini (Google) ----------
+GEMINI_MODELOS = ["gemini-2.5-flash-preview-tts", "gemini-2.5-flash-tts", "gemini-2.5-pro-preview-tts"]
+
+
+def voz_gemini(texto, destino):
+    import urllib.request, urllib.error
+    chave = os.environ.get("GEMINI_API_KEY")
+    if not chave:
+        raise RuntimeError("GEMINI_API_KEY não encontrada")
+    estilo = os.environ.get("GEMINI_ESTILO",
+        "Fale em português do Brasil, como um criador de conteúdo animado e confiante, ritmo rápido de Reels, "
+        "natural e envolvente, enfatizando as palavras-chave")
+    corpo = json.dumps({
+        "contents": [{"parts": [{"text": f"{estilo}:\n\n{texto}"}]}],
+        "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {
+            "prebuiltVoiceConfig": {"voiceName": os.environ.get("GEMINI_VOZ", "Puck")}}}},
+    }).encode()
+    erro = None
+    for modelo in GEMINI_MODELOS:
+        req = urllib.request.Request(
+            f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
+            data=corpo, headers={"x-goog-api-key": chave, "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                dados = json.loads(r.read())
+            break
+        except urllib.error.HTTPError as e:
+            erro = f"{modelo}: {e.code} {e.read().decode()[:300]}"
+    else:
+        raise RuntimeError(erro)
+    pcm = base64.b64decode(dados["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
+    raw = Path(destino).with_suffix(".pcm"); raw.write_bytes(pcm)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", "24000", "-ac", "1", "-i", str(raw),
+                    "-b:a", "160k", str(destino)], check=True)
+    raw.unlink()
+    return alinhar(texto, destino)
+
+
+def alinhar(texto, audio):
+    """Descobre quando cada palavra do roteiro é falada (ouvindo o áudio com Whisper)."""
+    import difflib, unicodedata
+    from faster_whisper import WhisperModel
+    modelo = WhisperModel(os.environ.get("WHISPER_MODELO", "small"), device="cpu", compute_type="int8")
+    segs, _ = modelo.transcribe(str(audio), language="pt", word_timestamps=True, vad_filter=False)
+    ouvidas = [w for s in segs for w in s.words]
+    norm = lambda w: re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKD", w.lower()).encode("ascii", "ignore").decode())
+    roteiro = texto.split()
+    a, b = [norm(w) for w in roteiro], [norm(w.word) for w in ouvidas]
+    tempos = [None] * len(roteiro)
+    for blk in difflib.SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks():
+        for k in range(blk.size):
+            w = ouvidas[blk.b + k]; tempos[blk.a + k] = (w.start, w.end)
+    # preenche as que não casaram, interpolando entre vizinhas
+    fim_total = ouvidas[-1].end if ouvidas else duracao_audio(audio)
+    i = 0
+    while i < len(tempos):
+        if tempos[i] is None:
+            j = i
+            while j < len(tempos) and tempos[j] is None: j += 1
+            ini = tempos[i - 1][1] if i > 0 else 0.0
+            fim = tempos[j][0] if j < len(tempos) else fim_total
+            passo = max(fim - ini, 0.05) / (j - i)
+            for k in range(i, j): tempos[k] = (ini + passo * (k - i), ini + passo * (k - i + 1))
+            i = j
+        else:
+            i += 1
+    return [{"w": w, "s": t[0], "e": t[1]} for w, t in zip(roteiro, tempos)]
+
+
+def tratar_audio(mp3):
+    """Acabamento de estúdio: tira grave sujo, dá presença, comprime e nivela volume."""
+    tmp = mp3.with_name("voz_tratada.mp3")
+    filtro = ("highpass=f=80,equalizer=f=200:t=q:w=1:g=-2,equalizer=f=3500:t=q:w=1.2:g=3,"
+              "equalizer=f=9000:t=h:w=1:g=2,acompressor=threshold=-18dB:ratio=3:attack=5:release=80:makeup=3,"
+              "loudnorm=I=-14:TP=-1.5:LRA=7")
+    r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(mp3), "-af", filtro, "-ar", "44100", "-b:a", "192k", str(tmp)])
+    if r.returncode == 0:
+        tmp.replace(mp3)
 
 
 def voz_estimada(texto):
@@ -109,7 +190,7 @@ def voz_estimada(texto):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("roteiro")
-    ap.add_argument("--voz", default="elevenlabs", choices=["elevenlabs", "edge", "nenhuma"])
+    ap.add_argument("--voz", default="elevenlabs", choices=["elevenlabs", "gemini", "edge", "edge-antonio", "nenhuma"])
     ap.add_argument("--saida", default=None, help="caminho do mp4 final")
     args = ap.parse_args()
     carregar_env()
@@ -129,10 +210,15 @@ def main():
     audio, palavras = None, []
     mp3 = JOB / "voz.mp3"
     if args.voz != "nenhuma" and texto:
-        ordem = ["elevenlabs", "edge"] if args.voz == "elevenlabs" else ["edge"]
+        ordem = {"elevenlabs": ["elevenlabs", "gemini", "edge"], "gemini": ["gemini", "edge"]}.get(args.voz, [args.voz])
+        funcs = {"elevenlabs": voz_elevenlabs, "gemini": voz_gemini, "edge": voz_edge,
+                 "edge-antonio": lambda t, d: voz_edge(t, d, "pt-BR-AntonioNeural")}
         for motor_voz in ordem:
             try:
-                palavras = voz_elevenlabs(texto, mp3) if motor_voz == "elevenlabs" else voz_edge(texto, mp3)
+                palavras = funcs[motor_voz](texto, mp3)
+                if not palavras:
+                    palavras = alinhar(texto, mp3)
+                tratar_audio(mp3)
                 audio = "job/voz.mp3"; print(f"Voz: {motor_voz} ({len(palavras)} palavras)"); break
             except Exception as e:
                 print(f"[aviso] voz {motor_voz} falhou: {e}")

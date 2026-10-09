@@ -29,18 +29,19 @@ jobs:
       - name: Instalar ferramentas
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji
-          pip install -q edge-tts
+          pip install -q edge-tts faster-whisper
           cd motor && npm ci --no-audit --no-fund
       - name: Fazer vídeos
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/gerar_videos.py
       - name: Salvar na fila
         run: |
           git config user.name "seraphim-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A fila pedidos
+          git add -A .
           git diff --cached --quiet && exit 0
           git commit -m "vídeo gerado e colocado na fila"
           for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
