@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630205,
+  "telegram_offset": 183630206,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -9,9 +9,23 @@
       "publicado_em": "2026-10-09T09:14:21.282696+00:00"
     },
     "2026-10-09_0638_video-3-sinais": {
-      "status": "aguardando",
+      "status": "publicado",
       "msg_id": 14,
-      "enviado_em": "2026-10-09T15:18:23.922049+00:00"
+      "enviado_em": "2026-10-09T15:18:23.922049+00:00",
+      "ig_id": "17904518802571185",
+      "publicado_em": "2026-10-09T17:32:30.068167+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "seraphimtech",
+          "creator_username": "seraphimtech"
+        },
+        "msg_id": 18
+      }
     },
     "2026-10-09_1201_1009-teste": {
       "status": "aguardando",
