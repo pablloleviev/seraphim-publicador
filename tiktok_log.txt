@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/tiktok.py", line 115, in <module>
+    autorizar(urllib.parse.unquote(sys.argv[2].strip()))
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/tiktok.py", line 51, in autorizar
+    raise RuntimeError(f"TikTok recusou: {tok}")
+RuntimeError: TikTok recusou: {'error': 'invalid_grant', 'error_description': 'Authorization code=*** is expired.', 'log_id': '20261009234504AE93FA3D2298E27FAFCE'}
+---
+Fri Oct  9 15:45:04 UTC 2026
