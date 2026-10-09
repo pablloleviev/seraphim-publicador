@@ -2,3 +2,4 @@ __pycache__/
 node_modules
 motor/public/job/
 *.pcm
+gravacoes/*.mp4

@@ -1,6 +1,8 @@
 name: Cinema (gravação -> plano cinematográfico)
 
 on:
+  schedule:
+    - cron: "7,22,37,52 * * * *"   # olha a pasta do Drive a cada 15 min
   push:
     paths: ["gravacoes/**.json"]
   workflow_dispatch:
@@ -21,17 +23,26 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+      - name: Buscar vídeos novos no Drive
+        id: drive
+        env:
+          DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: python3 scripts/buscar_drive.py
       - uses: actions/setup-node@v4
+        if: ${{ (github.event_name != 'schedule' || steps.drive.outputs.novos != '0') }}
         with:
           node-version: "22"
           cache: npm
           cache-dependency-path: motor/package-lock.json
       - uses: actions/setup-python@v5
+        if: ${{ (github.event_name != 'schedule' || steps.drive.outputs.novos != '0') }}
         with:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: .github/workflows/cinema.yml
       - name: Instalar
+        if: ${{ (github.event_name != 'schedule' || steps.drive.outputs.novos != '0') }}
         run: |
           which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
           pip install -q --index-url https://download.pytorch.org/whl/cpu torch torchvision
@@ -72,7 +83,7 @@ jobs:
           python scripts/fazer_gravacao.py 2>&1 | tee amostras/cinema/log.txt
           rm -f cenarios/teste.jpg
       - name: Processar gravações enviadas
-        if: ${{ github.event.inputs.video_url == '' }}
+        if: ${{ github.event.inputs.video_url == '' && (github.event_name != 'schedule' || steps.drive.outputs.novos != '0') }}
         run: python scripts/fazer_gravacao.py
       - name: Salvar
         run: |
