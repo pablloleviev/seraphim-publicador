@@ -3,6 +3,6 @@ Traceback (most recent call last):
     autorizar(urllib.parse.unquote(sys.argv[2].strip()))
   File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/tiktok.py", line 51, in autorizar
     raise RuntimeError(f"TikTok recusou: {tok}")
-RuntimeError: TikTok recusou: {'error': 'invalid_client', 'error_description': 'Client key does not match authorization record.', 'log_id': '20261009234856D1717626ADA6666A21A0'}
+RuntimeError: TikTok recusou: {'error': 'invalid_grant', 'error_description': 'Authorization code=*** is expired.', 'log_id': '202610092354247932A3BB7F088DD680BD'}
 ---
-Fri Oct  9 15:48:56 UTC 2026
+Fri Oct  9 15:54:24 UTC 2026
