@@ -262,7 +262,7 @@ def main():
 
     saida = Path(args.saida).resolve() if args.saida else RAIZ / "entrega" / "videos" / f"{nome}.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
-    cmd = f'npx remotion render src/index.ts Seraphim "{saida}" --props=public/job/props.json --log=error --codec=h264 --crf=14 --jpeg-quality=95 --pixel-format=yuv420p --audio-bitrate=192k'
+    cmd = f'npx remotion render src/index.ts Seraphim "{saida}" --props=public/job/props.json --log=error --codec=h264 --crf=19 --jpeg-quality=92 --x264-preset=slow --pixel-format=yuv420p --audio-bitrate=192k'
     if os.environ.get("CHROME_PATH"):
         cmd += f' --browser-executable="{os.environ["CHROME_PATH"]}"'
     print("Editando no motor Remotion... (alguns minutos)")

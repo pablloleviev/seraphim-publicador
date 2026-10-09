@@ -78,10 +78,8 @@ def processar(pedido: Path):
     quando = datetime.strptime(spec["quando"], "%Y-%m-%d %H:%M") if spec.get("quando") else datetime.now(BRT).replace(tzinfo=None)
     destino = (RAIZ / "amostras" / nome) if amostra else RAIZ / "fila" / f"{quando:%Y-%m-%d_%H%M}_{nome}"
     destino.mkdir(parents=True, exist_ok=True)
-    if amostra:
-        shutil.copy(tratado, destino / "so_cinema.mp4")
     subprocess.run(f'npx remotion render src/index.ts Seraphim "{destino / "video.mp4"}" --props=public/job/props.json '
-                   f'--log=error --codec=h264 --crf=14 --jpeg-quality=95 --pixel-format=yuv420p --audio-bitrate=192k',
+                   f'--log=error --codec=h264 --crf=19 --jpeg-quality=92 --x264-preset=slow --pixel-format=yuv420p --audio-bitrate=192k',
                    cwd=MOTOR, shell=True, check=True)
     if not amostra:
         (destino / "item.json").write_text(json.dumps({"tipo": "reels", "legenda": spec.get("legenda", ""),

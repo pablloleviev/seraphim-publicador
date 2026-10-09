@@ -93,7 +93,7 @@ def main():
                             "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
     tmp = Path(a.saida).with_suffix(".sem_audio.mp4")
     gravar = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
-                               "-s", f"{W}x{H}", "-r", f"{fps}", "-i", "-", "-c:v", "libx264", "-crf", "14",
+                               "-s", f"{W}x{H}", "-r", f"{fps}", "-i", "-", "-c:v", "libx264", "-crf", "16",
                                "-preset", "slow", "-pix_fmt", "yuv420p", str(tmp)], stdin=subprocess.PIPE)
     rec = [None] * 4
     n = 0
