@@ -2,7 +2,7 @@ name: Publicador Seraphim
 
 on:
   schedule:
-    - cron: "*/15 * * * *"   # a cada 15 minutos (horário UTC)
+    - cron: "5 * * * *"      # de hora em hora; cada execução fica ~50 min ouvindo o Telegram
   workflow_dispatch: {}       # botão "Run workflow" para rodar na hora
 
 permissions:
@@ -15,6 +15,7 @@ concurrency:
 jobs:
   publicar:
     runs-on: ubuntu-latest
+    timeout-minutes: 58
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

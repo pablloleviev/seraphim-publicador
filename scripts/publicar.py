@@ -150,15 +150,45 @@ def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
         slides = sorted(pasta.glob("slide-*.jpg"))[:10]
         midia = [{"type": "photo", "media": url_publica(s)} for s in slides]
         tg("sendMediaGroup", chat_id=CHAT, media=midia)
-    texto = (f"📌 *{nome}*\nTipo: {meta['tipo']}\n\n{meta.get('legenda','')[:800]}\n\n"
-             + (f"⚠️ Não feito automaticamente: {meta['nota']}\n\n" if meta.get("nota") else "")
-             + "Publicar no Instagram?")
-    msg = tg("sendMessage", chat_id=CHAT, text=texto, parse_mode="Markdown",
-             reply_markup={"inline_keyboard": [[
-                 {"text": "✅ Publicar", "callback_data": f"ok|{nome}"},
-                 {"text": "❌ Pular", "callback_data": f"no|{nome}"}]]})
-    estado["itens"][nome] = {"status": "aguardando", "msg_id": msg["result"]["message_id"],
-                             "enviado_em": datetime.now(timezone.utc).isoformat()}
+    item = {"status": "aguardando", "enviado_em": datetime.now(timezone.utc).isoformat()}
+    redes = "Instagram"
+    if meta["tipo"] == "reels":
+        try:
+            import tiktok
+            if tiktok.conectado():
+                info = tiktok.criador()
+                item["tiktok"] = {"opcoes": info.get("privacy_level_options") or list(tiktok.NOMES_PRIV),
+                                  "info": {k: info.get(k) for k in ("creator_nickname", "creator_username")}}
+                redes = "Instagram + TikTok"
+        except Exception as e:
+            print(f"[aviso] TikTok indisponível: {e}")
+    texto = (f"📌 *{nome}*\nTipo: {meta['tipo']}  •  Vai para: *{redes}*\n\n{meta.get('legenda','')[:800]}\n\n"
+             + (f"⚠️ Não feito automaticamente: {meta['nota']}\n\n" if meta.get("nota") else ""))
+    if item.get("tiktok"):
+        i = item["tiktok"]["info"]
+        texto += (f"🎵 TikTok: *{i.get('creator_nickname')}* (@{i.get('creator_username')})\n"
+                  f"Escolha quem pode ver no TikTok e toque em ✅ Publicar.\n"
+                  f"_Ao publicar, você concorda com a Confirmação de Uso de Música do TikTok._")
+    else:
+        texto += "Publicar?"
+    msg = tg("sendMessage", chat_id=CHAT, text=texto, parse_mode="Markdown", disable_web_page_preview="true",
+             reply_markup=teclado(nome, item))
+    item["msg_id"] = msg["result"]["message_id"]
+    estado["itens"][nome] = item
+
+
+def teclado(nome, item):
+    linhas = []
+    tt = item.get("tiktok")
+    if tt:
+        priv = [{"text": ("✔️ " if tt.get("priv") == o else "") + tiktok_nome(o), "callback_data": f"ttp:{o}|{nome}"}
+                for o in tt["opcoes"]]
+        linhas += [priv[i:i + 3] for i in range(0, len(priv), 3)]
+        chave = lambda k, rot: {"text": ("☑️ " if tt.get(k, True) else "⬜ ") + rot, "callback_data": f"ttt:{k}|{nome}"}
+        linhas.append([chave("com", "Comentários"), chave("due", "Dueto"), chave("cos", "Costura")])
+    linhas.append([{"text": "✅ Publicar", "callback_data": f"ok|{nome}"},
+                   {"text": "❌ Pular", "callback_data": f"no|{nome}"}])
+    return {"inline_keyboard": linhas}
 
 
 # ---------- TikTok (tela exigida pelas regras do TikTok) ----------
@@ -234,7 +264,7 @@ def tratar_tiktok(acao, nome, estado):
 
 
 def tiktok_pendente(estado):
-    return any(i.get("tiktok") and not i["tiktok"].get("feito") for i in estado["itens"].values())
+    return False  # tela única: não precisa mais ficar ouvindo
 
 
 def processar_respostas(estado: dict, espera: int = 0):
@@ -249,8 +279,20 @@ def processar_respostas(estado: dict, espera: int = 0):
             continue
         acao, nome = cq["data"].split("|", 1)
         if acao.startswith("tt"):
-            responder(cq["id"], "Ok")
-            tratar_tiktok(acao, nome, estado)
+            item = estado["itens"].get(nome) or {}
+            tt = item.get("tiktok")
+            if tt and item.get("status") == "aguardando":
+                if acao.startswith("ttp:"):
+                    tt["priv"] = acao[4:]
+                elif acao.startswith("ttt:"):
+                    tt[acao[4:]] = not tt.get(acao[4:], True)
+                responder(cq["id"], "Ok")
+                try:
+                    tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"], reply_markup=teclado(nome, item))
+                except Exception:
+                    pass
+            else:
+                responder(cq["id"], "Esse post já foi resolvido.")
             continue
         item = estado["itens"].get(nome)
         if not item or item["status"] != "aguardando":
@@ -263,24 +305,35 @@ def processar_respostas(estado: dict, espera: int = 0):
             tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"], reply_markup={"inline_keyboard": []})
             tg("sendMessage", chat_id=CHAT, text=f"❌ {nome} pulado.")
             continue
+        tt = item.get("tiktok")
+        if tt and not tt.get("priv"):
+            responder(cq["id"], "Escolha primeiro quem pode ver no TikTok")
+            tg("sendMessage", chat_id=CHAT, text="⚠️ Escolha quem pode ver no TikTok (🌍 / 👥 / 🔒) e toque em ✅ de novo.")
+            continue
         responder(cq["id"], "Publicando...")
-        tg("sendMessage", chat_id=CHAT, text=f"⏳ Publicando {nome} no Instagram...")
+        tg("sendMessage", chat_id=CHAT, text=f"⏳ Publicando {nome}...")
         try:
             meta = json.loads((pasta / "item.json").read_text(encoding="utf-8"))
             pid = publicar_instagram(pasta, meta)
             item.update(status="publicado", ig_id=pid, publicado_em=datetime.now(timezone.utc).isoformat())
             if meta["tipo"] == "reels":
-                try:
-                    import tiktok
-                    if tiktok.conectado():
-                        tela_tiktok(nome, meta, item)
-                except Exception as e:
-                    tg("sendMessage", chat_id=CHAT, text=f"⚠️ TikTok falhou para {nome}: {str(e)[:300]}")
+                if tt:
+                    try:
+                        import tiktok
+                        tt["id"] = tiktok.publicar(pasta / "video.mp4", meta.get("legenda", ""), tt["priv"],
+                                                   tt.get("com", True), tt.get("due", True), tt.get("cos", True))
+                        tt["feito"] = tiktok.MODO
+                    except Exception as e:
+                        tt["erro"] = str(e)[:300]
             try:
                 tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"], reply_markup={"inline_keyboard": []})
             except Exception:
                 pass
-            tg("sendMessage", chat_id=CHAT, text=f"✅ {nome} publicado no Instagram!")
+            res = f"✅ {nome}\n• Instagram: publicado"
+            if tt:
+                res += ("\n• TikTok: " + ("está na caixa de entrada do app — abra o TikTok e toque em Publicar (até a auditoria ser aprovada)"
+                        if tt.get("feito") == "rascunho" else "publicado" if tt.get("feito") else f"falhou ({tt.get('erro')})"))
+            tg("sendMessage", chat_id=CHAT, text=res)
         except Exception as e:
             item["status"] = "aguardando"
             tg("sendMessage", chat_id=CHAT, text=f"⚠️ Erro ao publicar {nome}: {str(e)[:300]}\nToque em ✅ de novo para tentar outra vez.")
@@ -303,23 +356,30 @@ def main():
         processar_respostas(estado)
         salvar_estado(estado)
         sys.exit("Falta TELEGRAM_CHAT_ID. Mande uma mensagem para o bot e veja o CHAT_ID acima no log.")
-    processar_respostas(estado)
-    # enquanto houver uma tela do TikTok aberta, fica ouvindo os toques (até ~8 min) para responder na hora
-    fim = time.time() + 480
-    while tiktok_pendente(estado) and time.time() < fim:
+    # fica ligado ~50 min ouvindo o Telegram (resposta quase instantânea aos botões)
+    # e mandando os posts que vencerem; o agendamento de hora em hora emenda o próximo ciclo
+    fim = time.time() + int(os.environ.get("MINUTOS_OUVINDO", "50")) * 60
+    ultimo_pull = time.time()
+    while True:
+        processar_respostas(estado, espera=0 if time.time() >= fim else 25)
+        if os.environ.get("GITHUB_ACTIONS") and time.time() - ultimo_pull > 120:
+            # puxa vídeos/carrosséis novos que entraram na fila enquanto este ciclo está ligado
+            salvar_estado(estado)
+            import subprocess
+            subprocess.run("git pull -q --rebase --autostash", shell=True, cwd=RAIZ)
+            ultimo_pull = time.time()
+        agora = datetime.now(timezone.utc)
+        for pasta, meta in itens_da_fila():
+            if pasta.name in estado["itens"]:
+                continue
+            if datetime.fromisoformat(meta["quando"]) <= agora:
+                try:
+                    enviar_para_aprovacao(pasta, meta, estado)
+                except Exception as e:
+                    print(f"[erro] não consegui enviar {pasta.name}: {e}")
         salvar_estado(estado)
-        processar_respostas(estado, espera=25)
-    agora = datetime.now(timezone.utc)
-    for pasta, meta in itens_da_fila():
-        if pasta.name in estado["itens"]:
-            continue
-        quando = datetime.fromisoformat(meta["quando"])
-        if quando <= agora:
-            try:
-                enviar_para_aprovacao(pasta, meta, estado)
-            except Exception as e:
-                print(f"[erro] não consegui enviar {pasta.name}: {e}")
-    salvar_estado(estado)
+        if time.time() >= fim:
+            break
 
 
 if __name__ == "__main__":
