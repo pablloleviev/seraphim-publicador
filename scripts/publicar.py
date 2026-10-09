@@ -49,6 +49,13 @@ def tg(metodo, **dados):
     return http(f"https://api.telegram.org/bot{TG}/{metodo}", dados)
 
 
+def responder(cq_id, texto):
+    try:
+        tg("answerCallbackQuery", callback_query_id=cq_id, text=texto)
+    except Exception:
+        pass  # clique antigo (>15 min): o Telegram não aceita mais resposta, tudo bem
+
+
 def url_publica(caminho: Path):
     rel = caminho.relative_to(RAIZ).as_posix()
     return f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{urllib.parse.quote(rel)}"
@@ -146,21 +153,25 @@ def processar_respostas(estado: dict):
         acao, nome = cq["data"].split("|", 1)
         item = estado["itens"].get(nome)
         if not item or item["status"] != "aguardando":
-            tg("answerCallbackQuery", callback_query_id=cq["id"], text="Esse post já foi resolvido.")
+            responder(cq["id"], "Esse post já foi resolvido.")
             continue
         pasta = FILA / nome
         if acao == "no":
             item["status"] = "pulado"
-            tg("answerCallbackQuery", callback_query_id=cq["id"], text="Pulado.")
+            responder(cq["id"], "Pulado.")
             tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"], reply_markup={"inline_keyboard": []})
             tg("sendMessage", chat_id=CHAT, text=f"❌ {nome} pulado.")
             continue
-        tg("answerCallbackQuery", callback_query_id=cq["id"], text="Publicando...")
+        responder(cq["id"], "Publicando...")
+        tg("sendMessage", chat_id=CHAT, text=f"⏳ Publicando {nome} no Instagram...")
         try:
             meta = json.loads((pasta / "item.json").read_text(encoding="utf-8"))
             pid = publicar_instagram(pasta, meta)
             item.update(status="publicado", ig_id=pid, publicado_em=datetime.now(timezone.utc).isoformat())
-            tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"], reply_markup={"inline_keyboard": []})
+            try:
+                tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"], reply_markup={"inline_keyboard": []})
+            except Exception:
+                pass
             tg("sendMessage", chat_id=CHAT, text=f"✅ {nome} publicado no Instagram!")
         except Exception as e:
             item["status"] = "aguardando"
