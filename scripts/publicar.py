@@ -57,6 +57,25 @@ def responder(cq_id, texto):
         pass  # clique antigo (>15 min): o Telegram não aceita mais resposta, tudo bem
 
 
+def tg_arquivo(metodo, campo, caminho: Path, **dados):
+    """Envia arquivo direto (até 50 MB), sem depender do limite de 20 MB do envio por link."""
+    import uuid
+    b = uuid.uuid4().hex
+    partes = []
+    for k, v in dados.items():
+        partes.append(f"--{b}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n".encode())
+    partes.append(f"--{b}\r\nContent-Disposition: form-data; name=\"{campo}\"; filename=\"{caminho.name}\"\r\n"
+                  f"Content-Type: video/mp4\r\n\r\n".encode() + caminho.read_bytes() + b"\r\n")
+    partes.append(f"--{b}--\r\n".encode())
+    req = urllib.request.Request(f"https://api.telegram.org/bot{TG}/{metodo}", data=b"".join(partes),
+                                 headers={"Content-Type": f"multipart/form-data; boundary={b}"})
+    try:
+        with urllib.request.urlopen(req, timeout=300) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"{e.code} {e.read().decode()[:300]}")
+
+
 def url_publica(caminho: Path):
     rel = caminho.relative_to(RAIZ).as_posix()
     return f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{urllib.parse.quote(rel)}"
@@ -126,7 +145,7 @@ def publicar_instagram(pasta: Path, meta: dict) -> str:
 def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
     nome = pasta.name
     if meta["tipo"] == "reels":
-        tg("sendVideo", chat_id=CHAT, video=url_publica(pasta / "video.mp4"))
+        tg_arquivo("sendVideo", "video", pasta / "video.mp4", chat_id=CHAT, supports_streaming="true")
     else:
         slides = sorted(pasta.glob("slide-*.jpg"))[:10]
         midia = [{"type": "photo", "media": url_publica(s)} for s in slides]
@@ -213,7 +232,10 @@ def main():
             continue
         quando = datetime.fromisoformat(meta["quando"])
         if quando <= agora:
-            enviar_para_aprovacao(pasta, meta, estado)
+            try:
+                enviar_para_aprovacao(pasta, meta, estado)
+            except Exception as e:
+                print(f"[erro] não consegui enviar {pasta.name}: {e}")
     salvar_estado(estado)
 
 
