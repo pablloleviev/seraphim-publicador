@@ -50,7 +50,7 @@ jobs:
           cp /tmp/t/in12.mp4 gravacoes/teste.mp4; cp /tmp/t/bg.jpg cenarios/teste.jpg
           echo '{"nome":"cinema","video":"gravacoes/teste.mp4","cenario":"cenarios/teste.jpg","amostra":true,"titulo":["SUA OFICINA","ESTÁ *PERDENDO*","*DINHEIRO?*"],"insercoes":[{"inicio":6,"fim":8.5,"modelo":"numero","numero":"01","linhas":["COBRA NO","*ACHÔMETRO*"]}]}' > gravacoes/teste.json
           ffmpeg -v error -y -i /tmp/t/in12.mp4 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" -an amostras/cinema/original.mp4
-          python scripts/fazer_gravacao.py
+          python scripts/fazer_gravacao.py 2>&1 | tee amostras/cinema/log.txt
           rm -f cenarios/teste.jpg
       - name: Processar gravações enviadas
         if: ${{ github.event.inputs.video_url == '' }}

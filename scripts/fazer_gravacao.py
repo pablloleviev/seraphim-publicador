@@ -46,6 +46,7 @@ def processar(pedido: Path):
     bruto = RAIZ / spec["video"]
     shutil.rmtree(JOB, ignore_errors=True); JOB.mkdir(parents=True)
     tratado = JOB / "gravacao.mp4"
+    print("1/3 tratamento cinematográfico...", flush=True)
     subprocess.run([sys.executable, str(RAIZ / "scripts" / "cinema.py"), str(bruto), str(RAIZ / spec["cenario"]),
                     str(tratado), "--estilo", spec.get("estilo", "dourado")], check=True)
     dur = duracao(tratado)
@@ -84,5 +85,5 @@ if __name__ == "__main__":
     for p in sorted((RAIZ / "gravacoes").glob("*.json")):
         try:
             processar(p)
-        except Exception as e:
-            print(f"[erro] {p.name}: {e}")
+        except Exception:
+            import traceback; traceback.print_exc()
