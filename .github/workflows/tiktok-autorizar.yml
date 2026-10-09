@@ -14,7 +14,7 @@ jobs:
           TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
           TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
         run: |
-          pip install -q cryptography
+          pip install -q --break-system-packages cryptography
           python scripts/tiktok.py autorizar "${{ github.event.inputs.code }}"
       - run: |
           git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
