@@ -6,6 +6,7 @@ Campos extras do roteiro (além dos de fazer_video.py):
   "quando": "2026-10-12 18:00"   (horário de Brasília; se faltar, vai para aprovação na hora)
   "voz": "elevenlabs" | "gemini" | "edge" | "edge-antonio"  (padrão: a melhor com chave disponível)
   "genero_voz": "masculina" | "feminina"  (voz do Gemini; padrão masculina)
+  "genero_voz": "masculina" | "feminina"   (padrão: masculina)
   "amostra": true                 (não vai para a fila; fica em amostras/ para comparar)
 """
 import json, os, subprocess, sys

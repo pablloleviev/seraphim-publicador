@@ -102,6 +102,7 @@ def voz_edge(texto, destino, voz=None):
 # vozes do Gemini: masculina = Charon (grave, segura) | feminina = Kore (firme, clara)
 VOZES_GEMINI = {"masculina": "Charon", "feminina": "Kore"}
 GEMINI_VOZ_ATUAL = os.environ.get("GEMINI_VOZ", "Charon")
+VOZES_GEMINI = {"masculina": "Puck", "feminina": "Zephyr"}
 GEMINI_MODELOS = ["gemini-2.5-flash-preview-tts", "gemini-2.5-flash-tts", "gemini-2.5-pro-preview-tts"]
 
 
@@ -203,6 +204,7 @@ def main():
     carregar_env()
 
     spec = json.loads(Path(args.roteiro).read_text(encoding="utf-8"))
+    os.environ["GENERO_VOZ"] = spec.get("genero_voz", "masculina")
     global GEMINI_VOZ_ATUAL
     g = spec.get("genero_voz")  # "masculina" | "feminina" | nome de voz do Gemini
     if g:
