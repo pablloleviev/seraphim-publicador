@@ -46,6 +46,8 @@ jobs:
           "
           cd motor && npm ci --no-audit --no-fund
       - name: Teste com URLs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         if: ${{ github.event.inputs.video_url != '' }}
         run: |
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
@@ -55,6 +57,15 @@ jobs:
           ffprobe -v error -show_entries format=duration:stream=width,height -of csv=p=0 /tmp/t/in.mp4
           ffmpeg -v error -y -i /tmp/t/in.mp4 -t 12 -c copy /tmp/t/in12.mp4
           mkdir -p gravacoes cenarios
+          if ! ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 /tmp/t/in12.mp4 | grep -q .; then
+            echo "clipe sem som: colocando narração de teste (Gemini)"
+            pip install -q edge-tts
+            python -c "
+          import sys; sys.path.insert(0,'scripts'); import fazer_video as f
+          f.voz_gemini('Sua oficina pode estar perdendo dinheiro agora mesmo. E o pior: você nem percebe. Primeiro: você cobra no achômetro.', '/tmp/t/voz.mp3')
+          "
+            ffmpeg -v error -y -i /tmp/t/in12.mp4 -i /tmp/t/voz.mp3 -map 0:v -map 1:a -c:v copy -c:a aac -shortest /tmp/t/com_som.mp4 && mv /tmp/t/com_som.mp4 /tmp/t/in12.mp4
+          fi
           cp /tmp/t/in12.mp4 gravacoes/teste.mp4; cp /tmp/t/bg.jpg cenarios/teste.jpg
           echo '{"nome":"cinema","video":"gravacoes/teste.mp4","cenario":"cenarios/teste.jpg","amostra":true,"titulo":["SUA OFICINA","ESTÁ *PERDENDO*","*DINHEIRO?*"],"insercoes":[{"inicio":6,"fim":8.5,"modelo":"numero","numero":"01","linhas":["COBRA NO","*ACHÔMETRO*"]}]}' > gravacoes/teste.json
           ffmpeg -v error -y -i /tmp/t/in12.mp4 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" -an amostras/cinema/original.mp4
