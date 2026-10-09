@@ -14,7 +14,7 @@ Volume sobe sozinho (planejamento.json):
 Variedade: nunca repete tema (historico.json), reveza formatos e o visual,
 e cada dia passa por uma segunda rodada de revisão crítica antes de virar vídeo.
 """
-import asyncio, json, os, re, sys, unicodedata, urllib.request
+import asyncio, json, os, re, sys, unicodedata, urllib.error, urllib.request
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -41,19 +41,43 @@ def fase(d: date):
     return atual
 
 
+_MODELOS = None
+
+
+def modelos_texto():
+    """Descobre quais modelos de texto do Gemini a chave tem hoje (os nomes mudam com o tempo)."""
+    global _MODELOS
+    if _MODELOS is None:
+        req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200",
+                                     headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"]})
+        ms = json.loads(urllib.request.urlopen(req, timeout=60).read()).get("models", [])
+        nomes = [m["name"].split("/")[-1] for m in ms if "generateContent" in m.get("supportedGenerationMethods", [])]
+        nomes = [n for n in nomes if "flash" in n and not re.search(r"tts|image|live|audio|embed|thinking|lite", n)]
+        def nota(n):
+            v = re.search(r"(\d+(?:\.\d+)?)", n)
+            return (float(v.group(1)) if v else 0, "preview" not in n and "exp" not in n, "latest" in n)
+        _MODELOS = sorted(nomes, key=nota, reverse=True) + ["gemini-flash-latest", "gemini-2.5-flash"]
+        print("Modelos de texto:", _MODELOS[:5])
+    return _MODELOS
+
+
 def gemini(prompt, temperatura=1.0):
     corpo = json.dumps({"contents": [{"parts": [{"text": prompt}]}],
                         "generationConfig": {"responseMimeType": "application/json", "temperature": temperatura}}).encode()
     erro = None
-    for modelo in ["gemini-2.5-flash", "gemini-2.5-flash-lite"]:
+    for modelo in modelos_texto():
         req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
                                      data=corpo, headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"],
                                                           "Content-Type": "application/json"})
         try:
             with urllib.request.urlopen(req, timeout=300) as r:
+                print(f"(roteiro escrito com {modelo})")
                 return json.loads(json.loads(r.read())["candidates"][0]["content"]["parts"][0]["text"])
+        except urllib.error.HTTPError as e:
+            erro = f"{modelo}: {e.code} {e.read().decode()[:200]}"
         except Exception as e:
-            erro = e
+            erro = f"{modelo}: {e}"
+        print("[aviso]", erro)
     raise RuntimeError(f"Gemini falhou: {erro}")
 
 
