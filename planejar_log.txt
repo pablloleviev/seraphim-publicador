@@ -1,13 +1,30 @@
 == 2026-10-17: faltam 3 vídeos e 1 carrosséis
-Traceback (most recent call last):
-  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 230, in <module>
-    main()
-  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 181, in main
-    plano = pedir_dia(dia, len(hv), len(hc), hist)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 114, in pedir_dia
-    rascunho = gemini(regras, 1.0)
-               ^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 57, in gemini
-    raise RuntimeError(f"Gemini falhou: {erro}")
-RuntimeError: Gemini falhou: HTTP Error 404: Not Found
+Modelos de texto: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview']
+(roteiro escrito com gemini-3.8-flash)
+[aviso] gemini-3.8-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.7-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.6-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+(roteiro escrito com gemini-3.5-flash)
+Pronto: 7 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-17_1800_checklist-virar-sistema
+4 post(s) planejado(s)

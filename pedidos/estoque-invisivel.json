@@ -1,0 +1,57 @@
+{
+ "nome": "estoque-invisivel",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-17 12:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "COMPROU PEÇA",
+    "QUE *JÁ TINHA*?"
+   ],
+   "sera": "surpreso",
+   "narracao": "Sua empresa já comprou estoque que já tinha guardado no fundo da prateleira?"
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "DINHEIRO PARADO",
+    "SEM *AVISO*"
+   ],
+   "apoio": "caixa sufocado",
+   "narracao": "Sem alerta de mínimo, você compra no susto toda vez que não vê o item."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "CONTROLE",
+    "*INTEGRADO*"
+   ],
+   "apoio": "baixa automática",
+   "narracao": "Com baixa automática no pedido, o sistema avisa a hora exata de repor."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "SOBROU CAIXA",
+    "NO *FIM DO MÊS*"
+   ],
+   "fundo": "branco",
+   "narracao": "Isso significa menos capital parado e mais dinheiro livre no caixa."
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "CONHEÇA A",
+    "*SERAPHIM*"
+   ],
+   "apoio": "link na bio",
+   "sera": "feliz",
+   "narracao": "Quer clareza total no seu estoque? Acesse o link na bio da Seraphim."
+  }
+ ],
+ "genero_voz": "masculina",
+ "legenda": "Dinheiro parado em estoque invisível dói no caixa de qualquer empresa 📦\n\nComo você controla seus itens hoje? 👇\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+}
