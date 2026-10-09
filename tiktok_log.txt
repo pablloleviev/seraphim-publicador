@@ -2,7 +2,7 @@ Traceback (most recent call last):
   File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/tiktok.py", line 115, in <module>
     autorizar(urllib.parse.unquote(sys.argv[2].strip()))
   File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/tiktok.py", line 51, in autorizar
-    raise RuntimeError(f"TikTok recusou: {tok}")
-RuntimeError: TikTok recusou: {'error': 'invalid_client', 'error_description': 'Client key does not match authorization record.', 'log_id': '20261009235706DBBF3DEC5C626C364595'}
+    raise RuntimeError(f"TikTok recusou: {tok} | chave: {len(KEY)} caracteres, começa com {KEY[:4]!r}")
+RuntimeError: TikTok recusou: {'error': 'invalid_grant', 'error_description': 'Authorization code=*** is expired.', 'log_id': '20261009235818EBF818D203D4329F55A8'} | chave: 16 caracteres, começa com 'awdo'
 ---
-Fri Oct  9 15:57:06 UTC 2026
+Fri Oct  9 15:58:18 UTC 2026
