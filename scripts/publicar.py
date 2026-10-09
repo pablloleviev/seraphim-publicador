@@ -214,7 +214,6 @@ def main():
         quando = datetime.fromisoformat(meta["quando"])
         if quando <= agora:
             enviar_para_aprovacao(pasta, meta, estado)
-            break  # um por vez, para não lotar o Telegram
     salvar_estado(estado)
 
 

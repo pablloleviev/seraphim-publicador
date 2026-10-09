@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: cinema
@@ -90,6 +91,8 @@ jobs:
         if: ${{ github.event.inputs.video_url == '' && (github.event_name != 'schedule' || steps.drive.outputs.novos != '0') }}
         run: python scripts/fazer_gravacao.py
       - name: Salvar
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "seraphim-bot"
           git config user.email "bot@users.noreply.github.com"
@@ -98,7 +101,7 @@ jobs:
             git add -A .
             git diff --cached --quiet && exit 0
             git commit -q -m "cinema: resultado"
-            git push origin HEAD:main && exit 0
+            git push origin HEAD:main && { gh workflow run publicar.yml -R ${{ github.repository }} || true; exit 0; }
             sleep 5
           done
           exit 1
