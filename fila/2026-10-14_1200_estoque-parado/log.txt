@@ -1,0 +1,83 @@
+19s
+Rendered 584/636, time remaining: 19s
+Rendered 584/636, time remaining: 19s
+Rendered 585/636, time remaining: 18s
+Rendered 586/636, time remaining: 18s
+Rendered 586/636, time remaining: 18s
+Rendered 587/636, time remaining: 18s
+Rendered 588/636, time remaining: 17s
+Rendered 588/636, time remaining: 17s
+Rendered 589/636, time remaining: 17s
+Rendered 590/636, time remaining: 17s
+Rendered 590/636, time remaining: 17s
+Rendered 591/636, time remaining: 16s
+Rendered 592/636, time remaining: 16s
+Rendered 593/636, time remaining: 15s
+Rendered 593/636, time remaining: 15s
+Rendered 594/636, time remaining: 15s
+Rendered 595/636, time remaining: 15s
+Rendered 596/636, time remaining: 14s
+Rendered 596/636, time remaining: 14s
+Rendered 597/636, time remaining: 14s
+Rendered 598/636, time remaining: 14s
+Rendered 598/636, time remaining: 14s
+Rendered 599/636, time remaining: 13s
+Rendered 600/636, time remaining: 13s
+Rendered 601/636, time remaining: 12s
+Rendered 601/636, time remaining: 12s
+Rendered 602/636, time remaining: 12s
+Rendered 603/636, time remaining: 12s
+Rendered 603/636, time remaining: 12s
+Rendered 604/636, time remaining: 11s
+Rendered 605/636, time remaining: 11s
+Rendered 606/636, time remaining: 11s
+Rendered 606/636, time remaining: 11s
+Rendered 607/636, time remaining: 10s
+Rendered 608/636, time remaining: 10s
+Rendered 609/636, time remaining: 10s
+Rendered 609/636, time remaining: 10s
+Rendered 610/636, time remaining: 9s
+Rendered 611/636, time remaining: 9s
+Rendered 612/636, time remaining: 8s
+Rendered 612/636, time remaining: 8s
+Rendered 613/636, time remaining: 8s
+Rendered 614/636, time remaining: 8s
+Rendered 614/636, time remaining: 8s
+Rendered 615/636, time remaining: 7s
+Rendered 616/636, time remaining: 7s
+Rendered 617/636, time remaining: 7s
+Rendered 617/636, time remaining: 7s
+Rendered 618/636, time remaining: 6s
+Rendered 619/636, time remaining: 6s
+Rendered 620/636, time remaining: 5s
+Rendered 620/636, time remaining: 5s
+Rendered 621/636, time remaining: 5s
+Rendered 622/636, time remaining: 5s
+Rendered 622/636, time remaining: 5s
+Rendered 623/636, time remaining: 4s
+Rendered 624/636, time remaining: 4s
+Rendered 625/636, time remaining: 4s
+Rendered 626/636, time remaining: 3s
+Rendered 626/636, time remaining: 3s
+Rendered 627/636, time remaining: 3s
+Rendered 628/636, time remaining: 2s
+Rendered 628/636, time remaining: 2s
+Rendered 629/636, time remaining: 2s
+Rendered 630/636, time remaining: 2s
+Rendered 630/636, time remaining: 2s
+Rendered 631/636, time remaining: 1s
+Rendered 632/636, time remaining: 1s
+Rendered 633/636, time remaining: 1s
+Rendered 634/636, time remaining: 0s
+Rendered 634/636, time remaining: 0s
+Rendered 635/636, time remaining: 0s
+Stitched 458/636
+Stitched 464/636
+Stitched 477/636
+Stitched 491/636
+Stitched 509/636
+Stitched 636/636
+Voz: gemini (63 palavras)
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-14_1200_estoque-parado/video.mp4 (21.2s)
+
