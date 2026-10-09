@@ -1,0 +1,13 @@
+== 2026-10-17: faltam 3 vídeos e 1 carrosséis
+Traceback (most recent call last):
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 230, in <module>
+    main()
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 181, in main
+    plano = pedir_dia(dia, len(hv), len(hc), hist)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 114, in pedir_dia
+    rascunho = gemini(regras, 1.0)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 57, in gemini
+    raise RuntimeError(f"Gemini falhou: {erro}")
+RuntimeError: Gemini falhou: HTTP Error 404: Not Found
