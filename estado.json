@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630206,
+  "telegram_offset": 183630207,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -24,7 +24,8 @@
           "creator_nickname": "seraphimtech",
           "creator_username": "seraphimtech"
         },
-        "msg_id": 18
+        "msg_id": 18,
+        "priv": "PUBLIC_TO_EVERYONE"
       }
     },
     "2026-10-09_1201_1009-teste": {
