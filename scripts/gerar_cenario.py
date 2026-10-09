@@ -57,6 +57,22 @@ def via_pexels(desc):
     return urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read()
 
 
+def via_pixabay(desc):
+    """Foto real vertical do Pixabay (grátis, uso comercial liberado)."""
+    chave = os.environ.get("PIXABAY_API_KEY")
+    if not chave:
+        raise RuntimeError("sem PIXABAY_API_KEY")
+    q = urllib.parse.quote(desc[:100])
+    url = (f"https://pixabay.com/api/?key={chave}&q={q}&image_type=photo&orientation=vertical"
+           f"&safesearch=true&per_page=20&order=popular")
+    fotos = json.loads(urllib.request.urlopen(url, timeout=60).read())["hits"]
+    if not fotos:
+        raise RuntimeError("nenhuma foto")
+    f = fotos[0]
+    img = f.get("imageURL") or f.get("fullHDURL") or f["largeImageURL"]
+    return urllib.request.urlopen(urllib.request.Request(img, headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read()
+
+
 def via_pollinations(desc):
     url = ("https://image.pollinations.ai/prompt/" + urllib.parse.quote(f"{desc}, {ESTILO}")
            + "?width=1080&height=1920&nologo=true&model=flux&seed=7")
@@ -69,7 +85,7 @@ def gerar(desc):
     destino = RAIZ / "cenarios" / f"{slug(desc)}.jpg"
     if destino.exists():
         return destino
-    for f in (via_pexels, via_gemini):
+    for f in (via_pixabay, via_pexels, via_gemini):
         try:
             dados = f(desc)
             if len(dados) > 20000:
