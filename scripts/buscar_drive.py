@@ -65,7 +65,7 @@ O dono gravou um vídeo e escreveu este pedido:
 ---
 Responda SÓ um JSON com as chaves (todas opcionais, omita o que ele não pediu):
 "cenario": um destes já prontos: {cenarios} — use SÓ se o lugar pedido for praticamente igual
-"cenario_novo": se ele pediu outro lugar, descreva o cenário em inglês, detalhado (lugar, luz, clima, época), SEM pessoas
+"cenario_novo": se ele pediu outro lugar, descreva o cenário em inglês em 3 a 6 palavras de busca de foto (ex.: "rooftop city night lights"), SEM pessoas
 "titulo": lista de 1 a 3 linhas curtas EM MAIÚSCULAS para o topo; marque a palavra de destaque com *asteriscos*
 "insercoes": lista de telas gráficas por cima, cada uma {{"inicio": seg, "fim": seg, "modelo": "numero"|"impacto"|"lista"|"cta", "numero": "01", "linhas": [...], "itens": [...], "apoio": "..."}}
 "quando": "AAAA-MM-DD HH:MM" se ele pediu horário (hoje é {datetime.now(BRT):%Y-%m-%d})

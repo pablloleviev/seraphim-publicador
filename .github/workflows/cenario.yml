@@ -12,6 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python3 scripts/gerar_cenario.py "${{ github.event.inputs.descricao }}"
       - run: |
           git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
