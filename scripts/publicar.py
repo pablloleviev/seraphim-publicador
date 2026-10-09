@@ -171,7 +171,16 @@ def main():
     if not TG:
         sys.exit("Falta o segredo TELEGRAM_TOKEN")
     estado = carregar_estado()
+    eu = tg("getMe")["result"]
+    print(f"Bot conectado: @{eu.get('username')}")
     if not CHAT:
+        pend = tg("getUpdates", timeout=0).get("result", [])
+        print(f"Mensagens pendentes no bot: {len(pend)}")
+        for up in pend:
+            m = up.get("message") or up.get("my_chat_member") or {}
+            ch = m.get("chat", {})
+            if ch:
+                print(f"CHAT_ID encontrado: {ch.get('id')} ({ch.get('first_name', '')})")
         processar_respostas(estado)
         salvar_estado(estado)
         sys.exit("Falta TELEGRAM_CHAT_ID. Mande uma mensagem para o bot e veja o CHAT_ID acima no log.")
