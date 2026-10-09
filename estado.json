@@ -1,10 +1,12 @@
 {
-  "telegram_offset": 183630201,
+  "telegram_offset": 183630205,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
-      "status": "aguardando",
+      "status": "publicado",
       "msg_id": 10,
-      "enviado_em": "2026-10-09T02:58:12.104078+00:00"
+      "enviado_em": "2026-10-09T02:58:12.104078+00:00",
+      "ig_id": "18035967551839897",
+      "publicado_em": "2026-10-09T09:14:21.282696+00:00"
     }
   }
 }
