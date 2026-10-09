@@ -1,3 +1,35 @@
-TikTok conectado. Conta: -000n2… escopos: user.info.basic,video.publish,video.upload
----
-Fri Oct  9 16:57:47 UTC 2026
+Traceback (most recent call last):
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/tiktok.py", line 71, in _json
+    return json.loads(urllib.request.urlopen(req, timeout=60).read())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/tiktok.py", line 117, in <module>
+    print("publish_id:", publicar(Path(sys.argv[2]), "Teste Seraphim"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/tiktok.py", line 81, in publicar
+    init = _json(f"{API}/v2/post/publish/video/init/", {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/tiktok.py", line 73, in _json
+    raise RuntimeError(f"{e.code} {e.read().decode()[:400]}")
+RuntimeError: 403 {"error":{"code":"unaudited_client_can_only_post_to_private_accounts","message":"Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/","log_id":"202610100058556F21C481F094371FF417"}}
