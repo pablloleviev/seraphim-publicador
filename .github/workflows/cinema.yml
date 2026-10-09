@@ -27,6 +27,7 @@ jobs:
         id: drive
         env:
           DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 scripts/buscar_drive.py
       - uses: actions/setup-node@v4
         if: ${{ (github.event_name != 'schedule' || steps.drive.outputs.novos != '0') }}

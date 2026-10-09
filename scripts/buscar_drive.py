@@ -52,6 +52,38 @@ def baixar(fid, destino):
             f.write(bloco)
 
 
+def interpretar(prompt, cenarios):
+    """Transforma o pedido em texto livre do Pabllo em instruções (Gemini, grátis)."""
+    chave = os.environ.get("GEMINI_API_KEY")
+    if not chave:
+        raise RuntimeError("sem GEMINI_API_KEY")
+    instr = f"""Você é o editor de vídeos da Seraphim (software AutoFlow para oficinas mecânicas).
+O dono gravou um vídeo e escreveu este pedido:
+---
+{prompt}
+---
+Responda SÓ um JSON com as chaves (todas opcionais, omita o que ele não pediu):
+"cenario": um destes: {cenarios}  (escolha o que mais combina se ele descrever um lugar)
+"titulo": lista de 1 a 3 linhas curtas EM MAIÚSCULAS para o topo; marque a palavra de destaque com *asteriscos*
+"insercoes": lista de telas gráficas por cima, cada uma {{"inicio": seg, "fim": seg, "modelo": "numero"|"impacto"|"lista"|"cta", "numero": "01", "linhas": [...], "itens": [...], "apoio": "..."}}
+"quando": "AAAA-MM-DD HH:MM" se ele pediu horário (hoje é {datetime.now(BRT):%Y-%m-%d})
+"legenda": a legenda do post do Instagram (curta, com CTA e 3-5 hashtags), se ele pediu ou deu o texto
+"pedidos_extras": texto com o que ele pediu e o sistema não faz sozinho (ex.: trocar roupa, adicionar relógio)"""
+    corpo = json.dumps({"contents": [{"parts": [{"text": instr}]}],
+                        "generationConfig": {"responseMimeType": "application/json"}}).encode()
+    req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+                                 data=corpo, headers={"x-goog-api-key": chave, "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        txt = json.loads(r.read())["candidates"][0]["content"]["parts"][0]["text"]
+    d = json.loads(txt)
+    if d.get("cenario") in cenarios:
+        d["cenario"] = f"cenarios/{d['cenario']}.jpg"
+    else:
+        d.pop("cenario", None)
+    print("Instruções entendidas:", json.dumps(d, ensure_ascii=False))
+    return d
+
+
 def slug(s):
     import unicodedata
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
@@ -87,7 +119,12 @@ def main():
             pedido["quando"] = datetime.now(BRT).strftime("%Y-%m-%d ") + f"{int(h):02d}:{int(m or 0):02d}"
         txt = textos.get(Path(f["name"]).stem)
         if txt:
-            pedido["legenda"] = get(url_baixar(txt['id'])).decode("utf-8", "ignore")
+            prompt = get(url_baixar(txt['id'])).decode("utf-8", "ignore").strip()
+            try:
+                pedido.update(interpretar(prompt, cenarios))
+            except Exception as e:
+                print(f"[aviso] não consegui interpretar o prompt ({e}); usando como legenda")
+                pedido["legenda"] = prompt
         (RAIZ / "gravacoes" / f"{nome}.json").write_text(json.dumps(pedido, ensure_ascii=False, indent=2), encoding="utf-8")
         estado["vistos"].append(f["id"]); novos += 1
     ESTADO.write_text(json.dumps(estado, indent=2))
