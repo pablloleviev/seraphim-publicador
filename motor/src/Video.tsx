@@ -47,7 +47,11 @@ const useFontes = () => {
 const palavrasDe = (linha: string) => {
   const out: {t: string; ouro: boolean}[] = [];
   linha.split('*').forEach((trecho, i) =>
-    trecho.split(' ').filter(Boolean).forEach((t) => out.push({t, ouro: i % 2 === 1})));
+    trecho.split(' ').filter(Boolean).forEach((t) => {
+      // pontuação solta ("?", ",", ".") gruda na palavra anterior: "BASTA?" e não "BASTA ?"
+      if (/^[?!.,:;]+$/.test(t) && out.length) out[out.length - 1].t += t;
+      else out.push({t, ouro: i % 2 === 1});
+    }));
   return out;
 };
 const tamanhoTitulo = (linhas: string[], max: number) => {
@@ -105,7 +109,8 @@ const Titulo: React.FC<{linhas: string[]; tam: number; cor: string; f: number; f
             const d = atraso + idx++ * 3;
             const s = spring({frame: f - d, fps, config: {damping: 11, stiffness: 170, mass: 0.6}});
             const blur = interpolate(f - d, [0, 6], [10, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-            const c = p.ouro ? C.ouro : cor;
+            const fundoClaro = cor === C.preto;
+            const c = p.ouro ? (fundoClaro ? '#B86E00' : C.ouro) : cor;
             return (
               <span key={pi} style={{
                 fontFamily: 'Anton', fontSize: tam, lineHeight: 1.0, color: c, textTransform: 'uppercase',
@@ -113,7 +118,7 @@ const Titulo: React.FC<{linhas: string[]; tam: number; cor: string; f: number; f
                 transform: `scale(${interpolate(s, [0, 1], [1.7, 1])}) translateY(${interpolate(s, [0, 1], [30, 0])}px)`,
                 opacity: interpolate(s, [0, 0.4], [0, 1], {extrapolateRight: 'clamp'}),
                 filter: `blur(${blur}px)`,
-                textShadow: `${-ab}px 0 rgba(255,40,70,.85), ${ab}px 0 rgba(40,140,255,.85)${p.ouro ? `, 0 0 40px rgba(245,166,35,.45)` : ''}`,
+                textShadow: `${-ab}px 0 rgba(255,40,70,.85), ${ab}px 0 rgba(40,140,255,.85)${p.ouro && !fundoClaro ? `, 0 0 40px rgba(245,166,35,.45)` : ''}`,
               }}>{p.t}</span>
             );
           })}

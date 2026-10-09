@@ -197,7 +197,7 @@ def voz_estimada(texto):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("roteiro")
-    ap.add_argument("--voz", default="elevenlabs", choices=["elevenlabs", "gemini", "edge", "edge-antonio", "nenhuma"])
+    ap.add_argument("--voz", default="elevenlabs", choices=["elevenlabs", "gemini", "gemini-so", "edge", "edge-antonio", "nenhuma"])
     ap.add_argument("--saida", default=None, help="caminho do mp4 final")
     args = ap.parse_args()
     carregar_env()
@@ -221,7 +221,8 @@ def main():
     audio, palavras = None, []
     mp3 = JOB / "voz.mp3"
     if args.voz != "nenhuma" and texto:
-        ordem = {"elevenlabs": ["elevenlabs", "gemini", "edge"], "gemini": ["gemini", "edge"]}.get(args.voz, [args.voz])
+        ordem = {"elevenlabs": ["elevenlabs", "gemini", "edge"], "gemini": ["gemini", "edge"],
+                 "gemini-so": ["gemini"]}.get(args.voz, [args.voz])
         funcs = {"elevenlabs": voz_elevenlabs, "gemini": voz_gemini, "edge": voz_edge,
                  "edge-antonio": lambda t, d: voz_edge(t, d, "pt-BR-AntonioNeural")}
         for motor_voz in ordem:
@@ -234,6 +235,8 @@ def main():
             except Exception as e:
                 print(f"[aviso] voz {motor_voz} falhou: {e}")
     if not palavras:
+        if args.voz == "gemini-so":
+            sys.exit(3)   # sem cota do Gemini hoje: não gera vídeo com outra voz
         palavras = voz_estimada(texto); print("Voz: nenhuma (tempos estimados)")
 
     # tempos das cenas a partir das palavras

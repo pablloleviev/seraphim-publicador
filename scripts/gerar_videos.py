@@ -38,5 +38,11 @@ for pedido in sorted((RAIZ / "pedidos").glob("*.json")):
         "quando": quando.strftime("%Y-%m-%dT%H:%M:00-03:00")}, ensure_ascii=False, indent=2), encoding="utf-8")
     txt = destino / "video.txt"
     if txt.exists(): txt.unlink()
+    # saiu com voz reserva? guarda o roteiro para refazer com a voz do Gemini quando a cota renovar
+    if voz in ("gemini", "elevenlabs") and "Voz: gemini" not in (r.stdout or "") and "Voz: elevenlabs" not in (r.stdout or ""):
+        (RAIZ / "revoz").mkdir(exist_ok=True)
+        spec["destino"] = str(destino.relative_to(RAIZ))
+        (RAIZ / "revoz" / f"{nome}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"[revoz] {nome} saiu com voz reserva; será refeito com Gemini")
     pedido.unlink()
     print(f"Na fila: {destino.name}")
