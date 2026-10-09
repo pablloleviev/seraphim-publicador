@@ -1,4 +1,10 @@
 {
   "telegram_offset": 183630201,
-  "itens": {}
+  "itens": {
+    "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
+      "status": "aguardando",
+      "msg_id": 10,
+      "enviado_em": "2026-10-09T02:58:12.104078+00:00"
+    }
+  }
 }
