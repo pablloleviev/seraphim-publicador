@@ -252,7 +252,7 @@ const Legenda: React.FC<{palavras: Palavra[]; cenas: Cena[]; t: number}> = ({pal
   const cena = cenas[cenaDe(t)] || cenas[0];
   const branco = cena?.fundo === 'branco';
   return (
-    <div style={{position: 'absolute', left: 40, right: 40, top: 1600, display: 'flex', justifyContent: 'center', gap: 18}}>
+    <div style={{position: 'absolute', left: 40, right: 40, top: 1600, display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 30}}>
       {g.map((p, i) => {
         const ativa = t >= p.s && t <= p.e + 0.05;
         const ja = t >= p.s;
