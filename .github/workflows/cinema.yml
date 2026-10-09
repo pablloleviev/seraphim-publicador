@@ -67,7 +67,12 @@ jobs:
         run: |
           git config user.name "seraphim-bot"
           git config user.email "bot@users.noreply.github.com"
-          mkdir -p amostras; git add -A .
-          git diff --cached --quiet && exit 0
-          git commit -m "cinema: resultado"
-          for i in 1 2 3 4 5; do git pull --rebase -X theirs -q && git push && exit 0; sleep 5; done; exit 1
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --soft origin/main
+            git add -A .
+            git diff --cached --quiet && exit 0
+            git commit -q -m "cinema: resultado"
+            git push origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1
