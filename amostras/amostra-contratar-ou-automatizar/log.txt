@@ -1,83 +1,83 @@
-7s
-Rendered 814/869, time remaining: 17s
-Rendered 814/869, time remaining: 17s
-Rendered 815/869, time remaining: 17s
-Rendered 816/869, time remaining: 16s
-Rendered 817/869, time remaining: 16s
-Rendered 817/869, time remaining: 16s
-Rendered 818/869, time remaining: 16s
-Rendered 819/869, time remaining: 16s
-Rendered 820/869, time remaining: 15s
-Rendered 820/869, time remaining: 15s
-Rendered 821/869, time remaining: 15s
-Rendered 822/869, time remaining: 15s
-Rendered 823/869, time remaining: 14s
-Rendered 824/869, time remaining: 14s
-Rendered 824/869, time remaining: 14s
-Rendered 825/869, time remaining: 14s
-Rendered 826/869, time remaining: 13s
-Rendered 827/869, time remaining: 13s
-Rendered 827/869, time remaining: 13s
-Rendered 828/869, time remaining: 13s
-Rendered 829/869, time remaining: 12s
-Rendered 830/869, time remaining: 12s
-Rendered 831/869, time remaining: 12s
-Rendered 831/869, time remaining: 12s
-Rendered 832/869, time remaining: 11s
-Rendered 833/869, time remaining: 11s
-Rendered 834/869, time remaining: 11s
-Rendered 834/869, time remaining: 11s
-Rendered 835/869, time remaining: 10s
-Rendered 836/869, time remaining: 10s
-Rendered 837/869, time remaining: 10s
-Rendered 837/869, time remaining: 10s
-Rendered 838/869, time remaining: 9s
-Rendered 839/869, time remaining: 9s
-Rendered 840/869, time remaining: 9s
-Rendered 840/869, time remaining: 9s
-Rendered 841/869, time remaining: 8s
-Rendered 842/869, time remaining: 8s
-Rendered 843/869, time remaining: 8s
-Rendered 844/869, time remaining: 7s
-Rendered 844/869, time remaining: 7s
-Rendered 845/869, time remaining: 7s
-Rendered 846/869, time remaining: 7s
-Rendered 847/869, time remaining: 7s
-Rendered 847/869, time remaining: 7s
-Rendered 848/869, time remaining: 6s
-Rendered 849/869, time remaining: 6s
-Rendered 850/869, time remaining: 6s
-Rendered 850/869, time remaining: 6s
-Rendered 851/869, time remaining: 5s
-Rendered 852/869, time remaining: 5s
-Rendered 853/869, time remaining: 5s
-Rendered 854/869, time remaining: 4s
-Rendered 854/869, time remaining: 4s
-Rendered 855/869, time remaining: 4s
-Rendered 856/869, time remaining: 4s
-Rendered 857/869, time remaining: 3s
-Rendered 857/869, time remaining: 3s
-Rendered 858/869, time remaining: 3s
-Rendered 859/869, time remaining: 3s
-Rendered 860/869, time remaining: 2s
-Rendered 861/869, time remaining: 2s
-Rendered 861/869, time remaining: 2s
-Rendered 862/869, time remaining: 2s
-Rendered 863/869, time remaining: 1s
-Rendered 864/869, time remaining: 1s
-Rendered 864/869, time remaining: 1s
-Rendered 865/869, time remaining: 1s
-Rendered 866/869, time remaining: 0s
-Rendered 867/869, time remaining: 0s
-Rendered 867/869, time remaining: 0s
-Rendered 868/869, time remaining: 0s
-Stitched 645/869
-Stitched 653/869
-Stitched 668/869
-Stitched 682/869
-Stitched 695/869
-Stitched 869/869
+
+Rendered 879/941, time remaining: 12s
+Rendered 880/941, time remaining: 12s
+Rendered 881/941, time remaining: 11s
+Rendered 881/941, time remaining: 11s
+Rendered 882/941, time remaining: 11s
+Rendered 883/941, time remaining: 11s
+Rendered 884/941, time remaining: 11s
+Rendered 885/941, time remaining: 11s
+Rendered 886/941, time remaining: 10s
+Rendered 886/941, time remaining: 10s
+Rendered 887/941, time remaining: 10s
+Rendered 888/941, time remaining: 10s
+Rendered 889/941, time remaining: 10s
+Rendered 890/941, time remaining: 10s
+Rendered 891/941, time remaining: 9s
+Rendered 892/941, time remaining: 9s
+Rendered 892/941, time remaining: 9s
+Rendered 893/941, time remaining: 9s
+Rendered 894/941, time remaining: 9s
+Rendered 895/941, time remaining: 9s
+Rendered 896/941, time remaining: 8s
+Rendered 897/941, time remaining: 8s
+Rendered 898/941, time remaining: 8s
+Rendered 898/941, time remaining: 8s
+Rendered 899/941, time remaining: 8s
+Rendered 900/941, time remaining: 8s
+Rendered 901/941, time remaining: 7s
+Rendered 902/941, time remaining: 7s
+Rendered 903/941, time remaining: 7s
+Rendered 904/941, time remaining: 7s
+Rendered 904/941, time remaining: 7s
+Rendered 905/941, time remaining: 7s
+Rendered 906/941, time remaining: 6s
+Rendered 907/941, time remaining: 6s
+Rendered 908/941, time remaining: 6s
+Rendered 909/941, time remaining: 6s
+Rendered 909/941, time remaining: 6s
+Rendered 910/941, time remaining: 6s
+Rendered 911/941, time remaining: 5s
+Rendered 912/941, time remaining: 5s
+Rendered 913/941, time remaining: 5s
+Rendered 914/941, time remaining: 5s
+Rendered 915/941, time remaining: 5s
+Rendered 915/941, time remaining: 5s
+Rendered 916/941, time remaining: 4s
+Rendered 917/941, time remaining: 4s
+Rendered 918/941, time remaining: 4s
+Rendered 919/941, time remaining: 4s
+Rendered 920/941, time remaining: 4s
+Rendered 921/941, time remaining: 3s
+Rendered 921/941, time remaining: 3s
+Rendered 922/941, time remaining: 3s
+Rendered 923/941, time remaining: 3s
+Rendered 924/941, time remaining: 3s
+Rendered 925/941, time remaining: 3s
+Rendered 926/941, time remaining: 2s
+Rendered 927/941, time remaining: 2s
+Rendered 927/941, time remaining: 2s
+Rendered 928/941, time remaining: 2s
+Rendered 929/941, time remaining: 2s
+Rendered 930/941, time remaining: 2s
+Rendered 931/941, time remaining: 1s
+Rendered 932/941, time remaining: 1s
+Rendered 932/941, time remaining: 1s
+Rendered 933/941, time remaining: 1s
+Rendered 934/941, time remaining: 1s
+Rendered 935/941, time remaining: 1s
+Rendered 936/941, time remaining: 0s
+Rendered 937/941, time remaining: 0s
+Rendered 938/941, time remaining: 0s
+Rendered 938/941, time remaining: 0s
+Rendered 939/941, time remaining: 0s
+Rendered 940/941, time remaining: 0s
+Stitched 702/941
+Stitched 716/941
+Stitched 743/941
+Stitched 753/941
+Stitched 941/941
 Voz: gemini (83 palavras)
 Editando no motor Remotion... (alguns minutos)
-Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/amostras/amostra-contratar-ou-automatizar/video.mp4 (29.0s)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/amostras/amostra-contratar-ou-automatizar/video.mp4 (31.4s)
 
