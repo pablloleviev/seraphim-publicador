@@ -1,0 +1,10 @@
+Voz: gemini (89 palavras)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Traceback (most recent call last):
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/fazer_video.py", line 283, in <module>
+    main()
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/fazer_video.py", line 259, in main
+    preparar_imagens_cortes(cenas)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'preparar_imagens_cortes' is not defined
