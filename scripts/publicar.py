@@ -406,6 +406,7 @@ def main():
     # e mandando os posts que vencerem; o agendamento de hora em hora emenda o próximo ciclo
     fim = time.time() + int(os.environ.get("MINUTOS_OUVINDO", "50")) * 60
     ultimo_pull = time.time()
+    ultimo_coment = 0.0
     while True:
         processar_respostas(estado, espera=0 if time.time() >= fim else 25)
         if os.environ.get("GITHUB_ACTIONS") and time.time() - ultimo_pull > 120:
@@ -431,6 +432,13 @@ def main():
                     continue
                 if datetime.fromisoformat(meta["quando"]) <= agora:
                     publicar_item(nome, item)
+        if time.time() - ultimo_coment > 60:
+            ultimo_coment = time.time()
+            try:
+                import comentarios
+                comentarios.verificar(estado)
+            except Exception as e:
+                print(f"[comentários] erro: {e}")
         salvar_estado(estado)
         if time.time() >= fim:
             break
