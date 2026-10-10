@@ -1,0 +1,45 @@
+{
+ "destino": "fila/2026-10-13_1800_3-erros-implantar-sistemas",
+ "titulo": "3 erros que fazem sua equipe ignorar novos sistemas",
+ "formato": "erro que você comete",
+ "slides": [
+  {
+   "tipo": "capa",
+   "tag": "Gestão e tecnologia",
+   "titulo": "3 erros que fazem sua equipe|*ignorar novos sistemas*",
+   "texto": "Você investe em tecnologia, mas ninguém usa.",
+   "sera": "preocupado"
+  },
+  {
+   "tipo": "numero",
+   "numero": "01",
+   "titulo": "Mudar tudo|*no mesmo dia*",
+   "texto": "Trocar todos os processos de uma vez gera pânico. **Comece por uma única rotina** simples."
+  },
+  {
+   "tipo": "numero",
+   "numero": "02",
+   "titulo": "Comprar sem|*ouvir quem usa*",
+   "texto": "A ferramenta precisa resolver a dor de quem opera no balcão, não só parecer bonita na tela."
+  },
+  {
+   "tipo": "numero",
+   "numero": "03",
+   "titulo": "Não definir um|*responsável*",
+   "texto": "Se todo mundo cuida da transição, ninguém cuida. **Eleja um líder** para tirar dúvidas no time."
+  },
+  {
+   "tipo": "texto",
+   "titulo": "Tecnologia boa é|*tecnologia usada*",
+   "texto": "O segredo não é a complexidade da ferramenta, mas a **clareza da rotina** que sua equipe segue todo dia.",
+   "card": "Regra prática: simplifique o primeiro passo antes de exigir perfeição."
+  },
+  {
+   "tipo": "capa",
+   "titulo": "Sua equipe já travou|*em algum sistema?*",
+   "texto": "Salva este post e segue a **@seraphimtech_** para descomplicar a gestão do seu negócio.",
+   "sera": "confiante"
+  }
+ ],
+ "legenda": "Você já comprou um software novo e viu o time continuar anotando tudo do jeito antigo? 😅\n\nSalva este post para a sua próxima mudança e segue a @seraphimtech_ para mais dicas de gestão e tecnologia!"
+}

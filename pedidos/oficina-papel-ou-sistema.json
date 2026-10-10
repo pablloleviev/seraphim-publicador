@@ -1,0 +1,82 @@
+{
+ "nome": "oficina-papel-ou-sistema",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-11 19:00",
+ "cenas": [
+  {
+   "tipo": "palavra",
+   "texto": "OFICINA NO PAPEL|OU NUM|SISTEMA?",
+   "destaque": "SISTEMA?",
+   "narracao": "Sua oficina mecânica ainda é controlada no papel e na prancheta?"
+  },
+  {
+   "tipo": "cards",
+   "itens": [
+    {
+     "rotulo": "no papel:",
+     "busca": "messy mechanic desk invoices dirty"
+    },
+    {
+     "rotulo": "no sistema:",
+     "busca": "modern clean tablet mechanic garage"
+    }
+   ],
+   "narracao": "No papel, as anotações somem, as pendências se perdem e o retrabalho vira rotina na bancada."
+  },
+  {
+   "tipo": "foto",
+   "busca": "mechanic under car checking parts",
+   "texto": "Mão na graxa",
+   "sub": "cabeça na gestão",
+   "tom": "cinza",
+   "narracao": "O dono passa o dia consertando carro e a noite tentando decifrar anotações perdidas."
+  },
+  {
+   "tipo": "digitando",
+   "topo": "MUDANÇA:",
+   "texto": "GESTÃO INTEGRADA",
+   "narracao": "Só que dá para centralizar tudo num único lugar."
+  },
+  {
+   "tipo": "diagrama",
+   "passos": [
+    {
+     "icone": "tela",
+     "rotulo": "no navegador"
+    },
+    {
+     "icone": "engrenagem",
+     "rotulo": "gestão em dia"
+    },
+    {
+     "icone": "check",
+     "rotulo": "sem confusão"
+    }
+   ],
+   "narracao": "O AutoFlow é o sistema feito para organizar a gestão da sua oficina direto pelo navegador."
+  },
+  {
+   "tipo": "serifa",
+   "texto": "Organizar sua operação é o primeiro passo para crescer.",
+   "narracao": "Ele foi pensado para você sair da planilha e do caderno de vez."
+  },
+  {
+   "tipo": "frase",
+   "texto": "sua oficina organizada sem complicação",
+   "destaque": "organizada",
+   "narracao": "Chega de sofrer procurando papéis pela oficina."
+  },
+  {
+   "tipo": "cta",
+   "texto": "CONHEÇA O *AUTOFLOW*",
+   "apoio": "link na bio",
+   "pose": "confiante",
+   "narracao": "Quer organizar sua oficina num lugar só? Conheça o AutoFlow pelo link da bio e segue a Seraphim.",
+   "funil": "fundo"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "fundo",
+ "genero_voz": "masculina",
+ "legenda": "Sua oficina ainda perde tempo procurando anotação em papel? 🔧\n\nConheça o AutoFlow pelo link da bio e descubra como organizar sua gestão num só lugar!\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+}

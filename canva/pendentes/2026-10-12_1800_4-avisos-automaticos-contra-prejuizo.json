@@ -1,0 +1,56 @@
+{
+ "destino": "fila/2026-10-12_1800_4-avisos-automaticos-contra-prejuizo",
+ "titulo": "4 avisos automáticos que evitam prejuízo",
+ "formato": "lista prática",
+ "slides": [
+  {
+   "tipo": "capa",
+   "tag": "Gestão prática",
+   "titulo": "4 avisos automáticos|que *evitam prejuízo*|na sua empresa",
+   "texto": "Pequenos alertas que impedem dinheiro de escorrer pelo ralo.",
+   "sera": "confiante"
+  },
+  {
+   "tipo": "numero",
+   "numero": "01",
+   "titulo": "Alerta de|*estoque crítico*",
+   "texto": "Aviso enviado à equipe assim que um item atinge o nível mínimo de segurança.",
+   "card": "Evita perder vendas por falta de mercadoria na hora H."
+  },
+  {
+   "tipo": "numero",
+   "numero": "02",
+   "titulo": "Lembrete prévio|*de vencimento*",
+   "texto": "Mensagem amigável enviada 2 dias antes do boleto ou fatura vencer.",
+   "card": "Reduz o esquecimento do cliente sem constrangimento de cobrança."
+  },
+  {
+   "tipo": "numero",
+   "numero": "03",
+   "titulo": "Aviso de|*tarefa atrasada*",
+   "texto": "Notificação interna quando um pedido ou serviço passa do prazo combinado.",
+   "card": "Você resolve o problema antes do cliente ligar reclamando."
+  },
+  {
+   "tipo": "numero",
+   "numero": "04",
+   "titulo": "Alerta de|*cliente ausente*",
+   "texto": "Aviso quando um cliente habitual passa mais tempo que o normal sem aparecer.",
+   "card": "Permite puxar conversa antes que ele compre com o concorrente."
+  },
+  {
+   "tipo": "texto",
+   "titulo": "A regra de ouro:|*avisar antes*",
+   "texto": "Descobrir o furo depois que o cliente reclama custa caro. Notificações automáticas antecipam o problema.",
+   "card": "Processo padronizado roda no automático sem dor de cabeça.",
+   "sera": "pensando"
+  },
+  {
+   "tipo": "capa",
+   "titulo": "Qual desses avisos|*falta na sua empresa?*",
+   "texto": "Salva este post e segue a **@seraphimtech_** para descomplicar seu negócio.",
+   "sera": "feliz"
+  }
+ ],
+ "legenda": "Qual desses avisos automáticos salvaria mais tempo e dinheiro na sua operação? Salva esse post pra aplicar 📲⚡"
+}

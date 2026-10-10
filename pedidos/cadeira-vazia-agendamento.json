@@ -1,0 +1,81 @@
+{
+ "nome": "cadeira-vazia-agendamento",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-11 12:00",
+ "cenas": [
+  {
+   "tipo": "palavra",
+   "texto": "CLIENTE|FALTOU DE NOVO|HOJE?",
+   "destaque": "FALTOU",
+   "narracao": "O cliente confirmou o horário marcado e simplesmente não apareceu?"
+  },
+  {
+   "tipo": "foto",
+   "busca": "empty salon chair clinic waiting",
+   "texto": "Horário vago",
+   "sub": "custo sem retorno",
+   "tom": "vermelho",
+   "narracao": "Cada cadeira vazia na sua clínica, salão ou consultório consome seu lucro silenciosamente."
+  },
+  {
+   "tipo": "cards",
+   "itens": [
+    {
+     "rotulo": "antes:",
+     "busca": "stressed receptionist calling client"
+    },
+    {
+     "rotulo": "depois:",
+     "busca": "automated appointment message screen"
+    }
+   ],
+   "narracao": "Antes, alguém da equipe precisava ligar para todo mundo. Hoje, lembretes automáticos cuidam disso."
+  },
+  {
+   "tipo": "contador",
+   "rotulo": "Ex.: Faltas no mês",
+   "de": 16,
+   "para": 3,
+   "sufixo": " faltas",
+   "narracao": "Um aviso enviado no momento certo reduz drasticamente o número de faltas."
+  },
+  {
+   "tipo": "diagrama",
+   "passos": [
+    {
+     "icone": "relogio",
+     "rotulo": "lembrete ativo"
+    },
+    {
+     "icone": "chat",
+     "rotulo": "confirmação rápida"
+    },
+    {
+     "icone": "check",
+     "rotulo": "horário seguro"
+    }
+   ],
+   "narracao": "O cliente confirma com um clique e sua agenda fica protegida o dia todo."
+  },
+  {
+   "tipo": "frase",
+   "texto": "se desmarcar dá tempo de puxar outro cliente",
+   "destaque": "tempo",
+   "narracao": "Se ele avisar que não vai, dá tempo de preencher a vaga com outro atendimento."
+  },
+  {
+   "tipo": "cta",
+   "texto": "COMENTA *AGENDA* PRA RECEBER O GUIA",
+   "pose": "confiante",
+   "narracao": "Comenta AGENDA aqui no post que eu te mando esse roteiro completo no direct.",
+   "funil": "meio"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Quantos horários vagos você teve nessa semana? 🗓️\n\nComenta AGENDA aqui no post para receber no direct o nosso roteiro de mensagens de confirmação!\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech",
+ "palavra_chave": "AGENDA",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/cadeira-vazia-agendamento/",
+ "material_titulo": "Roteiro de Confirmação Automática de Horários"
+}

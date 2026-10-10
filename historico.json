@@ -208,5 +208,121 @@
   "dia": "2026-10-17",
   "tipo": "carrossel",
   "tema": "noir"
+ },
+ {
+  "nome": "5-comandos-chatgpt",
+  "titulo": "5 comandos chatgpt",
+  "formato": ""
+ },
+ {
+  "nome": "contratar-ou-automatizar",
+  "titulo": "contratar ou automatizar",
+  "formato": ""
+ },
+ {
+  "nome": "pecas-urgentes-oficina",
+  "titulo": "pecas urgentes oficina",
+  "formato": ""
+ },
+ {
+  "nome": "cliente-que-nao-volta",
+  "titulo": "cliente que nao volta",
+  "formato": ""
+ },
+ {
+  "nome": "vale-a-pena-ia-paga",
+  "titulo": "Vale a pena pagar por inteligência artificial?",
+  "formato": "pergunta polêmica",
+  "dia": "2026-10-11",
+  "tipo": "video",
+  "tema": "noir"
+ },
+ {
+  "nome": "cadeira-vazia-agendamento",
+  "titulo": "O antes e depois do agendamento automático",
+  "formato": "antes e depois",
+  "dia": "2026-10-11",
+  "tipo": "video",
+  "tema": "noir"
+ },
+ {
+  "nome": "oficina-papel-ou-sistema",
+  "titulo": "Oficina mecânica: papelada ou sistema?",
+  "formato": "comparação (X vs Y)",
+  "dia": "2026-10-11",
+  "tipo": "video",
+  "tema": "noir"
+ },
+ {
+  "nome": "4-passos-automatizar-tarefas",
+  "titulo": "4 passos para transformar tarefas chatas em automações",
+  "formato": "tutorial passo a passo",
+  "dia": "2026-10-11",
+  "tipo": "carrossel",
+  "tema": "noir"
+ },
+ {
+  "nome": "como-ia-indica-sua-empresa",
+  "titulo": "Como a IA escolhe qual empresa indicar",
+  "formato": "notícia/tendência de IA explicada",
+  "dia": "2026-10-12",
+  "tipo": "video",
+  "tema": "noir"
+ },
+ {
+  "nome": "pesadelo-fechamento-mes",
+  "titulo": "O mito do fechamento do mês no desespero",
+  "formato": "mito vs verdade",
+  "dia": "2026-10-12",
+  "tipo": "video",
+  "tema": "noir"
+ },
+ {
+  "nome": "oficina-depende-da-sua-cabeca",
+  "titulo": "Sua oficina funciona sem você lá?",
+  "formato": "pergunta polêmica",
+  "dia": "2026-10-12",
+  "tipo": "video",
+  "tema": "noir"
+ },
+ {
+  "nome": "4-avisos-automaticos-contra-prejuizo",
+  "titulo": "4 avisos automáticos que evitam prejuízo",
+  "formato": "lista prática",
+  "dia": "2026-10-12",
+  "tipo": "carrossel",
+  "tema": "noir"
+ },
+ {
+  "nome": "ia-leitora-de-documentos",
+  "titulo": "Você sabia que a IA pode ler seus documentos?",
+  "formato": "você sabia",
+  "dia": "2026-10-13",
+  "tipo": "video",
+  "tema": "noir"
+ },
+ {
+  "nome": "filtro-de-clientes-curiosos",
+  "titulo": "Como filtrar curiosos antes da reunião",
+  "formato": "checklist",
+  "dia": "2026-10-13",
+  "tipo": "video",
+  "tema": "noir"
+ },
+ {
+  "nome": "historico-do-veiculo-oficina",
+  "titulo": "O cliente voltou e ninguém lembra o que foi feito",
+  "formato": "história curta de cliente",
+  "dia": "2026-10-13",
+  "tipo": "video",
+  "tema": "noir"
+ },
+ {
+  "nome": "3-erros-implantar-sistemas",
+  "titulo": "3 erros que fazem sua equipe ignorar novos sistemas",
+  "formato": "erro que você comete",
+  "dia": "2026-10-13",
+  "tipo": "carrossel",
+  "tema": "noir"
  }
 ]

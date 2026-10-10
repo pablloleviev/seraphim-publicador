@@ -1,0 +1,74 @@
+{
+ "nome": "como-ia-indica-sua-empresa",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-12 08:00",
+ "cenas": [
+  {
+   "tipo": "palavra",
+   "texto": "A IA|JÁ ESCOLHE|ONDE O CLIENTE|VAI COMPRAR",
+   "destaque": "VAI COMPRAR",
+   "narracao": "Quando alguém pergunta pra uma inteligência artificial onde comprar na sua cidade, quem ela indica?"
+  },
+  {
+   "tipo": "pergunta",
+   "texto": "seu negócio aparece ou é *invisível*?",
+   "pose": "pensando",
+   "narracao": "Os novos assistentes já recomendam serviços locais direto na resposta."
+  },
+  {
+   "tipo": "foto",
+   "busca": "person asking voice assistant phone",
+   "texto": "BUSCA POR IA",
+   "sub": "nova vitrine",
+   "tom": "dourado",
+   "narracao": "Só tem um detalhe: eles ignoram empresas com dados desatualizados na web."
+  },
+  {
+   "tipo": "digitando",
+   "topo": "O QUE CONTA:",
+   "texto": "DADOS CLAROS",
+   "narracao": "Endereço certo, catálogo limpo e avaliações recentes respondidas."
+  },
+  {
+   "tipo": "diagrama",
+   "passos": [
+    {
+     "icone": "chat",
+     "rotulo": "pergunta"
+    },
+    {
+     "icone": "robo",
+     "rotulo": "análise"
+    },
+    {
+     "icone": "carrinho",
+     "rotulo": "indicação"
+    }
+   ],
+   "narracao": "A ferramenta cruza essas informações em segundos e entrega o concorrente pronto."
+  },
+  {
+   "tipo": "serifa",
+   "texto": "Na era da inteligência artificial, ser invisível online custa caro.",
+   "narracao": "Não basta existir na internet, seu negócio precisa ser legível para as máquinas."
+  },
+  {
+   "tipo": "painel",
+   "rotulo": "Presença digital",
+   "valor": 90,
+   "texto": "visibilidade real",
+   "narracao": "Quem organizar essas informações agora vai receber os clientes que buscam por inteligência."
+  },
+  {
+   "tipo": "cta",
+   "texto": "SEGUE PRA *DOMINAR A IA* NO SEU NEGÓCIO",
+   "pose": "confiante",
+   "narracao": "Quer preparar sua empresa pras novas buscas? Segue a Seraphim pra não ficar de fora.",
+   "funil": "topo"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "A forma como as pessoas encontram serviços locais mudou de vez. Seu negócio já está pronto pras buscas com IA? 🤖📍\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+}

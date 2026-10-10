@@ -1,0 +1,49 @@
+{
+ "destino": "fila/2026-10-11_1800_4-passos-automatizar-tarefas",
+ "titulo": "4 passos para transformar tarefas chatas em automações",
+ "formato": "tutorial passo a passo",
+ "slides": [
+  {
+   "tipo": "capa",
+   "tag": "Tutorial prático",
+   "titulo": "4 passos pra transformar|*tarefas manuais em automação*",
+   "texto": "Como tirar a rotina repetitiva da sua empresa esta semana.",
+   "sera": "confiante"
+  },
+  {
+   "tipo": "numero",
+   "numero": "01",
+   "titulo": "Mapeie o|*copia e cola*",
+   "texto": "Liste qualquer ação que sua equipe repete **mais de 3 vezes por dia** do mesmo jeito.",
+   "card": "Ex.: Copiar dados do formulário de contato para o sistema interno."
+  },
+  {
+   "tipo": "numero",
+   "numero": "02",
+   "titulo": "Defina o|*gatilho claro*",
+   "texto": "Toda automação começa com um evento bem definido: **quando isso acontece, faça aquilo**.",
+   "card": "Ex.: Quando um novo lead se cadastrar, crie uma tarefa no CRM."
+  },
+  {
+   "tipo": "numero",
+   "numero": "03",
+   "titulo": "Padronize os|*dados recebidos*",
+   "texto": "Campos organizados evitam erros no envio. **Defina regras fixas** para cada informação trafegar sem falha.",
+   "card": "Ex.: Nome, telefone com DDD e serviço de interesse obrigatórios."
+  },
+  {
+   "tipo": "numero",
+   "numero": "04",
+   "titulo": "Valide um|*fluxo de cada vez*",
+   "texto": "Nunca tente automatizar a empresa inteira em um dia só. **Resolva um gargalo primeiro** e acompanhe o resultado.",
+   "card": "Poupar 20 minutos por dia já devolve dias inteiros ao longo do ano."
+  },
+  {
+   "tipo": "capa",
+   "titulo": "Gostou do roteiro?|*Salva pra consultar*",
+   "texto": "Segue a **@seraphimtech_** para ver como usar tecnologia prática no seu negócio.",
+   "sera": "feliz"
+  }
+ ],
+ "legenda": "Sua empresa ainda perde horas com trabalho manual e repetitivo? ⚙️\n\nSalva este post para consultar quando for estruturar seus primeiros fluxos automáticos!"
+}
