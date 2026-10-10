@@ -194,6 +194,57 @@ def voz_estimada(texto):
 
 
 # ---------- principal ----------
+_PIX_USADAS = set()
+
+
+def pixabay(busca, orient="vertical", n=1):
+    """Baixa n fotos grátis do Pixabay para public/job/img e devolve os caminhos (job/img/...)."""
+    import urllib.parse, urllib.request
+    chave = os.environ.get("PIXABAY_API_KEY")
+    if not chave:
+        return []
+    q = urllib.parse.quote(busca[:90])
+    out = []
+    for o in (orient, "all"):
+        url = f"https://pixabay.com/api/?key={chave}&q={q}&image_type=photo&orientation={o}&safesearch=true&per_page=30&order=popular"
+        try:
+            hits = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read()).get("hits", [])
+        except Exception as e:
+            print(f"[aviso] pixabay '{busca}': {e}"); hits = []
+        for h in hits:
+            if h["id"] in _PIX_USADAS:
+                continue
+            destino = JOB / "img" / f"px{h['id']}.jpg"
+            destino.parent.mkdir(parents=True, exist_ok=True)
+            try:
+                req = urllib.request.Request(h.get("largeImageURL") or h["webformatURL"], headers={"User-Agent": "Mozilla/5.0"})
+                destino.write_bytes(urllib.request.urlopen(req, timeout=120).read())
+            except Exception:
+                continue
+            _PIX_USADAS.add(h["id"]); out.append(f"job/img/{destino.name}")
+            if len(out) >= n:
+                return out
+        if out:
+            return out
+    return out
+
+
+def preparar_imagens_cortes(cenas):
+    for c in cenas:
+        if c.get("busca"):
+            r = pixabay(c.pop("busca"), "vertical" if c.get("tipo") in ("foto", "painel", "serifa") else "all")
+            if r: c["imagem"] = r[0]
+        if c.get("buscas"):
+            r = []
+            for b in c.pop("buscas"):
+                r += pixabay(b, "all", 2)
+            c["imagens"] = r
+        for it in c.get("itens") or []:
+            if isinstance(it, dict) and it.get("busca"):
+                r = pixabay(it.pop("busca"), "all")
+                if r: it["imagem"] = r[0]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("roteiro")
