@@ -23,7 +23,7 @@ CLIMA_PADRAO = {
 }
 # onde começar a tocar cada faixa, conforme o clima
 PONTO = {"epico": "drop", "energia": "drop", "tensao": "calmo", "sombrio": "calmo", "emocao": "calmo", "inspira": "pico"}
-VOLUME = {"epico": 1.0, "energia": 0.9, "tensao": 0.95, "sombrio": 0.95, "emocao": 0.85, "inspira": 0.85}
+VOLUME = {"epico": 1.0, "energia": 0.95, "tensao": 1.0, "sombrio": 1.0, "emocao": 1.5, "inspira": 1.0}
 
 
 def _faixas(clima):
@@ -84,7 +84,7 @@ def montar(cenas, voz, saida, semente="x", dur_total=None):
         n = sum(1 for x in entradas if x == "-i")
         entradas += ["-ss", f"{ini:.2f}", "-t", f"{d + 0.1:.2f}", "-i", str(f)]
         fin = 0.25 if k == 0 else 0.35
-        filtros.append(f"[{n}:a]aformat=sample_rates=44100:channel_layouts=stereo,volume={VOLUME[t['clima']]},"
+        filtros.append(f"[{n}:a]aformat=sample_rates=44100:channel_layouts=stereo,volume={VOLUME[t['clima']] * (1.5 if k == 0 else 1.0)},"
                        f"afade=t=in:d={0.05 if k == 0 else fin},afade=t=out:st={max(0, d - 0.4):.2f}:d=0.4,"
                        f"adelay={int(a * 1000)}|{int(a * 1000)}[m{n}]")
         rot.append(f"[m{n}]")
@@ -100,8 +100,8 @@ def montar(cenas, voz, saida, semente="x", dur_total=None):
     # índice da voz = número de entradas -i até agora
     nvoz = sum(1 for x in entradas if x == "-i")
     entradas += ["-i", str(voz)]
-    filtros.append(f"{''.join(rot)}amix=inputs={len(rot)}:normalize=0:dropout_transition=0,volume=0.30[mus]")
-    filtros.append(f"[{nvoz}:a]aformat=sample_rates=44100:channel_layouts=stereo,asplit=2[vsc][vx]")
+    filtros.append(f"{''.join(rot)}amix=inputs={len(rot)}:normalize=0:dropout_transition=0,volume=0.38[mus]")
+    filtros.append(f"[{nvoz}:a]aformat=sample_rates=44100:channel_layouts=stereo,apad=whole_dur={dur_total:.2f},asplit=2[vsc][vx]")
     # sidechain: a música abaixa ~9 dB quando a voz fala e volta nas pausas
     filtros.append("[mus][vsc]sidechaincompress=threshold=0.025:ratio=7:attack=15:release=320:makeup=1[duck]")
     filtros.append(f"[duck]atrim=0:{dur_total:.2f},alimiter=limit=0.7[out]")
