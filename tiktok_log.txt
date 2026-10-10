@@ -1,1 +1,1 @@
-publish_id: v_inbox_file~v2.7694751349310801940
+{"data": {"status": "SEND_TO_USER_INBOX"}, "error": {"code": "ok", "message": "", "log_id": "2026101022201158EE8F18269B62136D40"}}
