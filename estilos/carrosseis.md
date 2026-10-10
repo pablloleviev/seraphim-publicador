@@ -32,8 +32,15 @@ Legenda: gancho na 1ª linha, chamada, hashtags adicionadas automaticamente.
 ## 6. Nunca
 Parede de texto, cor fora da paleta, copiar layout de outra marca, mais de um CTA no final.
 
+## Identidade única por post (regra do Pabllo, 2026-10-10)
+- Padroniza-se o ESTILO de edição (ritmo, estrutura, qualidade), NUNCA a aparência: posts vizinhos no feed não podem parecer iguais.
+- 9 temas visuais (paleta + fonte + textura + animação + legenda): noir, editorial, terminal, meianoite, brutal, vinho, eletrico, grafite, ultravioleta. O planejador sempre escolhe o tema usado há mais tempo.
+- A Seraphim aparece de forma SUTIL em todos: fio dourado sob o título, anel dourado no ícone, barra de progresso, Sera. Não é obrigatório usar preto e dourado como cor principal.
+- Novos temas entram aqui conforme as referências que o Pabllo mandar.
+
 ## Regras aprovadas pelo Pabllo
 - Carrossel "3 sinais" é o padrão.
 
 ## Evolução
+- 2026-10-10: feed estava padronizado demais (mesma paleta) → criado sistema de temas visuais.
 - 2026-10-09: linha editorial ampliada para tecnologia, sistemas, automação e IA (não só oficina).

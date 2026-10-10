@@ -44,9 +44,16 @@ Render h264 CRF 19, preset slow, 30 fps.
 ## 9. Nunca
 Tela parada, texto longo, cor fora da paleta, palavrão, número inventado como estatística, cliente real inventado, copiar arte de outro criador.
 
+## Identidade única por post (regra do Pabllo, 2026-10-10)
+- Padroniza-se o ESTILO de edição (ritmo, estrutura, qualidade), NUNCA a aparência: posts vizinhos no feed não podem parecer iguais.
+- 9 temas visuais (paleta + fonte + textura + animação + legenda): noir, editorial, terminal, meianoite, brutal, vinho, eletrico, grafite, ultravioleta. O planejador sempre escolhe o tema usado há mais tempo.
+- A Seraphim aparece de forma SUTIL em todos: fio dourado sob o título, anel dourado no ícone, barra de progresso, Sera. Não é obrigatório usar preto e dourado como cor principal.
+- Novos temas entram aqui conforme as referências que o Pabllo mandar.
+
 ## Regras aprovadas pelo Pabllo
 - Vídeo "3 sinais" aprovado como base do estilo.
 
-## Evolução (correções → viram regra)
+## Evolução
+- 2026-10-10: feed estava padronizado demais (mesma paleta) → criado sistema de temas visuais. (correções → viram regra)
 - 2026-10-09: legenda não pode colar palavras; pontuação colada; dourado ilegível no branco corrigido.
 - 2026-10-09: resolução certa no Telegram (proporção vertical).
