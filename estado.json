@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630241,
+  "telegram_offset": 183630218,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -72,7 +72,7 @@
     },
     "2026-10-10_1100_contratar-ou-automatizar": {
       "status": "publicado",
-      "enviado_em": "2026-10-10T14:19:52.145205+00:00",
+      "enviado_em": "2026-10-10T13:49:25.332748+00:00",
       "tiktok": {
         "opcoes": [
           "PUBLIC_TO_EVERYONE",
@@ -80,20 +80,20 @@
           "SELF_ONLY"
         ],
         "info": {
-          "creator_nickname": "Seraphim 🪽",
+          "creator_nickname": "seraphimtech",
           "creator_username": "seraphimtech"
         },
         "priv": "PUBLIC_TO_EVERYONE",
-        "id": "v_inbox_file~v2.7695044408022140936",
+        "id": "v_inbox_file~v2.7695038963916245013",
         "feito": "rascunho"
       },
-      "msg_id": 601,
-      "ig_id": "18108458750630107",
-      "publicado_em": "2026-10-10T14:25:08.686156+00:00"
+      "msg_id": 581,
+      "ig_id": "18024841361920284",
+      "publicado_em": "2026-10-10T14:01:44.181407+00:00"
     },
     "2026-10-10_1500_cliente-que-nao-volta": {
       "status": "agendado",
-      "enviado_em": "2026-10-10T14:19:56.770223+00:00",
+      "enviado_em": "2026-10-10T13:49:29.425875+00:00",
       "tiktok": {
         "opcoes": [
           "PUBLIC_TO_EVERYONE",
@@ -101,21 +101,21 @@
           "SELF_ONLY"
         ],
         "info": {
-          "creator_nickname": "Seraphim 🪽",
+          "creator_nickname": "seraphimtech",
           "creator_username": "seraphimtech"
         },
         "priv": "PUBLIC_TO_EVERYONE"
       },
-      "msg_id": 603
+      "msg_id": 583
     },
     "2026-10-10_1800_5-comandos-chatgpt": {
       "status": "agendado",
-      "enviado_em": "2026-10-10T14:19:58.314354+00:00",
-      "msg_id": 611
+      "enviado_em": "2026-10-10T13:49:30.932231+00:00",
+      "msg_id": 591
     },
     "2026-10-10_1900_pecas-urgentes-oficina": {
       "status": "agendado",
-      "enviado_em": "2026-10-10T14:20:01.785627+00:00",
+      "enviado_em": "2026-10-10T13:49:34.513963+00:00",
       "tiktok": {
         "opcoes": [
           "PUBLIC_TO_EVERYONE",
@@ -123,16 +123,16 @@
           "SELF_ONLY"
         ],
         "info": {
-          "creator_nickname": "Seraphim 🪽",
+          "creator_nickname": "seraphimtech",
           "creator_username": "seraphimtech"
         },
         "priv": "PUBLIC_TO_EVERYONE"
       },
-      "msg_id": 613
+      "msg_id": 593
     },
     "2026-10-11_0800_vale-a-pena-ia-paga": {
-      "status": "agendado",
-      "enviado_em": "2026-10-10T14:20:06.647545+00:00",
+      "status": "aguardando",
+      "enviado_em": "2026-10-10T14:02:47.721200+00:00",
       "tiktok": {
         "opcoes": [
           "PUBLIC_TO_EVERYONE",
@@ -140,16 +140,15 @@
           "SELF_ONLY"
         ],
         "info": {
-          "creator_nickname": "Seraphim 🪽",
+          "creator_nickname": "seraphimtech",
           "creator_username": "seraphimtech"
-        },
-        "priv": "PUBLIC_TO_EVERYONE"
+        }
       },
-      "msg_id": 615
+      "msg_id": 597
     },
     "2026-10-11_1200_cadeira-vazia-agendamento": {
-      "status": "agendado",
-      "enviado_em": "2026-10-10T14:20:10.896171+00:00",
+      "status": "aguardando",
+      "enviado_em": "2026-10-10T14:02:51.164830+00:00",
       "tiktok": {
         "opcoes": [
           "PUBLIC_TO_EVERYONE",
@@ -157,12 +156,11 @@
           "SELF_ONLY"
         ],
         "info": {
-          "creator_nickname": "Seraphim 🪽",
+          "creator_nickname": "seraphimtech",
           "creator_username": "seraphimtech"
-        },
-        "priv": "PUBLIC_TO_EVERYONE"
+        }
       },
-      "msg_id": 617
+      "msg_id": 599
     }
   },
   "respondidos": {}
