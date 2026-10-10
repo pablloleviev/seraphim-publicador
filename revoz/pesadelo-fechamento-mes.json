@@ -1,0 +1,78 @@
+{
+ "nome": "pesadelo-fechamento-mes",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-12 12:00",
+ "cenas": [
+  {
+   "tipo": "palavra",
+   "texto": "FECHAMENTO|DO MÊS|NÃO DEVE|SER CAOS",
+   "destaque": "CAOS",
+   "narracao": "Chega o fim do mês e você passa a noite procurando nota fiscal e comprovante?"
+  },
+  {
+   "tipo": "cards",
+   "itens": [
+    {
+     "rotulo": "mito:",
+     "busca": "stressed owner messy receipts desk"
+    },
+    {
+     "rotulo": "verdade:",
+     "busca": "clean modern laptop financial dashboard"
+    }
+   ],
+   "narracao": "Tem gente que acha normal sofrer todo dia trinta pra fechar o caixa. Mito."
+  },
+  {
+   "tipo": "contador",
+   "rotulo": "Ex.: Horas caçando comprovantes",
+   "de": 0,
+   "para": 12,
+   "sufixo": "h",
+   "narracao": "Perder um dia inteiro caçando extrato e papel amassado é sinal de processo quebrado."
+  },
+  {
+   "tipo": "frase",
+   "texto": "cinco minutos por dia evitam o desespero",
+   "destaque": "cinco minutos",
+   "narracao": "Cinco minutos de conferência por dia eliminam qualquer correria no final do mês."
+  },
+  {
+   "tipo": "niveis",
+   "texto": "Passos da rotina",
+   "itens": [
+    "Lançou na hora",
+    "Conferiu no dia",
+    "Relatório pronto"
+   ],
+   "narracao": "Lançou na hora, conferiu no dia, e o relatório sai pronto sem mistério."
+  },
+  {
+   "tipo": "digitando",
+   "topo": "ROTINA:",
+   "texto": "ORGANIZADA",
+   "narracao": "Criamos um roteiro simples pra você nunca mais virar a noite fechando conta."
+  },
+  {
+   "tipo": "sera",
+   "pose": "confiante",
+   "texto": "envio no direct",
+   "narracao": "Comenta FECHAMENTO aqui no post que eu te mando esse material de graça."
+  },
+  {
+   "tipo": "cta",
+   "texto": "COMENTA *FECHAMENTO* NO POST",
+   "pose": "comemorando",
+   "narracao": "Comenta FECHAMENTO agora e segue a Seraphim para descomplicar a gestão da sua empresa.",
+   "funil": "meio"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Fechar o mês ainda te dá dor de cabeça? Comenta FECHAMENTO aqui no post que te mando o checklist prático no direct 📊\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech",
+ "palavra_chave": "FECHAMENTO",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/pesadelo-fechamento-mes/",
+ "material_titulo": "Checklist do Fechamento Sem Estresse",
+ "destino": "fila/2026-10-12_1200_pesadelo-fechamento-mes"
+}

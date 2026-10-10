@@ -48,7 +48,7 @@ jobs:
           git config user.name "seraphim-bot"
           git config user.email "bot@users.noreply.github.com"
           # só os arquivos que ESTE job mudou (nunca apaga o que outros publicaram no meio tempo)
-          for p in fila pedidos gravacoes amostras cenarios estado_drive.json; do git add -A -- "$p" 2>/dev/null || true; done
+          for p in fila pedidos gravacoes amostras cenarios revoz estado_drive.json; do git add -A -- "$p" 2>/dev/null || true; done
           git diff --cached --quiet && exit 0
           git commit -q -m "vídeo gerado e colocado na fila"
           for i in 1 2 3 4 5; do

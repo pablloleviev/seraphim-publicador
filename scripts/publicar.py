@@ -182,6 +182,17 @@ def publicar_instagram(pasta: Path, meta: dict) -> str:
 
 
 # ---------- Telegram ----------
+def em_revoz(nome_pasta: str) -> bool:
+    """True se o vídeo está na lista para ser refeito (voz Gemini / trilha nova)."""
+    for f in (RAIZ / "revoz").glob("*.json"):
+        try:
+            if json.loads(f.read_text(encoding="utf-8")).get("destino", "").endswith(nome_pasta):
+                return True
+        except Exception:
+            pass
+    return False
+
+
 def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
     nome = pasta.name
     if meta["tipo"] == "reels":
@@ -393,7 +404,7 @@ def publicar_item(nome, item):
                     try:
                         import tiktok
                         leg_tt = meta.get("legenda_tiktok") or meta.get("legenda", "")
-                        if meta.get("palavra_chave"):   # no TikTok não dá para mandar direct automático
+                        if meta.get("palavra_chave") and meta["palavra_chave"] not in leg_tt:   # no TikTok não dá para mandar direct automático
                             leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimtech_ que o material chega no direct."
                         tt["id"] = tiktok.publicar(pasta / "video.mp4", leg_tt, tt["priv"],
                                                    tt.get("com", True), tt.get("due", True), tt.get("cos", True))
@@ -412,7 +423,7 @@ def publicar_item(nome, item):
             if tt and tt.get("feito") == "rascunho":
                 # no modo rascunho o TikTok não aceita legenda pela API: mandamos pronta para copiar
                 leg = meta.get("legenda_tiktok") or meta.get("legenda", "")
-                if meta.get("palavra_chave"):
+                if meta.get("palavra_chave") and meta["palavra_chave"] not in leg:
                     leg += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimtech_ que o material chega no direct."
                 tg("sendMessage", chat_id=CHAT, text="📋 Legenda do TikTok (toque e segure para copiar):")
                 tg("sendMessage", chat_id=CHAT, text=leg)
@@ -459,7 +470,11 @@ def main():
         for pasta, meta in itens_da_fila():
             if pasta.name in estado["itens"]:
                 continue
-            if datetime.fromisoformat(meta["quando"]) <= agora + ANTECEDENCIA:
+            quando_item = datetime.fromisoformat(meta["quando"])
+            # versão melhor (voz Gemini + trilha nova) a caminho? espera ela, a não ser que falte pouco para o post
+            if quando_item > agora + timedelta(hours=10) and em_revoz(pasta.name):
+                continue
+            if quando_item <= agora + ANTECEDENCIA:
                 try:
                     enviar_para_aprovacao(pasta, meta, estado)
                 except Exception as e:
