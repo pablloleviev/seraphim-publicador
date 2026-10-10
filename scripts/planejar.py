@@ -177,6 +177,20 @@ def pesquisar_ideias(dia):
     return ""
 
 
+def tags(v, n=12):
+    hs = [h if str(h).startswith("#") else "#" + str(h) for h in (v.get("hashtags") or [])]
+    hs = [re.sub(r"[^#\w]", "", h.lower()) for h in hs if "publicador" not in h.lower()]
+    if not hs:
+        return HT
+    if "#seraphimtech" not in hs:
+        hs.append("#seraphimtech")
+    out = []
+    for h in hs:
+        if h not in out and len(h) > 2:
+            out.append(h)
+    return " ".join(out[:n - 1] + (["#seraphimtech"] if "#seraphimtech" not in out[:n - 1] else []))
+
+
 def funis_do_dia(hist, n):
     k = sum(1 for h in hist if h.get("tipo") == "video" and h.get("funil"))
     return [PADRAO_FUNIL[(k + i) % len(PADRAO_FUNIL)] for i in range(n)]
@@ -218,7 +232,9 @@ REGRAS DE QUALIDADE (obrigatórias):
 FICHA DO AUTOFLOW:
 {FICHA_AUTOFLOW}
 - Carrossel (estilo de carrossel viral): capa com manchete forte = número + ferramenta/assunto conhecido + promessa ou segredo (ex.: "5 comandos pra fazer o ChatGPT trabalhar na sua empresa", "3 erros que fazem seu cliente sumir"); a capa promete exatamente a quantidade de itens do miolo; miolo com 1 item por slide (título curto + explicação ou comando pronto pra copiar); último slide = chamada (seguir/salvar). Carrossel: 6 a 9 slides; tipos capa, numero, texto (pode ter "card"); primeiro e último são "capa"; títulos usam | para quebrar linha.
-- Legenda: 1 a 3 linhas com emoji, uma pergunta ou chamada, SEM hashtags (são adicionadas depois).
+- Legenda (Instagram): ÚNICA para cada post, ligada ao gancho e ao assunto; 2 a 4 linhas curtas com emoji, uma pergunta que puxa comentário e a chamada do funil; SEM hashtags dentro dela.
+- "legenda_tiktok": legenda própria para o TikTok (mais curta e direta, 1 a 2 linhas, tom de conversa), diferente da do Instagram.
+- "hashtags": 8 a 12 hashtags relevantes para AQUELE post (misture 3 amplas, 5 do nicho/assunto e 2 de público, ex.: #inteligenciaartificial #chatgpt #pequenasempresas #empreendedorismo #automacao), sempre incluindo #seraphimtech; nunca #seraphimpublicador.
 - "nome": slug curto em minúsculas com hífens, único.
 
 MANUAL DE EDIÇÃO DOS CORTES (estilo e ritmo; para os campos de cena, siga o catálogo acima):
@@ -354,7 +370,8 @@ def main():
             tema = "noir"  # temas pausados: Pabllo reprovou (2026-10-10)
             spec = {"nome": nome, "arroba": "@seraphimtech_", "quando": f"{dia} {hora}", "cenas": v["cenas"], "motor": "cortes",
                     "funil": v["funil"], "genero_voz": "masculina" if criados % 3 else "feminina",
-                    "legenda": (v.get("legenda", "").strip() + "\n\n" + HT)}
+                    "legenda": (v.get("legenda", "").strip() + "\n\n" + tags(v)),
+                    "legenda_tiktok": (str(v.get("legenda_tiktok") or v.get("legenda", "")).strip() + "\n\n" + tags(v, 6))}
             if v["funil"] == "meio":
                 import material
                 m = dict(v["material"]); m.setdefault("slug", nome)

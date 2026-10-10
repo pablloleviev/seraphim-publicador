@@ -36,7 +36,7 @@ for pedido in sorted((RAIZ / "pedidos").glob("*.json")):
     (destino / "item.json").write_text(json.dumps({
         "tipo": "reels", "legenda": spec.get("legenda", ""),
         "quando": quando.strftime("%Y-%m-%dT%H:%M:00-03:00"),
-        **{k: spec[k] for k in ("funil", "palavra_chave", "material_url", "material_titulo") if spec.get(k)}}, ensure_ascii=False, indent=2), encoding="utf-8")
+        **{k: spec[k] for k in ("funil", "palavra_chave", "material_url", "material_titulo", "legenda_tiktok") if spec.get(k)}}, ensure_ascii=False, indent=2), encoding="utf-8")
     txt = destino / "video.txt"
     if txt.exists(): txt.unlink()
     # saiu com voz reserva? guarda o roteiro para refazer com a voz do Gemini quando a cota renovar

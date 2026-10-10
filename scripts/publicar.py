@@ -392,7 +392,7 @@ def publicar_item(nome, item):
                 if tt:
                     try:
                         import tiktok
-                        leg_tt = meta.get("legenda", "")
+                        leg_tt = meta.get("legenda_tiktok") or meta.get("legenda", "")
                         if meta.get("palavra_chave"):   # no TikTok não dá para mandar direct automático
                             leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimtech_ que o material chega no direct."
                         tt["id"] = tiktok.publicar(pasta / "video.mp4", leg_tt, tt["priv"],
@@ -409,6 +409,13 @@ def publicar_item(nome, item):
                 res += ("\n• TikTok: " + (f"enviado como rascunho (status do TikTok: {tt.get('status') or '?'}) — no app do TikTok da conta @seraphimtech, abra Caixa de entrada → Notificações do sistema e toque no aviso do vídeo para publicar"
                         if tt.get("feito") == "rascunho" else "publicado" if tt.get("feito") else f"falhou ({tt.get('erro')})"))
             tg("sendMessage", chat_id=CHAT, text=res)
+            if tt and tt.get("feito") == "rascunho":
+                # no modo rascunho o TikTok não aceita legenda pela API: mandamos pronta para copiar
+                leg = meta.get("legenda_tiktok") or meta.get("legenda", "")
+                if meta.get("palavra_chave"):
+                    leg += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimtech_ que o material chega no direct."
+                tg("sendMessage", chat_id=CHAT, text="📋 Legenda do TikTok (toque e segure para copiar):")
+                tg("sendMessage", chat_id=CHAT, text=leg)
         except Exception as e:
             item["status"] = "aguardando"
             try:
