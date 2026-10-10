@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630207,
+  "telegram_offset": 183630211,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -69,6 +69,40 @@
         }
       },
       "msg_id": 34
+    },
+    "2026-10-10_1500_cliente-que-nao-volta": {
+      "status": "agendado",
+      "enviado_em": "2026-10-10T13:18:34.921226+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "seraphimtech",
+          "creator_username": "seraphimtech"
+        },
+        "priv": "PUBLIC_TO_EVERYONE"
+      },
+      "msg_id": 244
+    },
+    "2026-10-10_1900_pecas-urgentes-oficina": {
+      "status": "agendado",
+      "enviado_em": "2026-10-10T13:18:39.994998+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "seraphimtech",
+          "creator_username": "seraphimtech"
+        },
+        "priv": "PUBLIC_TO_EVERYONE"
+      },
+      "msg_id": 253
     }
   },
   "respondidos": {}
