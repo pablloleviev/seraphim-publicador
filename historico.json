@@ -235,7 +235,8 @@
   "formato": "pergunta polêmica",
   "dia": "2026-10-11",
   "tipo": "video",
-  "tema": "noir"
+  "tema": "noir",
+  "funil": "topo"
  },
  {
   "nome": "cadeira-vazia-agendamento",
@@ -243,7 +244,8 @@
   "formato": "antes e depois",
   "dia": "2026-10-11",
   "tipo": "video",
-  "tema": "noir"
+  "tema": "noir",
+  "funil": "meio"
  },
  {
   "nome": "oficina-papel-ou-sistema",
@@ -251,7 +253,8 @@
   "formato": "comparação (X vs Y)",
   "dia": "2026-10-11",
   "tipo": "video",
-  "tema": "noir"
+  "tema": "noir",
+  "funil": "fundo"
  },
  {
   "nome": "4-passos-automatizar-tarefas",
@@ -267,7 +270,8 @@
   "formato": "notícia/tendência de IA explicada",
   "dia": "2026-10-12",
   "tipo": "video",
-  "tema": "noir"
+  "tema": "noir",
+  "funil": "topo"
  },
  {
   "nome": "pesadelo-fechamento-mes",
@@ -275,7 +279,8 @@
   "formato": "mito vs verdade",
   "dia": "2026-10-12",
   "tipo": "video",
-  "tema": "noir"
+  "tema": "noir",
+  "funil": "meio"
  },
  {
   "nome": "oficina-depende-da-sua-cabeca",
@@ -283,7 +288,8 @@
   "formato": "pergunta polêmica",
   "dia": "2026-10-12",
   "tipo": "video",
-  "tema": "noir"
+  "tema": "noir",
+  "funil": "fundo"
  },
  {
   "nome": "4-avisos-automaticos-contra-prejuizo",
@@ -299,7 +305,8 @@
   "formato": "você sabia",
   "dia": "2026-10-13",
   "tipo": "video",
-  "tema": "noir"
+  "tema": "noir",
+  "funil": "topo"
  },
  {
   "nome": "filtro-de-clientes-curiosos",
@@ -307,7 +314,8 @@
   "formato": "checklist",
   "dia": "2026-10-13",
   "tipo": "video",
-  "tema": "noir"
+  "tema": "noir",
+  "funil": "meio"
  },
  {
   "nome": "historico-do-veiculo-oficina",
@@ -315,7 +323,8 @@
   "formato": "história curta de cliente",
   "dia": "2026-10-13",
   "tipo": "video",
-  "tema": "noir"
+  "tema": "noir",
+  "funil": "fundo"
  },
  {
   "nome": "3-erros-implantar-sistemas",

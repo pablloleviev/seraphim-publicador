@@ -152,7 +152,16 @@ EXEMPLO_CARROSSEL = {
     "legenda": "5 usos de IA que economizam horas ⏱️\n\nSalva pra testar 📌"}
 
 
+PADRAO_FUNIL = ["topo", "topo", "meio", "topo", "topo", "topo", "meio", "topo", "fundo", "topo"]  # 70% / 20% / 10%
+
+
+def funis_do_dia(hist, n):
+    k = sum(1 for h in hist if h.get("tipo") == "video" and h.get("funil"))
+    return [PADRAO_FUNIL[(k + i) % len(PADRAO_FUNIL)] for i in range(n)]
+
+
 def pedir_dia(dia, n_v, n_c, hist):
+    funis = funis_do_dia(hist, n_v)
     usados = [h["titulo"] for h in hist][-300:]
     formatos_recentes = [h.get("formato", "") for h in hist][-12:]
     regras = f"""Você é o roteirista-chefe da Seraphim (@seraphimtech_), startup brasileira de tecnologia:
@@ -162,6 +171,7 @@ SaaS de gestão. Público: donos de pequenos negócios e profissionais que quere
 
 Crie o conteúdo do dia {dia:%d/%m/%Y} ({['segunda','terça','quarta','quinta','sexta','sábado','domingo'][dia.weekday()]}):
 {n_v} roteiros de VÍDEO (Reels/TikTok vertical) e {n_c} CARROSSÉIS.
+NÍVEL DE FUNIL OBRIGATÓRIO DE CADA VÍDEO, NESTA ORDEM: {funis} (o assunto de cada vídeo deve combinar com o nível: fundo = oficina mecânica + AutoFlow; meio = dor de gestão + palavra-chave; topo = IA/tecnologia para atrair seguidores).
 
 REGRAS DE QUALIDADE (obrigatórias):
 - Cada post é sobre um tema DIFERENTE. NUNCA repita nem parafraseie estes temas já usados: {json.dumps(usados, ensure_ascii=False)}
@@ -323,7 +333,7 @@ def main():
                 spec["material_url"] = material.gerar(m)
                 spec["material_titulo"] = m.get("titulo", "").replace("*", "")
             (RAIZ / "pedidos" / f"{nome}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=1), encoding="utf-8")
-            hist.append({"nome": nome, "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video", "tema": tema})
+            hist.append({"nome": nome, "funil": v["funil"], "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video", "tema": tema})
             criados += 1
         for hora, c in zip(hc, plano.get("carrosseis", [])):
             slides = [s for s in c.get("slides", []) if s.get("titulo")]
