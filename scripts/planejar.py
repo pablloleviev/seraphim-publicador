@@ -132,6 +132,12 @@ REGRAS DE QUALIDADE (obrigatórias):
 - Legenda: 1 a 3 linhas com emoji, uma pergunta ou chamada, SEM hashtags (são adicionadas depois).
 - "nome": slug curto em minúsculas com hífens, único.
 
+MANUAL DE EDIÇÃO DOS CORTES (siga à risca nos vídeos):
+{(RAIZ / "estilos" / "cortes.md").read_text(encoding="utf-8")}
+
+MANUAL DOS CARROSSÉIS (siga à risca nos carrosséis):
+{(RAIZ / "estilos" / "carrosseis.md").read_text(encoding="utf-8")}
+
 Responda SÓ um JSON: {{"videos": [...{n_v} itens], "carrosseis": [...{n_c} itens]}}
 Exemplo de vídeo: {json.dumps(EXEMPLO_VIDEO, ensure_ascii=False)}
 Exemplo de carrossel: {json.dumps(EXEMPLO_CARROSSEL, ensure_ascii=False)}"""
