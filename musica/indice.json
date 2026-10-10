@@ -4,293 +4,419 @@
   "pico": 46.5,
   "drop": 54.0,
   "calmo": 6.5,
-  "energia_media": 0.442
+  "energia_media": 0.442,
+  "lufs": -10.6,
+  "corpo": 26.0,
+  "corte": 16408
  },
  "epico/02": {
   "dur": 115.1,
   "pico": 73.0,
   "drop": 58.0,
   "calmo": 0.0,
-  "energia_media": 0.455
+  "energia_media": 0.455,
+  "lufs": -10.7,
+  "corpo": 18.5,
+  "corte": 16020
  },
  "epico/03": {
   "dur": 121.9,
   "pico": 103.0,
   "drop": 101.0,
   "calmo": 0.0,
-  "energia_media": 0.367
+  "energia_media": 0.367,
+  "lufs": -10.1,
+  "corpo": 52.0,
+  "corte": 16559
  },
  "epico/04": {
   "dur": 150.0,
   "pico": 132.5,
   "drop": 104.0,
   "calmo": 0.0,
-  "energia_media": 0.558
+  "energia_media": 0.558,
+  "lufs": -12.7,
+  "corpo": 43.5,
+  "corte": 16602
  },
  "epico/05": {
   "dur": 72.5,
   "pico": 55.5,
   "drop": 49.5,
   "calmo": 0.0,
-  "energia_media": 0.6
+  "energia_media": 0.6,
+  "lufs": -10.6,
+  "corpo": 8.0,
+  "corte": 16623
  },
  "epico/06": {
   "dur": 99.0,
   "pico": 71.5,
   "drop": 40.5,
   "calmo": 0.0,
-  "energia_media": 0.612
+  "energia_media": 0.612,
+  "lufs": -10.9,
+  "corpo": 18.5,
+  "corte": 16537
  },
  "tensao/01": {
   "dur": 58.9,
   "pico": 50.0,
   "drop": 44.0,
   "calmo": 4.0,
-  "energia_media": 0.446
+  "energia_media": 0.446,
+  "lufs": -9.8,
+  "corpo": 17.5,
+  "corte": 16688
  },
  "tensao/02": {
   "dur": 106.0,
   "pico": 86.0,
   "drop": 2.5,
   "calmo": 0.0,
-  "energia_media": 0.747
+  "energia_media": 0.747,
+  "lufs": -22.7,
+  "corpo": 1.5,
+  "corte": 5684
  },
  "tensao/03": {
   "dur": 140.0,
   "pico": 129.5,
   "drop": 57.0,
   "calmo": 0.0,
-  "energia_media": 0.471
+  "energia_media": 0.471,
+  "lufs": -18.5,
+  "corpo": 27.5,
+  "corte": 13598
  },
  "tensao/04": {
   "dur": 118.0,
   "pico": 84.5,
   "drop": 3.0,
   "calmo": 0.0,
-  "energia_media": 0.633
+  "energia_media": 0.633,
+  "lufs": -10.7,
+  "corpo": 3.0,
+  "corte": 12047
  },
  "tensao/05": {
   "dur": 102.0,
   "pico": 79.5,
   "drop": 2.0,
   "calmo": 0.0,
-  "energia_media": 0.639
+  "energia_media": 0.639,
+  "lufs": -16.0,
+  "corpo": 1.5,
+  "corte": 5652
  },
  "tensao/06": {
   "dur": 112.0,
   "pico": 83.0,
   "drop": 81.5,
   "calmo": 0.0,
-  "energia_media": 0.535
+  "energia_media": 0.535,
+  "lufs": -19.4,
+  "corpo": 5.5,
+  "corte": 8161
  },
  "emocao/01": {
   "dur": 107.5,
   "pico": 52.5,
   "drop": 2.0,
   "calmo": 0.0,
-  "energia_media": 0.512
+  "energia_media": 0.512,
+  "lufs": -16.2,
+  "corpo": 9.0,
+  "corte": 14373
  },
  "emocao/02": {
   "dur": 80.0,
   "pico": 32.5,
   "drop": 2.0,
   "calmo": 0.0,
-  "energia_media": 0.762
+  "energia_media": 0.762,
+  "lufs": -13.2,
+  "corpo": 1.0,
+  "corte": 10723
  },
  "emocao/03": {
   "dur": 144.0,
   "pico": 54.5,
   "drop": 73.0,
   "calmo": 0.0,
-  "energia_media": 0.313
+  "energia_media": 0.313,
+  "lufs": -19.5,
+  "corpo": 19.0,
+  "corte": 6050
  },
  "emocao/04": {
   "dur": 150.0,
   "pico": 112.5,
   "drop": 112.5,
   "calmo": 0.0,
-  "energia_media": 0.422
+  "energia_media": 0.422,
+  "lufs": -13.9,
+  "corpo": 56.0,
+  "corte": 15988
  },
  "emocao/05": {
   "dur": 136.3,
   "pico": 99.0,
   "drop": 2.5,
   "calmo": 0.0,
-  "energia_media": 0.549
+  "energia_media": 0.549,
+  "lufs": -13.5,
+  "corpo": 17.0,
+  "corte": 4317
  },
  "emocao/06": {
   "dur": 140.0,
   "pico": 57.0,
   "drop": 2.5,
   "calmo": 0.0,
-  "energia_media": 0.543
+  "energia_media": 0.543,
+  "lufs": -20.0,
+  "corpo": 4.5,
+  "corte": 16020
  },
  "energia/01": {
   "dur": 28.2,
   "pico": 17.5,
   "drop": 15.5,
   "calmo": 0.0,
-  "energia_media": 0.505
+  "energia_media": 0.505,
+  "lufs": -10.4,
+  "corpo": 14.5,
+  "corte": 16698
  },
  "energia/02": {
   "dur": 150.0,
   "pico": 114.5,
   "drop": 2.0,
   "calmo": 0.0,
-  "energia_media": 0.615
+  "energia_media": 0.615,
+  "lufs": -7.3,
+  "corpo": 1.0,
+  "corte": 16655
  },
  "energia/03": {
   "dur": 144.1,
   "pico": 107.0,
   "drop": 2.0,
   "calmo": 0.0,
-  "energia_media": 0.852
+  "energia_media": 0.852,
+  "lufs": -6.2,
+  "corpo": 1.0,
+  "corte": 16602
  },
  "energia/04": {
   "dur": 150.0,
   "pico": 2.0,
   "drop": 2.0,
   "calmo": 19.5,
-  "energia_media": 0.475
+  "energia_media": 0.475,
+  "lufs": -6.4,
+  "corpo": 0.5,
+  "corte": 16698
  },
  "energia/05": {
   "dur": 18.1,
   "pico": 6.5,
   "drop": 5.5,
   "calmo": 0.0,
-  "energia_media": 0.564
+  "energia_media": 0.564,
+  "lufs": -7.4,
+  "corpo": 3.5,
+  "corte": 16742
  },
  "energia/06": {
   "dur": 130.0,
   "pico": 80.5,
   "drop": 2.0,
   "calmo": 51.0,
-  "energia_media": 0.544
+  "energia_media": 0.544,
+  "lufs": -11.5,
+  "corpo": 0.5,
+  "corte": 16602
  },
  "sombrio/01": {
   "dur": 88.0,
   "pico": 57.0,
   "drop": 2.0,
   "calmo": 0.0,
-  "energia_media": 0.456
+  "energia_media": 0.456,
+  "lufs": -16.7,
+  "corpo": 1.5,
+  "corte": 15697
  },
  "sombrio/02": {
   "dur": 48.6,
   "pico": 28.5,
   "drop": 2.0,
   "calmo": 0.0,
-  "energia_media": 0.572
+  "energia_media": 0.572,
+  "lufs": -10.7,
+  "corpo": 7.0,
+  "corte": 16666
  },
  "sombrio/03": {
   "dur": 78.3,
   "pico": 64.0,
   "drop": 50.0,
   "calmo": 7.0,
-  "energia_media": 0.392
+  "energia_media": 0.392,
+  "lufs": -12.1,
+  "corpo": 33.0,
+  "corte": 16634
  },
  "sombrio/04": {
   "dur": 121.8,
   "pico": 73.0,
   "drop": 56.5,
   "calmo": 111.0,
-  "energia_media": 0.468
+  "energia_media": 0.468,
+  "lufs": -12.4,
+  "corpo": 5.5,
+  "corte": 16483
  },
  "sombrio/05": {
   "dur": 150.0,
   "pico": 93.0,
   "drop": 29.5,
   "calmo": 0.0,
-  "energia_media": 0.591
+  "energia_media": 0.591,
+  "lufs": -12.6,
+  "corpo": 28.5,
+  "corte": 16602
  },
  "sombrio/06": {
   "dur": 98.1,
   "pico": 89.0,
   "drop": 14.0,
   "calmo": 0.0,
-  "energia_media": 0.621
+  "energia_media": 0.621,
+  "lufs": -10.6,
+  "corpo": 13.0,
+  "corte": 11595
  },
  "inspira/01": {
   "dur": 132.0,
   "pico": 75.0,
   "drop": 38.0,
   "calmo": 0.0,
-  "energia_media": 0.482
+  "energia_media": 0.482,
+  "lufs": -13.5,
+  "corpo": 20.0,
+  "corte": 15880
  },
  "inspira/02": {
   "dur": 122.0,
   "pico": 92.5,
   "drop": 2.0,
   "calmo": 0.0,
-  "energia_media": 0.577
+  "energia_media": 0.577,
+  "lufs": -15.9,
+  "corpo": 1.5,
+  "corte": 14642
  },
  "inspira/03": {
   "dur": 118.4,
   "pico": 79.0,
   "drop": 23.0,
   "calmo": 0.0,
-  "energia_media": 0.447
+  "energia_media": 0.447,
+  "lufs": -12.8,
+  "corpo": 32.5,
+  "corte": 16020
  },
  "inspira/04": {
   "dur": 136.4,
   "pico": 74.0,
   "drop": 36.5,
   "calmo": 0.0,
-  "energia_media": 0.488
+  "energia_media": 0.488,
+  "lufs": -9.0,
+  "corpo": 36.0,
+  "corte": 16289
  },
  "inspira/05": {
   "dur": 113.1,
   "pico": 74.0,
   "drop": 46.5,
   "calmo": 0.0,
-  "energia_media": 0.518
+  "energia_media": 0.518,
+  "lufs": -10.1,
+  "corpo": 25.0,
+  "corte": 16440
  },
  "inspira/06": {
   "dur": 150.0,
   "pico": 128.5,
   "drop": 2.0,
   "calmo": 0.0,
-  "energia_media": 0.752
+  "energia_media": 0.752,
+  "lufs": -8.2,
+  "corpo": 3.0,
+  "corte": 16634
  },
  "hook/01": {
   "dur": 150.0,
   "pico": 132.5,
   "drop": 121.0,
   "calmo": 0.0,
-  "energia_media": 0.543
+  "energia_media": 0.543,
+  "lufs": -13.8,
+  "corpo": 33.0,
+  "corte": 16580
  },
  "hook/02": {
   "dur": 70.6,
   "pico": 34.0,
   "drop": 19.0,
   "calmo": 0.0,
-  "energia_media": 0.59
+  "energia_media": 0.59,
+  "lufs": -6.6,
+  "corpo": 13.0,
+  "corte": 16376
  },
  "hook/03": {
   "dur": 80.7,
   "pico": 64.0,
   "drop": 17.5,
   "calmo": 6.5,
-  "energia_media": 0.485
+  "energia_media": 0.485,
+  "lufs": -13.3,
+  "corpo": 18.5,
+  "corte": 15999
  },
  "hook/04": {
   "dur": 144.6,
   "pico": 129.0,
   "drop": 127.0,
   "calmo": 4.5,
-  "energia_media": 0.357
+  "energia_media": 0.357,
+  "lufs": -14.7,
+  "corpo": 23.5,
+  "corte": 14491
  },
  "hook/05": {
   "dur": 51.9,
   "pico": 33.5,
   "drop": 2.0,
   "calmo": 0.0,
-  "energia_media": 0.624
+  "energia_media": 0.624,
+  "lufs": -8.1,
+  "corpo": 15.5,
+  "corte": 16709
  },
  "hook/06": {
   "dur": 29.2,
   "pico": 20.0,
   "drop": 2.0,
   "calmo": 0.0,
-  "energia_media": 0.715
+  "energia_media": 0.715,
+  "lufs": -15.2,
+  "corpo": 2.5,
+  "corte": 16515
  }
 }
