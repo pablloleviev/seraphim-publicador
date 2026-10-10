@@ -31,7 +31,7 @@ jobs:
           TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
         run: |
           pip install -q cryptography
-          set -o pipefail; python scripts/publicar.py 2>&1 | tee publicar_log.txt
+          set -o pipefail; python -u scripts/publicar.py 2>&1 | tee publicar_log.txt
       - name: Salvar estado
         if: always()
         run: |
