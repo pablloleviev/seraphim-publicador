@@ -174,6 +174,14 @@ const CContador: React.FC<CP> = ({c, f, fps, n}) => {
 };
 
 // texto de computador sendo digitado, cursor de bloco, fundo xadrez escuro
+// texto digitado: no máximo 2 linhas, letra grande
+const quebra = (t: string) => {
+  if (t.length <= 13) return t;
+  const ps = t.split(' '); let best = t, dif = 999;
+  for (let i = 1; i < ps.length; i++) { const a = ps.slice(0, i).join(' '), b = ps.slice(i).join(' '); const d = Math.abs(a.length - b.length); if (d < dif) { dif = d; best = a + '\n' + b; } }
+  return best;
+};
+const tamDig = (t: string) => Math.max(84, Math.min(150, Math.floor(880 / (Math.max(6, ...quebra(t).split('\n').map((l) => l.length)) * 0.6))));
 const CDigitando: React.FC<CP> = ({c, f}) => {
   const t = (c.texto || '').toUpperCase();
   const k = Math.min(t.length, Math.floor(Math.max(0, f - 6) / 1.6));
@@ -184,9 +192,9 @@ const CDigitando: React.FC<CP> = ({c, f}) => {
       <AbsoluteFill style={{alignItems: 'flex-start', justifyContent: 'center', padding: '0 90px'}}>
         {c.topo && <div style={{fontFamily: 'Anton', fontSize: 150, color: '#ff6b78', textShadow: rgb(4), marginBottom: 30, marginLeft: 120,
           opacity: ease(f, 0, 4)}}>{c.topo}</div>}
-        <div style={{fontFamily: 'Jet', fontWeight: 800, fontSize: Math.min(150, Math.floor(880 / Math.max(6, t.length) / 0.6)), color: '#fff', textShadow: rgb(3), display: 'flex', alignItems: 'center'}}>
-          {t.slice(0, k)}
-          <span style={{display: 'inline-block', width: '0.6em', height: '1em', background: k < t.length || pisca ? '#fff' : 'transparent', marginLeft: 6}} />
+        <div style={{fontFamily: 'Jet', fontWeight: 800, fontSize: tamDig(t), lineHeight: 1.1, color: '#fff', textShadow: rgb(3), maxWidth: 900, whiteSpace: 'pre-wrap'}}>
+          {quebra(t).slice(0, k + (quebra(t).length - t.length))}
+          <span style={{display: 'inline-block', width: '0.6em', height: '1em', verticalAlign: 'middle', background: k < t.length || pisca ? '#fff' : 'transparent', marginLeft: 6}} />
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -394,17 +402,18 @@ const CNiveis: React.FC<CP> = ({c, f, fps}) => {
 
 // lista elegante com serifa itálica e asterisco laranja (Iman)
 const CSerifa: React.FC<CP> = ({c, f, fps, n}) => {
-  const itens = (c.itens || []).slice(0, 4) as string[];
+  const itens = ((c.itens && c.itens.length ? c.itens : [c.texto || '']) as string[]).slice(0, 4);
+  const um = itens.length === 1;
   return (
-    <AbsoluteFill>
+    <AbsoluteFill style={{background: 'linear-gradient(160deg,#1a1410,#0a0a0b 70%)'}}>
       <Foto src={c.imagem} f={f} n={n} tom="normal" zoom={0.08} />
       <AbsoluteFill style={{background: 'linear-gradient(90deg, rgba(10,12,20,.88), rgba(10,12,20,.55))'}} />
       <AbsoluteFill style={{justifyContent: 'center', padding: '0 110px', gap: 34}}>
         {itens.map((t, i) => {
           const s = spring({frame: f - 4 - i * 8, fps, config: {damping: 14}});
-          return <div key={i} style={{fontFamily: 'Playfair', fontStyle: 'italic', fontSize: 96, color: '#f4efe6', opacity: s,
+          return <div key={i} style={{fontFamily: 'Playfair', fontStyle: 'italic', fontSize: um ? 110 : 96, lineHeight: 1.12, color: '#f4efe6', opacity: s,
             transform: `translateY(${(1 - s) * 30}px)`, display: 'flex', alignItems: 'center', gap: 30}}>
-            <span style={{color: OURO, fontSize: 80, fontStyle: 'normal'}}>✳</span>{t}</div>;
+            {!um && <span style={{color: OURO, fontSize: 80, fontStyle: 'normal'}}>✳</span>}{t.replace(/\*/g, '')}</div>;
         })}
       </AbsoluteFill>
     </AbsoluteFill>
@@ -433,7 +442,7 @@ const CCta: React.FC<CP> = ({c, f, fps, n}) => {
           <div style={{marginTop: 44, padding: '24px 56px', borderRadius: 999, background: OURO, color: PRETO, fontFamily: 'InterX', fontSize: 50,
             transform: `scale(${bs * pill})`}}>{c.apoio || 'link na bio'} →</div>
         )}
-        <div style={{position: 'relative', marginTop: fundo ? 34 : 56, display: 'flex', alignItems: 'center', gap: 22, transform: `scale(${bs * (fundo ? 0.8 : 1) * aperta})`}}>
+        <div style={{position: 'relative', marginTop: fundo ? 34 : 56, display: 'flex', alignItems: 'center', gap: 22, transform: `scale(${bs * (fundo ? 1.05 : 1.25) * aperta})`}}>
           <Img src={staticFile('marca/icone.png')} style={{width: 92, height: 92, borderRadius: 46, boxShadow: `0 0 0 4px ${OURO}`}} />
           <div style={{fontFamily: 'InterX', fontSize: 44, color: '#fff'}}>seraphimtech_</div>
           <div style={{padding: '18px 44px', borderRadius: 18, fontFamily: 'InterX', fontSize: 44,

@@ -1,0 +1,90 @@
+{
+ "nome": "amostra-cliente-que-nao-volta",
+ "arroba": "@seraphimtech_",
+ "cenas": [
+  {
+   "tipo": "palavra",
+   "texto": "CLIENTE|COMPRA|E NUNCA MAIS|VOLTA",
+   "destaque": "VOLTA",
+   "narracao": "Seu cliente compra uma vez e nunca mais volta?"
+  },
+  {
+   "tipo": "cards",
+   "itens": [
+    {
+     "rotulo": "antes:",
+     "busca": "empty shop cash register quiet"
+    },
+    {
+     "rotulo": "depois:",
+     "busca": "smiling returning customer shop"
+    }
+   ],
+   "narracao": "O erro quase nunca é o produto. É que sua loja simplesmente esquece dele."
+  },
+  {
+   "tipo": "contador",
+   "rotulo": "Ex.: clientes esquecidos",
+   "de": 0,
+   "para": 120,
+   "sufixo": "",
+   "riscar": "Sem recompra",
+   "narracao": "A maioria dos clientes nunca recebe uma segunda mensagem depois da compra."
+  },
+  {
+   "tipo": "sera",
+   "pose": "surpreso",
+   "texto": "cadê o pós-venda?",
+   "narracao": "Zero pós-venda. O cliente esfria e vai comprar no concorrente."
+  },
+  {
+   "tipo": "diagrama",
+   "passos": [
+    {
+     "icone": "carrinho",
+     "rotulo": "compra"
+    },
+    {
+     "icone": "relogio",
+     "rotulo": "30 dias"
+    },
+    {
+     "icone": "chat",
+     "rotulo": "mensagem"
+    },
+    {
+     "icone": "dinheiro",
+     "rotulo": "retorno"
+    }
+   ],
+   "narracao": "Mas uma mensagem automática no momento certo traz esse cliente de volta pro caixa."
+  },
+  {
+   "tipo": "frase",
+   "texto": "vender de novo custa menos",
+   "destaque": "menos",
+   "narracao": "Vender de novo pra quem já comprou sai bem mais barato do que achar cliente novo."
+  },
+  {
+   "tipo": "digitando",
+   "topo": "PASSO 1:",
+   "texto": "AUTOMATIZAR O LEMBRETE",
+   "narracao": "Organizar essa régua de contato recupera receita todo santo mês."
+  },
+  {
+   "tipo": "cta",
+   "texto": "COMENTA *RETORNO*",
+   "pose": "confiante",
+   "narracao": "Comenta RETORNO aqui que eu te mando no direct o checklist de pós-venda e segue a Seraphim.",
+   "funil": "meio"
+  }
+ ],
+ "motor": "cortes",
+ "amostra": true,
+ "voz": "gemini",
+ "funil": "meio",
+ "legenda": "Trazer o cliente de volta custa muito menos do que achar um novo. Comente RETORNO pra receber o checklist 📲",
+ "palavra_chave": "RETORNO",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/amostra-cliente-que-nao-volta/",
+ "material_titulo": "Checklist de Pós-Venda Automático"
+}

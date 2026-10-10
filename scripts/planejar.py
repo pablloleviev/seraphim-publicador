@@ -118,7 +118,7 @@ CATALOGO_CENAS = """Tipos de cena do motor de cortes (vertical). Reveze: NUNCA o
 - contador: card de app em 3D com número contando. "rotulo", "de", "para", "sufixo" (ex.: "h", "%", " clientes"), opcional "riscar" (texto que aparece após riscar). Só números ilustrativos coerentes, nunca estatística inventada como fato.
 - foto: foto real tratada com texto grande. "busca" (inglês, 2 a 5 palavras, SEM pessoas famosas/marcas), "texto", "sub", "tom": cinza|vermelho|dourado.
 - pergunta: pergunta em letra de máquina no branco com o mascote; marque a palavra-chave com *asteriscos*; "pose".
-- digitando: "topo" (ex.: "PONTO 1:", "ERRO 2:") e "texto" curto em MAIÚSCULAS sendo digitado.
+- digitando: "topo" (ex.: "PONTO 1:", "ERRO 2:") e "texto" CURTO (1 a 3 palavras, máx. 18 letras) em MAIÚSCULAS sendo digitado.
 - diagrama: 3 a 4 "passos" {icone, rotulo}; icones: tela pessoas dinheiro robo grafico chat engrenagem raio relogio cadeado carrinho planilha check alerta.
 - cards: 2 cards de foto com rótulo ("antes:"/"depois:", "errado:"/"certo:"): "itens":[{"rotulo","busca"}].
 - parede: parede 3D de imagens com o mascote no centro. "buscas": 2 a 3 termos em inglês, "texto" curto opcional.
@@ -234,6 +234,8 @@ def validar_video(v):
         if c["tipo"] == "diagrama" and not c.get("passos"):
             c["tipo"] = "frase"
         if c["tipo"] in ("niveis", "cards") and not c.get("itens"):
+            c["tipo"] = "frase"
+        if c["tipo"] == "digitando" and len(str(c.get("texto", ""))) > 22:
             c["tipo"] = "frase"
         if cenas and cenas[-1]["tipo"] == c["tipo"] and c["tipo"] != "cta":
             c["tipo"] = "frase" if c["tipo"] != "frase" else "serifa"
