@@ -10,6 +10,7 @@ from pathlib import Path
 from PIL import Image
 
 RAIZ = Path(__file__).resolve().parent.parent
+(RAIZ / "canva" / "baixar").mkdir(parents=True, exist_ok=True)
 for ped in sorted((RAIZ / "canva" / "baixar").glob("*.json")):
     d = json.loads(ped.read_text(encoding="utf-8"))
     por_pag = {}
