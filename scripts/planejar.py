@@ -178,7 +178,7 @@ REGRAS DE QUALIDADE (obrigatórias):
 {REGRAS_FUNIL}
 FICHA DO AUTOFLOW:
 {FICHA_AUTOFLOW}
-- Carrossel: 6 a 9 slides; tipos capa, numero, texto (pode ter "card"); primeiro e último são "capa"; títulos usam | para quebrar linha.
+- Carrossel (estilo de carrossel viral): capa com manchete forte = número + ferramenta/assunto conhecido + promessa ou segredo (ex.: "5 comandos pra fazer o ChatGPT trabalhar na sua empresa", "3 erros que fazem seu cliente sumir"); a capa promete exatamente a quantidade de itens do miolo; miolo com 1 item por slide (título curto + explicação ou comando pronto pra copiar); último slide = chamada (seguir/salvar). Carrossel: 6 a 9 slides; tipos capa, numero, texto (pode ter "card"); primeiro e último são "capa"; títulos usam | para quebrar linha.
 - Legenda: 1 a 3 linhas com emoji, uma pergunta ou chamada, SEM hashtags (são adicionadas depois).
 - "nome": slug curto em minúsculas com hífens, único.
 
@@ -351,6 +351,11 @@ def main():
             (destino / "item.json").write_text(json.dumps({
                 "tipo": "carrossel", "legenda": c.get("legenda", "").strip() + "\n\n👉 Seraphim, link na bio.\n\n" + HT,
                 "quando": f"{dia}T{hora}:00-03:00"}, ensure_ascii=False, indent=2), encoding="utf-8")
+            # versão Canva (feita pela sessão agendada; esta versão em código fica de reserva)
+            (RAIZ / "canva" / "pendentes").mkdir(parents=True, exist_ok=True)
+            (RAIZ / "canva" / "pendentes" / f"{destino.name}.json").write_text(json.dumps({
+                "destino": str(destino.relative_to(RAIZ)), "titulo": c.get("titulo", nome), "formato": c.get("formato", ""),
+                "slides": slides, "legenda": c.get("legenda", "")}, ensure_ascii=False, indent=1), encoding="utf-8")
             hist.append({"nome": nome, "titulo": c.get("titulo", nome), "formato": c.get("formato", ""), "dia": str(dia), "tipo": "carrossel", "tema": tema})
             criados += 1
         HIST.write_text(json.dumps(hist, ensure_ascii=False, indent=1), encoding="utf-8")

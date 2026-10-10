@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name "seraphim-bot"
           git config user.email "bot@users.noreply.github.com"
-          for p in fila pedidos docs historico.json planejar_log.txt; do git add -A -- "$p" 2>/dev/null || true; done
+          for p in fila pedidos docs canva historico.json planejar_log.txt; do git add -A -- "$p" 2>/dev/null || true; done
           git diff --cached --quiet && exit 0
           git commit -q -m "conteúdo planejado"
           for i in 1 2 3 4 5; do
