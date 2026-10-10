@@ -34,7 +34,7 @@
       "enviado_em": "2026-10-09T16:09:34.937629+00:00"
     },
     "2026-10-10_1200_orcamento-some": {
-      "status": "aguardando",
+      "status": "cancelado",
       "enviado_em": "2026-10-10T04:25:49.587022+00:00",
       "tiktok": {
         "opcoes": [
@@ -50,12 +50,12 @@
       "msg_id": 24
     },
     "2026-10-10_1800_como-precificar": {
-      "status": "aguardando",
+      "status": "cancelado",
       "enviado_em": "2026-10-10T04:25:51.591497+00:00",
       "msg_id": 32
     },
     "2026-10-10_1900_site-ou-instagram": {
-      "status": "aguardando",
+      "status": "cancelado",
       "enviado_em": "2026-10-10T04:25:54.096895+00:00",
       "tiktok": {
         "opcoes": [

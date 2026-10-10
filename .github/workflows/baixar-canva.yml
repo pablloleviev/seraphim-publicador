@@ -1,0 +1,25 @@
+name: Baixar carrossel do Canva
+on:
+  push:
+    paths: ["canva/baixar/*.json"]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: baixar-canva
+  cancel-in-progress: false
+jobs:
+  baixar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q pillow && python scripts/baixar_canva.py
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
+          for p in fila canva; do git add -A -- "$p"; done
+          git diff --cached --quiet && exit 0
+          git commit -qm "carrossel do Canva na fila"
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push origin HEAD:main && exit 0; sleep 5; done; exit 1
