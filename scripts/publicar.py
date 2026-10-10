@@ -397,7 +397,7 @@ def publicar_item(nome, item):
                             leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimtech_ que o material chega no direct."
                         tt["id"] = tiktok.publicar(pasta / "video.mp4", leg_tt, tt["priv"],
                                                    tt.get("com", True), tt.get("due", True), tt.get("cos", True))
-                        tt["feito"] = tiktok.MODO
+                        tt["feito"] = tiktok.MODO; tt["status"] = tiktok.STATUS
                     except Exception as e:
                         tt["erro"] = str(e)[:300]
             try:
@@ -406,7 +406,7 @@ def publicar_item(nome, item):
                 pass
             res = f"✅ {nome}\n• Instagram: publicado"
             if tt:
-                res += ("\n• TikTok: " + ("está na caixa de entrada do app — abra o TikTok e toque em Publicar (até a auditoria ser aprovada)"
+                res += ("\n• TikTok: " + (f"enviado como rascunho (status do TikTok: {tt.get('status') or '?'}) — no app do TikTok da conta @seraphimtech, abra Caixa de entrada → Notificações do sistema e toque no aviso do vídeo para publicar"
                         if tt.get("feito") == "rascunho" else "publicado" if tt.get("feito") else f"falhou ({tt.get('erro')})"))
             tg("sendMessage", chat_id=CHAT, text=res)
         except Exception as e:

@@ -74,6 +74,7 @@ def _json(url, corpo, at):
 
 
 MODO = ""
+STATUS = ""
 
 
 NOMES_PRIV = {"PUBLIC_TO_EVERYONE": "🌍 Público", "MUTUAL_FOLLOW_FRIENDS": "👥 Amigos",
@@ -120,6 +121,7 @@ def publicar(video: Path, legenda: str, privacidade: str = None, comentarios=Tru
     for _ in range(60):
         st = _json(f"{API}/v2/post/publish/status/fetch/", {"publish_id": pub_id}, at)
         s = st.get("data", {}).get("status")
+        global STATUS; STATUS = s or ""
         if s in ("PUBLISH_COMPLETE", "SEND_TO_USER_INBOX"):
             return pub_id
         if s == "FAILED":
