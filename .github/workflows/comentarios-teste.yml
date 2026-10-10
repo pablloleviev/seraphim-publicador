@@ -1,0 +1,20 @@
+name: Testar robô de comentários
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          MINUTOS: "12"
+        run: python -u scripts/comentarios_teste.py 2>&1 | tee comentarios_log.txt
+      - if: always()
+        run: |
+          git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
+          git add comentarios_log.txt estado.json; git commit -qm "teste do robô de comentários" || exit 0
+          git pull -q --rebase -X theirs; git push
