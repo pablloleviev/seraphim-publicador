@@ -129,7 +129,7 @@ const CPalavra: React.FC<CP> = ({c, f, n}) => {
   const x = interpolate(lf, [0, 5], [dir * 420, 0], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
   const blur = interpolate(lf, [0, 5], [26, 0], {extrapolateRight: 'clamp'});
   const w = ws[i] || '';
-  const tam = Math.min(330, Math.floor((W - 120) / (Math.max(...w.split(' ').map((p) => p.length)) * 0.48)));
+  const tam = Math.min(330, Math.floor((W - 140) / (Math.max(w.length, 1) * 0.5)));
   const verm = c.destaque && w.toUpperCase().includes(c.destaque.toUpperCase());
   return (
     <AbsoluteFill style={{background: BRANCO, alignItems: 'center', justifyContent: 'center'}}>
@@ -152,7 +152,7 @@ const CContador: React.FC<CP> = ({c, f, fps, n}) => {
       <Raios f={f} c1="#d81e26" c2="#a5121a" n={22} />
       <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 45%, rgba(255,120,120,.35), transparent 55%)'}} />
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', perspective: 1400}}>
-        <div style={{transform: `rotateY(${interpolate(s, [0, 1], [-35, -14])}deg) rotateX(${8 + Math.sin(f / 30) * 3}deg) scale(${interpolate(s, [0, 1], [0.8, 1.35])})`,
+        <div style={{transform: `rotateY(${interpolate(s, [0, 1], [-35, -14])}deg) rotateX(${8 + Math.sin(f / 30) * 3}deg) scale(${interpolate(s, [0, 1], [0.7, 1.0])})`, maxWidth: 940,
           background: 'linear-gradient(180deg,#fff,#ecebef)', borderRadius: 60, padding: '40px 64px 40px 40px', display: 'flex', alignItems: 'center', gap: 34,
           boxShadow: '0 40px 90px rgba(80,0,0,.55), inset 0 -6px 0 rgba(0,0,0,.08)', position: 'relative'}}>
           <div style={{width: 130, height: 130, borderRadius: 65, background: '#d81e26', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: 'InterX', fontSize: 80}}>
@@ -513,7 +513,7 @@ export const SeraphimCortes: React.FC<PropsC> = (props) => {
       <Acabamento f={frame} />
       {/* assinatura sutil da marca */}
       <div style={{position: 'absolute', top: 0, left: 0, height: 8, width: `${(frame / durationInFrames) * 100}%`, background: OURO}} />
-      <div style={{position: 'absolute', left: 64, bottom: 70, display: 'flex', alignItems: 'center', gap: 18, opacity: 0.85}}>
+      <div style={{position: 'absolute', left: 50, bottom: 60, display: 'flex', alignItems: 'center', gap: 16, opacity: 0.9, background: 'rgba(0,0,0,.45)', padding: '8px 22px 8px 8px', borderRadius: 40}}>
         <Img src={staticFile('marca/icone.png')} style={{width: 60, height: 60, borderRadius: 30, boxShadow: `0 0 0 3px ${OURO}`}} />
         <span style={{fontFamily: 'InterM', fontSize: 34, color: '#e8e8e8', textShadow: '0 2px 8px rgba(0,0,0,.8)'}}>{props.arroba}</span>
       </div>
