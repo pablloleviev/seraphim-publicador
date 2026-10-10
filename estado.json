@@ -103,6 +103,27 @@
         "priv": "PUBLIC_TO_EVERYONE"
       },
       "msg_id": 253
+    },
+    "2026-10-10_1100_contratar-ou-automatizar": {
+      "status": "falhou_envio",
+      "enviado_em": "2026-10-10T13:37:17.390711+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "seraphimtech",
+          "creator_username": "seraphimtech"
+        }
+      },
+      "erro": "400 {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 537\"}"
+    },
+    "2026-10-10_1800_5-comandos-chatgpt": {
+      "status": "falhou_envio",
+      "enviado_em": "2026-10-10T13:37:18.848180+00:00",
+      "erro": "400 {\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 231\"}"
     }
   },
   "respondidos": {}
