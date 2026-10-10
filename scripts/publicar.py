@@ -39,6 +39,13 @@ ANTECEDENCIA = timedelta(hours=float(os.environ.get("HORAS_ANTECEDENCIA", "26"))
 import hashlib
 
 
+def md(t):
+    # escapa caracteres do Markdown do Telegram (ex.: o "_" de @seraphimtech_ quebrava a mensagem)
+    for ch in ("\\", "_", "*", "`", "["):
+        t = t.replace(ch, "\\" + ch)
+    return t
+
+
 def cod(nome):
     # o Telegram aceita no máximo 64 bytes no botão: usamos um código curto do nome do post
     return hashlib.md5(nome.encode()).hexdigest()[:10]
@@ -196,8 +203,8 @@ def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
         except Exception as e:
             print(f"[aviso] TikTok indisponível: {e}")
     hora = datetime.fromisoformat(meta["quando"]).astimezone(BRT).strftime("%d/%m às %H:%M")
-    texto = (f"📌 *{nome}*\n🕗 Sai em: *{hora}*\nTipo: {meta['tipo']}  •  Vai para: *{redes}*\n\n{meta.get('legenda','')[:800]}\n\n"
-             + (f"⚠️ Não feito automaticamente: {meta['nota']}\n\n" if meta.get("nota") else ""))
+    texto = (f"📌 *{nome}*\n🕗 Sai em: *{hora}*\nTipo: {meta['tipo']}  •  Vai para: *{redes}*\n\n{md(meta.get('legenda','')[:800])}\n\n"
+             + (f"⚠️ Não feito automaticamente: {md(meta['nota'])}\n\n" if meta.get("nota") else ""))
     if item.get("tiktok"):
         i = item["tiktok"]["info"]
         texto += (f"🎵 TikTok: *{i.get('creator_nickname')}* (@{i.get('creator_username')})\n"
