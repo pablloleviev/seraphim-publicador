@@ -315,6 +315,14 @@ def main():
 
     props = {"fps": 30, "duracao": cenas[-1]["fim"], "arroba": spec.get("arroba", "@seraphimtech_"),
              "audio": audio, "batida": "sfx/batida.mp3", "sfx": True, "palavras": palavras, "cenas": cenas}
+    if cortes and audio:
+        try:
+            import trilha
+            t = trilha.montar(cenas, MOTOR / "public" / audio, JOB / "trilha.wav", semente=nome, dur_total=cenas[-1]["fim"])
+            if t:
+                props["batida"] = "job/trilha.wav"; props["trilha_mix"] = True
+        except Exception as e:
+            print(f"[aviso] trilha emocional falhou ({e}); usando a batida padrão")
     props["tema"] = spec.get("tema", "noir")
     (JOB / "props.json").write_text(json.dumps(props, ensure_ascii=False), encoding="utf-8")
 

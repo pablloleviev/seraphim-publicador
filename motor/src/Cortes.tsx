@@ -545,7 +545,7 @@ export const SeraphimCortes: React.FC<PropsC> = (props) => {
         <span style={{fontFamily: 'InterM', fontSize: 34, color: '#e8e8e8', textShadow: '0 2px 8px rgba(0,0,0,.8)'}}>{props.arroba}</span>
       </div>
       {props.audio && <Audio src={staticFile(props.audio)} />}
-      {props.batida && <Audio src={staticFile(props.batida)} volume={props.audio ? 0.12 : 0.7} />}
+      {props.batida && <Audio src={staticFile(props.batida)} volume={(props as any).trilha_mix ? 1 : props.audio ? 0.12 : 0.7} />}
       {props.sfx && props.cenas.map((c, i) => (
         <React.Fragment key={'s' + i}>
           {i > 0 && <Sequence from={Math.max(0, Math.round((c.inicio - 0.2) * fps))}><Audio src={staticFile('sfx/whoosh.wav')} volume={0.4} /></Sequence>}

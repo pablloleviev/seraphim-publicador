@@ -155,6 +155,28 @@ EXEMPLO_CARROSSEL = {
 PADRAO_FUNIL = ["topo", "topo", "meio", "topo", "topo", "topo", "meio", "topo", "fundo", "topo"]  # 70% / 20% / 10%
 
 
+def pesquisar_ideias(dia):
+    """Pesquisa na internet (Gemini + Google Search) curiosidades e novidades de tecnologia/IA para inspirar os roteiros."""
+    prompt = (f"Hoje é {dia:%d/%m/%Y}. Pesquise na internet e liste 12 ideias de vídeos curtos de CURIOSIDADE e NOVIDADE sobre "
+              "tecnologia, inteligência artificial, automação, golpes digitais, apps úteis e negócios digitais que despertariam a curiosidade "
+              "de brasileiros donos de pequenos negócios e profissionais. Prefira fatos reais e recentes (últimas semanas), coisas surpreendentes, "
+              "'você sabia', bastidores de big techs, ferramentas novas grátis. Para cada ideia: título chamativo + o fato em 1 frase + fonte (site). "
+              "Responda em português, em lista simples.")
+    corpo = json.dumps({"contents": [{"parts": [{"text": prompt}]}], "tools": [{"google_search": {}}]}).encode()
+    for modelo in modelos_texto()[:3]:
+        req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
+                                     data=corpo, headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"], "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                partes = json.loads(r.read())["candidates"][0]["content"]["parts"]
+                txt = "\n".join(x.get("text", "") for x in partes)
+                print("Pesquisa de ideias ok:", txt[:300].replace("\n", " "))
+                return txt[:6000]
+        except Exception as e:
+            print(f"[aviso] pesquisa com {modelo} falhou: {e}")
+    return ""
+
+
 def funis_do_dia(hist, n):
     k = sum(1 for h in hist if h.get("tipo") == "video" and h.get("funil"))
     return [PADRAO_FUNIL[(k + i) % len(PADRAO_FUNIL)] for i in range(n)]
@@ -162,6 +184,7 @@ def funis_do_dia(hist, n):
 
 def pedir_dia(dia, n_v, n_c, hist):
     funis = funis_do_dia(hist, n_v)
+    ideias = pesquisar_ideias(dia)
     usados = [h["titulo"] for h in hist][-300:]
     formatos_recentes = [h.get("formato", "") for h in hist][-12:]
     regras = f"""Você é o roteirista-chefe da Seraphim (@seraphimtech_), startup brasileira de tecnologia:
@@ -171,13 +194,19 @@ SaaS de gestão. Público: donos de pequenos negócios e profissionais que quere
 
 Crie o conteúdo do dia {dia:%d/%m/%Y} ({['segunda','terça','quarta','quinta','sexta','sábado','domingo'][dia.weekday()]}):
 {n_v} roteiros de VÍDEO (Reels/TikTok vertical) e {n_c} CARROSSÉIS.
+NÃO faça só vídeo com cara de comercial: pelo menos 1 vídeo por dia deve ser de CURIOSIDADE/NOVIDADE real (fato surpreendente,
+"você sabia", notícia de IA explicada), escolhida a partir desta pesquisa feita hoje na internet (use só fatos que estão nela; não invente):
+{ideias}
+O GANCHO (primeiros 3 segundos) é a parte mais importante: comece com o fato mais surpreendente, uma pergunta que incomoda ou um contraste forte.
+Cada cena pode ter "clima" (trilha sonora): epico | tensao | sombrio | emocao | energia | inspira — escolha para criar uma montanha-russa
+emocional: gancho épico/energia, problema em tensão, virada em emoção, solução em energia/inspiração, final épico.
 NÍVEL DE FUNIL OBRIGATÓRIO DE CADA VÍDEO, NESTA ORDEM: {funis} (o assunto de cada vídeo deve combinar com o nível: fundo = oficina mecânica + AutoFlow; meio = dor de gestão + palavra-chave; topo = IA/tecnologia para atrair seguidores).
 
 REGRAS DE QUALIDADE (obrigatórias):
 - Cada post é sobre um tema DIFERENTE. NUNCA repita nem parafraseie estes temas já usados: {json.dumps(usados, ensure_ascii=False)}
 - Formatos disponíveis (reveze; não repita formato no mesmo dia se possível; evite os recentes {formatos_recentes}):
   tutorial passo a passo, mito vs verdade, erro que você comete, antes e depois, lista prática, notícia/tendência de IA explicada,
-  bastidores de startup, comparação (X vs Y), pergunta polêmica, história curta de cliente (genérica, sem nomes reais), checklist, "você sabia".
+  bastidores de startup, comparação (X vs Y), pergunta polêmica, curiosidade/você sabia, notícia de IA explicada, história curta de cliente (genérica, sem nomes reais), checklist, "você sabia".
 - Gancho forte na 1ª cena (pergunta, número ou contraste) — a pessoa decide em 1 segundo se fica.
 - Uma ideia por cena. Exemplos concretos do dia a dia de pequenos negócios (loja, clínica, salão, oficina, restaurante, escritório, e-commerce).
 - Vídeo: narração total entre 70 e 110 palavras, frases curtas e naturais para ser falada em voz alta.
