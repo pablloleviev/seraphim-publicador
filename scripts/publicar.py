@@ -17,7 +17,7 @@ Segredos (GitHub > Settings > Secrets and variables > Actions):
 """
 import json, os, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -30,6 +30,9 @@ CHAT = os.environ.get("TELEGRAM_CHAT_ID", "")
 IG_USER = os.environ.get("IG_USER_ID", "") or "me"
 IG_TOKEN = os.environ.get("IG_TOKEN", "")
 GRAPH = "https://graph.instagram.com/v21.0"
+BRT = timezone(timedelta(hours=-3))
+# os posts chegam para aprovação com antecedência; aprovado antes da hora -> sai sozinho no horário
+ANTECEDENCIA = timedelta(hours=float(os.environ.get("HORAS_ANTECEDENCIA", "26")))
 
 
 # ---------- utilidades ----------
@@ -176,7 +179,8 @@ def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
                 redes = "Instagram + TikTok"
         except Exception as e:
             print(f"[aviso] TikTok indisponível: {e}")
-    texto = (f"📌 *{nome}*\nTipo: {meta['tipo']}  •  Vai para: *{redes}*\n\n{meta.get('legenda','')[:800]}\n\n"
+    hora = datetime.fromisoformat(meta["quando"]).astimezone(BRT).strftime("%d/%m às %H:%M")
+    texto = (f"📌 *{nome}*\n🕗 Sai em: *{hora}*\nTipo: {meta['tipo']}  •  Vai para: *{redes}*\n\n{meta.get('legenda','')[:800]}\n\n"
              + (f"⚠️ Não feito automaticamente: {meta['nota']}\n\n" if meta.get("nota") else ""))
     if item.get("tiktok"):
         i = item["tiktok"]["info"]
@@ -309,6 +313,11 @@ def processar_respostas(estado: dict, espera: int = 0):
                 responder(cq["id"], "Esse post já foi resolvido.")
             continue
         item = estado["itens"].get(nome)
+        if acao == "un" and item and item.get("status") == "agendado":
+            item["status"] = "aguardando"
+            responder(cq["id"], "Agendamento desfeito")
+            tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"], reply_markup=teclado(nome, item))
+            continue
         if not item or item["status"] != "aguardando":
             responder(cq["id"], "Esse post já foi resolvido.")
             continue
@@ -324,7 +333,26 @@ def processar_respostas(estado: dict, espera: int = 0):
             responder(cq["id"], "Escolha primeiro quem pode ver no TikTok")
             tg("sendMessage", chat_id=CHAT, text="⚠️ Escolha quem pode ver no TikTok (🌍 / 👥 / 🔒) e toque em ✅ de novo.")
             continue
+        meta = json.loads((pasta / "item.json").read_text(encoding="utf-8"))
+        quando = datetime.fromisoformat(meta["quando"])
+        if quando > datetime.now(timezone.utc):
+            item["status"] = "agendado"
+            hora = quando.astimezone(BRT).strftime("%d/%m às %H:%M")
+            responder(cq["id"], f"Agendado para {hora}")
+            try:
+                tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"],
+                   reply_markup={"inline_keyboard": [[{"text": f"🕗 Agendado: {hora}  (desfazer)", "callback_data": f"un|{nome}"}]]})
+            except Exception:
+                pass
+            continue
         responder(cq["id"], "Publicando...")
+        publicar_item(nome, item)
+
+
+def publicar_item(nome, item):
+    pasta = FILA / nome
+    tt = item.get("tiktok")
+    if True:
         tg("sendMessage", chat_id=CHAT, text=f"⏳ Publicando {nome}...")
         try:
             meta = json.loads((pasta / "item.json").read_text(encoding="utf-8"))
@@ -350,6 +378,10 @@ def processar_respostas(estado: dict, espera: int = 0):
             tg("sendMessage", chat_id=CHAT, text=res)
         except Exception as e:
             item["status"] = "aguardando"
+            try:
+                tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"], reply_markup=teclado(nome, item))
+            except Exception:
+                pass
             tg("sendMessage", chat_id=CHAT, text=f"⚠️ Erro ao publicar {nome}: {str(e)[:300]}\nToque em ✅ de novo para tentar outra vez.")
 
 
@@ -386,11 +418,19 @@ def main():
         for pasta, meta in itens_da_fila():
             if pasta.name in estado["itens"]:
                 continue
-            if datetime.fromisoformat(meta["quando"]) <= agora:
+            if datetime.fromisoformat(meta["quando"]) <= agora + ANTECEDENCIA:
                 try:
                     enviar_para_aprovacao(pasta, meta, estado)
                 except Exception as e:
                     print(f"[erro] não consegui enviar {pasta.name}: {e}")
+        for nome, item in list(estado["itens"].items()):
+            if item.get("status") == "agendado":
+                try:
+                    meta = json.loads((FILA / nome / "item.json").read_text(encoding="utf-8"))
+                except Exception:
+                    continue
+                if datetime.fromisoformat(meta["quando"]) <= agora:
+                    publicar_item(nome, item)
         salvar_estado(estado)
         if time.time() >= fim:
             break
