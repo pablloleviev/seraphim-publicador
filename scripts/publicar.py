@@ -362,7 +362,10 @@ def publicar_item(nome, item):
                 if tt:
                     try:
                         import tiktok
-                        tt["id"] = tiktok.publicar(pasta / "video.mp4", meta.get("legenda", ""), tt["priv"],
+                        leg_tt = meta.get("legenda", "")
+                        if meta.get("palavra_chave"):   # no TikTok não dá para mandar direct automático
+                            leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimtech_ que o material chega no direct."
+                        tt["id"] = tiktok.publicar(pasta / "video.mp4", leg_tt, tt["priv"],
                                                    tt.get("com", True), tt.get("due", True), tt.get("cos", True))
                         tt["feito"] = tiktok.MODO
                     except Exception as e:

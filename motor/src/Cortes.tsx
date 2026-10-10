@@ -412,17 +412,35 @@ const CSerifa: React.FC<CP> = ({c, f, fps, n}) => {
 };
 
 // encerramento da marca
-const CCta: React.FC<CP> = ({c, f, fps}) => {
+const CCta: React.FC<CP> = ({c, f, fps, n}) => {
   const s = spring({frame: f, fps, config: {damping: 11}});
   const pill = 1 + 0.04 * Math.sin(f / 5);
+  const fundo = (c as any).funil === 'fundo';
+  // botão "Seguir" estilo Instagram: o cursor toca e vira "Seguindo"
+  const toque = Math.round(n * 0.45);
+  const clicou = f >= toque;
+  const cur = interpolate(f, [toque - 14, toque - 2], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  const aperta = f >= toque - 2 && f < toque + 3 ? 0.92 : 1;
+  const bs = spring({frame: f - 8, fps, config: {damping: 12}});
   return (
     <AbsoluteFill style={{background: PRETO}}>
-      <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 38%, rgba(245,166,35,.28), transparent 55%)'}} />
+      <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 34%, rgba(245,166,35,.28), transparent 55%)'}} />
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-        <Img src={staticFile(`sera/${c.pose || 'confiante'}.png`)} style={{height: 760, transform: `scale(${s}) translateY(${Math.sin(f / 12) * 10}px)`}} />
-        <div style={{fontFamily: 'Anton', fontSize: 130, color: '#fff', textAlign: 'center', lineHeight: 1, marginTop: 20, textShadow: rgb(3), padding: '0 60px'}}>{c.texto}</div>
-        <div style={{marginTop: 50, padding: '24px 56px', borderRadius: 999, background: OURO, color: PRETO, fontFamily: 'InterX', fontSize: 50,
-          transform: `scale(${spring({frame: f - 10, fps, config: {damping: 12}}) * pill})`}}>{c.apoio || 'link na bio'} →</div>
+        <Img src={staticFile(`sera/${c.pose || 'confiante'}.png`)} style={{height: 640, transform: `scale(${s}) translateY(${Math.sin(f / 12) * 10}px)`}} />
+        <div style={{fontFamily: 'Anton', fontSize: 120, color: '#fff', textAlign: 'center', lineHeight: 1.02, marginTop: 10, textShadow: rgb(3), padding: '0 60px'}}>
+          {(c.texto || '').split('*').map((t, i) => <span key={i} style={{color: i % 2 ? OURO : '#fff'}}>{t}</span>)}</div>
+        {fundo && (
+          <div style={{marginTop: 44, padding: '24px 56px', borderRadius: 999, background: OURO, color: PRETO, fontFamily: 'InterX', fontSize: 50,
+            transform: `scale(${bs * pill})`}}>{c.apoio || 'link na bio'} →</div>
+        )}
+        <div style={{position: 'relative', marginTop: fundo ? 34 : 56, display: 'flex', alignItems: 'center', gap: 22, transform: `scale(${bs * (fundo ? 0.8 : 1) * aperta})`}}>
+          <Img src={staticFile('marca/icone.png')} style={{width: 92, height: 92, borderRadius: 46, boxShadow: `0 0 0 4px ${OURO}`}} />
+          <div style={{fontFamily: 'InterX', fontSize: 44, color: '#fff'}}>seraphimtech_</div>
+          <div style={{padding: '18px 44px', borderRadius: 18, fontFamily: 'InterX', fontSize: 44,
+            background: clicou ? '#363639' : '#0095F6', color: '#fff', transition: 'none'}}>{clicou ? 'Seguindo ✓' : 'Seguir'}</div>
+          <div style={{position: 'absolute', right: 40 - (1 - cur) * 160, top: 50 + (1 - cur) * 220, fontSize: 90, opacity: cur > 0 && f < toque + 20 ? 1 : 0,
+            filter: 'drop-shadow(0 6px 10px rgba(0,0,0,.6))'}}>👆</div>
+        </div>
       </AbsoluteFill>
     </AbsoluteFill>
   );
@@ -483,7 +501,7 @@ const Legenda: React.FC<{palavras: Palavra[]; cenas: CenaC[]; t: number}> = ({pa
   const g = grupos.find((gr) => t >= gr[0].s - 0.05 && t <= gr[gr.length - 1].e + 0.2);
   if (!g) return null;
   return (
-    <div style={{position: 'absolute', left: 70, right: 70, bottom: 190, display: 'flex', gap: 18, flexWrap: 'wrap'}}>
+    <div style={{position: 'absolute', left: 70, right: 70, bottom: 230, display: 'flex', gap: 18, flexWrap: 'wrap', justifyContent: 'center', textAlign: 'center'}}>
       {g.map((p, i) => (
         <span key={i} style={{fontFamily: 'Mont', fontWeight: 800, fontSize: 64, color: t >= p.s ? '#fff' : 'rgba(255,255,255,.4)',
           textShadow: '0 4px 0 rgba(0,0,0,.7), 0 0 24px rgba(0,0,0,.6)'}}>{p.w.toLowerCase().replace(/[.,!?:;]$/, '')}</span>
