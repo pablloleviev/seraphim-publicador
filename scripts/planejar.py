@@ -132,14 +132,15 @@ Poses do mascote: pensando, confiante, surpreso, preocupado, feliz, comemorando.
 REGRAS_FUNIL = """FUNIL (decida para cada post e escreva em "funil"):
 - "topo" (~70%): IA, tecnologia, produtividade, curiosidades para qualquer pessoa. Objetivo: GANHAR SEGUIDOR. A chamada final pede para seguir a Seraphim.
 - "meio" (~20%): dores de gestão (orçamento, estoque, cliente que some, planilha, atendimento). Objetivo: confiança. Chamada: palavra-chave
-  para receber um material grátis no direct (ex.: "COMENTA *CHECKLIST*") + seguir. Preencha "palavra_chave" (1 palavra, MAIÚSCULA, sem acento)
+  para receber um material grátis no direct (ex.: cta "COMENTA *CHECKLIST*"; narração "Comenta CHECKLIST aqui que eu te mando no direct"). A pessoa comenta NO POST (nunca "comenta no direct"); o material é que chega no direct. + seguir. Preencha "palavra_chave" (1 palavra, MAIÚSCULA, sem acento)
   e "material": {"tipo": "Checklist"|"Passo a passo"|"Modelo", "titulo": "...", "subtitulo": "...", "itens": [5 a 8 {"titulo","texto"}], "dica": "..."}.
   O material deve ser REALMENTE útil e coerente com o vídeo, em português simples. Nada de prometer o que o material não entrega.
 - "fundo" (~10%, SÓ quando o assunto for oficina mecânica): chamada para conhecer o AutoFlow (sistema de gestão de oficinas da Seraphim), "link na bio", e seguir.
-  Nunca prometa teste grátis, preço ou desconto.
+  Sobre o AutoFlow, diga SOMENTE o que está na ficha abaixo (nunca invente funcionalidade, preço, teste grátis ou resultado).
 CHAMADA FINAL (cena cta + última frase da narração): NÃO use frase pronta. Escreva a melhor chamada para AQUELE vídeo, ligada ao gancho e ao
 assunto, natural, curta (até ~18 palavras), sem soar genérica. Ela tem que fazer sentido sozinha e com o resto do roteiro.
 A legenda do post segue a mesma chamada (topo: seguir; meio: comentar a palavra-chave; fundo: link na bio)."""
+FICHA_AUTOFLOW = (RAIZ / "estilos" / "autoflow.md").read_text(encoding="utf-8")
 
 EXEMPLO_CARROSSEL = {
     "nome": "5-usos-ia", "formato": "lista prática", "titulo": "5 usos de IA que economizam horas",
@@ -170,9 +171,13 @@ REGRAS DE QUALIDADE (obrigatórias):
 - Gancho forte na 1ª cena (pergunta, número ou contraste) — a pessoa decide em 1 segundo se fica.
 - Uma ideia por cena. Exemplos concretos do dia a dia de pequenos negócios (loja, clínica, salão, oficina, restaurante, escritório, e-commerce).
 - Vídeo: narração total entre 70 e 110 palavras, frases curtas e naturais para ser falada em voz alta.
-- Nada de promessas falsas, números inventados apresentados como estatística, nem nomes de empresas/pessoas reais como clientes.
+- PROIBIDO inventar estatística: nada de "80% das pessoas", "5 vezes mais", "30% da margem". Fale de forma qualitativa ("a maioria", "bem mais barato")
+  ou em hipótese clara ("imagina perder 10 clientes por mês"). No "contador", o número é um EXEMPLO e o rótulo começa com "Ex.:".
+- Nada de nomes de empresas/pessoas reais como clientes.
 {CATALOGO_CENAS}
 {REGRAS_FUNIL}
+FICHA DO AUTOFLOW:
+{FICHA_AUTOFLOW}
 - Carrossel: 6 a 9 slides; tipos capa, numero, texto (pode ter "card"); primeiro e último são "capa"; títulos usam | para quebrar linha.
 - Legenda: 1 a 3 linhas com emoji, uma pergunta ou chamada, SEM hashtags (são adicionadas depois).
 - "nome": slug curto em minúsculas com hífens, único.
@@ -194,6 +199,7 @@ Revise CADA post com olhar crítico e devolva a versão MELHORADA no mesmo forma
 - garanta que nenhum post se pareça com outro do dia nem com estes temas já usados: {json.dumps(usados[-80:], ensure_ascii=False)};
 - confira todas as regras: tipos de cena válidos e sem repetir em sequência, 7-10 cenas, 70-110 palavras de narração, pontuação colada;
 - A CHAMADA FINAL é a parte mais importante: confira se ela combina com o gancho e o assunto, se o funil está certo (oficina -> pode ser fundo; gestão -> meio; resto -> topo), se não tem frase sem sentido, e reescreva se estiver genérica;
+- remova QUALQUER estatística inventada e qualquer afirmação sobre o AutoFlow que não esteja na ficha;
 - nos posts de meio, confira se o material é útil, coerente com o vídeo e se a palavra-chave aparece na cta e na legenda;
 - mantenha exatamente {n_v} vídeos e {n_c} carrosséis.
 Regras completas originais, para referência:

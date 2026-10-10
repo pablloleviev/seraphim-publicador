@@ -24,12 +24,12 @@
   },
   {
    "tipo": "contador",
-   "rotulo": "Clientes sem contato",
+   "rotulo": "Ex.: clientes esquecidos",
    "de": 0,
-   "para": 80,
-   "sufixo": "%",
+   "para": 120,
+   "sufixo": "",
    "riscar": "Sem recompra",
-   "narracao": "Até oitenta por cento das pessoas nunca recebem uma segunda mensagem após a compra."
+   "narracao": "A maioria dos clientes nunca recebe uma segunda mensagem depois da compra."
   },
   {
    "tipo": "sera",
@@ -63,7 +63,7 @@
    "tipo": "frase",
    "texto": "vender de novo custa menos",
    "destaque": "menos",
-   "narracao": "Vender de novo pra quem já comprou é cinco vezes mais barato."
+   "narracao": "Vender de novo pra quem já comprou sai bem mais barato do que achar cliente novo."
   },
   {
    "tipo": "digitando",
@@ -73,9 +73,9 @@
   },
   {
    "tipo": "cta",
-   "texto": "COMENTA *RETORNO* NO DIRECT",
+   "texto": "COMENTA *RETORNO*",
    "pose": "confiante",
-   "narracao": "Comenta RETORNO pra receber o checklist de pós-venda e segue a Seraphim.",
+   "narracao": "Comenta RETORNO aqui que eu te mando no direct o checklist de pós-venda e segue a Seraphim.",
    "funil": "meio"
   }
  ],

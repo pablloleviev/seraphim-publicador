@@ -24,11 +24,11 @@
   },
   {
    "tipo": "contador",
-   "rotulo": "Margem perdida por mês",
+   "rotulo": "Ex.: gasto extra no mês (R$)",
    "de": 0,
-   "para": 28,
-   "sufixo": "%",
-   "narracao": "Quase trinta por cento da sua margem evapora nesse desespero diário."
+   "para": 1200,
+   "sufixo": "",
+   "narracao": "Uma parte da sua margem evapora nesse desespero diário."
   },
   {
    "tipo": "pergunta",
@@ -40,7 +40,7 @@
    "tipo": "digitando",
    "topo": "NO AUTOFLOW:",
    "texto": "HISTÓRICO E ORDEM VINCULADOS",
-   "narracao": "No AutoFlow, a ordem de serviço vincula peça, margem e fornecedor na hora."
+   "narracao": "Com a gestão da oficina organizada num sistema, você enxerga peça e custo de cada serviço."
   },
   {
    "tipo": "foto",
@@ -48,7 +48,7 @@
    "texto": "CONTROLE TOTAL",
    "sub": "do pátio ao financeiro",
    "tom": "dourado",
-   "narracao": "Você descobre o lucro real de cada carro antes de liberar a entrega."
+   "narracao": "E sabe o lucro de cada carro antes de liberar a entrega."
   },
   {
    "tipo": "serifa",
