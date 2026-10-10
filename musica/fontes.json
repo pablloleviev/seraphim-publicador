@@ -1,0 +1,13 @@
+{
+ "licenca": "Pixabay Content License (uso comercial grátis, sem atribuição obrigatória)",
+ "base": "https://cdn.pixabay.com/audio/",
+ "faixas": {
+  "epico": ["2026/04/10/audio_8470cb423f.mp3","2026/07/29/audio_f672f7e324.mp3","2021/10/15/audio_2320f2b0bc.mp3","2026/09/23/audio_ca70d954dd.mp3","2023/01/27/audio_3d61eda8c6.mp3","2026/08/27/audio_7173374114.mp3"],
+  "tensao": ["2025/04/05/audio_c3cb571f3b.mp3","2026/10/04/audio_e02a2e8fa6.mp3","2026/03/28/audio_ca94b04c8a.mp3","2026/08/05/audio_9c269c4d94.mp3","2026/03/31/audio_81466abf7d.mp3","2026/03/29/audio_1b1a255643.mp3"],
+  "emocao": ["2026/03/28/audio_4ca3e03a16.mp3","2026/09/05/audio_55f8a4f1c1.mp3","2026/09/12/audio_600433782f.mp3","2026/09/25/audio_6f92bcceae.mp3","2026/08/31/audio_7531876dfa.mp3","2026/09/01/audio_50d1e5234d.mp3"],
+  "energia": ["2026/07/24/audio_e963c86bae.mp3","2026/09/20/audio_c4f48735c1.mp3","2026/09/01/audio_2bcb74702f.mp3","2026/07/25/audio_01d884a367.mp3","2026/08/10/audio_06302a215f.mp3","2026/09/26/audio_a337ab0d38.mp3"],
+  "sombrio": ["2026/03/31/audio_8b940b8b0b.mp3","2025/04/21/audio_ed6f0ed574.mp3","2022/05/28/audio_03881ce3d6.mp3","2025/12/18/audio_dffcdacb15.mp3","2026/06/26/audio_cfd0e039e8.mp3","2026/07/29/audio_2b3ef2b6a0.mp3"],
+  "inspira": ["2025/09/23/audio_1b6f4de1c4.mp3","2026/03/31/audio_d6ae3e6b9c.mp3","2026/10/04/audio_7a2fb1cbc8.mp3","2025/02/22/audio_6f3391177b.mp3","2026/09/27/audio_bd12f91cd1.mp3","2026/06/22/audio_9e11624151.mp3"],
+  "hook": ["2026/01/01/audio_6068e3c1be.mp3","2026/07/08/audio_3bc6a82fef.mp3","2026/04/24/audio_2e055a6ff8.mp3","2026/07/22/audio_e1f3ae0c93.mp3","2026/04/24/audio_40ee9da422.mp3","2026/01/01/audio_92a4e1b342.mp3"]
+ }
+}
