@@ -69,59 +69,6 @@
         }
       },
       "msg_id": 34
-    },
-    "2026-10-10_1100_contratar-ou-automatizar": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-10T13:45:23.392062+00:00",
-      "tiktok": {
-        "opcoes": [
-          "PUBLIC_TO_EVERYONE",
-          "MUTUAL_FOLLOW_FRIENDS",
-          "SELF_ONLY"
-        ],
-        "info": {
-          "creator_nickname": "seraphimtech",
-          "creator_username": "seraphimtech"
-        }
-      },
-      "msg_id": 567
-    },
-    "2026-10-10_1500_cliente-que-nao-volta": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-10T13:45:26.646948+00:00",
-      "tiktok": {
-        "opcoes": [
-          "PUBLIC_TO_EVERYONE",
-          "MUTUAL_FOLLOW_FRIENDS",
-          "SELF_ONLY"
-        ],
-        "info": {
-          "creator_nickname": "seraphimtech",
-          "creator_username": "seraphimtech"
-        }
-      },
-      "msg_id": 569
-    },
-    "2026-10-10_1800_5-comandos-chatgpt": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-10T13:45:27.879785+00:00",
-      "msg_id": 577
-    },
-    "2026-10-10_1900_pecas-urgentes-oficina": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-10T13:45:30.565776+00:00",
-      "tiktok": {
-        "opcoes": [
-          "PUBLIC_TO_EVERYONE",
-          "MUTUAL_FOLLOW_FRIENDS",
-          "SELF_ONLY"
-        ],
-        "info": {
-          "creator_nickname": "seraphimtech",
-          "creator_username": "seraphimtech"
-        }
-      },
-      "msg_id": 579
     }
   },
   "respondidos": {}
