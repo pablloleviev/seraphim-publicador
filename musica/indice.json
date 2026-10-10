@@ -1,0 +1,296 @@
+{
+ "epico/01": {
+  "dur": 70.6,
+  "pico": 46.5,
+  "drop": 54.0,
+  "calmo": 6.5,
+  "energia_media": 0.442
+ },
+ "epico/02": {
+  "dur": 115.1,
+  "pico": 73.0,
+  "drop": 58.0,
+  "calmo": 0.0,
+  "energia_media": 0.455
+ },
+ "epico/03": {
+  "dur": 121.9,
+  "pico": 103.0,
+  "drop": 101.0,
+  "calmo": 0.0,
+  "energia_media": 0.367
+ },
+ "epico/04": {
+  "dur": 150.0,
+  "pico": 132.5,
+  "drop": 104.0,
+  "calmo": 0.0,
+  "energia_media": 0.558
+ },
+ "epico/05": {
+  "dur": 72.5,
+  "pico": 55.5,
+  "drop": 49.5,
+  "calmo": 0.0,
+  "energia_media": 0.6
+ },
+ "epico/06": {
+  "dur": 99.0,
+  "pico": 71.5,
+  "drop": 40.5,
+  "calmo": 0.0,
+  "energia_media": 0.612
+ },
+ "tensao/01": {
+  "dur": 58.9,
+  "pico": 50.0,
+  "drop": 44.0,
+  "calmo": 4.0,
+  "energia_media": 0.446
+ },
+ "tensao/02": {
+  "dur": 106.0,
+  "pico": 86.0,
+  "drop": 2.5,
+  "calmo": 0.0,
+  "energia_media": 0.747
+ },
+ "tensao/03": {
+  "dur": 140.0,
+  "pico": 129.5,
+  "drop": 57.0,
+  "calmo": 0.0,
+  "energia_media": 0.471
+ },
+ "tensao/04": {
+  "dur": 118.0,
+  "pico": 84.5,
+  "drop": 3.0,
+  "calmo": 0.0,
+  "energia_media": 0.633
+ },
+ "tensao/05": {
+  "dur": 102.0,
+  "pico": 79.5,
+  "drop": 2.0,
+  "calmo": 0.0,
+  "energia_media": 0.639
+ },
+ "tensao/06": {
+  "dur": 112.0,
+  "pico": 83.0,
+  "drop": 81.5,
+  "calmo": 0.0,
+  "energia_media": 0.535
+ },
+ "emocao/01": {
+  "dur": 107.5,
+  "pico": 52.5,
+  "drop": 2.0,
+  "calmo": 0.0,
+  "energia_media": 0.512
+ },
+ "emocao/02": {
+  "dur": 80.0,
+  "pico": 32.5,
+  "drop": 2.0,
+  "calmo": 0.0,
+  "energia_media": 0.762
+ },
+ "emocao/03": {
+  "dur": 144.0,
+  "pico": 54.5,
+  "drop": 73.0,
+  "calmo": 0.0,
+  "energia_media": 0.313
+ },
+ "emocao/04": {
+  "dur": 150.0,
+  "pico": 112.5,
+  "drop": 112.5,
+  "calmo": 0.0,
+  "energia_media": 0.422
+ },
+ "emocao/05": {
+  "dur": 136.3,
+  "pico": 99.0,
+  "drop": 2.5,
+  "calmo": 0.0,
+  "energia_media": 0.549
+ },
+ "emocao/06": {
+  "dur": 140.0,
+  "pico": 57.0,
+  "drop": 2.5,
+  "calmo": 0.0,
+  "energia_media": 0.543
+ },
+ "energia/01": {
+  "dur": 28.2,
+  "pico": 17.5,
+  "drop": 15.5,
+  "calmo": 0.0,
+  "energia_media": 0.505
+ },
+ "energia/02": {
+  "dur": 150.0,
+  "pico": 114.5,
+  "drop": 2.0,
+  "calmo": 0.0,
+  "energia_media": 0.615
+ },
+ "energia/03": {
+  "dur": 144.1,
+  "pico": 107.0,
+  "drop": 2.0,
+  "calmo": 0.0,
+  "energia_media": 0.852
+ },
+ "energia/04": {
+  "dur": 150.0,
+  "pico": 2.0,
+  "drop": 2.0,
+  "calmo": 19.5,
+  "energia_media": 0.475
+ },
+ "energia/05": {
+  "dur": 18.1,
+  "pico": 6.5,
+  "drop": 5.5,
+  "calmo": 0.0,
+  "energia_media": 0.564
+ },
+ "energia/06": {
+  "dur": 130.0,
+  "pico": 80.5,
+  "drop": 2.0,
+  "calmo": 51.0,
+  "energia_media": 0.544
+ },
+ "sombrio/01": {
+  "dur": 88.0,
+  "pico": 57.0,
+  "drop": 2.0,
+  "calmo": 0.0,
+  "energia_media": 0.456
+ },
+ "sombrio/02": {
+  "dur": 48.6,
+  "pico": 28.5,
+  "drop": 2.0,
+  "calmo": 0.0,
+  "energia_media": 0.572
+ },
+ "sombrio/03": {
+  "dur": 78.3,
+  "pico": 64.0,
+  "drop": 50.0,
+  "calmo": 7.0,
+  "energia_media": 0.392
+ },
+ "sombrio/04": {
+  "dur": 121.8,
+  "pico": 73.0,
+  "drop": 56.5,
+  "calmo": 111.0,
+  "energia_media": 0.468
+ },
+ "sombrio/05": {
+  "dur": 150.0,
+  "pico": 93.0,
+  "drop": 29.5,
+  "calmo": 0.0,
+  "energia_media": 0.591
+ },
+ "sombrio/06": {
+  "dur": 98.1,
+  "pico": 89.0,
+  "drop": 14.0,
+  "calmo": 0.0,
+  "energia_media": 0.621
+ },
+ "inspira/01": {
+  "dur": 132.0,
+  "pico": 75.0,
+  "drop": 38.0,
+  "calmo": 0.0,
+  "energia_media": 0.482
+ },
+ "inspira/02": {
+  "dur": 122.0,
+  "pico": 92.5,
+  "drop": 2.0,
+  "calmo": 0.0,
+  "energia_media": 0.577
+ },
+ "inspira/03": {
+  "dur": 118.4,
+  "pico": 79.0,
+  "drop": 23.0,
+  "calmo": 0.0,
+  "energia_media": 0.447
+ },
+ "inspira/04": {
+  "dur": 136.4,
+  "pico": 74.0,
+  "drop": 36.5,
+  "calmo": 0.0,
+  "energia_media": 0.488
+ },
+ "inspira/05": {
+  "dur": 113.1,
+  "pico": 74.0,
+  "drop": 46.5,
+  "calmo": 0.0,
+  "energia_media": 0.518
+ },
+ "inspira/06": {
+  "dur": 150.0,
+  "pico": 128.5,
+  "drop": 2.0,
+  "calmo": 0.0,
+  "energia_media": 0.752
+ },
+ "hook/01": {
+  "dur": 150.0,
+  "pico": 132.5,
+  "drop": 121.0,
+  "calmo": 0.0,
+  "energia_media": 0.543
+ },
+ "hook/02": {
+  "dur": 70.6,
+  "pico": 34.0,
+  "drop": 19.0,
+  "calmo": 0.0,
+  "energia_media": 0.59
+ },
+ "hook/03": {
+  "dur": 80.7,
+  "pico": 64.0,
+  "drop": 17.5,
+  "calmo": 6.5,
+  "energia_media": 0.485
+ },
+ "hook/04": {
+  "dur": 144.6,
+  "pico": 129.0,
+  "drop": 127.0,
+  "calmo": 4.5,
+  "energia_media": 0.357
+ },
+ "hook/05": {
+  "dur": 51.9,
+  "pico": 33.5,
+  "drop": 2.0,
+  "calmo": 0.0,
+  "energia_media": 0.624
+ },
+ "hook/06": {
+  "dur": 29.2,
+  "pico": 20.0,
+  "drop": 2.0,
+  "calmo": 0.0,
+  "energia_media": 0.715
+ }
+}
