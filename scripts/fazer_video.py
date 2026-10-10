@@ -247,13 +247,16 @@ def main():
     for i, c in enumerate(cenas):
         c["fim"] = cenas[i + 1]["inicio"] if i + 1 < len(cenas) else fim_audio + 0.9
         c.setdefault("modelo", "impacto")
-        if c.get("imagem"):
+        if c.get("imagem") and not str(c["imagem"]).startswith("job/"):
             origem = RAIZ / "assets" / c["imagem"]
             destino = JOB / "img" / Path(c["imagem"]).name
             destino.parent.mkdir(exist_ok=True); shutil.copy(origem, destino)
             c["imagem"] = f"job/img/{destino.name}"
         c.pop("narracao", None)
 
+    cortes = spec.get("motor") == "cortes"
+    if cortes:
+        preparar_imagens_cortes(cenas)
     # garante que o motor tem as poses e marca atualizadas
     for pasta in ["sera", "marca", "fontes"]:
         if (RAIZ / "assets" / pasta).exists():
@@ -266,7 +269,7 @@ def main():
 
     saida = Path(args.saida).resolve() if args.saida else RAIZ / "entrega" / "videos" / f"{nome}.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
-    cmd = f'npx remotion render src/index.ts Seraphim "{saida}" --props=public/job/props.json --log=error --codec=h264 --crf=19 --jpeg-quality=92 --x264-preset=slow --pixel-format=yuv420p --audio-bitrate=192k'
+    cmd = f'npx remotion render src/index.ts {"Cortes" if cortes else "Seraphim"} "{saida}" --props=public/job/props.json --log=error --codec=h264 --crf=19 --jpeg-quality=92 --x264-preset=slow --pixel-format=yuv420p --audio-bitrate=192k'
     if os.environ.get("CHROME_PATH"):
         cmd += f' --browser-executable="{os.environ["CHROME_PATH"]}"'
     print("Editando no motor Remotion... (alguns minutos)")
