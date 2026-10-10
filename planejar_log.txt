@@ -1,4 +1,3 @@
-== 2026-10-17: faltam 3 vídeos e 1 carrosséis
 Modelos de texto: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview']
 (roteiro escrito com gemini-3.8-flash)
 [aviso] gemini-3.8-flash: 503 {
@@ -9,22 +8,7 @@ Modelos de texto: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', '
   }
 }
 
-[aviso] gemini-3.7-flash: 503 {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-[aviso] gemini-3.6-flash: 503 {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-(roteiro escrito com gemini-3.5-flash)
-Pronto: 7 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-17_1800_checklist-virar-sistema
-4 post(s) planejado(s)
+(roteiro escrito com gemini-3.7-flash)
+amostra: amostra-contratar-ou-automatizar topo | CTA: SEGUE A *SERAPHIM* PRA ESCALAR | Quer crescer sua operação sem inchar custos à toa? Segue a Seraphim.
+amostra: amostra-cliente-que-nao-volta meio | CTA: COMENTA *RETORNO* NO DIRECT | Comenta RETORNO pra receber o checklist de pós-venda e segue a Seraphim.
+amostra: amostra-pecas-urgentes-oficina fundo | CTA: CONHEÇA O *AUTOFLOW* | Pare de queimar margem na oficina. Conheça o AutoFlow no link da bio e siga a Seraphim.

@@ -1,0 +1,72 @@
+{
+ "nome": "amostra-pecas-urgentes-oficina",
+ "arroba": "@seraphimtech_",
+ "cenas": [
+  {
+   "tipo": "palavra",
+   "texto": "PEÇA|NA URGÊNCIA|OU LUCRO|REAL?",
+   "destaque": "URGÊNCIA",
+   "narracao": "Quanto do seu lucro vai pro ralo comprando peça de última hora?"
+  },
+  {
+   "tipo": "cards",
+   "itens": [
+    {
+     "rotulo": "na correria:",
+     "busca": "stressed mechanic workshop holding parts"
+    },
+    {
+     "rotulo": "no sistema:",
+     "busca": "organized modern auto repair tablet"
+    }
+   ],
+   "narracao": "Pedir correndo na distribuidora paga mais caro e empaca o elevador."
+  },
+  {
+   "tipo": "contador",
+   "rotulo": "Margem perdida por mês",
+   "de": 0,
+   "para": 28,
+   "sufixo": "%",
+   "narracao": "Quase trinta por cento da sua margem evapora nesse desespero diário."
+  },
+  {
+   "tipo": "pergunta",
+   "texto": "onde tá o *histórico* dessa peça?",
+   "pose": "preocupado",
+   "narracao": "Você sabe de cabeça quanto pagou no mesmo filtro mês passado?"
+  },
+  {
+   "tipo": "digitando",
+   "topo": "NO AUTOFLOW:",
+   "texto": "HISTÓRICO E ORDEM VINCULADOS",
+   "narracao": "No AutoFlow, a ordem de serviço vincula peça, margem e fornecedor na hora."
+  },
+  {
+   "tipo": "foto",
+   "busca": "clean organized mechanic tools garage",
+   "texto": "CONTROLE TOTAL",
+   "sub": "do pátio ao financeiro",
+   "tom": "dourado",
+   "narracao": "Você descobre o lucro real de cada carro antes de liberar a entrega."
+  },
+  {
+   "tipo": "serifa",
+   "texto": "Oficina que fatura alto troca a correria por processo.",
+   "narracao": "Oficina que fatura alto troca a correria por processo automático."
+  },
+  {
+   "tipo": "cta",
+   "texto": "CONHEÇA O *AUTOFLOW*",
+   "pose": "confiante",
+   "apoio": "link na bio",
+   "narracao": "Pare de queimar margem na oficina. Conheça o AutoFlow no link da bio e siga a Seraphim.",
+   "funil": "fundo"
+  }
+ ],
+ "motor": "cortes",
+ "amostra": true,
+ "voz": "gemini",
+ "funil": "fundo",
+ "legenda": "Comprar peça na correria come o lucro da oficina sem você perceber. Conheça o AutoFlow no link da bio 🚗🔧"
+}
