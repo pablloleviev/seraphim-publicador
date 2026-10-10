@@ -246,7 +246,7 @@ const CFoto: React.FC<CP> = ({c, f, fps, n}) => {
         <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
           <div style={{fontFamily: 'InterX', fontSize: Math.min(210, Math.floor(1700 / Math.max(4, c.texto.length))), color: '#fff', textAlign: 'center', lineHeight: 1,
             textShadow: rgb(3) + ', 0 12px 40px rgba(0,0,0,.45)', transform: `scale(${interpolate(s, [0, 1], [1.4, 1])})`, opacity: s, padding: '0 60px'}}>{c.texto}</div>
-          {c.sub && <div style={{marginTop: 18, fontFamily: 'InterX', fontSize: 64, color: c.tom === 'vermelho' ? '#ffd0d0' : VERM, opacity: ease(f, 10, 16)}}>{c.sub}</div>}
+          {c.sub && <div style={{marginTop: 18, fontFamily: 'InterX', fontSize: 64, color: c.tom === 'vermelho' ? '#ffd0d0' : c.tom === 'dourado' ? '#FFFFFF' : VERM, textShadow: '0 4px 18px rgba(0,0,0,.7)', opacity: ease(f, 10, 16)}}>{c.sub}</div>}
         </AbsoluteFill>
       )}
     </AbsoluteFill>
