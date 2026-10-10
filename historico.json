@@ -2,72 +2,86 @@
  {
   "nome": "como-precificar",
   "titulo": "como precificar",
-  "formato": ""
+  "formato": "",
+  "tema": "terminal"
  },
  {
   "nome": "ia-nao-vai-te-substituir",
   "titulo": "ia nao vai te substituir",
-  "formato": ""
+  "formato": "",
+  "tema": "noir"
  },
  {
   "nome": "cobrar-fiado",
   "titulo": "cobrar fiado",
-  "formato": ""
+  "formato": "",
+  "tema": "vinho"
  },
  {
   "nome": "automacao-pequena-empresa",
   "titulo": "automacao pequena empresa",
-  "formato": ""
+  "formato": "",
+  "tema": "terminal"
  },
  {
   "nome": "chatgpt-no-trabalho",
   "titulo": "chatgpt no trabalho",
-  "formato": ""
+  "formato": "",
+  "tema": "brutal"
  },
  {
   "nome": "ferramentas-ia-gratis",
   "titulo": "ferramentas ia gratis",
-  "formato": ""
+  "formato": "",
+  "tema": "grafite"
  },
  {
   "nome": "funcionario-que-nao-dorme",
   "titulo": "funcionario que nao dorme",
-  "formato": ""
+  "formato": "",
+  "tema": "noir"
  },
  {
   "nome": "ia-ja-faz",
   "titulo": "ia ja faz",
-  "formato": ""
+  "formato": "",
+  "tema": "vinho"
  },
  {
   "nome": "site-ou-instagram",
   "titulo": "site ou instagram",
-  "formato": ""
+  "formato": "",
+  "tema": "meianoite"
  },
  {
   "nome": "o-que-automatizar",
   "titulo": "o que automatizar",
-  "formato": ""
+  "formato": "",
+  "tema": "editorial"
  },
  {
   "nome": "hora-de-largar-o-caderno",
   "titulo": "hora de largar o caderno",
-  "formato": ""
+  "formato": "",
+  "tema": "ultravioleta"
  },
  {
   "nome": "golpe-ia",
   "titulo": "golpe ia",
-  "formato": ""
+  "formato": "",
+  "tema": "meianoite"
  },
  {
   "nome": "resumo-semana",
   "titulo": "resumo semana",
-  "formato": ""
+  "formato": "",
+  "tema": "noir"
  },
  {
   "nome": "bastidores-startup",
   "titulo": "bastidores startup",
-  "formato": ""
+  "formato": "",
+  "tema": "grafite"
  },
  {
   "nome": "video-3-sinais",
@@ -77,57 +91,68 @@
  {
   "nome": "formula-do-prompt",
   "titulo": "formula do prompt",
-  "formato": ""
+  "formato": "",
+  "tema": "brutal"
  },
  {
   "nome": "fiado",
   "titulo": "fiado",
-  "formato": ""
+  "formato": "",
+  "tema": "brutal"
  },
  {
   "nome": "ia-para-vender",
   "titulo": "ia para vender",
-  "formato": ""
+  "formato": "",
+  "tema": "eletrico"
  },
  {
   "nome": "dados-valem-ouro",
   "titulo": "dados valem ouro",
-  "formato": ""
+  "formato": "",
+  "tema": "eletrico"
  },
  {
   "nome": "atendimento-lento",
   "titulo": "atendimento lento",
-  "formato": ""
+  "formato": "",
+  "tema": "editorial"
  },
  {
   "nome": "erro-planilha",
   "titulo": "erro planilha",
-  "formato": ""
+  "formato": "",
+  "tema": "ultravioleta"
  },
  {
   "nome": "prompt-certo",
   "titulo": "prompt certo",
-  "formato": ""
+  "formato": "",
+  "tema": "meianoite"
  },
  {
   "nome": "sistema-vs-planilha",
   "titulo": "sistema vs planilha",
-  "formato": ""
+  "formato": "",
+  "tema": "noir"
  },
  {
   "nome": "mito-tecnologia-cara",
   "titulo": "mito tecnologia cara",
-  "formato": ""
+  "formato": "",
+  "tema": "vinho"
  },
  {
   "nome": "orcamento-some",
   "titulo": "orcamento some",
-  "formato": ""
+  "formato": "",
+  "tema": "editorial"
  },
  {
   "nome": "dashboard",
   "titulo": "dashboard",
-  "formato": ""
+  "formato": "",
+  "tema": "terminal"
  },
  {
   "nome": "3-sinais-perdendo-dinheiro",
@@ -137,44 +162,51 @@
  {
   "nome": "caderno-vs-sistema",
   "titulo": "caderno vs sistema",
-  "formato": ""
+  "formato": "",
+  "tema": "grafite"
  },
  {
   "nome": "whatsapp-24h",
   "titulo": "whatsapp 24h",
-  "formato": ""
+  "formato": "",
+  "tema": "ultravioleta"
  },
  {
   "nome": "5-usos-ia",
   "titulo": "5 usos ia",
-  "formato": ""
+  "formato": "",
+  "tema": "eletrico"
  },
  {
   "nome": "erro-cadastro-cliente",
   "titulo": "O erro no cadastro de clientes",
   "formato": "erro que você comete",
   "dia": "2026-10-17",
-  "tipo": "video"
+  "tipo": "video",
+  "tema": "editorial"
  },
  {
   "nome": "estoque-invisivel",
   "titulo": "O caso do estoque invisível",
   "formato": "história curta de cliente",
   "dia": "2026-10-17",
-  "tipo": "video"
+  "tipo": "video",
+  "tema": "terminal"
  },
  {
   "nome": "seguranca-dados-nuvem",
   "titulo": "Seu computador queimar hoje, sua empresa sobrevive?",
   "formato": "\"você sabia\"",
   "dia": "2026-10-17",
-  "tipo": "video"
+  "tipo": "video",
+  "tema": "brutal"
  },
  {
   "nome": "checklist-virar-sistema",
   "titulo": "Checklist: isso pode virar software?",
   "formato": "checklist",
   "dia": "2026-10-17",
-  "tipo": "carrossel"
+  "tipo": "carrossel",
+  "tema": "noir"
  }
 ]

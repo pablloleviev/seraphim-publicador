@@ -1,0 +1,72 @@
+{
+ "nome": "erro-cadastro-cliente",
+ "arroba": "@seraphimtech_",
+ "quando": "2026-10-17 08:00",
+ "cenas": [
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "VOCÊ AINDA PEDE",
+    "DADO *MANUAL*?"
+   ],
+   "sera": "preocupado",
+   "narracao": "Digitar dado de cliente na mão é queimar dinheiro todo santo dia."
+  },
+  {
+   "modelo": "numero",
+   "numero": "01",
+   "linhas": [
+    "ERRO COMUM:",
+    "DIGITAÇÃO *DUPLA*"
+   ],
+   "apoio": "no papel e no sistema",
+   "narracao": "Primeiro anota no papel, depois passa pro computador. É pedir pra errar um número."
+  },
+  {
+   "modelo": "numero",
+   "numero": "02",
+   "linhas": [
+    "O CLIENTE",
+    "*PREENCHE TUDO*"
+   ],
+   "apoio": "link rápido e direto",
+   "narracao": "Mande um link rápido. O próprio cliente preenche e os dados entram validados."
+  },
+  {
+   "modelo": "lista",
+   "linhas": [
+    "FLUXO *LIMPO*"
+   ],
+   "itens": [
+    "Menos retrabalho",
+    "Dado correto",
+    "Entra direto"
+   ],
+   "raios": true,
+   "narracao": "Sua equipe não digita nada, o cadastro fica perfeito e vai direto pro sistema."
+  },
+  {
+   "modelo": "impacto",
+   "linhas": [
+    "TEMPO É",
+    "*EXPERIÊNCIA*"
+   ],
+   "fundo": "branco",
+   "narracao": "Agilidade no primeiro contato define se o cliente volta ou some."
+  },
+  {
+   "modelo": "cta",
+   "linhas": [
+    "COMENTE *FLUXO*",
+    "E VEJA MAIS"
+   ],
+   "apoio": "no direct",
+   "sera": "confiante",
+   "narracao": "Comente FLUXO e veja como a Seraphim automatiza seus cadastros."
+  }
+ ],
+ "genero_voz": "feminina",
+ "legenda": "Seu cliente ainda espera você digitar dados na frente dele? ⏳\n\nComente FLUXO para mudar isso!\n\n👉 Seraphim, link na bio.\n\n#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech",
+ "destino": "fila/2026-10-17_0800_erro-cadastro-cliente",
+ "tema": "editorial"
+}
