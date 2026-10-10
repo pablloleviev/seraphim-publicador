@@ -182,6 +182,14 @@ def publicar_instagram(pasta: Path, meta: dict) -> str:
 
 
 # ---------- Telegram ----------
+def _buffer_ativo() -> bool:
+    try:
+        import buffer
+        return buffer.ativo()
+    except Exception:
+        return False
+
+
 def em_revoz(nome_pasta: str) -> bool:
     """True se o vídeo está na lista para ser refeito (voz Gemini / trilha nova)."""
     for f in (RAIZ / "revoz").glob("*.json"):
@@ -205,8 +213,11 @@ def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
     redes = "Instagram"
     if meta["tipo"] == "reels":
         try:
-            import tiktok
-            if tiktok.conectado():
+            import buffer, tiktok
+            if buffer.ativo():
+                item["tiktok"] = {"via": "buffer"}
+                redes = "Instagram + TikTok"
+            elif tiktok.conectado():
                 info = tiktok.criador()
                 item["tiktok"] = {"opcoes": info.get("privacy_level_options") or list(tiktok.NOMES_PRIV),
                                   "info": {k: info.get(k) for k in ("creator_nickname", "creator_username")}}
@@ -216,7 +227,9 @@ def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
     hora = datetime.fromisoformat(meta["quando"]).astimezone(BRT).strftime("%d/%m às %H:%M")
     texto = (f"📌 *{nome}*\n🕗 Sai em: *{hora}*\nTipo: {meta['tipo']}  •  Vai para: *{redes}*\n\n{md(meta.get('legenda','')[:800])}\n\n"
              + (f"⚠️ Não feito automaticamente: {md(meta['nota'])}\n\n" if meta.get("nota") else ""))
-    if item.get("tiktok"):
+    if item.get("tiktok", {}).get("via") == "buffer":
+        texto += "🎵 TikTok: sai junto, público e com a legenda própria do TikTok.\nPublicar?"
+    elif item.get("tiktok"):
         i = item["tiktok"]["info"]
         texto += (f"🎵 TikTok: *{i.get('creator_nickname')}* (@{i.get('creator_username')})\n"
                   f"Escolha quem pode ver no TikTok e toque em ✅ Publicar.\n"
@@ -238,7 +251,7 @@ def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
 def teclado(nome, item):
     linhas = []
     tt = item.get("tiktok")
-    if tt:
+    if tt and tt.get("via") != "buffer":
         priv = [{"text": ("✔️ " if tt.get("priv") == o else "") + tiktok_nome(o), "callback_data": f"ttp:{o}|{cod(nome)}"}
                 for o in tt["opcoes"]]
         linhas += [priv[i:i + 3] for i in range(0, len(priv), 3)]
@@ -370,7 +383,7 @@ def processar_respostas(estado: dict, espera: int = 0):
             tg("sendMessage", chat_id=CHAT, text=f"❌ {nome} pulado.")
             continue
         tt = item.get("tiktok")
-        if tt and not tt.get("priv"):
+        if tt and tt.get("via") != "buffer" and not _buffer_ativo() and not tt.get("priv"):
             responder(cq["id"], "Escolha primeiro quem pode ver no TikTok")
             tg("sendMessage", chat_id=CHAT, text="⚠️ Escolha quem pode ver no TikTok (🌍 / 👥 / 🔒) e toque em ✅ de novo.")
             continue
@@ -400,7 +413,17 @@ def publicar_item(nome, item):
             pid = publicar_instagram(pasta, meta)
             item.update(status="publicado", ig_id=pid, publicado_em=datetime.now(timezone.utc).isoformat())
             if meta["tipo"] == "reels":
-                if tt:
+                if tt and (tt.get("via") == "buffer" or _buffer_ativo()):
+                    try:
+                        import buffer
+                        leg_tt = meta.get("legenda_tiktok") or meta.get("legenda", "")
+                        if meta.get("palavra_chave") and meta["palavra_chave"] not in leg_tt:
+                            leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimtech_ que o material chega no direct."
+                        tt["id"] = buffer.publicar_tiktok(pasta / "video.mp4", leg_tt)
+                        tt["feito"] = "buffer"
+                    except Exception as e:
+                        tt["erro"] = str(e)[:300]
+                elif tt:
                     try:
                         import tiktok
                         leg_tt = meta.get("legenda_tiktok") or meta.get("legenda", "")
@@ -418,7 +441,7 @@ def publicar_item(nome, item):
             res = f"✅ {nome}\n• Instagram: publicado"
             if tt:
                 res += ("\n• TikTok: " + (f"enviado como rascunho (status do TikTok: {tt.get('status') or '?'}) — no app do TikTok da conta @seraphimtech, abra Caixa de entrada → Notificações do sistema e toque no aviso do vídeo para publicar"
-                        if tt.get("feito") == "rascunho" else "publicado" if tt.get("feito") else f"falhou ({tt.get('erro')})"))
+                        if tt.get("feito") == "rascunho" else "publicado com legenda e hashtags (pode levar alguns minutos para aparecer no perfil)" if tt.get("feito") == "buffer" else "publicado" if tt.get("feito") else f"falhou ({tt.get('erro')})"))
             tg("sendMessage", chat_id=CHAT, text=res)
             if tt and tt.get("feito") == "rascunho":
                 # no modo rascunho o TikTok não aceita legenda pela API: mandamos pronta para copiar
