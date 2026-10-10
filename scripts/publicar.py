@@ -36,6 +36,22 @@ ANTECEDENCIA = timedelta(hours=float(os.environ.get("HORAS_ANTECEDENCIA", "26"))
 
 
 # ---------- utilidades ----------
+import hashlib
+
+
+def cod(nome):
+    # o Telegram aceita no máximo 64 bytes no botão: usamos um código curto do nome do post
+    return hashlib.md5(nome.encode()).hexdigest()[:10]
+
+
+def de_cod(c, estado):
+    if c in estado.get("itens", {}):
+        return c
+    for n in list(estado.get("itens", {})) + [p.name for p in FILA.iterdir() if p.is_dir()]:
+        if cod(n) == c:
+            return n
+    return c
+
 def http(url, dados=None, metodo=None):
     corpo = urllib.parse.urlencode(dados).encode() if dados is not None else None
     req = urllib.request.Request(url, data=corpo, method=metodo or ("POST" if corpo else "GET"))
@@ -189,8 +205,14 @@ def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
                   f"_Ao publicar, você concorda com a Confirmação de Uso de Música do TikTok._")
     else:
         texto += "Publicar?"
-    msg = tg("sendMessage", chat_id=CHAT, text=texto, parse_mode="Markdown", disable_web_page_preview="true",
-             reply_markup=teclado(nome, item))
+    try:
+        msg = tg("sendMessage", chat_id=CHAT, text=texto, parse_mode="Markdown", disable_web_page_preview="true",
+                 reply_markup=teclado(nome, item))
+    except Exception as e:
+        # nunca reenviar o mesmo vídeo em loop: registra a falha e segue
+        item["status"] = "falhou_envio"; item["erro"] = str(e)[:200]
+        estado["itens"][nome] = item
+        raise
     item["msg_id"] = msg["result"]["message_id"]
     estado["itens"][nome] = item
 
@@ -199,25 +221,25 @@ def teclado(nome, item):
     linhas = []
     tt = item.get("tiktok")
     if tt:
-        priv = [{"text": ("✔️ " if tt.get("priv") == o else "") + tiktok_nome(o), "callback_data": f"ttp:{o}|{nome}"}
+        priv = [{"text": ("✔️ " if tt.get("priv") == o else "") + tiktok_nome(o), "callback_data": f"ttp:{o}|{cod(nome)}"}
                 for o in tt["opcoes"]]
         linhas += [priv[i:i + 3] for i in range(0, len(priv), 3)]
-        chave = lambda k, rot: {"text": ("☑️ " if tt.get(k, True) else "⬜ ") + rot, "callback_data": f"ttt:{k}|{nome}"}
+        chave = lambda k, rot: {"text": ("☑️ " if tt.get(k, True) else "⬜ ") + rot, "callback_data": f"ttt:{k}|{cod(nome)}"}
         linhas.append([chave("com", "Comentários"), chave("due", "Dueto"), chave("cos", "Costura")])
-    linhas.append([{"text": "✅ Publicar", "callback_data": f"ok|{nome}"},
-                   {"text": "❌ Pular", "callback_data": f"no|{nome}"}])
+    linhas.append([{"text": "✅ Publicar", "callback_data": f"ok|{cod(nome)}"},
+                   {"text": "❌ Pular", "callback_data": f"no|{cod(nome)}"}])
     return {"inline_keyboard": linhas}
 
 
 # ---------- TikTok (tela exigida pelas regras do TikTok) ----------
 def _teclado_tiktok(nome, tt, opcoes):
-    linha_priv = [{"text": ("✔️ " if tt.get("priv") == o else "") + tiktok_nome(o), "callback_data": f"ttp:{o}|{nome}"}
+    linha_priv = [{"text": ("✔️ " if tt.get("priv") == o else "") + tiktok_nome(o), "callback_data": f"ttp:{o}|{cod(nome)}"}
                   for o in opcoes]
-    chave = lambda k, rot: {"text": ("☑️ " if tt.get(k, True) else "⬜ ") + rot, "callback_data": f"ttt:{k}|{nome}"}
+    chave = lambda k, rot: {"text": ("☑️ " if tt.get(k, True) else "⬜ ") + rot, "callback_data": f"ttt:{k}|{cod(nome)}"}
     botoes = [linha_priv[i:i + 2] for i in range(0, len(linha_priv), 2)]
     botoes.append([chave("com", "Comentários"), chave("due", "Dueto"), chave("cos", "Costura")])
-    botoes.append([{"text": "🎵 Postar no TikTok", "callback_data": f"ttgo|{nome}"},
-                   {"text": "Não postar", "callback_data": f"ttno|{nome}"}])
+    botoes.append([{"text": "🎵 Postar no TikTok", "callback_data": f"ttgo|{cod(nome)}"},
+                   {"text": "Não postar", "callback_data": f"ttno|{cod(nome)}"}])
     return {"inline_keyboard": botoes}
 
 
@@ -296,6 +318,7 @@ def processar_respostas(estado: dict, espera: int = 0):
         if not cq or str(cq["message"]["chat"]["id"]) != str(CHAT):
             continue
         acao, nome = cq["data"].split("|", 1)
+        nome = de_cod(nome, estado)
         if acao.startswith("tt"):
             item = estado["itens"].get(nome) or {}
             tt = item.get("tiktok")
@@ -341,7 +364,7 @@ def processar_respostas(estado: dict, espera: int = 0):
             responder(cq["id"], f"Agendado para {hora}")
             try:
                 tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"],
-                   reply_markup={"inline_keyboard": [[{"text": f"🕗 Agendado: {hora}  (desfazer)", "callback_data": f"un|{nome}"}]]})
+                   reply_markup={"inline_keyboard": [[{"text": f"🕗 Agendado: {hora}  (desfazer)", "callback_data": f"un|{cod(nome)}"}]]})
             except Exception:
                 pass
             continue
