@@ -49,6 +49,58 @@ p b{{color:#F5F5F7;font-weight:800}}
 .branco{{background:#F5F5F7;color:#0A0A0C}}.branco p{{color:#3f3f46}}.branco p b{{color:#0A0A0C}}.branco .foot{{color:#52525b}}.branco .card{{color:#0A0A0C}}
 """
 
+# mesmos temas dos vídeos (motor/src/Video.tsx): cada post com identidade própria, a marca aparece sutil (fio/ícone dourado)
+OURO = "#F5A623"
+TEMAS = {
+ "noir": dict(bg="#0A0A0C", texto="#F5F5F7", dest=OURO, apoio="#A1A1AA", brilho="245,166,35", marca=OURO, fonte="Anton", peso=400, caixa=True, k=1.0,
+              alt=("#F5F5F7", "#0A0A0C", "#B86E00", "#3f3f46")),
+ "editorial": dict(bg="#F1ECE3", texto="#161412", dest="#B5651D", apoio="#5b544c", brilho="226,182,107", marca="#C08A2E", fonte="DMSerif", peso=400, caixa=False, k=0.9,
+              alt=("#161412", "#F1ECE3", "#E2B66B", "#a8a196")),
+ "terminal": dict(bg="#06110C", texto="#E6FFF1", dest="#3DFFA8", apoio="#7FA897", brilho="61,255,168", marca=OURO, fonte="Jet", peso=800, caixa=True, k=0.72,
+              alt=("#E6FFF1", "#06110C", "#00895A", "#2f5546")),
+ "meianoite": dict(bg="#0A1430", texto="#F2F6FF", dest="#7CC4FF", apoio="#93A3C8", brilho="61,107,255", marca=OURO, fonte="Space", peso=700, caixa=True, k=0.8,
+              alt=("#F2F6FF", "#0A1430", "#1F5FD6", "#43507a")),
+ "brutal": dict(bg="#FFD43B", texto="#0A0A0C", dest="#0A0A0C", apoio="#2a2a2a", brilho="255,255,255", marca="#0A0A0C", fonte="Archivo", peso=400, caixa=True, k=0.7,
+              alt=("#0A0A0C", "#FFD43B", "#FFFFFF", "#cfcfcf"), sublinhar=True),
+ "vinho": dict(bg="#250B12", texto="#F7ECDF", dest="#E8B77A", apoio="#B99A90", brilho="122,30,48", marca="#E8B77A", fonte="Playfair", peso=900, caixa=False, k=0.85,
+              alt=("#F7ECDF", "#250B12", "#8A2A3C", "#6b4e47")),
+ "eletrico": dict(bg="#FAFAFA", texto="#0A0A0C", dest="#2F5BFF", apoio="#55555c", brilho="47,91,255", marca=OURO, fonte="Montserrat", peso=900, caixa=True, k=0.72,
+              alt=("#2F5BFF", "#FFFFFF", "#FFD43B", "#dfe6ff")),
+ "grafite": dict(bg="#1B1B1E", texto="#F5F5F7", dest="#FF6A3D", apoio="#9a9aa2", brilho="255,106,61", marca=OURO, fonte="Bebas", peso=400, caixa=True, k=1.1,
+              alt=("#F5F5F7", "#1B1B1E", "#E0461A", "#52525b")),
+ "ultravioleta": dict(bg="#120A26", texto="#F4F0FF", dest="#B69CFF", apoio="#9b91bd", brilho="123,77,255", marca=OURO, fonte="Space", peso=700, caixa=True, k=0.8,
+              alt=("#F4F0FF", "#120A26", "#6A3DF0", "#4d4470")),
+}
+ARQ_FONTE = {"Bebas": "bebas.ttf", "Archivo": "archivo.ttf", "DMSerif": "dmserif.ttf", "Space": "spacegrotesk.ttf",
+             "Jet": "jetbrains.ttf", "Playfair": "playfair.ttf", "Montserrat": "montserrat.ttf"}
+
+
+def css_tema(nome):
+    t = TEMAS.get(nome or "noir", TEMAS["noir"])
+    if nome in (None, "", "noir"):
+        return ""
+    ff = f"@font-face{{font-family:{t['fonte']};src:url({FONTES}/{ARQ_FONTE[t['fonte']]})}}" if t["fonte"] in ARQ_FONTE else ""
+    ab, at, ad, aa = t["alt"]
+    claro = int(t["bg"][1:3], 16) * .299 + int(t["bg"][3:5], 16) * .587 + int(t["bg"][5:7], 16) * .114 > 150
+    tinta = "10,10,12" if claro else "255,255,255"
+    sera_claro = (f".sera{{width:430px;height:430px;object-fit:contain;padding:30px;border-radius:50%;background:radial-gradient(circle,#1a1a1e,#0A0A0C 70%);box-shadow:0 0 0 6px {t['marca']}}}" if claro else "")
+    return ff + f"""
+body{{background:{t['bg']};color:{t['texto']}}}
+.bg{{background:radial-gradient(circle at 80% 15%,rgba({t['brilho']},.18),transparent 45%),radial-gradient(circle at 10% 95%,rgba({t['brilho']},.08),transparent 40%)}}
+.dots{{background-image:radial-gradient(rgba({tinta},.13) 2px,transparent 2.4px)}}
+h1{{font-family:{t['fonte']};font-weight:{t['peso']};text-transform:{'uppercase' if t['caixa'] else 'none'};font-size:{int(92*t['k'])}px;line-height:1.08}}
+.capa h1{{font-size:{int(132*t['k'])}px}}
+.gold{{color:{t['dest']};{'text-decoration:underline;text-decoration-color:'+OURO+';text-decoration-thickness:8px;text-underline-offset:10px;' if t.get('sublinhar') else ''}}}
+.tag,.swipe,.card b{{color:{t['marca'] if t['marca']!=t['texto'] else t['dest']}}}
+p{{color:{t['apoio']}}} p b{{color:{t['texto']}}}
+.num{{font-family:{t['fonte'] if t['fonte'] in ('DMSerif','Playfair','Jet') else 'Anton'};font-weight:{t['peso']};color:{t['dest']};-webkit-text-stroke:0}}
+.line{{background:{t['marca']}}}
+.card{{border-color:rgba({t['brilho']},.45);background:rgba({t['brilho']},.08)}}
+.foot{{color:{t['apoio']}}} .foot img{{box-shadow:0 0 0 3px {OURO}}}
+{sera_claro}
+.branco{{background:{ab};color:{at}}} .branco .gold{{color:{ad}}} .branco p{{color:{aa}}} .branco p b{{color:{at}}} .branco .foot{{color:{aa}}} .branco .card{{color:{at}}}
+"""
+
 
 def fmt(t: str) -> str:
     t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t or "")
@@ -56,7 +108,7 @@ def fmt(t: str) -> str:
     return t.replace("|", "<br>")
 
 
-def slide_html(s: dict, i: int, n: int, arroba: str) -> str:
+def slide_html(s: dict, i: int, n: int, arroba: str, tema: str = None) -> str:
     tipo = s.get("tipo", "texto")
     corpo = ""
     if s.get("tag"):
@@ -74,7 +126,7 @@ def slide_html(s: dict, i: int, n: int, arroba: str) -> str:
     sera = f'<img class="sera" src="{SERA}/{s["sera"]}.png">' if s.get("sera") else ""
     cls = ("capa " if tipo == "capa" else "") + ("branco" if s.get("fundo") == "branco" else "")
     swipe = '<span class="swipe">ARRASTA →</span>' if i < n else ""
-    return f"""<html><head><meta charset="utf-8"><style>{CSS}</style></head>
+    return f"""<html><head><meta charset="utf-8"><style>{CSS}{css_tema(tema)}</style></head>
 <body class="{cls}"><div class="bg"></div><div class="dots"></div>{sera}
 <div class="wrap">{corpo}</div>
 <div class="foot"><div class="l"><img src="{ICONE}">{arroba}</div><div class="r">{i}/{n}{swipe}</div></div>
@@ -93,7 +145,7 @@ async def main(caminho: str, saida_dir: str = None):
         pg = await nav.new_page(viewport={"width": 1080, "height": 1350})
         tmp = saida / "_tmp.html"
         for i, s in enumerate(slides, 1):
-            tmp.write_text(slide_html(s, i, len(slides), arroba), encoding="utf-8")
+            tmp.write_text(slide_html(s, i, len(slides), arroba, spec.get("tema")), encoding="utf-8")
             await pg.goto(tmp.as_uri())
             await pg.wait_for_timeout(250)
             await pg.screenshot(path=str(saida / f"slide-{i:02d}.png"))

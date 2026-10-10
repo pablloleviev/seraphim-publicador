@@ -24,6 +24,18 @@ BRT = timezone(timedelta(hours=-3))
 CFG = json.loads((RAIZ / "planejamento.json").read_text(encoding="utf-8"))
 HIST = RAIZ / "historico.json"
 HT = "#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+TEMAS = ["noir", "editorial", "terminal", "meianoite", "brutal", "vinho", "eletrico", "grafite", "ultravioleta"]
+
+
+def proximo_tema(hist):
+    """Tema usado há mais tempo: posts vizinhos no feed nunca ficam com a mesma cara."""
+    ult = {}
+    for i, h in enumerate(hist):
+        if h.get("tema"):
+            ult[h["tema"]] = i
+    return min(TEMAS, key=lambda t: (ult.get(t, -1), TEMAS.index(t)))
+
+
 POSES = ["pensando", "confiante", "surpreso", "preocupado", "feliz", "comemorando"]
 MODELOS = {"impacto", "numero", "lista", "cta"}
 
@@ -219,11 +231,12 @@ def main():
             while nome in nomes:
                 nome += "-2"
             nomes.add(nome)
-            spec = {"nome": nome, "arroba": "@seraphimtech_", "quando": f"{dia} {hora}", "cenas": v["cenas"],
+            tema = proximo_tema(hist)
+            spec = {"nome": nome, "arroba": "@seraphimtech_", "quando": f"{dia} {hora}", "cenas": v["cenas"], "tema": tema,
                     "genero_voz": "masculina" if criados % 3 else "feminina",
                     "legenda": (v.get("legenda", "").strip() + "\n\n👉 Seraphim, link na bio.\n\n" + HT)}
             (RAIZ / "pedidos" / f"{nome}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=1), encoding="utf-8")
-            hist.append({"nome": nome, "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video"})
+            hist.append({"nome": nome, "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video", "tema": tema})
             criados += 1
         for hora, c in zip(hc, plano.get("carrosseis", [])):
             slides = [s for s in c.get("slides", []) if s.get("titulo")]
@@ -238,7 +251,8 @@ def main():
                 nome += "-2"
             nomes.add(nome)
             destino = RAIZ / "fila" / f"{dia}_{hora.replace(':', '')}_{nome}"
-            spec = {"nome": nome, "arroba": "@seraphimtech_", "slides": slides}
+            tema = proximo_tema(hist)
+            spec = {"nome": nome, "arroba": "@seraphimtech_", "slides": slides, "tema": tema}
             tmp = RAIZ / "pedidos" / f"_car_{nome}.json"
             tmp.write_text(json.dumps(spec, ensure_ascii=False), encoding="utf-8")
             import carrossel
@@ -250,7 +264,7 @@ def main():
             (destino / "item.json").write_text(json.dumps({
                 "tipo": "carrossel", "legenda": c.get("legenda", "").strip() + "\n\n👉 Seraphim, link na bio.\n\n" + HT,
                 "quando": f"{dia}T{hora}:00-03:00"}, ensure_ascii=False, indent=2), encoding="utf-8")
-            hist.append({"nome": nome, "titulo": c.get("titulo", nome), "formato": c.get("formato", ""), "dia": str(dia), "tipo": "carrossel"})
+            hist.append({"nome": nome, "titulo": c.get("titulo", nome), "formato": c.get("formato", ""), "dia": str(dia), "tipo": "carrossel", "tema": tema})
             criados += 1
         HIST.write_text(json.dumps(hist, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{criados} post(s) planejado(s)")
