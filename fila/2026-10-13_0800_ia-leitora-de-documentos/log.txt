@@ -1,0 +1,79 @@
+ time remaining: 18s
+Rendered 987/1039, time remaining: 18s
+Rendered 988/1039, time remaining: 17s
+Rendered 989/1039, time remaining: 17s
+Rendered 990/1039, time remaining: 17s
+Rendered 990/1039, time remaining: 17s
+Rendered 991/1039, time remaining: 16s
+Rendered 992/1039, time remaining: 16s
+Rendered 993/1039, time remaining: 16s
+Rendered 994/1039, time remaining: 15s
+Rendered 994/1039, time remaining: 15s
+Rendered 995/1039, time remaining: 15s
+Rendered 996/1039, time remaining: 14s
+Rendered 997/1039, time remaining: 14s
+Rendered 997/1039, time remaining: 14s
+Rendered 998/1039, time remaining: 14s
+Rendered 999/1039, time remaining: 13s
+Rendered 1000/1039, time remaining: 13s
+Rendered 1000/1039, time remaining: 13s
+Rendered 1001/1039, time remaining: 13s
+Rendered 1002/1039, time remaining: 12s
+Rendered 1003/1039, time remaining: 12s
+Rendered 1003/1039, time remaining: 12s
+Rendered 1004/1039, time remaining: 12s
+Rendered 1005/1039, time remaining: 11s
+Rendered 1006/1039, time remaining: 11s
+Rendered 1007/1039, time remaining: 11s
+Rendered 1007/1039, time remaining: 11s
+Rendered 1008/1039, time remaining: 10s
+Rendered 1009/1039, time remaining: 10s
+Rendered 1009/1039, time remaining: 10s
+Rendered 1010/1039, time remaining: 10s
+Rendered 1011/1039, time remaining: 9s
+Rendered 1012/1039, time remaining: 9s
+Rendered 1013/1039, time remaining: 9s
+Rendered 1013/1039, time remaining: 9s
+Rendered 1014/1039, time remaining: 8s
+Rendered 1015/1039, time remaining: 8s
+Rendered 1016/1039, time remaining: 7s
+Rendered 1016/1039, time remaining: 7s
+Rendered 1017/1039, time remaining: 7s
+Rendered 1018/1039, time remaining: 7s
+Rendered 1019/1039, time remaining: 6s
+Rendered 1019/1039, time remaining: 6s
+Rendered 1020/1039, time remaining: 6s
+Rendered 1021/1039, time remaining: 6s
+Rendered 1022/1039, time remaining: 5s
+Rendered 1022/1039, time remaining: 5s
+Rendered 1023/1039, time remaining: 5s
+Rendered 1024/1039, time remaining: 5s
+Rendered 1025/1039, time remaining: 4s
+Rendered 1026/1039, time remaining: 4s
+Rendered 1026/1039, time remaining: 4s
+Rendered 1027/1039, time remaining: 4s
+Rendered 1028/1039, time remaining: 3s
+Rendered 1029/1039, time remaining: 3s
+Rendered 1029/1039, time remaining: 3s
+Rendered 1030/1039, time remaining: 3s
+Rendered 1031/1039, time remaining: 2s
+Rendered 1032/1039, time remaining: 2s
+Rendered 1032/1039, time remaining: 2s
+Rendered 1033/1039, time remaining: 2s
+Rendered 1034/1039, time remaining: 1s
+Rendered 1035/1039, time remaining: 1s
+Rendered 1035/1039, time remaining: 1s
+Rendered 1036/1039, time remaining: 1s
+Rendered 1037/1039, time remaining: 0s
+Rendered 1038/1039, time remaining: 0s
+Rendered 1038/1039, time remaining: 0s
+Stitched 782/1039
+Stitched 794/1039
+Stitched 809/1039
+Stitched 822/1039
+Stitched 831/1039
+Stitched 1039/1039
+Voz: gemini (96 palavras)
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-13_0800_ia-leitora-de-documentos/video.mp4 (34.6s)
+
