@@ -2,7 +2,8 @@ name: TikTok - teste de postagem
 on:
   workflow_dispatch:
     inputs:
-      video: {description: "caminho do vídeo no repositório", required: true}
+      video: {description: "caminho do vídeo (teste) ou publish_id (status)", required: true}
+      acao: {description: "teste ou status", required: false, default: "teste"}
 permissions:
   contents: write
 jobs:
@@ -15,7 +16,7 @@ jobs:
           TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
         run: |
           pip install -q --break-system-packages cryptography
-          python scripts/tiktok.py teste "${{ github.event.inputs.video }}" 2>&1 | tee tiktok_log.txt
+          python scripts/tiktok.py "${{ github.event.inputs.acao || 'teste' }}" "${{ github.event.inputs.video }}" 2>&1 | tee tiktok_log.txt
       - if: always()
         run: |
           git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
