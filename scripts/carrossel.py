@@ -108,8 +108,43 @@ def fmt(t: str) -> str:
     return t.replace("|", "<br>")
 
 
+CSS_EXTRA = f"""
+@font-face{{font-family:Mont;font-weight:900;src:url({FONTES}/montserrat.ttf)}}
+.foto{{position:absolute;inset:0;background-size:cover;background-position:center 25%}}
+.foto:after{{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,12,0) 35%,rgba(10,10,12,.82) 68%,#0A0A0C 92%)}}
+.seragrande{{position:absolute;left:50%;top:70px;transform:translateX(-50%);height:820px}}
+.manchete{{position:absolute;left:70px;right:70px;bottom:150px;text-align:center;font-family:Mont;font-weight:900;font-size:84px;line-height:1.04;
+  text-transform:uppercase;color:#fff;letter-spacing:-1px;text-shadow:0 6px 30px rgba(0,0,0,.6)}}
+.manchete .gold{{color:#F5A623}}
+.selo{{position:absolute;left:70px;top:60px;font:600 26px Inter;color:rgba(255,255,255,.75);letter-spacing:2px}}
+.cont{{position:absolute;right:60px;top:52px;background:rgba(0,0,0,.45);color:#fff;font:700 24px Inter;padding:8px 16px;border-radius:20px}}
+.simples .wrap{{top:170px}} .simples h1{{font-family:Mont;font-weight:900;font-size:74px;text-transform:none;letter-spacing:-1.5px;line-height:1.08}}
+.simples p{{font-size:42px;line-height:1.45;color:#C9C9D0;margin-top:34px}} .simples.branco p{{color:#3a3a40}}
+.simples .rot{{font:800 30px Inter;color:#F5A623;letter-spacing:4px;margin-bottom:26px;text-transform:uppercase}}
+"""
+
+
+def slide_capa_foto(s, i, n, arroba):
+    img = s.get("imagem")
+    fundo = f'<div class="foto" style="background-image:url({img})"></div>' if img else \
+        f'<div class="bg"></div><img class="seragrande" src="{SERA}/{s.get("sera", "confiante")}.png">'
+    return f"""<html><head><meta charset="utf-8"><style>{CSS}{CSS_EXTRA}</style></head>
+<body>{fundo}<div class="selo">{arroba}</div><div class="cont">{i}/{n}</div>
+<div class="manchete">{fmt(s.get("titulo", ""))}</div>
+<div class="foot" style="justify-content:center"><div class="r"><span class="swipe">ARRASTA →</span></div></div></body></html>"""
+
+
 def slide_html(s: dict, i: int, n: int, arroba: str, tema: str = None) -> str:
     tipo = s.get("tipo", "texto")
+    if tipo == "capa_foto":
+        return slide_capa_foto(s, i, n, arroba)
+    if tipo == "simples":
+        rot = f'<div class="rot">{s["rotulo"]}</div>' if s.get("rotulo") else ""
+        cls = "simples" + (" branco" if s.get("fundo") == "branco" else "")
+        swipe = '<span class="swipe">ARRASTA →</span>' if i < n else ""
+        return f"""<html><head><meta charset="utf-8"><style>{CSS}{CSS_EXTRA}{css_tema(tema)}</style></head>
+<body class="{cls}"><div class="bg"></div><div class="wrap">{rot}<h1>{fmt(s.get("titulo", ""))}</h1>{('<p>' + fmt(s["texto"]) + '</p>') if s.get("texto") else ''}</div>
+<div class="foot"><div class="l"><img src="{ICONE}">{arroba}</div><div class="r">{i}/{n}{swipe}</div></div></body></html>"""
     corpo = ""
     if s.get("tag"):
         corpo += f'<div class="tag">{s["tag"]}</div>'
