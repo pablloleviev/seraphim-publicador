@@ -231,7 +231,7 @@ def main():
             while nome in nomes:
                 nome += "-2"
             nomes.add(nome)
-            tema = proximo_tema(hist)
+            tema = "noir"  # temas pausados: Pabllo reprovou (2026-10-10)
             spec = {"nome": nome, "arroba": "@seraphimtech_", "quando": f"{dia} {hora}", "cenas": v["cenas"], "tema": tema,
                     "genero_voz": "masculina" if criados % 3 else "feminina",
                     "legenda": (v.get("legenda", "").strip() + "\n\n👉 Seraphim, link na bio.\n\n" + HT)}
@@ -251,7 +251,7 @@ def main():
                 nome += "-2"
             nomes.add(nome)
             destino = RAIZ / "fila" / f"{dia}_{hora.replace(':', '')}_{nome}"
-            tema = proximo_tema(hist)
+            tema = "noir"  # temas pausados: Pabllo reprovou (2026-10-10)
             spec = {"nome": nome, "arroba": "@seraphimtech_", "slides": slides, "tema": tema}
             tmp = RAIZ / "pedidos" / f"_car_{nome}.json"
             tmp.write_text(json.dumps(spec, ensure_ascii=False), encoding="utf-8")

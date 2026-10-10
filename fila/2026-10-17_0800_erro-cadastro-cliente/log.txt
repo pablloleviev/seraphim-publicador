@@ -1,76 +1,77 @@
-time remaining: 14s
-Rendered 776/824, time remaining: 14s
-Rendered 777/824, time remaining: 13s
-Rendered 778/824, time remaining: 13s
-Rendered 778/824, time remaining: 13s
-Rendered 779/824, time remaining: 13s
-Rendered 780/824, time remaining: 12s
-Rendered 781/824, time remaining: 12s
-Rendered 781/824, time remaining: 12s
-Rendered 782/824, time remaining: 12s
-Rendered 783/824, time remaining: 12s
-Rendered 784/824, time remaining: 11s
-Rendered 784/824, time remaining: 11s
-Rendered 785/824, time remaining: 11s
-Rendered 786/824, time remaining: 11s
-Rendered 786/824, time remaining: 11s
-Rendered 787/824, time remaining: 10s
-Rendered 788/824, time remaining: 10s
-Rendered 789/824, time remaining: 10s
-Rendered 790/824, time remaining: 10s
-Rendered 790/824, time remaining: 10s
-Rendered 791/824, time remaining: 9s
-Rendered 792/824, time remaining: 9s
-Rendered 792/824, time remaining: 9s
-Rendered 793/824, time remaining: 9s
-Rendered 794/824, time remaining: 8s
-Rendered 795/824, time remaining: 8s
-Rendered 796/824, time remaining: 8s
-Rendered 796/824, time remaining: 8s
-Rendered 797/824, time remaining: 7s
-Rendered 798/824, time remaining: 7s
-Rendered 799/824, time remaining: 7s
-Rendered 799/824, time remaining: 7s
-Rendered 800/824, time remaining: 7s
-Rendered 801/824, time remaining: 6s
-Rendered 802/824, time remaining: 6s
-Rendered 802/824, time remaining: 6s
-Rendered 803/824, time remaining: 6s
-Rendered 804/824, time remaining: 5s
-Rendered 805/824, time remaining: 5s
-Rendered 806/824, time remaining: 5s
-Rendered 806/824, time remaining: 5s
-Rendered 807/824, time remaining: 5s
-Rendered 808/824, time remaining: 4s
-Rendered 808/824, time remaining: 4s
-Rendered 809/824, time remaining: 4s
-Rendered 810/824, time remaining: 4s
-Rendered 811/824, time remaining: 3s
-Rendered 812/824, time remaining: 3s
-Rendered 812/824, time remaining: 3s
-Rendered 813/824, time remaining: 3s
-Rendered 814/824, time remaining: 2s
-Rendered 815/824, time remaining: 2s
-Rendered 815/824, time remaining: 2s
-Rendered 816/824, time remaining: 2s
-Rendered 817/824, time remaining: 2s
-Rendered 818/824, time remaining: 1s
-Rendered 818/824, time remaining: 1s
-Rendered 819/824, time remaining: 1s
-Rendered 820/824, time remaining: 1s
-Rendered 821/824, time remaining: 0s
-Rendered 822/824, time remaining: 0s
-Rendered 822/824, time remaining: 0s
-Rendered 823/824, time remaining: 0s
-Stitched 608/824
-Stitched 620/824
-Stitched 639/824
-Stitched 659/824
-Stitched 824/824
+ remaining: 11s
+Rendered 786/838, time remaining: 11s
+Rendered 787/838, time remaining: 11s
+Rendered 788/838, time remaining: 11s
+Rendered 789/838, time remaining: 10s
+Rendered 789/838, time remaining: 10s
+Rendered 790/838, time remaining: 10s
+Rendered 791/838, time remaining: 10s
+Rendered 792/838, time remaining: 10s
+Rendered 793/838, time remaining: 10s
+Rendered 793/838, time remaining: 10s
+Rendered 794/838, time remaining: 9s
+Rendered 795/838, time remaining: 9s
+Rendered 796/838, time remaining: 9s
+Rendered 797/838, time remaining: 9s
+Rendered 798/838, time remaining: 8s
+Rendered 798/838, time remaining: 8s
+Rendered 799/838, time remaining: 8s
+Rendered 800/838, time remaining: 8s
+Rendered 801/838, time remaining: 8s
+Rendered 802/838, time remaining: 8s
+Rendered 803/838, time remaining: 7s
+Rendered 803/838, time remaining: 7s
+Rendered 804/838, time remaining: 7s
+Rendered 805/838, time remaining: 7s
+Rendered 806/838, time remaining: 7s
+Rendered 807/838, time remaining: 6s
+Rendered 807/838, time remaining: 6s
+Rendered 808/838, time remaining: 6s
+Rendered 809/838, time remaining: 6s
+Rendered 810/838, time remaining: 6s
+Rendered 811/838, time remaining: 6s
+Rendered 811/838, time remaining: 6s
+Rendered 812/838, time remaining: 5s
+Rendered 813/838, time remaining: 5s
+Rendered 814/838, time remaining: 5s
+Rendered 815/838, time remaining: 5s
+Rendered 816/838, time remaining: 4s
+Rendered 817/838, time remaining: 4s
+Rendered 817/838, time remaining: 4s
+Rendered 818/838, time remaining: 4s
+Rendered 819/838, time remaining: 4s
+Rendered 820/838, time remaining: 4s
+Rendered 821/838, time remaining: 3s
+Rendered 821/838, time remaining: 3s
+Rendered 822/838, time remaining: 3s
+Rendered 823/838, time remaining: 3s
+Rendered 824/838, time remaining: 3s
+Rendered 825/838, time remaining: 2s
+Rendered 825/838, time remaining: 2s
+Rendered 826/838, time remaining: 2s
+Rendered 827/838, time remaining: 2s
+Rendered 828/838, time remaining: 2s
+Rendered 829/838, time remaining: 2s
+Rendered 830/838, time remaining: 1s
+Rendered 830/838, time remaining: 1s
+Rendered 831/838, time remaining: 1s
+Rendered 832/838, time remaining: 1s
+Rendered 833/838, time remaining: 1s
+Rendered 834/838, time remaining: 0s
+Rendered 835/838, time remaining: 0s
+Rendered 835/838, time remaining: 0s
+Rendered 836/838, time remaining: 0s
+Rendered 837/838, time remaining: 0s
+Stitched 619/838
+Stitched 630/838
+Stitched 655/838
+Stitched 670/838
+Stitched 838/838
 [aviso] voz gemini falhou: gemini-2.5-pro-preview-tts: 429 {
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
-Voz: edge (74 palavras)
+Voz: edge (75 palavras)
 Editando no motor Remotion... (alguns minutos)
-Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/revoz/erro-cadastro-cliente.reedit.mp4 (27.4s)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-17_0800_erro-cadastro-cliente/video.mp4 (27.9s)
+
