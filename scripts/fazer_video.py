@@ -220,35 +220,69 @@ _PIX_NOME = "avulso"
 def _salvar_pix():
     try:
         _PIX_DIR.mkdir(exist_ok=True)
-        (_PIX_DIR / f"{_PIX_NOME}.json").write_text(json.dumps(sorted(_PIX_MEU)))
+        (_PIX_DIR / f"{_PIX_NOME}.json").write_text(json.dumps(sorted(_PIX_MEU, key=str)))
     except Exception:
         pass
 
 
-def pixabay(busca, orient="vertical", n=1):
-    """Baixa n fotos grátis do Pixabay para public/job/img e devolve os caminhos (job/img/...)."""
-    import urllib.parse, urllib.request
+def combina(img_bytes, contexto):
+    """Pergunta à IA do Gemini (visão, grátis) se a imagem combina com a cena. Em caso de erro, aceita."""
+    import urllib.request
+    chave = os.environ.get("GEMINI_API_KEY")
+    if not chave or not contexto:
+        return True
+    corpo = json.dumps({"contents": [{"parts": [
+        {"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(img_bytes).decode()}},
+        {"text": "Você é editor de vídeo. Esta imagem vai ilustrar esta cena de um vídeo curto sobre tecnologia para pequenas empresas:\n"
+                 f"{contexto}\nA imagem mostra claramente algo que combina com a cena (sem parecer outra coisa, sem texto/marca estranha, sem ser confusa)? "
+                 "Responda só SIM ou NAO."}]}], "generationConfig": {"temperature": 0, "maxOutputTokens": 5}}).encode()
+    for modelo in ("gemini-2.5-flash", "gemini-flash-latest", "gemini-2.0-flash"):
+        try:
+            req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
+                                         data=corpo, headers={"x-goog-api-key": chave, "Content-Type": "application/json"})
+            r = json.loads(urllib.request.urlopen(req, timeout=40).read())
+            txt = r["candidates"][0]["content"]["parts"][0].get("text", "").upper()
+            return "NAO" not in txt and "NÃO" not in txt
+        except Exception:
+            continue
+    return True
+
+
+def _baixar(url, destino):
+    import urllib.request
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    destino.write_bytes(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=180).read())
+
+
+def pixabay(busca, orient="vertical", n=1, contexto=""):
+    """Baixa n fotos grátis do Pixabay para public/job/img e devolve os caminhos (job/img/...).
+    Com contexto, cada candidata passa pela conferência da IA (descarta foto fora de contexto)."""
+    import urllib.parse, urllib.request, random as _rnd
     chave = os.environ.get("PIXABAY_API_KEY")
     if not chave:
         return []
     q = urllib.parse.quote(busca[:90])
-    out = []
+    out, conferidas = [], 0
     for o in (orient, "all"):
         url = f"https://pixabay.com/api/?key={chave}&q={q}&image_type=photo&orientation={o}&safesearch=true&per_page=30&order=popular"
         try:
             hits = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read()).get("hits", [])
         except Exception as e:
             print(f"[aviso] pixabay '{busca}': {e}"); hits = []
-        import random as _rnd
         livres = [h for h in hits if h["id"] not in _PIX_USADAS]
-        # sorteia entre as 12 melhores ainda não usadas (não pega sempre a mais popular)
         topo = livres[:12]; _rnd.Random(_PIX_NOME + busca).shuffle(topo)
         for h in topo + livres[12:]:
+            if contexto and conferidas < 5:
+                try:
+                    prev = urllib.request.urlopen(urllib.request.Request(h["webformatURL"], headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read()
+                    conferidas += 1
+                    if not combina(prev, contexto):
+                        print(f"[imagem] descartada pela IA (fora de contexto): {busca} #{h['id']}"); _PIX_USADAS.add(h["id"]); continue
+                except Exception:
+                    pass
             destino = JOB / "img" / f"px{h['id']}.jpg"
-            destino.parent.mkdir(parents=True, exist_ok=True)
             try:
-                req = urllib.request.Request(h.get("largeImageURL") or h["webformatURL"], headers={"User-Agent": "Mozilla/5.0"})
-                destino.write_bytes(urllib.request.urlopen(req, timeout=120).read())
+                _baixar(h.get("largeImageURL") or h["webformatURL"], destino)
             except Exception:
                 continue
             _PIX_USADAS.add(h["id"]); _PIX_MEU.add(h["id"]); _salvar_pix(); out.append(f"job/img/{destino.name}")
@@ -259,11 +293,101 @@ def pixabay(busca, orient="vertical", n=1):
     return out
 
 
+def pixabay_video(busca, contexto="", dur_min=3.0):
+    """Vídeo de fundo grátis do Pixabay (em movimento), conferido pela IA. Devolve job/vid/... ou None."""
+    import urllib.parse, urllib.request, random as _rnd
+    chave = os.environ.get("PIXABAY_API_KEY")
+    if not chave:
+        return None
+    url = f"https://pixabay.com/api/videos/?key={chave}&q={urllib.parse.quote(busca[:90])}&safesearch=true&per_page=30&order=popular"
+    try:
+        hits = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read()).get("hits", [])
+    except Exception as e:
+        print(f"[aviso] pixabay vídeo '{busca}': {e}"); return None
+    livres = [h for h in hits if ("v" + str(h["id"])) not in _PIX_USADAS and h.get("duration", 0) >= dur_min]
+    topo = livres[:10]; _rnd.Random(_PIX_NOME + busca + "v").shuffle(topo)
+    for h in topo[:4]:
+        vs = h.get("videos", {})
+        ver = next((vs[k] for k in ("medium", "small", "large") if vs.get(k, {}).get("url")), None)
+        if not ver:
+            continue
+        thumb = ver.get("thumbnail")
+        if contexto and thumb:
+            try:
+                prev = urllib.request.urlopen(urllib.request.Request(thumb, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read()
+                if not combina(prev, contexto):
+                    print(f"[vídeo] descartado pela IA: {busca} #{h['id']}"); continue
+            except Exception:
+                pass
+        destino = JOB / "vid" / f"pv{h['id']}.mp4"
+        try:
+            _baixar(ver["url"], destino)
+        except Exception:
+            continue
+        _PIX_USADAS.add("v" + str(h["id"])); _PIX_MEU.add("v" + str(h["id"])); _salvar_pix()
+        return f"job/vid/{destino.name}"
+    return None
+
+
+def _norm(w):
+    import unicodedata
+    return re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKD", str(w).lower()).encode("ascii", "ignore").decode())
+
+
+def _itens_da_cena(c):
+    t = c.get("tipo")
+    if t == "palavra":
+        return [x for x in str(c.get("texto", "")).split("|") if x.strip()]
+    if t == "diagrama":
+        return [p.get("rotulo", "") for p in c.get("passos") or []]
+    if t in ("checklist", "niveis", "serifa", "cards"):
+        its = c.get("itens") or ([c["texto"]] if t == "serifa" and c.get("texto") else [])
+        return [(i if isinstance(i, str) else (i.get("texto") or i.get("rotulo") or "")) for i in its]
+    return []
+
+
+def marcar_fala(cenas, palavras, limites):
+    """Para cada item de uma cena (bloco, passo, card, item de lista), o momento em que ele é FALADO
+    (segundos a partir do início da cena). O motor faz o item entrar nessa hora, com efeito sonoro."""
+    for i, c in enumerate(cenas):
+        itens = _itens_da_cena(c)
+        if not itens:
+            continue
+        a = limites[i]; b = limites[i + 1] if i + 1 < len(limites) else len(palavras)
+        ws = palavras[a:b]
+        if not ws:
+            continue
+        fala_fim = ws[-1]["e"] - c["inicio"]
+        marcas, cur, ant = [], 0, -1.0
+        for k, it in enumerate(itens):
+            chaves = sorted({_norm(x) for x in str(it).split() if len(_norm(x)) >= 4}, key=len, reverse=True)
+            achou = None
+            for j in range(cur, len(ws)):
+                nw = _norm(ws[j]["w"])
+                if any(nw[:5] == ch[:5] for ch in chaves):
+                    achou = j; break
+            if achou is not None:
+                tm = ws[achou]["s"] - c["inicio"] - 0.05; cur = achou + 1
+            else:
+                tm = 0.15 + (max(0.5, fala_fim * 0.85) - 0.15) * k / max(1, len(itens))
+            tm = max(tm, ant + 0.3, 0.0)
+            marcas.append(round(tm, 2)); ant = tm
+        c["marcas"] = marcas
+
+
 def preparar_imagens_cortes(cenas):
     for c in cenas:
+        ctx = f"busca: {c.get('busca') or ''} | texto na tela: {c.get('texto') or ''} {c.get('sub') or ''} | narração: {c.get('narracao') or ''}"
         if c.get("busca"):
-            r = pixabay(c.pop("busca"), "vertical" if c.get("tipo") in ("foto", "painel", "serifa") else "all")
-            if r: c["imagem"] = r[0]
+            b = c.pop("busca")
+            # cena de foto: tenta primeiro um VÍDEO em movimento; se não achar, foto
+            if c.get("tipo") == "foto":
+                v = pixabay_video(b, ctx, dur_min=max(3.0, c.get("fim", 3) - c.get("inicio", 0)))
+                if v:
+                    c["video"] = v
+            if not c.get("video"):
+                r = pixabay(b, "vertical" if c.get("tipo") in ("foto", "painel", "serifa") else "all", contexto=ctx)
+                if r: c["imagem"] = r[0]
         if c.get("buscas"):
             r = []
             for b in c.pop("buscas"):
@@ -271,7 +395,7 @@ def preparar_imagens_cortes(cenas):
             c["imagens"] = r
         for it in c.get("itens") or []:
             if isinstance(it, dict) and it.get("busca"):
-                r = pixabay(it.pop("busca"), "all")
+                r = pixabay(it.pop("busca"), "all", contexto=f"{it.get('rotulo','')} | {ctx}")
                 if r: it["imagem"] = r[0]
 
 
@@ -336,11 +460,13 @@ def main():
             destino = JOB / "img" / Path(c["imagem"]).name
             destino.parent.mkdir(exist_ok=True); shutil.copy(origem, destino)
             c["imagem"] = f"job/img/{destino.name}"
-        c.pop("narracao", None)
 
     cortes = spec.get("motor") == "cortes"
     if cortes:
+        marcar_fala(cenas, palavras, limites)
         preparar_imagens_cortes(cenas)
+    for c in cenas:
+        c.pop("narracao", None)
     # garante que o motor tem as poses e marca atualizadas
     for pasta in ["sera", "marca", "fontes"]:
         if (RAIZ / "assets" / pasta).exists():

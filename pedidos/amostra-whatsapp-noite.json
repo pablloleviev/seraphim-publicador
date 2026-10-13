@@ -1,0 +1,23 @@
+{
+ "nome": "amostra-whatsapp-noite",
+ "arroba": "@seraphimtech",
+ "motor": "cortes",
+ "amostra": true,
+ "voz": "gemini",
+ "genero_voz": "feminina",
+ "funil": "topo",
+ "cenas": [
+  {"tipo": "contador", "rotulo": "Ex.: mensagens sem resposta", "de": 0, "para": 23, "sufixo": "", "clima": "tensao",
+   "narracao": "Vinte e três clientes te chamaram ontem à noite. Quantos você respondeu?"},
+  {"tipo": "foto", "busca": "woman using smartphone at night bed", "texto": "ELE NÃO ESPERA", "sub": "compra do concorrente", "tom": "vermelho", "clima": "tensao",
+   "narracao": "Quem pergunta preço às onze da noite não espera até amanhã. Ele compra de quem responder primeiro."},
+  {"tipo": "palavra", "texto": "RESPOSTA|NA HORA|SEM VOCÊ", "destaque": "SEM VOCÊ", "clima": "epico",
+   "narracao": "A saída é resposta na hora, sem você precisar estar acordado."},
+  {"tipo": "diagrama", "passos": [{"icone": "chat", "rotulo": "cliente pergunta"}, {"icone": "robo", "rotulo": "robô responde"}, {"icone": "relogio", "rotulo": "agenda horário"}, {"icone": "check", "rotulo": "venda garantida"}], "clima": "energia",
+   "narracao": "O cliente pergunta, o robô responde com o preço certo, agenda um horário e a venda fica garantida."},
+  {"tipo": "niveis", "texto": "Comece por aqui", "itens": ["Preços", "Horários", "Endereço"], "clima": "inspira",
+   "narracao": "Comece pelo básico: preços, horários e endereço. É isso que mais perguntam."},
+  {"tipo": "cta", "texto": "SEGUE A *SERAPHIM* PRA VENDER DORMINDO", "pose": "feliz", "funil": "topo", "clima": "epico",
+   "narracao": "Quer que sua empresa venda até enquanto você dorme? Segue a Seraphim."}
+ ]
+}

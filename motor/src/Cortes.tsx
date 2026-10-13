@@ -2,7 +2,7 @@
 // acabamento de TV antiga) + toques do Iman Gadzhi (painéis de "jogo", serifa itálica).
 import React from 'react';
 import {
-  AbsoluteFill, Audio, Img, Sequence, interpolate, spring, staticFile,
+  AbsoluteFill, Audio, Img, Sequence, Video, interpolate, spring, staticFile,
   useCurrentFrame, useVideoConfig, Easing, continueRender, delayRender, random,
 } from 'remotion';
 
@@ -18,6 +18,7 @@ export type CenaC = {
   itens?: {rotulo?: string; imagem?: string; texto?: string}[] | any[];
   passos?: {icone: string; rotulo: string}[];
   pose?: string; legenda?: boolean; valor?: number; apoio?: string;
+  marcas?: number[]; video?: string;
 };
 export type PropsC = {
   fps: number; duracao: number; arroba: string; audio: string | null; batida: string | null; sfx: boolean;
@@ -118,13 +119,16 @@ const Foto: React.FC<{src?: string; f: number; n: number; tom?: string; zoom?: n
 
 // ---------- cenas ----------
 type CP = {c: CenaC; f: number; fps: number; n: number};
+// quadro em que o item i é FALADO (marcas calculadas a partir da voz); sem marca, usa o padrão
+const mk = (c: CenaC, i: number, fps: number, padrao: number) => (c.marcas && c.marcas[i] != null ? Math.round(c.marcas[i] * fps) : padrao);
 
 // palavra gigante preta no branco, uma de cada vez, entrando com borrão de movimento
 const CPalavra: React.FC<CP> = ({c, f, n}) => {
   const ws = (c.texto || '').split('|').map((s) => s.trim()).filter(Boolean);
   const passo = n / Math.max(1, ws.length);
-  const i = Math.min(ws.length - 1, Math.floor(f / passo));
-  const lf = f - i * passo;
+  const ini = ws.map((_, k) => (k === 0 ? 0 : mk(c, k, 30, Math.round(k * passo))));
+  let i = 0; ini.forEach((q, k) => { if (f >= q) i = k; });
+  const lf = f - ini[i];
   const dir = i % 2 ? -1 : 1;
   const x = interpolate(lf, [0, 5], [dir * 420, 0], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
   const blur = interpolate(lf, [0, 5], [26, 0], {extrapolateRight: 'clamp'});
@@ -240,7 +244,14 @@ const CFoto: React.FC<CP> = ({c, f, fps, n}) => {
   const s = spring({frame: f - 4, fps, config: {damping: 12}});
   return (
     <AbsoluteFill>
-      <Foto src={c.imagem} f={f} n={n} tom={c.tom || 'cinza'} />
+      {c.video ? (
+        <AbsoluteFill style={{background: '#111'}}>
+          <Video src={staticFile(c.video)} muted loop style={{width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${interpolate(f, [0, n], [1.12, 1.0])})`,
+            filter: (c.tom || 'cinza') === 'normal' ? 'saturate(.9) contrast(1.08)' : 'grayscale(1) contrast(1.15) brightness(.9)'}} />
+          {c.tom === 'vermelho' && <AbsoluteFill style={{background: '#c41a22', mixBlendMode: 'multiply', opacity: 0.8}} />}
+          {(c.tom === 'dourado' || !c.tom || c.tom === 'cinza') && <AbsoluteFill style={{background: '#c98a1b', mixBlendMode: 'multiply', opacity: c.tom === 'dourado' ? 0.75 : 0.0}} />}
+        </AbsoluteFill>
+      ) : <Foto src={c.imagem} f={f} n={n} tom={c.tom || 'cinza'} />}
       <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.05) 40%, rgba(0,0,0,.45))'}} />
       {c.texto && (
         <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
@@ -289,7 +300,7 @@ const CCards: React.FC<CP> = ({c, f, fps}) => {
       <Reticula cor="#fff" op={0.06} />
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', gap: 90}}>
         {itens.map((it, i) => {
-          const s = spring({frame: f - i * 8, fps, config: {damping: 12}});
+          const s = spring({frame: f - mk(c, i, fps, i * 8), fps, config: {damping: 12}});
           const bob = Math.sin((f + i * 20) / 18) * 10;
           return (
             <div key={i} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', transform: `translateY(${(1 - s) * 200 + bob}px) rotate(${i ? 3 : -3}deg)`, opacity: s}}>
@@ -313,11 +324,14 @@ const CDiagrama: React.FC<CP> = ({c, f, fps}) => {
       <Reticula cor="#fff" op={0.05} tam={14} />
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', gap: 20}}>
         {ps.map((p, i) => {
-          const s = spring({frame: f - i * 9, fps, config: {damping: 12}});
-          const seta = ease(f, i * 9 + 4, i * 9 + 12);
+          const q = mk(c, i, fps, i * 9);
+          const s = spring({frame: f - q, fps, config: {damping: 12}});
+          const q2 = mk(c, i + 1, fps, (i + 1) * 9);
+          const seta = ease(f, q2 - 8, q2);
+          const bob = Math.sin((f + i * 17) / 14) * 8;
           return (
             <React.Fragment key={i}>
-              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: s, transform: `scale(${interpolate(s, [0, 1], [0.6, 1])})`}}>
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: s, transform: `translateY(${bob}px) scale(${interpolate(s, [0, 1], [0.6, 1]) * (f - q < 12 && f >= q ? 1 + 0.08 * Math.sin((f - q) / 12 * Math.PI) : 1)})`}}>
                 <div style={{fontFamily: 'Jet', fontWeight: 800, fontSize: 40, color: i === ps.length - 1 ? OURO : '#cfcfcf', marginBottom: 10}}>{p.rotulo}</div>
                 <Icone nome={p.icone} tam={230} />
               </div>
@@ -385,7 +399,7 @@ const CNiveis: React.FC<CP> = ({c, f, fps}) => {
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', gap: 46}}>
         {c.texto && <div style={{fontFamily: 'Playfair', fontStyle: 'italic', fontSize: 92, color: '#f3e9dc', marginBottom: 20}}>{c.texto}</div>}
         {itens.map((t, i) => {
-          const s = spring({frame: f - 6 - i * 7, fps, config: {damping: 12}});
+          const s = spring({frame: f - mk(c, i, fps, 6 + i * 7), fps, config: {damping: 12}});
           return (
             <div key={i} style={{width: 760, padding: '36px 44px', borderRadius: 36, display: 'flex', alignItems: 'center', gap: 36, opacity: s,
               transform: `translateX(${(1 - s) * (i % 2 ? 300 : -300)}px)`, background: 'linear-gradient(135deg, rgba(255,255,255,.10), rgba(255,255,255,.03))',
@@ -410,7 +424,7 @@ const CSerifa: React.FC<CP> = ({c, f, fps, n}) => {
       <AbsoluteFill style={{background: 'linear-gradient(90deg, rgba(10,12,20,.88), rgba(10,12,20,.55))'}} />
       <AbsoluteFill style={{justifyContent: 'center', padding: '0 110px', gap: 34}}>
         {itens.map((t, i) => {
-          const s = spring({frame: f - 4 - i * 8, fps, config: {damping: 14}});
+          const s = spring({frame: f - mk(c, i, fps, 4 + i * 8), fps, config: {damping: 14}});
           return <div key={i} style={{fontFamily: 'Playfair', fontStyle: 'italic', fontSize: um ? 110 : 96, lineHeight: 1.12, color: '#f4efe6', opacity: s,
             transform: `translateY(${(1 - s) * 30}px)`, display: 'flex', alignItems: 'center', gap: 30}}>
             {!um && <span style={{color: OURO, fontSize: 80, fontStyle: 'normal'}}>✳</span>}{t.replace(/\*/g, '')}</div>;
@@ -504,8 +518,9 @@ const CChecklist: React.FC<CP> = ({c, f, fps, n}) => {
         boxShadow: '0 40px 100px rgba(0,0,0,.6)', transform: `translateY(${(1 - s) * 120}px)`, opacity: s}}>
         <div style={{fontFamily: 'InterX', fontSize: 50, color: OURO, marginBottom: 30}}>{c.rotulo}</div>
         {itens.map((t, i) => {
-          const a = spring({frame: f - 6 - i * passo, fps, config: {damping: 12}});
-          const ok = ease(f, 10 + i * passo, 16 + i * passo);
+          const q = mk(c, i, fps, 6 + i * passo);
+          const a = spring({frame: f - q, fps, config: {damping: 12}});
+          const ok = ease(f, q + 6, q + 10);
           return (
             <div key={i} style={{display: 'flex', alignItems: 'center', gap: 26, padding: '22px 0', borderTop: i ? '1px solid #26262c' : 'none',
               opacity: a, transform: `translateX(${(1 - a) * 60}px)`}}>
@@ -533,14 +548,16 @@ const CenaWrap: React.FC<{c: CenaC; n: number; idx: number}> = ({c, n, idx}) => 
   const {fps} = useVideoConfig();
   const Comp = MAPA[c.tipo] || CFrase;
   // entrada: tranco + zoom; saída: borrão de chicote
-  const push = interpolate(f, [0, n], [1.0, 1.05]);
+  const push = interpolate(f, [0, n], [1.0, 1.09]);
+  const deriva = Math.sin((f + idx * 40) / 45) * 14;
+  const giro = Math.sin((f + idx * 25) / 60) * 0.5;
   const entra = interpolate(f, [0, 4], [1.18, 1], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
   const sai = interpolate(f, [n - 4, n], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   const tremor = f < 5 ? (5 - f) * 3 : 0;
   const dir = idx % 2 ? 1 : -1;
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
-      <AbsoluteFill style={{transform: `scale(${push * entra}) translate(${Math.sin(f * 7) * tremor + dir * sai * 260}px, ${Math.cos(f * 5) * tremor}px)`,
+      <AbsoluteFill style={{transform: `scale(${push * entra}) rotate(${giro}deg) translate(${Math.sin(f * 7) * tremor + dir * sai * 260 + deriva}px, ${Math.cos(f * 5) * tremor}px)`,
         filter: sai > 0 ? `blur(${sai * 18}px)` : undefined}}>
         <Comp c={c} f={f} fps={fps} n={n} />
       </AbsoluteFill>
@@ -618,6 +635,11 @@ export const SeraphimCortes: React.FC<PropsC> = (props) => {
         <React.Fragment key={'s' + i}>
           {i > 0 && <Sequence from={Math.max(0, Math.round((c.inicio - 0.2) * fps))}><Audio src={staticFile('sfx/whoosh.wav')} volume={0.4} /></Sequence>}
           {['palavra', 'contador', 'painel'].includes(c.tipo) && <Sequence from={Math.round(c.inicio * fps)}><Audio src={staticFile('sfx/impacto.wav')} volume={0.45} /></Sequence>}
+          {(c.marcas || []).map((m, k) => (k === 0 && c.tipo === 'palavra') ? null : (
+            <Sequence key={'m' + k} from={Math.round((c.inicio + m) * fps) + (c.tipo === 'checklist' ? 6 : 0)}>
+              <Audio src={staticFile(c.tipo === 'checklist' ? 'sfx/tic.wav' : c.tipo === 'palavra' ? 'sfx/impacto.wav' : 'sfx/pop.wav')} volume={c.tipo === 'palavra' ? 0.3 : 0.35} />
+            </Sequence>))}
+          {c.tipo === 'interruptor' && <Sequence from={Math.round((c.inicio + (c.fim - c.inicio) * (c.valor ?? 0.5)) * fps)}><Audio src={staticFile('sfx/clique.wav')} volume={0.5} /></Sequence>}
         </React.Fragment>
       ))}
     </AbsoluteFill>
