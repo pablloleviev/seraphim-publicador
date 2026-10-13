@@ -184,14 +184,7 @@
   "dia": "2026-10-17",
   "tipo": "video",
   "tema": "editorial",
-  "cenas": [
-   null,
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
+  "cenas": [],
   "buscas": []
  },
  {
@@ -201,13 +194,7 @@
   "dia": "2026-10-17",
   "tipo": "video",
   "tema": "terminal",
-  "cenas": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
+  "cenas": [],
   "buscas": []
  },
  {
@@ -217,13 +204,7 @@
   "dia": "2026-10-17",
   "tipo": "video",
   "tema": "brutal",
-  "cenas": [
-   null,
-   null,
-   null,
-   null,
-   null
-  ],
+  "cenas": [],
   "buscas": []
  },
  {

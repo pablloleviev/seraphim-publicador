@@ -205,8 +205,8 @@ def pedir_dia(dia, n_v, n_c, hist):
     usados = [h["titulo"] for h in hist][-300:]
     formatos_recentes = [h.get("formato", "") for h in hist][-12:]
     vids = [h for h in hist if h.get("tipo") == "video" and h.get("cenas")][-15:]
-    estruturas = [" > ".join(h["cenas"]) for h in vids]
-    ganchos = [h["cenas"][0] for h in vids][-5:]
+    estruturas = [" > ".join(str(x) for x in h["cenas"] if x) for h in vids]
+    ganchos = [next((x for x in h["cenas"] if x), "") for h in vids][-5:]
     buscas_usadas = sorted({b for h in hist for b in h.get("buscas", [])})[-150:]
     regras = f"""Você é o roteirista-chefe da Seraphim (@seraphimtech_), startup brasileira de tecnologia:
 sistemas sob medida, automações e inteligência artificial para pequenas e médias empresas.
