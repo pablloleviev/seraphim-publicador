@@ -1,0 +1,77 @@
+1080, time remaining: 23s
+Rendered 1033/1080, time remaining: 23s
+Rendered 1033/1080, time remaining: 23s
+Rendered 1034/1080, time remaining: 22s
+Rendered 1035/1080, time remaining: 22s
+Rendered 1035/1080, time remaining: 22s
+Rendered 1036/1080, time remaining: 21s
+Rendered 1037/1080, time remaining: 21s
+Rendered 1038/1080, time remaining: 20s
+Rendered 1039/1080, time remaining: 20s
+Rendered 1039/1080, time remaining: 20s
+Rendered 1040/1080, time remaining: 19s
+Rendered 1041/1080, time remaining: 19s
+Rendered 1041/1080, time remaining: 19s
+Rendered 1042/1080, time remaining: 18s
+Rendered 1043/1080, time remaining: 18s
+Rendered 1044/1080, time remaining: 17s
+Rendered 1045/1080, time remaining: 17s
+Rendered 1045/1080, time remaining: 17s
+Rendered 1046/1080, time remaining: 16s
+Rendered 1047/1080, time remaining: 16s
+Rendered 1047/1080, time remaining: 16s
+Rendered 1048/1080, time remaining: 15s
+Rendered 1049/1080, time remaining: 15s
+Rendered 1050/1080, time remaining: 14s
+Rendered 1051/1080, time remaining: 14s
+Rendered 1051/1080, time remaining: 14s
+Rendered 1052/1080, time remaining: 13s
+Rendered 1053/1080, time remaining: 13s
+Rendered 1053/1080, time remaining: 13s
+Rendered 1054/1080, time remaining: 12s
+Rendered 1055/1080, time remaining: 12s
+Rendered 1056/1080, time remaining: 11s
+Rendered 1057/1080, time remaining: 11s
+Rendered 1057/1080, time remaining: 11s
+Rendered 1058/1080, time remaining: 10s
+Rendered 1059/1080, time remaining: 10s
+Rendered 1060/1080, time remaining: 9s
+Rendered 1060/1080, time remaining: 9s
+Rendered 1061/1080, time remaining: 9s
+Rendered 1062/1080, time remaining: 8s
+Rendered 1063/1080, time remaining: 8s
+Rendered 1063/1080, time remaining: 8s
+Rendered 1064/1080, time remaining: 7s
+Rendered 1065/1080, time remaining: 7s
+Rendered 1066/1080, time remaining: 6s
+Rendered 1066/1080, time remaining: 6s
+Rendered 1067/1080, time remaining: 6s
+Rendered 1068/1080, time remaining: 5s
+Rendered 1069/1080, time remaining: 5s
+Rendered 1070/1080, time remaining: 4s
+Rendered 1070/1080, time remaining: 4s
+Rendered 1071/1080, time remaining: 4s
+Rendered 1072/1080, time remaining: 3s
+Rendered 1073/1080, time remaining: 3s
+Rendered 1073/1080, time remaining: 3s
+Rendered 1074/1080, time remaining: 2s
+Rendered 1075/1080, time remaining: 2s
+Rendered 1076/1080, time remaining: 1s
+Rendered 1076/1080, time remaining: 1s
+Rendered 1077/1080, time remaining: 1s
+Rendered 1078/1080, time remaining: 0s
+Rendered 1078/1080, time remaining: 0s
+Rendered 1079/1080, time remaining: 0s
+Stitched 814/1080
+Stitched 822/1080
+Stitched 834/1080
+Stitched 846/1080
+Stitched 857/1080
+Stitched 864/1080
+Stitched 1080/1080
+Voz: gemini (106 palavras)
+[trilha] trechos: epico 0.0-3.5s | emocao 3.5-8.4s | tensao 8.4-14.1s | inspira 14.1-20.4s | energia 20.4-25.5s | emocao 25.5-30.4s | epico 30.4-36.0s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-14_0800_ia-cameras-inteligentes/video.mp4 (36.0s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
