@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "historyId": "ca6b2c1e-e457-4485-88a5-35408ceff446",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "/home/runner/.cache/hyperframes/history/ca6b2c1e-e457-4485-88a5-35408ceff446/blobs/53/53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "7e1f8922f188d9401d9e8e583ac4ae0946b79c169fc6a3a73d8df0db9b367ea7",
+      "content": "/home/runner/.cache/hyperframes/history/ca6b2c1e-e457-4485-88a5-35408ceff446/blobs/7e/7e1f8922f188d9401d9e8e583ac4ae0946b79c169fc6a3a73d8df0db9b367ea7"
+    },
+    "meta.json": {
+      "hash": "193d2b59432f729428c5c33ea697de555ea460481b9d2a4a2e88745df5a8421b",
+      "content": "/home/runner/.cache/hyperframes/history/ca6b2c1e-e457-4485-88a5-35408ceff446/blobs/19/193d2b59432f729428c5c33ea697de555ea460481b9d2a4a2e88745df5a8421b"
+    },
+    "package.json": {
+      "hash": "03508ebef579ab00b276c5ecafc8b881fde99cb9ac09c35e586f1688301ddc29",
+      "content": "/home/runner/.cache/hyperframes/history/ca6b2c1e-e457-4485-88a5-35408ceff446/blobs/03/03508ebef579ab00b276c5ecafc8b881fde99cb9ac09c35e586f1688301ddc29"
+    },
+    "voz.wav": {
+      "hash": "a3ee2b038bc0051477a32cb51b22124121dd34b2f7822782df664d3cb659af50",
+      "content": "/home/runner/.cache/hyperframes/history/ca6b2c1e-e457-4485-88a5-35408ceff446/blobs/a3/a3ee2b038bc0051477a32cb51b22124121dd34b2f7822782df664d3cb659af50"
+    },
+    "voz_dora.wav": {
+      "hash": "dbad2551e18ed6536fabe14350049ac51afb127eed903e7cdfba48a50cd2cf93",
+      "content": "/home/runner/.cache/hyperframes/history/ca6b2c1e-e457-4485-88a5-35408ceff446/blobs/db/dbad2551e18ed6536fabe14350049ac51afb127eed903e7cdfba48a50cd2cf93"
+    },
+    "vozes.txt": {
+      "hash": "e445b97b26c616e721d60cc197c3272e57e853cf3bb66df27a5fdfdb6ea70577",
+      "content": "/home/runner/.cache/hyperframes/history/ca6b2c1e-e457-4485-88a5-35408ceff446/blobs/e4/e445b97b26c616e721d60cc197c3272e57e853cf3bb66df27a5fdfdb6ea70577"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "55ff6898-8d3f-49f3-9feb-79c998fd171e",
+      "completedAt": 1791893680265,
+      "output": "/home/runner/work/seraphim-publicador/seraphim-publicador/testes/hyperframes/teste.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

@@ -1,0 +1,28 @@
+
+  Hyperframes collects anonymous usage data to improve the tool.
+  File paths and composition content are never collected.
+  If you sign in to HeyGen, your account (email, or username) is linked to your usage.
+
+  Disable anytime: hyperframes telemetry disable
+
+
+Available voices (Kokoro-82M)
+
+  ID                Name         Language   Lang code  Gender
+  ────────────────────────────────────────────────────────────────────────
+  af_heart           Heart         en-US      en-us      female
+  af_nova            Nova          en-US      en-us      female
+  af_sky             Sky           en-US      en-us      female
+  am_adam            Adam          en-US      en-us      male
+  am_michael         Michael       en-US      en-us      male
+  bf_emma            Emma          en-GB      en-gb      female
+  bf_isabella        Isabella      en-GB      en-gb      female
+  bm_george          George        en-GB      en-gb      male
+  ef_dora            Dora          es         es         female
+  ff_siwis           Siwis         fr-FR      fr-fr      female
+  jf_alpha           Alpha         ja         ja         female
+  zf_xiaobei         Xiaobei       zh         zh         female
+
+  Use any Kokoro voice ID — see https://github.com/thewh1teagle/kokoro-onnx for all 54 voices
+  Override phonemizer with --lang <en-us|en-gb|es|fr-fr|hi|it|pt-br|ja|zh>
+
