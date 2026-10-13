@@ -32,8 +32,31 @@ Formatos fixos (séries)
 
 Legenda: contexto em parágrafos curtos + pergunta para gerar comentário OU palavra-chave.
 
-## Reels — o que deu para ver (o Instagram não deixou assistir sem login; análise pelas capas)
-- Pessoa falando para a câmera em ambiente real (escritório, evento).
-- Elemento de interface flutuando na tela como metáfora (interruptor "Agência de marketing — contratar agora?").
-- Legenda com UMA palavra destacada numa caixa colorida ("não deveria contratar").
-- Capa com manchete grande de número ("US$250 MILHÕES COM 8 FUNCIONÁRIOS").
+## Reels — analisados quadro a quadro (13/10/2026, quadros em referencias/blueocean/)
+4 vídeos: 64 s, 31 s, 69 s e 14 s.
+
+1. "Agência de marketing" (64 s) — o melhor modelo para nós
+- Pessoa falando para a câmera, plano fixo, fundo escritório desfocado escuro (sem cortes de câmera).
+- Gancho: um "interruptor" de app flutuando no topo: "Agência de marketing — contratar agora?" LIGADO;
+  na frase "não deveria contratar" ele DESLIGA e aparece "melhor não contratar" + um x vermelho. A ideia vira um objeto de tela.
+- Legenda: 2-3 palavras por vez, centralizada na altura do peito, branca, com A PALAVRA FALADA destacada numa caixa azul (karaokê).
+- A cada frase importante entra um elemento de interface que constrói a explicação: chips ("Estratégia comprovada"),
+  cards empilhando ("Mesmo funil" + "Mesmos anúncios" + "Mesmas promessas" e no fim "Proposta para SaaS Nuvio"),
+  comparação lado a lado (Varejo x Software B2B com detalhes), checklist que vai sendo preenchido e depois ganha x vermelhos.
+- Duas "telas cheias" sem a pessoa para mudar o ritmo: fundo branco com cards (a cada ~10 s) e fundo AZUL com
+  "Estratégia sob medida" x "Fórmula pronta" (vários cards iguais = "copiar e colar").
+- Selo "Conclusão" antes do fechamento; gráfico "Resultado?" com curva; lista "Método adaptado ao seu: Produto / Público / Momento".
+- CTA: chip "Estratégias para SaaS" + botão branco "Link na bio →" com cursor clicando.
+
+2. Podcast/entrevista (31 s)
+- Corte do podcast com fundo roxo/azul; legenda de 1-2 palavras no alto, com a palavra-chave numa caixa ("Software virou COMMODITY").
+- Contador animado em card ("Funcionários de uma empresa de software 0 → 281 → 482 → 500").
+
+3. Depoimento de cliente (69 s)
+- Cliente falando, legenda de 1-2 palavras no peito, nome + cargo em selo ao lado na apresentação.
+- Telas cheias azuis com tipografia animada palavra por palavra ("Me ensinou a empreender... escalar o negócio") e citações
+  com aspas grandes ("O desejo tem que estar interno"); gráfico de linha + número "41+" → "200+ clientes no Brasil".
+
+4. Prova social (14 s)
+- Celular em cima da mesa com avaliações do Google subindo em 3D; título "O QUE NOSSOS CLIENTES ESTÃO FALANDO SOBRE A BLUE OCEAN";
+  fecha com "DESCUBRA O QUE PODEMOS FAZER POR VOCÊ" + botão "link na bio". Sem fala.

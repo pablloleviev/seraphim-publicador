@@ -59,6 +59,10 @@ Tela parada, texto longo, cor fora da paleta, palavrão, número inventado como 
 - 2026-10-09: resolução certa no Telegram (proporção vertical).
 
 ## Da Blue Ocean (13/10/2026) — pegar só o melhor, sem perder nossa identidade
-- Elemento de interface flutuando como metáfora (interruptor, notificação, botão "contratar agora?").
-- Legenda com UMA palavra-chave destacada em caixa colorida (dourada no nosso caso).
-- Capa com manchete grande de número/resultado real.
+- Gancho com um OBJETO DE TELA que muda junto com a fala (interruptor que liga/desliga, notificação, botão).
+- Legenda karaokê: 2-3 palavras por vez e a palavra falada numa caixa (dourada no nosso caso).
+- Elementos de interface que constroem a explicação aos poucos: chips, cards empilhando, comparação lado a lado,
+  checklist que é preenchido e depois recebe x vermelhos, contador animado em card.
+- A cada ~10 s uma tela cheia sem fundo de vídeo para mudar o ritmo (branca ou na cor do destaque) com tipografia animada.
+- Selo "Conclusão" antes do fechamento; CTA com botão "Link na bio →" e um cursor clicando.
+- Formatos novos: depoimento/estudo de caso com selo de nome e cargo; prova social com avaliações reais subindo na tela.
