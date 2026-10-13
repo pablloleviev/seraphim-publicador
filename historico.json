@@ -183,7 +183,16 @@
   "formato": "erro que você comete",
   "dia": "2026-10-17",
   "tipo": "video",
-  "tema": "editorial"
+  "tema": "editorial",
+  "cenas": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "buscas": []
  },
  {
   "nome": "estoque-invisivel",
@@ -191,7 +200,15 @@
   "formato": "história curta de cliente",
   "dia": "2026-10-17",
   "tipo": "video",
-  "tema": "terminal"
+  "tema": "terminal",
+  "cenas": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "buscas": []
  },
  {
   "nome": "seguranca-dados-nuvem",
@@ -199,7 +216,15 @@
   "formato": "\"você sabia\"",
   "dia": "2026-10-17",
   "tipo": "video",
-  "tema": "brutal"
+  "tema": "brutal",
+  "cenas": [
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "buscas": []
  },
  {
   "nome": "checklist-virar-sistema",
@@ -236,7 +261,18 @@
   "dia": "2026-10-11",
   "tipo": "video",
   "tema": "noir",
-  "funil": "topo"
+  "funil": "topo",
+  "cenas": [
+   "palavra",
+   "frase",
+   "cards",
+   "digitando",
+   "painel",
+   "serifa",
+   "sera",
+   "cta"
+  ],
+  "buscas": []
  },
  {
   "nome": "cadeira-vazia-agendamento",
@@ -245,7 +281,19 @@
   "dia": "2026-10-11",
   "tipo": "video",
   "tema": "noir",
-  "funil": "meio"
+  "funil": "meio",
+  "cenas": [
+   "palavra",
+   "foto",
+   "cards",
+   "contador",
+   "diagrama",
+   "frase",
+   "cta"
+  ],
+  "buscas": [
+   "empty salon chair clinic waiting"
+  ]
  },
  {
   "nome": "oficina-papel-ou-sistema",
@@ -254,7 +302,20 @@
   "dia": "2026-10-11",
   "tipo": "video",
   "tema": "noir",
-  "funil": "fundo"
+  "funil": "fundo",
+  "cenas": [
+   "palavra",
+   "cards",
+   "foto",
+   "digitando",
+   "diagrama",
+   "serifa",
+   "frase",
+   "cta"
+  ],
+  "buscas": [
+   "mechanic under car checking parts"
+  ]
  },
  {
   "nome": "4-passos-automatizar-tarefas",
@@ -271,7 +332,20 @@
   "dia": "2026-10-12",
   "tipo": "video",
   "tema": "noir",
-  "funil": "topo"
+  "funil": "topo",
+  "cenas": [
+   "palavra",
+   "pergunta",
+   "foto",
+   "digitando",
+   "diagrama",
+   "serifa",
+   "painel",
+   "cta"
+  ],
+  "buscas": [
+   "person asking voice assistant phone"
+  ]
  },
  {
   "nome": "pesadelo-fechamento-mes",
@@ -280,7 +354,18 @@
   "dia": "2026-10-12",
   "tipo": "video",
   "tema": "noir",
-  "funil": "meio"
+  "funil": "meio",
+  "cenas": [
+   "palavra",
+   "cards",
+   "contador",
+   "frase",
+   "niveis",
+   "digitando",
+   "sera",
+   "cta"
+  ],
+  "buscas": []
  },
  {
   "nome": "oficina-depende-da-sua-cabeca",
@@ -289,7 +374,20 @@
   "dia": "2026-10-12",
   "tipo": "video",
   "tema": "noir",
-  "funil": "fundo"
+  "funil": "fundo",
+  "cenas": [
+   "palavra",
+   "pergunta",
+   "foto",
+   "frase",
+   "niveis",
+   "serifa",
+   "painel",
+   "cta"
+  ],
+  "buscas": [
+   "busy mechanic owner stressed garage"
+  ]
  },
  {
   "nome": "4-avisos-automaticos-contra-prejuizo",
@@ -306,7 +404,20 @@
   "dia": "2026-10-13",
   "tipo": "video",
   "tema": "noir",
-  "funil": "topo"
+  "funil": "topo",
+  "cenas": [
+   "palavra",
+   "frase",
+   "foto",
+   "sera",
+   "digitando",
+   "diagrama",
+   "serifa",
+   "cta"
+  ],
+  "buscas": [
+   "paper receipts bills messy desk"
+  ]
  },
  {
   "nome": "filtro-de-clientes-curiosos",
@@ -315,7 +426,18 @@
   "dia": "2026-10-13",
   "tipo": "video",
   "tema": "noir",
-  "funil": "meio"
+  "funil": "meio",
+  "cenas": [
+   "palavra",
+   "contador",
+   "pergunta",
+   "cards",
+   "frase",
+   "digitando",
+   "painel",
+   "cta"
+  ],
+  "buscas": []
  },
  {
   "nome": "historico-do-veiculo-oficina",
@@ -324,7 +446,20 @@
   "dia": "2026-10-13",
   "tipo": "video",
   "tema": "noir",
-  "funil": "fundo"
+  "funil": "fundo",
+  "cenas": [
+   "palavra",
+   "frase",
+   "foto",
+   "serifa",
+   "sera",
+   "cards",
+   "painel",
+   "cta"
+  ],
+  "buscas": [
+   "mechanic under car hood searching"
+  ]
  },
  {
   "nome": "3-erros-implantar-sistemas",
@@ -333,5 +468,26 @@
   "dia": "2026-10-13",
   "tipo": "carrossel",
   "tema": "noir"
+ },
+ {
+  "nome": "amostra-evolucao",
+  "titulo": "Antes de contratar, automatize o repetitivo",
+  "formato": "amostra",
+  "dia": "2026-10-13",
+  "tipo": "video",
+  "funil": "topo",
+  "amostra": true,
+  "cenas": [
+   "interruptor",
+   "frase",
+   "checklist",
+   "digitando",
+   "foto",
+   "serifa",
+   "cta"
+  ],
+  "buscas": [
+   "smartphone chat automation business"
+  ]
  }
 ]
