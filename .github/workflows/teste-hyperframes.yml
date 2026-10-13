@@ -1,0 +1,29 @@
+name: Teste HyperFrames + voz Kokoro
+on: {workflow_dispatch: {}}
+permissions: {contents: write}
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: "22"}
+      - run: |
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          pip install -q kokoro-onnx soundfile
+          cd testes/hyperframes
+          export HYPERFRAMES_SKIP_SKILLS=1
+          npx -y hyperframes@latest tts --list 2>&1 | tee vozes.txt | tail -40
+          npx -y hyperframes@latest tts "Talvez você não precise contratar mais ninguém. Automatize o repetitivo." -v pm_alex -l pt-br -o voz.wav 2>&1 | tail -5 || true
+          npx -y hyperframes@latest tts "Talvez você não precise contratar mais ninguém. Automatize o repetitivo." -v pf_dora -l pt-br -o voz_dora.wav 2>&1 | tail -5 || true
+          ls -la
+          [ -f voz.wav ] || ffmpeg -v error -f lavfi -i anullsrc=r=24000:cl=mono -t 7 voz.wav
+          npx -y hyperframes@latest browser ensure 2>&1 | tail -3
+          npx -y hyperframes@latest render -o teste.mp4 2>&1 | tail -15
+          for f in voz.wav voz_dora.wav; do [ -f $f ] && ffmpeg -v error -y -i $f -b:a 128k ${f%.wav}.mp3; done
+          rm -f voz.wav voz_dora.wav
+      - if: always()
+        run: |
+          git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
+          git add testes/hyperframes; git commit -qm "teste hyperframes" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs && git push && exit 0; sleep 5; done

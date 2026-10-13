@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0A0A0C}
+#root{width:100%;height:100%;position:relative;font-family:Inter,ui-sans-serif,system-ui,sans-serif;
+ background:radial-gradient(circle at 80% 10%,rgba(245,166,35,.22),transparent 45%),radial-gradient(circle at 10% 90%,rgba(245,166,35,.10),transparent 40%),#0A0A0C}
+.toggle{position:absolute;left:90px;right:90px;top:300px;height:170px;background:#fff;border-radius:34px;display:flex;align-items:center;padding:0 40px;gap:28px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.ico{width:86px;height:86px;border-radius:22px;background:#F5A623;display:grid;place-items:center;font-size:44px}
+.txt b{display:block;font-size:44px;color:#111}.txt span{font-size:30px;color:#888}.txt span.off{color:#e5484d;position:absolute;opacity:0}
+.sw{margin-left:auto;width:150px;height:84px;border-radius:42px;background:#F5A623;position:relative}
+.knob{position:absolute;top:8px;left:74px;width:68px;height:68px;border-radius:50%;background:#fff}
+.x{position:absolute;right:-18px;top:-18px;width:56px;height:56px;border-radius:50%;background:#e5484d;color:#fff;font-size:34px;display:grid;place-items:center;transform:scale(0)}
+.cap{position:absolute;left:0;right:0;top:1180px;text-align:center;font-size:72px;font-weight:800;color:#fff}
+.cap span{padding:2px 14px;border-radius:12px;margin:0 4px}
+.cards{position:absolute;left:140px;right:140px;top:620px}
+.card{background:#16161B;border:1px solid #2a2a31;border-radius:26px;padding:30px 36px;color:#fff;font-size:40px;margin-bottom:22px;display:flex;gap:20px;align-items:center;opacity:0}
+.card i{font-style:normal;color:#F5A623;font-weight:800}
+.handle{position:absolute;bottom:120px;left:0;right:0;text-align:center;color:#8a8a93;font-size:34px}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="7" data-width="1080" data-height="1920">
+  <audio id="voz" class="clip" src="voz.wav" data-start="0" data-duration="7" data-track-index="2" data-volume="1"></audio>
+  <div class="toggle clip" data-start="0" data-duration="7" data-track-index="0">
+    <div class="ico">👤</div>
+    <div class="txt" style="position:relative"><b>Novo funcionário</b><span class="on">contratar agora?</span><span class="off">melhor automatizar</span></div>
+    <div class="sw"><div class="knob"></div></div><div class="x">✕</div>
+  </div>
+  <div class="cards clip" data-start="0" data-duration="7" data-track-index="1">
+    <div class="card"><i>01</i> Responder clientes 24h</div>
+    <div class="card"><i>02</i> Confirmar agendamentos</div>
+    <div class="card"><i>03</i> Cobrar quem atrasou</div>
+  </div>
+  <div class="cap clip" data-start="0" data-duration="7" data-track-index="3"></div>
+  <div class="handle clip" data-start="0" data-duration="7" data-track-index="4">@seraphimtech</div>
+</div>
+<script>
+const frases=[["talvez","você","não","precise"],["contratar","mais","ninguém"],["automatize","o","repetitivo"]];
+const tempos=[[0.2,0.6,1.0,1.3],[1.8,2.4,2.7],[3.6,4.4,4.6]];
+const cap=document.querySelector('.cap');
+const tl=gsap.timeline({paused:true});
+tl.from('.toggle',{y:-80,opacity:0,duration:.5,ease:'back.out(1.6)'},0);
+frases.forEach((f,i)=>{
+  tl.call(()=>{cap.innerHTML=f.map(w=>`<span>${w}</span>`).join(' ')},null,tempos[i][0]-0.05);
+  f.forEach((w,j)=>{tl.call(()=>{cap.querySelectorAll('span').forEach((s,k)=>{s.style.background=k===j?'#F5A623':'transparent';s.style.color=k===j?'#0A0A0C':'#fff'})},null,tempos[i][j]);});
+});
+tl.to('.sw',{background:'#d4d4d8',duration:.25},1.9).to('.knob',{left:8,duration:.25},1.9)
+  .to('.on',{opacity:0,duration:.2},1.9).to('.off',{opacity:1,duration:.2},2.0)
+  .to('.x',{scale:1,duration:.3,ease:'back.out(3)'},2.3);
+tl.to('.card',{opacity:1,y:0,duration:.4,stagger:.35,ease:'power2.out'},3.4);
+gsap.set('.card',{y:40});
+window.__timelines["main"]=tl; tl.seek(0);
+</script>
+</body>
+</html>
