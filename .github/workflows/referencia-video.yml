@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
-          pip install -q yt-dlp
+          pip install -q yt-dlp faster-whisper
           D="estilos/referencias/${{ github.event.inputs.pasta }}"; mkdir -p "$D" /tmp/v
           i=0
           for u in ${{ github.event.inputs.urls }}; do
@@ -29,7 +29,7 @@ jobs:
             # cortes de cena (quantos e quando)
             ffmpeg -v info -i "$f" -vf "select='gt(scene,0.3)',showinfo" -f null - 2>&1 | grep -o "pts_time:[0-9.]*" | cut -d: -f2 | tr '\n' ' ' > "$D/$n-cortes.txt"
             # volume ao longo do tempo (música/voz)
-            ffmpeg -v error -i "$f" -vn -ac 1 -ar 8000 -f s16le /tmp/v/a.raw 2>/dev/null && python3 - "$D/$n-audio.txt" <<'P'
+            ffmpeg -v error -y -i "$f" -vn -ac 1 -ar 8000 -f s16le /tmp/v/a.raw 2>/dev/null && python3 - "$D/$n-audio.txt" <<'P'
           import sys, array, math
           a=array.array('h', open('/tmp/v/a.raw','rb').read()); w=4000
           out=[]
@@ -37,6 +37,12 @@ jobs:
               s=a[j:j+w]; r=math.sqrt(sum(x*x for x in s)/w)+1e-9; out.append(f"{j/8000:.1f}s {20*math.log10(r/32768):.0f}dB")
           open(sys.argv[1],'w').write("\n".join(out))
           P
+            python3 -c "
+          from faster_whisper import WhisperModel
+          m=WhisperModel('small',device='cpu',compute_type='int8')
+          seg,_=m.transcribe('$f',language='pt')
+          open('$D/$n-fala.txt','w').write('\\n'.join(f'[{s.start:.0f}s] {s.text.strip()}' for s in seg))
+          " || true
             echo "$u: ok ($dur s)" >> "$D/log.txt"
           done
           cat "$D/log.txt"
