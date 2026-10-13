@@ -1,38 +1,17 @@
-== 2026-10-11: faltam 3 vídeos e 1 carrosséis
 Modelos de texto: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview']
-[aviso] gemini-3.8-flash: 503 {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-(roteiro escrito com gemini-3.7-flash)
-[aviso] gemini-3.8-flash: 503 {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-(roteiro escrito com gemini-3.7-flash)
-Pronto: 6 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-11_1800_4-passos-automatizar-tarefas
-== 2026-10-12: faltam 3 vídeos e 1 carrosséis
-(roteiro escrito com gemini-3.8-flash)
-[aviso] gemini-3.8-flash: 503 {
-  "error": {
-    "code": 503,
-    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-    "status": "UNAVAILABLE"
-  }
-}
-
-(roteiro escrito com gemini-3.7-flash)
-Pronto: 7 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-12_1800_4-avisos-automaticos-contra-prejuizo
-== 2026-10-13: faltam 3 vídeos e 1 carrosséis
-(roteiro escrito com gemini-3.8-flash)
-(roteiro escrito com gemini-3.8-flash)
-Pronto: 6 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-13_1800_3-erros-implantar-sistemas
-12 post(s) planejado(s)
+[aviso] pesquisa com gemini-3.8-flash falhou: HTTP Error 429: Too Many Requests
+[aviso] pesquisa com gemini-3.7-flash falhou: HTTP Error 429: Too Many Requests
+[aviso] pesquisa com gemini-3.6-flash falhou: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 442, in <module>
+    main()
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 352, in main
+    return amostras(int(os.environ["AMOSTRAS"]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 332, in amostras
+    plano = pedir_dia(datetime.now(BRT).date(), n, 0, hist)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 208, in pedir_dia
+    estruturas = [" > ".join(h["cenas"]) for h in vids]
+                  ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: sequence item 0: expected str instance, NoneType found
