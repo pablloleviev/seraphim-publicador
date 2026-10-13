@@ -206,16 +206,21 @@ def voz_estimada(texto):
 
 # ---------- principal ----------
 # fotos já usadas em QUALQUER vídeo (persistente): nunca repetir imagem entre posts
-_PIX_ARQ = Path(__file__).resolve().parent.parent / "imagens_usadas.json"
-try:
-    _PIX_USADAS = set(json.loads(_PIX_ARQ.read_text()))
-except Exception:
-    _PIX_USADAS = set()
+# um arquivo por vídeo em imagens_usadas/ (vídeos gerados em paralelo não brigam pelo mesmo arquivo)
+_PIX_DIR = Path(__file__).resolve().parent.parent / "imagens_usadas"
+_PIX_USADAS, _PIX_MEU = set(), set()
+for _f in list(_PIX_DIR.glob("*.json")) + [_PIX_DIR.parent / "imagens_usadas.json"]:
+    try:
+        _PIX_USADAS |= set(json.loads(_f.read_text()))
+    except Exception:
+        pass
+_PIX_NOME = "avulso"
 
 
 def _salvar_pix():
     try:
-        _PIX_ARQ.write_text(json.dumps(sorted(_PIX_USADAS)))
+        _PIX_DIR.mkdir(exist_ok=True)
+        (_PIX_DIR / f"{_PIX_NOME}.json").write_text(json.dumps(sorted(_PIX_MEU)))
     except Exception:
         pass
 
@@ -237,7 +242,7 @@ def pixabay(busca, orient="vertical", n=1):
         import random as _rnd
         livres = [h for h in hits if h["id"] not in _PIX_USADAS]
         # sorteia entre as 12 melhores ainda não usadas (não pega sempre a mais popular)
-        topo = livres[:12]; _rnd.shuffle(topo)
+        topo = livres[:12]; _rnd.Random(_PIX_NOME + busca).shuffle(topo)
         for h in topo + livres[12:]:
             destino = JOB / "img" / f"px{h['id']}.jpg"
             destino.parent.mkdir(parents=True, exist_ok=True)
@@ -246,7 +251,7 @@ def pixabay(busca, orient="vertical", n=1):
                 destino.write_bytes(urllib.request.urlopen(req, timeout=120).read())
             except Exception:
                 continue
-            _PIX_USADAS.add(h["id"]); _salvar_pix(); out.append(f"job/img/{destino.name}")
+            _PIX_USADAS.add(h["id"]); _PIX_MEU.add(h["id"]); _salvar_pix(); out.append(f"job/img/{destino.name}")
             if len(out) >= n:
                 return out
         if out:
@@ -284,6 +289,8 @@ def main():
     if g:
         GEMINI_VOZ_ATUAL = VOZES_GEMINI.get(g, g)
     nome = spec.get("nome", Path(args.roteiro).stem)
+    global _PIX_NOME
+    _PIX_NOME = nome
     cenas = spec["cenas"]
     shutil.rmtree(JOB, ignore_errors=True); JOB.mkdir(parents=True)
 

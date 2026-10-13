@@ -16,7 +16,10 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 BRT = timezone(timedelta(hours=-3))
 
+_so = os.environ.get("PEDIDO")   # em paralelo: cada job faz um pedido só
 for pedido in sorted((RAIZ / "pedidos").glob("*.json")):
+    if _so and pedido.name != Path(_so).name:
+        continue
     spec = json.loads(pedido.read_text(encoding="utf-8"))
     nome = spec.get("nome", pedido.stem)
     quando = datetime.strptime(spec["quando"], "%Y-%m-%d %H:%M") if spec.get("quando") else datetime.now(BRT).replace(tzinfo=None)
