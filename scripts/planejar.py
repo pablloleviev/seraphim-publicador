@@ -204,6 +204,10 @@ def pedir_dia(dia, n_v, n_c, hist):
     ideias = pesquisar_ideias(dia)
     usados = [h["titulo"] for h in hist][-300:]
     formatos_recentes = [h.get("formato", "") for h in hist][-12:]
+    vids = [h for h in hist if h.get("tipo") == "video" and h.get("cenas")][-15:]
+    estruturas = [" > ".join(h["cenas"]) for h in vids]
+    ganchos = [h["cenas"][0] for h in vids][-5:]
+    buscas_usadas = sorted({b for h in hist for b in h.get("buscas", [])})[-150:]
     regras = f"""Você é o roteirista-chefe da Seraphim (@seraphimtech_), startup brasileira de tecnologia:
 sistemas sob medida, automações e inteligência artificial para pequenas e médias empresas.
 Referências de linha editorial: perfis como os de startups de IA/automação, criadores de "IA para negócios",
@@ -225,6 +229,12 @@ REGRAS DE QUALIDADE (obrigatórias):
   tutorial passo a passo, mito vs verdade, erro que você comete, antes e depois, lista prática, notícia/tendência de IA explicada,
   bastidores de startup, comparação (X vs Y), pergunta polêmica, curiosidade/você sabia, notícia de IA explicada, história curta de cliente (genérica, sem nomes reais), checklist, "você sabia".
 - Gancho forte na 1ª cena (pergunta, número ou contraste) — a pessoa decide em 1 segundo se fica.
+- DIVERSIDADE (regra do Pabllo): cada vídeo tem que ser DIFERENTE e MELHOR que o anterior, nunca o mesmo "padrãozinho".
+  Estas foram as sequências de cenas dos últimos vídeos — NÃO repita nenhuma e nem siga a mesma ordem: {json.dumps(estruturas, ensure_ascii=False)}
+  O tipo da 1ª cena (gancho) não pode ser nenhum destes, usados nos últimos vídeos: {json.dumps(ganchos, ensure_ascii=False)}
+  Varie a quantidade de cenas (6 a 10), o ritmo (cenas curtas e rápidas x uma cena que respira), a ordem e a combinação de tipos.
+  Nos vídeos do mesmo dia, nenhum pode ter a mesma 1ª cena nem a mesma estrutura de outro.
+  Termos de busca de foto já usados (invente outros, com cenas e ângulos diferentes): {json.dumps(buscas_usadas, ensure_ascii=False)}
 - Uma ideia por cena. Exemplos concretos do dia a dia de pequenos negócios (loja, clínica, salão, oficina, restaurante, escritório, e-commerce).
 - Vídeo: narração total entre 70 e 110 palavras, frases curtas e naturais para ser falada em voz alta.
 - PROIBIDO inventar estatística: nada de "80% das pessoas", "5 vezes mais", "30% da margem". Fale de forma qualitativa ("a maioria", "bem mais barato")
@@ -255,6 +265,9 @@ Revise CADA post com olhar crítico e devolva a versão MELHORADA no mesmo forma
 - corrija ortografia, palavras repetidas e frases estranhas (leia em voz alta mentalmente);
 - troque ganchos fracos por ganchos que prendem; corte palavras inúteis; deixe a narração natural, falada;
 - garanta que nenhum post se pareça com outro do dia nem com estes temas já usados: {json.dumps(usados[-80:], ensure_ascii=False)};
+- DIVERSIDADE: compare a sequência de tipos de cena de cada vídeo com a dos outros do dia e com as dos últimos vídeos (estão nas regras);
+  se estiver parecida (mesmo gancho, mesma ordem, mesmo "padrãozinho"), REMONTE a estrutura com outra combinação de cenas;
+  troque buscas de foto genéricas por cenas específicas e diferentes das já usadas;
 - confira todas as regras: tipos de cena válidos e sem repetir em sequência, 7-10 cenas, 70-110 palavras de narração, pontuação colada;
 - A CHAMADA FINAL é a parte mais importante: confira se ela combina com o gancho e o assunto, se o funil está certo (oficina -> pode ser fundo; gestão -> meio; resto -> topo), se não tem frase sem sentido, e reescreva se estiver genérica;
 - remova QUALQUER estatística inventada e qualquer afirmação sobre o AutoFlow que não esteja na ficha;
@@ -382,7 +395,10 @@ def main():
                 spec["material_url"] = material.gerar(m)
                 spec["material_titulo"] = m.get("titulo", "").replace("*", "")
             (RAIZ / "pedidos" / f"{nome}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=1), encoding="utf-8")
-            hist.append({"nome": nome, "funil": v["funil"], "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video", "tema": tema})
+            buscas = [c.get("busca") for c in v["cenas"] if c.get("busca")] + [b for c in v["cenas"] for b in (c.get("buscas") or [])] \
+                     + [it.get("busca") for c in v["cenas"] for it in (c.get("itens") or []) if isinstance(it, dict) and it.get("busca")]
+            hist.append({"nome": nome, "funil": v["funil"], "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video", "tema": tema,
+                         "cenas": [c.get("tipo") for c in v["cenas"]], "buscas": buscas})
             criados += 1
         for hora, c in zip(hc, plano.get("carrosseis", [])):
             slides = [s for s in c.get("slides", []) if s.get("titulo")]

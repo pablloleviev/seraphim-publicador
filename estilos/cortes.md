@@ -66,3 +66,8 @@ Tela parada, texto longo, cor fora da paleta, palavrão, número inventado como 
 - A cada ~10 s uma tela cheia sem fundo de vídeo para mudar o ritmo (branca ou na cor do destaque) com tipografia animada.
 - Selo "Conclusão" antes do fechamento; CTA com botão "Link na bio →" e um cursor clicando.
 - Formatos novos: depoimento/estudo de caso com selo de nome e cargo; prova social com avaliações reais subindo na tela.
+
+## Regra do Pabllo (13/10/2026): nunca o mesmo padrãozinho
+- Cada vídeo tem que ser diferente E melhor que o anterior. Variar gancho, sequência e quantidade de cenas, ritmo e imagens.
+- O planejador recebe as estruturas dos últimos 15 vídeos e os ganchos dos últimos 5 e é proibido de repetir; a revisão remonta o que ficar parecido.
+- Nenhuma foto do Pixabay se repete entre vídeos (registro em imagens_usadas.json) e a escolha é sorteada entre as melhores, não sempre a mais popular.

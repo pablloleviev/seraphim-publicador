@@ -27,7 +27,7 @@ jobs:
         run: python scripts/revoz.py
       - run: |
           git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
-          for p in fila revoz; do git add -A -- "$p" 2>/dev/null || true; done
+          for p in fila revoz imagens_usadas.json; do git add -A -- "$p" 2>/dev/null || true; done
           git diff --cached --quiet && exit 0
           git commit -q -m "voz refeita com Gemini"
           for i in 1 2 3 4 5; do git pull -q --rebase -X theirs origin main && git push origin HEAD:main && exit 0; sleep 5; done; exit 1

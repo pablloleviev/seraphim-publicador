@@ -205,7 +205,19 @@ def voz_estimada(texto):
 
 
 # ---------- principal ----------
-_PIX_USADAS = set()
+# fotos já usadas em QUALQUER vídeo (persistente): nunca repetir imagem entre posts
+_PIX_ARQ = Path(__file__).resolve().parent.parent / "imagens_usadas.json"
+try:
+    _PIX_USADAS = set(json.loads(_PIX_ARQ.read_text()))
+except Exception:
+    _PIX_USADAS = set()
+
+
+def _salvar_pix():
+    try:
+        _PIX_ARQ.write_text(json.dumps(sorted(_PIX_USADAS)))
+    except Exception:
+        pass
 
 
 def pixabay(busca, orient="vertical", n=1):
@@ -222,9 +234,11 @@ def pixabay(busca, orient="vertical", n=1):
             hits = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read()).get("hits", [])
         except Exception as e:
             print(f"[aviso] pixabay '{busca}': {e}"); hits = []
-        for h in hits:
-            if h["id"] in _PIX_USADAS:
-                continue
+        import random as _rnd
+        livres = [h for h in hits if h["id"] not in _PIX_USADAS]
+        # sorteia entre as 12 melhores ainda não usadas (não pega sempre a mais popular)
+        topo = livres[:12]; _rnd.shuffle(topo)
+        for h in topo + livres[12:]:
             destino = JOB / "img" / f"px{h['id']}.jpg"
             destino.parent.mkdir(parents=True, exist_ok=True)
             try:
@@ -232,7 +246,7 @@ def pixabay(busca, orient="vertical", n=1):
                 destino.write_bytes(urllib.request.urlopen(req, timeout=120).read())
             except Exception:
                 continue
-            _PIX_USADAS.add(h["id"]); out.append(f"job/img/{destino.name}")
+            _PIX_USADAS.add(h["id"]); _salvar_pix(); out.append(f"job/img/{destino.name}")
             if len(out) >= n:
                 return out
         if out:
