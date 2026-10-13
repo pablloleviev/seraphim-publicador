@@ -1,0 +1,45 @@
+{
+ "destino": "fila/2026-10-14_1800_ferramentas-gestao-equipe",
+ "titulo": "3 ferramentas para gerir sua equipe sem enlouquecer",
+ "formato": "lista prática",
+ "slides": [
+  {
+   "tipo": "capa",
+   "tag": "Gestão Eficiente",
+   "titulo": "3 ferramentas para|*gerir sua equipe*|sem enlouquecer",
+   "texto": "Pare de perguntar \"em que pé está isso\" o dia todo.",
+   "sera": "preocupado"
+  },
+  {
+   "tipo": "numero",
+   "numero": "01",
+   "titulo": "Trello ou|*Asana*",
+   "texto": "Visualize o fluxo de trabalho em cartões. O que está pendente, o que está sendo feito e o que já acabou."
+  },
+  {
+   "tipo": "texto",
+   "titulo": "O segredo:|*Prazos*",
+   "texto": "Tarefa sem dono e sem data é apenas um **desejo**. Centralize tudo ali.",
+   "card": "Dica: Use colunas de \"Bloqueado\" para identificar gargalos."
+  },
+  {
+   "tipo": "numero",
+   "numero": "02",
+   "titulo": "Notion para|*Processos*",
+   "texto": "Onde fica o manual da sua empresa? Se está na sua cabeça, sua equipe nunca terá autonomia."
+  },
+  {
+   "tipo": "numero",
+   "numero": "03",
+   "titulo": "Slack ou|*Discord*",
+   "texto": "Tire as conversas de trabalho do WhatsApp. Misturar vida pessoal e profissional gera ansiedade e perda de foco."
+  },
+  {
+   "tipo": "capa",
+   "titulo": "Gestão não é|*vigiar*",
+   "texto": "É dar as ferramentas certas para as pessoas trabalharem. **@seraphimbr_**",
+   "sera": "confiante"
+  }
+ ],
+ "legenda": "Sua equipe está perdida ou você que não deu o mapa? 🗺️\n\nCentralizar a gestão tira um peso enorme das costas do dono e dá clareza para o time.\n\nQual dessas você já usa? Comenta aí! 👇"
+}

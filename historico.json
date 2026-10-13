@@ -470,5 +470,79 @@
   "buscas": [
    "smartphone chat automation business"
   ]
+ },
+ {
+  "nome": "ia-cameras-inteligentes",
+  "funil": "topo",
+  "titulo": "Sua câmera agora tem cérebro",
+  "formato": "notícia de IA explicada",
+  "dia": "2026-10-14",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "parede",
+   "frase",
+   "contador",
+   "foto",
+   "digitando",
+   "sera",
+   "cta"
+  ],
+  "buscas": [
+   "store owner looking at smartphone notification",
+   "security camera monitor grid",
+   "artificial intelligence neural network"
+  ]
+ },
+ {
+  "nome": "mito-ia-humano",
+  "funil": "topo",
+  "titulo": "IA tira o toque humano?",
+  "formato": "mito vs verdade",
+  "dia": "2026-10-14",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "pergunta",
+   "palavra",
+   "cards",
+   "frase",
+   "diagrama",
+   "serifa",
+   "cta"
+  ],
+  "buscas": [
+   "stressed woman typing fast computer",
+   "woman smiling talking to customer"
+  ]
+ },
+ {
+  "nome": "dor-historico-cliente",
+  "funil": "meio",
+  "titulo": "O cliente que ninguém lembrou",
+  "formato": "história curta de cliente",
+  "dia": "2026-10-14",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "foto",
+   "frase",
+   "painel",
+   "interruptor",
+   "digitando",
+   "checklist",
+   "cta"
+  ],
+  "buscas": [
+   "confused male business owner scratching head looking at phone"
+  ]
+ },
+ {
+  "nome": "ferramentas-gestao-equipe",
+  "titulo": "3 ferramentas para gerir sua equipe sem enlouquecer",
+  "formato": "lista prática",
+  "dia": "2026-10-14",
+  "tipo": "carrossel",
+  "tema": "noir"
  }
 ]
