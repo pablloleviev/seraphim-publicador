@@ -370,6 +370,11 @@ def processar_respostas(estado: dict, espera: int = 0):
             continue
         acao, nome = cq["data"].split("|", 1)
         nome = de_cod(nome, estado)
+        atual = estado["itens"].get(nome) or {}
+        if atual.get("msg_id") and cq["message"]["message_id"] != atual["msg_id"]:
+            # botão de uma mensagem antiga/duplicada: só vale a mensagem mais recente de cada post
+            responder(cq["id"], "Mensagem antiga — use a mais recente deste post.")
+            continue
         if acao.startswith("tt"):
             item = estado["itens"].get(nome) or {}
             tt = item.get("tiktok")
