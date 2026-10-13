@@ -1,0 +1,46 @@
+name: Analisar vídeos de referência
+on:
+  workflow_dispatch:
+    inputs:
+      urls: {description: "links dos reels separados por espaço", required: true}
+      pasta: {description: "nome da pasta em estilos/referencias/", required: true}
+permissions:
+  contents: write
+jobs:
+  analisar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          pip install -q yt-dlp
+          D="estilos/referencias/${{ github.event.inputs.pasta }}"; mkdir -p "$D" /tmp/v
+          i=0
+          for u in ${{ github.event.inputs.urls }}; do
+            i=$((i+1)); n=$(printf "%02d" $i)
+            yt-dlp -q -f "b[ext=mp4]/b" -o "/tmp/v/$n.%(ext)s" --write-info-json "$u" 2>&1 | tail -3 || true
+            f=$(ls /tmp/v/$n.* 2>/dev/null | grep -v json | head -1)
+            if [ -z "$f" ]; then echo "$u: falhou" >> "$D/log.txt"; continue; fi
+            dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f")
+            python3 -c "import json;d=json.load(open('/tmp/v/$n.info.json'));print(json.dumps({k:d.get(k) for k in ('title','description','duration','view_count','like_count','comment_count','track','artist')},ensure_ascii=False,indent=1))" > "$D/$n-info.json" || true
+            # 1º segundo quadro a quadro (gancho) + resto do vídeo a cada 1 s
+            ffmpeg -v error -y -i "$f" -t 3 -vf "fps=4,scale=216:-1,tile=6x2" -frames:v 1 "$D/$n-gancho.jpg"
+            ffmpeg -v error -y -i "$f" -vf "fps=1,scale=180:-1,tile=8x8" -frames:v 1 "$D/$n-todo.jpg"
+            # cortes de cena (quantos e quando)
+            ffmpeg -v info -i "$f" -vf "select='gt(scene,0.3)',showinfo" -f null - 2>&1 | grep -o "pts_time:[0-9.]*" | cut -d: -f2 | tr '\n' ' ' > "$D/$n-cortes.txt"
+            # volume ao longo do tempo (música/voz)
+            ffmpeg -v error -i "$f" -vn -ac 1 -ar 8000 -f s16le /tmp/v/a.raw 2>/dev/null && python3 - "$D/$n-audio.txt" <<'P'
+          import sys, array, math
+          a=array.array('h', open('/tmp/v/a.raw','rb').read()); w=4000
+          out=[]
+          for j in range(0, len(a)-w, w):
+              s=a[j:j+w]; r=math.sqrt(sum(x*x for x in s)/w)+1e-9; out.append(f"{j/8000:.1f}s {20*math.log10(r/32768):.0f}dB")
+          open(sys.argv[1],'w').write("\n".join(out))
+          P
+            echo "$u: ok ($dur s)" >> "$D/log.txt"
+          done
+          cat "$D/log.txt"
+      - run: |
+          git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
+          git add estilos/referencias; git commit -qm "referência: quadros dos vídeos" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs && git push && exit 0; sleep 5; done
