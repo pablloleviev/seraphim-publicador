@@ -18,6 +18,8 @@ jobs:
     timeout-minutes: 58
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # sempre o estado mais recente (uma execução que esperou na fila não pode usar estado velho)
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"

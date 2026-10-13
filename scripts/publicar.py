@@ -499,6 +499,9 @@ def publicar_item(nome, item):
 def main():
     if not TG:
         sys.exit("Falta o segredo TELEGRAM_TOKEN")
+    if os.environ.get("GITHUB_ACTIONS"):
+        import subprocess   # garante o estado mais recente antes de mandar qualquer coisa (evita reenviar posts)
+        subprocess.run("git pull -q --rebase --autostash", shell=True, cwd=RAIZ)
     estado = carregar_estado()
     eu = tg("getMe")["result"]
     print(f"Bot conectado: @{eu.get('username')}")
