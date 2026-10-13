@@ -163,6 +163,35 @@
         "priv": "PUBLIC_TO_EVERYONE"
       },
       "msg_id": 617
+    },
+    "2026-10-14_0800_ia-cameras-inteligentes": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-13T21:15:18.226792+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 621
+    },
+    "2026-10-14_1200_mito-ia-humano": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-13T21:15:20.733800+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 623
+    },
+    "2026-10-14_1900_dor-historico-cliente": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-13T21:15:23.354398+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 625
+    },
+    "2026-10-14_1800_ferramentas-gestao-equipe": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-13T21:40:20.881353+00:00",
+      "msg_id": 633
     }
   },
   "respondidos": {}
