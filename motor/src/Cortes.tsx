@@ -149,7 +149,8 @@ const CContador: React.FC<CP> = ({c, f, fps, n}) => {
   const prog = ease(f, 4, Math.min(n - 8, 50));
   const v = (c.de ?? 0) + ((c.para ?? 0) - (c.de ?? 0)) * prog;
   const desce = (c.para ?? 0) < (c.de ?? 0);
-  const fmt = Math.abs(c.para ?? 0) >= 100 ? Math.round(v).toLocaleString('pt-BR') : v.toFixed(1).replace('.', ',');
+  const inteiro = Number.isInteger(c.para ?? 0) && Number.isInteger(c.de ?? 0);
+  const fmt = inteiro || Math.abs(c.para ?? 0) >= 100 ? Math.round(v).toLocaleString('pt-BR') : v.toFixed(1).replace('.', ',');
   const risca = c.riscar ? ease(f, n * 0.55, n * 0.55 + 8) : 0;
   return (
     <AbsoluteFill>
@@ -247,9 +248,9 @@ const CFoto: React.FC<CP> = ({c, f, fps, n}) => {
       {c.video ? (
         <AbsoluteFill style={{background: '#111'}}>
           <Video src={staticFile(c.video)} muted loop style={{width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${interpolate(f, [0, n], [1.12, 1.0])})`,
-            filter: (c.tom || 'cinza') === 'normal' ? 'saturate(.9) contrast(1.08)' : 'grayscale(1) contrast(1.15) brightness(.9)'}} />
-          {c.tom === 'vermelho' && <AbsoluteFill style={{background: '#c41a22', mixBlendMode: 'multiply', opacity: 0.8}} />}
-          {(c.tom === 'dourado' || !c.tom || c.tom === 'cinza') && <AbsoluteFill style={{background: '#c98a1b', mixBlendMode: 'multiply', opacity: c.tom === 'dourado' ? 0.75 : 0.0}} />}
+            filter: (c.tom || 'cinza') === 'normal' ? 'saturate(.95) contrast(1.08) brightness(1.05)' : 'grayscale(1) contrast(1.2) brightness(1.25)'}} />
+          {c.tom === 'vermelho' && <AbsoluteFill style={{background: '#d42a30', mixBlendMode: 'multiply', opacity: 0.55}} />}
+          {c.tom === 'dourado' && <AbsoluteFill style={{background: '#d99a2b', mixBlendMode: 'multiply', opacity: 0.5}} />}
         </AbsoluteFill>
       ) : <Foto src={c.imagem} f={f} n={n} tom={c.tom || 'cinza'} />}
       <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.05) 40%, rgba(0,0,0,.45))'}} />
@@ -322,7 +323,7 @@ const CDiagrama: React.FC<CP> = ({c, f, fps}) => {
   return (
     <AbsoluteFill style={{background: '#0b0b0c'}}>
       <Reticula cor="#fff" op={0.05} tam={14} />
-      <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', gap: 20}}>
+      <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', gap: 20, paddingBottom: ps.length >= 4 ? 260 : 0}}>
         {ps.map((p, i) => {
           const q = mk(c, i, fps, i * 9);
           const s = spring({frame: f - q, fps, config: {damping: 12}});
@@ -333,7 +334,7 @@ const CDiagrama: React.FC<CP> = ({c, f, fps}) => {
             <React.Fragment key={i}>
               <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: s, transform: `translateY(${bob}px) scale(${interpolate(s, [0, 1], [0.6, 1]) * (f - q < 12 && f >= q ? 1 + 0.08 * Math.sin((f - q) / 12 * Math.PI) : 1)})`}}>
                 <div style={{fontFamily: 'Jet', fontWeight: 800, fontSize: 40, color: i === ps.length - 1 ? OURO : '#cfcfcf', marginBottom: 10}}>{p.rotulo}</div>
-                <Icone nome={p.icone} tam={230} />
+                <Icone nome={p.icone} tam={ps.length >= 4 ? 165 : 230} />
               </div>
               {i < ps.length - 1 && (
                 <svg width="60" height="110" viewBox="0 0 60 110" style={{opacity: seta}}>
