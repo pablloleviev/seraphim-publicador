@@ -20,7 +20,7 @@ jobs:
         with: {python-version: "3.12", cache: pip, cache-dependency-path: .github/workflows/gerar-video.yml}
       - run: |
           which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
-          pip install -q edge-tts faster-whisper
+          pip install -q edge-tts faster-whisper kokoro-onnx soundfile
           cd motor && npm ci --no-audit --no-fund
       - env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

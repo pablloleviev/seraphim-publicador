@@ -98,6 +98,17 @@ def voz_edge(texto, destino, voz=None):
     return asyncio.run(run())
 
 
+# ---------- Kokoro (local, grátis, sem cota) — ÚLTIMO recurso: o Pabllo achou robotizada ----------
+def voz_kokoro(texto, destino, voz=None):
+    voz = voz or os.environ.get("KOKORO_VOZ", "pm_alex")
+    wav = Path(destino).with_suffix(".kokoro.wav")
+    subprocess.run(["npx", "-y", "hyperframes@latest", "tts", texto, "-v", voz, "-l", "pt-br", "-o", str(wav)],
+                   check=True, capture_output=True, env={**os.environ, "HYPERFRAMES_SKIP_SKILLS": "1"}, timeout=600)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(wav), "-b:a", "160k", str(destino)], check=True)
+    wav.unlink()
+    return alinhar(texto, destino)
+
+
 # ---------- Gemini (Google) ----------
 # vozes do Gemini: masculina = Puck (a aprovada pelo Pabllo) | feminina = Kore (firme, clara)
 VOZES_GEMINI = {"masculina": "Puck", "feminina": "Kore"}
@@ -248,7 +259,7 @@ def preparar_imagens_cortes(cenas):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("roteiro")
-    ap.add_argument("--voz", default="elevenlabs", choices=["elevenlabs", "gemini", "gemini-so", "edge", "edge-antonio", "nenhuma"])
+    ap.add_argument("--voz", default="elevenlabs", choices=["elevenlabs", "gemini", "gemini-so", "edge", "edge-antonio", "kokoro", "nenhuma"])
     ap.add_argument("--saida", default=None, help="caminho do mp4 final")
     args = ap.parse_args()
     carregar_env()
@@ -272,9 +283,10 @@ def main():
     audio, palavras = None, []
     mp3 = JOB / "voz.mp3"
     if args.voz != "nenhuma" and texto:
-        ordem = {"elevenlabs": ["elevenlabs", "gemini", "edge"], "gemini": ["gemini", "edge"],
+        ordem = {"elevenlabs": ["elevenlabs", "gemini", "edge", "kokoro"], "gemini": ["gemini", "edge", "kokoro"],
+                 "edge": ["edge", "kokoro"],
                  "gemini-so": ["gemini"]}.get(args.voz, [args.voz])
-        funcs = {"elevenlabs": voz_elevenlabs, "gemini": voz_gemini, "edge": voz_edge,
+        funcs = {"elevenlabs": voz_elevenlabs, "gemini": voz_gemini, "edge": voz_edge, "kokoro": voz_kokoro,
                  "edge-antonio": lambda t, d: voz_edge(t, d, "pt-BR-AntonioNeural")}
         for motor_voz in ordem:
             try:
