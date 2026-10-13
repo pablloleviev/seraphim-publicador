@@ -57,3 +57,8 @@ Tela parada, texto longo, cor fora da paleta, palavrão, número inventado como 
 - 2026-10-10: feed estava padronizado demais (mesma paleta) → criado sistema de temas visuais. (correções → viram regra)
 - 2026-10-09: legenda não pode colar palavras; pontuação colada; dourado ilegível no branco corrigido.
 - 2026-10-09: resolução certa no Telegram (proporção vertical).
+
+## Da Blue Ocean (13/10/2026) — pegar só o melhor, sem perder nossa identidade
+- Elemento de interface flutuando como metáfora (interruptor, notificação, botão "contratar agora?").
+- Legenda com UMA palavra-chave destacada em caixa colorida (dourada no nosso caso).
+- Capa com manchete grande de número/resultado real.

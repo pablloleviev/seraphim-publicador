@@ -3,7 +3,8 @@ Instagram · 1080x1350 (4:5)
 
 ## Referências base
 - Padrão Seraphim aprovado: "3 sinais de que sua oficina está perdendo dinheiro" ("ficou perfeito").
-- (novas referências: ver `referencias/carrosseis/referencias.md`)
+- Blue Ocean (@blueoceansem): referência principal — `referencias/blueocean.md`.
+- (outras: `referencias/carrosseis/referencias.md`)
 
 ## 1. Estrutura
 - 6 a 9 slides (educativo) ou 4 a 5 (dica rápida). Um carrossel = uma ideia.
@@ -32,15 +33,24 @@ Legenda: gancho na 1ª linha, chamada, hashtags adicionadas automaticamente.
 ## 6. Nunca
 Parede de texto, cor fora da paleta, copiar layout de outra marca, mais de um CTA no final.
 
-## Identidade única por post (regra do Pabllo, 2026-10-10)
-- Padroniza-se o ESTILO de edição (ritmo, estrutura, qualidade), NUNCA a aparência: posts vizinhos no feed não podem parecer iguais.
-- 9 temas visuais (paleta + fonte + textura + animação + legenda): noir, editorial, terminal, meianoite, brutal, vinho, eletrico, grafite, ultravioleta. O planejador sempre escolhe o tema usado há mais tempo.
-- A Seraphim aparece de forma SUTIL em todos: fio dourado sob o título, anel dourado no ícone, barra de progresso, Sera. Não é obrigatório usar preto e dourado como cor principal.
-- Novos temas entram aqui conforme as referências que o Pabllo mandar.
+## Nível Blue Ocean (referência principal de carrosséis desde 13/10/2026 — ver referencias/blueocean.md)
+Inspiração total, com liberdade para ir além. Mantemos a identidade Seraphim (preto #0A0A0C + dourado #F5A623, Sera).
+1. Ritmo: alternar slides escuros e um ou dois brancos no miolo. Uma única cor de destaque (dourado) só nas palavras-chave.
+2. Capa forte, um destes tipos: (a) foto real de pessoa/cena + manchete enorme condensada no terço de baixo;
+   (b) objeto/conceito 3D que represente a ideia; (c) notícia: foto + selo de data + recortes de manchete.
+3. Miolo com cara de produto: cards com sombra, listas em pílulas numeradas, gráficos (só com dado real e fonte),
+   linha de crescimento com selo, diagramas do método, mockups de tela/celular, notificações de WhatsApp.
+4. Séries fixas: Estudo de caso (só fatos reais), "Seraphim Weekly" (3 notícias de tecnologia/IA da semana para
+   pequenas empresas, com fonte e data; resto pela palavra-chave), Método com sigla própria, Passo a passo 01-04.
+5. Notícias e números sempre com "Fonte: ... • data". Nunca inventar número.
+6. Último slide: mockup do nosso perfil com o link da bio destacado + frase de fechamento, OU palavra-chave + capa do material.
+7. Rodapé "ARRASTA PARA O LADO →" em todos menos o último; logo pequeno sempre no mesmo lugar.
+8. Legenda: contexto em parágrafos curtos + pergunta que gere comentário, ou palavra-chave.
 
 ## Regras aprovadas pelo Pabllo
 - Carrossel "3 sinais" é o padrão.
 
 ## Evolução
-- 2026-10-10: feed estava padronizado demais (mesma paleta) → criado sistema de temas visuais.
+- 2026-10-13: Blue Ocean vira referência principal de carrosséis (nível de design e séries fixas).
+- 2026-10-10: sistema de 9 temas visuais foi REJEITADO pelo Pabllo e removido.
 - 2026-10-09: linha editorial ampliada para tecnologia, sistemas, automação e IA (não só oficina).
