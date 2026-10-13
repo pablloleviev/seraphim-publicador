@@ -225,13 +225,16 @@ const CPergunta: React.FC<CP> = ({c, f, fps}) => {
 
 // frase curta minúscula centralizada no preto
 const CFrase: React.FC<CP> = ({c, f, fps}) => {
-  const ws = (c.texto || '').toLowerCase().split(' ');
+  // *palavra* no texto = destaque dourado (o asterisco nunca aparece na tela)
+  const bruto = (c.texto || '').toLowerCase();
+  const marcadas = new Set((bruto.match(/\*([^*]+)\*/g) || []).flatMap((m) => m.replace(/\*/g, '').split(' ')));
+  const ws = bruto.replace(/\*/g, '').split(' ').filter(Boolean);
   return (
     <AbsoluteFill style={{background: PRETO, alignItems: 'center', justifyContent: 'center', padding: '0 90px'}}>
       <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px 26px', maxWidth: 900}}>
         {ws.map((w, i) => {
           const s = spring({frame: f - i * 2.5, fps, config: {damping: 13, stiffness: 160}});
-          const verm = c.destaque && w.includes(c.destaque.toLowerCase());
+          const verm = marcadas.has(w) || (c.destaque && w.includes(c.destaque.toLowerCase()));
           return <span key={i} style={{fontFamily: 'Mont', fontWeight: 800, fontSize: 124, color: verm ? OURO : '#fff', opacity: s,
             transform: `translateY(${(1 - s) * 40}px)`, display: 'inline-block'}}>{w}</span>;
         })}

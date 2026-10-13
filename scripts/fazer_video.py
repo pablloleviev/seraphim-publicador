@@ -236,7 +236,7 @@ def combina(img_bytes, contexto):
         {"text": "Você é editor de vídeo. Esta imagem vai ilustrar esta cena de um vídeo curto sobre tecnologia para pequenas empresas:\n"
                  f"{contexto}\nA imagem mostra claramente algo que combina com a cena (sem parecer outra coisa, sem texto/marca estranha, sem ser confusa)? "
                  "Responda só SIM ou NAO."}]}], "generationConfig": {"temperature": 0, "maxOutputTokens": 5}}).encode()
-    for modelo in ("gemini-2.5-flash", "gemini-flash-latest", "gemini-2.0-flash"):
+    for modelo in ("gemini-3.8-flash", "gemini-3.7-flash", "gemini-flash-latest", "gemini-2.5-flash"):
         try:
             req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{modelo}:generateContent",
                                          data=corpo, headers={"x-goog-api-key": chave, "Content-Type": "application/json"})

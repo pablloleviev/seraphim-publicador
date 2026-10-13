@@ -1,0 +1,74 @@
+{
+ "nome": "mito-ia-humano",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-14 12:00",
+ "cenas": [
+  {
+   "tipo": "pergunta",
+   "texto": "IA vai deixar minha empresa *fria*?",
+   "pose": "preocupado",
+   "narracao": "Muita gente trava na automação porque acha que vai virar um robô e perder o toque humano."
+  },
+  {
+   "tipo": "palavra",
+   "texto": "GRANDE|ERRO",
+   "destaque": "ERRO",
+   "narracao": "Mas a verdade é exatamente o contrário."
+  },
+  {
+   "tipo": "cards",
+   "itens": [
+    {
+     "rotulo": "sem ia:",
+     "busca": "stressed woman typing fast computer"
+    },
+    {
+     "rotulo": "com ia:",
+     "busca": "woman smiling talking to customer"
+    }
+   ],
+   "narracao": "Hoje, você gasta o dobro do tempo em tarefas chatas e sobra quase nada para o cliente."
+  },
+  {
+   "tipo": "frase",
+   "texto": "quem automatiza tem *tempo* para o humano",
+   "destaque": "tempo",
+   "narracao": "Quando a IA cuida do agendamento e da nota fiscal, você finalmente consegue dar atenção de verdade."
+  },
+  {
+   "tipo": "diagrama",
+   "passos": [
+    {
+     "icone": "robo",
+     "rotulo": "burocracia"
+    },
+    {
+     "icone": "relogio",
+     "rotulo": "liberdade"
+    },
+    {
+     "icone": "pessoas",
+     "rotulo": "conexão"
+    }
+   ],
+   "narracao": "A automação não substitui o humano, ela liberta o humano da parte mecânica do trabalho."
+  },
+  {
+   "tipo": "serifa",
+   "texto": "A máquina faz o automático. Você faz o que é único.",
+   "narracao": "A máquina faz o automático. Você faz o que é único."
+  },
+  {
+   "tipo": "cta",
+   "texto": "SEGUE A *SERAPHIM*",
+   "pose": "confiante",
+   "narracao": "Pare de ser um robô e comece a automatizar. Segue a Seraphim para aprender como.",
+   "funil": "topo"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Automação não é sobre virar robô, é sobre ter tempo para ser humano. 🤝\n\nQual tarefa chata você adoraria delegar para uma máquina hoje? Conta nos comentários.\n\nSegue a Seraphim.\n\n#inteligenciaartificial #produtividade #gestao #humanizacao #negocios #automacao #tecnologia #seraphimbr",
+ "legenda_tiktok": "IA não é fria, o seu excesso de planilhas que é. 🤖 #produtividade #empreendedorismo #automacao #ia #seraphimbr\n\n#inteligenciaartificial #produtividade #gestao #humanizacao #negocios #seraphimbr"
+}

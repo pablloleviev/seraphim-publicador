@@ -1,0 +1,68 @@
+{
+ "nome": "dor-historico-cliente",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-14 19:00",
+ "cenas": [
+  {
+   "tipo": "foto",
+   "busca": "confused male business owner scratching head looking at phone",
+   "texto": "QUEM ERA ELE?",
+   "sub": "o cliente voltou",
+   "tom": "vermelho",
+   "narracao": "Imagina a cena: o cliente volta depois de três meses e ninguém na sua equipe sabe o que foi feito da última vez."
+  },
+  {
+   "tipo": "frase",
+   "texto": "ele se sente apenas *mais um*",
+   "destaque": "mais um",
+   "narracao": "O pior erro de um pequeno negócio é tratar um cliente fiel como se fosse um estranho."
+  },
+  {
+   "tipo": "painel",
+   "rotulo": "Confiança do Cliente",
+   "valor": 30,
+   "texto": "em queda",
+   "narracao": "A confiança dele despenca e a chance dele não voltar mais é gigante."
+  },
+  {
+   "tipo": "interruptor",
+   "rotulo": "Memória da Equipe",
+   "texto": "depender da cabeça",
+   "sub": "ter um sistema",
+   "valor": 0.6,
+   "narracao": "Você não pode depender da memória. Você precisa de um histórico centralizado e acessível."
+  },
+  {
+   "tipo": "digitando",
+   "topo": "SOLUÇÃO:",
+   "texto": "CADASTRO VIVO",
+   "narracao": "Um cadastro vivo que mostra tudo: o que ele comprou, o que ele reclamou e o que ele gosta."
+  },
+  {
+   "tipo": "checklist",
+   "rotulo": "O histórico perfeito tem:",
+   "itens": [
+    "Último pedido",
+    "Preferências",
+    "Data de retorno",
+    "Observações"
+   ],
+   "narracao": "Isso não é luxo, é o básico para quem quer escalar sem perder a qualidade."
+  },
+  {
+   "tipo": "cta",
+   "texto": "COMENTA *MEMORIA*",
+   "pose": "feliz",
+   "narracao": "Quer o checklist para organizar o histórico dos seus clientes? Comenta MEMORIA que eu te mando.",
+   "funil": "meio"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "O cliente voltou e ninguém lembra o que foi feito? Isso mata qualquer negócio. 📉\n\nDepender da memória da equipe é um risco que você não precisa correr. \n\nComenta MEMORIA que eu te mando um checklist para resolver isso hoje. 👇\n\n#atendimentoaocliente #gestaoescolar #crm #vendas #pequenosnegocios #empreendedorismo #experienciadocliente #seraphimbr",
+ "legenda_tiktok": "O erro que faz seu cliente fiel ir embora. 💔 #atendimento #gestao #crm #dicasdenegocios #seraphimbr\n\n#atendimentoaocliente #gestaoescolar #crm #vendas #pequenosnegocios #seraphimbr",
+ "palavra_chave": "MEMORIA",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/dor-historico-cliente/",
+ "material_titulo": "Checklist: Memória de Elefante no Atendimento"
+}

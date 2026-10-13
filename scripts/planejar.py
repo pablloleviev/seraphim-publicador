@@ -300,6 +300,14 @@ def validar_video(v):
         for k in ("texto", "topo", "sub"):
             if isinstance(c.get(k), str):
                 c[k] = re.sub(r"\s+([?!.,:;])", r"\1", c[k]).strip()
+        # *destaque* só é entendido em pergunta/cta/serifa; nas outras cenas vira "destaque" e o asterisco sai
+        if c["tipo"] not in ("pergunta", "cta", "serifa"):
+            for k in ("texto", "topo", "sub"):
+                if isinstance(c.get(k), str) and "*" in c[k]:
+                    m = re.search(r"\*([^*]+)\*", c[k])
+                    if m and not c.get("destaque"):
+                        c["destaque"] = m.group(1)
+                    c[k] = c[k].replace("*", "")
         if c.get("pose") and c["pose"] not in POSES:
             c["pose"] = "pensando"
         if c["tipo"] == "diagrama" and not c.get("passos"):
