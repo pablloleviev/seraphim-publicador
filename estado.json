@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630241,
+  "telegram_offset": 183630245,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -165,33 +165,33 @@
       "msg_id": 617
     },
     "2026-10-14_0800_ia-cameras-inteligentes": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-13T21:15:18.226792+00:00",
+      "status": "agendado",
+      "enviado_em": "2026-10-13T22:06:29.132807+00:00",
       "tiktok": {
         "via": "buffer"
       },
-      "msg_id": 621
+      "msg_id": 635
     },
     "2026-10-14_1200_mito-ia-humano": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-13T21:15:20.733800+00:00",
+      "status": "agendado",
+      "enviado_em": "2026-10-13T22:06:33.802332+00:00",
       "tiktok": {
         "via": "buffer"
       },
-      "msg_id": 623
-    },
-    "2026-10-14_1900_dor-historico-cliente": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-13T21:15:23.354398+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 625
+      "msg_id": 637
     },
     "2026-10-14_1800_ferramentas-gestao-equipe": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-13T21:40:20.881353+00:00",
-      "msg_id": 633
+      "status": "agendado",
+      "enviado_em": "2026-10-13T22:06:35.011653+00:00",
+      "msg_id": 645
+    },
+    "2026-10-14_1900_dor-historico-cliente": {
+      "status": "agendado",
+      "enviado_em": "2026-10-13T22:06:39.921524+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 647
     }
   },
   "respondidos": {}
