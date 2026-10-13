@@ -455,12 +455,78 @@ const CCta: React.FC<CP> = ({c, f, fps, n}) => {
   );
 };
 
+// ---------- inspiradas na Blue Ocean (13/10/2026) ----------
+const FundoOuro: React.FC<{f: number}> = ({f}) => (
+  <AbsoluteFill style={{background: `radial-gradient(circle at ${75 + Math.sin(f / 40) * 5}% 12%, rgba(245,166,35,.28), transparent 45%), radial-gradient(circle at 10% 95%, rgba(245,166,35,.12), transparent 40%), #0A0A0C`}}>
+    <Reticula cor="#fff" op={0.05} />
+  </AbsoluteFill>
+);
+
+// interruptor de app que DESLIGA no meio da cena (a ideia vira objeto de tela)
+// rotulo = nome do interruptor, texto = subtítulo ligado, sub = subtítulo desligado, valor = 0..1 (quando desliga)
+const CInterruptor: React.FC<CP> = ({c, f, fps, n}) => {
+  const s = spring({frame: f, fps, config: {damping: 11, stiffness: 140}});
+  const tOff = Math.round(n * (c.valor ?? 0.5));
+  const off = ease(f, tOff, tOff + 6);
+  const x = spring({frame: f - tOff - 8, fps, config: {damping: 8, stiffness: 220}});
+  const knob = interpolate(off, [0, 1], [96, 10]);
+  return (
+    <AbsoluteFill>
+      <FundoOuro f={f} />
+      <div style={{position: 'absolute', left: 80, right: 80, top: 520, height: 210, background: '#fff', borderRadius: 42, display: 'flex', alignItems: 'center',
+        padding: '0 46px', gap: 34, boxShadow: '0 40px 100px rgba(0,0,0,.6)', transform: `translateY(${(1 - s) * -160}px) scale(${0.9 + 0.1 * s})`, opacity: s}}>
+        <div style={{width: 112, height: 112, borderRadius: 28, background: OURO, display: 'flex', alignItems: 'center', justifyContent: 'center',
+          fontFamily: 'InterX', fontSize: 58, color: '#0A0A0C'}}>{(c.rotulo || '?').trim().charAt(0).toUpperCase()}</div>
+        <div style={{flex: 1, position: 'relative'}}>
+          <div style={{fontFamily: 'InterX', fontSize: 54, color: '#111', lineHeight: 1.1}}>{c.rotulo}</div>
+          <div style={{fontFamily: 'InterM', fontSize: 38, color: '#8a8a93', opacity: 1 - off}}>{c.texto}</div>
+          <div style={{fontFamily: 'InterM', fontSize: 38, color: '#e5484d', position: 'absolute', bottom: 0, opacity: off}}>{c.sub}</div>
+        </div>
+        <div style={{width: 190, height: 104, borderRadius: 52, background: off > 0.5 ? '#d4d4d8' : OURO, position: 'relative', flexShrink: 0}}>
+          <div style={{position: 'absolute', top: 10, left: knob, width: 84, height: 84, borderRadius: '50%', background: '#fff', boxShadow: '0 4px 10px rgba(0,0,0,.25)'}} />
+        </div>
+        <div style={{position: 'absolute', right: -22, top: -22, width: 72, height: 72, borderRadius: '50%', background: '#e5484d', color: '#fff',
+          display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'InterX', fontSize: 40, transform: `scale(${x})`}}>✕</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// checklist em card que vai sendo preenchido (rotulo = título do card, itens = textos)
+const CChecklist: React.FC<CP> = ({c, f, fps, n}) => {
+  const itens = ((c.itens || []) as any[]).map((it) => (typeof it === 'string' ? it : it.texto || it.rotulo || '')).slice(0, 5);
+  const s = spring({frame: f, fps, config: {damping: 13}});
+  const passo = Math.max(6, Math.floor((n * 0.75) / Math.max(1, itens.length)));
+  return (
+    <AbsoluteFill>
+      <FundoOuro f={f} />
+      <div style={{position: 'absolute', left: 90, right: 90, top: 380, background: '#141418', border: '2px solid #26262c', borderRadius: 40, padding: '46px 50px',
+        boxShadow: '0 40px 100px rgba(0,0,0,.6)', transform: `translateY(${(1 - s) * 120}px)`, opacity: s}}>
+        <div style={{fontFamily: 'InterX', fontSize: 50, color: OURO, marginBottom: 30}}>{c.rotulo}</div>
+        {itens.map((t, i) => {
+          const a = spring({frame: f - 6 - i * passo, fps, config: {damping: 12}});
+          const ok = ease(f, 10 + i * passo, 16 + i * passo);
+          return (
+            <div key={i} style={{display: 'flex', alignItems: 'center', gap: 26, padding: '22px 0', borderTop: i ? '1px solid #26262c' : 'none',
+              opacity: a, transform: `translateX(${(1 - a) * 60}px)`}}>
+              <div style={{width: 58, height: 58, borderRadius: 16, border: `3px solid ${OURO}`, background: ok > 0.5 ? OURO : 'transparent', flexShrink: 0,
+                display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'InterX', fontSize: 36, color: '#0A0A0C'}}>{ok > 0.5 ? '✓' : ''}</div>
+              <div style={{fontFamily: 'InterX', fontSize: 50, color: '#fff', lineHeight: 1.15}}>{t}</div>
+            </div>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 const MAPA: Record<string, React.FC<CP>> = {
   palavra: CPalavra, contador: CContador, digitando: CDigitando, pergunta: CPergunta, frase: CFrase, foto: CFoto,
   parede: CParede, cards: CCards, diagrama: CDiagrama, sera: CSera, painel: CPainel, niveis: CNiveis, serifa: CSerifa, cta: CCta,
+  interruptor: CInterruptor, checklist: CChecklist,
 };
 // cenas onde a narração NÃO está escrita na tela -> mostram legenda pequena
-const COM_LEGENDA = new Set(['foto', 'parede', 'cards', 'diagrama', 'sera', 'contador', 'niveis', 'serifa', 'painel']);
+const COM_LEGENDA = new Set(['foto', 'parede', 'cards', 'diagrama', 'sera', 'contador', 'niveis', 'serifa', 'painel', 'interruptor', 'checklist']);
 
 const CenaWrap: React.FC<{c: CenaC; n: number; idx: number}> = ({c, n, idx}) => {
   const f = useCurrentFrame();
@@ -512,8 +578,10 @@ const Legenda: React.FC<{palavras: Palavra[]; cenas: CenaC[]; t: number}> = ({pa
   return (
     <div style={{position: 'absolute', left: 70, right: 70, bottom: 230, display: 'flex', gap: 18, flexWrap: 'wrap', justifyContent: 'center', textAlign: 'center'}}>
       {g.map((p, i) => (
-        <span key={i} style={{fontFamily: 'Mont', fontWeight: 800, fontSize: 64, color: t >= p.s ? '#fff' : 'rgba(255,255,255,.4)',
-          textShadow: '0 4px 0 rgba(0,0,0,.7), 0 0 24px rgba(0,0,0,.6)'}}>{p.w.toLowerCase().replace(/[.,!?:;]$/, '')}</span>
+        <span key={i} style={(() => { const ativa = t >= p.s - 0.03 && t < (g[i + 1] ? g[i + 1].s - 0.03 : p.e + 0.25);
+          return {fontFamily: 'Mont', fontWeight: 800, fontSize: 64, padding: '2px 16px', borderRadius: 14,
+            background: ativa ? OURO : 'transparent', color: ativa ? '#0A0A0C' : t >= p.s ? '#fff' : 'rgba(255,255,255,.45)',
+            textShadow: ativa ? 'none' : '0 4px 0 rgba(0,0,0,.7), 0 0 24px rgba(0,0,0,.6)'}; })()}>{p.w.toLowerCase().replace(/[.,!?:;]$/, '')}</span>
       ))}
     </div>
   );

@@ -1,0 +1,25 @@
+{
+ "nome": "amostra-evolucao",
+ "arroba": "@seraphimtech",
+ "motor": "cortes",
+ "amostra": true,
+ "voz": "gemini",
+ "funil": "topo",
+ "cenas": [
+  {"tipo": "interruptor", "rotulo": "Novo funcionário", "texto": "contratar agora?", "sub": "melhor automatizar", "valor": 0.55, "clima": "epico",
+   "narracao": "Antes de contratar mais um funcionário, presta atenção nisso."},
+  {"tipo": "frase", "texto": "talvez o problema não seja falta de gente", "destaque": "gente", "clima": "tensao",
+   "narracao": "Talvez o problema não seja falta de gente."},
+  {"tipo": "checklist", "rotulo": "O que toma o dia da equipe", "itens": ["Responder as mesmas dúvidas", "Confirmar horários", "Cobrar quem atrasou", "Copiar dados pra planilha"], "clima": "tensao",
+   "narracao": "Olha o que toma o dia da sua equipe: responder as mesmas dúvidas, confirmar horários, cobrar quem atrasou e copiar dados pra planilha."},
+  {"tipo": "digitando", "topo": "ISSO É:", "texto": "REPETIÇÃO", "clima": "sombrio",
+   "narracao": "Isso não é trabalho de gente. É repetição."},
+  {"tipo": "foto", "busca": "smartphone chat automation business", "texto": "O SISTEMA FAZ", "sub": "24 horas por dia", "tom": "dourado", "clima": "energia",
+   "narracao": "E repetição, um sistema faz sozinho, vinte e quatro horas por dia."},
+  {"tipo": "serifa", "itens": ["A máquina cuida da rotina.", "As pessoas cuidam do cliente."], "clima": "emocao",
+   "narracao": "A máquina cuida da rotina. As pessoas cuidam do cliente."},
+  {"tipo": "cta", "texto": "SEGUE A *SERAPHIM* E AUTOMATIZE", "pose": "confiante", "funil": "topo", "clima": "epico",
+   "narracao": "Quer saber o que dá pra automatizar na sua empresa? Segue a Seraphim."}
+ ],
+ "legenda": "Antes de abrir uma vaga, vale olhar o que sua equipe faz o dia inteiro. 👀"
+}

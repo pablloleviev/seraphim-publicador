@@ -126,6 +126,9 @@ CATALOGO_CENAS = """Tipos de cena do motor de cortes (vertical). Reveze: NUNCA o
 - painel: HUD de jogo (alerta + barra). "rotulo" (ex.: "Produtividade"), "valor" (0-100), "texto" curto.
 - niveis: 3 níveis em cards. "texto" (título curto), "itens": 3 textos curtos.
 - serifa: frase séria em serifa itálica (momento de verdade). "texto" ou "itens" (2-3 frases curtas).
+- interruptor: interruptor de app que DESLIGA durante a fala (ótimo para o gancho ou a virada). "rotulo" (nome do interruptor, ex.: "Novo funcionário"),
+  "texto" (subtítulo ligado, ex.: "contratar agora?"), "sub" (subtítulo depois de desligar, ex.: "melhor automatizar"), "valor" 0.3-0.7 (momento em que desliga).
+- checklist: card com lista sendo marcada. "rotulo" (título do card), "itens": 3 a 5 textos curtos (até 4 palavras cada).
 - cta: SEMPRE a última cena. "texto" curto em MAIÚSCULAS com *destaque*, "pose"; nos posts de fundo, "apoio": "link na bio".
 Poses do mascote: pensando, confiante, surpreso, preocupado, feliz, comemorando."""
 
@@ -273,7 +276,7 @@ def limpar_linhas(ls):
     return [re.sub(r"\s+([?!.,:;])", r"\1", str(l)).upper().replace("*", "*") for l in ls][:3]
 
 
-TIPOS = {"palavra", "frase", "contador", "foto", "pergunta", "digitando", "diagrama", "cards", "parede", "sera", "painel", "niveis", "serifa", "cta"}
+TIPOS = {"palavra", "frase", "contador", "foto", "pergunta", "digitando", "diagrama", "cards", "parede", "sera", "painel", "niveis", "serifa", "cta", "interruptor", "checklist"}
 
 
 def validar_video(v):
