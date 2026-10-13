@@ -23,7 +23,7 @@ sys.path.insert(0, str(RAIZ / "scripts"))
 BRT = timezone(timedelta(hours=-3))
 CFG = json.loads((RAIZ / "planejamento.json").read_text(encoding="utf-8"))
 HIST = RAIZ / "historico.json"
-HT = "#inteligenciaartificial #automacao #tecnologia #startup #seraphimtech"
+HT = "#inteligenciaartificial #automacao #tecnologia #startup #seraphimbr"
 TEMAS = ["noir", "editorial", "terminal", "meianoite", "brutal", "vinho", "eletrico", "grafite", "ultravioleta"]
 
 
@@ -151,7 +151,7 @@ EXEMPLO_CARROSSEL = {
         {"tipo": "capa", "tag": "Inteligência artificial", "titulo": "5 usos de IA que|*economizam horas*", "texto": "Na sua empresa, a partir de hoje.", "sera": "surpreso"},
         {"tipo": "numero", "numero": "01", "titulo": "Responder|*mensagens*", "texto": "Rascunhos de resposta para clientes em **segundos**."},
         {"tipo": "texto", "titulo": "O segredo:|*contexto*", "texto": "Quanto mais detalhe você der, **melhor a resposta**.", "card": "Ex.: \"Responda como dono de loja, tom educado, 3 linhas.\""},
-        {"tipo": "capa", "titulo": "Salva e|*testa hoje*", "texto": "Segue a **@seraphimtech_** para mais.", "sera": "confiante"}],
+        {"tipo": "capa", "titulo": "Salva e|*testa hoje*", "texto": "Segue a **@seraphimbr_** para mais.", "sera": "confiante"}],
     "legenda": "5 usos de IA que economizam horas ⏱️\n\nSalva pra testar 📌"}
 
 
@@ -185,13 +185,13 @@ def tags(v, n=12):
     hs = [re.sub(r"[^#\w]", "", h.lower()) for h in hs if "publicador" not in h.lower()]
     if not hs:
         return HT
-    if "#seraphimtech" not in hs:
-        hs.append("#seraphimtech")
+    if "#seraphimbr" not in hs:
+        hs.append("#seraphimbr")
     out = []
     for h in hs:
         if h not in out and len(h) > 2:
             out.append(h)
-    return " ".join(out[:n - 1] + (["#seraphimtech"] if "#seraphimtech" not in out[:n - 1] else []))
+    return " ".join(out[:n - 1] + (["#seraphimbr"] if "#seraphimbr" not in out[:n - 1] else []))
 
 
 def funis_do_dia(hist, n):
@@ -208,7 +208,7 @@ def pedir_dia(dia, n_v, n_c, hist):
     estruturas = [" > ".join(str(x) for x in h["cenas"] if x) for h in vids]
     ganchos = [next((x for x in h["cenas"] if x), "") for h in vids][-5:]
     buscas_usadas = sorted({b for h in hist for b in h.get("buscas", [])})[-150:]
-    regras = f"""Você é o roteirista-chefe da Seraphim (@seraphimtech_), startup brasileira de tecnologia:
+    regras = f"""Você é o roteirista-chefe da Seraphim (@seraphimbr_), startup brasileira de tecnologia:
 sistemas sob medida, automações e inteligência artificial para pequenas e médias empresas.
 Referências de linha editorial: perfis como os de startups de IA/automação, criadores de "IA para negócios",
 SaaS de gestão. Público: donos de pequenos negócios e profissionais que querem usar tecnologia.
@@ -247,7 +247,7 @@ FICHA DO AUTOFLOW:
 - Carrossel (estilo de carrossel viral): capa com manchete forte = número + ferramenta/assunto conhecido + promessa ou segredo (ex.: "5 comandos pra fazer o ChatGPT trabalhar na sua empresa", "3 erros que fazem seu cliente sumir"); a capa promete exatamente a quantidade de itens do miolo; miolo com 1 item por slide (título curto + explicação ou comando pronto pra copiar); último slide = chamada (seguir/salvar). Carrossel: 6 a 9 slides; tipos capa, numero, texto (pode ter "card"); primeiro e último são "capa"; títulos usam | para quebrar linha.
 - Legenda (Instagram): ÚNICA para cada post, ligada ao gancho e ao assunto; 2 a 4 linhas curtas com emoji, uma pergunta que puxa comentário e a chamada do funil; SEM hashtags dentro dela.
 - "legenda_tiktok": legenda própria para o TikTok (mais curta e direta, 1 a 2 linhas, tom de conversa), diferente da do Instagram.
-- "hashtags": 8 a 12 hashtags relevantes para AQUELE post (misture 3 amplas, 5 do nicho/assunto e 2 de público, ex.: #inteligenciaartificial #chatgpt #pequenasempresas #empreendedorismo #automacao), sempre incluindo #seraphimtech; nunca #seraphimpublicador.
+- "hashtags": 8 a 12 hashtags relevantes para AQUELE post (misture 3 amplas, 5 do nicho/assunto e 2 de público, ex.: #inteligenciaartificial #chatgpt #pequenasempresas #empreendedorismo #automacao), sempre incluindo #seraphimbr; nunca #seraphimpublicador.
 - "nome": slug curto em minúsculas com hífens, único.
 
 MANUAL DE EDIÇÃO DOS CORTES (estilo e ritmo; para os campos de cena, siga o catálogo acima):
@@ -337,7 +337,7 @@ def amostras(n):
         except Exception as e:
             print(f"[aviso] amostra descartada: {e}"); continue
         nome = "amostra-" + slug(v.get("nome") or "video")
-        spec = {"nome": nome, "arroba": "@seraphimtech_", "cenas": v["cenas"], "motor": "cortes", "amostra": True, "voz": "gemini",
+        spec = {"nome": nome, "arroba": "@seraphimbr_", "cenas": v["cenas"], "motor": "cortes", "amostra": True, "voz": "gemini",
                 "funil": v["funil"], "legenda": v.get("legenda", "")}
         if v["funil"] == "meio":
             import material
@@ -384,7 +384,7 @@ def main():
                 nome += "-2"
             nomes.add(nome)
             tema = "noir"  # temas pausados: Pabllo reprovou (2026-10-10)
-            spec = {"nome": nome, "arroba": "@seraphimtech_", "quando": f"{dia} {hora}", "cenas": v["cenas"], "motor": "cortes",
+            spec = {"nome": nome, "arroba": "@seraphimbr_", "quando": f"{dia} {hora}", "cenas": v["cenas"], "motor": "cortes",
                     "funil": v["funil"], "genero_voz": "masculina" if criados % 3 else "feminina",
                     "legenda": (v.get("legenda", "").strip() + "\n\n" + tags(v)),
                     "legenda_tiktok": (str(v.get("legenda_tiktok") or v.get("legenda", "")).strip() + "\n\n" + tags(v, 6))}
@@ -414,7 +414,7 @@ def main():
             nomes.add(nome)
             destino = RAIZ / "fila" / f"{dia}_{hora.replace(':', '')}_{nome}"
             tema = "noir"  # temas pausados: Pabllo reprovou (2026-10-10)
-            spec = {"nome": nome, "arroba": "@seraphimtech_", "slides": slides, "tema": tema}
+            spec = {"nome": nome, "arroba": "@seraphimbr_", "slides": slides, "tema": tema}
             tmp = RAIZ / "pedidos" / f"_car_{nome}.json"
             tmp.write_text(json.dumps(spec, ensure_ascii=False), encoding="utf-8")
             import carrossel

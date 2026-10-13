@@ -76,8 +76,8 @@ def posts_ativos(estado: dict):
 
 
 DM = [
-    "Oi, {u}! 👋 Aqui está o que você pediu: {titulo}\n\n👉 {url}\n\nSe curtir, segue a @seraphimtech_ que todo dia tem mais. 🚀",
-    "Fala, {u}! Prometido é devido: {titulo} 📩\n\n👉 {url}\n\nE segue a @seraphimtech_ pra não perder os próximos. ✨",
+    "Oi, {u}! 👋 Aqui está o que você pediu: {titulo}\n\n👉 {url}\n\nSe curtir, segue a @seraphimbr_ que todo dia tem mais. 🚀",
+    "Fala, {u}! Prometido é devido: {titulo} 📩\n\n👉 {url}\n\nE segue a @seraphimbr_ pra não perder os próximos. ✨",
 ]
 PUBLICA = ["Te mandei no direct! 📩", "Enviado no seu direct! 🚀", "Chegou no direct, confere lá! 📩", "Mandei pra você no direct! ✨"]
 
@@ -98,7 +98,7 @@ def verificar(estado: dict, log=print):
             return
         for c in r.get("data", []):
             chave = f"{item['ig_id']}:{c.get('username') or c['id']}"
-            if chave in feitos or c["id"] in feitos.values() or c.get("username") == "seraphimtech_":
+            if chave in feitos or c["id"] in feitos.values() or c.get("username") == "seraphimbr_":
                 continue
             if not tem_palavra(c.get("text", ""), meta["palavra_chave"]):
                 continue

@@ -40,7 +40,7 @@ import hashlib
 
 
 def md(t):
-    # escapa caracteres do Markdown do Telegram (ex.: o "_" de @seraphimtech_ quebrava a mensagem)
+    # escapa caracteres do Markdown do Telegram (ex.: o "_" de @seraphimbr_ quebrava a mensagem)
     for ch in ("\\", "_", "*", "`", "["):
         t = t.replace(ch, "\\" + ch)
     return t
@@ -190,6 +190,15 @@ def _buffer_ativo() -> bool:
         return False
 
 
+def instagram_manual() -> bool:
+    """publicacao.json -> {"instagram": "manual"}: o robô NÃO publica no Instagram; manda vídeo + legenda prontos
+    no Telegram para o Pabllo postar pelo celular (conta nova, primeiros dias). TikTok continua automático."""
+    try:
+        return json.loads((RAIZ / "publicacao.json").read_text()).get("instagram", "auto") == "manual"
+    except Exception:
+        return False
+
+
 def em_revoz(nome_pasta: str) -> bool:
     """True se o vídeo está na lista para ser refeito (voz Gemini / trilha nova)."""
     for f in (RAIZ / "revoz").glob("*.json"):
@@ -216,7 +225,7 @@ def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
             import buffer, tiktok
             if buffer.ativo():
                 item["tiktok"] = {"via": "buffer"}
-                redes = "Instagram + TikTok"
+                redes = "TikTok (automático) + Instagram (manual)" if instagram_manual() else "Instagram + TikTok"
             elif tiktok.conectado():
                 info = tiktok.criador()
                 item["tiktok"] = {"opcoes": info.get("privacy_level_options") or list(tiktok.NOMES_PRIV),
@@ -410,15 +419,16 @@ def publicar_item(nome, item):
         tg("sendMessage", chat_id=CHAT, text=f"⏳ Publicando {nome}...")
         try:
             meta = json.loads((pasta / "item.json").read_text(encoding="utf-8"))
-            pid = publicar_instagram(pasta, meta)
-            item.update(status="publicado", ig_id=pid, publicado_em=datetime.now(timezone.utc).isoformat())
+            manual = instagram_manual()
+            pid = None if manual else publicar_instagram(pasta, meta)
+            item.update(status="publicado", ig_id=pid, publicado_em=datetime.now(timezone.utc).isoformat(), ig_manual=manual)
             if meta["tipo"] == "reels":
                 if tt and (tt.get("via") == "buffer" or _buffer_ativo()):
                     try:
                         import buffer
                         leg_tt = meta.get("legenda_tiktok") or meta.get("legenda", "")
                         if meta.get("palavra_chave") and meta["palavra_chave"] not in leg_tt:
-                            leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimtech_ que o material chega no direct."
+                            leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimbr_ que o material chega no direct."
                         tt["id"] = buffer.publicar_tiktok(pasta / "video.mp4", leg_tt)
                         tt["feito"] = "buffer"
                     except Exception as e:
@@ -428,7 +438,7 @@ def publicar_item(nome, item):
                         import tiktok
                         leg_tt = meta.get("legenda_tiktok") or meta.get("legenda", "")
                         if meta.get("palavra_chave") and meta["palavra_chave"] not in leg_tt:   # no TikTok não dá para mandar direct automático
-                            leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimtech_ que o material chega no direct."
+                            leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimbr_ que o material chega no direct."
                         tt["id"] = tiktok.publicar(pasta / "video.mp4", leg_tt, tt["priv"],
                                                    tt.get("com", True), tt.get("due", True), tt.get("cos", True))
                         tt["feito"] = tiktok.MODO; tt["status"] = tiktok.STATUS
@@ -438,16 +448,27 @@ def publicar_item(nome, item):
                 tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"], reply_markup={"inline_keyboard": []})
             except Exception:
                 pass
-            res = f"✅ {nome}\n• Instagram: publicado"
+            res = f"✅ {nome}\n• Instagram: " + ("POSTE MANUALMENTE pelo celular (vídeo/fotos e legenda abaixo)" if manual else "publicado")
             if tt:
                 res += ("\n• TikTok: " + (f"enviado como rascunho (status do TikTok: {tt.get('status') or '?'}) — no app do TikTok da conta @seraphimtech, abra Caixa de entrada → Notificações do sistema e toque no aviso do vídeo para publicar"
                         if tt.get("feito") == "rascunho" else "publicado com legenda e hashtags (pode levar alguns minutos para aparecer no perfil)" if tt.get("feito") == "buffer" else "publicado" if tt.get("feito") else f"falhou ({tt.get('erro')})"))
             tg("sendMessage", chat_id=CHAT, text=res)
+            if manual:
+                try:
+                    if meta["tipo"] == "reels":
+                        tg_arquivo("sendVideo", "video", pasta / "video.mp4", chat_id=CHAT, supports_streaming="true", **dims(pasta / "video.mp4"))
+                    else:
+                        slides = sorted(pasta.glob("slide-*.jpg"))[:10]
+                        tg("sendMediaGroup", chat_id=CHAT, media=[{"type": "photo", "media": url_publica(x)} for x in slides])
+                except Exception as e:
+                    print(f"[aviso] não reenviei a mídia: {e}")
+                tg("sendMessage", chat_id=CHAT, text="📋 Legenda do Instagram (toque e segure para copiar):")
+                tg("sendMessage", chat_id=CHAT, text=meta.get("legenda", ""))
             if tt and tt.get("feito") == "rascunho":
                 # no modo rascunho o TikTok não aceita legenda pela API: mandamos pronta para copiar
                 leg = meta.get("legenda_tiktok") or meta.get("legenda", "")
                 if meta.get("palavra_chave") and meta["palavra_chave"] not in leg:
-                    leg += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimtech_ que o material chega no direct."
+                    leg += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimbr_ que o material chega no direct."
                 tg("sendMessage", chat_id=CHAT, text="📋 Legenda do TikTok (toque e segure para copiar):")
                 tg("sendMessage", chat_id=CHAT, text=leg)
         except Exception as e:
@@ -514,7 +535,8 @@ def main():
             ultimo_coment = time.time()
             try:
                 import comentarios
-                comentarios.verificar(estado)
+                if not instagram_manual():
+                    comentarios.verificar(estado)
             except Exception as e:
                 print(f"[comentários] erro: {e}")
         salvar_estado(estado)

@@ -459,7 +459,7 @@ const CCta: React.FC<CP> = ({c, f, fps, n}) => {
         )}
         <div style={{position: 'relative', marginTop: fundo ? 34 : 56, display: 'flex', alignItems: 'center', gap: 22, transform: `scale(${bs * (fundo ? 1.05 : 1.25) * aperta})`}}>
           <Img src={staticFile('marca/icone.png')} style={{width: 92, height: 92, borderRadius: 46, boxShadow: `0 0 0 4px ${OURO}`}} />
-          <div style={{fontFamily: 'InterX', fontSize: 44, color: '#fff'}}>seraphimtech_</div>
+          <div style={{fontFamily: 'InterX', fontSize: 44, color: '#fff'}}>seraphimbr_</div>
           <div style={{padding: '18px 44px', borderRadius: 18, fontFamily: 'InterX', fontSize: 44,
             background: clicou ? '#363639' : '#0095F6', color: '#fff', transition: 'none'}}>{clicou ? 'Seguindo ✓' : 'Seguir'}</div>
           <div style={{position: 'absolute', right: 40 - (1 - cur) * 160, top: 50 + (1 - cur) * 220, fontSize: 90, opacity: cur > 0 && f < toque + 20 ? 1 : 0,

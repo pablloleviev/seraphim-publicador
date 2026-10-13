@@ -21,7 +21,7 @@ Instagram · 1080x1350 (4:5)
 - Fundo #0A0A0C com brilho dourado e pontilhado discreto; slide de virada branco.
 - Título Anton CAIXA ALTA (132 px capa, 92 px miolo), palavra-chave dourada.
 - Apoio Inter 38 px cinza, destaques em branco negrito. Card dourado para exemplos.
-- Rodapé: ícone + @seraphimtech_ + contador "3/7" + "ARRASTA →". Margens 80 px.
+- Rodapé: ícone + @seraphimbr_ + contador "3/7" + "ARRASTA →". Margens 80 px.
 
 ## 4. Sera
 Na capa, em 1 slide do miolo e no CTA. Máx. ~35% do slide, nunca cobre texto.

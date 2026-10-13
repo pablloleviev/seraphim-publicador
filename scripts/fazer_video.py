@@ -472,7 +472,7 @@ def main():
         if (RAIZ / "assets" / pasta).exists():
           shutil.copytree(RAIZ / "assets" / pasta, MOTOR / "public" / pasta, dirs_exist_ok=True)
 
-    props = {"fps": 30, "duracao": cenas[-1]["fim"], "arroba": spec.get("arroba", "@seraphimtech_"),
+    props = {"fps": 30, "duracao": cenas[-1]["fim"], "arroba": spec.get("arroba", "@seraphimbr_"),
              "audio": audio, "batida": "sfx/batida.mp3", "sfx": True, "palavras": palavras, "cenas": cenas}
     if cortes and audio:
         try:

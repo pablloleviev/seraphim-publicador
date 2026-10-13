@@ -171,7 +171,7 @@ def slide_html(s: dict, i: int, n: int, arroba: str, tema: str = None) -> str:
 async def main(caminho: str, saida_dir: str = None):
     spec = json.loads(Path(caminho).read_text(encoding="utf-8"))
     nome = spec.get("nome", Path(caminho).stem)
-    arroba = spec.get("arroba", "@seraphimtech_")
+    arroba = spec.get("arroba", "@seraphimbr_")
     slides = spec["slides"]
     saida = Path(saida_dir) if saida_dir else RAIZ / "entrega" / "carrosseis" / nome
     saida.mkdir(parents=True, exist_ok=True)

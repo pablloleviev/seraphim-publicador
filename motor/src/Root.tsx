@@ -6,7 +6,7 @@ import {SeraphimCortes, PropsC} from './Cortes';
 const exemplo: Props = {
   fps: 30,
   duracao: 6,
-  arroba: '@seraphimtech_',
+  arroba: '@seraphimbr_',
   audio: null,
   batida: null,
   sfx: true,
@@ -26,7 +26,7 @@ export const Root: React.FC = () => (
     height={1920}
     fps={30}
     durationInFrames={180}
-    defaultProps={{fps: 30, duracao: 6, arroba: '@seraphimtech_', audio: null, batida: null, sfx: false, palavras: [], cenas: [{inicio: 0, fim: 6, tipo: 'frase', texto: 'teste'}]} as PropsC}
+    defaultProps={{fps: 30, duracao: 6, arroba: '@seraphimbr_', audio: null, batida: null, sfx: false, palavras: [], cenas: [{inicio: 0, fim: 6, tipo: 'frase', texto: 'teste'}]} as PropsC}
     calculateMetadata={({props}) => ({durationInFrames: Math.ceil((props as PropsC).duracao * (props as PropsC).fps), fps: (props as PropsC).fps})}
   />
   <Composition

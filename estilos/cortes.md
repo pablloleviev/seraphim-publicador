@@ -38,7 +38,7 @@ Preto #0A0A0C · branco #F5F5F7 · dourado #F5A623 / #FFC94D (no branco: #B86E00
 Voz natural (Gemini Puck/Kore; meta: voz do Pabllo), tratamento EQ + compressor + volume padrão, whoosh/impacto nas trocas.
 
 ## 8. Formato e acabamento
-Zona segura: nada importante nos 15% de baixo e na lateral direita. Rodapé com ícone + @seraphimtech_.
+Zona segura: nada importante nos 15% de baixo e na lateral direita. Rodapé com ícone + @seraphimbr_.
 Render h264 CRF 19, preset slow, 30 fps.
 
 ## 9. Nunca
