@@ -199,6 +199,17 @@ def instagram_manual() -> bool:
         return False
 
 
+def em_canva(nome_pasta: str) -> bool:
+    """True se o carrossel ainda vai ser trocado pela versão do Canva (pendente ou baixando)."""
+    for f in list((RAIZ / "canva" / "pendentes").glob("*.json")) + list((RAIZ / "canva" / "baixar").glob("*.json")):
+        try:
+            if json.loads(f.read_text(encoding="utf-8")).get("destino", "").rstrip("/").endswith(nome_pasta):
+                return True
+        except Exception:
+            pass
+    return False
+
+
 def em_revoz(nome_pasta: str) -> bool:
     """True se o vídeo está na lista para ser refeito (voz Gemini / trilha nova)."""
     for f in (RAIZ / "revoz").glob("*.json"):
@@ -516,7 +527,7 @@ def main():
                 continue
             quando_item = datetime.fromisoformat(meta["quando"])
             # versão melhor (voz Gemini + trilha nova) a caminho? espera ela, a não ser que falte pouco para o post
-            if quando_item > agora + timedelta(hours=10) and em_revoz(pasta.name):
+            if quando_item > agora + timedelta(hours=10) and (em_revoz(pasta.name) or em_canva(pasta.name)):
                 continue
             if quando_item <= agora + ANTECEDENCIA:
                 try:
