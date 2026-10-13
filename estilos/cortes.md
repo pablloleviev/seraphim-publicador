@@ -71,3 +71,11 @@ Tela parada, texto longo, cor fora da paleta, palavrão, número inventado como 
 - Cada vídeo tem que ser diferente E melhor que o anterior. Variar gancho, sequência e quantidade de cenas, ritmo e imagens.
 - O planejador recebe as estruturas dos últimos 15 vídeos e os ganchos dos últimos 5 e é proibido de repetir; a revisão remonta o que ficar parecido.
 - Nenhuma foto do Pixabay se repete entre vídeos (registro em imagens_usadas.json) e a escolha é sorteada entre as melhores, não sempre a mais popular.
+
+## APROVADO PELO PABLLO (13/10/2026): "ficou perfeito, até o áudio narrado" — amostra amostra-whatsapp-noite
+Padrão de qualidade mínimo daqui pra frente:
+- itens entram na hora em que são falados (marcas da voz) + efeito sonoro (pop/tic/clique/impacto);
+- movimento contínuo de câmera em todas as cenas; ícones flutuando;
+- vídeo de fundo do Pixabay nas cenas de foto, conferido pela IA; nada de imagem fora de contexto;
+- legenda karaokê dourada; voz do Gemini (feminina ficou ótima); trilha nivelada que muda com a emoção.
+Sempre variando estrutura, gancho e imagens (nunca o mesmo padrãozinho), e sempre um pouco melhor que o anterior.
