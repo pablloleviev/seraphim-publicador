@@ -1,0 +1,77 @@
+emaining: 25s
+Rendered 985/1036, time remaining: 24s
+Rendered 986/1036, time remaining: 24s
+Rendered 987/1036, time remaining: 23s
+Rendered 988/1036, time remaining: 23s
+Rendered 988/1036, time remaining: 23s
+Rendered 989/1036, time remaining: 22s
+Rendered 990/1036, time remaining: 22s
+Rendered 991/1036, time remaining: 21s
+Rendered 991/1036, time remaining: 21s
+Rendered 992/1036, time remaining: 21s
+Rendered 993/1036, time remaining: 20s
+Rendered 994/1036, time remaining: 20s
+Rendered 995/1036, time remaining: 19s
+Rendered 996/1036, time remaining: 19s
+Rendered 996/1036, time remaining: 19s
+Rendered 997/1036, time remaining: 18s
+Rendered 998/1036, time remaining: 18s
+Rendered 998/1036, time remaining: 18s
+Rendered 999/1036, time remaining: 17s
+Rendered 1000/1036, time remaining: 17s
+Rendered 1001/1036, time remaining: 16s
+Rendered 1002/1036, time remaining: 16s
+Rendered 1002/1036, time remaining: 16s
+Rendered 1003/1036, time remaining: 15s
+Rendered 1004/1036, time remaining: 15s
+Rendered 1005/1036, time remaining: 14s
+Rendered 1006/1036, time remaining: 14s
+Rendered 1006/1036, time remaining: 14s
+Rendered 1007/1036, time remaining: 13s
+Rendered 1008/1036, time remaining: 13s
+Rendered 1009/1036, time remaining: 12s
+Rendered 1010/1036, time remaining: 12s
+Rendered 1010/1036, time remaining: 12s
+Rendered 1011/1036, time remaining: 11s
+Rendered 1012/1036, time remaining: 11s
+Rendered 1013/1036, time remaining: 10s
+Rendered 1014/1036, time remaining: 10s
+Rendered 1014/1036, time remaining: 10s
+Rendered 1015/1036, time remaining: 10s
+Rendered 1016/1036, time remaining: 9s
+Rendered 1017/1036, time remaining: 9s
+Rendered 1018/1036, time remaining: 8s
+Rendered 1018/1036, time remaining: 8s
+Rendered 1019/1036, time remaining: 8s
+Rendered 1020/1036, time remaining: 7s
+Rendered 1021/1036, time remaining: 7s
+Rendered 1021/1036, time remaining: 7s
+Rendered 1022/1036, time remaining: 6s
+Rendered 1023/1036, time remaining: 6s
+Rendered 1024/1036, time remaining: 5s
+Rendered 1025/1036, time remaining: 5s
+Rendered 1025/1036, time remaining: 5s
+Rendered 1026/1036, time remaining: 4s
+Rendered 1027/1036, time remaining: 4s
+Rendered 1028/1036, time remaining: 3s
+Rendered 1028/1036, time remaining: 3s
+Rendered 1029/1036, time remaining: 3s
+Rendered 1030/1036, time remaining: 2s
+Rendered 1031/1036, time remaining: 2s
+Rendered 1032/1036, time remaining: 1s
+Rendered 1032/1036, time remaining: 1s
+Rendered 1033/1036, time remaining: 1s
+Rendered 1034/1036, time remaining: 0s
+Rendered 1035/1036, time remaining: 0s
+Stitched 777/1036
+Stitched 783/1036
+Stitched 799/1036
+Stitched 814/1036
+Stitched 829/1036
+Stitched 1036/1036
+Voz: gemini (99 palavras)
+[trilha] trechos: epico 0.0-5.0s | energia 5.0-9.8s | inspira 9.8-15.2s | energia 15.2-20.2s | inspira 20.2-25.0s | emocao 25.0-29.0s | epico 29.0-34.5s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-16_1200_ia-que-usa-computador-sozinha/video.mp4 (34.5s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
