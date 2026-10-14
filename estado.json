@@ -191,9 +191,12 @@
       "ig_manual": true
     },
     "2026-10-14_1800_ferramentas-gestao-equipe": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-13T22:13:12.172443+00:00",
-      "msg_id": 659
+      "msg_id": 659,
+      "ig_id": null,
+      "publicado_em": "2026-10-14T21:00:09.002106+00:00",
+      "ig_manual": true
     },
     "2026-10-14_1900_dor-historico-cliente": {
       "status": "agendado",
