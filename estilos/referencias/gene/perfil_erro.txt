@@ -1,2 +1,5 @@
 [perfil] https://i.instagram.com/api/v1/users/web_profile_info/?username=gene.digital: HTTP Error 429: Too Many Requests
 [perfil] https://www.instagram.com/api/v1/users/web_profile_info/?username=gene.digital: HTTP Error 429: Too Many Requests
+[perfil] embed: 0 posts
+[perfil] embed: 0 posts
+[perfil] embed: 0 posts
