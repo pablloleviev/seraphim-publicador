@@ -19,7 +19,7 @@ jobs:
           D="estilos/referencias/${{ github.event.inputs.pasta }}"; mkdir -p "$D" /tmp/v
           URLS="${{ github.event.inputs.urls }}"
           if [ -n "${{ github.event.inputs.perfil }}" ]; then
-            python3 scripts/perfil_reels.py "${{ github.event.inputs.perfil }}" "${{ github.event.inputs.quantos }}" "$D" > /tmp/urls.txt || true
+            python3 scripts/perfil_reels.py "${{ github.event.inputs.perfil }}" "${{ github.event.inputs.quantos }}" "$D" > /tmp/urls.txt 2> "$D/perfil_erro.txt" || true
             URLS="$URLS $(cat /tmp/urls.txt)"
           fi
           echo "URLS: $URLS"
@@ -53,8 +53,9 @@ jobs:
           " || true
             echo "$u: ok ($dur s)" >> "$D/log.txt"
           done
-          cat "$D/log.txt"
-      - run: |
+          echo "URLS: $URLS" >> "$D/log.txt"; cat "$D/log.txt" || true
+      - if: always()
+        run: |
           git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
           git add estilos/referencias; git commit -qm "referência: quadros dos vídeos" || exit 0
           for i in 1 2 3 4 5; do git pull -q --rebase -X theirs && git push && exit 0; sleep 5; done
