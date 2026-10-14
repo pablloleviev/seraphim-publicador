@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630249,
+  "telegram_offset": 183630251,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -202,6 +202,22 @@
         "via": "buffer"
       },
       "msg_id": 661
+    },
+    "2026-10-15_0800_cameras-com-cerebro": {
+      "status": "agendado",
+      "enviado_em": "2026-10-14T15:28:12.460649+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 673
+    },
+    "2026-10-15_1200_software-burro-vs-ia": {
+      "status": "agendado",
+      "enviado_em": "2026-10-14T15:28:16.977005+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 675
     }
   },
   "respondidos": {}
