@@ -89,6 +89,15 @@ def publicar_tiktok(video: Path, legenda: str) -> str:
 if __name__ == "__main__":
     if sys.argv[1] == "canais":
         print(json.dumps(canais(), indent=1, ensure_ascii=False))
+    elif sys.argv[1] == "posts":
+        org = gql("query { account { organizations { id } } }")["account"]["organizations"][0]["id"]
+        for q in ['query($o: OrganizationId!) { posts(input: {organizationId: $o}, first: 10) { edges { node { id status text dueAt sentAt error { message } } } } }',
+                  'query($o: OrganizationId!) { posts(input: {organizationId: $o}) { edges { node { id status text dueAt error { message } } } } }',
+                  'query($o: OrganizationId!) { posts(input: {organizationId: $o}) { edges { node { id status text } } } }']:
+            try:
+                print(json.dumps(gql(q, {"o": org}), indent=1, ensure_ascii=False)); break
+            except RuntimeError as e:
+                print("tentativa falhou:", e)
     elif sys.argv[1] == "teste":
         pasta = RAIZ / sys.argv[2]
         meta = json.loads((pasta / "item.json").read_text(encoding="utf-8"))
