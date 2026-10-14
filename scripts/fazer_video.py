@@ -487,11 +487,16 @@ def main():
 
     saida = Path(args.saida).resolve() if args.saida else RAIZ / "entrega" / "videos" / f"{nome}.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
-    cmd = f'npx remotion render src/index.ts {"Cortes" if cortes else "Seraphim"} "{saida}" --props=public/job/props.json --log=error --codec=h264 --crf=19 --jpeg-quality=92 --x264-preset=slow --pixel-format=yuv420p --audio-bitrate=192k'
+    cmd = f'npx remotion render src/index.ts {"Cortes" if cortes else "Seraphim"} "{saida}" --props=public/job/props.json --log=error --codec=h264 --crf=19 --jpeg-quality=100 --x264-preset=slow --pixel-format=yuv420p --audio-bitrate=192k'
     if os.environ.get("CHROME_PATH"):
         cmd += f' --browser-executable="{os.environ["CHROME_PATH"]}"'
     print("Editando no motor Remotion... (alguns minutos)")
     subprocess.run(cmd, cwd=MOTOR, shell=True, check=True)
+    try:
+        import entrega
+        entrega.finalizar(saida)   # cores BT.709 + codificação que TikTok/Instagram preservam melhor
+    except Exception as e:
+        print(f"[aviso] acabamento final falhou ({e}); segue o vídeo do motor")
     if spec.get("legenda"):
         saida.with_suffix(".txt").write_text(spec["legenda"], encoding="utf-8")
     print(f"Pronto: {saida} ({props['duracao']:.1f}s)")
