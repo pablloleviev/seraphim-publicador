@@ -165,12 +165,17 @@
       "msg_id": 617
     },
     "2026-10-14_0800_ia-cameras-inteligentes": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-13T22:13:08.164796+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6acf62a9be984f4200f4114b",
+        "feito": "buffer"
       },
-      "msg_id": 649
+      "msg_id": 649,
+      "ig_id": null,
+      "publicado_em": "2026-10-14T11:08:24.891725+00:00",
+      "ig_manual": true
     },
     "2026-10-14_1200_mito-ia-humano": {
       "status": "agendado",
