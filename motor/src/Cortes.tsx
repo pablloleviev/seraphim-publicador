@@ -547,7 +547,16 @@ const MAPA: Record<string, React.FC<CP>> = {
 // cenas onde a narração NÃO está escrita na tela -> mostram legenda pequena
 const COM_LEGENDA = new Set(['foto', 'parede', 'cards', 'diagrama', 'sera', 'contador', 'niveis', 'serifa', 'painel', 'interruptor', 'checklist']);
 
-const CenaWrap: React.FC<{c: CenaC; n: number; idx: number}> = ({c, n, idx}) => {
+// transições (referências: Blue Ocean + @gene.digital): luz = estouro de luz dourada; saturado = tela tinge e estoura;
+// foco = entra desfocada e foca; corte = corte seco já mais perto (punch-in); chicote = borrão lateral + glitch
+export const tipoTrans = (c: CenaC | undefined, i: number): string => {
+  if (!c || i === 0) return 'nenhuma';
+  if ((c as any).transicao) return (c as any).transicao;
+  const r = random('tr' + i);
+  return r < 0.34 ? 'luz' : r < 0.52 ? 'foco' : r < 0.70 ? 'corte' : r < 0.82 ? 'saturado' : 'chicote';
+};
+
+const CenaWrap: React.FC<{c: CenaC; n: number; idx: number; tin: string; tout: string}> = ({c, n, idx, tin, tout}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const Comp = MAPA[c.tipo] || CFrase;
@@ -555,37 +564,56 @@ const CenaWrap: React.FC<{c: CenaC; n: number; idx: number}> = ({c, n, idx}) => 
   const push = interpolate(f, [0, n], [1.0, 1.09]);
   const deriva = Math.sin((f + idx * 40) / 45) * 14;
   const giro = Math.sin((f + idx * 25) / 60) * 0.5;
-  const entra = interpolate(f, [0, 4], [1.18, 1], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
-  const sai = interpolate(f, [n - 4, n], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const tremor = f < 5 ? (5 - f) * 3 : 0;
+  const entra = tin === 'corte' ? 1.08 : tin === 'chicote' || tin === 'nenhuma'
+    ? interpolate(f, [0, 4], [1.18, 1], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)})
+    : interpolate(f, [0, 10], [1.05, 1], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  const sai = tout === 'chicote' ? interpolate(f, [n - 4, n], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}) : 0;
+  const foco = tin === 'foco' ? interpolate(f, [0, 9], [16, 0], {extrapolateRight: 'clamp', easing: Easing.out(Easing.quad)}) : 0;
+  const tremor = tin === 'chicote' && f < 5 ? (5 - f) * 3 : 0;
   const dir = idx % 2 ? 1 : -1;
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
       <AbsoluteFill style={{transform: `scale(${push * entra}) rotate(${giro}deg) translate(${Math.sin(f * 7) * tremor + dir * sai * 260 + deriva}px, ${Math.cos(f * 5) * tremor}px)`,
-        filter: sai > 0 ? `blur(${sai * 18}px)` : undefined}}>
+        filter: sai > 0 || foco > 0 ? `blur(${sai * 18 + foco}px)` : undefined}}>
         <Comp c={c} f={f} fps={fps} n={n} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
 };
 
-// transições: flash de luz (amarelo/laranja) ou glitch, sorteados por cena
-const Transicao: React.FC<{i: number}> = ({i}) => {
-  const f = useCurrentFrame();
-  const tipo = random('t' + i) < 0.5 ? 'luz' : 'glitch';
-  if (tipo === 'luz') {
-    const a = interpolate(f, [0, 3, 8], [0, 1, 0], {extrapolateRight: 'clamp'});
-    return <AbsoluteFill style={{mixBlendMode: 'screen', opacity: a, background: `radial-gradient(ellipse at ${30 + random('x' + i) * 40}% 50%, #fff7c2 0%, #ffd400 25%, #ff7a00 55%, transparent 80%)`}} />;
+// sobreposição das transições (fica por cima do corte: começa ~0,25 s antes e termina ~0,35 s depois)
+const CORES_SAT = ['#E8B33A', '#FF5A1F', '#B04BFF', '#2EC4B6'];
+const Transicao: React.FC<{i: number; tipo: string}> = ({i, tipo}) => {
+  const f = useCurrentFrame();   // corte acontece no quadro 8
+  const cx = 25 + random('x' + i) * 50;
+  if (tipo === 'luz' || tipo === 'saturado') {
+    const branco = interpolate(f, [3, 8, 11, 17], [0, 1, 0.85, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+    const vaz = interpolate(f, [0, 6, 13, 19], [0, 1, 0.8, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+    const anda = f * 3;
+    const cor = tipo === 'saturado' ? CORES_SAT[Math.floor(random('c' + i) * CORES_SAT.length)] : '#FFB347';
+    return (
+      <AbsoluteFill style={{pointerEvents: 'none'}}>
+        {tipo === 'saturado' && <AbsoluteFill style={{background: cor, mixBlendMode: 'color', opacity: interpolate(f, [0, 5, 9], [0, 0.85, 0], {extrapolateRight: 'clamp'})}} />}
+        <AbsoluteFill style={{mixBlendMode: 'screen', opacity: vaz,
+          background: `radial-gradient(ellipse 70% 55% at ${cx + anda}% ${40 + Math.sin(f / 4) * 10}%, #fff6dc 0%, ${cor} 35%, transparent 75%),
+                       radial-gradient(ellipse 60% 70% at ${100 - cx - anda}% 85%, #ff7a2a 0%, rgba(255,90,40,.6) 30%, transparent 70%)`}} />
+        <AbsoluteFill style={{background: '#fffaf0', opacity: branco}} />
+      </AbsoluteFill>
+    );
   }
-  if (f > 6) return null;
-  return (
-    <AbsoluteFill style={{pointerEvents: 'none'}}>
-      {Array.from({length: 7}).map((_, k) => (
-        <div key={k} style={{position: 'absolute', left: 0, right: 0, top: random(`g${i}${k}${f}`) * H, height: 20 + random(`h${i}${k}${f}`) * 90,
-          background: k % 2 ? 'rgba(255,40,70,.5)' : 'rgba(40,160,255,.45)', mixBlendMode: 'screen', transform: `translateX(${(random(`d${i}${k}${f}`) - 0.5) * 200}px)`}} />
-      ))}
-    </AbsoluteFill>
-  );
+  if (tipo === 'chicote') {
+    if (f < 8 || f > 13) return null;
+    const g = f - 8;
+    return (
+      <AbsoluteFill style={{pointerEvents: 'none'}}>
+        {Array.from({length: 7}).map((_, k) => (
+          <div key={k} style={{position: 'absolute', left: 0, right: 0, top: random(`g${i}${k}${g}`) * H, height: 20 + random(`h${i}${k}${g}`) * 90,
+            background: k % 2 ? 'rgba(255,40,70,.5)' : 'rgba(40,160,255,.45)', mixBlendMode: 'screen', transform: `translateX(${(random(`d${i}${k}${g}`) - 0.5) * 200}px)`}} />
+        ))}
+      </AbsoluteFill>
+    );
+  }
+  return null;   // 'foco' e 'corte' acontecem dentro da própria cena
 };
 
 const Legenda: React.FC<{palavras: Palavra[]; cenas: CenaC[]; t: number}> = ({palavras, cenas, t}) => {
@@ -620,8 +648,8 @@ export const SeraphimCortes: React.FC<PropsC> = (props) => {
         const dur = Math.max(1, Math.round((c.fim - c.inicio) * fps));
         return (
           <React.Fragment key={i}>
-            <Sequence from={from} durationInFrames={dur}><CenaWrap c={c} n={dur} idx={i} /></Sequence>
-            {i > 0 && <Sequence from={Math.max(0, from - 2)} durationInFrames={10}><Transicao i={i} /></Sequence>}
+            <Sequence from={from} durationInFrames={dur}><CenaWrap c={c} n={dur} idx={i} tin={tipoTrans(c, i)} tout={tipoTrans(props.cenas[i + 1], i + 1)} /></Sequence>
+            {i > 0 && <Sequence from={Math.max(0, from - 8)} durationInFrames={20}><Transicao i={i} tipo={tipoTrans(c, i)} /></Sequence>}
           </React.Fragment>
         );
       })}
@@ -637,7 +665,8 @@ export const SeraphimCortes: React.FC<PropsC> = (props) => {
       {props.batida && <Audio src={staticFile(props.batida)} volume={(props as any).trilha_mix ? 1 : props.audio ? 0.12 : 0.7} />}
       {props.sfx && props.cenas.map((c, i) => (
         <React.Fragment key={'s' + i}>
-          {i > 0 && <Sequence from={Math.max(0, Math.round((c.inicio - 0.2) * fps))}><Audio src={staticFile('sfx/whoosh.wav')} volume={0.4} /></Sequence>}
+          {i > 0 && ['luz', 'saturado', 'chicote'].includes(tipoTrans(c, i)) && <Sequence from={Math.max(0, Math.round((c.inicio - 0.25) * fps))}>
+            <Audio src={staticFile('sfx/whoosh.wav')} volume={tipoTrans(c, i) === 'chicote' ? 0.4 : 0.28} /></Sequence>}
           {['palavra', 'contador', 'painel'].includes(c.tipo) && <Sequence from={Math.round(c.inicio * fps)}><Audio src={staticFile('sfx/impacto.wav')} volume={0.45} /></Sequence>}
           {(c.marcas || []).map((m, k) => (k === 0 && c.tipo === 'palavra') ? null : (
             <Sequence key={'m' + k} from={Math.round((c.inicio + m) * fps) + (c.tipo === 'checklist' ? 6 : 0)}>
