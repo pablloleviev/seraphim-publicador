@@ -2,7 +2,9 @@ name: Analisar vídeos de referência
 on:
   workflow_dispatch:
     inputs:
-      urls: {description: "links dos reels separados por espaço", required: true}
+      urls: {description: "links dos reels separados por espaço (ou vazio + perfil)", required: false, default: ""}
+      perfil: {description: "@ do Instagram: pega os reels mais vistos sozinho", required: false, default: ""}
+      quantos: {description: "quantos reels do perfil", required: false, default: "8"}
       pasta: {description: "nome da pasta em estilos/referencias/", required: true}
 permissions:
   contents: write
@@ -15,8 +17,14 @@ jobs:
           which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
           pip install -q yt-dlp faster-whisper
           D="estilos/referencias/${{ github.event.inputs.pasta }}"; mkdir -p "$D" /tmp/v
+          URLS="${{ github.event.inputs.urls }}"
+          if [ -n "${{ github.event.inputs.perfil }}" ]; then
+            python3 scripts/perfil_reels.py "${{ github.event.inputs.perfil }}" "${{ github.event.inputs.quantos }}" "$D" > /tmp/urls.txt || true
+            URLS="$URLS $(cat /tmp/urls.txt)"
+          fi
+          echo "URLS: $URLS"
           i=0
-          for u in ${{ github.event.inputs.urls }}; do
+          for u in $URLS; do
             i=$((i+1)); n=$(printf "%02d" $i)
             yt-dlp -q -f "b[ext=mp4]/b" -o "/tmp/v/$n.%(ext)s" --write-info-json "$u" 2>&1 | tail -3 || true
             f=$(ls /tmp/v/$n.* 2>/dev/null | grep -v json | head -1)
