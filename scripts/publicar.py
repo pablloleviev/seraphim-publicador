@@ -436,7 +436,15 @@ def publicar_item(nome, item):
         try:
             meta = json.loads((pasta / "item.json").read_text(encoding="utf-8"))
             manual = instagram_manual()
-            pid = None if manual else publicar_instagram(pasta, meta)
+            pid = None
+            if not manual:
+                try:
+                    pid = publicar_instagram(pasta, meta)
+                except Exception as e:
+                    # Instagram automático falhou (ex.: chave vencida): não trava o TikTok, cai para o manual
+                    print(f"[aviso] Instagram automático falhou, indo para o manual: {e}")
+                    tg("sendMessage", chat_id=CHAT, text=f"⚠️ Instagram automático falhou ({str(e)[:150]}). Vou te mandar para postar manual.")
+                    manual = True
             item.update(status="publicado", ig_id=pid, publicado_em=datetime.now(timezone.utc).isoformat(), ig_manual=manual)
             if meta["tipo"] == "reels":
                 if tt and (tt.get("via") == "buffer" or _buffer_ativo()):
