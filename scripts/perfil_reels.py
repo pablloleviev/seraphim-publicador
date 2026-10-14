@@ -14,6 +14,20 @@ for url in (f"https://i.instagram.com/api/v1/users/web_profile_info/?username={u
     except Exception as e:
         print(f"[perfil] {url}: {e}", file=sys.stderr)
 if not dados:
+    # plano B: página de incorporação do perfil (não usa a API, costuma não ter limite)
+    import re, time
+    for tent in range(3):
+        try:
+            req = urllib.request.Request(f"https://www.instagram.com/{user}/embed/",
+                                         headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36"})
+            html = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "ignore")
+            open(f"{pasta}/embed.html", "w").write(html)
+            codes = list(dict.fromkeys(re.findall(r'(?:/p/|/reel/|shortcode\\?"\s*:\s*\\?")([A-Za-z0-9_-]{9,14})', html)))
+            print(f"[perfil] embed: {len(codes)} posts", file=sys.stderr)
+            if codes:
+                print(" ".join(f"https://www.instagram.com/reel/{c}/" for c in codes[:quantos])); sys.exit(0)
+        except Exception as e:
+            print(f"[perfil] embed: {e}", file=sys.stderr); time.sleep(20)
     sys.exit(0)
 u = dados["data"]["user"]
 posts = []
