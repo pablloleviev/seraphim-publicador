@@ -29,6 +29,7 @@ jobs:
             yt-dlp -q -f "b[ext=mp4]/b" -o "/tmp/v/$n.%(ext)s" --write-info-json "$u" 2>&1 | tail -3 || true
             f=$(ls /tmp/v/$n.* 2>/dev/null | grep -v json | head -1)
             if [ -z "$f" ]; then echo "$u: falhou" >> "$D/log.txt"; continue; fi
+            ffmpeg -v error -y -i "$f" -vf "scale=360:-2" -c:v libx264 -crf 26 -preset fast -c:a aac -b:a 96k "$D/$n-baixa.mp4" || true
             dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f")
             python3 -c "import json;d=json.load(open('/tmp/v/$n.info.json'));print(json.dumps({k:d.get(k) for k in ('title','description','duration','view_count','like_count','comment_count','track','artist')},ensure_ascii=False,indent=1))" > "$D/$n-info.json" || true
             # 1º segundo quadro a quadro (gancho) + resto do vídeo a cada 1 s
@@ -47,7 +48,7 @@ jobs:
           P
             python3 -c "
           from faster_whisper import WhisperModel
-          m=WhisperModel('small',device='cpu',compute_type='int8')
+          m=WhisperModel('base',device='cpu',compute_type='int8')
           seg,_=m.transcribe('$f',language='pt')
           open('$D/$n-fala.txt','w').write('\\n'.join(f'[{s.start:.0f}s] {s.text.strip()}' for s in seg))
           " || true
