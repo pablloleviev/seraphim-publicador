@@ -1,0 +1,77 @@
+: 21s
+Rendered 1419/1466, time remaining: 20s
+Rendered 1419/1466, time remaining: 20s
+Rendered 1420/1466, time remaining: 20s
+Rendered 1421/1466, time remaining: 20s
+Rendered 1422/1466, time remaining: 19s
+Rendered 1422/1466, time remaining: 19s
+Rendered 1423/1466, time remaining: 19s
+Rendered 1424/1466, time remaining: 18s
+Rendered 1425/1466, time remaining: 18s
+Rendered 1425/1466, time remaining: 18s
+Rendered 1426/1466, time remaining: 17s
+Rendered 1427/1466, time remaining: 17s
+Rendered 1428/1466, time remaining: 16s
+Rendered 1428/1466, time remaining: 16s
+Rendered 1429/1466, time remaining: 16s
+Rendered 1430/1466, time remaining: 16s
+Rendered 1431/1466, time remaining: 15s
+Rendered 1431/1466, time remaining: 15s
+Rendered 1432/1466, time remaining: 15s
+Rendered 1433/1466, time remaining: 14s
+Rendered 1434/1466, time remaining: 14s
+Rendered 1434/1466, time remaining: 14s
+Rendered 1435/1466, time remaining: 13s
+Rendered 1436/1466, time remaining: 13s
+Rendered 1437/1466, time remaining: 12s
+Rendered 1437/1466, time remaining: 12s
+Rendered 1438/1466, time remaining: 12s
+Rendered 1439/1466, time remaining: 11s
+Rendered 1440/1466, time remaining: 11s
+Rendered 1440/1466, time remaining: 11s
+Rendered 1441/1466, time remaining: 11s
+Rendered 1442/1466, time remaining: 10s
+Rendered 1443/1466, time remaining: 10s
+Rendered 1444/1466, time remaining: 9s
+Rendered 1444/1466, time remaining: 9s
+Rendered 1445/1466, time remaining: 9s
+Rendered 1446/1466, time remaining: 8s
+Rendered 1447/1466, time remaining: 8s
+Rendered 1447/1466, time remaining: 8s
+Rendered 1448/1466, time remaining: 7s
+Rendered 1449/1466, time remaining: 7s
+Rendered 1449/1466, time remaining: 7s
+Rendered 1450/1466, time remaining: 7s
+Rendered 1451/1466, time remaining: 6s
+Rendered 1452/1466, time remaining: 6s
+Rendered 1453/1466, time remaining: 5s
+Rendered 1453/1466, time remaining: 5s
+Rendered 1454/1466, time remaining: 5s
+Rendered 1455/1466, time remaining: 4s
+Rendered 1455/1466, time remaining: 4s
+Rendered 1456/1466, time remaining: 4s
+Rendered 1457/1466, time remaining: 3s
+Rendered 1458/1466, time remaining: 3s
+Rendered 1459/1466, time remaining: 3s
+Rendered 1459/1466, time remaining: 3s
+Rendered 1460/1466, time remaining: 2s
+Rendered 1461/1466, time remaining: 2s
+Rendered 1461/1466, time remaining: 2s
+Rendered 1462/1466, time remaining: 1s
+Rendered 1463/1466, time remaining: 1s
+Rendered 1464/1466, time remaining: 0s
+Rendered 1464/1466, time remaining: 0s
+Rendered 1465/1466, time remaining: 0s
+Stitched 1122/1466
+Stitched 1131/1466
+Stitched 1143/1466
+Stitched 1156/1466
+Stitched 1166/1466
+Stitched 1173/1466
+Stitched 1466/1466
+Voz: gemini (133 palavras)
+[trilha] trechos: epico 0.0-4.2s | inspira 4.2-11.6s | epico 11.6-18.0s | energia 18.0-25.5s | emocao 25.5-30.5s | tensao 30.5-36.6s | emocao 36.6-42.5s | epico 42.5-48.9s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-15_0800_cameras-com-cerebro/video.mp4 (48.9s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
