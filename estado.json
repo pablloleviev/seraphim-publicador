@@ -178,12 +178,17 @@
       "ig_manual": true
     },
     "2026-10-14_1200_mito-ia-humano": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-13T22:13:11.158112+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6acf98fc38098deaf9e5c23e",
+        "feito": "buffer"
       },
-      "msg_id": 651
+      "msg_id": 651,
+      "ig_id": null,
+      "publicado_em": "2026-10-14T15:00:05.198886+00:00",
+      "ig_manual": true
     },
     "2026-10-14_1800_ferramentas-gestao-equipe": {
       "status": "agendado",
