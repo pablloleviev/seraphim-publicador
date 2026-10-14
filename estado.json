@@ -199,12 +199,17 @@
       "ig_manual": true
     },
     "2026-10-14_1900_dor-historico-cliente": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-13T22:13:15.052634+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6acffb6efd7b73f9b828119a",
+        "feito": "buffer"
       },
-      "msg_id": 661
+      "msg_id": 661,
+      "ig_id": null,
+      "publicado_em": "2026-10-14T22:00:09.967497+00:00",
+      "ig_manual": true
     },
     "2026-10-15_0800_cameras-com-cerebro": {
       "status": "agendado",
