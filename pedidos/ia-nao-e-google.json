@@ -1,0 +1,85 @@
+{
+ "nome": "ia-nao-e-google",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-15 19:00",
+ "cenas": [
+  {
+   "tipo": "cards",
+   "itens": [
+    {
+     "rotulo": "Como você usa:",
+     "busca": "person searching google bored"
+    },
+    {
+     "rotulo": "Como deveria usar:",
+     "busca": "person directing team focused"
+    }
+   ],
+   "narracao": "O maior erro que você comete hoje é tratar a inteligência artificial como se ela fosse o Google."
+  },
+  {
+   "tipo": "palavra",
+   "texto": "GOOGLE|BUSCA|IA|DELEGA",
+   "destaque": "DELEGA",
+   "narracao": "No Google, você busca informação. Na inteligência artificial, você delega trabalho real."
+  },
+  {
+   "tipo": "frase",
+   "texto": "pare de fazer perguntas genéricas",
+   "destaque": "genéricas",
+   "narracao": "Se você pergunta apenas 'como vender mais', vai receber uma resposta inútil e óbvia."
+  },
+  {
+   "tipo": "checklist",
+   "rotulo": "Como delegar certo:",
+   "itens": [
+    "Dê contexto real",
+    "Defina o cargo da IA",
+    "Dê exemplos de saída"
+   ],
+   "narracao": "Trate a ferramenta como um estagiário sênior. Dê o contexto do seu negócio e peça tarefas claras."
+  },
+  {
+   "tipo": "digitando",
+   "topo": "MUDANÇA:",
+   "texto": "PARE DE PESQUISAR",
+   "narracao": "Pare de pesquisar e comece a dar ordens para as tarefas chatas do seu dia a dia."
+  },
+  {
+   "tipo": "diagrama",
+   "passos": [
+    {
+     "icone": "chat",
+     "rotulo": "Instrução"
+    },
+    {
+     "icone": "engrenagem",
+     "rotulo": "Processo"
+    },
+    {
+     "icone": "check",
+     "rotulo": "Entrega"
+    }
+   ],
+   "narracao": "Aprenda a dar as instruções certas e você vai recuperar horas da sua semana imediatamente."
+  },
+  {
+   "tipo": "sera",
+   "pose": "confiante",
+   "texto": "domine a ferramenta",
+   "narracao": "Quer aprender a mandar na IA em vez de ser ignorado por ela?"
+  },
+  {
+   "tipo": "cta",
+   "texto": "SEGUE A *SERAPHIM*",
+   "pose": "feliz",
+   "narracao": "A gente te ensina a colocar a tecnologia para trabalhar. Segue a Seraphim.",
+   "funil": "topo"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Você está usando a IA do jeito errado. ❌\n\nIA não é para pesquisar, é para DELEGAR. Se você ainda recebe respostas genéricas, o erro está no seu comando.\n\nSegue a Seraphim para aprender a delegar de verdade.\n\n#seraphimbr #chatgpt #ia #produtividade #dicasdeia #gestao #trabalho #tecnologia #prompt",
+ "legenda_tiktok": "O erro que faz você odiar a IA 🤖 Pare de usar como o Google!\n\n#seraphimbr #chatgpt #ia #produtividade #dicasdeia"
+}

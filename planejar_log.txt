@@ -1,10 +1,24 @@
-== 2026-10-14: faltam 3 vídeos e 1 carrosséis
+== 2026-10-15: faltam 3 vídeos e 1 carrosséis
 Modelos de texto: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview']
 [aviso] pesquisa com gemini-3.8-flash falhou: HTTP Error 429: Too Many Requests
 [aviso] pesquisa com gemini-3.7-flash falhou: HTTP Error 429: Too Many Requests
 [aviso] pesquisa com gemini-3.6-flash falhou: HTTP Error 429: Too Many Requests
-[aviso] gemini-3.8-flash: The read operation timed out
-[aviso] gemini-3.7-flash: Remote end closed connection without response
+[aviso] gemini-3.8-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.7-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 [aviso] gemini-3.6-flash: 503 {
   "error": {
     "code": 503,
@@ -98,12 +112,28 @@ Modelos de texto: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', '
   "error": {
     "code": 404,
     "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a); usando rascunho
-Pronto: 6 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-14_1800_ferramentas-gestao-equipe
-== 2026-10-15: faltam 3 vídeos e 1 carrosséis
+Pronto: 8 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-15_1800_4-automacoes-escritorio
+== 2026-10-16: faltam 3 vídeos e 1 carrosséis
 [aviso] pesquisa com gemini-3.8-flash falhou: HTTP Error 429: Too Many Requests
 [aviso] pesquisa com gemini-3.7-flash falhou: HTTP Error 429: Too Many Requests
 [aviso] pesquisa com gemini-3.6-flash falhou: HTTP Error 429: Too Many Requests
-[aviso] gemini-3.8-flash: The read operation timed out
+[aviso] gemini-3.8-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+(roteiro escrito com gemini-3.7-flash)
+[aviso] gemini-3.8-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 [aviso] gemini-3.7-flash: 503 {
   "error": {
     "code": 503,
@@ -156,23 +186,151 @@ Pronto: 6 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fi
   "error": {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a
-[aviso] gemini-flash-latest: The read operation timed out
+[aviso] gemini-flash-latest: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 [aviso] gemini-2.5-flash: 404 {
   "error": {
     "code": 404,
     "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a
-Traceback (most recent call last):
-  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 442, in <module>
-    main()
-  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 376, in main
-    plano = pedir_dia(dia, len(hv), len(hc), hist)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 262, in pedir_dia
-    rascunho = gemini(regras, 1.0)
-               ^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/planejar.py", line 93, in gemini
-    raise RuntimeError(f"Gemini falhou: {erro}")
-RuntimeError: Gemini falhou: gemini-2.5-flash: 404 {
+[aviso] revisão falhou (Gemini falhou: gemini-2.5-flash: 404 {
+  "error": {
+    "code": 404,
+    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a); usando rascunho
+Pronto: 7 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-16_1800_4-rotinas-para-eliminar-retrabalho
+== 2026-10-17: faltam 3 vídeos e 1 carrosséis
+[aviso] pesquisa com gemini-3.8-flash falhou: HTTP Error 429: Too Many Requests
+[aviso] pesquisa com gemini-3.7-flash falhou: HTTP Error 429: Too Many Requests
+[aviso] pesquisa com gemini-3.6-flash falhou: HTTP Error 429: Too Many Requests
+[aviso] gemini-3.8-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.7-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.6-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.5-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3-flash-preview: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-2.5-flash: 404 {
   "error": {
     "code": 404,
     "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a
+[aviso] gemini-omni-1.1-flash: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a
+(roteiro escrito com gemini-flash-latest)
+[aviso] gemini-3.8-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.7-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.6-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.5-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3-flash-preview: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-2.5-flash: 404 {
+  "error": {
+    "code": 404,
+    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a
+[aviso] gemini-omni-1.1-flash: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a
+[aviso] gemini-flash-latest: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-omni-flash-preview: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a
+[aviso] gemini-flash-latest: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-2.5-flash: 404 {
+  "error": {
+    "code": 404,
+    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a
+[aviso] revisão falhou (Gemini falhou: gemini-2.5-flash: 404 {
+  "error": {
+    "code": 404,
+    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a); usando rascunho
+Pronto: 8 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-17_1800_5-coisas-para-ia-analisar-hoje
+12 post(s) planejado(s)

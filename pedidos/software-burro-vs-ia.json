@@ -1,0 +1,76 @@
+{
+ "nome": "software-burro-vs-ia",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-15 12:00",
+ "cenas": [
+  {
+   "tipo": "digitando",
+   "topo": "POR QUE SEU",
+   "texto": "SISTEMA É BURRO?",
+   "narracao": "Por que você ainda aceita que o seu sistema de gestão seja tão limitado?"
+  },
+  {
+   "tipo": "cards",
+   "itens": [
+    {
+     "rotulo": "Software comum",
+     "busca": "old computer database screen"
+    },
+    {
+     "rotulo": "Sistema com IA",
+     "busca": "modern glowing digital interface"
+    }
+   ],
+   "narracao": "A maioria dos softwares hoje são apenas gavetas digitais: você coloca o dado lá e ele fica parado."
+  },
+  {
+   "tipo": "pergunta",
+   "texto": "ele te *ajuda* a decidir?",
+   "pose": "preocupado",
+   "narracao": "Mas a inteligência artificial muda o jogo. Em vez de você procurar o problema, ela te avisa."
+  },
+  {
+   "tipo": "interruptor",
+   "rotulo": "Modo Reativo",
+   "texto": "esperando o erro",
+   "sub": "antecipando tudo",
+   "valor": 0.6,
+   "narracao": "Ela identifica que um produto vai acabar antes de você notar e já sugere a compra."
+  },
+  {
+   "tipo": "frase",
+   "texto": "ela entende que o cliente sumiu",
+   "destaque": "sumiu",
+   "narracao": "Ela entende que um cliente importante sumiu e já rascunha uma mensagem de retorno para você."
+  },
+  {
+   "tipo": "parede",
+   "buscas": [
+    "digital brain connection",
+    "business automation logic"
+   ],
+   "texto": "Decisões lógicas",
+   "narracao": "Pare de lutar contra planilhas burras e comece a usar tecnologia que realmente possui lógica."
+  },
+  {
+   "tipo": "contador",
+   "rotulo": "Ex.: Alertas de lucro",
+   "de": 0,
+   "para": 12,
+   "sufixo": " por dia",
+   "narracao": "A diferença entre sobreviver e crescer está na sua capacidade de antecipar o que acontece."
+  },
+  {
+   "tipo": "cta",
+   "texto": "SEGUE A *SERAPHIM*",
+   "pose": "comemorando",
+   "narracao": "Saia do automático e entre na era da inteligência. Segue a Seraphim agora.",
+   "funil": "topo"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Seu sistema é uma gaveta ou um assistente? 📂\n\nSistemas antigos guardam dados. Sistemas com IA geram decisões. Qual dos dois você prefere no seu dia a dia?\n\nSegue a Seraphim para evoluir sua gestão.\n\n#seraphimbr #automacao #gestaoempresarial #sistemas #inteligenciaartificial #empreendedorismo #produtividade #tecnologia #negocios",
+ "legenda_tiktok": "Software antigo vs IA: quem ganha na sua empresa? 🦾\n\n#seraphimbr #automacao #gestaoempresarial #sistemas #inteligenciaartificial"
+}

@@ -1,0 +1,57 @@
+{
+ "destino": "fila/2026-10-17_1800_5-coisas-para-ia-analisar-hoje",
+ "titulo": "5 coisas que a IA pode analisar hoje na sua empresa",
+ "formato": "lista prática",
+ "slides": [
+  {
+   "tipo": "capa",
+   "tag": "Inteligência Artificial",
+   "titulo": "5 coisas que a IA|*analisa pra você* hoje",
+   "texto": "Sem pagar consultoria cara e em poucos minutos.",
+   "sera": "confiante"
+  },
+  {
+   "tipo": "numero",
+   "numero": "01",
+   "titulo": "Avaliações e|*reclamações*",
+   "texto": "Cole os comentários do Google Meu Negócio ou direct e peça os **três maiores padrões de insatisfação**."
+  },
+  {
+   "tipo": "numero",
+   "numero": "02",
+   "titulo": "Contratos longos e|*termos de serviço*",
+   "texto": "Peça para listar em tópicos simples quais são as **suas obrigações**, multas ocultas e prazos de rescisão."
+  },
+  {
+   "tipo": "numero",
+   "numero": "03",
+   "titulo": "Resumo de|*reuniões de áudio*",
+   "texto": "Suba o áudio de uma reunião e peça a lista de **próximos passos e responsáveis** por cada tarefa."
+  },
+  {
+   "tipo": "numero",
+   "numero": "04",
+   "titulo": "Propostas comerciais|*de concorrentes*",
+   "texto": "Compare a sua proposta com orçamentos comuns de mercado para achar **pontos fracos da sua oferta**."
+  },
+  {
+   "tipo": "numero",
+   "numero": "05",
+   "titulo": "Manual e rotinas|*de treinamento*",
+   "texto": "Descreva em áudio como você faz uma tarefa e peça um **manual passo a passo** para novos colaboradores."
+  },
+  {
+   "tipo": "texto",
+   "titulo": "O segredo:|*clareza nos dados*",
+   "texto": "A inteligência artificial não adivinha: ela só entrega respostas brilhantes se você der **contexto real** do seu negócio.",
+   "card": "Dica de ouro: oculte nomes de clientes e dados bancários antes de enviar o arquivo."
+  },
+  {
+   "tipo": "capa",
+   "titulo": "Qual dessas você|*vai testar hoje?*",
+   "texto": "Salva este post para consultar depois e segue a **@seraphimbr_** para dominar a tecnologia no seu negócio.",
+   "sera": "feliz"
+  }
+ ],
+ "legenda": "A maioria das pessoas só usa inteligência artificial para pedir textos genéricos, mas o verdadeiro poder está na análise de dados do seu próprio negócio. 💡\n\nColocar a IA para resumir contratos, encontrar padrões em reclamações e organizar manuais de equipe economiza dezenas de horas por semana.\n\nQual dessas 5 análises seria mais útil para a sua rotina agora?\n\nSalva este post para aplicar na prática e segue a @seraphimbr_ para mais conteúdos diários de tecnologia."
+}

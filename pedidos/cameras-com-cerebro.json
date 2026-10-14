@@ -1,0 +1,75 @@
+{
+ "nome": "cameras-com-cerebro",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-15 08:00",
+ "cenas": [
+  {
+   "tipo": "frase",
+   "texto": "suas câmeras de segurança estão cegas",
+   "destaque": "cegas",
+   "narracao": "Você já parou para pensar que as câmeras da sua empresa hoje estão cegas?"
+  },
+  {
+   "tipo": "foto",
+   "busca": "modern security camera lens close up",
+   "texto": "VISÃO COMPUTACIONAL",
+   "sub": "Lendo intenções",
+   "tom": "dourado",
+   "narracao": "Uma nova tecnologia de visão computacional agora permite que câmeras comuns entendam gestos e intenções humanas."
+  },
+  {
+   "tipo": "palavra",
+   "texto": "SISTEMA|AVISA|VOCÊ|AGORA",
+   "destaque": "AVISA",
+   "narracao": "Imagine o sistema avisando seu gerente que um cliente está parado há muito tempo na mesma prateleira, parecendo confuso."
+  },
+  {
+   "tipo": "diagrama",
+   "passos": [
+    {
+     "icone": "raio",
+     "rotulo": "Captura"
+    },
+    {
+     "icone": "robo",
+     "rotulo": "Análise"
+    },
+    {
+     "icone": "alerta",
+     "rotulo": "Ação"
+    }
+   ],
+   "narracao": "Ou detectar automaticamente uma falha no estoque só pelo movimento das mãos. Não é ficção, é inteligência aplicada."
+  },
+  {
+   "tipo": "sera",
+   "pose": "surpreso",
+   "texto": "sem sensores novos",
+   "narracao": "E o melhor: funciona com o que você já tem instalado aí na sua loja ou escritório."
+  },
+  {
+   "tipo": "painel",
+   "rotulo": "Eficiência Operacional",
+   "valor": 94,
+   "texto": "Cérebro Digital",
+   "narracao": "O futuro da gestão não precisa de sensores caros, só de um cérebro digital processando as imagens."
+  },
+  {
+   "tipo": "serifa",
+   "texto": "A tecnologia parou de apenas filmar e começou a entender o seu negócio.",
+   "narracao": "A tecnologia parou de apenas filmar e finalmente começou a entender como o seu negócio funciona."
+  },
+  {
+   "tipo": "cta",
+   "texto": "SEGUE PARA VER O *FUTURO*",
+   "pose": "confiante",
+   "narracao": "O futuro já chegou. Segue a Seraphim para entender como essa revolução chega na sua empresa.",
+   "funil": "topo"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "topo",
+ "genero_voz": "feminina",
+ "legenda": "Sua câmera de segurança acaba de ganhar um cérebro. 🧠\n\nA visão computacional está mudando como lojas e escritórios operam, transformando imagens em dados de venda e produtividade. Você teria coragem de usar?\n\nSegue a Seraphim para não ficar para trás.\n\n#seraphimbr #inteligenciaartificial #visaocomputacional #tecnologia #segurancadigital #varejo #gestao #inovacao #pequenasempresas",
+ "legenda_tiktok": "Sua câmera agora pensa! 📸 Inteligência Artificial na segurança do seu negócio.\n\n#seraphimbr #inteligenciaartificial #visaocomputacional #tecnologia #segurancadigital"
+}

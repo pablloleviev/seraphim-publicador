@@ -544,5 +544,231 @@
   "dia": "2026-10-14",
   "tipo": "carrossel",
   "tema": "noir"
+ },
+ {
+  "nome": "cameras-com-cerebro",
+  "funil": "topo",
+  "titulo": "Sua câmera agora tem cérebro",
+  "formato": "notícia de IA explicada",
+  "dia": "2026-10-15",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "frase",
+   "foto",
+   "palavra",
+   "diagrama",
+   "sera",
+   "painel",
+   "serifa",
+   "cta"
+  ],
+  "buscas": [
+   "modern security camera lens close up"
+  ]
+ },
+ {
+  "nome": "software-burro-vs-ia",
+  "funil": "topo",
+  "titulo": "Sistema fixo vs IA",
+  "formato": "comparação (X vs Y)",
+  "dia": "2026-10-15",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "digitando",
+   "cards",
+   "pergunta",
+   "interruptor",
+   "frase",
+   "parede",
+   "contador",
+   "cta"
+  ],
+  "buscas": [
+   "digital brain connection",
+   "business automation logic",
+   "old computer database screen",
+   "modern glowing digital interface"
+  ]
+ },
+ {
+  "nome": "ia-nao-e-google",
+  "funil": "topo",
+  "titulo": "IA não é o Google",
+  "formato": "erro que você comete",
+  "dia": "2026-10-15",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "cards",
+   "palavra",
+   "frase",
+   "checklist",
+   "digitando",
+   "diagrama",
+   "sera",
+   "cta"
+  ],
+  "buscas": [
+   "person searching google bored",
+   "person directing team focused"
+  ]
+ },
+ {
+  "nome": "4-automacoes-escritorio",
+  "titulo": "4 automações para seu escritório voar",
+  "formato": "lista prática",
+  "dia": "2026-10-15",
+  "tipo": "carrossel",
+  "tema": "noir"
+ },
+ {
+  "nome": "compras-duplicadas-ralo-invisivel",
+  "funil": "meio",
+  "titulo": "O gasto invisível das compras duplicadas",
+  "formato": "antes e depois",
+  "dia": "2026-10-16",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "interruptor",
+   "foto",
+   "niveis",
+   "digitando",
+   "sera",
+   "checklist",
+   "frase",
+   "cta"
+  ],
+  "buscas": [
+   "cluttered warehouse shelves boxes"
+  ]
+ },
+ {
+  "nome": "ia-que-usa-computador-sozinha",
+  "funil": "topo",
+  "titulo": "A IA que agora mexe no computador por você",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-10-16",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "parede",
+   "digitando",
+   "foto",
+   "painel",
+   "diagrama",
+   "serifa",
+   "cta"
+  ],
+  "buscas": [
+   "developer coding multi monitor desk",
+   "futuristic robotic hand typing keyboard",
+   "sleek modern computer workspace"
+  ]
+ },
+ {
+  "nome": "patio-travado-oficina-mecanica",
+  "funil": "fundo",
+  "titulo": "Sua oficina mecânica sobrevive ao pátio cheio?",
+  "formato": "pergunta polêmica",
+  "dia": "2026-10-16",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "contador",
+   "foto",
+   "pergunta",
+   "digitando",
+   "cards",
+   "serifa",
+   "cta"
+  ],
+  "buscas": [
+   "mechanic garage repair shop vehicle lift",
+   "paper receipts messy mechanic counter",
+   "mechanic holding tablet vehicle diagnostic"
+  ]
+ },
+ {
+  "nome": "4-rotinas-para-eliminar-retrabalho",
+  "titulo": "4 rotinas que eliminam o retrabalho na sua empresa",
+  "formato": "tutorial passo a passo",
+  "dia": "2026-10-16",
+  "tipo": "carrossel",
+  "tema": "noir"
+ },
+ {
+  "nome": "ia-traduz-sua-voz-tempo-real",
+  "funil": "topo",
+  "titulo": "Sua voz em qualquer idioma com IA",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-10-17",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "foto",
+   "palavra",
+   "sera",
+   "painel",
+   "frase",
+   "digitando",
+   "cta"
+  ],
+  "buscas": [
+   "person speaking microphone studio podcast"
+  ]
+ },
+ {
+  "nome": "como-organizar-caixa-de-entrada-ia",
+  "funil": "topo",
+  "titulo": "Organize centenas de mensagens com IA",
+  "formato": "tutorial passo a passo",
+  "dia": "2026-10-17",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "frase",
+   "diagrama",
+   "niveis",
+   "foto",
+   "serifa",
+   "sera",
+   "cta"
+  ],
+  "buscas": [
+   "person drinking coffee relaxed office desk"
+  ]
+ },
+ {
+  "nome": "perigo-senhas-bloco-de-notas",
+  "funil": "topo",
+  "titulo": "Onde você guarda as senhas da empresa?",
+  "formato": "pergunta polêmica",
+  "dia": "2026-10-17",
+  "tipo": "video",
+  "tema": "noir",
+  "cenas": [
+   "pergunta",
+   "cards",
+   "interruptor",
+   "contador",
+   "frase",
+   "serifa",
+   "cta"
+  ],
+  "buscas": [
+   "yellow sticky note desk pen",
+   "cyber security digital padlock glow"
+  ]
+ },
+ {
+  "nome": "5-coisas-para-ia-analisar-hoje",
+  "titulo": "5 coisas que a IA pode analisar hoje na sua empresa",
+  "formato": "lista prática",
+  "dia": "2026-10-17",
+  "tipo": "carrossel",
+  "tema": "noir"
  }
 ]
