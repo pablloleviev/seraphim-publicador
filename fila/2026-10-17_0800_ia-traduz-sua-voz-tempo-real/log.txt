@@ -1,0 +1,77 @@
+ning: 14s
+Rendered 1219/1272, time remaining: 14s
+Rendered 1220/1272, time remaining: 14s
+Rendered 1220/1272, time remaining: 14s
+Rendered 1221/1272, time remaining: 14s
+Rendered 1222/1272, time remaining: 13s
+Rendered 1223/1272, time remaining: 13s
+Rendered 1224/1272, time remaining: 13s
+Rendered 1224/1272, time remaining: 13s
+Rendered 1225/1272, time remaining: 13s
+Rendered 1226/1272, time remaining: 12s
+Rendered 1227/1272, time remaining: 12s
+Rendered 1228/1272, time remaining: 12s
+Rendered 1229/1272, time remaining: 11s
+Rendered 1229/1272, time remaining: 11s
+Rendered 1230/1272, time remaining: 11s
+Rendered 1231/1272, time remaining: 11s
+Rendered 1232/1272, time remaining: 11s
+Rendered 1233/1272, time remaining: 10s
+Rendered 1234/1272, time remaining: 10s
+Rendered 1234/1272, time remaining: 10s
+Rendered 1235/1272, time remaining: 10s
+Rendered 1236/1272, time remaining: 9s
+Rendered 1237/1272, time remaining: 9s
+Rendered 1238/1272, time remaining: 9s
+Rendered 1239/1272, time remaining: 9s
+Rendered 1239/1272, time remaining: 9s
+Rendered 1240/1272, time remaining: 8s
+Rendered 1241/1272, time remaining: 8s
+Rendered 1242/1272, time remaining: 8s
+Rendered 1243/1272, time remaining: 7s
+Rendered 1243/1272, time remaining: 7s
+Rendered 1244/1272, time remaining: 7s
+Rendered 1245/1272, time remaining: 7s
+Rendered 1246/1272, time remaining: 7s
+Rendered 1247/1272, time remaining: 6s
+Rendered 1248/1272, time remaining: 6s
+Rendered 1248/1272, time remaining: 6s
+Rendered 1249/1272, time remaining: 6s
+Rendered 1250/1272, time remaining: 6s
+Rendered 1251/1272, time remaining: 5s
+Rendered 1252/1272, time remaining: 5s
+Rendered 1253/1272, time remaining: 5s
+Rendered 1253/1272, time remaining: 5s
+Rendered 1254/1272, time remaining: 4s
+Rendered 1255/1272, time remaining: 4s
+Rendered 1256/1272, time remaining: 4s
+Rendered 1257/1272, time remaining: 4s
+Rendered 1257/1272, time remaining: 4s
+Rendered 1258/1272, time remaining: 3s
+Rendered 1259/1272, time remaining: 3s
+Rendered 1260/1272, time remaining: 3s
+Rendered 1261/1272, time remaining: 3s
+Rendered 1262/1272, time remaining: 2s
+Rendered 1262/1272, time remaining: 2s
+Rendered 1263/1272, time remaining: 2s
+Rendered 1264/1272, time remaining: 2s
+Rendered 1265/1272, time remaining: 1s
+Rendered 1266/1272, time remaining: 1s
+Rendered 1267/1272, time remaining: 1s
+Rendered 1267/1272, time remaining: 1s
+Rendered 1268/1272, time remaining: 1s
+Rendered 1269/1272, time remaining: 0s
+Rendered 1270/1272, time remaining: 0s
+Rendered 1271/1272, time remaining: 0s
+Stitched 965/1272
+Stitched 972/1272
+Stitched 991/1272
+Stitched 1012/1272
+Stitched 1018/1272
+Stitched 1272/1272
+Voz: gemini (115 palavras)
+[trilha] trechos: epico 0.0-5.5s | tensao 5.5-12.1s | energia 12.1-17.6s | inspira 17.6-24.4s | emocao 24.4-29.5s | energia 29.5-35.8s | epico 35.8-42.4s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-17_0800_ia-traduz-sua-voz-tempo-real/video.mp4 (42.4s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
