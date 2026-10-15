@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630254,
+  "telegram_offset": 183630257,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -257,6 +257,27 @@
         "via": "buffer"
       },
       "msg_id": 727
+    },
+    "2026-10-15_1800_4-automacoes-escritorio": {
+      "status": "agendado",
+      "enviado_em": "2026-10-15T20:05:00.159637+00:00",
+      "msg_id": 736
+    },
+    "2026-10-16_0800_compras-duplicadas-ralo-invisivel": {
+      "status": "agendado",
+      "enviado_em": "2026-10-15T20:05:03.905866+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 738
+    },
+    "2026-10-16_1200_ia-que-usa-computador-sozinha": {
+      "status": "agendado",
+      "enviado_em": "2026-10-15T20:05:06.817971+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 740
     }
   },
   "respondidos": {}
