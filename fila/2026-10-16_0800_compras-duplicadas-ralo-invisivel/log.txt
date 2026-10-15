@@ -1,5 +1,76 @@
-[aviso] voz gemini falhou: gemini-2.5-pro-preview-tts: 429 {
-  "error": {
-    "code": 429,
-    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+emaining: 22s
+Rendered 1108/1154, time remaining: 21s
+Rendered 1109/1154, time remaining: 21s
+Rendered 1109/1154, time remaining: 21s
+Rendered 1110/1154, time remaining: 20s
+Rendered 1111/1154, time remaining: 20s
+Rendered 1111/1154, time remaining: 20s
+Rendered 1112/1154, time remaining: 19s
+Rendered 1113/1154, time remaining: 19s
+Rendered 1114/1154, time remaining: 19s
+Rendered 1114/1154, time remaining: 19s
+Rendered 1115/1154, time remaining: 18s
+Rendered 1116/1154, time remaining: 18s
+Rendered 1117/1154, time remaining: 17s
+Rendered 1117/1154, time remaining: 17s
+Rendered 1118/1154, time remaining: 17s
+Rendered 1119/1154, time remaining: 16s
+Rendered 1119/1154, time remaining: 16s
+Rendered 1120/1154, time remaining: 16s
+Rendered 1121/1154, time remaining: 15s
+Rendered 1122/1154, time remaining: 15s
+Rendered 1123/1154, time remaining: 14s
+Rendered 1123/1154, time remaining: 14s
+Rendered 1124/1154, time remaining: 14s
+Rendered 1125/1154, time remaining: 13s
+Rendered 1125/1154, time remaining: 13s
+Rendered 1126/1154, time remaining: 13s
+Rendered 1127/1154, time remaining: 12s
+Rendered 1128/1154, time remaining: 12s
+Rendered 1128/1154, time remaining: 12s
+Rendered 1129/1154, time remaining: 11s
+Rendered 1130/1154, time remaining: 11s
+Rendered 1131/1154, time remaining: 10s
+Rendered 1131/1154, time remaining: 10s
+Rendered 1132/1154, time remaining: 10s
+Rendered 1133/1154, time remaining: 9s
+Rendered 1134/1154, time remaining: 9s
+Rendered 1134/1154, time remaining: 9s
+Rendered 1135/1154, time remaining: 8s
+Rendered 1136/1154, time remaining: 8s
+Rendered 1136/1154, time remaining: 8s
+Rendered 1137/1154, time remaining: 8s
+Rendered 1138/1154, time remaining: 7s
+Rendered 1139/1154, time remaining: 7s
+Rendered 1139/1154, time remaining: 7s
+Rendered 1140/1154, time remaining: 6s
+Rendered 1141/1154, time remaining: 6s
+Rendered 1142/1154, time remaining: 5s
+Rendered 1142/1154, time remaining: 5s
+Rendered 1143/1154, time remaining: 5s
+Rendered 1144/1154, time remaining: 4s
+Rendered 1144/1154, time remaining: 4s
+Rendered 1145/1154, time remaining: 4s
+Rendered 1146/1154, time remaining: 3s
+Rendered 1147/1154, time remaining: 3s
+Rendered 1148/1154, time remaining: 2s
+Rendered 1148/1154, time remaining: 2s
+Rendered 1149/1154, time remaining: 2s
+Rendered 1150/1154, time remaining: 1s
+Rendered 1150/1154, time remaining: 1s
+Rendered 1151/1154, time remaining: 1s
+Rendered 1152/1154, time remaining: 0s
+Rendered 1153/1154, time remaining: 0s
+Rendered 1153/1154, time remaining: 0s
+Stitched 874/1154
+Stitched 886/1154
+Stitched 899/1154
+Stitched 914/1154
+Stitched 923/1154
+Stitched 1154/1154
+Voz: gemini (104 palavras)
+[trilha] trechos: epico 0.0-5.9s | sombrio 5.9-9.7s | tensao 9.7-16.0s | energia 16.0-20.0s | inspira 20.0-24.3s | energia 24.3-28.8s | emocao 28.8-32.5s | epico 32.5-38.5s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-16_0800_compras-duplicadas-ralo-invisivel/video.mp4 (38.5s)
 
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
