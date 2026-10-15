@@ -245,27 +245,6 @@
       },
       "msg_id": 677
     },
-    "2026-10-16_0800_compras-duplicadas-ralo-invisivel": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-15T09:00:19.289786+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 695
-    },
-    "2026-10-15_1800_4-automacoes-escritorio": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-15T11:00:17.601900+00:00",
-      "msg_id": 704
-    },
-    "2026-10-16_1200_ia-que-usa-computador-sozinha": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-15T13:00:06.783127+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 711
-    },
     "2026-10-16_1800_4-rotinas-para-eliminar-retrabalho": {
       "status": "agendado",
       "enviado_em": "2026-10-15T19:00:18.200608+00:00",
