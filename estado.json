@@ -265,6 +265,11 @@
         "via": "buffer"
       },
       "msg_id": 711
+    },
+    "2026-10-16_1800_4-rotinas-para-eliminar-retrabalho": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-15T19:00:18.200608+00:00",
+      "msg_id": 725
     }
   },
   "respondidos": {}
