@@ -565,7 +565,8 @@
   ],
   "buscas": [
    "modern security camera lens close up"
-  ]
+  ],
+  "capa_modelo": "postit"
  },
  {
   "nome": "software-burro-vs-ia",
@@ -590,7 +591,8 @@
    "business automation logic",
    "old computer database screen",
    "modern glowing digital interface"
-  ]
+  ],
+  "capa_modelo": "chat"
  },
  {
   "nome": "ia-nao-e-google",
@@ -613,7 +615,8 @@
   "buscas": [
    "person searching google bored",
    "person directing team focused"
-  ]
+  ],
+  "capa_modelo": "terminal"
  },
  {
   "nome": "4-automacoes-escritorio",
@@ -644,7 +647,8 @@
   "buscas": [
    "cluttered warehouse shelves boxes"
   ],
-  "formato_edicao": "terminal"
+  "formato_edicao": "terminal",
+  "capa_modelo": "alvo"
  },
  {
   "nome": "ia-que-usa-computador-sozinha",
@@ -668,7 +672,8 @@
    "futuristic robotic hand typing keyboard",
    "sleek modern computer workspace"
   ],
-  "formato_edicao": "celular"
+  "formato_edicao": "celular",
+  "capa_modelo": "pergunta"
  },
  {
   "nome": "patio-travado-oficina-mecanica",
@@ -692,7 +697,8 @@
    "paper receipts messy mechanic counter",
    "mechanic holding tablet vehicle diagnostic"
   ],
-  "formato_edicao": "eletrico"
+  "formato_edicao": "eletrico",
+  "capa_modelo": "alerta"
  },
  {
   "nome": "4-rotinas-para-eliminar-retrabalho",
@@ -700,7 +706,8 @@
   "formato": "tutorial passo a passo",
   "dia": "2026-10-16",
   "tipo": "carrossel",
-  "tema": "noir"
+  "tema": "noir",
+  "capa_modelo": "numero"
  },
  {
   "nome": "ia-traduz-sua-voz-tempo-real",
@@ -722,7 +729,8 @@
   "buscas": [
    "person speaking microphone studio podcast"
   ],
-  "formato_edicao": "documentario"
+  "formato_edicao": "documentario",
+  "capa_modelo": "mascote"
  },
  {
   "nome": "como-organizar-caixa-de-entrada-ia",
@@ -744,7 +752,8 @@
   "buscas": [
    "person drinking coffee relaxed office desk"
   ],
-  "formato_edicao": "navegador"
+  "formato_edicao": "navegador",
+  "capa_modelo": "pergunta"
  },
  {
   "nome": "perigo-senhas-bloco-de-notas",
@@ -767,7 +776,8 @@
    "yellow sticky note desk pen",
    "cyber security digital padlock glow"
   ],
-  "formato_edicao": "hud"
+  "formato_edicao": "hud",
+  "capa_modelo": "lista"
  },
  {
   "nome": "5-coisas-para-ia-analisar-hoje",
@@ -775,7 +785,8 @@
   "formato": "lista prática",
   "dia": "2026-10-17",
   "tipo": "carrossel",
-  "tema": "noir"
+  "tema": "noir",
+  "capa_modelo": "dividido"
  },
  {
   "nome": "o-sumico-dos-comprovantes",
@@ -799,7 +810,8 @@
    "worried accountant office calculator late",
    "crumpled paper receipts table",
    "organized digital document tablet"
-  ]
+  ],
+  "capa_modelo": "notificacoes"
  },
  {
   "nome": "usinas-nucleares-e-ia",
@@ -822,7 +834,8 @@
   ],
   "buscas": [
    "cooling towers nuclear plant steam"
-  ]
+  ],
+  "capa_modelo": "jornal"
  },
  {
   "nome": "a-era-dos-agentes-autonomos",
@@ -844,7 +857,8 @@
   ],
   "buscas": [
    "high tech server room glowing data"
-  ]
+  ],
+  "capa_modelo": "alvo"
  },
  {
   "nome": "4-vazamentos-de-lucro-operacao",
@@ -852,6 +866,7 @@
   "formato": "lista prática",
   "dia": "2026-10-18",
   "tipo": "carrossel",
-  "tema": "noir"
+  "tema": "noir",
+  "capa_modelo": "terminal"
  }
 ]
