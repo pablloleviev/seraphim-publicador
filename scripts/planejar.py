@@ -14,7 +14,7 @@ Volume sobe sozinho (planejamento.json):
 Variedade: nunca repete tema (historico.json), reveza formatos e o visual,
 e cada dia passa por uma segunda rodada de revisão crítica antes de virar vídeo.
 """
-import asyncio, json, os, re, sys, unicodedata, urllib.error, urllib.request
+import asyncio, json, os, re, sys, time, unicodedata, urllib.error, urllib.request
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -34,6 +34,20 @@ def proximo_tema(hist):
         if h.get("tema"):
             ult[h["tema"]] = i
     return min(TEMAS, key=lambda t: (ult.get(t, -1), TEMAS.index(t)))
+
+
+# FORMATOS DE EDIÇÃO (motor/src/Cortes.tsx): cada vídeo tem uma cara diferente. Rodízio: o usado há mais tempo,
+# e vídeos do mesmo dia nunca repetem formato.
+FORMATOS = ["noir", "celular", "terminal", "cartaz", "documentario", "eletrico"]
+
+
+def proximo_formato(hist, evitar=()):
+    ult = {}
+    for i, h in enumerate(hist):
+        if h.get("formato_edicao"):
+            ult[h["formato_edicao"]] = i
+    livres = [f for f in FORMATOS if f not in evitar] or FORMATOS
+    return min(livres, key=lambda f: (ult.get(f, -1), FORMATOS.index(f)))
 
 
 POSES = ["pensando", "confiante", "surpreso", "preocupado", "feliz", "comemorando"]
@@ -278,11 +292,14 @@ Regras completas originais, para referência:
 
 RASCUNHO:
 {json.dumps(rascunho, ensure_ascii=False)}"""
-    try:
-        return gemini(revisao, 0.6)
-    except Exception as e:
-        print(f"[aviso] revisão falhou ({e}); usando rascunho")
-        return rascunho
+    for tentativa in range(1, 4):
+        try:
+            return gemini(revisao, 0.6)
+        except Exception as e:
+            print(f"[aviso] revisão falhou na tentativa {tentativa}/3 ({str(e)[:160]})")
+            time.sleep(20 * tentativa)
+    print("[ALERTA] revisão do roteiro NÃO rodou; usando rascunho sem revisão")
+    return rascunho
 
 
 def limpar_linhas(ls):
@@ -382,6 +399,7 @@ def main():
             continue
         print(f"== {dia}: faltam {len(hv)} vídeos e {len(hc)} carrosséis")
         plano = pedir_dia(dia, len(hv), len(hc), hist)
+        formatos_do_dia = []
         for hora, v in zip(hv, plano.get("videos", [])):
             try:
                 v = validar_video(v)
@@ -392,7 +410,10 @@ def main():
                 nome += "-2"
             nomes.add(nome)
             tema = "noir"  # temas pausados: Pabllo reprovou (2026-10-10)
+            fmt = proximo_formato(hist, evitar=formatos_do_dia)
+            formatos_do_dia.append(fmt)
             spec = {"nome": nome, "arroba": "@seraphimbr_", "quando": f"{dia} {hora}", "cenas": v["cenas"], "motor": "cortes",
+                    "formato": fmt, "titulo": v.get("titulo", nome), "numero": criados + 1,
                     "funil": v["funil"], "genero_voz": "masculina" if criados % 3 else "feminina",
                     "legenda": (v.get("legenda", "").strip() + "\n\n" + tags(v)),
                     "legenda_tiktok": (str(v.get("legenda_tiktok") or v.get("legenda", "")).strip() + "\n\n" + tags(v, 6))}
@@ -405,7 +426,7 @@ def main():
             (RAIZ / "pedidos" / f"{nome}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=1), encoding="utf-8")
             buscas = [c.get("busca") for c in v["cenas"] if c.get("busca")] + [b for c in v["cenas"] for b in (c.get("buscas") or [])] \
                      + [it.get("busca") for c in v["cenas"] for it in (c.get("itens") or []) if isinstance(it, dict) and it.get("busca")]
-            hist.append({"nome": nome, "funil": v["funil"], "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video", "tema": tema,
+            hist.append({"nome": nome, "funil": v["funil"], "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video", "tema": tema, "formato_edicao": fmt,
                          "cenas": [c.get("tipo") for c in v["cenas"]], "buscas": buscas})
             criados += 1
         for hora, c in zip(hc, plano.get("carrosseis", [])):

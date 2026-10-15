@@ -79,3 +79,15 @@ Padrão de qualidade mínimo daqui pra frente:
 - vídeo de fundo do Pixabay nas cenas de foto, conferido pela IA; nada de imagem fora de contexto;
 - legenda karaokê dourada; voz do Gemini (feminina ficou ótima); trilha nivelada que muda com a emoção.
 Sempre variando estrutura, gancho e imagens (nunca o mesmo padrãozinho), e sempre um pouco melhor que o anterior.
+
+## FORMATOS DE EDIÇÃO (15/10/2026) — Pabllo: "estão todos no mesmo padraozinho de edição"
+Causa: desde 10/10 o código forçava o tema "noir" em todo vídeo e o motor ignorava o tema; só a ordem das cenas mudava.
+Agora cada vídeo usa UM formato de edição, em rodízio (o usado há mais tempo; nunca repete no mesmo dia). Muda paleta, fontes, moldura,
+acabamento, legenda e tipos de transição (motor/src/Cortes.tsx -> FORMATOS; planejar.py -> proximo_formato; historico.json -> formato_edicao):
+- noir: preto + dourado, tela cheia, acabamento de TV antiga (o original).
+- celular: cena dentro de um celular sobre malha de cor menta/coral; legenda e fontes sem serifa.
+- terminal: janela de terminal verde fósforo, fonte monoespaçada, scanlines CRT, transições secas/glitch.
+- cartaz: papel bege, moldura de foto "fig. 0N", serifa, vermelho tijolo, transições suaves.
+- documentario: barras de cinema, REC + timecode, grão, grade quente/azulada, serifa itálica, âmbar.
+- eletrico: azul elétrico + magenta, borda neon pulsando, transições chicote/saturação.
+Regra: nunca desligar a variação; novas referências do Pabllo entram como NOVOS formatos ou novas cenas, não como padrão único.

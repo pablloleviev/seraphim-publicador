@@ -483,6 +483,9 @@ def main():
         except Exception as e:
             print(f"[aviso] trilha emocional falhou ({e}); usando a batida padrão")
     props["tema"] = spec.get("tema", "noir")
+    props["formato"] = spec.get("formato", "noir")            # formato de edição (paleta, moldura, legenda, transições)
+    props["titulo"] = spec.get("titulo", nome.replace("-", " "))
+    props["numero"] = spec.get("numero", 1)
     (JOB / "props.json").write_text(json.dumps(props, ensure_ascii=False), encoding="utf-8")
 
     saida = Path(args.saida).resolve() if args.saida else RAIZ / "entrega" / "videos" / f"{nome}.mp4"
