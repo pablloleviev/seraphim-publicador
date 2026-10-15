@@ -1,0 +1,71 @@
+/1335, time remaining: 17s
+Rendered 1295/1335, time remaining: 16s
+Rendered 1296/1335, time remaining: 16s
+Rendered 1297/1335, time remaining: 16s
+Rendered 1297/1335, time remaining: 16s
+Rendered 1298/1335, time remaining: 15s
+Rendered 1299/1335, time remaining: 15s
+Rendered 1299/1335, time remaining: 15s
+Rendered 1300/1335, time remaining: 14s
+Rendered 1301/1335, time remaining: 14s
+Rendered 1302/1335, time remaining: 13s
+Rendered 1302/1335, time remaining: 13s
+Rendered 1303/1335, time remaining: 13s
+Rendered 1304/1335, time remaining: 13s
+Rendered 1305/1335, time remaining: 12s
+Rendered 1305/1335, time remaining: 12s
+Rendered 1306/1335, time remaining: 12s
+Rendered 1307/1335, time remaining: 11s
+Rendered 1308/1335, time remaining: 11s
+Rendered 1308/1335, time remaining: 11s
+Rendered 1309/1335, time remaining: 10s
+Rendered 1310/1335, time remaining: 10s
+Rendered 1311/1335, time remaining: 10s
+Rendered 1311/1335, time remaining: 10s
+Rendered 1312/1335, time remaining: 9s
+Rendered 1313/1335, time remaining: 9s
+Rendered 1314/1335, time remaining: 8s
+Rendered 1314/1335, time remaining: 8s
+Rendered 1315/1335, time remaining: 8s
+Rendered 1316/1335, time remaining: 8s
+Rendered 1316/1335, time remaining: 8s
+Rendered 1317/1335, time remaining: 7s
+Rendered 1318/1335, time remaining: 7s
+Rendered 1319/1335, time remaining: 6s
+Rendered 1319/1335, time remaining: 6s
+Rendered 1320/1335, time remaining: 6s
+Rendered 1321/1335, time remaining: 5s
+Rendered 1322/1335, time remaining: 5s
+Rendered 1322/1335, time remaining: 5s
+Rendered 1323/1335, time remaining: 5s
+Rendered 1324/1335, time remaining: 4s
+Rendered 1325/1335, time remaining: 4s
+Rendered 1325/1335, time remaining: 4s
+Rendered 1326/1335, time remaining: 3s
+Rendered 1327/1335, time remaining: 3s
+Rendered 1328/1335, time remaining: 2s
+Rendered 1328/1335, time remaining: 2s
+Rendered 1329/1335, time remaining: 2s
+Rendered 1330/1335, time remaining: 2s
+Rendered 1331/1335, time remaining: 1s
+Rendered 1331/1335, time remaining: 1s
+Rendered 1332/1335, time remaining: 1s
+Rendered 1333/1335, time remaining: 0s
+Rendered 1334/1335, time remaining: 0s
+Rendered 1334/1335, time remaining: 0s
+Stitched 1018/1335
+Stitched 1029/1335
+Stitched 1041/1335
+Stitched 1053/1335
+Stitched 1067/1335
+Stitched 1068/1335
+Stitched 1335/1335
+[aviso] voz gemini falhou: gemini-2.5-pro-preview-tts: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Voz: edge (114 palavras)
+[trilha] trechos: epico 0.0-4.7s | tensao 4.7-9.8s | sombrio 9.8-15.4s | tensao 15.4-21.8s | energia 21.8-27.7s | inspira 27.7-37.1s | epico 37.1-44.5s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-18_1200_usinas-nucleares-e-ia/video.mp4 (44.5s)
+
