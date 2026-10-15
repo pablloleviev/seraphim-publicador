@@ -146,6 +146,8 @@ CATALOGO_CENAS = """Tipos de cena do motor de cortes (vertical). Reveze: NUNCA o
 - interruptor: interruptor de app que DESLIGA durante a fala (ótimo para o gancho ou a virada). "rotulo" (nome do interruptor, ex.: "Novo funcionário"),
   "texto" (subtítulo ligado, ex.: "contratar agora?"), "sub" (subtítulo depois de desligar, ex.: "melhor automatizar"), "valor" 0.3-0.7 (momento em que desliga).
 - checklist: card com lista sendo marcada. "rotulo" (título do card), "itens": 3 a 5 textos curtos (até 4 palavras cada).
+- calendario: calendário que VIRA de uma data para outra (tempo passando = resultado). "apoio" = data inicial (ex.: "18 OUT"), "texto" = data final (ex.: "28 NOV"), "rotulo" = frase curta que aparece ao virar. Use quando falar de prazo/resultado em dias.
+- (qualquer cena) "etiqueta": opcional, texto curto em MAIÚSCULAS (até 3 palavras) numa pílula de vidro no topo, ex.: "DONO DE OFICINA", "PASSO 2". Use em 2 a 3 cenas do vídeo, não em todas.
 - cta: SEMPRE a última cena. "texto" curto em MAIÚSCULAS com *destaque*, "pose"; nos posts de fundo, "apoio": "link na bio".
 Poses do mascote: pensando, confiante, surpreso, preocupado, feliz, comemorando."""
 
@@ -309,7 +311,7 @@ def limpar_linhas(ls):
     return [re.sub(r"\s+([?!.,:;])", r"\1", str(l)).upper().replace("*", "*") for l in ls][:3]
 
 
-TIPOS = {"palavra", "frase", "contador", "foto", "pergunta", "digitando", "diagrama", "cards", "parede", "sera", "painel", "niveis", "serifa", "cta", "interruptor", "checklist"}
+TIPOS = {"palavra", "frase", "contador", "foto", "pergunta", "digitando", "diagrama", "cards", "parede", "sera", "painel", "niveis", "serifa", "cta", "interruptor", "checklist", "calendario"}
 
 
 def validar_video(v):

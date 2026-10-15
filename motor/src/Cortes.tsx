@@ -20,7 +20,7 @@ export type CenaC = {
   itens?: {rotulo?: string; imagem?: string; texto?: string}[] | any[];
   passos?: {icone: string; rotulo: string}[];
   pose?: string; legenda?: boolean; valor?: number; apoio?: string;
-  marcas?: number[]; video?: string;
+  marcas?: number[]; video?: string; etiqueta?: string;
 };
 export type PropsC = {
   fps: number; duracao: number; arroba: string; audio: string | null; batida: string | null; sfx: boolean;
@@ -603,13 +603,41 @@ const CChecklist: React.FC<CP> = ({c, f, fps, n}) => {
   );
 };
 
+
+// calendário: a data vira (tempo passando = resultado). "de" e "para" são textos tipo "18 OUT" / "28 NOV"; "rotulo" legenda do card
+const CCalendario: React.FC<CP> = ({c, f, fps, n}) => {
+  const s = spring({frame: f, fps, config: {damping: 13}});
+  const t0 = Math.round(n * 0.38);
+  const vira = interpolate(f, [t0, t0 + 14], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)});
+  const sep = (v?: string) => { const m = (v || '').trim().split(/\s+/); return [m[0] || '', (m[1] || '').toUpperCase()]; };
+  const [d1, m1] = sep(String(c.apoio || c.sub || '18 OUT')); const [d2, m2] = sep(String(c.texto || '28 NOV'));
+  const ang = vira * 180;
+  const Face: React.FC<{d: string; m: string; cor: string}> = ({d, m, cor}) => (
+    <div style={{width: 640, height: 700, borderRadius: 50, background: '#f4f1ea', boxShadow: '0 50px 120px rgba(0,0,0,.65)', overflow: 'hidden', backfaceVisibility: 'hidden', position: 'absolute'}}>
+      <div style={{height: 190, background: cor, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Anton', fontSize: 110, color: '#fff', letterSpacing: 8}}>{m}</div>
+      <div style={{textAlign: 'center', fontFamily: 'Anton', fontSize: 380, lineHeight: 1.15, color: '#111'}}>{d}</div>
+    </div>);
+  return (
+    <AbsoluteFill>
+      <FundoVar f={f} c={c} salt={5} lista={['aurora', 'grade', 'circulos', 'liso']} />
+      <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', perspective: 1800}}>
+        <div style={{position: 'relative', width: 640, height: 700, transformStyle: 'preserve-3d', transform: `translateY(${(1 - s) * 200}px) scale(${0.8 + 0.2 * s}) rotateY(${ang}deg)`}}>
+          <Face d={d1} m={m1} cor={VERM} />
+          <div style={{position: 'absolute', inset: 0, transform: 'rotateY(180deg)', backfaceVisibility: 'hidden'}}><Face d={d2} m={m2} cor={OURO} /></div>
+        </div>
+      </AbsoluteFill>
+      {c.rotulo && <div style={{position: 'absolute', left: 60, right: 60, top: 300, textAlign: 'center', fontFamily: 'InterX', fontSize: 56, color: '#fff', textShadow: '0 4px 30px rgba(0,0,0,.7)', opacity: ease(f, t0, t0 + 12)}}>{c.rotulo}</div>}
+    </AbsoluteFill>
+  );
+};
+
 const MAPA: Record<string, React.FC<CP>> = {
   palavra: CPalavra, contador: CContador, digitando: CDigitando, pergunta: CPergunta, frase: CFrase, foto: CFoto,
   parede: CParede, cards: CCards, diagrama: CDiagrama, sera: CSera, painel: CPainel, niveis: CNiveis, serifa: CSerifa, cta: CCta,
-  interruptor: CInterruptor, checklist: CChecklist,
+  interruptor: CInterruptor, checklist: CChecklist, calendario: CCalendario,
 };
 // cenas onde a narração NÃO está escrita na tela -> mostram legenda pequena
-const COM_LEGENDA = new Set(['foto', 'parede', 'cards', 'diagrama', 'sera', 'contador', 'niveis', 'serifa', 'painel', 'interruptor', 'checklist']);
+const COM_LEGENDA = new Set(['foto', 'parede', 'cards', 'diagrama', 'sera', 'contador', 'niveis', 'serifa', 'painel', 'interruptor', 'checklist', 'calendario']);
 
 // transições (referências: Blue Ocean + @gene.digital): luz = estouro de luz dourada; saturado = tela tinge e estoura;
 // foco = entra desfocada e foca; corte = corte seco já mais perto (punch-in); chicote = borrão lateral + glitch
@@ -644,6 +672,11 @@ const CenaWrap: React.FC<{c: CenaC; n: number; idx: number; tin: string; tout: s
         filter: sai > 0 || foco > 0 ? `blur(${sai * 18 + foco}px)` : undefined}}>
         <Comp c={c} f={f} fps={fps} n={n} />
       </AbsoluteFill>
+      {c.etiqueta && (
+        <div style={{position: 'absolute', top: 150, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: ease(f, 4, 12), transform: `translateY(${(1 - ease(f, 4, 12)) * -30}px)`}}>
+          <div style={{fontFamily: 'InterX', fontSize: 38, letterSpacing: 6, textTransform: 'uppercase', color: '#fff', padding: '16px 40px', borderRadius: 60,
+            background: 'rgba(255,255,255,.12)', border: `2px solid rgba(255,255,255,.35)`, boxShadow: `0 10px 40px rgba(0,0,0,.45), inset 0 0 30px rgba(${ACRGB},.18)`}}>{c.etiqueta}</div>
+        </div>)}
     </AbsoluteFill>
   );
 };
@@ -679,6 +712,33 @@ const Transicao: React.FC<{i: number; tipo: string}> = ({i, tipo}) => {
         ))}
       </AbsoluteFill>
     );
+  }
+
+  const cobre = interpolate(f, [2, 8], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)});
+  const abre = interpolate(f, [8, 14], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)});
+  const cor2 = random('cc' + i) > 0.5 ? OURO : VERM;
+  if (tipo === 'varrer') {
+    const x = (cobre - 1) * W + abre * W;   // entra da esquerda cobrindo, sai pela direita
+    return <AbsoluteFill style={{pointerEvents: 'none'}}><div style={{position: 'absolute', left: x, top: 0, width: W, height: H, background: cor2,
+      boxShadow: `-30px 0 0 ${PRETO}, 30px 0 0 ${PRETO}`}} /></AbsoluteFill>;
+  }
+  if (tipo === 'cortina') {
+    const h = (cobre * (1 - abre)) * (H / 2);
+    return <AbsoluteFill style={{pointerEvents: 'none'}}>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: h, background: PRETO, borderBottom: `8px solid ${cor2}`}} />
+      <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: h, background: PRETO, borderTop: `8px solid ${cor2}`}} />
+    </AbsoluteFill>;
+  }
+  if (tipo === 'iris') {
+    const r = (1 - cobre + abre) * 1300;
+    if (r >= 1290) return null;
+    return <AbsoluteFill style={{pointerEvents: 'none', background: `radial-gradient(circle at 50% 50%, transparent ${r}px, ${cor2} ${r}px, ${cor2} ${r + 14}px, ${PRETO} ${r + 14}px)`}} />;
+  }
+  if (tipo === 'relogio') {
+    if (f < 2 || f > 14) return null;
+    const bg = f < 8 ? `conic-gradient(from 0deg at 50% 50%, ${PRETO} 0deg ${cobre * 360}deg, transparent ${cobre * 360}deg)`
+      : `conic-gradient(from 0deg at 50% 50%, transparent 0deg ${abre * 360}deg, ${PRETO} ${abre * 360}deg)`;
+    return <AbsoluteFill style={{pointerEvents: 'none', background: bg}} />;
   }
   return null;   // 'foco' e 'corte' acontecem dentro da própria cena
 };
@@ -735,7 +795,8 @@ const FORMATOS: Record<string, Fmt> = {
 const aplicarFormato = (nome?: string): Fmt => {
   const F = FORMATOS[nome || 'noir'] || FORMATOS.noir;
   OURO = F.pal.OURO; VERM = F.pal.VERM; PRETO = F.pal.PRETO; ACRGB = F.pal.ACRGB; TINTA = F.pal.TINTA;
-  VERMD = F.pal.VERMD; VERML = F.pal.VERML; FRASEF = F.pal.FRASEF; LEGF = F.pal.LEGF; PESOS_TRANS = F.trans;
+  VERMD = F.pal.VERMD; VERML = F.pal.VERML; FRASEF = F.pal.FRASEF; LEGF = F.pal.LEGF;
+  PESOS_TRANS = [...F.trans.map(([n, w]) => [n, w * 0.6] as [string, number]), ['varrer', 0.1], ['cortina', 0.1], ['iris', 0.1], ['relogio', 0.1]];
   ABER = F.aber ?? 1;
   return F;
 };
@@ -977,7 +1038,7 @@ export const SeraphimCortes: React.FC<PropsC> = (props) => {
       {props.batida && <Audio src={staticFile(props.batida)} volume={(props as any).trilha_mix ? 1 : props.audio ? 0.12 : 0.7} />}
       {props.sfx && props.cenas.map((c, i) => (
         <React.Fragment key={'s' + i}>
-          {i > 0 && ['luz', 'saturado', 'chicote'].includes(tipoTrans(c, i)) && <Sequence from={Math.max(0, Math.round((c.inicio - 0.25) * fps))}>
+          {i > 0 && ['luz', 'saturado', 'chicote', 'varrer', 'cortina', 'iris', 'relogio'].includes(tipoTrans(c, i)) && <Sequence from={Math.max(0, Math.round((c.inicio - 0.25) * fps))}>
             <Audio src={staticFile('sfx/whoosh.wav')} volume={tipoTrans(c, i) === 'chicote' ? 0.4 : 0.28} /></Sequence>}
           {['palavra', 'contador', 'painel'].includes(c.tipo) && <Sequence from={Math.round(c.inicio * fps)}><Audio src={staticFile('sfx/impacto.wav')} volume={0.45} /></Sequence>}
           {(c.marcas || []).map((m, k) => (k === 0 && c.tipo === 'palavra') ? null : (
