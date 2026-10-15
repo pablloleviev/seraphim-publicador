@@ -1,0 +1,23 @@
+{
+ "destino": "fila/2026-10-15_1800_4-automacoes-escritorio",
+ "ordem": [
+  1,
+  4,
+  5,
+  6,
+  7,
+  8,
+  2,
+  3
+ ],
+ "urls": [
+  "https://export-download.canva.com/h4If4/DAHYE-h4If4/-1/0/0001-5186414024389438589.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261014%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261014T151712Z&X-Amz-Expires=79692&X-Amz-Signature=2ab78eb94f43e4635cef4afb71fb74b2cf6df3acbccb54ce490868dcc7ad7afc&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Thu%2C%2015%20Oct%202026%2013%3A25%3A24%20GMT",
+  "https://export-download.canva.com/h4If4/DAHYE-h4If4/-1/0/0002-5186414024389438589.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261015%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261015T020941Z&X-Amz-Expires=38817&X-Amz-Signature=8dfacdc66455c72291a5bbff2d27906c2f009ac028a9fccc558f88fc19671e22&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Thu%2C%2015%20Oct%202026%2012%3A56%3A38%20GMT",
+  "https://export-download.canva.com/h4If4/DAHYE-h4If4/-1/0/0003-5186414024389438589.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261015%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261015T010448Z&X-Amz-Expires=45314&X-Amz-Signature=c4fa8b401a70e6f472f30c0bc4f7495fa3c0535ea2451df41d2fae6e45bf8d76&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Thu%2C%2015%20Oct%202026%2013%3A40%3A02%20GMT",
+  "https://export-download.canva.com/h4If4/DAHYE-h4If4/-1/0/0004-5186414024389438589.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261014%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261014T120051Z&X-Amz-Expires=90682&X-Amz-Signature=c42c86d2cb6993ab5fc920a4392da3b49e57b1b81ea7b5a3ba98a86a94465da8&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Thu%2C%2015%20Oct%202026%2013%3A12%3A13%20GMT",
+  "https://export-download.canva.com/h4If4/DAHYE-h4If4/-1/0/0005-5186414024389438589.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261015%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261015T071150Z&X-Amz-Expires=22827&X-Amz-Signature=ed0672c60ffaaed17e5a68a073febb7b140599695e19e3f0a5f891cff170d1b7&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Thu%2C%2015%20Oct%202026%2013%3A32%3A17%20GMT",
+  "https://export-download.canva.com/h4If4/DAHYE-h4If4/-1/0/0006-5186414024389438589.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261015%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261015T105224Z&X-Amz-Expires=7268&X-Amz-Signature=6bc8bf4e3043d80fe57cccf6272306a5011cbc764442b2177d2b5f0f422d590c&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Thu%2C%2015%20Oct%202026%2012%3A53%3A32%20GMT",
+  "https://export-download.canva.com/h4If4/DAHYE-h4If4/-1/0/0007-5186414024389438589.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261014%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261014T180722Z&X-Amz-Expires=68562&X-Amz-Signature=e9134556295f7544ea0e8023e9ed889ccd5b1b9c2ead3c14e4b3f248fe95a53d&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Thu%2C%2015%20Oct%202026%2013%3A10%3A04%20GMT",
+  "https://export-download.canva.com/h4If4/DAHYE-h4If4/-1/0/0008-5186414024389438589.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20261015%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261015T061608Z&X-Amz-Expires=25792&X-Amz-Signature=ce58948a779f627fe839651dec0853bfcbefdfb1f38fad9a02abcd70089dc3d4&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Thu%2C%2015%20Oct%202026%2013%3A26%3A00%20GMT"
+ ]
+}
