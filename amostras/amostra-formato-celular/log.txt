@@ -1,0 +1,83 @@
+ning: 20s
+Rendered 667/718, time remaining: 20s
+Rendered 668/718, time remaining: 20s
+Rendered 669/718, time remaining: 19s
+Rendered 669/718, time remaining: 19s
+Rendered 670/718, time remaining: 19s
+Rendered 671/718, time remaining: 18s
+Rendered 672/718, time remaining: 18s
+Rendered 672/718, time remaining: 18s
+Rendered 673/718, time remaining: 18s
+Rendered 674/718, time remaining: 17s
+Rendered 674/718, time remaining: 17s
+Rendered 675/718, time remaining: 17s
+Rendered 676/718, time remaining: 16s
+Rendered 677/718, time remaining: 16s
+Rendered 677/718, time remaining: 16s
+Rendered 678/718, time remaining: 16s
+Rendered 679/718, time remaining: 15s
+Rendered 679/718, time remaining: 15s
+Rendered 680/718, time remaining: 15s
+Rendered 681/718, time remaining: 14s
+Rendered 682/718, time remaining: 14s
+Rendered 682/718, time remaining: 14s
+Rendered 683/718, time remaining: 14s
+Rendered 684/718, time remaining: 13s
+Rendered 685/718, time remaining: 13s
+Rendered 685/718, time remaining: 13s
+Rendered 686/718, time remaining: 12s
+Rendered 687/718, time remaining: 12s
+Rendered 687/718, time remaining: 12s
+Rendered 688/718, time remaining: 12s
+Rendered 689/718, time remaining: 11s
+Rendered 690/718, time remaining: 11s
+Rendered 690/718, time remaining: 11s
+Rendered 691/718, time remaining: 10s
+Rendered 692/718, time remaining: 10s
+Rendered 692/718, time remaining: 10s
+Rendered 693/718, time remaining: 10s
+Rendered 694/718, time remaining: 9s
+Rendered 695/718, time remaining: 9s
+Rendered 695/718, time remaining: 9s
+Rendered 696/718, time remaining: 8s
+Rendered 697/718, time remaining: 8s
+Rendered 698/718, time remaining: 8s
+Rendered 698/718, time remaining: 8s
+Rendered 699/718, time remaining: 7s
+Rendered 700/718, time remaining: 7s
+Rendered 701/718, time remaining: 6s
+Rendered 702/718, time remaining: 6s
+Rendered 702/718, time remaining: 6s
+Rendered 703/718, time remaining: 6s
+Rendered 704/718, time remaining: 5s
+Rendered 704/718, time remaining: 5s
+Rendered 705/718, time remaining: 5s
+Rendered 706/718, time remaining: 4s
+Rendered 706/718, time remaining: 4s
+Rendered 707/718, time remaining: 4s
+Rendered 708/718, time remaining: 4s
+Rendered 709/718, time remaining: 3s
+Rendered 710/718, time remaining: 3s
+Rendered 710/718, time remaining: 3s
+Rendered 711/718, time remaining: 2s
+Rendered 712/718, time remaining: 2s
+Rendered 712/718, time remaining: 2s
+Rendered 713/718, time remaining: 2s
+Rendered 714/718, time remaining: 1s
+Rendered 715/718, time remaining: 1s
+Rendered 715/718, time remaining: 1s
+Rendered 716/718, time remaining: 0s
+Rendered 717/718, time remaining: 0s
+Stitched 523/718
+Stitched 528/718
+Stitched 541/718
+Stitched 553/718
+Stitched 566/718
+Stitched 574/718
+Stitched 718/718
+Voz: gemini (59 palavras)
+[trilha] trechos: epico 0.0-3.9s | tensao 3.9-18.0s | emocao 18.0-20.7s | epico 20.7-23.9s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/amostras/amostra-formato-celular/video.mp4 (23.9s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
