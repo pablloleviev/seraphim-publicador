@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630252,
+  "telegram_offset": 183630254,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -267,9 +267,17 @@
       "msg_id": 711
     },
     "2026-10-16_1800_4-rotinas-para-eliminar-retrabalho": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-15T19:00:18.200608+00:00",
       "msg_id": 725
+    },
+    "2026-10-16_1900_patio-travado-oficina-mecanica": {
+      "status": "agendado",
+      "enviado_em": "2026-10-15T20:00:19.819674+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 727
     }
   },
   "respondidos": {}
