@@ -54,3 +54,10 @@ Inspiração total, com liberdade para ir além. Mantemos a identidade Seraphim 
 - 2026-10-13: Blue Ocean vira referência principal de carrosséis (nível de design e séries fixas).
 - 2026-10-10: sistema de 9 temas visuais foi REJEITADO pelo Pabllo e removido.
 - 2026-10-09: linha editorial ampliada para tecnologia, sistemas, automação e IA (não só oficina).
+
+
+## ATUALIZAÇÃO 15/10/2026 — carrossel 100% em código (Canva desligado: sem créditos e gastava o limite do Claude)
+- O renderizador (scripts/carrossel.py) agora tem os layouts Blue Ocean/Gene: capa_foto (foto real Pixabay ou Sera + manchete no terço de baixo),
+  capa_noticia (selo de data + recortes com fonte), pilulas (lista numerada), card (cartão de produto com ícone e chips), whatsapp (celular com conversa),
+  comparacao (✕ x ✓), passos (linha do tempo 01-04), citacao, perfil_cta (mockup do perfil + link na bio). Topo com marca e bolinhas de progresso, seta redonda dourada.
+- Regras: misturar pelo menos 4 tipos; 2 slides brancos no miolo; nunca só "numero" em sequência; último = perfil_cta; nunca inventar número.

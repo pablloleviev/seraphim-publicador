@@ -128,14 +128,145 @@ def slide_capa_foto(s, i, n, arroba):
     img = s.get("imagem")
     fundo = f'<div class="foto" style="background-image:url({img})"></div>' if img else \
         f'<div class="bg"></div><img class="seragrande" src="{SERA}/{s.get("sera", "confiante")}.png">'
-    return f"""<html><head><meta charset="utf-8"><style>{CSS}{CSS_EXTRA}</style></head>
-<body>{fundo}<div class="selo">{arroba}</div><div class="cont">{i}/{n}</div>
-<div class="manchete">{fmt(s.get("titulo", ""))}</div>
-<div class="foot" style="justify-content:center"><div class="r"><span class="swipe">ARRASTA →</span></div></div></body></html>"""
+    topo, rod = _chrome(i, n, arroba)
+    rot = f'<div style="position:absolute;left:70px;bottom:{(560 if len(s.get("titulo","")) > 40 else 500)}px;z-index:5"><div class="selon">{s["rotulo"]}</div></div>' if s.get("rotulo") else ""
+    return f"""<html><head><meta charset="utf-8"><style>{CSS}{CSS_EXTRA}{CSS_V2}</style></head>
+<body class="v2">{fundo}{topo}{rot}<div class="manchete" style="text-align:left;font-size:92px;left:70px;right:70px;bottom:170px;z-index:4">{fmt(s.get("titulo", ""))}</div>{rod}</body></html>"""
+
+
+
+# ---------------- layouts "nível Blue Ocean / Gene" (15/10/2026) ----------------
+CSS_V2 = f"""
+.v2 .wrap,.v2 .foot,.v2 .tag{{display:none}}
+.v2 .topo{{position:absolute;left:70px;right:70px;top:54px;display:flex;align-items:center;justify-content:space-between;z-index:5}}
+.v2 .marca{{display:flex;align-items:center;gap:14px;font:800 24px Inter;letter-spacing:5px;color:#F5F5F7}}
+.v2 .marca img{{width:42px;height:42px;border-radius:50%;box-shadow:0 0 0 3px #F5A623}}
+.v2 .dots2{{display:flex;gap:10px}} .v2 .dots2 i{{width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,.22)}}
+.v2 .dots2 i.on{{background:#F5A623;width:38px;border-radius:8px}}
+.v2 .rodape{{position:absolute;left:70px;right:70px;bottom:52px;display:flex;align-items:center;justify-content:space-between;font:500 26px Inter;color:#A1A1AA;z-index:5}}
+.v2 .seta{{width:84px;height:84px;border-radius:50%;background:#F5A623;color:#0A0A0C;display:flex;align-items:center;justify-content:center;font:800 44px Inter;box-shadow:0 10px 30px rgba(245,166,35,.35)}}
+.v2.light{{background:#F4F1EA;color:#0A0A0C}} .v2.light .marca{{color:#0A0A0C}} .v2.light .rodape{{color:#55555c}}
+.v2.light .dots2 i{{background:rgba(0,0,0,.18)}} .v2.light .bg{{background:radial-gradient(circle at 85% 10%,rgba(245,166,35,.22),transparent 45%)}} .v2.light .dots{{opacity:.25}}
+.v2 .corpo{{position:absolute;left:70px;right:70px;top:170px;z-index:4}}
+.v2 .corpo.c{{top:140px;bottom:150px;display:flex;flex-direction:column;justify-content:center}}
+.v2 .rot{{font:800 28px Inter;letter-spacing:5px;color:#F5A623;text-transform:uppercase;margin-bottom:22px}}
+.v2.light .rot{{color:#B86E00}}
+.v2 h2{{font-family:Anton;font-weight:400;text-transform:uppercase;font-size:98px;line-height:1.03;letter-spacing:1px}}
+.v2 h2 .gold{{color:#F5A623}} .v2.light h2 .gold{{color:#B86E00}}
+.v2 .sub{{font:500 38px/1.4 Inter;color:#A1A1AA;margin-top:26px;max-width:900px}} .v2.light .sub{{color:#4a4a52}} .v2 .sub b{{color:#fff}} .v2.light .sub b{{color:#0A0A0C}}
+/* pílulas */
+.pil{{display:flex;align-items:center;gap:26px;background:#15151a;border:2px solid rgba(245,166,35,.35);border-radius:80px;padding:28px 44px 28px 28px;margin-top:28px;box-shadow:0 18px 50px rgba(0,0,0,.45);font:800 44px/1.2 Inter}}
+.pil .n{{flex:0 0 96px;height:96px;border-radius:50%;background:#F5A623;color:#0A0A0C;display:flex;align-items:center;justify-content:center;font:400 46px Anton}}
+.light .pil{{background:#fff;border-color:rgba(10,10,12,.12);box-shadow:0 18px 50px rgba(0,0,0,.12)}}
+/* card de produto */
+.cardp{{background:#16161b;border:2px solid #2a2a31;border-radius:44px;padding:48px;margin-top:40px;box-shadow:0 40px 100px rgba(0,0,0,.55)}}
+.light .cardp{{background:#fff;border-color:#e4e0d6;box-shadow:0 30px 80px rgba(0,0,0,.14)}}
+.cardp .ic{{width:120px;height:120px;border-radius:32px;background:#F5A623;display:flex;align-items:center;justify-content:center;font-size:68px;margin-bottom:30px}}
+.cardp h3{{font:800 54px/1.12 Inter;margin-bottom:18px}} .cardp p{{font:500 38px/1.42 Inter;color:#A1A1AA;margin:0;max-width:none}} .light .cardp p{{color:#4a4a52}}
+.chips{{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px}} .chips span{{font:800 30px Inter;padding:14px 28px;border-radius:40px;background:rgba(245,166,35,.14);color:#F5A623;border:2px solid rgba(245,166,35,.4)}}
+.light .chips span{{color:#8a5200;background:rgba(245,166,35,.2)}}
+/* celular + whatsapp */
+.cel{{position:absolute;left:50%;transform:translateX(-50%);top:440px;width:640px;height:730px;border-radius:70px 70px 0 0;background:#0b0b0e;border:10px solid #2b2b31;border-bottom:none;overflow:hidden;box-shadow:0 40px 120px rgba(0,0,0,.6)}}
+.cel .cab{{height:110px;background:#1f2c34;display:flex;align-items:center;gap:20px;padding:0 30px;color:#fff;font:800 32px Inter}}
+.cel .cab i{{width:64px;height:64px;border-radius:50%;background:#F5A623;display:inline-block}}
+.cel .chat{{padding:26px 24px;background:#0b141a;height:620px;display:flex;flex-direction:column;gap:18px}}
+.bol{{max-width:78%;padding:18px 24px;border-radius:26px;font:500 33px/1.32 Inter;color:#e9edef}}
+.bol.c{{align-self:flex-start;background:#202c33;border-top-left-radius:6px}} .bol.e{{align-self:flex-end;background:#005c4b;border-top-right-radius:6px}}
+.bol small{{display:block;text-align:right;font-size:22px;color:rgba(255,255,255,.5);margin-top:6px}}
+/* comparação */
+.cmp{{display:flex;gap:26px;margin-top:44px}}
+.cmp .col{{flex:1;border-radius:40px;padding:40px 34px;box-shadow:0 30px 80px rgba(0,0,0,.45)}}
+.cmp .ruim{{background:#1a1114;border:2px solid rgba(229,72,77,.5)}} .cmp .bom{{background:#171309;border:2px solid rgba(245,166,35,.6)}}
+.light .cmp .ruim{{background:#fff1f1}} .light .cmp .bom{{background:#fff7e6}}
+.cmp h4{{font:800 30px Inter;letter-spacing:4px;text-transform:uppercase;margin-bottom:26px}} .cmp .ruim h4{{color:#ff6b6f}} .cmp .bom h4{{color:#F5A623}} .light .cmp .bom h4{{color:#B86E00}}
+.cmp li{{list-style:none;font:500 40px/1.3 Inter;padding:24px 0 24px 62px;position:relative;border-top:1px solid rgba(255,255,255,.1)}} .light .cmp li{{border-color:rgba(0,0,0,.1)}}
+.cmp li:first-of-type{{border-top:none}}
+.cmp .ruim li:before{{content:"✕";position:absolute;left:0;color:#ff6b6f;font-weight:800}} .cmp .bom li:before{{content:"✓";position:absolute;left:0;color:#F5A623;font-weight:800}}
+.light .cmp .bom li:before{{color:#B86E00}}
+/* passos */
+.pas{{position:relative;margin-top:36px;padding-left:130px}}
+.pas:before{{content:"";position:absolute;left:49px;top:30px;bottom:30px;width:6px;background:linear-gradient(#F5A623,rgba(245,166,35,.15));border-radius:4px}}
+.pas .p{{position:relative;margin-bottom:46px;font:500 42px/1.3 Inter}} .pas .p b{{display:block;font:800 54px/1.15 Inter;margin-bottom:6px}}
+.pas .p i{{position:absolute;left:-130px;top:-4px;width:104px;height:104px;border-radius:50%;background:#0A0A0C;border:6px solid #F5A623;color:#F5A623;display:flex;align-items:center;justify-content:center;font:400 52px Anton;font-style:normal}}
+.light .pas .p i{{background:#F4F1EA;color:#B86E00;border-color:#B86E00}}
+/* citação */
+.asp{{font:400 520px/0.7 Anton;color:#F5A623;opacity:.9;margin:20px 0 -30px}}
+.cit{{font:800 74px/1.14 Inter;letter-spacing:-1px}} .cit .gold{{color:#F5A623}} .light .cit .gold{{color:#B86E00}}
+/* notícia */
+.selon{{display:inline-block;background:#F5A623;color:#0A0A0C;font:800 30px Inter;letter-spacing:3px;padding:14px 28px;border-radius:12px;text-transform:uppercase}}
+.rec{{position:absolute;left:70px;right:70px;background:#F4F1EA;color:#0A0A0C;border-radius:14px;padding:26px 32px;box-shadow:0 24px 60px rgba(0,0,0,.55);font:800 38px/1.18 Inter}}
+.rec small{{display:block;font:600 24px Inter;color:#6a6a72;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}}
+/* perfil */
+.perf{{background:#fff;color:#0A0A0C;border-radius:44px;padding:46px;margin-top:44px;box-shadow:0 40px 110px rgba(0,0,0,.55)}}
+.perf .l1{{display:flex;align-items:center;gap:30px}} .perf .av{{width:150px;height:150px;border-radius:50%;box-shadow:0 0 0 6px #F5A623;background:#0A0A0C}}
+.perf .nm{{font:800 44px Inter}} .perf .bio{{font:500 33px/1.35 Inter;color:#3a3a40;margin-top:26px}}
+.perf .lnk{{margin-top:26px;display:inline-block;font:800 36px Inter;color:#0A56D6;background:rgba(10,86,214,.1);padding:14px 26px;border-radius:16px;outline:4px solid #F5A623}}
+.btn{{margin-top:44px;background:#F5A623;color:#0A0A0C;border-radius:80px;text-align:center;font:800 46px Inter;padding:34px;box-shadow:0 20px 60px rgba(245,166,35,.35)}}
+"""
+
+def _chrome(i, n, arroba, light=False, ultimo=False):
+    dots = "".join(f'<i class="{"on" if k == i else ""}"></i>' for k in range(1, n + 1)) if n <= 10 else f"{i}/{n}"
+    topo = f'<div class="topo"><div class="marca"><img src="{ICONE}">SERAPHIM</div><div class="dots2">{dots}</div></div>'
+    rod = f'<div class="rodape"><span>{arroba}</span>' + ('' if ultimo else '<div class="seta">→</div>') + '</div>'
+    return topo, rod
+
+
+def _pag(corpo, i, n, arroba, light=False, extra="", ultimo=False):
+    topo, rod = _chrome(i, n, arroba, light, ultimo)
+    return f"""<html><head><meta charset="utf-8"><style>{CSS}{CSS_EXTRA}{CSS_V2}</style></head>
+<body class="v2{' light' if light else ''}"><div class="bg"></div><div class="dots"></div>{extra}{topo}{corpo}{rod}</body></html>"""
+
+
+def _cab(s):
+    r = f'<div class="rot">{s["rotulo"]}</div>' if s.get("rotulo") else ""
+    return r + f'<h2>{fmt(s.get("titulo", ""))}</h2>' + (f'<div class="sub">{fmt(s["texto"])}</div>' if s.get("texto") else "")
+
+
+def slide_v2(s, i, n, arroba):
+    t = s.get("tipo"); light = s.get("fundo") == "branco"; ult = i == n
+    if t == "pilulas":
+        its = "".join(f'<div class="pil"><div class="n">{k}</div><div>{fmt(x if isinstance(x, str) else x.get("texto", ""))}</div></div>' for k, x in enumerate(s.get("itens", [])[:5], 1))
+        return _pag(f'<div class="corpo c">{_cab(s)}<div style="margin-top:30px">{its}</div></div>', i, n, arroba, light, ultimo=ult)
+    if t == "card":
+        chips = "".join(f"<span>{c}</span>" for c in s.get("chips", [])[:4])
+        c = s.get("card") or s.get("texto", "")
+        return _pag(f'<div class="corpo c">{_cab({"rotulo": s.get("rotulo"), "titulo": s.get("titulo")})}<div class="cardp"><div class="ic">{s.get("icone", "⚙️")}</div>'
+                    f'<h3>{fmt(s.get("subtitulo", ""))}</h3><p>{fmt(c)}</p>{("<div class=chips>" + chips + "</div>") if chips else ""}</div></div>', i, n, arroba, light, ultimo=ult)
+    if t == "whatsapp":
+        bs = "".join(f'<div class="bol {"c" if m.get("de", "cliente") == "cliente" else "e"}">{m.get("texto", "")}<small>{m.get("hora", "")}</small></div>' for m in s.get("mensagens", [])[:6])
+        return _pag(f'<div class="corpo">{_cab(s)}</div><div class="cel"><div class="cab"><i></i>{s.get("contato", "Cliente")}</div><div class="chat">{bs}</div></div>', i, n, arroba, light, ultimo=ult)
+    if t == "comparacao":
+        def col(c, cls):
+            return f'<div class="col {cls}"><h4>{c.get("rotulo", "")}</h4><ul style="padding:0;margin:0">' + "".join(f"<li>{fmt(x)}</li>" for x in c.get("itens", [])[:4]) + "</ul></div>"
+        return _pag(f'<div class="corpo c">{_cab({"rotulo": s.get("rotulo"), "titulo": s.get("titulo")})}<div class="cmp">{col(s.get("esquerda", {}), "ruim")}{col(s.get("direita", {}), "bom")}</div>'
+                    f'{("<div class=sub>" + fmt(s["texto"]) + "</div>") if s.get("texto") else ""}</div>', i, n, arroba, light, ultimo=ult)
+    if t == "passos":
+        ps = "".join(f'<div class="p"><i>{k}</i><b>{fmt(x.get("titulo", "") if isinstance(x, dict) else x)}</b>{fmt(x.get("texto", "")) if isinstance(x, dict) else ""}</div>' for k, x in enumerate(s.get("itens", [])[:4], 1))
+        return _pag(f'<div class="corpo c">{_cab({"rotulo": s.get("rotulo"), "titulo": s.get("titulo")})}<div class="pas">{ps}</div></div>', i, n, arroba, light, ultimo=ult)
+    if t == "citacao":
+        return _pag(f'<div class="corpo c"><div class="asp">“</div><div class="cit">{fmt(s.get("titulo", ""))}</div>'
+                    f'{("<div class=sub>" + fmt(s["texto"]) + "</div>") if s.get("texto") else ""}</div>', i, n, arroba, light, ultimo=ult)
+    if t == "perfil_cta":
+        corpo = (f'<div class="corpo c">{_cab({"titulo": s.get("titulo")})}<div class="perf"><div class="l1"><img class="av" src="{ICONE}"><div><div class="nm">{arroba}</div>'
+                 f'<div style="font:500 30px Inter;color:#6a6a72">Seraphim • IA e automação</div></div></div>'
+                 f'<div class="bio">{fmt(s.get("bio", "Tecnologia, IA e automação para pequenas empresas crescerem sem complicação."))}</div>'
+                 f'<div class="lnk">🔗 {s.get("link", "link na bio")}</div></div><div class="btn">{s.get("botao", "Clique no link da bio")}</div>'
+                 f'{("<div class=sub style=text-align:center>" + fmt(s["texto"]) + "</div>") if s.get("texto") else ""}</div>')
+        return _pag(corpo, i, n, arroba, light, ultimo=True)
+    if t == "capa_noticia":
+        rec = ""
+        for k, r in enumerate(s.get("recortes", [])[:3]):
+            rec += f'<div class="rec" style="top:{700 + k * 165}px;transform:rotate({[-2.2, 1.6, -1.2][k]}deg)"><small>{r.get("fonte", "")}</small>{r.get("texto", "")}</div>'
+        selo = f'<div class="selon">{s.get("selo", "ESTA SEMANA")}</div>'
+        return _pag(f'<div class="corpo" style="top:170px">{selo}<h2 style="margin-top:34px;font-size:112px">{fmt(s.get("titulo", ""))}</h2></div>{rec}', i, n, arroba, False, ultimo=False)
+    return None
 
 
 def slide_html(s: dict, i: int, n: int, arroba: str, tema: str = None) -> str:
     tipo = s.get("tipo", "texto")
+    v2 = slide_v2(s, i, n, arroba)
+    if v2:
+        return v2
     if tipo == "capa_foto":
         return slide_capa_foto(s, i, n, arroba)
     if tipo == "simples":
@@ -168,6 +299,25 @@ def slide_html(s: dict, i: int, n: int, arroba: str, tema: str = None) -> str:
 </body></html>"""
 
 
+def _foto_pixabay(busca, destino):
+    import os, urllib.parse, urllib.request
+    chave = os.environ.get("PIXABAY_API_KEY")
+    if not chave or not busca:
+        return None
+    try:
+        url = f"https://pixabay.com/api/?key={chave}&q={urllib.parse.quote(busca[:90])}&image_type=photo&orientation=vertical&safesearch=true&per_page=20&order=popular"
+        hits = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read()).get("hits", [])
+        import random
+        random.Random(busca).shuffle(hits)
+        for h in hits[:6]:
+            dados = urllib.request.urlopen(urllib.request.Request(h.get("largeImageURL") or h["webformatURL"], headers={"User-Agent": "Mozilla/5.0"}), timeout=90).read()
+            if len(dados) > 30000:
+                destino.write_bytes(dados); return destino
+    except Exception as e:
+        print(f"[aviso] foto do carrossel: {e}")
+    return None
+
+
 async def main(caminho: str, saida_dir: str = None):
     spec = json.loads(Path(caminho).read_text(encoding="utf-8"))
     nome = spec.get("nome", Path(caminho).stem)
@@ -175,6 +325,11 @@ async def main(caminho: str, saida_dir: str = None):
     slides = spec["slides"]
     saida = Path(saida_dir) if saida_dir else RAIZ / "entrega" / "carrosseis" / nome
     saida.mkdir(parents=True, exist_ok=True)
+    for k, sl in enumerate(slides):
+        if sl.get("tipo") == "capa_foto" and sl.get("busca") and not sl.get("imagem"):
+            f = _foto_pixabay(sl["busca"], saida / f"_foto{k}.jpg")
+            if f:
+                sl["imagem"] = f.as_uri()
     async with async_playwright() as p:
         nav = await p.chromium.launch()
         pg = await nav.new_page(viewport={"width": 1080, "height": 1350})
@@ -185,6 +340,8 @@ async def main(caminho: str, saida_dir: str = None):
             await pg.wait_for_timeout(250)
             await pg.screenshot(path=str(saida / f"slide-{i:02d}.png"))
         tmp.unlink()
+        for f in saida.glob('_foto*.jpg'):
+            f.unlink()
         await nav.close()
     if spec.get("legenda"):
         (saida / "legenda.txt").write_text(spec["legenda"], encoding="utf-8")

@@ -261,7 +261,7 @@ REGRAS DE QUALIDADE (obrigatórias):
 {REGRAS_FUNIL}
 FICHA DO AUTOFLOW:
 {FICHA_AUTOFLOW}
-- Carrossel (estilo de carrossel viral): capa com manchete forte = número + ferramenta/assunto conhecido + promessa ou segredo (ex.: "5 comandos pra fazer o ChatGPT trabalhar na sua empresa", "3 erros que fazem seu cliente sumir"); a capa promete exatamente a quantidade de itens do miolo; miolo com 1 item por slide (título curto + explicação ou comando pronto pra copiar); último slide = chamada (seguir/salvar). Carrossel: 6 a 9 slides; tipos capa, numero, texto (pode ter "card"); primeiro e último são "capa"; títulos usam | para quebrar linha.
+- Carrossel (estilo de carrossel viral): capa com manchete forte = número + ferramenta/assunto conhecido + promessa ou segredo (ex.: "5 comandos pra fazer o ChatGPT trabalhar na sua empresa", "3 erros que fazem seu cliente sumir"); a capa promete exatamente a quantidade de itens do miolo; miolo com 1 item por slide (título curto + explicação ou comando pronto pra copiar); último slide = chamada (seguir/salvar). Carrossel: 7 a 9 slides, nível Blue Ocean/Gene, com VARIEDADE de layouts (nunca só "numero" em sequência). Tipos: capa_foto {{rotulo,titulo,busca(inglês, p/ foto real vertical) ou sera}}, capa_noticia {{selo,titulo,recortes:[{{fonte,texto}}x3]}} (só com notícia real e fonte), pilulas {{rotulo,titulo,texto,itens:[3-5 textos curtos]}}, card {{rotulo,titulo,icone(emoji),subtitulo,card,chips:[2-4]}}, whatsapp {{rotulo,titulo,contato,mensagens:[{{de:cliente|empresa,texto,hora}}x2-5]}}, comparacao {{rotulo,titulo,esquerda:{{rotulo,itens[3]}},direita:{{rotulo,itens[3]}}}}, passos {{rotulo,titulo,itens:[{{titulo,texto}}x3-4]}}, citacao {{titulo,texto}}, numero/texto/capa (clássicos), perfil_cta {{titulo,texto}} (SEMPRE o último). Primeiro slide: capa_foto, capa_noticia ou capa. Use "fundo":"branco" em 2 slides do miolo (ritmo escuro→claro). Misture pelo menos 4 tipos diferentes. Nunca invente número/estatística; títulos usam | para quebrar linha e *destaque* em dourado.
 - Legenda (Instagram): ÚNICA para cada post, ligada ao gancho e ao assunto; 2 a 4 linhas curtas com emoji, uma pergunta que puxa comentário e a chamada do funil; SEM hashtags dentro dela.
 - "legenda_tiktok": legenda própria para o TikTok (mais curta e direta, 1 a 2 linhas, tom de conversa), diferente da do Instagram.
 - "hashtags": 8 a 12 hashtags relevantes para AQUELE post (misture 3 amplas, 5 do nicho/assunto e 2 de público, ex.: #inteligenciaartificial #chatgpt #pequenasempresas #empreendedorismo #automacao), sempre incluindo #seraphimbr; nunca #seraphimpublicador.
@@ -433,13 +433,21 @@ def main():
                          "cenas": [c.get("tipo") for c in v["cenas"]], "buscas": buscas})
             criados += 1
         for hora, c in zip(hc, plano.get("carrosseis", [])):
-            slides = [s for s in c.get("slides", []) if s.get("titulo")]
+            slides = [s for s in c.get("slides", []) if s.get("titulo") or s.get("tipo") == "perfil_cta"]
             if len(slides) < 4:
                 print("[aviso] carrossel descartado: poucos slides"); continue
             for s in slides:
                 if s.get("sera") not in POSES:
                     s.pop("sera", None)
-                s["titulo"] = re.sub(r"\s+([?!.,:;])", r"\1", s["titulo"])
+                s["titulo"] = re.sub(r"\s+([?!.,:;])", r"\1", s.get("titulo", ""))
+                tp = s.get("tipo")
+                falta = {"pilulas": not s.get("itens"), "whatsapp": not s.get("mensagens"), "passos": not s.get("itens"),
+                         "comparacao": not (s.get("esquerda") and s.get("direita")), "capa_noticia": not s.get("recortes"),
+                         "card": not (s.get("card") or s.get("texto"))}.get(tp)
+                if falta:
+                    s["tipo"] = "texto"
+            if slides[-1].get("tipo") not in ("perfil_cta", "capa"):
+                slides.append({"tipo": "perfil_cta", "titulo": "Gostou? *Salva* e segue", "texto": "Siga a @seraphimbr_ para mais."})
             nome = slug(c.get("nome") or c.get("titulo", "carrossel"))
             while nome in nomes:
                 nome += "-2"
@@ -458,11 +466,6 @@ def main():
             (destino / "item.json").write_text(json.dumps({
                 "tipo": "carrossel", "legenda": c.get("legenda", "").strip() + "\n\n👉 Seraphim, link na bio.\n\n" + HT,
                 "quando": f"{dia}T{hora}:00-03:00"}, ensure_ascii=False, indent=2), encoding="utf-8")
-            # versão Canva (feita pela sessão agendada; esta versão em código fica de reserva)
-            (RAIZ / "canva" / "pendentes").mkdir(parents=True, exist_ok=True)
-            (RAIZ / "canva" / "pendentes" / f"{destino.name}.json").write_text(json.dumps({
-                "destino": str(destino.relative_to(RAIZ)), "titulo": c.get("titulo", nome), "formato": c.get("formato", ""),
-                "slides": slides, "legenda": c.get("legenda", "")}, ensure_ascii=False, indent=1), encoding="utf-8")
             hist.append({"nome": nome, "titulo": c.get("titulo", nome), "formato": c.get("formato", ""), "dia": str(dia), "tipo": "carrossel", "tema": tema})
             criados += 1
         HIST.write_text(json.dumps(hist, ensure_ascii=False, indent=1), encoding="utf-8")
