@@ -776,5 +776,82 @@
   "dia": "2026-10-17",
   "tipo": "carrossel",
   "tema": "noir"
+ },
+ {
+  "nome": "o-sumico-dos-comprovantes",
+  "funil": "meio",
+  "titulo": "Onde foi parar aquele comprovante?",
+  "formato": "história curta de cliente",
+  "dia": "2026-10-18",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "story",
+  "cenas": [
+   "cards",
+   "frase",
+   "digitando",
+   "foto",
+   "interruptor",
+   "serifa",
+   "cta"
+  ],
+  "buscas": [
+   "worried accountant office calculator late",
+   "crumpled paper receipts table",
+   "organized digital document tablet"
+  ]
+ },
+ {
+  "nome": "usinas-nucleares-e-ia",
+  "funil": "topo",
+  "titulo": "Por que a IA está reativando usinas nucleares?",
+  "formato": "mito vs verdade",
+  "dia": "2026-10-18",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "vhs",
+  "cenas": [
+   "palavra",
+   "frase",
+   "niveis",
+   "foto",
+   "painel",
+   "digitando",
+   "serifa",
+   "cta"
+  ],
+  "buscas": [
+   "cooling towers nuclear plant steam"
+  ]
+ },
+ {
+  "nome": "a-era-dos-agentes-autonomos",
+  "funil": "topo",
+  "titulo": "Por que 2026 é o ano dos Agentes de IA?",
+  "formato": "checklist",
+  "dia": "2026-10-18",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noticia",
+  "cenas": [
+   "painel",
+   "frase",
+   "digitando",
+   "foto",
+   "checklist",
+   "serifa",
+   "cta"
+  ],
+  "buscas": [
+   "high tech server room glowing data"
+  ]
+ },
+ {
+  "nome": "4-vazamentos-de-lucro-operacao",
+  "titulo": "4 vazamentos de lucro que ninguém percebe na operação",
+  "formato": "lista prática",
+  "dia": "2026-10-18",
+  "tipo": "carrossel",
+  "tema": "noir"
  }
 ]

@@ -1,0 +1,79 @@
+{
+ "nome": "o-sumico-dos-comprovantes",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-18 08:00",
+ "cenas": [
+  {
+   "tipo": "cards",
+   "itens": [
+    {
+     "rotulo": "desespero:",
+     "busca": "crumpled paper receipts table"
+    },
+    {
+     "rotulo": "organizado:",
+     "busca": "organized digital document tablet"
+    }
+   ],
+   "clima": "tensao",
+   "narracao": "Final do mês e começou o desespero: cadê o comprovante daquela compra?"
+  },
+  {
+   "tipo": "frase",
+   "texto": "um funcionário mandou no whatsapp",
+   "destaque": "whatsapp",
+   "clima": "sombrio",
+   "narracao": "Um mandou foto no WhatsApp, outro guardou o papel amassado no bolso."
+  },
+  {
+   "tipo": "digitando",
+   "topo": "O RESULTADO:",
+   "texto": "HORAS PERDIDAS",
+   "clima": "tensao",
+   "narracao": "O resultado? Você gasta horas caçando notas fiscais em conversas antigas."
+  },
+  {
+   "tipo": "foto",
+   "busca": "worried accountant office calculator late",
+   "texto": "FECHAMENTO DO MÊS",
+   "sub": "travado por falta de papel",
+   "tom": "vermelho",
+   "clima": "tensao",
+   "narracao": "O fechamento do mês trava inteiro porque falta comprovar uma despesa básica."
+  },
+  {
+   "tipo": "interruptor",
+   "rotulo": "Rotina fiscal",
+   "texto": "foto solta no chat?",
+   "sub": "pasta em nuvem padronizada",
+   "valor": 0.5,
+   "clima": "emocao",
+   "narracao": "A solução não é bronca: é criar uma rotina simples onde o recibo cai no lugar certo na hora."
+  },
+  {
+   "tipo": "serifa",
+   "texto": "Empresa organizada não depende de memória, depende de processo definido.",
+   "clima": "inspira",
+   "narracao": "Empresa organizada não depende de memória, depende de processo claro."
+  },
+  {
+   "tipo": "cta",
+   "texto": "COMENTA *FISCAL*",
+   "pose": "confiante",
+   "clima": "energia",
+   "narracao": "Comenta FISCAL aqui no post que eu te mando no direct um checklist prático pra resolver isso.",
+   "funil": "meio"
+  }
+ ],
+ "motor": "cortes",
+ "formato": "story",
+ "titulo": "Onde foi parar aquele comprovante?",
+ "numero": 1,
+ "funil": "meio",
+ "genero_voz": "feminina",
+ "legenda": "Você ainda passa horas procurando comprovante em conversa de WhatsApp no fechamento do mês? 📄\n\nEssa falta de rotina trava o financeiro e consome um tempo precioso de gestão.\n\nComenta FISCAL que te envio no direct um checklist prático para organizar de vez a rotina fiscal da sua empresa!\n\n#seraphimbr #gestaofinanceira #pequenasempresas #financasempresariais #rotinafiscal #empreendedorismo #produtividade #organizacao #negocioslocais",
+ "legenda_tiktok": "Aquele comprovante fiscal que sumiu no WhatsApp... já passou por esse estresse no fechamento do mês?\n\n#seraphimbr #gestaofinanceira #pequenasempresas #financasempresariais #rotinafiscal",
+ "palavra_chave": "FISCAL",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/o-sumico-dos-comprovantes/",
+ "material_titulo": "Checklist de Organização Fiscal Sem Caos"
+}
