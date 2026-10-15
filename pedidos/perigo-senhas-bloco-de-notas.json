@@ -1,0 +1,76 @@
+{
+ "nome": "perigo-senhas-bloco-de-notas",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-17 19:00",
+ "cenas": [
+  {
+   "tipo": "pergunta",
+   "texto": "você ainda anota *senhas* no bloco de notas?",
+   "pose": "preocupado",
+   "clima": "tensao",
+   "narracao": "Você ainda guarda as senhas da sua empresa num arquivo de texto ou salva tudo no navegador?"
+  },
+  {
+   "tipo": "cards",
+   "itens": [
+    {
+     "rotulo": "arriscado:",
+     "busca": "yellow sticky note desk pen"
+    },
+    {
+     "rotulo": "seguro:",
+     "busca": "cyber security digital padlock glow"
+    }
+   ],
+   "clima": "sombrio",
+   "narracao": "Deixar acesso de banco, e-mail e sistemas anotados em post-it ou planilha é uma porta aberta para invasões."
+  },
+  {
+   "tipo": "interruptor",
+   "rotulo": "Acesso fácil",
+   "texto": "salvo no navegador",
+   "sub": "vulnerável a vazamentos",
+   "valor": 0.5,
+   "clima": "tensao",
+   "narracao": "Qualquer vírus simples no computador consegue copiar os dados salvos automaticamente nos navegadores."
+  },
+  {
+   "tipo": "contador",
+   "rotulo": "Ex.: Prejuízo com contas invadidas",
+   "de": 0,
+   "para": 1500,
+   "sufixo": " R$",
+   "narracao": "O prejuízo para recuperar contas bloqueadas ou dados sequestrados custa caro e paralisa a operação."
+  },
+  {
+   "tipo": "frase",
+   "texto": "use um gerenciador de senhas seguro",
+   "destaque": "gerenciador",
+   "clima": "energia",
+   "narracao": "A solução é simples e rápida: migre hoje para um gerenciador de senhas criptografado."
+  },
+  {
+   "tipo": "serifa",
+   "texto": "A sua segurança digital define o futuro da sua empresa.",
+   "clima": "inspira",
+   "narracao": "Sua equipe acessa tudo com um clique, sem ninguém saber a senha mestre e com proteção total."
+  },
+  {
+   "tipo": "cta",
+   "texto": "SEGUE A *SERAPHIM* PRA SE PROTEGER",
+   "pose": "confiante",
+   "clima": "epico",
+   "narracao": "Proteja o seu negócio antes do susto acontecer. Segue a Seraphim para mais segurança e tecnologia.",
+   "funil": "topo"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Se alguém entrar no seu computador agora, consegue achar todas as suas senhas em menos de 2 minutos? 🔐\n\nManter logins em blocos de notas, planilhas ou salvos soltos no navegador é o erro de segurança mais comum em pequenas empresas.\n\nComo você organiza as senhas da sua equipe hoje?\n\nSegue a @seraphimbr_ para aprender a blindar sua empresa com tecnologia acessível.\n\n#segurancadigital #tecnologia #pequenasempresas #gestaoempresarial #produtividade #ciberseguranca #dicasdetecnologia #empreendedorismo #seraphimbr",
+ "legenda_tiktok": "Você ainda anota senhas no bloco de notas? Cuidado com o risco! Segue a @seraphimbr_ para se proteger.\n\n#segurancadigital #tecnologia #pequenasempresas #gestaoempresarial #produtividade #seraphimbr",
+ "formato": "hud",
+ "voz": "gemini-so",
+ "titulo": "Onde você guarda as senhas da empresa?",
+ "numero": 0
+}

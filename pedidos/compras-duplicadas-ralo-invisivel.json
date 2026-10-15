@@ -1,0 +1,88 @@
+{
+ "nome": "compras-duplicadas-ralo-invisivel",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-16 08:00",
+ "cenas": [
+  {
+   "tipo": "interruptor",
+   "rotulo": "Compra urgente",
+   "texto": "repor o estoque agora?",
+   "sub": "já tinha no armário",
+   "valor": 0.5,
+   "clima": "tensao",
+   "narracao": "Toda semana você compra material achando que acabou, mas ele só estava escondido no fundo da prateleira."
+  },
+  {
+   "tipo": "foto",
+   "busca": "cluttered warehouse shelves boxes",
+   "texto": "DINHEIRO PARADO",
+   "sub": "no estoque esquecido",
+   "tom": "vermelho",
+   "clima": "sombrio",
+   "narracao": "O resultado é dinheiro da empresa parado em caixa que ninguém vê."
+  },
+  {
+   "tipo": "niveis",
+   "texto": "Gargalos comuns",
+   "itens": [
+    "Sem catálogo rápido",
+    "Sem contagem semanal",
+    "Compra em duplicidade"
+   ],
+   "clima": "tensao",
+   "narracao": "Sem catálogo rápido, sem contagem semanal e sem aprovação centralizada, o desperdício é garantido."
+  },
+  {
+   "tipo": "digitando",
+   "topo": "PASSO 1:",
+   "texto": "REGISTRE ANTES",
+   "clima": "energia",
+   "narracao": "O primeiro passo é simples: registrar a entrada antes de guardar."
+  },
+  {
+   "tipo": "sera",
+   "pose": "pensando",
+   "texto": "visão total",
+   "clima": "inspira",
+   "narracao": "Quando o estoque fica visível na tela, ninguém compra peça repetida por engano."
+  },
+  {
+   "tipo": "checklist",
+   "rotulo": "Rotina de Estoque",
+   "itens": [
+    "Conferência rápida",
+    "Estoque mínimo",
+    "Aprovação única"
+   ],
+   "clima": "energia",
+   "narracao": "Você ganha clareza, economiza caixa e para de jogar dinheiro fora com duplicidade."
+  },
+  {
+   "tipo": "frase",
+   "texto": "corte o gasto invisível hoje",
+   "destaque": "invisível",
+   "clima": "emocao",
+   "narracao": "Gestão inteligente começa cortando o gasto invisível."
+  },
+  {
+   "tipo": "cta",
+   "texto": "COMENTA *COMPRAS*",
+   "pose": "confiante",
+   "clima": "epico",
+   "narracao": "Comenta COMPRAS aqui embaixo que eu te envio esse checklist prático no direct e segue a Seraphim.",
+   "funil": "meio"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Já comprou algo para a empresa e depois descobriu que já tinha no fundo do armário? 📦\n\nEsse é um dos ralos que mais consom o caixa sem você perceber.\n\nComente COMPRAS para receber nosso checklist prático de controle de insumos no direct!\n\n#gestaofinanceira #estoque #pequenasempresas #organizacaoempresarial #gestaoempresarial #fluxodecaixa #produtividade #seraphimbr",
+ "legenda_tiktok": "O ralo invisível da sua empresa que leva dinheiro embora todo mês sem você notar. Comenta COMPRAS!\n\n#gestaofinanceira #estoque #pequenasempresas #organizacaoempresarial #gestaoempresarial #seraphimbr",
+ "palavra_chave": "COMPRAS",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/compras-duplicadas-ralo-invisivel/",
+ "material_titulo": "Checklist de Controle de Compras e Insumos",
+ "formato": "terminal",
+ "voz": "gemini-so",
+ "titulo": "O gasto invisível das compras duplicadas",
+ "numero": 0
+}

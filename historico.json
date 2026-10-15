@@ -643,7 +643,8 @@
   ],
   "buscas": [
    "cluttered warehouse shelves boxes"
-  ]
+  ],
+  "formato_edicao": "terminal"
  },
  {
   "nome": "ia-que-usa-computador-sozinha",
@@ -666,7 +667,8 @@
    "developer coding multi monitor desk",
    "futuristic robotic hand typing keyboard",
    "sleek modern computer workspace"
-  ]
+  ],
+  "formato_edicao": "celular"
  },
  {
   "nome": "patio-travado-oficina-mecanica",
@@ -689,7 +691,8 @@
    "mechanic garage repair shop vehicle lift",
    "paper receipts messy mechanic counter",
    "mechanic holding tablet vehicle diagnostic"
-  ]
+  ],
+  "formato_edicao": "eletrico"
  },
  {
   "nome": "4-rotinas-para-eliminar-retrabalho",
@@ -718,7 +721,8 @@
   ],
   "buscas": [
    "person speaking microphone studio podcast"
-  ]
+  ],
+  "formato_edicao": "documentario"
  },
  {
   "nome": "como-organizar-caixa-de-entrada-ia",
@@ -739,7 +743,8 @@
   ],
   "buscas": [
    "person drinking coffee relaxed office desk"
-  ]
+  ],
+  "formato_edicao": "navegador"
  },
  {
   "nome": "perigo-senhas-bloco-de-notas",
@@ -761,7 +766,8 @@
   "buscas": [
    "yellow sticky note desk pen",
    "cyber security digital padlock glow"
-  ]
+  ],
+  "formato_edicao": "hud"
  },
  {
   "nome": "5-coisas-para-ia-analisar-hoje",

@@ -1,0 +1,86 @@
+{
+ "nome": "ia-que-usa-computador-sozinha",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-16 12:00",
+ "cenas": [
+  {
+   "tipo": "parede",
+   "buscas": [
+    "futuristic robotic hand typing keyboard",
+    "sleek modern computer workspace"
+   ],
+   "texto": "IA NO TECLADO",
+   "clima": "epico",
+   "narracao": "Você sabia que a inteligência artificial agora consegue mexer no computador igual a uma pessoa?"
+  },
+  {
+   "tipo": "digitando",
+   "topo": "NOVIDADE:",
+   "texto": "AGENTES DE TELA",
+   "clima": "energia",
+   "narracao": "Em vez de só gerar texto, novos modelos olham a tela e clicam onde você precisa."
+  },
+  {
+   "tipo": "foto",
+   "busca": "developer coding multi monitor desk",
+   "texto": "CONTROLE TOTAL",
+   "sub": "mouse e janelas",
+   "tom": "dourado",
+   "clima": "inspira",
+   "narracao": "Eles abrem programas antigos, copiam dados soltos e preenchem formulários inteiros sozinhos."
+  },
+  {
+   "tipo": "painel",
+   "rotulo": "Automação de Tela",
+   "valor": 95,
+   "texto": "Sistemas antigos conectados",
+   "clima": "energia",
+   "narracao": "Até aquele sistema antigo do seu negócio agora pode ser operado por automação inteligente."
+  },
+  {
+   "tipo": "diagrama",
+   "passos": [
+    {
+     "icone": "tela",
+     "rotulo": "enxerga tela"
+    },
+    {
+     "icone": "robo",
+     "rotulo": "decide clique"
+    },
+    {
+     "icone": "check",
+     "rotulo": "tarefa pronta"
+    }
+   ],
+   "clima": "inspira",
+   "narracao": "A máquina enxerga a janela, decide o clique e resolve tarefas chatas em segundos."
+  },
+  {
+   "tipo": "serifa",
+   "itens": [
+    "Não troque de software agora.",
+    "Coloque a IA para operar o que você já usa."
+   ],
+   "clima": "emocao",
+   "narracao": "O futuro não é trocar seus sistemas, mas deixar a IA operá-los por você."
+  },
+  {
+   "tipo": "cta",
+   "texto": "SEGUE A *SERAPHIM*",
+   "pose": "confiante",
+   "clima": "epico",
+   "narracao": "Pra dominar essas inovações no seu negócio antes de todo mundo, segue a Seraphim.",
+   "funil": "topo"
+  }
+ ],
+ "motor": "cortes",
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "A inteligência artificial aprendeu a usar o mouse e o teclado. 🖱️🤖\n\nOs novos agentes visuais conseguem olhar monitores e preencher sistemas sem precisar de integrações complexas.\n\nQual tarefa repetitiva no computador você passaria para uma IA hoje? Segue a Seraphim para não perder nada!\n\n#inteligenciaartificial #tecnologia #inovacao #ia #futurodotrabalho #automacao #produtividade #seraphimbr",
+ "legenda_tiktok": "A IA agora clica no mouse e digita no teclado por você. Olha como isso muda qualquer trabalho!\n\n#inteligenciaartificial #tecnologia #inovacao #ia #futurodotrabalho #seraphimbr",
+ "formato": "celular",
+ "voz": "gemini-so",
+ "titulo": "A IA que agora mexe no computador por você",
+ "numero": 0
+}
