@@ -59,6 +59,66 @@ const Xadrez: React.FC<{f: number}> = ({f}) => (
       backgroundPosition: `0 ${f * 0.5}px`, opacity: 0.9}} />
   </AbsoluteFill>
 );
+
+// ---------- fundos variados: cada cena sorteia o seu (por semente do vídeo + texto da cena) ----------
+const FUNDOS = ['aurora', 'diagonais', 'grade', 'ondas', 'circulos', 'pontos', 'raios', 'liso', 'cruzes', 'xadrez'] as const;
+const FundoVar: React.FC<{f: number; c: CenaC; salt?: number; lista?: readonly string[]}> = ({f, c, salt = 0, lista}) => {
+  const L = lista || FUNDOS;
+  const k = L[(hash((c.texto || '') + (c.tipo || '')) + SEED + salt) % L.length];
+  const A = `rgb(${ACRGB})`;
+  const base = PRETO;
+  if (k === 'xadrez') return <Xadrez f={f} />;
+  if (k === 'raios') return <Raios f={f} c1="#17171b" c2={base} n={20 + (SEED % 8)} />;
+  if (k === 'aurora') return (
+    <AbsoluteFill style={{background: base}}>
+      <AbsoluteFill style={{background: `radial-gradient(circle at ${30 + Math.sin(f / 50) * 20}% ${25 + Math.cos(f / 60) * 10}%, rgba(${ACRGB},.30), transparent 48%), radial-gradient(circle at ${75 - Math.sin(f / 45) * 15}% ${80 + Math.sin(f / 70) * 8}%, ${VERM}55, transparent 50%)`}} />
+    </AbsoluteFill>
+  );
+  if (k === 'diagonais') return (
+    <AbsoluteFill style={{background: base}}>
+      <AbsoluteFill style={{backgroundImage: `repeating-linear-gradient(45deg, rgba(${ACRGB},.10) 0 26px, transparent 26px 70px)`, backgroundPosition: `${f * 1.2}px 0`}} />
+    </AbsoluteFill>
+  );
+  if (k === 'grade') return (
+    <AbsoluteFill style={{background: base}}>
+      <AbsoluteFill style={{backgroundImage: `linear-gradient(rgba(${ACRGB},.13) 2px, transparent 2px), linear-gradient(90deg, rgba(${ACRGB},.13) 2px, transparent 2px)`, backgroundSize: '90px 90px', backgroundPosition: `0 ${f}px`}} />
+      <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 45%, transparent 35%, rgba(0,0,0,.7))'}} />
+    </AbsoluteFill>
+  );
+  if (k === 'ondas') return (
+    <AbsoluteFill style={{background: base}}>
+      <svg width={W} height={H} style={{position: 'absolute', inset: 0}}>
+        {[0, 1, 2, 3, 4, 5].map((i) => (
+          <path key={i} fill="none" stroke={A} strokeOpacity={0.10 + i * 0.03} strokeWidth={4}
+            d={`M0 ${H * (0.2 + i * 0.13)} ` + Array.from({length: 13}, (_, j) => `L${j * 90} ${H * (0.2 + i * 0.13) + Math.sin(j * 0.9 + f / 18 + i) * 60}`).join(' ')} />
+        ))}
+      </svg>
+    </AbsoluteFill>
+  );
+  if (k === 'circulos') return (
+    <AbsoluteFill style={{background: base}}>
+      <svg width={W} height={H} style={{position: 'absolute', inset: 0}}>
+        {[0, 1, 2, 3, 4, 5, 6].map((i) => <circle key={i} cx={W / 2} cy={H * 0.45} r={140 + i * 170 + ((f * 1.5) % 170)} fill="none" stroke={A} strokeOpacity={0.14} strokeWidth={3} />)}
+      </svg>
+    </AbsoluteFill>
+  );
+  if (k === 'pontos') return (
+    <AbsoluteFill style={{background: base}}>
+      <AbsoluteFill style={{backgroundImage: `radial-gradient(rgba(${ACRGB},.22) 5px, transparent 6px)`, backgroundSize: '70px 70px', backgroundPosition: `${f * 0.6}px ${f * 0.6}px`}} />
+    </AbsoluteFill>
+  );
+  if (k === 'cruzes') return (
+    <AbsoluteFill style={{background: base}}>
+      <AbsoluteFill style={{backgroundImage: `linear-gradient(rgba(${ACRGB},.22) 0 0), linear-gradient(rgba(${ACRGB},.22) 0 0)`, backgroundSize: '26px 3px, 3px 26px', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
+        WebkitMaskImage: 'none'}} />
+      <AbsoluteFill style={{backgroundImage: `radial-gradient(rgba(${ACRGB},.0) 0, transparent 1px)`}} />
+      <AbsoluteFill style={{background: `radial-gradient(circle at 50% 40%, rgba(${ACRGB},.12), transparent 60%)`}} />
+    </AbsoluteFill>
+  );
+  return (
+    <AbsoluteFill style={{background: `radial-gradient(circle at 50% 40%, #1c1c22, ${base} 75%)`}} />
+  );
+};
 const Flare: React.FC<{x: number; y: number; f: number; cor?: string}> = ({x, y, f, cor = '255,255,255'}) => {
   const p = 0.8 + 0.2 * Math.sin(f / 6);
   return (
@@ -81,7 +141,10 @@ const Acabamento: React.FC<{f: number}> = ({f}) => (
     <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 50%, transparent 60%, rgba(0,0,0,.38) 100%)'}} />
   </AbsoluteFill>
 );
-const rgb = (n: number) => `${-n}px 0 rgba(255,30,60,.75), ${n}px 0 rgba(30,160,255,.75)`;
+let ABER = 1;   // intensidade da aberração cromática (0 = desligada), definida pelo formato/semente
+const rgb = (n: number) => ABER <= 0.05 ? '0 0 0 transparent' : `${-n * ABER}px 0 rgba(255,30,60,.75), ${n * ABER}px 0 rgba(30,160,255,.75)`;
+let SEED = 0;
+const hash = (t: string) => { let h = 7; for (let i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) >>> 0; return h; };
 
 // ---------- ícones simples (SVG, traço branco) ----------
 const ICONES: Record<string, React.ReactNode> = {
@@ -195,13 +258,13 @@ const CDigitando: React.FC<CP> = ({c, f}) => {
   const pisca = Math.floor(f / 8) % 2 === 0;
   return (
     <AbsoluteFill>
-      <Xadrez f={f} />
+      <FundoVar f={f} c={c} />
       <AbsoluteFill style={{alignItems: 'flex-start', justifyContent: 'center', padding: '0 90px'}}>
         {c.topo && <div style={{fontFamily: 'Anton', fontSize: 150, color: VERML, textShadow: rgb(4), marginBottom: 30, marginLeft: 120,
           opacity: ease(f, 0, 4)}}>{c.topo}</div>}
         <div style={{fontFamily: 'Jet', fontWeight: 800, fontSize: tamDig(t), lineHeight: 1.1, color: '#fff', textShadow: rgb(3), maxWidth: 900, whiteSpace: 'pre-wrap'}}>
           {quebra(t).slice(0, k + (quebra(t).length - t.length))}
-          <span style={{display: 'inline-block', width: '0.6em', height: '1em', verticalAlign: 'middle', background: k < t.length || pisca ? '#fff' : 'transparent', marginLeft: 6}} />
+          {(() => { const v = SEED % 3; const on = k < t.length || pisca; return <span style={{display: 'inline-block', width: v === 0 ? '0.6em' : v === 1 ? '0.12em' : '0.55em', height: v === 2 ? '0.12em' : '1em', verticalAlign: v === 2 ? 'baseline' : 'middle', background: on ? (v === 0 ? '#fff' : OURO) : 'transparent', marginLeft: 6}} />; })()}
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -302,8 +365,7 @@ const CCards: React.FC<CP> = ({c, f, fps}) => {
   const itens = (c.itens || []).slice(0, 2) as {rotulo?: string; imagem?: string}[];
   return (
     <AbsoluteFill>
-      <Raios f={f} c1="#141416" c2="#0c0c0d" n={26} />
-      <Reticula cor="#fff" op={0.06} />
+      <FundoVar f={f} c={c} salt={3} />
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', gap: 90}}>
         {itens.map((it, i) => {
           const s = spring({frame: f - mk(c, i, fps, i * 8), fps, config: {damping: 12}});
@@ -492,7 +554,7 @@ const CInterruptor: React.FC<CP> = ({c, f, fps, n}) => {
   const knob = interpolate(off, [0, 1], [96, 10]);
   return (
     <AbsoluteFill>
-      <FundoOuro f={f} />
+      <FundoVar f={f} c={c} salt={1} lista={['aurora', 'grade', 'diagonais', 'circulos', 'liso']} />
       <div style={{position: 'absolute', left: 80, right: 80, top: 520, height: 210, background: '#fff', borderRadius: 42, display: 'flex', alignItems: 'center',
         padding: '0 46px', gap: 34, boxShadow: '0 40px 100px rgba(0,0,0,.6)', transform: `translateY(${(1 - s) * -160}px) scale(${0.9 + 0.1 * s})`, opacity: s}}>
         <div style={{width: 112, height: 112, borderRadius: 28, background: OURO, display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -519,7 +581,7 @@ const CChecklist: React.FC<CP> = ({c, f, fps, n}) => {
   const passo = Math.max(6, Math.floor((n * 0.75) / Math.max(1, itens.length)));
   return (
     <AbsoluteFill>
-      <FundoOuro f={f} />
+      <FundoVar f={f} c={c} salt={1} lista={['aurora', 'grade', 'diagonais', 'circulos', 'liso']} />
       <div style={{position: 'absolute', left: 90, right: 90, top: 380, background: '#141418', border: '2px solid #26262c', borderRadius: 40, padding: '46px 50px',
         boxShadow: '0 40px 100px rgba(0,0,0,.6)', transform: `translateY(${(1 - s) * 120}px)`, opacity: s}}>
         <div style={{fontFamily: 'InterX', fontSize: 50, color: OURO, marginBottom: 30}}>{c.rotulo}</div>
@@ -645,35 +707,36 @@ const Legenda: React.FC<{palavras: Palavra[]; cenas: CenaC[]; t: number; bottom?
 // ================= FORMATOS DE EDIÇÃO =================
 // Cada vídeo usa UM formato (o planejador alterna). Muda paleta, fontes, moldura, acabamento, legenda e transições.
 type Fmt = {pal: {OURO: string; VERM: string; PRETO: string; ACRGB: string; TINTA: string; VERMD: string; VERML: string; FRASEF: string; LEGF: string};
-  trans: [string, number][]; legBottom: number; badge: boolean};
+  trans: [string, number][]; legBottom: number; badge: boolean; aber?: number};
 const FORMATOS: Record<string, Fmt> = {
-  noir: {pal: {OURO: '#F5A623', VERM: '#E3242B', PRETO: '#060607', ACRGB: '245,166,35', TINTA: '#0A0A0C', VERMD: '#a5121a', VERML: '#e05a63', FRASEF: 'Mont', LEGF: 'Mont'},
+  noir: {aber: 1, pal: {OURO: '#F5A623', VERM: '#E3242B', PRETO: '#060607', ACRGB: '245,166,35', TINTA: '#0A0A0C', VERMD: '#a5121a', VERML: '#e05a63', FRASEF: 'Mont', LEGF: 'Mont'},
     trans: [['luz', 0.34], ['foco', 0.18], ['corte', 0.18], ['saturado', 0.12], ['chicote', 0.18]], legBottom: 230, badge: true},
-  celular: {pal: {OURO: '#2EE6C5', VERM: '#FF5D73', PRETO: '#07090D', ACRGB: '46,230,197', TINTA: '#04120F', VERMD: '#b32a45', VERML: '#ff8a9b', FRASEF: 'InterX', LEGF: 'InterX'},
+  celular: {aber: 0.5, pal: {OURO: '#2EE6C5', VERM: '#FF5D73', PRETO: '#07090D', ACRGB: '46,230,197', TINTA: '#04120F', VERMD: '#b32a45', VERML: '#ff8a9b', FRASEF: 'InterX', LEGF: 'InterX'},
     trans: [['foco', 0.35], ['corte', 0.35], ['luz', 0.1], ['chicote', 0.2]], legBottom: 300, badge: false},
-  terminal: {pal: {OURO: '#39FF88', VERM: '#FF4D4D', PRETO: '#030806', ACRGB: '57,255,136', TINTA: '#02140A', VERMD: '#8f1f1f', VERML: '#ff7a7a', FRASEF: 'Jet', LEGF: 'Jet'},
+  terminal: {aber: 0.3, pal: {OURO: '#39FF88', VERM: '#FF4D4D', PRETO: '#030806', ACRGB: '57,255,136', TINTA: '#02140A', VERMD: '#8f1f1f', VERML: '#ff7a7a', FRASEF: 'Jet', LEGF: 'Jet'},
     trans: [['corte', 0.55], ['chicote', 0.25], ['foco', 0.2]], legBottom: 250, badge: false},
   cartaz: {pal: {OURO: '#D9502E', VERM: '#B3261E', PRETO: '#0D0D0F', ACRGB: '217,80,46', TINTA: '#FFF7EC', VERMD: '#7d1a14', VERML: '#e8695a', FRASEF: 'Playfair', LEGF: 'Playfair'},
     trans: [['foco', 0.4], ['corte', 0.45], ['luz', 0.15]], legBottom: 330, badge: false},
-  documentario: {pal: {OURO: '#FFB454', VERM: '#E4572E', PRETO: '#08090A', ACRGB: '255,180,84', TINTA: '#0A0A0C', VERMD: '#9a3418', VERML: '#f0866a', FRASEF: 'Playfair', LEGF: 'InterX'},
+  documentario: {aber: 0, pal: {OURO: '#FFB454', VERM: '#E4572E', PRETO: '#08090A', ACRGB: '255,180,84', TINTA: '#0A0A0C', VERMD: '#9a3418', VERML: '#f0866a', FRASEF: 'Playfair', LEGF: 'InterX'},
     trans: [['foco', 0.5], ['luz', 0.3], ['corte', 0.2]], legBottom: 260, badge: false},
-  noticia: {pal: {OURO: '#FFD23F', VERM: '#E11D2E', PRETO: '#05070F', ACRGB: '255,210,63', TINTA: '#0A0A0C', VERMD: '#8f0f1b', VERML: '#ff6b78', FRASEF: 'InterX', LEGF: 'InterX'},
+  noticia: {aber: 0, pal: {OURO: '#FFD23F', VERM: '#E11D2E', PRETO: '#05070F', ACRGB: '255,210,63', TINTA: '#0A0A0C', VERMD: '#8f0f1b', VERML: '#ff6b78', FRASEF: 'InterX', LEGF: 'InterX'},
     trans: [['corte', 0.5], ['foco', 0.3], ['luz', 0.2]], legBottom: 360, badge: false},
-  navegador: {pal: {OURO: '#4DA3FF', VERM: '#FF5C7A', PRETO: '#070A12', ACRGB: '77,163,255', TINTA: '#04101F', VERMD: '#a32a44', VERML: '#ff8fa3', FRASEF: 'InterX', LEGF: 'InterX'},
+  navegador: {aber: 0, pal: {OURO: '#4DA3FF', VERM: '#FF5C7A', PRETO: '#070A12', ACRGB: '77,163,255', TINTA: '#04101F', VERMD: '#a32a44', VERML: '#ff8fa3', FRASEF: 'InterX', LEGF: 'InterX'},
     trans: [['foco', 0.4], ['corte', 0.4], ['chicote', 0.2]], legBottom: 300, badge: false},
-  story: {pal: {OURO: '#FF7A59', VERM: '#E1306C', PRETO: '#0A0608', ACRGB: '255,122,89', TINTA: '#1A0A0A', VERMD: '#8f1b45', VERML: '#ff7aa6', FRASEF: 'Mont', LEGF: 'Mont'},
+  story: {aber: 0, pal: {OURO: '#FF7A59', VERM: '#E1306C', PRETO: '#0A0608', ACRGB: '255,122,89', TINTA: '#1A0A0A', VERMD: '#8f1b45', VERML: '#ff7aa6', FRASEF: 'Mont', LEGF: 'Mont'},
     trans: [['corte', 0.6], ['foco', 0.25], ['luz', 0.15]], legBottom: 330, badge: false},
-  hud: {pal: {OURO: '#00E5FF', VERM: '#FF3D6E', PRETO: '#02070B', ACRGB: '0,229,255', TINTA: '#021014', VERMD: '#9a1a40', VERML: '#ff7a9a', FRASEF: 'Jet', LEGF: 'Jet'},
+  hud: {aber: 0.8, pal: {OURO: '#00E5FF', VERM: '#FF3D6E', PRETO: '#02070B', ACRGB: '0,229,255', TINTA: '#021014', VERMD: '#9a1a40', VERML: '#ff7a9a', FRASEF: 'Jet', LEGF: 'Jet'},
     trans: [['chicote', 0.35], ['corte', 0.35], ['saturado', 0.3]], legBottom: 270, badge: false},
-  vhs: {pal: {OURO: '#FFC857', VERM: '#FF4D4D', PRETO: '#07060A', ACRGB: '255,200,87', TINTA: '#0A0A0C', VERMD: '#9a2020', VERML: '#ff8080', FRASEF: 'Jet', LEGF: 'Jet'},
+  vhs: {aber: 1, pal: {OURO: '#FFC857', VERM: '#FF4D4D', PRETO: '#07060A', ACRGB: '255,200,87', TINTA: '#0A0A0C', VERMD: '#9a2020', VERML: '#ff8080', FRASEF: 'Jet', LEGF: 'Jet'},
     trans: [['chicote', 0.5], ['corte', 0.3], ['saturado', 0.2]], legBottom: 260, badge: false},
-  eletrico: {pal: {OURO: '#5B6CFF', VERM: '#FF2E9A', PRETO: '#05050F', ACRGB: '91,108,255', TINTA: '#FFFFFF', VERMD: '#a31a66', VERML: '#ff7ac0', FRASEF: 'Mont', LEGF: 'InterX'},
+  eletrico: {aber: 1, pal: {OURO: '#5B6CFF', VERM: '#FF2E9A', PRETO: '#05050F', ACRGB: '91,108,255', TINTA: '#FFFFFF', VERMD: '#a31a66', VERML: '#ff7ac0', FRASEF: 'Mont', LEGF: 'InterX'},
     trans: [['chicote', 0.4], ['saturado', 0.3], ['luz', 0.2], ['corte', 0.1]], legBottom: 230, badge: true},
 };
 const aplicarFormato = (nome?: string): Fmt => {
   const F = FORMATOS[nome || 'noir'] || FORMATOS.noir;
   OURO = F.pal.OURO; VERM = F.pal.VERM; PRETO = F.pal.PRETO; ACRGB = F.pal.ACRGB; TINTA = F.pal.TINTA;
   VERMD = F.pal.VERMD; VERML = F.pal.VERML; FRASEF = F.pal.FRASEF; LEGF = F.pal.LEGF; PESOS_TRANS = F.trans;
+  ABER = F.aber ?? 1;
   return F;
 };
 
@@ -887,6 +950,8 @@ export const SeraphimCortes: React.FC<PropsC> = (props) => {
   const t = frame / fps;
   const formato = FORMATOS[props.formato || 'noir'] ? (props.formato || 'noir') : 'noir';
   const FM = aplicarFormato(formato);
+  SEED = hash(`${props.titulo || ''}${props.numero || ''}${props.cenas.length}`);
+  if (SEED % 3 === 0) ABER = Math.min(ABER, 0.4);
   return (
     <AbsoluteFill style={{background: PRETO}}>
       <Moldura formato={formato} f={frame} durationInFrames={durationInFrames} titulo={props.titulo} numero={props.numero} arroba={props.arroba}>

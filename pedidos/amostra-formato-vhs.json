@@ -2,6 +2,7 @@
  "nome": "amostra-formato-vhs",
  "arroba": "@seraphimbr_",
  "motor": "cortes",
+ "rev": 2,
  "amostra": true,
  "voz": "gemini",
  "funil": "topo",
