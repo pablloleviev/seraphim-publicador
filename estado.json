@@ -238,12 +238,17 @@
       "ig_manual": true
     },
     "2026-10-15_1900_ia-nao-e-google": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-14T20:00:06.867843+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad14ced4ed7d375a43278c5",
+        "feito": "buffer"
       },
-      "msg_id": 677
+      "msg_id": 677,
+      "ig_id": null,
+      "publicado_em": "2026-10-15T22:00:10.693655+00:00",
+      "ig_manual": true
     },
     "2026-10-16_1800_4-rotinas-para-eliminar-retrabalho": {
       "status": "agendado",
