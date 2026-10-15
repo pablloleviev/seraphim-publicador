@@ -252,6 +252,14 @@
       "status": "aguardando",
       "enviado_em": "2026-10-15T11:00:17.601900+00:00",
       "msg_id": 704
+    },
+    "2026-10-16_1200_ia-que-usa-computador-sozinha": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-15T13:00:06.783127+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 711
     }
   },
   "respondidos": {}
