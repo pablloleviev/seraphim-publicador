@@ -91,3 +91,10 @@ acabamento, legenda e tipos de transição (motor/src/Cortes.tsx -> FORMATOS; pl
 - documentario: barras de cinema, REC + timecode, grão, grade quente/azulada, serifa itálica, âmbar.
 - eletrico: azul elétrico + magenta, borda neon pulsando, transições chicote/saturação.
 Regra: nunca desligar a variação; novas referências do Pabllo entram como NOVOS formatos ou novas cenas, não como padrão único.
+
+
+## ATUALIZAÇÃO 15/10/2026 (feedback do Pabllo)
+- Cartaz removido da rotação (não gostou).
+- Noir é raro (peso 0.25 vs 1.0 dos demais): repetir é permitido, mas raro.
+- Formatos novos: noticia (AO VIVO + ticker), navegador (janela de browser), story (UI de story), hud (cantoneiras/scanline), vhs (PLAY/tracking).
+- Sorteio: aleatório ponderado e reprodutível; não repete nenhum dos últimos 5 formatos nem formato já usado no mesmo dia (scripts/planejar.py).

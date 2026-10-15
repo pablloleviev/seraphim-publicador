@@ -657,6 +657,16 @@ const FORMATOS: Record<string, Fmt> = {
     trans: [['foco', 0.4], ['corte', 0.45], ['luz', 0.15]], legBottom: 330, badge: false},
   documentario: {pal: {OURO: '#FFB454', VERM: '#E4572E', PRETO: '#08090A', ACRGB: '255,180,84', TINTA: '#0A0A0C', VERMD: '#9a3418', VERML: '#f0866a', FRASEF: 'Playfair', LEGF: 'InterX'},
     trans: [['foco', 0.5], ['luz', 0.3], ['corte', 0.2]], legBottom: 260, badge: false},
+  noticia: {pal: {OURO: '#FFD23F', VERM: '#E11D2E', PRETO: '#05070F', ACRGB: '255,210,63', TINTA: '#0A0A0C', VERMD: '#8f0f1b', VERML: '#ff6b78', FRASEF: 'InterX', LEGF: 'InterX'},
+    trans: [['corte', 0.5], ['foco', 0.3], ['luz', 0.2]], legBottom: 360, badge: false},
+  navegador: {pal: {OURO: '#4DA3FF', VERM: '#FF5C7A', PRETO: '#070A12', ACRGB: '77,163,255', TINTA: '#04101F', VERMD: '#a32a44', VERML: '#ff8fa3', FRASEF: 'InterX', LEGF: 'InterX'},
+    trans: [['foco', 0.4], ['corte', 0.4], ['chicote', 0.2]], legBottom: 300, badge: false},
+  story: {pal: {OURO: '#FF7A59', VERM: '#E1306C', PRETO: '#0A0608', ACRGB: '255,122,89', TINTA: '#1A0A0A', VERMD: '#8f1b45', VERML: '#ff7aa6', FRASEF: 'Mont', LEGF: 'Mont'},
+    trans: [['corte', 0.6], ['foco', 0.25], ['luz', 0.15]], legBottom: 330, badge: false},
+  hud: {pal: {OURO: '#00E5FF', VERM: '#FF3D6E', PRETO: '#02070B', ACRGB: '0,229,255', TINTA: '#021014', VERMD: '#9a1a40', VERML: '#ff7a9a', FRASEF: 'Jet', LEGF: 'Jet'},
+    trans: [['chicote', 0.35], ['corte', 0.35], ['saturado', 0.3]], legBottom: 270, badge: false},
+  vhs: {pal: {OURO: '#FFC857', VERM: '#FF4D4D', PRETO: '#07060A', ACRGB: '255,200,87', TINTA: '#0A0A0C', VERMD: '#9a2020', VERML: '#ff8080', FRASEF: 'Jet', LEGF: 'Jet'},
+    trans: [['chicote', 0.5], ['corte', 0.3], ['saturado', 0.2]], legBottom: 260, badge: false},
   eletrico: {pal: {OURO: '#5B6CFF', VERM: '#FF2E9A', PRETO: '#05050F', ACRGB: '91,108,255', TINTA: '#FFFFFF', VERMD: '#a31a66', VERML: '#ff7ac0', FRASEF: 'Mont', LEGF: 'InterX'},
     trans: [['chicote', 0.4], ['saturado', 0.3], ['luz', 0.2], ['corte', 0.1]], legBottom: 230, badge: true},
 };
@@ -683,6 +693,105 @@ const Grao: React.FC<{f: number; op: number; claro?: boolean}> = ({f, op, claro}
 const Moldura: React.FC<{formato: string; f: number; durationInFrames: number; titulo?: string; numero?: number; arroba: string; children: React.ReactNode}> =
 ({formato, f, durationInFrames, titulo, numero, arroba, children}) => {
   const t = f / 30;
+  if (formato === 'noticia') {
+    const txt = `${(titulo || 'IA PARA PEQUENAS EMPRESAS').toUpperCase()}  •  SERAPHIM NEWS  •  AUTOMAÇÃO E INTELIGÊNCIA ARTIFICIAL  •  `;
+    return (
+      <AbsoluteFill style={{background: PRETO}}>
+        {children}
+        <AbsoluteFill style={{pointerEvents: 'none', background: 'linear-gradient(180deg, rgba(0,0,0,.45), transparent 16%, transparent 76%, rgba(0,0,0,.7))'}} />
+        <div style={{position: 'absolute', top: 70, left: 50, display: 'flex', alignItems: 'center', gap: 16}}>
+          <div style={{background: VERM, color: '#fff', fontFamily: 'InterX', fontSize: 42, padding: '8px 22px', borderRadius: 8, letterSpacing: 2, opacity: Math.floor(f / 18) % 2 ? 0.8 : 1}}>● AO VIVO</div>
+          <div style={{background: '#fff', color: '#111', fontFamily: 'InterX', fontSize: 42, padding: '8px 22px', borderRadius: 8}}>SERAPHIM NEWS</div>
+        </div>
+        <div style={{position: 'absolute', left: 0, right: 0, bottom: 190, display: 'flex', alignItems: 'stretch', height: 112, boxShadow: '0 10px 40px rgba(0,0,0,.6)'}}>
+          <div style={{background: VERM, color: '#fff', fontFamily: 'InterX', fontSize: 40, padding: '0 34px', display: 'flex', alignItems: 'center'}}>IA</div>
+          <div style={{flex: 1, background: 'linear-gradient(90deg,#0b2a66,#123a8f)', color: '#fff', fontFamily: 'InterX', fontSize: 46, padding: '0 34px', display: 'flex', alignItems: 'center', overflow: 'hidden', whiteSpace: 'nowrap'}}>
+            {(titulo || '').slice(0, 34)}</div>
+        </div>
+        <div style={{position: 'absolute', left: 0, right: 0, bottom: 100, height: 70, background: OURO, overflow: 'hidden', display: 'flex', alignItems: 'center'}}>
+          <div style={{whiteSpace: 'nowrap', fontFamily: 'InterX', fontSize: 38, color: '#111', transform: `translateX(${-(f * 5) % 1700}px)`}}>{txt + txt + txt}</div>
+        </div>
+      </AbsoluteFill>
+    );
+  }
+  if (formato === 'navegador') {
+    const k = 0.86;
+    return (
+      <AbsoluteFill style={{background: `radial-gradient(circle at ${25 + Math.sin(f / 55) * 15}% 15%, ${OURO}66, transparent 50%), radial-gradient(circle at 85% ${80 + Math.cos(f / 50) * 10}%, #7a5cff55, transparent 55%), #070A12`}}>
+        <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
+          <div style={{borderRadius: 34, overflow: 'hidden', background: '#10141d', boxShadow: '0 60px 140px rgba(0,0,0,.75), 0 0 0 2px #2b3342'}}>
+            <div style={{height: 150, background: '#1a2030', padding: '16px 28px 0', position: 'relative'}}>
+              <div style={{display: 'flex', gap: 14, alignItems: 'center'}}>
+                {['#ff5f56', '#ffbd2e', '#27c93f'].map((c) => <div key={c} style={{width: 20, height: 20, borderRadius: 10, background: c}} />)}
+                <div style={{marginLeft: 24, background: '#10141d', borderRadius: '16px 16px 0 0', padding: '12px 30px', fontFamily: 'InterM', fontSize: 28, color: '#cfd6e6'}}>● seraphim · post {String(numero ?? 1).padStart(2, '0')}</div>
+              </div>
+              <div style={{position: 'absolute', left: 28, right: 28, bottom: 12, height: 56, borderRadius: 28, background: '#10141d', display: 'flex', alignItems: 'center', padding: '0 26px', fontFamily: 'InterM', fontSize: 28, color: '#8fa0bd'}}>
+                🔒 seraphim.ia/{String((titulo || 'post').toLowerCase().replace(/[^a-z0-9]+/g, '-')).slice(0, 26)}</div>
+            </div>
+            <Encaixe k={k} raio={0}>{children}</Encaixe>
+          </div>
+        </AbsoluteFill>
+      </AbsoluteFill>
+    );
+  }
+  if (formato === 'story') {
+    const seg = 6, prog = f / durationInFrames;
+    return (
+      <AbsoluteFill style={{background: PRETO}}>
+        {children}
+        <AbsoluteFill style={{pointerEvents: 'none', background: 'linear-gradient(180deg, rgba(0,0,0,.6), transparent 14%, transparent 84%, rgba(0,0,0,.65))'}} />
+        <div style={{position: 'absolute', top: 36, left: 28, right: 28, display: 'flex', gap: 8}}>
+          {Array.from({length: seg}).map((_, i) => {
+            const v = Math.max(0, Math.min(1, prog * seg - i));
+            return <div key={i} style={{flex: 1, height: 7, borderRadius: 4, background: 'rgba(255,255,255,.35)', overflow: 'hidden'}}><div style={{width: `${v * 100}%`, height: '100%', background: '#fff'}} /></div>;
+          })}
+        </div>
+        <div style={{position: 'absolute', top: 70, left: 36, display: 'flex', alignItems: 'center', gap: 20}}>
+          <div style={{padding: 5, borderRadius: 50, background: `linear-gradient(135deg, ${OURO}, ${VERM})`}}>
+            <Img src={staticFile('marca/icone.png')} style={{width: 88, height: 88, borderRadius: 44, border: '4px solid #000'}} /></div>
+          <div style={{fontFamily: 'InterX', fontSize: 40, color: '#fff'}}>{arroba.replace('@', '')} <span style={{fontFamily: 'InterM', color: 'rgba(255,255,255,.7)', fontSize: 32}}>· agora</span></div>
+        </div>
+        <div style={{position: 'absolute', left: 40, right: 40, bottom: 70, display: 'flex', alignItems: 'center', gap: 24}}>
+          <div style={{flex: 1, height: 92, borderRadius: 46, border: '3px solid rgba(255,255,255,.75)', color: 'rgba(255,255,255,.85)', fontFamily: 'InterM', fontSize: 36, display: 'flex', alignItems: 'center', padding: '0 36px'}}>Enviar mensagem</div>
+          <div style={{fontSize: 62, color: '#fff'}}>♡</div><div style={{fontSize: 56, color: '#fff'}}>➤</div>
+        </div>
+      </AbsoluteFill>
+    );
+  }
+  if (formato === 'hud') {
+    const L = (st: React.CSSProperties) => <div style={{position: 'absolute', width: 120, height: 120, border: `5px solid ${OURO}`, ...st}} />;
+    const sy = (f * 9) % H;
+    return (
+      <AbsoluteFill style={{background: PRETO}}>
+        {children}
+        <AbsoluteFill style={{background: `${OURO}`, mixBlendMode: 'soft-light', opacity: 0.18, pointerEvents: 'none'}} />
+        <AbsoluteFill style={{pointerEvents: 'none', backgroundImage: `linear-gradient(${OURO}22 1px, transparent 1px), linear-gradient(90deg, ${OURO}22 1px, transparent 1px)`, backgroundSize: '90px 90px'}} />
+        <div style={{position: 'absolute', left: 0, right: 0, top: sy, height: 6, background: `linear-gradient(90deg, transparent, ${OURO}, transparent)`, opacity: 0.55, boxShadow: `0 0 30px ${OURO}`}} />
+        {L({top: 40, left: 40, borderRight: 'none', borderBottom: 'none'})}{L({top: 40, right: 40, borderLeft: 'none', borderBottom: 'none'})}
+        {L({bottom: 40, left: 40, borderRight: 'none', borderTop: 'none'})}{L({bottom: 40, right: 40, borderLeft: 'none', borderTop: 'none'})}
+        <div style={{position: 'absolute', top: 70, left: 190, right: 190, display: 'flex', justifyContent: 'space-between', fontFamily: 'Jet', fontWeight: 800, fontSize: 30, color: OURO}}>
+          <span>SYS//SERAPHIM</span><span style={{opacity: Math.floor(f / 12) % 2 ? 0.3 : 1}}>▸ LIVE</span></div>
+        <div style={{position: 'absolute', bottom: 70, left: 190, right: 190, display: 'flex', justifyContent: 'space-between', fontFamily: 'Jet', fontWeight: 800, fontSize: 28, color: `${OURO}cc`}}>
+          <span>LAT -15.79 · LON -47.88</span><span>T+{t.toFixed(1)}s</span></div>
+      </AbsoluteFill>
+    );
+  }
+  if (formato === 'vhs') {
+    const trk = (f * 11) % H;
+    return (
+      <AbsoluteFill style={{background: PRETO}}>
+        <AbsoluteFill style={{transform: `translateX(${Math.sin(f * 1.7) * (f % 40 < 3 ? 14 : 2)}px)`}}>{children}</AbsoluteFill>
+        <AbsoluteFill style={{pointerEvents: 'none', background: 'linear-gradient(90deg, rgba(255,0,60,.10), transparent 30%, transparent 70%, rgba(0,120,255,.10))', mixBlendMode: 'screen'}} />
+        <AbsoluteFill style={{pointerEvents: 'none', backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,.28) 0 3px, transparent 3px 6px)'}} />
+        <div style={{position: 'absolute', left: 0, right: 0, top: trk, height: 90, background: 'rgba(255,255,255,.10)', mixBlendMode: 'overlay', filter: 'blur(2px)'}} />
+        <div style={{position: 'absolute', left: 0, right: 0, bottom: (f * 3) % 260, height: 26, background: 'rgba(255,255,255,.18)', transform: `translateX(${Math.sin(f) * 40}px)`}} />
+        <Grao f={f} op={0.16} />
+        <div style={{position: 'absolute', top: 70, left: 60, fontFamily: 'Jet', fontWeight: 800, fontSize: 56, color: '#fff', textShadow: '3px 0 rgba(255,0,60,.7), -3px 0 rgba(0,160,255,.7)'}}>▶ PLAY</div>
+        <div style={{position: 'absolute', top: 80, right: 60, fontFamily: 'Jet', fontWeight: 800, fontSize: 40, color: '#fff', textShadow: '3px 0 rgba(255,0,60,.7)'}}>SP {Math.floor(t / 60)}:{String(Math.floor(t % 60)).padStart(2, '0')}</div>
+        <div style={{position: 'absolute', bottom: 60, right: 60, fontFamily: 'Jet', fontWeight: 800, fontSize: 40, color: OURO, textShadow: '3px 0 rgba(255,0,60,.6)'}}>15 OUT 2026</div>
+      </AbsoluteFill>
+    );
+  }
   if (formato === 'celular') {
     const k = 0.86;
     return (

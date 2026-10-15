@@ -38,16 +38,19 @@ def proximo_tema(hist):
 
 # FORMATOS DE EDIÇÃO (motor/src/Cortes.tsx): cada vídeo tem uma cara diferente. Rodízio: o usado há mais tempo,
 # e vídeos do mesmo dia nunca repetem formato.
-FORMATOS = ["noir", "celular", "terminal", "cartaz", "documentario", "eletrico"]
+# Pesos: noir (o visual antigo) é RARO por pedido do Pabllo (15/10/2026); "cartaz" foi retirado (não gostou).
+FORMATOS = {"celular": 1.0, "terminal": 1.0, "documentario": 1.0, "eletrico": 1.0, "noticia": 1.0, "navegador": 1.0,
+            "story": 1.0, "hud": 1.0, "vhs": 1.0, "noir": 0.25}
+REPETE_APOS = 5     # um formato só pode voltar depois de 5 vídeos com outros formatos
 
 
-def proximo_formato(hist, evitar=()):
-    ult = {}
-    for i, h in enumerate(hist):
-        if h.get("formato_edicao"):
-            ult[h["formato_edicao"]] = i
-    livres = [f for f in FORMATOS if f not in evitar] or FORMATOS
-    return min(livres, key=lambda f: (ult.get(f, -1), FORMATOS.index(f)))
+def proximo_formato(hist, evitar=(), semente=""):
+    """Sorteio ponderado e reproduzível: varia bastante, repetir é possível mas raro, noir é raríssimo."""
+    import random
+    recentes = [h.get("formato_edicao") for h in hist if h.get("formato_edicao")][-REPETE_APOS:]
+    livres = [f for f in FORMATOS if f not in evitar and f not in recentes] or [f for f in FORMATOS if f not in evitar] or list(FORMATOS)
+    rnd = random.Random(f"{semente}|{len(hist)}")
+    return rnd.choices(livres, weights=[FORMATOS[f] for f in livres])[0]
 
 
 POSES = ["pensando", "confiante", "surpreso", "preocupado", "feliz", "comemorando"]
@@ -410,7 +413,7 @@ def main():
                 nome += "-2"
             nomes.add(nome)
             tema = "noir"  # temas pausados: Pabllo reprovou (2026-10-10)
-            fmt = proximo_formato(hist, evitar=formatos_do_dia)
+            fmt = proximo_formato(hist, evitar=formatos_do_dia, semente=f"{dia}{hora}")
             formatos_do_dia.append(fmt)
             spec = {"nome": nome, "arroba": "@seraphimbr_", "quando": f"{dia} {hora}", "cenas": v["cenas"], "motor": "cortes",
                     "formato": fmt, "titulo": v.get("titulo", nome), "numero": criados + 1,
