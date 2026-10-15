@@ -1,83 +1,76 @@
- 646/700, time remaining: 20s
-Rendered 647/700, time remaining: 20s
-Rendered 648/700, time remaining: 19s
-Rendered 649/700, time remaining: 19s
-Rendered 649/700, time remaining: 19s
-Rendered 650/700, time remaining: 19s
-Rendered 651/700, time remaining: 18s
-Rendered 652/700, time remaining: 18s
-Rendered 653/700, time remaining: 17s
-Rendered 653/700, time remaining: 17s
-Rendered 654/700, time remaining: 17s
-Rendered 655/700, time remaining: 17s
-Rendered 656/700, time remaining: 16s
-Rendered 656/700, time remaining: 16s
-Rendered 657/700, time remaining: 16s
-Rendered 658/700, time remaining: 15s
-Rendered 659/700, time remaining: 15s
-Rendered 660/700, time remaining: 15s
-Rendered 660/700, time remaining: 15s
-Rendered 661/700, time remaining: 14s
-Rendered 662/700, time remaining: 14s
-Rendered 663/700, time remaining: 14s
-Rendered 663/700, time remaining: 14s
-Rendered 664/700, time remaining: 13s
-Rendered 665/700, time remaining: 13s
-Rendered 666/700, time remaining: 12s
-Rendered 666/700, time remaining: 12s
-Rendered 667/700, time remaining: 12s
-Rendered 668/700, time remaining: 12s
-Rendered 669/700, time remaining: 11s
-Rendered 670/700, time remaining: 11s
-Rendered 670/700, time remaining: 11s
-Rendered 671/700, time remaining: 10s
-Rendered 672/700, time remaining: 10s
-Rendered 673/700, time remaining: 10s
-Rendered 673/700, time remaining: 10s
-Rendered 674/700, time remaining: 9s
-Rendered 675/700, time remaining: 9s
-Rendered 676/700, time remaining: 9s
-Rendered 676/700, time remaining: 9s
-Rendered 677/700, time remaining: 8s
-Rendered 678/700, time remaining: 8s
-Rendered 679/700, time remaining: 7s
-Rendered 680/700, time remaining: 7s
-Rendered 680/700, time remaining: 7s
-Rendered 681/700, time remaining: 7s
-Rendered 682/700, time remaining: 6s
-Rendered 683/700, time remaining: 6s
-Rendered 683/700, time remaining: 6s
-Rendered 684/700, time remaining: 6s
-Rendered 685/700, time remaining: 5s
-Rendered 686/700, time remaining: 5s
-Rendered 686/700, time remaining: 5s
-Rendered 687/700, time remaining: 4s
-Rendered 688/700, time remaining: 4s
-Rendered 689/700, time remaining: 4s
-Rendered 690/700, time remaining: 3s
-Rendered 690/700, time remaining: 3s
-Rendered 691/700, time remaining: 3s
-Rendered 692/700, time remaining: 3s
-Rendered 693/700, time remaining: 2s
-Rendered 693/700, time remaining: 2s
-Rendered 694/700, time remaining: 2s
-Rendered 695/700, time remaining: 1s
-Rendered 695/700, time remaining: 1s
-Rendered 696/700, time remaining: 1s
-Rendered 697/700, time remaining: 1s
-Rendered 698/700, time remaining: 0s
-Rendered 699/700, time remaining: 0s
-Rendered 699/700, time remaining: 0s
-Stitched 510/700
-Stitched 522/700
-Stitched 534/700
-Stitched 546/700
-Stitched 559/700
-Stitched 560/700
-Stitched 700/700
-Voz: gemini (59 palavras)
-[trilha] trechos: epico 0.0-3.9s | tensao 3.9-20.4s | epico 20.4-23.3s
+endered 683/731, time remaining: 15s
+Rendered 684/731, time remaining: 15s
+Rendered 685/731, time remaining: 14s
+Rendered 686/731, time remaining: 14s
+Rendered 687/731, time remaining: 14s
+Rendered 687/731, time remaining: 14s
+Rendered 688/731, time remaining: 13s
+Rendered 689/731, time remaining: 13s
+Rendered 690/731, time remaining: 13s
+Rendered 690/731, time remaining: 13s
+Rendered 691/731, time remaining: 12s
+Rendered 692/731, time remaining: 12s
+Rendered 693/731, time remaining: 12s
+Rendered 694/731, time remaining: 11s
+Rendered 694/731, time remaining: 11s
+Rendered 695/731, time remaining: 11s
+Rendered 696/731, time remaining: 11s
+Rendered 697/731, time remaining: 10s
+Rendered 698/731, time remaining: 10s
+Rendered 698/731, time remaining: 10s
+Rendered 699/731, time remaining: 10s
+Rendered 700/731, time remaining: 9s
+Rendered 701/731, time remaining: 9s
+Rendered 702/731, time remaining: 9s
+Rendered 702/731, time remaining: 9s
+Rendered 703/731, time remaining: 9s
+Rendered 704/731, time remaining: 8s
+Rendered 705/731, time remaining: 8s
+Rendered 706/731, time remaining: 8s
+Rendered 706/731, time remaining: 8s
+Rendered 707/731, time remaining: 7s
+Rendered 708/731, time remaining: 7s
+Rendered 709/731, time remaining: 7s
+Rendered 709/731, time remaining: 7s
+Rendered 710/731, time remaining: 6s
+Rendered 711/731, time remaining: 6s
+Rendered 712/731, time remaining: 6s
+Rendered 713/731, time remaining: 5s
+Rendered 713/731, time remaining: 5s
+Rendered 714/731, time remaining: 5s
+Rendered 715/731, time remaining: 5s
+Rendered 716/731, time remaining: 4s
+Rendered 717/731, time remaining: 4s
+Rendered 717/731, time remaining: 4s
+Rendered 718/731, time remaining: 4s
+Rendered 719/731, time remaining: 3s
+Rendered 720/731, time remaining: 3s
+Rendered 720/731, time remaining: 3s
+Rendered 721/731, time remaining: 3s
+Rendered 722/731, time remaining: 2s
+Rendered 723/731, time remaining: 2s
+Rendered 724/731, time remaining: 2s
+Rendered 724/731, time remaining: 2s
+Rendered 725/731, time remaining: 1s
+Rendered 726/731, time remaining: 1s
+Rendered 727/731, time remaining: 1s
+Rendered 728/731, time remaining: 0s
+Rendered 728/731, time remaining: 0s
+Rendered 729/731, time remaining: 0s
+Rendered 730/731, time remaining: 0s
+Stitched 534/731
+Stitched 539/731
+Stitched 551/731
+Stitched 565/731
+Stitched 578/731
+Stitched 585/731
+Stitched 731/731
+[aviso] voz gemini falhou: gemini-2.5-pro-preview-tts: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Voz: edge (59 palavras)
+[trilha] trechos: epico 0.0-3.6s | tensao 3.6-18.0s | emocao 18.0-20.7s | epico 20.7-24.4s
 Editando no motor Remotion... (alguns minutos)
-Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/amostras/amostra-formato-navegador/video.mp4 (23.3s)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/amostras/amostra-formato-navegador/video.mp4 (24.4s)
 
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
