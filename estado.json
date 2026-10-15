@@ -259,9 +259,12 @@
       "msg_id": 727
     },
     "2026-10-15_1800_4-automacoes-escritorio": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-15T20:05:00.159637+00:00",
-      "msg_id": 736
+      "msg_id": 736,
+      "ig_id": null,
+      "publicado_em": "2026-10-15T21:00:18.049595+00:00",
+      "ig_manual": true
     },
     "2026-10-16_0800_compras-duplicadas-ralo-invisivel": {
       "status": "agendado",
