@@ -65,5 +65,6 @@
  "formato": "documentario",
  "voz": "gemini",
  "titulo": "Sua voz em qualquer idioma com IA",
- "numero": 0
+ "numero": 0,
+ "destino": "fila/2026-10-17_0800_ia-traduz-sua-voz-tempo-real"
 }
