@@ -212,12 +212,17 @@
       "ig_manual": true
     },
     "2026-10-15_0800_cameras-com-cerebro": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-14T15:28:12.460649+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad0b2458e44c0222ce2cfbf",
+        "feito": "buffer"
       },
-      "msg_id": 673
+      "msg_id": 673,
+      "ig_id": null,
+      "publicado_em": "2026-10-15T11:00:18.396490+00:00",
+      "ig_manual": true
     },
     "2026-10-15_1200_software-burro-vs-ia": {
       "status": "agendado",
@@ -242,6 +247,11 @@
         "via": "buffer"
       },
       "msg_id": 695
+    },
+    "2026-10-15_1800_4-automacoes-escritorio": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-15T11:00:17.601900+00:00",
+      "msg_id": 704
     }
   },
   "respondidos": {}
