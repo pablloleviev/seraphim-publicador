@@ -312,6 +312,11 @@
         "via": "buffer"
       },
       "msg_id": 766
+    },
+    "2026-10-17_1800_5-coisas-para-ia-analisar-hoje": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-16T19:00:25.453612+00:00",
+      "msg_id": 778
     }
   },
   "respondidos": {}
