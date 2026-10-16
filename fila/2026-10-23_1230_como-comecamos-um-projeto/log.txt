@@ -1,0 +1,81 @@
+ning: 21s
+Rendered 758/811, time remaining: 20s
+Rendered 759/811, time remaining: 20s
+Rendered 760/811, time remaining: 19s
+Rendered 761/811, time remaining: 19s
+Rendered 761/811, time remaining: 19s
+Rendered 762/811, time remaining: 19s
+Rendered 763/811, time remaining: 18s
+Rendered 764/811, time remaining: 18s
+Rendered 765/811, time remaining: 18s
+Rendered 765/811, time remaining: 18s
+Rendered 766/811, time remaining: 17s
+Rendered 767/811, time remaining: 17s
+Rendered 768/811, time remaining: 16s
+Rendered 768/811, time remaining: 16s
+Rendered 769/811, time remaining: 16s
+Rendered 770/811, time remaining: 16s
+Rendered 771/811, time remaining: 15s
+Rendered 771/811, time remaining: 15s
+Rendered 772/811, time remaining: 15s
+Rendered 773/811, time remaining: 14s
+Rendered 774/811, time remaining: 14s
+Rendered 775/811, time remaining: 14s
+Rendered 775/811, time remaining: 14s
+Rendered 776/811, time remaining: 13s
+Rendered 777/811, time remaining: 13s
+Rendered 778/811, time remaining: 12s
+Rendered 779/811, time remaining: 12s
+Rendered 779/811, time remaining: 12s
+Rendered 780/811, time remaining: 12s
+Rendered 781/811, time remaining: 11s
+Rendered 782/811, time remaining: 11s
+Rendered 782/811, time remaining: 11s
+Rendered 783/811, time remaining: 10s
+Rendered 784/811, time remaining: 10s
+Rendered 785/811, time remaining: 10s
+Rendered 785/811, time remaining: 10s
+Rendered 786/811, time remaining: 9s
+Rendered 787/811, time remaining: 9s
+Rendered 788/811, time remaining: 8s
+Rendered 789/811, time remaining: 8s
+Rendered 789/811, time remaining: 8s
+Rendered 790/811, time remaining: 8s
+Rendered 791/811, time remaining: 7s
+Rendered 792/811, time remaining: 7s
+Rendered 792/811, time remaining: 7s
+Rendered 793/811, time remaining: 6s
+Rendered 794/811, time remaining: 6s
+Rendered 795/811, time remaining: 6s
+Rendered 796/811, time remaining: 5s
+Rendered 796/811, time remaining: 5s
+Rendered 797/811, time remaining: 5s
+Rendered 798/811, time remaining: 5s
+Rendered 799/811, time remaining: 4s
+Rendered 799/811, time remaining: 4s
+Rendered 800/811, time remaining: 4s
+Rendered 801/811, time remaining: 3s
+Rendered 802/811, time remaining: 3s
+Rendered 803/811, time remaining: 3s
+Rendered 803/811, time remaining: 3s
+Rendered 804/811, time remaining: 2s
+Rendered 805/811, time remaining: 2s
+Rendered 806/811, time remaining: 1s
+Rendered 807/811, time remaining: 1s
+Rendered 807/811, time remaining: 1s
+Rendered 808/811, time remaining: 1s
+Rendered 809/811, time remaining: 0s
+Rendered 810/811, time remaining: 0s
+Rendered 810/811, time remaining: 0s
+Stitched 599/811
+Stitched 610/811
+Stitched 625/811
+Stitched 638/811
+Stitched 649/811
+Stitched 811/811
+Voz: gemini (77 palavras)
+[trilha] trechos: epico 0.0-4.1s | inspira 4.1-7.7s | sombrio 7.7-12.3s | emocao 12.3-16.8s | inspira 16.8-21.7s | epico 21.7-27.0s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-23_1230_como-comecamos-um-projeto/video.mp4 (27.0s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
