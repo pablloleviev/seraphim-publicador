@@ -1,0 +1,34 @@
+name: Relançamento — montar semana na fila
+on:
+  workflow_dispatch:
+    inputs:
+      parte: {description: "tudo | manuais | carrosseis | videos", required: false, default: "tudo"}
+permissions:
+  contents: write
+  actions: write
+jobs:
+  montar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: |
+          pip install -q playwright pillow
+          python -m playwright install --with-deps chromium
+      - name: Montar
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: python scripts/semana_relancamento.py ${{ inputs.parte }} 2>&1 | tee relancamento/montagem_log.txt
+      - name: Salvar e mandar renderizar os vídeos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -A fila pedidos historico.json imagens_usadas relancamento
+          git commit -qm "relançamento: semana 19–25/10 na fila" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase -X theirs && git push -q && break; sleep 5; done
+          if ls pedidos/*.json >/dev/null 2>&1; then gh workflow run gerar-video.yml; fi
