@@ -1,0 +1,81 @@
+/790, time remaining: 11s
+Rendered 728/790, time remaining: 11s
+Rendered 729/790, time remaining: 10s
+Rendered 730/790, time remaining: 10s
+Rendered 731/790, time remaining: 10s
+Rendered 732/790, time remaining: 10s
+Rendered 732/790, time remaining: 10s
+Rendered 733/790, time remaining: 10s
+Rendered 734/790, time remaining: 9s
+Rendered 735/790, time remaining: 9s
+Rendered 736/790, time remaining: 9s
+Rendered 737/790, time remaining: 9s
+Rendered 738/790, time remaining: 9s
+Rendered 739/790, time remaining: 9s
+Rendered 739/790, time remaining: 9s
+Rendered 740/790, time remaining: 8s
+Rendered 741/790, time remaining: 8s
+Rendered 742/790, time remaining: 8s
+Rendered 743/790, time remaining: 8s
+Rendered 744/790, time remaining: 8s
+Rendered 745/790, time remaining: 7s
+Rendered 746/790, time remaining: 7s
+Rendered 747/790, time remaining: 7s
+Rendered 748/790, time remaining: 7s
+Rendered 748/790, time remaining: 7s
+Rendered 749/790, time remaining: 7s
+Rendered 750/790, time remaining: 7s
+Rendered 751/790, time remaining: 6s
+Rendered 752/790, time remaining: 6s
+Rendered 753/790, time remaining: 6s
+Rendered 754/790, time remaining: 6s
+Rendered 755/790, time remaining: 6s
+Rendered 756/790, time remaining: 5s
+Rendered 756/790, time remaining: 5s
+Rendered 757/790, time remaining: 5s
+Rendered 758/790, time remaining: 5s
+Rendered 759/790, time remaining: 5s
+Rendered 760/790, time remaining: 5s
+Rendered 761/790, time remaining: 5s
+Rendered 762/790, time remaining: 4s
+Rendered 763/790, time remaining: 4s
+Rendered 764/790, time remaining: 4s
+Rendered 765/790, time remaining: 4s
+Rendered 765/790, time remaining: 4s
+Rendered 766/790, time remaining: 4s
+Rendered 767/790, time remaining: 4s
+Rendered 768/790, time remaining: 3s
+Rendered 769/790, time remaining: 3s
+Rendered 770/790, time remaining: 3s
+Rendered 771/790, time remaining: 3s
+Rendered 772/790, time remaining: 3s
+Rendered 773/790, time remaining: 2s
+Rendered 774/790, time remaining: 2s
+Rendered 774/790, time remaining: 2s
+Rendered 775/790, time remaining: 2s
+Rendered 776/790, time remaining: 2s
+Rendered 777/790, time remaining: 2s
+Rendered 778/790, time remaining: 2s
+Rendered 779/790, time remaining: 1s
+Rendered 780/790, time remaining: 1s
+Rendered 781/790, time remaining: 1s
+Rendered 782/790, time remaining: 1s
+Rendered 783/790, time remaining: 1s
+Rendered 783/790, time remaining: 1s
+Rendered 784/790, time remaining: 1s
+Rendered 785/790, time remaining: 0s
+Rendered 786/790, time remaining: 0s
+Rendered 787/790, time remaining: 0s
+Rendered 788/790, time remaining: 0s
+Rendered 789/790, time remaining: 0s
+Stitched 578/790
+Stitched 589/790
+Stitched 611/790
+Stitched 632/790
+Stitched 790/790
+Voz: gemini (72 palavras)
+[trilha] trechos: epico 0.0-4.5s | emocao 4.5-9.0s | energia 9.0-12.6s | emocao 12.6-17.1s | inspira 17.1-21.7s | epico 21.7-26.3s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-25_1930_sete-dias-uma-ideia/video.mp4 (26.3s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
