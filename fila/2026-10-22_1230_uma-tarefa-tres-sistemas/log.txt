@@ -1,0 +1,81 @@
+865, time remaining: 25s
+Rendered 817/865, time remaining: 24s
+Rendered 817/865, time remaining: 24s
+Rendered 818/865, time remaining: 24s
+Rendered 819/865, time remaining: 23s
+Rendered 820/865, time remaining: 23s
+Rendered 820/865, time remaining: 23s
+Rendered 821/865, time remaining: 22s
+Rendered 822/865, time remaining: 22s
+Rendered 822/865, time remaining: 22s
+Rendered 823/865, time remaining: 21s
+Rendered 824/865, time remaining: 21s
+Rendered 825/865, time remaining: 20s
+Rendered 825/865, time remaining: 20s
+Rendered 826/865, time remaining: 19s
+Rendered 827/865, time remaining: 19s
+Rendered 828/865, time remaining: 18s
+Rendered 828/865, time remaining: 18s
+Rendered 829/865, time remaining: 18s
+Rendered 830/865, time remaining: 17s
+Rendered 830/865, time remaining: 17s
+Rendered 831/865, time remaining: 17s
+Rendered 832/865, time remaining: 16s
+Rendered 833/865, time remaining: 16s
+Rendered 833/865, time remaining: 16s
+Rendered 834/865, time remaining: 15s
+Rendered 835/865, time remaining: 15s
+Rendered 835/865, time remaining: 15s
+Rendered 836/865, time remaining: 14s
+Rendered 837/865, time remaining: 14s
+Rendered 838/865, time remaining: 13s
+Rendered 838/865, time remaining: 13s
+Rendered 839/865, time remaining: 13s
+Rendered 840/865, time remaining: 12s
+Rendered 841/865, time remaining: 12s
+Rendered 841/865, time remaining: 12s
+Rendered 842/865, time remaining: 11s
+Rendered 843/865, time remaining: 11s
+Rendered 843/865, time remaining: 11s
+Rendered 844/865, time remaining: 10s
+Rendered 845/865, time remaining: 10s
+Rendered 846/865, time remaining: 9s
+Rendered 846/865, time remaining: 9s
+Rendered 847/865, time remaining: 9s
+Rendered 848/865, time remaining: 8s
+Rendered 849/865, time remaining: 8s
+Rendered 849/865, time remaining: 8s
+Rendered 850/865, time remaining: 7s
+Rendered 851/865, time remaining: 7s
+Rendered 851/865, time remaining: 7s
+Rendered 852/865, time remaining: 6s
+Rendered 853/865, time remaining: 6s
+Rendered 853/865, time remaining: 6s
+Rendered 854/865, time remaining: 5s
+Rendered 855/865, time remaining: 5s
+Rendered 855/865, time remaining: 5s
+Rendered 856/865, time remaining: 4s
+Rendered 857/865, time remaining: 4s
+Rendered 858/865, time remaining: 3s
+Rendered 859/865, time remaining: 3s
+Rendered 859/865, time remaining: 3s
+Rendered 860/865, time remaining: 2s
+Rendered 861/865, time remaining: 2s
+Rendered 861/865, time remaining: 2s
+Rendered 862/865, time remaining: 1s
+Rendered 863/865, time remaining: 1s
+Rendered 863/865, time remaining: 1s
+Rendered 864/865, time remaining: 0s
+Stitched 642/865
+Stitched 649/865
+Stitched 661/865
+Stitched 674/865
+Stitched 685/865
+Stitched 692/865
+Stitched 865/865
+Voz: gemini (70 palavras)
+[trilha] trechos: epico 0.0-4.1s | energia 4.1-10.4s | energia 10.4-16.9s | inspira 16.9-20.8s | emocao 20.8-24.5s | epico 24.5-28.8s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-22_1230_uma-tarefa-tres-sistemas/video.mp4 (28.8s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
