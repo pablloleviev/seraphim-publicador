@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630259,
+  "telegram_offset": 183630261,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -314,9 +314,17 @@
       "msg_id": 766
     },
     "2026-10-17_1800_5-coisas-para-ia-analisar-hoje": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-16T19:00:25.453612+00:00",
       "msg_id": 778
+    },
+    "2026-10-17_1900_perigo-senhas-bloco-de-notas": {
+      "status": "agendado",
+      "enviado_em": "2026-10-16T20:00:48.965621+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 780
     }
   },
   "respondidos": {}
