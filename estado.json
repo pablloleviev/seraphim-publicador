@@ -291,6 +291,22 @@
         "via": "buffer"
       },
       "msg_id": 740
+    },
+    "2026-10-17_0800_ia-traduz-sua-voz-tempo-real": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-16T13:52:35.654755+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 764
+    },
+    "2026-10-17_1200_como-organizar-caixa-de-entrada-ia": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-16T13:52:38.352121+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 766
     }
   },
   "respondidos": {}
