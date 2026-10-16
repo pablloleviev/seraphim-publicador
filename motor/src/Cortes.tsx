@@ -1021,7 +1021,9 @@ export const SeraphimCortes: React.FC<PropsC> = (props) => {
   const formato = FORMATOS[props.formato || 'noir'] ? (props.formato || 'noir') : 'noir';
   const FM = aplicarFormato(formato);
   SEED = hash(`${props.titulo || ''}${props.numero || ''}${props.cenas.length}`);
-  FT = FTS[SEED % FTS.length]; FW = FWS[(SEED >> 3) % FWS.length]; ARROBA = props.arroba || ARROBA;
+  FT = FTS[hash(SEED + 'ft') % FTS.length]; FW = FWS[hash(SEED + 'fw') % FWS.length]; ARROBA = props.arroba || ARROBA;
+  if (FRASEF === 'Mont') FRASEF = FW; else if (FRASEF === 'Anton') FRASEF = FT;
+  if (LEGF === 'Mont') LEGF = ['Mont', 'Sora', 'Mont', 'Syne'][hash(SEED + 'lg') % 4];
   if (SEED % 3 === 0) ABER = Math.min(ABER, 0.4);
   return (
     <AbsoluteFill style={{background: PRETO}}>
