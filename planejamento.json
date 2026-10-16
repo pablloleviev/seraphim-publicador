@@ -16,6 +16,14 @@
    ]
   },
   {
+   "nome": "relançamento: semana 19-25/10 é produzida a partir do plano aprovado; planejador automático pausado",
+   "a_partir_de": "2026-10-19",
+   "videos": [],
+   "carrosseis": []
+  }
+ ],
+ "_fases_pausadas": [
+  {
    "nome": "fase 2 (semanas 3-4)",
    "a_partir_de": "2026-10-24",
    "videos": [
