@@ -387,6 +387,14 @@ def html_capa(titulo, rotulo="", modelo="", modo="reels", imagem=""):
 <body><div class="safe">{corpo}</div><div class="grao"></div></body></html>"""
 
 
+# encolhe qualquer texto grande que estoure a largura/altura do seu bloco ou da tela (fontes largas variam)
+AJUSTAR = """() => { for (const el of document.querySelectorAll('.safe div')) {
+  const cs = getComputedStyle(el); let fs = parseFloat(cs.fontSize);
+  if (fs < 50 || !el.textContent.trim() || /^-/.test(el.style.right) || /^-/.test(el.style.left)) continue;
+  const fora = () => el.scrollWidth > el.clientWidth + 2 || el.getBoundingClientRect().right > 1040;
+  let n = 0; while (fora() && n++ < 40) { fs *= 0.95; el.style.fontSize = fs + 'px'; } } }"""
+
+
 async def gerar_varias(itens):
     """itens: [{titulo, rotulo?, modelo?, saida: Path, modo?}] -> JPG"""
     from PIL import Image
@@ -399,6 +407,7 @@ async def gerar_varias(itens):
             tmp.write_text(html_capa(it["titulo"], it.get("rotulo", ""), it.get("modelo", ""), modo, it.get("imagem", "")), encoding="utf-8")
             await pg.goto(tmp.as_uri())
             await pg.evaluate("document.fonts.ready")
+            await pg.evaluate(AJUSTAR)
             await pg.wait_for_timeout(400)
             png = await pg.screenshot()
             await pg.close()

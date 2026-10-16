@@ -20,8 +20,9 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
+          mkdir -p testes/ingredientes
           python scripts/ingredientes.py teste 2>&1 | tee testes/ingredientes/log.txt || true
-          python scripts/amostra_capas.py || true
+          python scripts/amostra_capas.py 2>&1 | tee -a testes/ingredientes/log.txt || true
       - run: |
           git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
           git add testes/ingredientes imagens_usadas; git commit -m "teste ingredientes" || true

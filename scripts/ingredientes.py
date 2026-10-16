@@ -116,12 +116,29 @@ def _pollinations(descricao, proporcao):
     seed = int(hashlib.md5(descricao.encode()).hexdigest(), 16) % 10**6
     url = (f"https://image.pollinations.ai/prompt/{urllib.parse.quote(descricao + '. ' + ESTILO_IA)}"
            f"?width={w}&height={h}&nologo=true&seed={seed}&model=flux")
-    try:
-        dados = _get(url, timeout=180)
-        return (dados, "pollinations") if len(dados) > 20000 else None
-    except Exception as e:
-        print(f"[aviso] pollinations: {e}")
-        return None
+    import time
+    for tentativa in range(4):   # sem chave: 1 pedido por vez e fila curta, então espera e tenta de novo
+        try:
+            dados = _get(url, timeout=180)
+            if len(dados) > 20000:
+                return _sem_marca(dados), "pollinations"
+        except Exception as e:
+            print(f"[aviso] pollinations (tentativa {tentativa + 1}): {e}")
+        time.sleep(20 + 15 * tentativa)
+    return None
+
+
+def _sem_marca(dados):
+    """corta a faixa de baixo (marca d'água do Pollinations) e amplia para 1080 de largura"""
+    import io
+    from PIL import Image
+    im = Image.open(io.BytesIO(dados)).convert("RGB")
+    w, h = im.size
+    im = im.crop((0, 0, w, int(h * 0.93)))
+    if w < 1080:
+        im = im.resize((1080, int(im.height * 1080 / w)), Image.LANCZOS)
+    b = io.BytesIO(); im.save(b, "JPEG", quality=93)
+    return b.getvalue()
 
 
 def imagem_ia(descricao, destino, proporcao="9:16"):
