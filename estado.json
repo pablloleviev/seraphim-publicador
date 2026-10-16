@@ -251,9 +251,12 @@
       "ig_manual": true
     },
     "2026-10-16_1800_4-rotinas-para-eliminar-retrabalho": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-15T19:00:18.200608+00:00",
-      "msg_id": 725
+      "msg_id": 725,
+      "ig_id": "18100566569536967",
+      "publicado_em": "2026-10-16T21:01:07.778042+00:00",
+      "ig_manual": false
     },
     "2026-10-16_1900_patio-travado-oficina-mecanica": {
       "status": "agendado",
