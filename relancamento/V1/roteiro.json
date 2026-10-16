@@ -1,0 +1,12 @@
+{
+ "nome": "v1-prazer-seraphim", "motor": "relancamento", "peca": "V1", "titulo": "Prazer, Seraphim",
+ "cenas": [
+  {"tipo": "palavra", "narracao": "Toda empresa tem um trabalho que ninguém deveria estar fazendo."},
+  {"tipo": "tres", "itens": ["copiar dado", "conferir planilha", "repetir resposta"], "icones": ["copiar", "conferir", "repetir"],
+   "narracao": "Copiar dado de um lugar pro outro. Conferir planilha. Responder a mesma pergunta pela décima vez."},
+  {"tipo": "risca", "itens": ["sistemas", "automação", "integração"],
+   "narracao": "A Seraphim existe pra tirar esse peso. A gente desenvolve sistemas sob medida, automatiza processos e conecta as ferramentas que a sua empresa já usa."},
+  {"tipo": "cresce", "texto": "Sem promessa mágica.|Com método.", "narracao": "Sem promessa mágica: com método."},
+  {"tipo": "assina", "texto": "Prazer, Seraphim.", "narracao": "Prazer, Seraphim. Nos próximos dias, a gente vai te mostrar como pensa e o que constrói."}
+ ]
+}

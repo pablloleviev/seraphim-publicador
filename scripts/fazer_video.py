@@ -464,6 +464,7 @@ def main():
             c["imagem"] = f"job/img/{destino.name}"
 
     cortes = spec.get("motor") == "cortes"
+    relanc = spec.get("motor") == "relancamento"
     if cortes:
         marcar_fala(cenas, palavras, limites)
         preparar_imagens_cortes(cenas)
@@ -476,7 +477,7 @@ def main():
 
     props = {"fps": 30, "duracao": cenas[-1]["fim"], "arroba": spec.get("arroba", ARROBA),
              "audio": audio, "batida": "sfx/batida.mp3", "sfx": True, "palavras": palavras, "cenas": cenas}
-    if cortes and audio:
+    if (cortes or relanc) and audio:
         try:
             import trilha
             t = trilha.montar(cenas, MOTOR / "public" / audio, JOB / "trilha.wav", semente=nome, dur_total=cenas[-1]["fim"])
@@ -484,6 +485,8 @@ def main():
                 props["batida"] = "job/trilha.wav"; props["trilha_mix"] = True
         except Exception as e:
             print(f"[aviso] trilha emocional falhou ({e}); usando a batida padrão")
+    if relanc:
+        props["peca"] = spec.get("peca", nome)
     props["tema"] = spec.get("tema", "noir")
     props["formato"] = spec.get("formato", "noir")            # formato de edição (paleta, moldura, legenda, transições)
     props["titulo"] = spec.get("titulo", nome.replace("-", " "))
@@ -492,7 +495,7 @@ def main():
 
     saida = Path(args.saida).resolve() if args.saida else RAIZ / "entrega" / "videos" / f"{nome}.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
-    cmd = f'npx remotion render src/index.ts {"Cortes" if cortes else "Seraphim"} "{saida}" --props=public/job/props.json --log=error --codec=h264 --crf=19 --jpeg-quality=100 --x264-preset=slow --pixel-format=yuv420p --audio-bitrate=192k'
+    cmd = f'npx remotion render src/index.ts {"Cortes" if cortes else "Relancamento" if relanc else "Seraphim"} "{saida}" --props=public/job/props.json --log=error --codec=h264 --crf=19 --jpeg-quality=100 --x264-preset=slow --pixel-format=yuv420p --audio-bitrate=192k'
     if os.environ.get("CHROME_PATH"):
         cmd += f' --browser-executable="{os.environ["CHROME_PATH"]}"'
     print("Editando no motor Remotion... (alguns minutos)")
