@@ -37,6 +37,8 @@ jobs:
         id: plano
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           DIAS: ${{ inputs.dias }}
           AMOSTRAS: ${{ inputs.amostras }}
         run: |
@@ -47,6 +49,9 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
           python scripts/capas_fila.py || true
           if [ "$(TZ=America/Sao_Paulo date +%u)" = "1" ]; then python scripts/feed.py --dias 7 --enviar || true; else python scripts/feed.py --dias 7 || true; fi
@@ -57,7 +62,7 @@ jobs:
         run: |
           git config user.name "seraphim-bot"
           git config user.email "bot@users.noreply.github.com"
-          for p in fila pedidos docs canva feed historico.json planejar_log.txt; do git add -A -- "$p" 2>/dev/null || true; done
+          for p in fila pedidos docs canva feed imagens_usadas historico.json planejar_log.txt; do git add -A -- "$p" 2>/dev/null || true; done
           git diff --cached --quiet && exit 0
           git commit -q -m "conteúdo planejado"
           for i in 1 2 3 4 5; do

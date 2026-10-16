@@ -5,6 +5,8 @@ Uso:
     python scripts/feed.py --enviar        -> também manda a imagem para o Telegram (precisa TELEGRAM_TOKEN e TELEGRAM_CHAT_ID)
     python scripts/feed.py --dias 7        -> quantos dias à frente entram (padrão 7)
 """
+import sys as _s, os as _o; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
+from marca import ARROBA, USUARIO, INSTAGRAM_URL
 import asyncio, json, os, re, subprocess, sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -59,7 +61,7 @@ def html(fut, pas):
 .i{{position:absolute;right:14px;top:12px;font:800 34px Inter;text-shadow:0 2px 8px #000}}
 .d{{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.72);border:2px solid #F5A623;color:#F5A623;font:800 24px Inter;padding:6px 12px;border-radius:10px}}
 </style></head><body>
-<div class="top"><img class="av" src="{ICONE}"><div><div class="nm">seraphimbr_</div><div class="bio">Seraphim • IA e automação<br>para pequenas empresas</div></div></div>
+<div class="top"><img class="av" src="{ICONE}"><div><div class="nm">{USUARIO}</div><div class="bio">Seraphim • IA e automação<br>para pequenas empresas</div></div></div>
 <div class="nota">Prévia do feed: os posts com data (dd/mm hh) ainda vão ser publicados; os sem data já estão no ar.</div>
 <div class="g">{grade}</div></body></html>"""
 

@@ -14,6 +14,8 @@ Pedido em gravacoes/<nome>.json:
   "legenda": "texto do post"
 }
 """
+import sys as _s, os as _o; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
+from marca import ARROBA, USUARIO, INSTAGRAM_URL
 import json, shutil, subprocess, sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -70,7 +72,7 @@ def processar(pedido: Path):
         cenas.append({"inicio": t, "fim": dur, "modelo": "gravacao"})
     if spec.get("titulo") and cenas and cenas[0]["modelo"] == "gravacao":
         cenas[0]["linhas"] = spec["titulo"]
-    props = {"fps": 30, "duracao": dur, "arroba": spec.get("arroba", "@seraphimbr_"), "audio": None,
+    props = {"fps": 30, "duracao": dur, "arroba": spec.get("arroba", ARROBA), "audio": None,
              "video": "job/gravacao.mp4", "video_som": tem_audio(tratado), "batida": "sfx/batida.mp3", "sfx": bool(ins), "palavras": palavras, "cenas": cenas}
     (JOB / "props.json").write_text(json.dumps(props, ensure_ascii=False), encoding="utf-8")
 

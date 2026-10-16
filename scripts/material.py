@@ -7,13 +7,15 @@ Gera a página do material gratuito entregue por palavra-chave (GitHub Pages, gr
 
 A página fica em docs/m/<slug>/index.html (o GitHub Pages publica a pasta docs/).
 """
+import sys as _s, os as _o; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
+from marca import ARROBA, USUARIO, INSTAGRAM_URL
 import html, json, re, shutil, unicodedata
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 DOCS = RAIZ / "docs"
 BASE = "https://pablloleviev.github.io/seraphim-publicador"
-INSTAGRAM = "https://instagram.com/seraphimbr_"
+INSTAGRAM = INSTAGRAM_URL
 
 
 def slug(s):
@@ -70,14 +72,14 @@ input:checked{{background:var(--ouro);border-color:var(--ouro)}}input:checked+.n
 .print{{background:none;border:0;color:var(--sub);text-decoration:underline;margin-top:18px;font:inherit;cursor:pointer}}
 @media print{{body{{background:#fff;color:#000}}li{{background:#fff;border-color:#ccc}}.t em{{color:#333}}.fim,.print{{display:none}}}}
 </style></head><body><main>
-<div class="top"><img src="../../assets/icone.png" alt=""><span>@seraphimbr_ · material gratuito</span></div>
+<div class="top"><img src="../../assets/icone.png" alt=""><span>{ARROBA} · material gratuito</span></div>
 <div class="tag">{html.escape(m.get('tipo', 'Checklist'))}</div>
 <h1>{_fmt(m['titulo']).replace('&lt;b&gt;', '<b>')}</h1>
 <p class="sub">{_fmt(m.get('subtitulo', ''))}</p>
 <ul>{itens}</ul>
 {dica}
 <div class="fim"><p>Curtiu? Todo dia tem mais conteúdo assim.</p>
-<a class="btn" href="{INSTAGRAM}">Seguir a @seraphimbr_ no Instagram</a>{autoflow}
+<a class="btn" href="{INSTAGRAM}">Seguir a {ARROBA} no Instagram</a>{autoflow}
 <button class="print" onclick="window.print()">Salvar em PDF / imprimir</button></div>
 </main></body></html>"""
     (pasta / "index.html").write_text(pagina, encoding="utf-8")
@@ -90,8 +92,8 @@ def _indice():
     (DOCS / ".nojekyll").write_text("")
     idx = DOCS / "index.html"
     if not idx.exists():
-        idx.write_text('<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=https://instagram.com/seraphimbr_">'
-                       '<title>Seraphim</title><a href="https://instagram.com/seraphimbr_">@seraphimbr_</a>', encoding="utf-8")
+        idx.write_text(f'<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url={INSTAGRAM_URL}">'
+                       f'<title>Seraphim</title><a href="{INSTAGRAM_URL}">{ARROBA}</a>', encoding="utf-8")
 
 
 if __name__ == "__main__":

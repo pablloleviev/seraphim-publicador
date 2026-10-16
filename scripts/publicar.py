@@ -15,6 +15,8 @@ Cada item da fila é uma pasta: fila/<AAAA-MM-DD_HHMM>_<nome>/
 Segredos (GitHub > Settings > Secrets and variables > Actions):
     TELEGRAM_TOKEN, TELEGRAM_CHAT_ID, IG_USER_ID, IG_TOKEN
 """
+import sys as _s, os as _o; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
+from marca import ARROBA, USUARIO, INSTAGRAM_URL
 import json, os, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from datetime import datetime, timedelta, timezone
@@ -40,7 +42,7 @@ import hashlib
 
 
 def md(t):
-    # escapa caracteres do Markdown do Telegram (ex.: o "_" de @seraphimbr_ quebrava a mensagem)
+    # escapa caracteres do Markdown do Telegram (ex.: o "_" de {ARROBA} quebrava a mensagem)
     for ch in ("\\", "_", "*", "`", "["):
         t = t.replace(ch, "\\" + ch)
     return t
@@ -452,7 +454,7 @@ def publicar_item(nome, item):
                         import buffer
                         leg_tt = meta.get("legenda_tiktok") or meta.get("legenda", "")
                         if meta.get("palavra_chave") and meta["palavra_chave"] not in leg_tt:
-                            leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimbr_ que o material chega no direct."
+                            leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram " + ARROBA + " que o material chega no direct."
                         tt["id"] = buffer.publicar_tiktok(pasta / "video.mp4", leg_tt)
                         tt["feito"] = "buffer"
                     except Exception as e:
@@ -462,7 +464,7 @@ def publicar_item(nome, item):
                         import tiktok
                         leg_tt = meta.get("legenda_tiktok") or meta.get("legenda", "")
                         if meta.get("palavra_chave") and meta["palavra_chave"] not in leg_tt:   # no TikTok não dá para mandar direct automático
-                            leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimbr_ que o material chega no direct."
+                            leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram " + ARROBA + " que o material chega no direct."
                         tt["id"] = tiktok.publicar(pasta / "video.mp4", leg_tt, tt["priv"],
                                                    tt.get("com", True), tt.get("due", True), tt.get("cos", True))
                         tt["feito"] = tiktok.MODO; tt["status"] = tiktok.STATUS
@@ -492,7 +494,7 @@ def publicar_item(nome, item):
                 # no modo rascunho o TikTok não aceita legenda pela API: mandamos pronta para copiar
                 leg = meta.get("legenda_tiktok") or meta.get("legenda", "")
                 if meta.get("palavra_chave") and meta["palavra_chave"] not in leg:
-                    leg += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram @seraphimbr_ que o material chega no direct."
+                    leg += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram " + ARROBA + " que o material chega no direct."
                 tg("sendMessage", chat_id=CHAT, text="📋 Legenda do TikTok (toque e segure para copiar):")
                 tg("sendMessage", chat_id=CHAT, text=leg)
         except Exception as e:

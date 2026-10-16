@@ -23,6 +23,8 @@ Cada cena:
   "raios":   true | false
   "narracao":"o que a voz fala nessa cena"
 """
+import sys as _s, os as _o; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
+from marca import ARROBA, USUARIO, INSTAGRAM_URL
 import argparse, base64, json, os, re, shutil, subprocess, sys, asyncio
 from pathlib import Path
 
@@ -472,7 +474,7 @@ def main():
         if (RAIZ / "assets" / pasta).exists():
           shutil.copytree(RAIZ / "assets" / pasta, MOTOR / "public" / pasta, dirs_exist_ok=True)
 
-    props = {"fps": 30, "duracao": cenas[-1]["fim"], "arroba": spec.get("arroba", "@seraphimbr_"),
+    props = {"fps": 30, "duracao": cenas[-1]["fim"], "arroba": spec.get("arroba", ARROBA),
              "audio": audio, "batida": "sfx/batida.mp3", "sfx": True, "palavras": palavras, "cenas": cenas}
     if cortes and audio:
         try:

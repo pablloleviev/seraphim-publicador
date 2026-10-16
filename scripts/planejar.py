@@ -14,6 +14,8 @@ Volume sobe sozinho (planejamento.json):
 Variedade: nunca repete tema (historico.json), reveza formatos e o visual,
 e cada dia passa por uma segunda rodada de revisão crítica antes de virar vídeo.
 """
+import sys as _s, os as _o; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
+from marca import ARROBA, USUARIO, INSTAGRAM_URL
 import asyncio, json, os, re, sys, time, unicodedata, urllib.error, urllib.request
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -171,7 +173,7 @@ EXEMPLO_CARROSSEL = {
         {"tipo": "capa", "tag": "Inteligência artificial", "titulo": "5 usos de IA que|*economizam horas*", "texto": "Na sua empresa, a partir de hoje.", "sera": "surpreso"},
         {"tipo": "numero", "numero": "01", "titulo": "Responder|*mensagens*", "texto": "Rascunhos de resposta para clientes em **segundos**."},
         {"tipo": "texto", "titulo": "O segredo:|*contexto*", "texto": "Quanto mais detalhe você der, **melhor a resposta**.", "card": "Ex.: \"Responda como dono de loja, tom educado, 3 linhas.\""},
-        {"tipo": "capa", "titulo": "Salva e|*testa hoje*", "texto": "Segue a **@seraphimbr_** para mais.", "sera": "confiante"}],
+        {"tipo": "capa", "titulo": "Salva e|*testa hoje*", "texto": "Segue a **" + ARROBA + "** para mais.", "sera": "confiante"}],
     "legenda": "5 usos de IA que economizam horas ⏱️\n\nSalva pra testar 📌"}
 
 
@@ -228,7 +230,7 @@ def pedir_dia(dia, n_v, n_c, hist):
     estruturas = [" > ".join(str(x) for x in h["cenas"] if x) for h in vids]
     ganchos = [next((x for x in h["cenas"] if x), "") for h in vids][-5:]
     buscas_usadas = sorted({b for h in hist for b in h.get("buscas", [])})[-150:]
-    regras = f"""Você é o roteirista-chefe da Seraphim (@seraphimbr_), startup brasileira de tecnologia:
+    regras = f"""Você é o roteirista-chefe da Seraphim ({ARROBA}), startup brasileira de tecnologia:
 sistemas sob medida, automações e inteligência artificial para pequenas e médias empresas.
 Referências de linha editorial: perfis como os de startups de IA/automação, criadores de "IA para negócios",
 SaaS de gestão. Público: donos de pequenos negócios e profissionais que querem usar tecnologia.
@@ -268,6 +270,8 @@ FICHA DO AUTOFLOW:
 - Legenda (Instagram): ÚNICA para cada post, ligada ao gancho e ao assunto; 2 a 4 linhas curtas com emoji, uma pergunta que puxa comentário e a chamada do funil; SEM hashtags dentro dela.
 - "legenda_tiktok": legenda própria para o TikTok (mais curta e direta, 1 a 2 linhas, tom de conversa), diferente da do Instagram.
 - "hashtags": 4 a 6 hashtags de AQUELE post (2-3 de nicho, 1-2 médias, no máximo 1 ampla), sempre incluindo #seraphimbr; nunca #seraphimpublicador; nunca o mesmo conjunto de outro post.
+- "capa": título CURTO da capa (até 6 palavras, com *destaque* na palavra-chave), diferente do gancho falado; pode ser pergunta ou número.
+- "capa_cena": em INGLÊS, uma cena concreta e fotografável para a imagem da capa (lugar + objeto + luz), SEM texto/letras; cada post com cena diferente das outras do dia (ex.: "mechanic's hands holding a phone with a glowing notification, dark garage, warm rim light").
 - "nome": slug curto em minúsculas com hífens, único.
 
 MANUAL DE TEXTO (ganchos, legendas, narração e slides; siga à risca):
@@ -372,7 +376,7 @@ def amostras(n):
         except Exception as e:
             print(f"[aviso] amostra descartada: {e}"); continue
         nome = "amostra-" + slug(v.get("nome") or "video")
-        spec = {"nome": nome, "arroba": "@seraphimbr_", "cenas": v["cenas"], "motor": "cortes", "amostra": True, "voz": "gemini",
+        spec = {"nome": nome, "arroba": ARROBA, "cenas": v["cenas"], "motor": "cortes", "amostra": True, "voz": "gemini",
                 "funil": v["funil"], "legenda": v.get("legenda", "")}
         if v["funil"] == "meio":
             import material
@@ -422,7 +426,7 @@ def main():
             tema = "noir"  # temas pausados: Pabllo reprovou (2026-10-10)
             fmt = proximo_formato(hist, evitar=formatos_do_dia, semente=f"{dia}{hora}")
             formatos_do_dia.append(fmt)
-            spec = {"nome": nome, "arroba": "@seraphimbr_", "quando": f"{dia} {hora}", "cenas": v["cenas"], "motor": "cortes",
+            spec = {"nome": nome, "arroba": ARROBA, "quando": f"{dia} {hora}", "cenas": v["cenas"], "motor": "cortes",
                     "formato": fmt, "titulo": v.get("titulo", nome), "numero": criados + 1,
                     "funil": v["funil"], "genero_voz": "masculina" if criados % 3 else "feminina",
                     "legenda": (v.get("legenda", "").strip() + "\n\n" + tags(v)),
@@ -436,7 +440,7 @@ def main():
             (RAIZ / "pedidos" / f"{nome}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=1), encoding="utf-8")
             buscas = [c.get("busca") for c in v["cenas"] if c.get("busca")] + [b for c in v["cenas"] for b in (c.get("buscas") or [])] \
                      + [it.get("busca") for c in v["cenas"] for it in (c.get("itens") or []) if isinstance(it, dict) and it.get("busca")]
-            hist.append({"nome": nome, "funil": v["funil"], "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video", "tema": tema, "formato_edicao": fmt,
+            hist.append({"nome": nome, "funil": v["funil"], "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video", "tema": tema, "formato_edicao": fmt, "capa": v.get("capa", ""), "capa_cena": v.get("capa_cena", ""),
                          "cenas": [c.get("tipo") for c in v["cenas"]], "buscas": buscas})
             criados += 1
         for hora, c in zip(hc, plano.get("carrosseis", [])):
@@ -454,14 +458,14 @@ def main():
                 if falta:
                     s["tipo"] = "texto"
             if slides[-1].get("tipo") not in ("perfil_cta", "capa"):
-                slides.append({"tipo": "perfil_cta", "titulo": "Gostou? *Salva* e segue", "texto": "Siga a @seraphimbr_ para mais."})
+                slides.append({"tipo": "perfil_cta", "titulo": "Gostou? *Salva* e segue", "texto": "Siga a " + ARROBA + " para mais."})
             nome = slug(c.get("nome") or c.get("titulo", "carrossel"))
             while nome in nomes:
                 nome += "-2"
             nomes.add(nome)
             destino = RAIZ / "fila" / f"{dia}_{hora.replace(':', '')}_{nome}"
             tema = "noir"  # temas pausados: Pabllo reprovou (2026-10-10)
-            spec = {"nome": nome, "arroba": "@seraphimbr_", "slides": slides, "tema": tema}
+            spec = {"nome": nome, "arroba": ARROBA, "slides": slides, "tema": tema}
             tmp = RAIZ / "pedidos" / f"_car_{nome}.json"
             tmp.write_text(json.dumps(spec, ensure_ascii=False), encoding="utf-8")
             import carrossel
@@ -473,7 +477,23 @@ def main():
             (destino / "item.json").write_text(json.dumps({
                 "tipo": "carrossel", "legenda": c.get("legenda", "").strip() + "\n\n👉 Seraphim, link na bio.\n\n" + HT,
                 "quando": f"{dia}T{hora}:00-03:00"}, ensure_ascii=False, indent=2), encoding="utf-8")
-            hist.append({"nome": nome, "titulo": c.get("titulo", nome), "formato": c.get("formato", ""), "dia": str(dia), "tipo": "carrossel", "tema": tema})
+            # 1ª página = capa no sistema de capas (modelo diferente das últimas, com foto/IA quando der)
+            try:
+                import capa as _capa, ingredientes as _ing
+                recentes = [h["capa_modelo"] for h in hist if h.get("capa_modelo")]
+                tit_capa = c.get("capa") or c.get("titulo", nome)
+                img = None
+                if _capa.semente(tit_capa) % 5 < 3 and (c.get("capa_cena") or c.get("titulo")):
+                    img = _ing.ilustracao(c.get("capa_cena") or "", c.get("capa_cena") or "", destino / "_capa_img.jpg", "4:5")
+                modelo_capa = _capa.escolher(tit_capa, c.get("formato", "")[:24], recentes, tem_imagem=bool(img))
+                asyncio.run(_capa.gerar_varias([{"titulo": tit_capa, "rotulo": c.get("formato", "")[:24], "modelo": modelo_capa,
+                                                  "modo": "carrossel", "imagem": str(img or ""), "saida": destino / "slide-01.jpg"}]))
+                (destino / "_capa_img.jpg").unlink(missing_ok=True)
+            except Exception as e:
+                modelo_capa = ""
+                print(f"[aviso] capa do carrossel: {e}")
+            hist.append({"nome": nome, "titulo": c.get("titulo", nome), "formato": c.get("formato", ""), "dia": str(dia), "tipo": "carrossel", "tema": tema,
+                         "capa_modelo": modelo_capa, "capa_cena": c.get("capa_cena", "")})
             criados += 1
         HIST.write_text(json.dumps(hist, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{criados} post(s) planejado(s)")

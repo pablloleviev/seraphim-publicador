@@ -14,6 +14,8 @@ A palavra-chave e o material ficam no item.json do post na fila:
 Precisa do IG_TOKEN com as permissões instagram_business_manage_comments e instagram_business_manage_messages.
 Chamado pelo loop do publicar.py (verificar(estado)) a cada ~1 minuto.
 """
+import sys as _s, os as _o; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
+from marca import ARROBA, USUARIO, INSTAGRAM_URL
 import json, os, random, re, time, unicodedata, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -76,8 +78,8 @@ def posts_ativos(estado: dict):
 
 
 DM = [
-    "Oi, {u}! 👋 Aqui está o que você pediu: {titulo}\n\n👉 {url}\n\nSe curtir, segue a @seraphimbr_ que todo dia tem mais. 🚀",
-    "Fala, {u}! Prometido é devido: {titulo} 📩\n\n👉 {url}\n\nE segue a @seraphimbr_ pra não perder os próximos. ✨",
+    "Oi, {u}! 👋 Aqui está o que você pediu: {titulo}\n\n👉 {url}\n\nSe curtir, segue a {arroba} que todo dia tem mais. 🚀",
+    "Fala, {u}! Prometido é devido: {titulo} 📩\n\n👉 {url}\n\nE segue a {arroba} pra não perder os próximos. ✨",
 ]
 PUBLICA = ["Te mandei no direct! 📩", "Enviado no seu direct! 🚀", "Chegou no direct, confere lá! 📩", "Mandei pra você no direct! ✨"]
 
@@ -98,7 +100,7 @@ def verificar(estado: dict, log=print):
             return
         for c in r.get("data", []):
             chave = f"{item['ig_id']}:{c.get('username') or c['id']}"
-            if chave in feitos or c["id"] in feitos.values() or c.get("username") == "seraphimbr_":
+            if chave in feitos or c["id"] in feitos.values() or c.get("username") == USUARIO:
                 continue
             if not tem_palavra(c.get("text", ""), meta["palavra_chave"]):
                 continue
@@ -109,7 +111,7 @@ def verificar(estado: dict, log=print):
             except Exception:
                 pass
             u = c.get("username") or "tudo bem"
-            texto = random.choice(DM).format(u=u, titulo=meta.get("material_titulo", "o material"), url=meta["material_url"])
+            texto = random.choice(DM).format(u=u, titulo=meta.get("material_titulo", "o material"), url=meta["material_url"], arroba=ARROBA)
             try:
                 _req("POST", "me/messages", json_body={"recipient": {"comment_id": c["id"]}, "message": {"text": texto}})
                 try:

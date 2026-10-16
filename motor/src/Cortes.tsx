@@ -31,7 +31,16 @@ export type PropsC = {
 const FONTES: [string, string, string?][] = [
   ['Anton', 'anton.ttf'], ['Jet', 'jetbrains.ttf', '800'], ['Mont', 'montserrat.ttf', '800'],
   ['Playfair', 'playfair.ttf', '500'], ['InterX', 'inter800.ttf', '800'], ['InterM', 'inter500.ttf', '500'],
+  ['Bebas', 'bebas.ttf'], ['Oswald', 'oswald-700.woff2', '700'], ['BigSh', 'big-shoulders-display-900.woff2', '900'],
+  ['Sora', 'sora-700.woff2', '700'], ['Syne', 'syne-800.woff2', '800'], ['Unbounded', 'unbounded-800.woff2', '800'],
 ];
+// fonte de manchete por vídeo (Pabllo: diversificar também a tipografia). FT = condensadas (largura parecida com Anton),
+// FW = largas (no lugar da Montserrat). Sorteadas pelo SEED de cada vídeo.
+const FTS = ['Anton', 'Anton', 'Oswald', 'BigSh', 'Bebas'];
+const FWS = ['Mont', 'Sora', 'Syne', 'Unbounded'];
+let FT = 'Anton';
+let FW = 'Mont';
+let ARROBA = '@seraphimbr_';
 const useFontes = () => {
   const [h] = React.useState(() => delayRender('fontes'));
   React.useEffect(() => {
@@ -202,7 +211,7 @@ const CPalavra: React.FC<CP> = ({c, f, n}) => {
   const verm = c.destaque && w.toUpperCase().includes(c.destaque.toUpperCase());
   return (
     <AbsoluteFill style={{background: BRANCO, alignItems: 'center', justifyContent: 'center'}}>
-      <div style={{fontFamily: 'Anton', fontSize: tam, lineHeight: 0.95, color: verm ? VERM : '#0b0b0c', textAlign: 'center', textTransform: 'uppercase',
+      <div style={{fontFamily: FT, fontSize: tam, lineHeight: 0.95, color: verm ? VERM : '#0b0b0c', textAlign: 'center', textTransform: 'uppercase',
         transform: `translateX(${x}px) scaleX(${1 + blur / 120})`, filter: `blur(${blur * 0.35}px)`, textShadow: rgb(4 + blur * 0.4), padding: '0 50px'}}>{w}</div>
     </AbsoluteFill>
   );
@@ -260,7 +269,7 @@ const CDigitando: React.FC<CP> = ({c, f}) => {
     <AbsoluteFill>
       <FundoVar f={f} c={c} />
       <AbsoluteFill style={{alignItems: 'flex-start', justifyContent: 'center', padding: '0 90px'}}>
-        {c.topo && <div style={{fontFamily: 'Anton', fontSize: 150, color: VERML, textShadow: rgb(4), marginBottom: 30, marginLeft: 120,
+        {c.topo && <div style={{fontFamily: FT, fontSize: 150, color: VERML, textShadow: rgb(4), marginBottom: 30, marginLeft: 120,
           opacity: ease(f, 0, 4)}}>{c.topo}</div>}
         <div style={{fontFamily: 'Jet', fontWeight: 800, fontSize: tamDig(t), lineHeight: 1.1, color: '#fff', textShadow: rgb(3), maxWidth: 900, whiteSpace: 'pre-wrap'}}>
           {quebra(t).slice(0, k + (quebra(t).length - t.length))}
@@ -372,7 +381,7 @@ const CCards: React.FC<CP> = ({c, f, fps}) => {
           const bob = Math.sin((f + i * 20) / 18) * 10;
           return (
             <div key={i} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', transform: `translateY(${(1 - s) * 200 + bob}px) rotate(${i ? 3 : -3}deg)`, opacity: s}}>
-              <div style={{fontFamily: 'Mont', fontWeight: 800, fontSize: 70, color: '#fff', marginBottom: 14}}>{(it.rotulo || '').toLowerCase()}</div>
+              <div style={{fontFamily: FW, fontWeight: 800, fontSize: 70, color: '#fff', marginBottom: 14}}>{(it.rotulo || '').toLowerCase()}</div>
               <div style={{width: 500, height: 500, borderRadius: 50, overflow: 'hidden', background: '#222', boxShadow: '0 30px 80px rgba(0,0,0,.7), 0 0 0 4px rgba(255,255,255,.08)'}}>
                 {it.imagem && <Img src={staticFile(it.imagem)} style={{width: '100%', height: '100%', objectFit: 'cover'}} />}
               </div>
@@ -518,7 +527,7 @@ const CCta: React.FC<CP> = ({c, f, fps, n}) => {
       <AbsoluteFill style={{background: `radial-gradient(circle at 50% 34%, rgba(${ACRGB},.28), transparent 55%)`}} />
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
         <Img src={staticFile(`sera/${c.pose || 'confiante'}.png`)} style={{height: 640, transform: `scale(${s}) translateY(${Math.sin(f / 12) * 10}px)`}} />
-        <div style={{fontFamily: 'Anton', fontSize: 120, color: '#fff', textAlign: 'center', lineHeight: 1.02, marginTop: 10, textShadow: rgb(3), padding: '0 60px'}}>
+        <div style={{fontFamily: FT, fontSize: 120, color: '#fff', textAlign: 'center', lineHeight: 1.02, marginTop: 10, textShadow: rgb(3), padding: '0 60px'}}>
           {(c.texto || '').split('*').map((t, i) => <span key={i} style={{color: i % 2 ? OURO : '#fff'}}>{t}</span>)}</div>
         {fundo && (
           <div style={{marginTop: 44, padding: '24px 56px', borderRadius: 999, background: OURO, color: PRETO, fontFamily: 'InterX', fontSize: 50,
@@ -526,7 +535,7 @@ const CCta: React.FC<CP> = ({c, f, fps, n}) => {
         )}
         <div style={{position: 'relative', marginTop: fundo ? 34 : 56, display: 'flex', alignItems: 'center', gap: 22, transform: `scale(${bs * (fundo ? 1.05 : 1.25) * aperta})`}}>
           <Img src={staticFile('marca/icone.png')} style={{width: 92, height: 92, borderRadius: 46, boxShadow: `0 0 0 4px ${OURO}`}} />
-          <div style={{fontFamily: 'InterX', fontSize: 44, color: '#fff'}}>seraphimbr_</div>
+          <div style={{fontFamily: 'InterX', fontSize: 44, color: '#fff'}}>{ARROBA.replace('@', '')}</div>
           <div style={{padding: '18px 44px', borderRadius: 18, fontFamily: 'InterX', fontSize: 44,
             background: clicou ? '#363639' : '#0095F6', color: '#fff', transition: 'none'}}>{clicou ? 'Seguindo ✓' : 'Seguir'}</div>
           <div style={{position: 'absolute', right: 40 - (1 - cur) * 160, top: 50 + (1 - cur) * 220, fontSize: 90, opacity: cur > 0 && f < toque + 20 ? 1 : 0,
@@ -614,8 +623,8 @@ const CCalendario: React.FC<CP> = ({c, f, fps, n}) => {
   const ang = vira * 180;
   const Face: React.FC<{d: string; m: string; cor: string}> = ({d, m, cor}) => (
     <div style={{width: 640, height: 700, borderRadius: 50, background: '#f4f1ea', boxShadow: '0 50px 120px rgba(0,0,0,.65)', overflow: 'hidden', backfaceVisibility: 'hidden', position: 'absolute'}}>
-      <div style={{height: 190, background: cor, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Anton', fontSize: 110, color: '#fff', letterSpacing: 8}}>{m}</div>
-      <div style={{textAlign: 'center', fontFamily: 'Anton', fontSize: 380, lineHeight: 1.15, color: '#111'}}>{d}</div>
+      <div style={{height: 190, background: cor, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FT, fontSize: 110, color: '#fff', letterSpacing: 8}}>{m}</div>
+      <div style={{textAlign: 'center', fontFamily: FT, fontSize: 380, lineHeight: 1.15, color: '#111'}}>{d}</div>
     </div>);
   return (
     <AbsoluteFill>
@@ -1012,6 +1021,7 @@ export const SeraphimCortes: React.FC<PropsC> = (props) => {
   const formato = FORMATOS[props.formato || 'noir'] ? (props.formato || 'noir') : 'noir';
   const FM = aplicarFormato(formato);
   SEED = hash(`${props.titulo || ''}${props.numero || ''}${props.cenas.length}`);
+  FT = FTS[SEED % FTS.length]; FW = FWS[(SEED >> 3) % FWS.length]; ARROBA = props.arroba || ARROBA;
   if (SEED % 3 === 0) ABER = Math.min(ABER, 0.4);
   return (
     <AbsoluteFill style={{background: PRETO}}>

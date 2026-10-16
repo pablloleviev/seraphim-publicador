@@ -12,6 +12,8 @@ Marcação de texto:
     **palavra** -> fica em negrito branco (no texto de apoio)
     |          -> quebra de linha no título
 """
+import sys as _s, os as _o; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
+from marca import ARROBA, USUARIO, INSTAGRAM_URL
 import asyncio, json, re, sys
 from pathlib import Path
 from playwright.async_api import async_playwright
@@ -321,7 +323,7 @@ def _foto_pixabay(busca, destino):
 async def main(caminho: str, saida_dir: str = None):
     spec = json.loads(Path(caminho).read_text(encoding="utf-8"))
     nome = spec.get("nome", Path(caminho).stem)
-    arroba = spec.get("arroba", "@seraphimbr_")
+    arroba = spec.get("arroba", ARROBA)
     slides = spec["slides"]
     saida = Path(saida_dir) if saida_dir else RAIZ / "entrega" / "carrosseis" / nome
     saida.mkdir(parents=True, exist_ok=True)
