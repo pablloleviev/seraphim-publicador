@@ -1,0 +1,18 @@
+name: Backup do Instagram
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python scripts/ig_backup.py 2>&1 | tee backup_log.txt
+      - run: |
+          git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
+          git add backup backup_log.txt; git commit -qm "backup do Instagram" || exit 0
+          git pull -q --rebase -X theirs; git push
