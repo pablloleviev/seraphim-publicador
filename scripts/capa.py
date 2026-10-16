@@ -361,7 +361,7 @@ def f_produto(t, rot, s):
                      f'<div style="width:100px;height:40px;border-radius:20px;background:{OURO if k < 2 else "#26262c"}"></div></div>' for k in range(4))
     return f"""<div style="position:absolute;left:300px;top:-200px;width:900px;height:900px;border-radius:50%;background:{OURO};opacity:.35;filter:blur(200px)"></div>
 <div class="vidro" style="position:absolute;left:80px;right:80px;top:240px;border-radius:40px;padding:50px">
-<div style="font:500 28px SpaceB;color:{OURO};margin-bottom:34px">{(rot or 'AUTOFLOW · ordem de serviço')[:34]}</div>{linhas}</div>
+<div style="font:500 28px SpaceB;color:{OURO};margin-bottom:34px">{(rot or 'AUTOFLOW')[:34]}</div>{linhas}</div>
 <div style="position:absolute;left:80px;right:80px;top:930px;font:{tam(len(limpar(t)),96,84,72,62)}px/1.04 Unbounded;color:{BRANCO}">{destacar(t)}</div>{_sig(s)}"""
 
 
