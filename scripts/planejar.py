@@ -163,6 +163,7 @@ CHAMADA FINAL (cena cta + última frase da narração): NÃO use frase pronta. E
 assunto, natural, curta (até ~18 palavras), sem soar genérica. Ela tem que fazer sentido sozinha e com o resto do roteiro.
 A legenda do post segue a mesma chamada (topo: seguir; meio: comentar a palavra-chave; fundo: link na bio)."""
 FICHA_AUTOFLOW = (RAIZ / "estilos" / "autoflow.md").read_text(encoding="utf-8")
+TEXTO_IG = (RAIZ / "estilos" / "texto-instagram.md").read_text(encoding="utf-8")
 
 EXEMPLO_CARROSSEL = {
     "nome": "5-usos-ia", "formato": "lista prática", "titulo": "5 usos de IA que economizam horas",
@@ -266,8 +267,11 @@ FICHA DO AUTOFLOW:
 - Carrossel (estilo de carrossel viral): capa com manchete forte = número + ferramenta/assunto conhecido + promessa ou segredo (ex.: "5 comandos pra fazer o ChatGPT trabalhar na sua empresa", "3 erros que fazem seu cliente sumir"); a capa promete exatamente a quantidade de itens do miolo; miolo com 1 item por slide (título curto + explicação ou comando pronto pra copiar); último slide = chamada (seguir/salvar). Carrossel: 7 a 9 slides, nível Blue Ocean/Gene, com VARIEDADE de layouts (nunca só "numero" em sequência). Tipos: capa_foto {{rotulo,titulo,busca(inglês, p/ foto real vertical) ou sera}}, capa_noticia {{selo,titulo,recortes:[{{fonte,texto}}x3]}} (só com notícia real e fonte), pilulas {{rotulo,titulo,texto,itens:[3-5 textos curtos]}}, card {{rotulo,titulo,icone(emoji),subtitulo,card,chips:[2-4]}}, whatsapp {{rotulo,titulo,contato,mensagens:[{{de:cliente|empresa,texto,hora}}x2-5]}}, comparacao {{rotulo,titulo,esquerda:{{rotulo,itens[3]}},direita:{{rotulo,itens[3]}}}}, passos {{rotulo,titulo,itens:[{{titulo,texto}}x3-4]}}, citacao {{titulo,texto}}, numero/texto/capa (clássicos), perfil_cta {{titulo,texto}} (SEMPRE o último). Primeiro slide: capa_foto, capa_noticia ou capa. Use "fundo":"branco" em 2 slides do miolo (ritmo escuro→claro). Misture pelo menos 4 tipos diferentes. Nunca invente número/estatística; títulos usam | para quebrar linha e *destaque* em dourado.
 - Legenda (Instagram): ÚNICA para cada post, ligada ao gancho e ao assunto; 2 a 4 linhas curtas com emoji, uma pergunta que puxa comentário e a chamada do funil; SEM hashtags dentro dela.
 - "legenda_tiktok": legenda própria para o TikTok (mais curta e direta, 1 a 2 linhas, tom de conversa), diferente da do Instagram.
-- "hashtags": 8 a 12 hashtags relevantes para AQUELE post (misture 3 amplas, 5 do nicho/assunto e 2 de público, ex.: #inteligenciaartificial #chatgpt #pequenasempresas #empreendedorismo #automacao), sempre incluindo #seraphimbr; nunca #seraphimpublicador.
+- "hashtags": 4 a 6 hashtags de AQUELE post (2-3 de nicho, 1-2 médias, no máximo 1 ampla), sempre incluindo #seraphimbr; nunca #seraphimpublicador; nunca o mesmo conjunto de outro post.
 - "nome": slug curto em minúsculas com hífens, único.
+
+MANUAL DE TEXTO (ganchos, legendas, narração e slides; siga à risca):
+{TEXTO_IG}
 
 MANUAL DE EDIÇÃO DOS CORTES (estilo e ritmo; para os campos de cena, siga o catálogo acima):
 {(RAIZ / "estilos" / "cortes.md").read_text(encoding="utf-8")}
@@ -282,6 +286,7 @@ Exemplo de carrossel: {json.dumps(EXEMPLO_CARROSSEL, ensure_ascii=False)}"""
     revisao = f"""Você é o diretor criativo exigente da Seraphim. Abaixo está o rascunho do conteúdo do dia.
 Revise CADA post com olhar crítico e devolva a versão MELHORADA no mesmo formato JSON:
 - corrija ortografia, palavras repetidas e frases estranhas (leia em voz alta mentalmente);
+- remova todo tique de IA do MANUAL DE TEXTO abaixo (revelações forçadas, "não é X, é Y", frases-metralhadora, vocabulário de IA, isca de engajamento, excesso de emoji);
 - troque ganchos fracos por ganchos que prendem; corte palavras inúteis; deixe a narração natural, falada;
 - garanta que nenhum post se pareça com outro do dia nem com estes temas já usados: {json.dumps(usados[-80:], ensure_ascii=False)};
 - DIVERSIDADE: compare a sequência de tipos de cena de cada vídeo com a dos outros do dia e com as dos últimos vídeos (estão nas regras);
