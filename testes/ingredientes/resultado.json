@@ -1,6 +1,6 @@
 {
  "foto": "/home/runner/work/seraphim-publicador/seraphim-publicador/testes/ingredientes/foto.jpg",
  "ia": "/home/runner/work/seraphim-publicador/seraphim-publicador/testes/ingredientes/ia.jpg",
- "pollinations": false,
+ "pollinations": true,
  "gemini": false
 }

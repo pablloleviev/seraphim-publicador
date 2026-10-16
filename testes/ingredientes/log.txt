@@ -1,0 +1,20 @@
+[foto] pixabay:3050400 <- 'mechanic workshop car engine'
+[aviso] gemini-2.5-flash-image: HTTP Error 429: Too Many Requests b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a'
+[aviso] gemini-2.0-flash-preview-image-generation: HTTP Error 404: Not Found b'{\n  "error": {\n    "code": 404,\n    "message": "models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListMod'
+[ia] pollinations <- 'a lone smartphone glowing on a mechanic's workbench at night'
+[aviso] gemini-2.5-flash-image: HTTP Error 429: Too Many Requests b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a'
+[aviso] gemini-2.0-flash-preview-image-generation: HTTP Error 404: Not Found b'{\n  "error": {\n    "code": 404,\n    "message": "models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListMod'
+{'foto': '/home/runner/work/seraphim-publicador/seraphim-publicador/testes/ingredientes/foto.jpg', 'ia': '/home/runner/work/seraphim-publicador/seraphim-publicador/testes/ingredientes/ia.jpg', 'pollinations': True, 'gemini': False}
+[aviso] gemini-2.5-flash-image: HTTP Error 429: Too Many Requests b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a'
+[aviso] gemini-2.0-flash-preview-image-generation: HTTP Error 404: Not Found b'{\n  "error": {\n    "code": 404,\n    "message": "models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListMod'
+[aviso] pollinations (tentativa 1): HTTP Error 402: Payment Required
+[aviso] pollinations (tentativa 2): HTTP Error 402: Payment Required
+[ia] pollinations <- 'mechanic in dark garage looking at a glowing smartphone, car'
+[foto] pixabay:256305 <- 'invoice desk'
+[aviso] gemini-2.5-flash-image: HTTP Error 429: Too Many Requests b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a'
+[aviso] gemini-2.0-flash-preview-image-generation: HTTP Error 404: Not Found b'{\n  "error": {\n    "code": 404,\n    "message": "models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListMod'
+[aviso] pollinations (tentativa 1): HTTP Error 402: Payment Required
+[aviso] pollinations (tentativa 2): HTTP Error 402: Payment Required
+[ia] pollinations <- 'futuristic golden circuit gears inside a dark car engine, ma'
+[foto] pixabay:6528079 <- 'old car garage'
+ok ['/home/runner/work/seraphim-publicador/seraphim-publicador/testes/ingredientes/img0.jpg', '/home/runner/work/seraphim-publicador/seraphim-publicador/testes/ingredientes/img1.jpg', '/home/runner/work/seraphim-publicador/seraphim-publicador/testes/ingredientes/img2.jpg', '/home/runner/work/seraphim-publicador/seraphim-publicador/testes/ingredientes/img3.jpg']
