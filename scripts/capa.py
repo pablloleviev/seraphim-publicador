@@ -330,7 +330,8 @@ def _sig(s, escuro=True):
 def f_manifesto(t, rot, s):
     """declaração em serifa pesada gigante, última frase em dourado"""
     return f"""<div style="position:absolute;left:80px;top:110px;font:800 24px SpaceB;letter-spacing:7px;color:{OURO}">{(rot or 'MANIFESTO').upper()[:26]}</div>
-<div style="position:absolute;left:80px;right:80px;top:200px;font:{tam(len(limpar(t)),150,130,108,92)}px/0.95 Fraunces;color:{BRANCO}">{destacar(t)}</div>{_sig(s)}"""
+<div style="position:absolute;left:80px;right:80px;top:150px;height:3px;background:#1d1d22"></div>
+<div style="position:absolute;left:80px;right:80px;bottom:200px;font:{tam(len(limpar(t)),190,150,118,96)}px/0.92 Fraunces;color:{BRANCO}">{destacar(t)}</div>{_sig(s)}"""
 
 
 def f_blueprint(t, rot, s):
