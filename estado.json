@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630257,
+  "telegram_offset": 183630259,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -298,7 +298,7 @@
       "ig_manual": false
     },
     "2026-10-17_0800_ia-traduz-sua-voz-tempo-real": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-16T13:52:35.654755+00:00",
       "tiktok": {
         "via": "buffer"
@@ -306,7 +306,7 @@
       "msg_id": 764
     },
     "2026-10-17_1200_como-organizar-caixa-de-entrada-ia": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-16T13:52:38.352121+00:00",
       "tiktok": {
         "via": "buffer"
