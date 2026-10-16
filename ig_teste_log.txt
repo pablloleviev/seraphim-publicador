@@ -1,1 +1,4 @@
-ERRO: 400 {"error":{"message":"Error validating access token: Session key is malformed because of invalid user id.","type":"OAuthException","code":190,"error_subcode":0,"fbtrace_id":"AukaurGZXg_ujMpidDOKn33"}}
+Conta: @getuliovargascosta
+Post 18019611911946915 (2026-10-16T11:16:10+0000): 0 comentário(s) lidos ✓
+Post 18125015611904052 (2026-10-16T08:26:32+0000): 0 comentário(s) lidos ✓
+Post 18002505677809867 (2026-10-15T23:20:09+0000): 0 comentário(s) lidos ✓
