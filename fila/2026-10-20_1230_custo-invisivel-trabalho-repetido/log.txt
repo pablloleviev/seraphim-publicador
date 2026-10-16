@@ -1,0 +1,81 @@
+7, time remaining: 20s
+Rendered 903/957, time remaining: 20s
+Rendered 904/957, time remaining: 19s
+Rendered 905/957, time remaining: 19s
+Rendered 906/957, time remaining: 19s
+Rendered 907/957, time remaining: 18s
+Rendered 907/957, time remaining: 18s
+Rendered 908/957, time remaining: 18s
+Rendered 909/957, time remaining: 18s
+Rendered 910/957, time remaining: 17s
+Rendered 911/957, time remaining: 17s
+Rendered 911/957, time remaining: 17s
+Rendered 912/957, time remaining: 16s
+Rendered 913/957, time remaining: 16s
+Rendered 914/957, time remaining: 16s
+Rendered 915/957, time remaining: 15s
+Rendered 915/957, time remaining: 15s
+Rendered 916/957, time remaining: 15s
+Rendered 917/957, time remaining: 14s
+Rendered 918/957, time remaining: 14s
+Rendered 919/957, time remaining: 14s
+Rendered 919/957, time remaining: 14s
+Rendered 920/957, time remaining: 13s
+Rendered 921/957, time remaining: 13s
+Rendered 922/957, time remaining: 13s
+Rendered 922/957, time remaining: 13s
+Rendered 923/957, time remaining: 12s
+Rendered 924/957, time remaining: 12s
+Rendered 925/957, time remaining: 11s
+Rendered 926/957, time remaining: 11s
+Rendered 926/957, time remaining: 11s
+Rendered 927/957, time remaining: 11s
+Rendered 928/957, time remaining: 10s
+Rendered 929/957, time remaining: 10s
+Rendered 930/957, time remaining: 10s
+Rendered 930/957, time remaining: 10s
+Rendered 931/957, time remaining: 9s
+Rendered 932/957, time remaining: 9s
+Rendered 933/957, time remaining: 8s
+Rendered 933/957, time remaining: 8s
+Rendered 934/957, time remaining: 8s
+Rendered 935/957, time remaining: 8s
+Rendered 936/957, time remaining: 7s
+Rendered 937/957, time remaining: 7s
+Rendered 937/957, time remaining: 7s
+Rendered 938/957, time remaining: 7s
+Rendered 939/957, time remaining: 6s
+Rendered 940/957, time remaining: 6s
+Rendered 941/957, time remaining: 5s
+Rendered 941/957, time remaining: 5s
+Rendered 942/957, time remaining: 5s
+Rendered 943/957, time remaining: 5s
+Rendered 944/957, time remaining: 4s
+Rendered 945/957, time remaining: 4s
+Rendered 945/957, time remaining: 4s
+Rendered 946/957, time remaining: 4s
+Rendered 947/957, time remaining: 3s
+Rendered 948/957, time remaining: 3s
+Rendered 949/957, time remaining: 2s
+Rendered 949/957, time remaining: 2s
+Rendered 950/957, time remaining: 2s
+Rendered 951/957, time remaining: 2s
+Rendered 952/957, time remaining: 1s
+Rendered 952/957, time remaining: 1s
+Rendered 953/957, time remaining: 1s
+Rendered 954/957, time remaining: 1s
+Rendered 955/957, time remaining: 0s
+Rendered 956/957, time remaining: 0s
+Stitched 713/957
+Stitched 716/957
+Stitched 730/957
+Stitched 746/957
+Stitched 760/957
+Stitched 766/957
+Stitched 957/957
+Voz: gemini (82 palavras)
+[trilha] trechos: epico 0.0-3.7s | emocao 3.7-10.1s | tensao 10.1-14.7s | emocao 14.7-20.6s | inspira 20.6-26.1s | epico 26.1-31.9s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-20_1230_custo-invisivel-trabalho-repetido/video.mp4 (31.9s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
