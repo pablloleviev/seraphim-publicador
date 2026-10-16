@@ -272,12 +272,17 @@
       "ig_manual": true
     },
     "2026-10-16_0800_compras-duplicadas-ralo-invisivel": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-15T20:05:03.905866+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad203b3b948bf9e9d8ee120",
+        "feito": "buffer"
       },
-      "msg_id": 738
+      "msg_id": 738,
+      "ig_id": null,
+      "publicado_em": "2026-10-16T11:00:01.149067+00:00",
+      "ig_manual": true
     },
     "2026-10-16_1200_ia-que-usa-computador-sozinha": {
       "status": "agendado",
