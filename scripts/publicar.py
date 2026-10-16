@@ -159,8 +159,9 @@ def esperar_container(cid, limite=300):
 def publicar_instagram(pasta: Path, meta: dict) -> str:
     legenda = meta.get("legenda", "")
     if meta["tipo"] == "reels":
+        extra = {"cover_url": url_publica(pasta / "capa.jpg")} if (pasta / "capa.jpg").exists() else {}
         c = ig(f"{IG_USER}/media", media_type="REELS", video_url=url_publica(pasta / "video.mp4"),
-               caption=legenda, share_to_feed="true")
+               caption=legenda, share_to_feed="true", **extra)
         esperar_container(c["id"], 600)
         criacao = c["id"]
     else:
@@ -483,6 +484,9 @@ def publicar_item(nome, item):
                 try:
                     if meta["tipo"] == "reels":
                         tg_arquivo("sendVideo", "video", pasta / "video.mp4", chat_id=CHAT, supports_streaming="true", **dims(pasta / "video.mp4"))
+                        if (pasta / "capa.jpg").exists():
+                            tg_arquivo("sendDocument", "document", pasta / "capa.jpg", chat_id=CHAT,
+                                       caption="🖼️ Capa do Reels: no Instagram, 'Editar capa' → 'Adicionar da galeria'.")
                     else:
                         slides = sorted(pasta.glob("slide-*.jpg"))[:10]
                         tg("sendMediaGroup", chat_id=CHAT, media=[{"type": "photo", "media": url_publica(x)} for x in slides])

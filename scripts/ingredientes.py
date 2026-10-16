@@ -94,7 +94,7 @@ def _gemini_img(descricao, proporcao):
         return None
     corpo = {"contents": [{"parts": [{"text": f"{descricao}. {ESTILO_IA}"}]}],
              "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": proporcao}}}
-    for modelo in ("gemini-2.5-flash-image", "gemini-2.0-flash-preview-image-generation"):
+    for modelo in ("gemini-2.5-flash-image",):
         try:
             if "2.0" in modelo:
                 corpo["generationConfig"] = {"responseModalities": ["TEXT", "IMAGE"]}
