@@ -318,6 +318,73 @@ def m_icone(t, rot, s, im=""):
 <div class="arroba" style="left:70px;bottom:85px;color:{CINZA}">{(rot.upper() + ' · ') if rot else ''}{ARROBA}</div>"""
 
 
+# ---------------- modelos desenhados no Figma ("Seraphim — Sistema de Capas", 16/10/2026) ----------------
+# assinatura fixa da marca em todos: filete dourado + @ + número da peça (o resto muda de capa para capa)
+def _sig(s, escuro=True):
+    cor = CINZA if escuro else "#3a3630"
+    return (f'<div style="position:absolute;left:80px;bottom:108px;width:60px;height:4px;background:{OURO}"></div>'
+            f'<div style="position:absolute;left:160px;bottom:96px;font:500 26px SpaceB;color:{cor}">{ARROBA}</div>'
+            f'<div style="position:absolute;right:80px;bottom:96px;font:500 24px Jet;color:{cor}">{s % 97 + 1:02d}</div>')
+
+
+def f_manifesto(t, rot, s):
+    """declaração em serifa pesada gigante, última frase em dourado"""
+    return f"""<div style="position:absolute;left:80px;top:110px;font:800 24px SpaceB;letter-spacing:7px;color:{OURO}">{(rot or 'MANIFESTO').upper()[:26]}</div>
+<div style="position:absolute;left:80px;right:80px;top:200px;font:{tam(len(limpar(t)),150,130,108,92)}px/0.95 Fraunces;color:{BRANCO}">{destacar(t)}</div>{_sig(s)}"""
+
+
+def f_blueprint(t, rot, s):
+    """grade técnica dourada (planta de arquitetura), moldura e legenda de figura"""
+    grade = (f"background-image:linear-gradient(rgba(245,166,35,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(245,166,35,.09) 1px,transparent 1px),"
+             f"linear-gradient(rgba(245,166,35,.25) 1px,transparent 1px),linear-gradient(90deg,rgba(245,166,35,.25) 1px,transparent 1px);"
+             f"background-size:60px 60px,60px 60px,300px 300px,300px 300px")
+    return f"""<div style="position:absolute;inset:0;{grade}"></div>
+<div style="position:absolute;left:80px;right:80px;top:300px;border:2px solid {OURO};padding:30px 30px 60px;background:rgba(10,10,12,.6)">
+<div style="font:500 26px Jet;color:{OURO};margin-bottom:24px">// {(rot or 'arquitetura').upper()[:24]}</div>
+<div style="font:{tam(len(limpar(t)),96,84,72,62)}px/1.08 Unbounded;color:{BRANCO}">{destacar(t)}</div></div>
+<div style="position:absolute;left:80px;top:960px;font:500 24px Jet;color:{CINZA}">Fig. {s % 9 + 1:02d} — do processo ao código</div>{_sig(s)}"""
+
+
+def f_ensaio(t, rot, s):
+    """página de ensaio em papel, serifa clássica e dourado escuro"""
+    return f"""<div class="papel" style="position:absolute;inset:0"></div>
+<div style="position:absolute;left:80px;top:110px;font:800 24px SpaceB;letter-spacing:7px;color:#B86E00">{(rot or 'ENSAIO').upper()[:22]} Nº {s % 40 + 1}</div>
+<div style="position:absolute;left:80px;right:80px;top:160px;height:3px;background:{PRETO}"></div>
+<div style="position:absolute;left:80px;right:80px;top:200px;font:{tam(len(limpar(t)),132,116,98,84)}px/0.98 Instrument;color:{PRETO}">{destacar(t, 'gv')}</div>{_sig(s, False)}
+<style>.gv{{color:#B86E00}}</style>"""
+
+
+def f_produto(t, rot, s):
+    """cartão de vidro com tela de sistema (ordem de serviço) e brilho dourado ao fundo"""
+    linhas = "".join(f'<div style="height:84px;border-radius:18px;background:#16161a;margin-bottom:26px;display:flex;align-items:center;justify-content:space-between;padding:0 30px">'
+                     f'<div style="height:26px;width:{[380,300,440,260][k]}px;border-radius:13px;background:rgba(142,142,150,.5)"></div>'
+                     f'<div style="width:100px;height:40px;border-radius:20px;background:{OURO if k < 2 else "#26262c"}"></div></div>' for k in range(4))
+    return f"""<div style="position:absolute;left:300px;top:-200px;width:900px;height:900px;border-radius:50%;background:{OURO};opacity:.35;filter:blur(200px)"></div>
+<div class="vidro" style="position:absolute;left:80px;right:80px;top:240px;border-radius:40px;padding:50px">
+<div style="font:500 28px SpaceB;color:{OURO};margin-bottom:34px">{(rot or 'AUTOFLOW · ordem de serviço')[:34]}</div>{linhas}</div>
+<div style="position:absolute;left:80px;right:80px;top:930px;font:{tam(len(limpar(t)),96,84,72,62)}px/1.04 Unbounded;color:{BRANCO}">{destacar(t)}</div>{_sig(s)}"""
+
+
+def f_interrogacao(t, rot, s):
+    """interrogação dourada gigante em serifa itálica + pergunta em itálico"""
+    return f"""<div style="position:absolute;left:500px;top:-300px;font:italic 1150px/1 Instrument;color:{OURO}">?</div>
+<div style="position:absolute;left:80px;width:600px;bottom:180px;font:italic {tam(len(limpar(t)),118,100,86,74)}px/0.98 Instrument;color:{BRANCO}">{destacar(t)}</div>{_sig(s)}"""
+
+
+def f_dado(t, rot, s):
+    """número/dado gigante condensado + frase de apoio (só com dado real)"""
+    m = re.search(r"\d{1,3}(?:[.,]\d+)?\s?%?", limpar(t))
+    n = m.group(0).replace(" ", "") if m else "1"
+    resto = limpar(t).replace(m.group(0), "", 1).strip() if m else limpar(t)
+    return f"""<div style="position:absolute;left:60px;top:120px;font:430px/1 Anton;color:{OURO}">{n}</div>
+<div style="position:absolute;left:80px;right:80px;top:760px;height:2px;background:#26262c"></div>
+<div style="position:absolute;left:80px;right:80px;top:800px;font:800 58px/1.18 var(--fb);color:{BRANCO}">{resto}</div>{_sig(s)}"""
+
+
+DO_FIGMA = {"manifesto": f_manifesto, "blueprint": f_blueprint, "ensaio": f_ensaio, "produto": f_produto,
+            "interrogacao": f_interrogacao, "dado": f_dado}
+
+
 COM_IMAGEM = {"foto": m_foto, "recorte": m_recorte, "vidro": m_vidro, "polaroid": m_polaroid}
 
 
@@ -325,7 +392,7 @@ MODELOS = {
     "tipografia": m_tipografia, "numero": m_numero, "jornal": m_jornal, "chat": m_chat, "terminal": m_terminal,
     "alerta": m_alerta, "pergunta": m_pergunta, "dividido": m_dividido, "postit": m_postit,
     "notificacoes": m_notificacoes, "alvo": m_alvo, "mascote": m_mascote, "lista": m_lista, "icone": m_icone,
-    **COM_IMAGEM,
+    **COM_IMAGEM, **DO_FIGMA,
 }
 
 # pares de fonte (manchete condensada, manchete larga, serifa, serifa 2, texto). Sorteados por capa.
@@ -349,7 +416,13 @@ def escolher(titulo, rotulo="", recentes=(), tem_imagem=False):
         else:
             ok.pop(k)
     if not numero_de(titulo):
-        ok.pop("numero")
+        ok.pop("numero"); ok.pop("dado", None)
+    if not t.endswith("?"):
+        ok["interrogacao"] = 0.2
+    if not any(k in t + r for k in ("autoflow", "oficina", "sistema", "ordem", "produto")):
+        ok["produto"] = 0.3
+    for k in ("manifesto", "blueprint", "ensaio"):
+        ok[k] = 1.4   # desenhados no Figma: padrão principal do relançamento
     if not t.endswith("?"):
         ok["pergunta"] = 0.3
     else:
