@@ -1,0 +1,59 @@
+{
+ "nome": "perguntas-antes-do-codigo",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-23 19:30",
+ "cenas": [
+  {
+   "tipo": "palavra",
+   "texto": "5|PERGUNTAS|*ANTES*",
+   "destaque": "ANTES",
+   "narracao": "Cinco perguntas que a gente faz antes de construir qualquer coisa."
+  },
+  {
+   "tipo": "serifa",
+   "texto": "Quem vai usar isso todo dia?",
+   "narracao": "Quem vai usar isso todo dia?"
+  },
+  {
+   "tipo": "foto",
+   "busca": "worried employee phone call problem",
+   "texto": "o que acontece quando *dá errado?*",
+   "tom": "cinza",
+   "narracao": "O que acontece hoje quando dá errado?"
+  },
+  {
+   "tipo": "frase",
+   "texto": "qual tarefa ninguém sentiria falta?",
+   "destaque": "ninguém",
+   "narracao": "Qual tarefa, se sumisse amanhã, ninguém sentiria falta?"
+  },
+  {
+   "tipo": "digitando",
+   "topo": "PERGUNTA 4:",
+   "texto": "ONDE NASCE?",
+   "narracao": "Onde a informação nasce?"
+  },
+  {
+   "tipo": "pergunta",
+   "texto": "Como saber que *deu certo?*",
+   "pose": "pensando",
+   "narracao": "E como a gente vai saber que deu certo?"
+  },
+  {
+   "tipo": "cta",
+   "texto": "SALVA *ESSAS 5*",
+   "pose": "confiante",
+   "narracao": "Se uma delas fica sem resposta, ainda não é hora de programar. Salva essas cinco."
+  }
+ ],
+ "motor": "cortes",
+ "formato": "noir",
+ "titulo": "5 perguntas antes do código",
+ "numero": 10,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "voz": "gemini",
+ "relancamento": "V10",
+ "legenda": "Se uma delas fica sem resposta, ainda não é hora de programar. Qual você acha mais difícil de responder?\n\n#programacao #desenvolvimento #tecnologia #metodo #seraphimbr",
+ "legenda_tiktok": "5 perguntas antes da primeira linha de código.\n\n#programacao #desenvolvimento #tecnologia #seraphimbr"
+}

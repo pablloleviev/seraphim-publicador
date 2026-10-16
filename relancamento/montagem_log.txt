@@ -1,0 +1,44 @@
+fila: V1
+fila: C1
+fila: C2
+Pronto: 8 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-20_0900_5-sinais-passou-das-ferramentas
+fila: C3 5-sinais-passou-das-ferramentas capa: lista
+Pronto: 7 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-20_1730_por-que-a-seraphim-existe
+[aviso] gemini-2.5-flash-image: HTTP Error 429: Too Many Requests b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a'
+[ia] pollinations <- 'handwritten letter on a wooden desk next to a laptop, warm m'
+fila: C4 por-que-a-seraphim-existe capa: recorte
+Pronto: 6 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-21_0900_as-tres-frentes-da-seraphim
+[aviso] gemini-2.5-flash-image: HTTP Error 429: Too Many Requests b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a'
+[aviso] pollinations (tentativa 1): HTTP Error 402: Payment Required
+[aviso] pollinations (tentativa 2): HTTP Error 402: Payment Required
+[ia] pollinations <- 'abstract golden light trails connecting three glowing nodes '
+fila: C5 as-tres-frentes-da-seraphim capa: vidro
+Pronto: 7 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-21_1730_voce-precisa-de-sistema-proprio
+fila: C6 voce-precisa-de-sistema-proprio capa: icone
+Pronto: 7 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-22_0900_integracao-explicada-cozinha
+[aviso] gemini-2.5-flash-image: HTTP Error 429: Too Many Requests b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a'
+[aviso] pollinations (tentativa 1): HTTP Error 402: Payment Required
+[aviso] pollinations (tentativa 2): HTTP Error 402: Payment Required
+[ia] pollinations <- 'busy restaurant kitchen with chefs cooking, warm golden ligh'
+fila: C7 integracao-explicada-cozinha capa: polaroid
+Pronto: 7 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-22_1730_glossario-api-webhook
+fila: C8 glossario-api-webhook capa: jornal
+Pronto: 6 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-23_0900_nosso-processo-5-etapas
+fila: C9 nosso-processo-5-etapas capa: alvo
+Pronto: 7 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-23_1730_o-que-nao-fazemos
+fila: C10 o-que-nao-fazemos capa: alerta
+Pronto: 7 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-25_1730_o-que-podemos-construir
+fila: C14 o-que-podemos-construir capa: dado
+pedido: V2 tres-coisas-em-que-acreditamos hud capa: blueprint
+[aviso] gemini-2.5-flash-image: HTTP Error 429: Too Many Requests b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a'
+[aviso] pollinations (tentativa 1): HTTP Error 402: Payment Required
+[ia] pollinations <- 'office worker alone late at night tired in front of spreadsh'
+pedido: V3 custo-invisivel-trabalho-repetido documentario capa: foto
+pedido: V4 planilha-nao-e-sistema navegador capa: dividido
+pedido: V5 sistema-sob-medida-na-pratica celular capa: terminal
+pedido: V6 pronto-ou-sob-medida story capa: interrogacao
+pedido: V7 uma-tarefa-tres-sistemas terminal capa: notificacoes
+pedido: V8 segunda-no-automatico eletrico capa: tipografia
+pedido: V9 como-comecamos-um-projeto vhs capa: postit
+pedido: V10 perguntas-antes-do-codigo noir capa: ensaio
+pedido: V14 sete-dias-uma-ideia noticia capa: manifesto

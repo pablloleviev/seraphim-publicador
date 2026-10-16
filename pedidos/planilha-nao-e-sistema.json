@@ -1,0 +1,75 @@
+{
+ "nome": "planilha-nao-e-sistema",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-20 19:30",
+ "cenas": [
+  {
+   "tipo": "palavra",
+   "texto": "SUA|PLANILHA|*FUNCIONA*",
+   "destaque": "FUNCIONA",
+   "narracao": "Sua planilha funciona."
+  },
+  {
+   "tipo": "frase",
+   "texto": "até o dia em que não funciona",
+   "destaque": "não",
+   "narracao": "Até o dia em que não funciona."
+  },
+  {
+   "tipo": "checklist",
+   "rotulo": "Já aconteceu aí?",
+   "itens": [
+    "duas pessoas editando",
+    "fórmula sumiu",
+    "qual versão vale?"
+   ],
+   "narracao": "Duas pessoas editam ao mesmo tempo. Uma fórmula some. Ninguém sabe qual é a versão certa."
+  },
+  {
+   "tipo": "foto",
+   "busca": "stressed employee looking at laptop spreadsheet",
+   "texto": "não foi feita pra ser o *coração*",
+   "tom": "vermelho",
+   "narracao": "Planilha é ótima pra começar, mas não foi feita pra ser o coração de uma empresa."
+  },
+  {
+   "tipo": "diagrama",
+   "passos": [
+    {
+     "icone": "relogio",
+     "rotulo": "histórico"
+    },
+    {
+     "icone": "cadeado",
+     "rotulo": "quem mexe"
+    },
+    {
+     "icone": "alerta",
+     "rotulo": "avisos"
+    }
+   ],
+   "narracao": "Um sistema guarda o histórico, controla quem mexe em quê e avisa quando algo sai do lugar."
+  },
+  {
+   "tipo": "serifa",
+   "texto": "Não é abandonar a planilha. É saber a hora de crescer.",
+   "narracao": "Não é sobre abandonar a planilha. É sobre saber a hora de crescer."
+  },
+  {
+   "tipo": "cta",
+   "texto": "SALVA PRA *LEMBRAR*",
+   "pose": "feliz",
+   "narracao": "Salva esse vídeo e manda pra quem vive dentro da planilha."
+  }
+ ],
+ "motor": "cortes",
+ "formato": "navegador",
+ "titulo": "Planilha não é sistema",
+ "numero": 4,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "voz": "gemini",
+ "relancamento": "V4",
+ "legenda": "Planilha é ótima pra começar. O problema é quando ela vira o lugar onde a empresa inteira mora. Já passou por algum desses?\n\n#planilha #excel #gestao #sistemas #seraphimbr",
+ "legenda_tiktok": "Sua planilha funciona. Até o dia em que não funciona.\n\n#planilha #excel #gestao #seraphimbr"
+}

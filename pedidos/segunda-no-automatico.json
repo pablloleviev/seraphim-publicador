@@ -1,0 +1,61 @@
+{
+ "nome": "segunda-no-automatico",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-22 19:30",
+ "cenas": [
+  {
+   "tipo": "palavra",
+   "texto": "SEGUNDA|8 DA|*MANHÃ*",
+   "destaque": "MANHÃ",
+   "narracao": "Segunda-feira, oito da manhã. Olha quanta coisa poderia acontecer sozinha."
+  },
+  {
+   "tipo": "foto",
+   "busca": "laptop email inbox morning coffee",
+   "texto": "08:00 · relatório *pronto*",
+   "tom": "dourado",
+   "narracao": "Oito horas: o relatório da semana já está na sua caixa."
+  },
+  {
+   "tipo": "digitando",
+   "topo": "10:00",
+   "texto": "PEDIDO CONFIRMADO",
+   "narracao": "Dez: o cliente recebe a confirmação do pedido sem ninguém digitar."
+  },
+  {
+   "tipo": "painel",
+   "rotulo": "Pagamentos em dia",
+   "valor": 80,
+   "texto": "12:00 · lembrete educado",
+   "narracao": "Meio-dia: quem está com pagamento atrasado ganha um lembrete educado."
+  },
+  {
+   "tipo": "calendario",
+   "apoio": "HOJE",
+   "texto": "AMANHÃ",
+   "rotulo": "16:00 · agenda organizada",
+   "narracao": "Quatro da tarde: a agenda de amanhã se organiza."
+  },
+  {
+   "tipo": "serifa",
+   "texto": "Nada disso exige tecnologia nova.",
+   "narracao": "Nada disso exige tecnologia nova. Exige olhar pro seu dia e decidir o que não precisa mais de uma pessoa."
+  },
+  {
+   "tipo": "cta",
+   "texto": "QUAL VOCÊ *TIRARIA PRIMEIRO?*",
+   "pose": "feliz",
+   "narracao": "Qual delas você tiraria das mãos do seu time primeiro? Comenta."
+  }
+ ],
+ "motor": "cortes",
+ "formato": "eletrico",
+ "titulo": "Segunda no automático",
+ "numero": 8,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "voz": "gemini",
+ "relancamento": "V8",
+ "legenda": "Nenhuma dessas exige tecnologia nova. Qual delas você tiraria das mãos do seu time primeiro?\n\n#automacao #produtividade #rotina #pequenasempresas #seraphimbr",
+ "legenda_tiktok": "O que dá pra automatizar numa segunda-feira.\n\n#automacao #produtividade #rotina #seraphimbr"
+}

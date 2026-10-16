@@ -1,0 +1,56 @@
+{
+ "nome": "pronto-ou-sob-medida",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-21 19:30",
+ "cenas": [
+  {
+   "tipo": "sera",
+   "pose": "surpreso",
+   "texto": "nem toda empresa precisa",
+   "narracao": "Nem toda empresa precisa de um sistema sob medida. E a gente fala isso de propósito."
+  },
+  {
+   "tipo": "niveis",
+   "texto": "Use o PRONTO quando",
+   "itens": [
+    "processo é comum",
+    "precisa ser rápido",
+    "orçamento curto"
+   ],
+   "narracao": "Se o seu processo é comum e um software pronto resolve, use o pronto: é mais rápido e mais barato."
+  },
+  {
+   "tipo": "checklist",
+   "rotulo": "Sob medida faz sentido se",
+   "itens": [
+    "seu jeito é diferencial",
+    "3 ferramentas não conversam",
+    "o pronto te trava"
+   ],
+   "narracao": "Sob medida faz sentido quando o seu jeito de trabalhar é o seu diferencial, quando você já usa três ferramentas que não conversam, ou quando o pronto te obriga a mudar o que funciona."
+  },
+  {
+   "tipo": "foto",
+   "busca": "two people discussing decision at table",
+   "texto": "qual serve pra *você?*",
+   "tom": "dourado",
+   "narracao": "A pergunta certa não é qual é melhor. É qual serve pra você."
+  },
+  {
+   "tipo": "cta",
+   "texto": "DE QUAL LADO *VOCÊ ESTÁ?*",
+   "pose": "confiante",
+   "narracao": "Em qual dos dois lados a sua empresa está hoje? Responde aqui."
+  }
+ ],
+ "motor": "cortes",
+ "formato": "story",
+ "titulo": "Pronto ou sob medida?",
+ "numero": 6,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "voz": "gemini",
+ "relancamento": "V6",
+ "legenda": "Às vezes a melhor recomendação é não construir nada. Em qual dos dois lados a sua empresa está hoje?\n\n#software #tecnologia #empreendedorismo #gestao #seraphimbr",
+ "legenda_tiktok": "Pronto ou sob medida? A resposta honesta.\n\n#software #tecnologia #empreendedorismo #seraphimbr"
+}

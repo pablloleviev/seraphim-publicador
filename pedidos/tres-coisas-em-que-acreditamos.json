@@ -1,0 +1,72 @@
+{
+ "nome": "tres-coisas-em-que-acreditamos",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-19 19:30",
+ "cenas": [
+  {
+   "tipo": "palavra",
+   "texto": "ANTES|DO|*CÓDIGO*",
+   "destaque": "CÓDIGO",
+   "narracao": "Antes de escrever uma linha de código, a gente acredita em três coisas."
+  },
+  {
+   "tipo": "digitando",
+   "topo": "CRENÇA 1:",
+   "texto": "TECNOLOGIA SOME",
+   "etiqueta": "CRENÇA 1",
+   "narracao": "Primeira: tecnologia boa é a que some."
+  },
+  {
+   "tipo": "foto",
+   "busca": "team working together office laughing",
+   "texto": "o time volta pro *cliente*",
+   "tom": "dourado",
+   "narracao": "O time para de pensar na ferramenta e volta a pensar no cliente."
+  },
+  {
+   "tipo": "interruptor",
+   "rotulo": "Automatizar a bagunça",
+   "texto": "ligar agora?",
+   "sub": "primeiro, organizar",
+   "valor": 0.5,
+   "etiqueta": "CRENÇA 2",
+   "narracao": "Segunda: o processo vem antes do software. Automatizar uma bagunça só deixa a bagunça mais rápida."
+  },
+  {
+   "tipo": "cards",
+   "itens": [
+    {
+     "rotulo": "pequena:",
+     "busca": "small shop owner counter"
+    },
+    {
+     "rotulo": "sistema de grande:",
+     "busca": "modern office dashboard screen"
+    }
+   ],
+   "narracao": "Terceira: pequena empresa merece sistema de empresa grande, no tamanho dela."
+  },
+  {
+   "tipo": "sera",
+   "pose": "confiante",
+   "texto": "é isso que guia cada projeto",
+   "narracao": "É isso que guia cada projeto da Seraphim."
+  },
+  {
+   "tipo": "cta",
+   "texto": "QUAL DELAS É *A SUA?*",
+   "pose": "pensando",
+   "narracao": "Qual dessas três faz mais sentido pra sua empresa hoje? Comenta aqui."
+  }
+ ],
+ "motor": "cortes",
+ "formato": "hud",
+ "titulo": "3 coisas em que acreditamos",
+ "numero": 2,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "voz": "gemini",
+ "relancamento": "V2",
+ "legenda": "Antes do código, vem a forma de pensar. Qual dessas três faz mais sentido pra sua empresa hoje?\n\n#tecnologia #pequenasempresas #gestao #automacao #seraphimbr",
+ "legenda_tiktok": "As 3 coisas em que a gente acredita antes de programar qualquer coisa.\n\n#tecnologia #pequenasempresas #gestao #seraphimbr"
+}

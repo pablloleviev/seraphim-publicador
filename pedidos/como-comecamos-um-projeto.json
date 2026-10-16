@@ -1,0 +1,67 @@
+{
+ "nome": "como-comecamos-um-projeto",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-23 12:30",
+ "cenas": [
+  {
+   "tipo": "frase",
+   "texto": "o primeiro dia não tem código",
+   "destaque": "código",
+   "narracao": "O primeiro dia de um projeto nosso não tem código. Tem caneta."
+  },
+  {
+   "tipo": "foto",
+   "busca": "people meeting whiteboard sticky notes",
+   "texto": "com quem *faz o trabalho*",
+   "tom": "dourado",
+   "etiqueta": "PASSO 1",
+   "narracao": "A gente senta com quem faz o trabalho, não só com quem manda nele."
+  },
+  {
+   "tipo": "parede",
+   "buscas": [
+    "whiteboard process diagram",
+    "handwritten notes workflow",
+    "team planning post it"
+   ],
+   "texto": "o processo real",
+   "narracao": "Desenha o processo como ele é de verdade, com os jeitinhos e as gambiarras."
+  },
+  {
+   "tipo": "checklist",
+   "rotulo": "Onde dói",
+   "itens": [
+    "o que atrasa",
+    "o que erra",
+    "o que se repete"
+   ],
+   "narracao": "Depois marca onde dói: o que atrasa, o que erra, o que se repete."
+  },
+  {
+   "tipo": "niveis",
+   "texto": "Só aí",
+   "itens": [
+    "pequeno",
+    "testado",
+    "usado"
+   ],
+   "narracao": "Só aí escolhe o que construir primeiro. Pequeno, testado, usado."
+  },
+  {
+   "tipo": "cta",
+   "texto": "PROJETO BOM *COMEÇA OUVINDO*",
+   "pose": "confiante",
+   "narracao": "Projeto bom começa ouvindo. Segue a Seraphim pra ver como a gente trabalha."
+  }
+ ],
+ "motor": "cortes",
+ "formato": "vhs",
+ "titulo": "Primeiro, a caneta",
+ "numero": 9,
+ "funil": "topo",
+ "genero_voz": "feminina",
+ "voz": "gemini",
+ "relancamento": "V9",
+ "legenda": "Antes da tecnologia, a conversa. Quem na sua empresa conhece o processo de verdade?\n\n#metodo #desenvolvimento #processos #gestao #seraphimbr",
+ "legenda_tiktok": "Como a gente começa um projeto: com caneta.\n\n#metodo #desenvolvimento #processos #seraphimbr"
+}

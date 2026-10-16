@@ -868,5 +868,167 @@
   "tipo": "carrossel",
   "tema": "noir",
   "capa_modelo": "terminal"
+ },
+ {
+  "nome": "5-sinais-passou-das-ferramentas",
+  "titulo": "5 sinais de que você passou das ferramentas",
+  "dia": "2026-10-20",
+  "tipo": "carrossel",
+  "capa_modelo": "lista",
+  "relancamento": "C3"
+ },
+ {
+  "nome": "por-que-a-seraphim-existe",
+  "titulo": "Por que a Seraphim existe",
+  "dia": "2026-10-20",
+  "tipo": "carrossel",
+  "capa_modelo": "recorte",
+  "relancamento": "C4"
+ },
+ {
+  "nome": "as-tres-frentes-da-seraphim",
+  "titulo": "As 3 frentes da Seraphim",
+  "dia": "2026-10-21",
+  "tipo": "carrossel",
+  "capa_modelo": "vidro",
+  "relancamento": "C5"
+ },
+ {
+  "nome": "voce-precisa-de-sistema-proprio",
+  "titulo": "Você precisa de um sistema próprio?",
+  "dia": "2026-10-21",
+  "tipo": "carrossel",
+  "capa_modelo": "icone",
+  "relancamento": "C6"
+ },
+ {
+  "nome": "integracao-explicada-cozinha",
+  "titulo": "Integração explicada com uma cozinha",
+  "dia": "2026-10-22",
+  "tipo": "carrossel",
+  "capa_modelo": "polaroid",
+  "relancamento": "C7"
+ },
+ {
+  "nome": "glossario-api-webhook",
+  "titulo": "O glossário que ninguém te explicou",
+  "dia": "2026-10-22",
+  "tipo": "carrossel",
+  "capa_modelo": "jornal",
+  "relancamento": "C8"
+ },
+ {
+  "nome": "nosso-processo-5-etapas",
+  "titulo": "Nosso processo em 5 etapas",
+  "dia": "2026-10-23",
+  "tipo": "carrossel",
+  "capa_modelo": "alvo",
+  "relancamento": "C9"
+ },
+ {
+  "nome": "o-que-nao-fazemos",
+  "titulo": "O que a Seraphim não faz",
+  "dia": "2026-10-23",
+  "tipo": "carrossel",
+  "capa_modelo": "alerta",
+  "relancamento": "C10"
+ },
+ {
+  "nome": "o-que-podemos-construir",
+  "titulo": "O que podemos construir pra você",
+  "dia": "2026-10-25",
+  "tipo": "carrossel",
+  "capa_modelo": "dado",
+  "relancamento": "C14"
+ },
+ {
+  "nome": "tres-coisas-em-que-acreditamos",
+  "titulo": "3 coisas em que acreditamos",
+  "dia": "2026-10-19",
+  "tipo": "video",
+  "formato_edicao": "hud",
+  "capa_modelo": "blueprint",
+  "relancamento": "V2"
+ },
+ {
+  "nome": "custo-invisivel-trabalho-repetido",
+  "titulo": "O custo invisível",
+  "dia": "2026-10-20",
+  "tipo": "video",
+  "formato_edicao": "documentario",
+  "capa_modelo": "foto",
+  "relancamento": "V3"
+ },
+ {
+  "nome": "planilha-nao-e-sistema",
+  "titulo": "Planilha não é sistema",
+  "dia": "2026-10-20",
+  "tipo": "video",
+  "formato_edicao": "navegador",
+  "capa_modelo": "dividido",
+  "relancamento": "V4"
+ },
+ {
+  "nome": "sistema-sob-medida-na-pratica",
+  "titulo": "Sob medida, na prática",
+  "dia": "2026-10-21",
+  "tipo": "video",
+  "formato_edicao": "celular",
+  "capa_modelo": "terminal",
+  "relancamento": "V5"
+ },
+ {
+  "nome": "pronto-ou-sob-medida",
+  "titulo": "Pronto ou sob medida?",
+  "dia": "2026-10-21",
+  "tipo": "video",
+  "formato_edicao": "story",
+  "capa_modelo": "interrogacao",
+  "relancamento": "V6"
+ },
+ {
+  "nome": "uma-tarefa-tres-sistemas",
+  "titulo": "Zero copia e cola",
+  "dia": "2026-10-22",
+  "tipo": "video",
+  "formato_edicao": "terminal",
+  "capa_modelo": "notificacoes",
+  "relancamento": "V7"
+ },
+ {
+  "nome": "segunda-no-automatico",
+  "titulo": "Segunda no automático",
+  "dia": "2026-10-22",
+  "tipo": "video",
+  "formato_edicao": "eletrico",
+  "capa_modelo": "tipografia",
+  "relancamento": "V8"
+ },
+ {
+  "nome": "como-comecamos-um-projeto",
+  "titulo": "Primeiro, a caneta",
+  "dia": "2026-10-23",
+  "tipo": "video",
+  "formato_edicao": "vhs",
+  "capa_modelo": "postit",
+  "relancamento": "V9"
+ },
+ {
+  "nome": "perguntas-antes-do-codigo",
+  "titulo": "5 perguntas antes do código",
+  "dia": "2026-10-23",
+  "tipo": "video",
+  "formato_edicao": "noir",
+  "capa_modelo": "ensaio",
+  "relancamento": "V10"
+ },
+ {
+  "nome": "sete-dias-uma-ideia",
+  "titulo": "Tecnologia com método",
+  "dia": "2026-10-25",
+  "tipo": "video",
+  "formato_edicao": "noticia",
+  "capa_modelo": "manifesto",
+  "relancamento": "V14"
  }
 ]
