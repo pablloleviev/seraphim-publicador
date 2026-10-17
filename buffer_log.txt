@@ -1,8 +1,7 @@
-[
- {
-  "id": "6aca529b6a5c39ccb6723b7f",
-  "name": "seraphimtech",
-  "service": "tiktok",
-  "org": "6aca5261568fe63d9fff648e"
- }
-]
+{"__type": {"name": "CreatePostInput", "kind": "INPUT_OBJECT", "inputFields": [{"name": "aiAssisted", "type": {"name": "Boolean", "kind": "SCALAR", "ofType": null}}, {"name": "assets", "type": {"name": null, "kind": "NON_NULL", "ofType": {"name": null, "kind": "LIST", "ofType": {"name": null}}}}, {"name": "channelId", "type": {"name": null, "kind": "NON_NULL", "ofType": {"name": "ChannelId", "kind": "SCALAR", "ofType": null}}}, {"name": "draftId", "type": {"name": "DraftId", "kind": "SCALAR", "ofType": null}}, {"name": "dueAt", "type": {"name": "DateTime", "kind": "SCALAR", "ofType": null}}, {"name": "ideaId", "type": {"name": "IdeaId", "kind": "SCALAR", "ofType": null}}, {"name": "metadata", "type": {"name": "PostInputMetaData", "kind": "INPUT_OBJECT", "ofType": null}}, {"name": "mode", "type": {"name": null, "kind": "NON_NULL", "ofType": {"name": "ShareMode", "kind": "ENUM", "ofType": null}}}, {"name": "needsApproval", "type": {"name": null, "kind": "NON_NULL", "ofType": {"name": "Boolean", "kind": "SCALAR", "ofType": null}}}, {"name": "saveToDraft", "type": {"name": "Boolean", "kind": "SCALAR", "ofType": null}}, {"name": "schedulingType", "type": {"name": null, "kind": "NON_NULL", "ofType": {"name": "SchedulingType", "kind": "ENUM", "ofType": null}}}, {"name": "source", "type": {"name": "String", "kind": "SCALAR", "ofType": null}}, {"name": "tagIds", "type": {"name": null, "kind": "LIST", "ofType": {"name": null, "kind": "NON_NULL", "ofType": {"name": "TagId"}}}}, {"name": "text", "type": {"name": "String", "kind": "SCALAR", "ofType": null}}], "enumValues": null}}
+{"__type": null}
+{"__type": {"name": "AssetInput", "kind": "INPUT_OBJECT", "inputFields": [{"name": "document", "type": {"name": "DocumentAssetInput", "kind": "INPUT_OBJECT", "ofType": null}}, {"name": "image", "type": {"name": "ImageAssetInput", "kind": "INPUT_OBJECT", "ofType": null}}, {"name": "video", "type": {"name": "VideoAssetInput", "kind": "INPUT_OBJECT", "ofType": null}}], "enumValues": null}}
+{"__type": {"name": "ImageAssetInput", "kind": "INPUT_OBJECT", "inputFields": [{"name": "metadata", "type": {"name": "ImageMetadataInput", "kind": "INPUT_OBJECT", "ofType": null}}, {"name": "thumbnailUrl", "type": {"name": "String", "kind": "SCALAR", "ofType": null}}, {"name": "url", "type": {"name": null, "kind": "NON_NULL", "ofType": {"name": "String", "kind": "SCALAR", "ofType": null}}}], "enumValues": null}}
+{"__type": null}
+{"__type": {"name": "TikTokPostMetadataInput", "kind": "INPUT_OBJECT", "inputFields": [{"name": "isAiGenerated", "type": {"name": "Boolean", "kind": "SCALAR", "ofType": null}}, {"name": "title", "type": {"name": "String", "kind": "SCALAR", "ofType": null}}], "enumValues": null}}
+{"__type": {"name": "ShareMode", "kind": "ENUM", "inputFields": null, "enumValues": [{"name": "addToQueue"}, {"name": "customScheduled"}, {"name": "shareNext"}, {"name": "shareNow"}]}}
