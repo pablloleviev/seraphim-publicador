@@ -190,7 +190,8 @@ EXEMPLO_VIDEO = {
 CATALOGO_CENAS = """MOTOR "ESTILO" (direção criativa aprovada: preto + dourado, vidro 3D, objetos 3D dourados, fumaça, desfoque, cinema).
 Cada vídeo tem PERSONALIDADE própria e composição própria — identidade fixa, execução sempre diferente.
 Campos do vídeo: "personalidade": impacto | dinamico | elegante | minimal | emocional (escolha pelo assunto e emoção);
-"estilo_legenda": karaoke | palavra | sutil | nenhuma; "tarja": true/false (tarjas de cinema, combina com elegante/emocional).
+"estilo_legenda": karaoke | palavra | sutil | nenhuma; "tarja": true/false (tarjas de cinema, combina com elegante/emocional);
+"paleta": """ + " | ".join(json.loads((RAIZ / "estilos" / "paletas.json").read_text(encoding="utf-8"))) + """ (cor escolhida pela mensagem; varie no dia e na semana — o dourado não precisa estar em tudo).
 Tipos de cena (5 a 9 cenas; NUNCA o mesmo tipo duas vezes seguidas; cada cena 1 ideia, 1 a 4 s de fala; "titulo" usa *destaque* dourado):
 - capa: pessoa (Pabllo) com blocos de vidro 3D flutuando. "linha" (frase curta em caixa alta), "titulo" (manchete; <br> quebra linha), "icones": 3 nomes de ícone.
 - pessoa: texto gigante vazado ATRÁS da pessoa. "linha" (1 palavra), "titulo".
@@ -326,6 +327,7 @@ def pedir_dia(dia, n_v, n_c, hist):
     estruturas = [" > ".join(str(x) for x in h["cenas"] if x) for h in vids]
     ganchos = [next((x for x in h["cenas"] if x), "") for h in vids][-5:]
     pers_recentes = [h.get("personalidade", "") for h in vids][-3:]
+    cores_recentes = [h.get("paleta", "") for h in hist if h.get("paleta")][-10:]
     cars = [" > ".join(h.get("slides", [])) for h in hist if h.get("tipo") == "carrossel" and h.get("slides")][-8:]
     buscas_usadas = sorted({b for h in hist for b in h.get("buscas", [])})[-150:]
     regras = f"""Você é o roteirista-chefe da Seraphim ({ARROBA}), startup brasileira de tecnologia:
@@ -354,6 +356,7 @@ REGRAS DE QUALIDADE (obrigatórias):
   O tipo da 1ª cena (gancho) não pode ser nenhum destes, usados nos últimos vídeos: {json.dumps(ganchos, ensure_ascii=False)}
   Personalidades dos últimos vídeos (use OUTRA no primeiro vídeo do dia e não repita personalidade no mesmo dia): {json.dumps(pers_recentes, ensure_ascii=False)}
   Sequências de slides dos últimos carrosséis (NÃO repita): {json.dumps(cars, ensure_ascii=False)}
+  Paletas dos últimos posts (equilibre a grade; não repita a mesma cor em posts seguidos): {json.dumps(cores_recentes, ensure_ascii=False)}
   Varie a quantidade de cenas (6 a 10), o ritmo (cenas curtas e rápidas x uma cena que respira), a ordem e a combinação de tipos.
   Nos vídeos do mesmo dia, nenhum pode ter a mesma 1ª cena nem a mesma estrutura de outro.
   Termos de busca de foto já usados (invente outros, com cenas e ângulos diferentes): {json.dumps(buscas_usadas, ensure_ascii=False)}
@@ -372,7 +375,9 @@ FICHA DO AUTOFLOW:
   verbete {{"rotulo","icone","titulo","texto","exemplo"}} | lista {{"rotulo","titulo","itens":[[titulo,explicação]x2-4],"marcador"(opcional "✕" ou "→")}} |
   contraste {{"rotulo_a","antes","rotulo_b","depois","texto"}} | citacao {{"titulo","texto"}} | fecho {{"titulo","textos":[1],"cartoes":[2]}} |
   cta {{"titulo","texto","botao","pessoa":"pabllo"|"sera_confiante"|"sera_pensando"}} (SEMPRE o último).
-  Primeiro slide: capa, capa_objeto ou capa_numero (reveze). Alterne fundos escuro/claro no miolo. Pessoa ou Sera em parte dos carrosséis, não em todos. Nunca invente número/estatística.
+  capa_tipografica {{"linha","titulo","texto"}} (capa clara, editorial, só tipografia).
+  Cada carrossel tem "paleta" (mesmas opções dos vídeos), escolhida pela mensagem e diferente dos posts vizinhos.
+  Primeiro slide: capa, capa_objeto, capa_numero ou capa_tipografica (reveze; nunca a mesma capa em posts seguidos). Alterne fundos escuro/claro no miolo. Pessoa ou Sera em parte dos carrosséis, não em todos. Nunca invente número/estatística.
 - Legenda (Instagram): ÚNICA para cada post, ligada ao gancho e ao assunto; 2 a 4 linhas curtas com emoji, uma pergunta que puxa comentário e a chamada do funil; SEM hashtags dentro dela.
 - "legenda_tiktok": legenda própria para o TikTok (mais curta e direta, 1 a 2 linhas, tom de conversa), diferente da do Instagram.
 - "hashtags": 4 a 6 hashtags de AQUELE post (2-3 de nicho, 1-2 médias, no máximo 1 ampla), sempre incluindo #seraphimbr; nunca #seraphimpublicador; nunca o mesmo conjunto de outro post.
@@ -457,6 +462,8 @@ def validar_video(v):
     v["cenas"] = cenas
     if v.get("personalidade") not in PERSONALIDADES:
         v["personalidade"] = "dinamico"
+    if v.get("paleta") not in json.loads((RAIZ / "estilos" / "paletas.json").read_text(encoding="utf-8")):
+        v["paleta"] = "ouro"
     if v.get("estilo_legenda") not in ("karaoke", "palavra", "sutil", "nenhuma"):
         v["estilo_legenda"] = "karaoke"
     if v.get("funil") not in ("topo", "meio", "fundo"):
@@ -528,7 +535,7 @@ def main():
             fmt = proximo_formato(hist, evitar=formatos_do_dia, semente=f"{dia}{hora}")
             formatos_do_dia.append(fmt)
             spec = {"nome": nome, "arroba": ARROBA, "quando": f"{dia} {hora}", "cenas": v["cenas"], "motor": "estilo",
-                    "personalidade": v["personalidade"], "estilo_legenda": v["estilo_legenda"], "tarja": bool(v.get("tarja")),
+                    "personalidade": v["personalidade"], "estilo_legenda": v["estilo_legenda"], "tarja": bool(v.get("tarja")), "paleta": v.get("paleta", "ouro"),
                     "formato": fmt, "titulo": v.get("titulo", nome), "numero": criados + 1,
                     "funil": v["funil"], "genero_voz": "masculina" if criados % 3 else "feminina",
                     "legenda": (v.get("legenda", "").strip() + "\n\n" + tags(v)),
@@ -543,7 +550,7 @@ def main():
             buscas = [c.get("busca") for c in v["cenas"] if c.get("busca")] + [b for c in v["cenas"] for b in (c.get("buscas") or [])] \
                      + [it.get("busca") for c in v["cenas"] for it in (c.get("itens") or []) if isinstance(it, dict) and it.get("busca")]
             hist.append({"nome": nome, "funil": v["funil"], "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video", "tema": tema, "formato_edicao": fmt, "capa": v.get("capa", ""), "capa_cena": v.get("capa_cena", ""),
-                         "cenas": [c.get("tipo") for c in v["cenas"]], "buscas": buscas, "personalidade": v["personalidade"]})
+                         "cenas": [c.get("tipo") for c in v["cenas"]], "buscas": buscas, "personalidade": v["personalidade"], "paleta": v.get("paleta", "ouro")})
             criados += 1
         for hora, c in zip(hc, plano.get("carrosseis", [])):
             import estilo_ref
@@ -582,7 +589,7 @@ def main():
             destino = RAIZ / "fila" / f"{dia}_{hora.replace(':', '')}_{nome}"
             tema = "estilo"
             tmpd = RAIZ / "testes" / "_car" / nome
-            asyncio.run(estilo_ref.render(slides, tmpd))
+            asyncio.run(estilo_ref.render(slides, tmpd, c.get("paleta") if c.get("paleta") in estilo_ref.PALETAS else "ouro"))
             destino.mkdir(parents=True, exist_ok=True)
             import shutil as _sh
             for f in (tmpd / "instagram").glob("*.jpg"):
@@ -595,7 +602,7 @@ def main():
                 "quando": f"{dia}T{hora}:00-03:00"}, ensure_ascii=False, indent=2), encoding="utf-8")
             modelo_capa = slides[0]["tipo"]
             hist.append({"nome": nome, "titulo": c.get("titulo", nome), "formato": c.get("formato", ""), "dia": str(dia), "tipo": "carrossel", "tema": tema,
-                         "capa_modelo": modelo_capa, "capa_cena": c.get("capa_cena", ""), "slides": [x["tipo"] for x in slides]})
+                         "capa_modelo": modelo_capa, "capa_cena": c.get("capa_cena", ""), "slides": [x["tipo"] for x in slides], "paleta": c.get("paleta", "ouro")})
             criados += 1
         HIST.write_text(json.dumps(hist, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{criados} post(s) planejado(s)")

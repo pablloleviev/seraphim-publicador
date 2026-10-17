@@ -1,29 +1,39 @@
-# Direção criativa Seraphim (aprovada em 17/10/2026)
+# Direção criativa Seraphim — diretriz permanente (aprovada em 17/10/2026)
 
-**Consistência na identidade, não repetição na execução.**
+> Mantenha a essência. Preserve a excelência. Reinvente a execução.
+> Coerência visual não é uniformidade visual.
 
-## O que NUNCA muda (identidade)
-- Preto profundo + dourado (#F5A623 / #FFD27A). Fundo claro "papel" só como respiro.
-- Materiais: vidro 3D com reflexo e borda dourada, moedas/objetos 3D dourados, fumaça dourada, partículas, desfoque de profundidade, grão de filme.
-- Tipografia: Anton (impacto), Sora (títulos), Manrope (texto). Palavra-chave sempre em dourado.
-- Acabamento cinematográfico, ritmo cuidado, animações com mola (nada linear/robótico).
-- Pessoas reais (Pabllo) e a Sera em parte das peças; @seraphimbr_ discreto.
-- Nada de estatística sem fonte, logo falsa ou interface fictícia.
+A Seraphim é reconhecida pela **qualidade e pela linguagem**: sofisticação, composição, direção de arte,
+elegância das animações e cuidado cinematográfico. NÃO por repetir layout, sequência ou cor.
+A semana aprovada é ponto de partida, nunca molde. Nenhuma semana pode parecer versão recolorida da anterior.
 
-## O que DEVE variar (execução)
-- **Personalidade** de cada vídeo conforme assunto e emoção: impacto, dinâmico, elegante, minimal, emocional.
-- **Sequência de cenas**: nunca repetir a ordem de tipos de cena de um vídeo recente.
-- **Câmera**: empurra, afasta, deriva, inclina, tremor, parada.
-- **Transições**: chicote, zoom, corte seco, flash, máscara, dissolve, luz, desfoque, deslize.
-- **Legenda**: karaokê, palavra gigante, sutil, nenhuma (quando o texto na tela já é a fala).
-- **Elementos 3D**: objeto central, moedas, cartões, lista em profundidade, número gigante, tela dividida, texto atrás da pessoa, citação.
-- **Formato**: com ou sem tarjas de cinema; fundo escuro/claro em ritmos diferentes.
+## 1. Essência (o que dá para reconhecer)
+- Acabamento de cinema: luz, profundidade, desfoque, partículas, grão, materiais (vidro, metal, objetos 3D), movimento com mola.
+- Hierarquia tipográfica forte e respiro; texto curto e verdadeiro (sem estatística inventada, sem logo falsa, sem interface fictícia).
+- Pessoas reais (Pabllo) e a Sera em parte das peças. @seraphimbr_ discreto.
+- O dourado institucional é a assinatura — às vezes protagonista, às vezes só detalhe (logo, um traço), às vezes ausente.
 
-## Regras de variedade (o planejador confere)
-- Personalidade diferente dos 2 vídeos anteriores.
-- Primeira cena diferente dos 3 vídeos anteriores.
-- Nenhum par (tipo de cena → tipo de cena) usado mais de 2x na semana.
-- Carrosséis: alternar estrutura (capa com pessoa / objeto 3D / número; miolo com cartão, lista, contraste, citação).
+## 2. Liberdade de execução (o que muda sempre)
+- **Conceito primeiro**: cada peça nasce da pergunta "qual a melhor forma de comunicar ESTA mensagem?" — não de um layout pronto.
+- **Cor**: paleta escolhida por peça, com intenção (estilos/paletas.json: ouro, gelo, esmeralda, rubi, violeta, cobre, prata…
+  e novas quando o assunto pedir). Claro, escuro, frio, quente, vibrante ou discreto — harmonioso e profissional.
+- **Vídeo**: personalidade (impacto, dinâmico, elegante, minimal, emocional), ordem das cenas, câmera, transições, legenda, tarjas, ritmo.
+- **Carrossel**: tipo de capa (pessoa, objeto 3D, número, tipográfica clara, contraste…), estrutura do miolo, hierarquia, distribuição.
+- **Capas/aberturas**: ponto focal, composição e cor diferentes das vizinhas.
+- Recurso novo só com propósito — nunca efeito para parecer diferente.
 
-## Evoluir sempre
-A cada semana, introduzir pelo menos 1 recurso visual novo (cena, transição ou efeito) e aposentar o mais usado.
+## 3. A grade é uma composição
+- Avaliar o feed como um todo: alternar claro/escuro, minimalista/elaborado, pessoa/objeto/tipografia/número, cores.
+- Proibido: posts consecutivos com a mesma estrutura, o mesmo ponto focal ou a mesma cor dominante;
+  mais de 2 capas do mesmo tipo na mesma semana; mesma abertura de vídeo em vídeos próximos.
+- Sequências repetidas DENTRO de uma peça só quando forem o conceito (ex.: linha do tempo, contagem de perguntas).
+
+## 4. Evolução semanal
+- Toda semana: pelo menos 1 recurso visual ou narrativo novo (cena, transição, composição, técnica) e aposentar o mais usado.
+- Comparar sempre com as semanas anteriores (historico.json + prévias em testes/).
+
+## 5. Revisão obrigatória antes de qualquer entrega (responsabilidade do diretor criativo)
+1. Gerar a prévia do feed (scripts/previa_feed.py) e uma folha de quadros de cada vídeo.
+2. Checar: repetição de capas, cores, aberturas, estruturas, movimentos e conceitos — na semana e contra as anteriores.
+3. Corrigir antes de apresentar. Só então enviar para aprovação.
+4. Aprovação da direção ≠ autorização para publicar: cada peça segue para aprovação no Telegram.
