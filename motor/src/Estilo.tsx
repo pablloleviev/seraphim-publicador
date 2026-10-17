@@ -355,7 +355,7 @@ const Legenda: React.FC<{palavras: Palavra[]; claro: (t: number) => boolean; est
 export const Estilo: React.FC<PropsE> = (props) => {
   useFontes();
   const {fps} = useVideoConfig();
-  const ocultas = props.cenas.filter((c) => ['frase', 'citacao'].includes(c.tipo));
+  const ocultas = props.cenas.filter((c) => ['frase', 'citacao', 'objeto', 'numero', 'fecho'].includes(c.tipo));
   const ehClaro = (t: number) => props.cenas.some((c) => c.fundo === 'claro' && t >= c.inicio && t < c.fim);
   return (
     <AbsoluteFill style={{background: '#08080a'}}>
