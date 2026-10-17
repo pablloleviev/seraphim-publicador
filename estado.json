@@ -333,6 +333,14 @@
         "via": "buffer"
       },
       "msg_id": 780
+    },
+    "2026-10-18_0800_o-sumico-dos-comprovantes": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-17T09:00:06.852820+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 786
     }
   },
   "respondidos": {}
