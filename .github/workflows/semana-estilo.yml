@@ -37,7 +37,7 @@ jobs:
         run: |
           P=$(basename "$SPEC" .json); D="fila/$P"; mkdir -p "$D"
           python scripts/fazer_video.py "$SPEC" --voz gemini --saida "$D/video.mp4" 2>&1 | tail -5
-          ffmpeg -loglevel error -y -ss 1.8 -i "$D/video.mp4" -frames:v 1 -q:v 2 "$D/capa.jpg"
+          ffmpeg -loglevel error -y -ss 1.1 -i "$D/video.mp4" -frames:v 1 -q:v 2 "$D/capa.jpg"
           rm -f "$D/video_tiktok.mp4" "$D/video.txt"; python scripts/capa_no_video.py "$D"
       - run: |
           git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
