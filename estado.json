@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630261,
+  "telegram_offset": 183630262,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -306,12 +306,17 @@
       "ig_manual": false
     },
     "2026-10-17_0800_ia-traduz-sua-voz-tempo-real": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-16T13:52:35.654755+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad35558938409f1d080e5a7",
+        "feito": "buffer"
       },
-      "msg_id": 764
+      "msg_id": 764,
+      "ig_id": "17982823109904650",
+      "publicado_em": "2026-10-17T11:00:39.514178+00:00",
+      "ig_manual": false
     },
     "2026-10-17_1200_como-organizar-caixa-de-entrada-ia": {
       "status": "agendado",
@@ -335,7 +340,7 @@
       "msg_id": 780
     },
     "2026-10-18_0800_o-sumico-dos-comprovantes": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-17T09:00:06.852820+00:00",
       "tiktok": {
         "via": "buffer"
