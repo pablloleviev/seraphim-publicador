@@ -3,6 +3,7 @@ import {Composition} from 'remotion';
 import {SeraphimVideo, Props} from './Video';
 import {SeraphimCortes, PropsC} from './Cortes';
 import {Relancamento, PropsR} from './Relancamento';
+import {Estilo, PropsE} from './Estilo';
 
 const exemplo: Props = {
   fps: 30,
@@ -39,6 +40,16 @@ export const Root: React.FC = () => (
     durationInFrames={180}
     defaultProps={{fps: 30, duracao: 6, arroba: '@seraphimbr_', audio: null, batida: null, palavras: [], peca: 'V1', cenas: [{inicio: 0, fim: 6, tipo: 'cresce'}]} as PropsR}
     calculateMetadata={({props}) => ({durationInFrames: Math.ceil((props as PropsR).duracao * (props as PropsR).fps), fps: (props as PropsR).fps})}
+  />
+  <Composition
+    id="Estilo"
+    component={Estilo as any}
+    width={1080}
+    height={1920}
+    fps={30}
+    durationInFrames={180}
+    defaultProps={{fps: 30, duracao: 6, arroba: '@seraphimbr_', audio: null, batida: null, palavras: [], cenas: [{inicio: 0, fim: 6, tipo: 'frase', titulo: 'teste'}]} as PropsE}
+    calculateMetadata={({props}) => ({durationInFrames: Math.ceil((props as PropsE).duracao * (props as PropsE).fps), fps: (props as PropsE).fps})}
   />
   <Composition
     id="Seraphim"

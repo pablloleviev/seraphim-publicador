@@ -465,19 +465,25 @@ def main():
 
     cortes = spec.get("motor") == "cortes"
     relanc = spec.get("motor") == "relancamento"
+    estilo = spec.get("motor") == "estilo"
     if cortes:
         marcar_fala(cenas, palavras, limites)
         preparar_imagens_cortes(cenas)
     for c in cenas:
         c.pop("narracao", None)
     # garante que o motor tem as poses e marca atualizadas
-    for pasta in ["sera", "marca", "fontes"]:
+    for pasta in ["sera", "marca", "fontes", "pessoas"]:
         if (RAIZ / "assets" / pasta).exists():
           shutil.copytree(RAIZ / "assets" / pasta, MOTOR / "public" / pasta, dirs_exist_ok=True)
+    if estilo:
+        shutil.copytree(RAIZ / "carrossel" / "icones", MOTOR / "public" / "icones", dirs_exist_ok=True)
+        for f in ["anton.ttf", "sora-700.woff2", "manrope-500.woff2", "manrope-800.woff2"]:
+            (MOTOR / "public" / "fontes").mkdir(parents=True, exist_ok=True)
+            shutil.copy(RAIZ / "carrossel" / "fontes" / f, MOTOR / "public" / "fontes" / f)
 
     props = {"fps": 30, "duracao": cenas[-1]["fim"], "arroba": spec.get("arroba", ARROBA),
              "audio": audio, "batida": "sfx/batida.mp3", "sfx": True, "palavras": palavras, "cenas": cenas}
-    if (cortes or relanc) and audio:
+    if (cortes or relanc or estilo) and audio:
         try:
             import trilha
             t = trilha.montar(cenas, MOTOR / "public" / audio, JOB / "trilha.wav", semente=nome, dur_total=cenas[-1]["fim"])
@@ -495,7 +501,7 @@ def main():
 
     saida = Path(args.saida).resolve() if args.saida else RAIZ / "entrega" / "videos" / f"{nome}.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
-    cmd = f'npx remotion render src/index.ts {"Cortes" if cortes else "Relancamento" if relanc else "Seraphim"} "{saida}" --props=public/job/props.json --log=error --codec=h264 --crf=19 --jpeg-quality=100 --x264-preset=slow --pixel-format=yuv420p --audio-bitrate=192k'
+    cmd = f'npx remotion render src/index.ts {"Cortes" if cortes else "Relancamento" if relanc else "Estilo" if estilo else "Seraphim"} "{saida}" --props=public/job/props.json --log=error --codec=h264 --crf=19 --jpeg-quality=100 --x264-preset=slow --pixel-format=yuv420p --audio-bitrate=192k'
     if os.environ.get("CHROME_PATH"):
         cmd += f' --browser-executable="{os.environ["CHROME_PATH"]}"'
     print("Editando no motor Remotion... (alguns minutos)")

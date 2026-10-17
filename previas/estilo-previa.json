@@ -1,0 +1,15 @@
+{"nome": "estilo-previa", "motor": "estilo", "genero_voz": "masculina",
+ "cenas": [
+  {"tipo": "capa", "linha": "AS TAREFAS QUE", "titulo": "Roubam *horas*<br>da sua *empresa*", "icones": ["workflow", "message-circle", "bar-chart-3"],
+   "narracao": "Tem tarefa na sua empresa que rouba horas todo dia. E quase ninguém percebe."},
+  {"tipo": "moedas", "titulo": "Toda empresa tem *trabalho invisível*", "icones": ["repeat", "file-text", "message-circle", "alarm-clock", "receipt"],
+   "narracao": "Copiar dados, responder as mesmas perguntas, montar relatório na mão."},
+  {"tipo": "cartao", "fundo": "claro", "titulo": "*Copiar* dados entre sistemas", "rotulo": "DE 3 SISTEMAS PARA APENAS", "numero": "1 SISTEMA",
+   "narracao": "O mesmo pedido digitado três vezes. Com integração, ele entra uma vez e aparece em todo lugar."},
+  {"tipo": "cartao", "titulo": "Responder as *mesmas perguntas*", "rotulo": "ATENDIMENTO NO AR", "numero": "24 H",
+   "narracao": "As dúvidas de sempre, respondidas na hora. Sua equipe fica com o que exige gente."},
+  {"tipo": "frase", "titulo": "Automatizar não é sobre tecnologia. É sobre *tempo.*",
+   "narracao": "Automatizar não é sobre tecnologia. É sobre tempo."},
+  {"tipo": "fecho", "titulo": "Por onde *começar?*", "cartoes": ["Mapear o que se repete todo dia", "Resolver primeiro o que mais custa"],
+   "narracao": "Comece mapeando o que se repete. E resolva primeiro o que mais custa. Siga a Seraphim."}
+ ]}
