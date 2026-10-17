@@ -354,6 +354,11 @@
         "via": "buffer"
       },
       "msg_id": 790
+    },
+    "2026-10-18_0930_passagem-de-bastao-venda-entrega": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-17T13:44:55.912110+00:00",
+      "msg_id": 799
     }
   },
   "respondidos": {}
