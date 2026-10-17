@@ -86,7 +86,40 @@ def publicar_tiktok(video: Path, legenda: str) -> str:
     raise erro
 
 
+def publicar_tiktok_fotos(fotos, legenda: str) -> str:
+    """carrossel no TikTok (post de fotos, formato nativo). fotos = lista de Path, a 1ª é a capa."""
+    canal = canal_tiktok()
+    titulo = legenda.split("\n")[0][:90]
+    imgs = ", ".join(f"{{ image: {{ url: {_s(url_publica(f))} }} }}" for f in fotos[:35])
+    imgs2 = ", ".join(f"{{ url: {_s(url_publica(f))} }}" for f in fotos[:35])
+    base = f'text: {_s(legenda[:2200])}, channelId: {_s(canal)}, schedulingType: automatic, mode: shareNow'
+    sel = "{ ... on PostActionSuccess { post { id } } ... on MutationError { message } }"
+    tentativas = [f"{base}, assets: [{imgs}], metadata: {{ tiktok: {{ title: {_s(titulo)} }} }}", f"{base}, assets: [{imgs}]",
+                  f"{base}, assets: {{ images: [{imgs2}] }}"]
+    erro = None
+    for entrada in tentativas:
+        try:
+            r = gql(f"mutation {{ createPost(input: {{ {entrada} }}) {sel} }}")["createPost"]
+        except RuntimeError as e:
+            erro = e; continue
+        if r.get("post"):
+            return r["post"]["id"]
+        erro = RuntimeError("Buffer recusou: " + str(r.get("message")))
+    raise erro
+
+
+def esquema():
+    for t in ("CreatePostInput", "AssetsInput", "AssetInput", "ImageAssetInput", "PostMetadataInput", "TikTokPostMetadataInput", "ShareMode"):
+        try:
+            r = gql('query($n: String!) { __type(name: $n) { name kind inputFields { name type { name kind ofType { name kind ofType { name } } } } enumValues { name } } }', {"n": t})
+            print(json.dumps(r, ensure_ascii=False))
+        except RuntimeError as e:
+            print(t, "->", e)
+
+
 if __name__ == "__main__":
+    if sys.argv[1] == "esquema":
+        esquema(); sys.exit(0)
     if sys.argv[1] == "canais":
         print(json.dumps(canais(), indent=1, ensure_ascii=False))
     elif sys.argv[1] == "posts":
