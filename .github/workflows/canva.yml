@@ -1,0 +1,18 @@
+name: Canva (API direta, sem Claude)
+on:
+  workflow_dispatch:
+    inputs:
+      acao: {description: "conectar | teste", required: true, default: "teste"}
+      code: {description: "código do login (só no conectar)", required: false}
+      verifier: {description: "verificador PKCE (só no conectar)", required: false}
+jobs:
+  canva:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
+          CANVA_REFRESH: ${{ secrets.CANVA_REFRESH }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          if [ "${{ inputs.acao }}" = "conectar" ]; then python scripts/canva_api.py conectar "${{ inputs.code }}" "${{ inputs.verifier }}"; else python scripts/canva_api.py teste; fi
