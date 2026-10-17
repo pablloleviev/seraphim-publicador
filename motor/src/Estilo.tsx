@@ -268,13 +268,13 @@ const Lista: React.FC<{c: CenaE}> = ({c}) => {
 // contraste: antes x depois, tela dividida com linha dourada que corta
 const Contraste: React.FC<{c: CenaE}> = ({c}) => {
   const f = useCurrentFrame(); const {fps} = useVideoConfig();
-  const l = interpolate(f, [6, 26], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)});
-  const d = spring({frame: f - 22, fps, config: {damping: 14}});
+  const l = interpolate(f, [0, 14], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)});
+  const d = spring({frame: f - 12, fps, config: {damping: 14}});
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 960, background: '#ecebe6', clipPath: `inset(0 ${100 - l * 100}% 0 0)`}}>
         <div style={{position: 'absolute', left: 90, top: 330, fontFamily: 'Man8', fontSize: 34, letterSpacing: 5, color: '#777'}}>ANTES</div>
-        <div style={{position: 'absolute', left: 90, right: 90, top: 400, fontFamily: 'Sora', fontSize: 84, lineHeight: 1.1, color: '#222', textDecoration: f > 40 ? 'line-through' : 'none', textDecorationColor: OURO}}>{c.antes}</div>
+        <div style={{position: 'absolute', left: 90, right: 90, top: 400, fontFamily: 'Sora', fontSize: 84, lineHeight: 1.1, color: '#222', textDecoration: f > 24 ? 'line-through' : 'none', textDecorationColor: OURO}}>{c.antes}</div>
       </div>
       <div style={{position: 'absolute', left: 0, right: 0, top: 955, height: 10, background: OURO, transform: `scaleX(${l})`, boxShadow: `0 0 40px ${OURO}`}} />
       <div style={{position: 'absolute', left: 90, right: 90, top: 1060, opacity: d, transform: `translateY(${(1 - d) * 50}px)`}}>
@@ -329,8 +329,9 @@ const Citacao: React.FC<{c: CenaE}> = ({c}) => {
 };
 
 // legenda palavra a palavra, 3 por vez, a falada em dourado e maior
-const Legenda: React.FC<{palavras: Palavra[]; claro: (t: number) => boolean; estilo?: string}> = ({palavras, claro, estilo}) => {
+const Legenda: React.FC<{palavras: Palavra[]; claro: (t: number) => boolean; estilo?: string; ocultar?: [number, number][]}> = ({palavras, claro, estilo, ocultar = []}) => {
   const f = useCurrentFrame(); const {fps} = useVideoConfig(); const t = f / fps;
+  if (ocultar.some(([a, b]) => t >= a && t < b)) return null;
   const i = palavras.findIndex((p) => t >= p.s && t < p.e + 0.2);
   if (i < 0 || estilo === 'nenhuma') return null;
   if (estilo === 'palavra') {
@@ -354,6 +355,7 @@ const Legenda: React.FC<{palavras: Palavra[]; claro: (t: number) => boolean; est
 export const Estilo: React.FC<PropsE> = (props) => {
   useFontes();
   const {fps} = useVideoConfig();
+  const ocultas = props.cenas.filter((c) => ['frase', 'citacao'].includes(c.tipo));
   const ehClaro = (t: number) => props.cenas.some((c) => c.fundo === 'claro' && t >= c.inicio && t < c.fim);
   return (
     <AbsoluteFill style={{background: '#08080a'}}>
@@ -374,7 +376,7 @@ export const Estilo: React.FC<PropsE> = (props) => {
           {props.sfx !== false && i > 0 && <Audio src={staticFile('sfx/whoosh.wav')} volume={0.35} />}
         </Sequence>;
       })}
-      <Legenda palavras={props.palavras} claro={ehClaro} estilo={props.legenda} />
+      <Legenda palavras={props.palavras} claro={ehClaro} estilo={props.legenda} ocultar={ocultas.map((c) => [c.inicio, c.fim] as [number, number])} />
       <div style={{position: 'absolute', left: 70, top: 110, fontFamily: 'Man8', fontSize: 30, lineHeight: 0.95, color: BRANCO, mixBlendMode: 'difference'}}>SERA<br />PHIM</div>
       <Grao o={P(props.personalidade).grao} />
       {props.tarja && <><div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 150, background: '#000'}} /><div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 150, background: '#000'}} /></>}

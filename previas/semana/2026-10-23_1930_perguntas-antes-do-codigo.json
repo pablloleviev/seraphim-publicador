@@ -3,7 +3,6 @@
  "pasta": "2026-10-23_1930_perguntas-antes-do-codigo",
  "motor": "estilo",
  "personalidade": "minimal",
- "legenda": "palavra",
  "genero_voz": "masculina",
  "cenas": [
   {
@@ -56,5 +55,6 @@
    ],
    "narracao": "Se uma delas fica sem resposta, ainda não é hora de programar. Salva essas cinco."
   }
- ]
+ ],
+ "estilo_legenda": "palavra"
 }

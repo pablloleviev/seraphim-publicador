@@ -37,8 +37,8 @@ jobs:
         run: |
           P=$(basename "$SPEC" .json); D="fila/$P"; mkdir -p "$D"
           python scripts/fazer_video.py "$SPEC" --voz gemini --saida "$D/video.mp4" 2>&1 | tail -5
-          ffmpeg -loglevel error -y -ss 1.4 -i "$D/video.mp4" -frames:v 1 -q:v 2 "$D/capa.jpg"
-          rm -f "$D/video_tiktok.mp4"; python scripts/capa_no_video.py "$D"
+          ffmpeg -loglevel error -y -ss 1.8 -i "$D/video.mp4" -frames:v 1 -q:v 2 "$D/capa.jpg"
+          rm -f "$D/video_tiktok.mp4" "$D/video.txt"; python scripts/capa_no_video.py "$D"
       - run: |
           git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
           P=$(basename "${{ matrix.spec }}" .json); git add "fila/$P"; git commit -qm "estilo novo: $P" || exit 0

@@ -3,7 +3,6 @@
  "pasta": "2026-10-20_1930_planilha-nao-e-sistema",
  "motor": "estilo",
  "personalidade": "impacto",
- "legenda": "palavra",
  "genero_voz": "masculina",
  "cenas": [
   {
@@ -61,5 +60,6 @@
    ],
    "narracao": "Salva esse vídeo e manda pra quem vive dentro da planilha."
   }
- ]
+ ],
+ "estilo_legenda": "palavra"
 }

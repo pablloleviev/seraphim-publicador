@@ -3,7 +3,6 @@
  "pasta": "2026-10-25_1930_sete-dias-uma-ideia",
  "motor": "estilo",
  "personalidade": "elegante",
- "legenda": "karaoke",
  "genero_voz": "masculina",
  "cenas": [
   {
@@ -50,5 +49,6 @@
    "narracao": "A conversa começa com caneta. Manda um direct pra gente."
   }
  ],
- "tarja": true
+ "tarja": true,
+ "estilo_legenda": "karaoke"
 }

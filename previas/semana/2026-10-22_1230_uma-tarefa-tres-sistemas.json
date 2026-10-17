@@ -3,7 +3,6 @@
  "pasta": "2026-10-22_1230_uma-tarefa-tres-sistemas",
  "motor": "estilo",
  "personalidade": "impacto",
- "legenda": "karaoke",
  "genero_voz": "masculina",
  "cenas": [
   {
@@ -59,5 +58,6 @@
    ],
    "narracao": "Salva e manda pra quem digita a mesma coisa três vezes."
   }
- ]
+ ],
+ "estilo_legenda": "karaoke"
 }

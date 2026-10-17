@@ -3,7 +3,6 @@
  "pasta": "2026-10-20_1230_custo-invisivel-trabalho-repetido",
  "motor": "estilo",
  "personalidade": "emocional",
- "legenda": "sutil",
  "genero_voz": "masculina",
  "cenas": [
   {
@@ -66,5 +65,6 @@
    ],
    "narracao": "Qual tarefa se repete todo santo dia na sua empresa? Conta nos comentários."
   }
- ]
+ ],
+ "estilo_legenda": "sutil"
 }

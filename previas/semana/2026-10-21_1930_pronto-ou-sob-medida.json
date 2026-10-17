@@ -3,7 +3,6 @@
  "pasta": "2026-10-21_1930_pronto-ou-sob-medida",
  "motor": "estilo",
  "personalidade": "minimal",
- "legenda": "sutil",
  "genero_voz": "masculina",
  "cenas": [
   {
@@ -43,5 +42,6 @@
    ],
    "narracao": "Em qual dos dois lados a sua empresa está hoje? Responde aqui."
   }
- ]
+ ],
+ "estilo_legenda": "sutil"
 }

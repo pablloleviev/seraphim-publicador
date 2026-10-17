@@ -3,7 +3,6 @@
  "pasta": "2026-10-21_1230_sistema-sob-medida-na-pratica",
  "motor": "estilo",
  "personalidade": "dinamico",
- "legenda": "karaoke",
  "genero_voz": "masculina",
  "cenas": [
   {
@@ -52,5 +51,6 @@
    ],
    "narracao": "Qual etapa do seu dia mais precisa de um sistema? Comenta aqui."
   }
- ]
+ ],
+ "estilo_legenda": "karaoke"
 }

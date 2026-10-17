@@ -3,7 +3,6 @@
  "pasta": "2026-10-23_1230_como-comecamos-um-projeto",
  "motor": "estilo",
  "personalidade": "emocional",
- "legenda": "karaoke",
  "genero_voz": "masculina",
  "cenas": [
   {
@@ -49,5 +48,6 @@
    "narracao": "Projeto bom começa ouvindo. Segue a Seraphim pra ver como a gente trabalha."
   }
  ],
- "tarja": true
+ "tarja": true,
+ "estilo_legenda": "karaoke"
 }

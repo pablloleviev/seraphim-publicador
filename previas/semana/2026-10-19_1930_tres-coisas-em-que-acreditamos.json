@@ -3,7 +3,6 @@
  "pasta": "2026-10-19_1930_tres-coisas-em-que-acreditamos",
  "motor": "estilo",
  "personalidade": "elegante",
- "legenda": "sutil",
  "genero_voz": "masculina",
  "cenas": [
   {
@@ -50,5 +49,6 @@
    "narracao": "Qual dessas três faz mais sentido pra sua empresa hoje? Comenta aqui."
   }
  ],
- "tarja": true
+ "tarja": true,
+ "estilo_legenda": "sutil"
 }

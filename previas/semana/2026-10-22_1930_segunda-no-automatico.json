@@ -3,7 +3,6 @@
  "pasta": "2026-10-22_1930_segunda-no-automatico",
  "motor": "estilo",
  "personalidade": "dinamico",
- "legenda": "palavra",
  "genero_voz": "masculina",
  "cenas": [
   {
@@ -56,5 +55,6 @@
    ],
    "narracao": "Qual delas você tiraria das mãos do seu time primeiro? Comenta."
   }
- ]
+ ],
+ "estilo_legenda": "palavra"
 }
