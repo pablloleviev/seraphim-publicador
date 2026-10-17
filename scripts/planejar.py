@@ -113,44 +113,98 @@ def gemini(prompt, temperatura=1.0):
 
 
 EXEMPLO_VIDEO = {
-    "nome": "concorrente-ja-usa-ia", "formato": "erro que você comete", "funil": "topo", "titulo": "Seu concorrente já usa IA",
-    "cenas": [
-        {"tipo": "palavra", "texto": "SEU|CONCORRENTE|JÁ USA|IA", "destaque": "IA", "narracao": "Seu concorrente já usa inteligência artificial."},
-        {"tipo": "frase", "texto": "e você ainda faz tudo na mão", "destaque": "mão", "narracao": "E você ainda faz tudo na mão."},
-        {"tipo": "contador", "rotulo": "Horas perdidas por mês", "de": 0, "para": 87, "sufixo": "h",
-         "narracao": "Só respondendo mensagem, montando orçamento e conferindo planilha, vão quase noventa horas por mês."},
-        {"tipo": "foto", "busca": "tired businessman office night", "texto": "90 horas", "sub": "por mês", "tom": "vermelho", "narracao": "Noventa horas. Todo mês."},
-        {"tipo": "pergunta", "texto": "tá, mas automatizar não é *caro*?", "pose": "pensando", "narracao": "Tá, mas automatizar não é caro?"},
-        {"tipo": "digitando", "topo": "PONTO 1:", "texto": "WHATSAPP", "narracao": "Ponto um: o WhatsApp responde sozinho as perguntas de sempre."},
-        {"tipo": "diagrama", "passos": [{"icone": "chat", "rotulo": "cliente"}, {"icone": "robo", "rotulo": "automação"}, {"icone": "dinheiro", "rotulo": "venda"}],
-         "narracao": "O cliente pergunta, a automação responde, e a venda acontece, até de madrugada."},
-        {"tipo": "cards", "itens": [{"rotulo": "antes:", "busca": "messy desk papers"}, {"rotulo": "depois:", "busca": "clean modern office laptop"}],
-         "narracao": "Antes, papel e correria. Depois, tudo organizado num sistema."},
-        {"tipo": "niveis", "texto": "Onde você está?", "itens": ["Faz na mão", "Usa planilha", "Automatizou"], "narracao": "E aí, em qual nível a sua empresa está hoje?"},
-        {"tipo": "cta", "texto": "SEGUE PRA NÃO *FICAR PRA TRÁS*", "pose": "confiante",
-         "narracao": "Seu concorrente já começou. Segue a Seraphim pra não ficar pra trás."}],
-    "legenda": "Seu concorrente já automatizou. E você? 👀"}
-
-CATALOGO_CENAS = """Tipos de cena do motor de cortes (vertical). Reveze: NUNCA o mesmo tipo duas vezes seguidas; use 7 a 10 cenas; cada cena 1 ideia, 1 a 3 s de fala.
-- palavra: palavras gigantes, uma por vez, no branco. "texto" com palavras/expressões separadas por | (máx. 4 blocos curtos), "destaque" = bloco em vermelho. Ótimo para o gancho.
-- frase: frase curta minúscula no preto (até ~8 palavras). "destaque" = palavra dourada.
-- contador: card de app em 3D com número contando. "rotulo", "de", "para", "sufixo" (ex.: "h", "%", " clientes"), opcional "riscar" (texto que aparece após riscar). Só números ilustrativos coerentes, nunca estatística inventada como fato.
-- foto: foto real tratada com texto grande. "busca" (inglês, 2 a 5 palavras, SEM pessoas famosas/marcas), "texto", "sub", "tom": cinza|vermelho|dourado.
-- pergunta: pergunta em letra de máquina no branco com o mascote; marque a palavra-chave com *asteriscos*; "pose".
-- digitando: "topo" (ex.: "PONTO 1:", "ERRO 2:") e "texto" CURTO (1 a 3 palavras, máx. 18 letras) em MAIÚSCULAS sendo digitado.
-- diagrama: 3 a 4 "passos" {icone, rotulo}; icones: tela pessoas dinheiro robo grafico chat engrenagem raio relogio cadeado carrinho planilha check alerta.
-- cards: 2 cards de foto com rótulo ("antes:"/"depois:", "errado:"/"certo:"): "itens":[{"rotulo","busca"}].
-- parede: parede 3D de imagens com o mascote no centro. "buscas": 2 a 3 termos em inglês, "texto" curto opcional.
-- sera: mascote em fundo cinza de retícula, "pose", "texto" curto minúsculo opcional.
-- painel: HUD de jogo (alerta + barra). "rotulo" (ex.: "Produtividade"), "valor" (0-100), "texto" curto.
-- niveis: 3 níveis em cards. "texto" (título curto), "itens": 3 textos curtos.
-- serifa: frase séria em serifa itálica (momento de verdade). "texto" ou "itens" (2-3 frases curtas).
-- interruptor: interruptor de app que DESLIGA durante a fala (ótimo para o gancho ou a virada). "rotulo" (nome do interruptor, ex.: "Novo funcionário"),
-  "texto" (subtítulo ligado, ex.: "contratar agora?"), "sub" (subtítulo depois de desligar, ex.: "melhor automatizar"), "valor" 0.3-0.7 (momento em que desliga).
-- checklist: card com lista sendo marcada. "rotulo" (título do card), "itens": 3 a 5 textos curtos (até 4 palavras cada).
-- calendario: calendário que VIRA de uma data para outra (tempo passando = resultado). "apoio" = data inicial (ex.: "18 OUT"), "texto" = data final (ex.: "28 NOV"), "rotulo" = frase curta que aparece ao virar. Use quando falar de prazo/resultado em dias.
-- (qualquer cena) "etiqueta": opcional, texto curto em MAIÚSCULAS (até 3 palavras) numa pílula de vidro no topo, ex.: "DONO DE OFICINA", "PASSO 2". Use em 2 a 3 cenas do vídeo, não em todas.
-- cta: SEMPRE a última cena. "texto" curto em MAIÚSCULAS com *destaque*, "pose"; nos posts de fundo, "apoio": "link na bio".
+ "nome": "planilha-nao-e-sistema",
+ "formato": "erro que você comete",
+ "funil": "topo",
+ "titulo": "Planilha não é sistema",
+ "personalidade": "impacto",
+ "estilo_legenda": "palavra",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "file-text",
+   "titulo": "Sua planilha *funciona.*",
+   "transicao": "zoom",
+   "narracao": "Sua planilha funciona."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Até o dia em que *não funciona.*",
+   "transicao": "flash",
+   "camera": "tremor",
+   "narracao": "Até o dia em que não funciona."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O dia em que *quebra:*",
+   "itens": [
+    "Duas pessoas editando",
+    "A fórmula some",
+    "Qual é a versão certa?"
+   ],
+   "narracao": "Duas pessoas editam ao mesmo tempo. Uma fórmula some. Ninguém sabe qual é a versão certa."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Planilha como coração da empresa",
+   "depois": "Planilha para *começar*",
+   "narracao": "Planilha é ótima pra começar, mas não foi feita pra ser o coração de uma empresa."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Um sistema *guarda, controla e avisa*",
+   "icones": [
+    "database",
+    "lock",
+    "bell",
+    "shield-check"
+   ],
+   "narracao": "Um sistema guarda o histórico, controla quem mexe em quê e avisa quando algo sai do lugar."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "É sobre saber a hora de *crescer.*",
+   "narracao": "Não é sobre abandonar a planilha. É sobre saber a hora de crescer."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Manda pra quem *vive na planilha*",
+   "cartoes": [
+    "Salva o vídeo",
+    "Envia pra um amigo"
+   ],
+   "narracao": "Salva esse vídeo e manda pra quem vive dentro da planilha."
+  }
+ ],
+ "legenda": "Planilha é ótima pra começar. O problema é quando ela vira o lugar onde a empresa inteira mora. 📊",
+ "legenda_tiktok": "Sua planilha funciona. Até o dia em que não funciona.",
+ "hashtags": [
+  "#planilha",
+  "#gestao",
+  "#sistemas",
+  "#pequenasempresas",
+  "#seraphimbr"
+ ],
+ "capa": "Planilha *não é* sistema"
+}
+CATALOGO_CENAS = """MOTOR "ESTILO" (direção criativa aprovada: preto + dourado, vidro 3D, objetos 3D dourados, fumaça, desfoque, cinema).
+Cada vídeo tem PERSONALIDADE própria e composição própria — identidade fixa, execução sempre diferente.
+Campos do vídeo: "personalidade": impacto | dinamico | elegante | minimal | emocional (escolha pelo assunto e emoção);
+"estilo_legenda": karaoke | palavra | sutil | nenhuma; "tarja": true/false (tarjas de cinema, combina com elegante/emocional).
+Tipos de cena (5 a 9 cenas; NUNCA o mesmo tipo duas vezes seguidas; cada cena 1 ideia, 1 a 4 s de fala; "titulo" usa *destaque* dourado):
+- capa: pessoa (Pabllo) com blocos de vidro 3D flutuando. "linha" (frase curta em caixa alta), "titulo" (manchete; <br> quebra linha), "icones": 3 nomes de ícone.
+- pessoa: texto gigante vazado ATRÁS da pessoa. "linha" (1 palavra), "titulo".
+- objeto: um ícone 3D enorme girando com anel de luz. "icone", "titulo" (curto, caixa alta).
+- moedas: moedas 3D douradas caindo com ícones. "titulo", "icones": 3 a 5.
+- cartao: cartão de vidro 3D com rótulo + número/palavra grande + curva desenhando. "titulo", "rotulo", "numero" (curto, ex.: "24 H", "1 CLIQUE"; NUNCA estatística inventada). Opcional "fundo":"claro".
+- numero: número gigante contando na tela cheia. "numero", "rotulo", "titulo".
+- lista: cartões de vidro entrando em profundidade. "titulo", "itens": 2 a 4 textos curtos.
+- contraste: tela dividida antes x depois com linha dourada. "antes", "depois" (com *destaque*).
+- citacao: frase elegante em destaque, revelação lenta. "titulo".
+- frase: frase com palavras surgindo do desfoque. "titulo". Opcional "fundo":"claro".
+- fecho: SEMPRE a última. "titulo", "cartoes": 2 textos curtos (ações).
+Opcional em qualquer cena: "transicao" (chicote|zoom|corte|flash|mascara|dissolve|luz|desfoque|deslize) e "camera" (empurra|afasta|deriva|inclina|tremor|parada) para momentos especiais; sem isso, a personalidade decide.
+Ícones disponíveis (Lucide): """ + ", ".join(sorted(p.stem for p in (RAIZ / "carrossel" / "icones").glob("*.svg"))) + """
 Poses do mascote: pensando, confiante, surpreso, preocupado, feliz, comemorando."""
 
 REGRAS_FUNIL = """FUNIL (decida para cada post e escreva em "funil"):
@@ -168,15 +222,57 @@ FICHA_AUTOFLOW = (RAIZ / "estilos" / "autoflow.md").read_text(encoding="utf-8")
 TEXTO_IG = (RAIZ / "estilos" / "texto-instagram.md").read_text(encoding="utf-8")
 
 EXEMPLO_CARROSSEL = {
-    "nome": "5-usos-ia", "formato": "lista prática", "titulo": "5 usos de IA que economizam horas",
-    "slides": [
-        {"tipo": "capa", "tag": "Inteligência artificial", "titulo": "5 usos de IA que|*economizam horas*", "texto": "Na sua empresa, a partir de hoje.", "sera": "surpreso"},
-        {"tipo": "numero", "numero": "01", "titulo": "Responder|*mensagens*", "texto": "Rascunhos de resposta para clientes em **segundos**."},
-        {"tipo": "texto", "titulo": "O segredo:|*contexto*", "texto": "Quanto mais detalhe você der, **melhor a resposta**.", "card": "Ex.: \"Responda como dono de loja, tom educado, 3 linhas.\""},
-        {"tipo": "capa", "titulo": "Salva e|*testa hoje*", "texto": "Segue a **" + ARROBA + "** para mais.", "sera": "confiante"}],
-    "legenda": "5 usos de IA que economizam horas ⏱️\n\nSalva pra testar 📌"}
-
-
+ "nome": "glossario-api-webhook",
+ "titulo": "O glossário que ninguém te explicou",
+ "slides": [
+  {
+   "tipo": "capa_objeto",
+   "icone": "notebook-pen",
+   "material": "vidro",
+   "linha": "5 PALAVRAS, SEM JARGÃO",
+   "titulo": "O glossário que<br>ninguém te *explicou*"
+  },
+  {
+   "tipo": "verbete",
+   "rotulo": "VERBETE",
+   "icone": "key",
+   "titulo": "*API*",
+   "texto": "A **porta** pela qual um sistema conversa com outro.",
+   "exemplo": "O site consultando o **estoque**."
+  },
+  {
+   "tipo": "verbete",
+   "rotulo": "VERBETE",
+   "fundo": "claro",
+   "icone": "bell",
+   "titulo": "*Webhook*",
+   "texto": "Um **aviso automático** quando algo acontece.",
+   "exemplo": "Pagamento aprovado **avisa o sistema na hora**."
+  },
+  {
+   "tipo": "contraste",
+   "rotulo_a": "SEM INTEGRAÇÃO",
+   "antes": "Digitar o pedido 3 vezes",
+   "rotulo_b": "COM INTEGRAÇÃO",
+   "depois": "O dado entra *uma vez*",
+   "texto": "E aparece **onde precisa**."
+  },
+  {
+   "tipo": "cta",
+   "pessoa": "sera_pensando",
+   "titulo": "Faltou alguma *palavra?*",
+   "texto": "Pede nos comentários.",
+   "botao": "COMENTA AQUI"
+  }
+ ],
+ "legenda": "Salva pra consultar quando alguém falar difícil na reunião. 😅 Qual palavra faltou?",
+ "hashtags": [
+  "#tecnologia",
+  "#glossario",
+  "#automacao",
+  "#seraphimbr"
+ ]
+}
 PADRAO_FUNIL = ["topo", "topo", "meio", "topo", "topo", "topo", "meio", "topo", "fundo", "topo"]  # 70% / 20% / 10%
 
 
@@ -229,6 +325,8 @@ def pedir_dia(dia, n_v, n_c, hist):
     vids = [h for h in hist if h.get("tipo") == "video" and h.get("cenas")][-15:]
     estruturas = [" > ".join(str(x) for x in h["cenas"] if x) for h in vids]
     ganchos = [next((x for x in h["cenas"] if x), "") for h in vids][-5:]
+    pers_recentes = [h.get("personalidade", "") for h in vids][-3:]
+    cars = [" > ".join(h.get("slides", [])) for h in hist if h.get("tipo") == "carrossel" and h.get("slides")][-8:]
     buscas_usadas = sorted({b for h in hist for b in h.get("buscas", [])})[-150:]
     regras = f"""Você é o roteirista-chefe da Seraphim ({ARROBA}), startup brasileira de tecnologia:
 sistemas sob medida, automações e inteligência artificial para pequenas e médias empresas.
@@ -254,6 +352,8 @@ REGRAS DE QUALIDADE (obrigatórias):
 - DIVERSIDADE (regra do Pabllo): cada vídeo tem que ser DIFERENTE e MELHOR que o anterior, nunca o mesmo "padrãozinho".
   Estas foram as sequências de cenas dos últimos vídeos — NÃO repita nenhuma e nem siga a mesma ordem: {json.dumps(estruturas, ensure_ascii=False)}
   O tipo da 1ª cena (gancho) não pode ser nenhum destes, usados nos últimos vídeos: {json.dumps(ganchos, ensure_ascii=False)}
+  Personalidades dos últimos vídeos (use OUTRA no primeiro vídeo do dia e não repita personalidade no mesmo dia): {json.dumps(pers_recentes, ensure_ascii=False)}
+  Sequências de slides dos últimos carrosséis (NÃO repita): {json.dumps(cars, ensure_ascii=False)}
   Varie a quantidade de cenas (6 a 10), o ritmo (cenas curtas e rápidas x uma cena que respira), a ordem e a combinação de tipos.
   Nos vídeos do mesmo dia, nenhum pode ter a mesma 1ª cena nem a mesma estrutura de outro.
   Termos de busca de foto já usados (invente outros, com cenas e ângulos diferentes): {json.dumps(buscas_usadas, ensure_ascii=False)}
@@ -266,7 +366,13 @@ REGRAS DE QUALIDADE (obrigatórias):
 {REGRAS_FUNIL}
 FICHA DO AUTOFLOW:
 {FICHA_AUTOFLOW}
-- Carrossel (estilo de carrossel viral): capa com manchete forte = número + ferramenta/assunto conhecido + promessa ou segredo (ex.: "5 comandos pra fazer o ChatGPT trabalhar na sua empresa", "3 erros que fazem seu cliente sumir"); a capa promete exatamente a quantidade de itens do miolo; miolo com 1 item por slide (título curto + explicação ou comando pronto pra copiar); último slide = chamada (seguir/salvar). Carrossel: 7 a 9 slides, nível Blue Ocean/Gene, com VARIEDADE de layouts (nunca só "numero" em sequência). Tipos: capa_foto {{rotulo,titulo,busca(inglês, p/ foto real vertical) ou sera}}, capa_noticia {{selo,titulo,recortes:[{{fonte,texto}}x3]}} (só com notícia real e fonte), pilulas {{rotulo,titulo,texto,itens:[3-5 textos curtos]}}, card {{rotulo,titulo,icone(emoji),subtitulo,card,chips:[2-4]}}, whatsapp {{rotulo,titulo,contato,mensagens:[{{de:cliente|empresa,texto,hora}}x2-5]}}, comparacao {{rotulo,titulo,esquerda:{{rotulo,itens[3]}},direita:{{rotulo,itens[3]}}}}, passos {{rotulo,titulo,itens:[{{titulo,texto}}x3-4]}}, citacao {{titulo,texto}}, numero/texto/capa (clássicos), perfil_cta {{titulo,texto}} (SEMPRE o último). Primeiro slide: capa_foto, capa_noticia ou capa. Use "fundo":"branco" em 2 slides do miolo (ritmo escuro→claro). Misture pelo menos 4 tipos diferentes. Nunca invente número/estatística; títulos usam | para quebrar linha e *destaque* em dourado.
+- Carrossel (padrão aprovado, estilo Blue Ocean em preto + dourado): 5 a 8 slides, estrutura PRÓPRIA por carrossel (não repetir a sequência de tipos de outro carrossel recente). Capa promete exatamente o que o miolo entrega. Títulos com *destaque* dourado; no corpo, **negrito** nos trechos-chave. Tipos de slide:
+  capa {{"linha","titulo"(<br> quebra),"pessoa":"pabllo","blocos_icones":[3 ícones]}} | capa_objeto {{"linha","titulo","icone","material":"moeda"|"vidro"}} | capa_numero {{"numero","titulo"}} |
+  abertura {{"titulo","textos":[2-3 parágrafos curtos],"icones":[4]}} | topico {{"titulo","rotulo","numero"(curto),"textos":[1-3],"fundo":"claro"|"escuro"}} |
+  verbete {{"rotulo","icone","titulo","texto","exemplo"}} | lista {{"rotulo","titulo","itens":[[titulo,explicação]x2-4],"marcador"(opcional "✕" ou "→")}} |
+  contraste {{"rotulo_a","antes","rotulo_b","depois","texto"}} | citacao {{"titulo","texto"}} | fecho {{"titulo","textos":[1],"cartoes":[2]}} |
+  cta {{"titulo","texto","botao","pessoa":"pabllo"|"sera_confiante"|"sera_pensando"}} (SEMPRE o último).
+  Primeiro slide: capa, capa_objeto ou capa_numero (reveze). Alterne fundos escuro/claro no miolo. Pessoa ou Sera em parte dos carrosséis, não em todos. Nunca invente número/estatística.
 - Legenda (Instagram): ÚNICA para cada post, ligada ao gancho e ao assunto; 2 a 4 linhas curtas com emoji, uma pergunta que puxa comentário e a chamada do funil; SEM hashtags dentro dela.
 - "legenda_tiktok": legenda própria para o TikTok (mais curta e direta, 1 a 2 linhas, tom de conversa), diferente da do Instagram.
 - "hashtags": 4 a 6 hashtags de AQUELE post (2-3 de nicho, 1-2 médias, no máximo 1 ampla), sempre incluindo #seraphimbr; nunca #seraphimpublicador; nunca o mesmo conjunto de outro post.
@@ -277,11 +383,8 @@ FICHA DO AUTOFLOW:
 MANUAL DE TEXTO (ganchos, legendas, narração e slides; siga à risca):
 {TEXTO_IG}
 
-MANUAL DE EDIÇÃO DOS CORTES (estilo e ritmo; para os campos de cena, siga o catálogo acima):
-{(RAIZ / "estilos" / "cortes.md").read_text(encoding="utf-8")}
-
-MANUAL DOS CARROSSÉIS (siga à risca nos carrosséis):
-{(RAIZ / "estilos" / "carrosseis.md").read_text(encoding="utf-8")}
+DIREÇÃO CRIATIVA APROVADA (identidade fixa, execução sempre nova; siga à risca):
+{(RAIZ / "estilos" / "direcao-criativa.md").read_text(encoding="utf-8")}
 
 Responda SÓ um JSON: {{"videos": [...{n_v} itens], "carrosseis": [...{n_c} itens]}}
 Exemplo de vídeo: {json.dumps(EXEMPLO_VIDEO, ensure_ascii=False)}
@@ -296,7 +399,7 @@ Revise CADA post com olhar crítico e devolva a versão MELHORADA no mesmo forma
 - DIVERSIDADE: compare a sequência de tipos de cena de cada vídeo com a dos outros do dia e com as dos últimos vídeos (estão nas regras);
   se estiver parecida (mesmo gancho, mesma ordem, mesmo "padrãozinho"), REMONTE a estrutura com outra combinação de cenas;
   troque buscas de foto genéricas por cenas específicas e diferentes das já usadas;
-- confira todas as regras: tipos de cena válidos e sem repetir em sequência, 7-10 cenas, 70-110 palavras de narração, pontuação colada;
+- confira todas as regras: tipos de cena válidos (catálogo do motor ESTILO) e sem repetir em sequência, 5-9 cenas, personalidade coerente com o assunto, 70-110 palavras de narração, pontuação colada;
 - A CHAMADA FINAL é a parte mais importante: confira se ela combina com o gancho e o assunto, se o funil está certo (oficina -> pode ser fundo; gestão -> meio; resto -> topo), se não tem frase sem sentido, e reescreva se estiver genérica;
 - remova QUALQUER estatística inventada e qualquer afirmação sobre o AutoFlow que não esteja na ficha;
 - nos posts de meio, confira se o material é útil, coerente com o vídeo e se a palavra-chave aparece na cta e na legenda;
@@ -320,7 +423,9 @@ def limpar_linhas(ls):
     return [re.sub(r"\s+([?!.,:;])", r"\1", str(l)).upper().replace("*", "*") for l in ls][:3]
 
 
-TIPOS = {"palavra", "frase", "contador", "foto", "pergunta", "digitando", "diagrama", "cards", "parede", "sera", "painel", "niveis", "serifa", "cta", "interruptor", "checklist", "calendario"}
+TIPOS = {"capa", "pessoa", "objeto", "moedas", "cartao", "numero", "lista", "contraste", "citacao", "frase", "fecho"}
+PERSONALIDADES = {"impacto", "dinamico", "elegante", "minimal", "emocional"}
+ICONES = {p.stem for p in (RAIZ / "carrossel" / "icones").glob("*.svg")}
 
 
 def validar_video(v):
@@ -328,40 +433,36 @@ def validar_video(v):
     for c in v.get("cenas", []):
         if c.get("tipo") not in TIPOS or not str(c.get("narracao", "")).strip():
             continue
-        for k in ("texto", "topo", "sub"):
+        for k in ("titulo", "linha", "antes", "depois"):
             if isinstance(c.get(k), str):
                 c[k] = re.sub(r"\s+([?!.,:;])", r"\1", c[k]).strip()
-        # *destaque* só é entendido em pergunta/cta/serifa; nas outras cenas vira "destaque" e o asterisco sai
-        if c["tipo"] not in ("pergunta", "cta", "serifa"):
-            for k in ("texto", "topo", "sub"):
-                if isinstance(c.get(k), str) and "*" in c[k]:
-                    m = re.search(r"\*([^*]+)\*", c[k])
-                    if m and not c.get("destaque"):
-                        c["destaque"] = m.group(1)
-                    c[k] = c[k].replace("*", "")
-        if c.get("pose") and c["pose"] not in POSES:
-            c["pose"] = "pensando"
-        if c["tipo"] == "diagrama" and not c.get("passos"):
+        for k in ("icones",):
+            if c.get(k):
+                c[k] = [i if i in ICONES else "sparkles" for i in c[k]]
+        if c.get("icone") and c["icone"] not in ICONES:
+            c["icone"] = "sparkles"
+        if c["tipo"] in ("lista",) and not c.get("itens"):
             c["tipo"] = "frase"
-        if c["tipo"] in ("niveis", "cards") and not c.get("itens"):
-            c["tipo"] = "frase"
-        if c["tipo"] == "digitando" and len(str(c.get("texto", ""))) > 22:
-            c["tipo"] = "frase"
-        if cenas and cenas[-1]["tipo"] == c["tipo"] and c["tipo"] != "cta":
-            c["tipo"] = "frase" if c["tipo"] != "frase" else "serifa"
+        if c["tipo"] == "contraste" and not (c.get("antes") and c.get("depois")):
+            c["tipo"] = "frase"; c.setdefault("titulo", c.get("depois", ""))
+        if c["tipo"] == "moedas" and not c.get("icones"):
+            c["icones"] = ["zap", "clock", "check-circle-2"]
+        if cenas and cenas[-1]["tipo"] == c["tipo"] and c["tipo"] != "fecho":
+            c["tipo"] = "citacao" if c["tipo"] != "citacao" else "frase"
         cenas.append(c)
-    if not cenas or cenas[-1]["tipo"] != "cta":
+    if not cenas or cenas[-1]["tipo"] != "fecho":
         raise ValueError("sem chamada final")
-    if len(cenas) < 6:
+    if len(cenas) < 5:
         raise ValueError("roteiro curto demais")
     v["cenas"] = cenas
+    if v.get("personalidade") not in PERSONALIDADES:
+        v["personalidade"] = "dinamico"
+    if v.get("estilo_legenda") not in ("karaoke", "palavra", "sutil", "nenhuma"):
+        v["estilo_legenda"] = "karaoke"
     if v.get("funil") not in ("topo", "meio", "fundo"):
         v["funil"] = "topo"
     if v["funil"] == "meio" and not (v.get("palavra_chave") and (v.get("material") or {}).get("itens")):
         raise ValueError("post de meio sem palavra-chave/material")
-    if v["funil"] == "fundo":
-        cenas[-1].setdefault("apoio", "link na bio")
-    cenas[-1]["funil"] = v["funil"]
     return v
 
 
@@ -426,7 +527,8 @@ def main():
             tema = "noir"  # temas pausados: Pabllo reprovou (2026-10-10)
             fmt = proximo_formato(hist, evitar=formatos_do_dia, semente=f"{dia}{hora}")
             formatos_do_dia.append(fmt)
-            spec = {"nome": nome, "arroba": ARROBA, "quando": f"{dia} {hora}", "cenas": v["cenas"], "motor": "cortes",
+            spec = {"nome": nome, "arroba": ARROBA, "quando": f"{dia} {hora}", "cenas": v["cenas"], "motor": "estilo",
+                    "personalidade": v["personalidade"], "estilo_legenda": v["estilo_legenda"], "tarja": bool(v.get("tarja")),
                     "formato": fmt, "titulo": v.get("titulo", nome), "numero": criados + 1,
                     "funil": v["funil"], "genero_voz": "masculina" if criados % 3 else "feminina",
                     "legenda": (v.get("legenda", "").strip() + "\n\n" + tags(v)),
@@ -441,59 +543,59 @@ def main():
             buscas = [c.get("busca") for c in v["cenas"] if c.get("busca")] + [b for c in v["cenas"] for b in (c.get("buscas") or [])] \
                      + [it.get("busca") for c in v["cenas"] for it in (c.get("itens") or []) if isinstance(it, dict) and it.get("busca")]
             hist.append({"nome": nome, "funil": v["funil"], "titulo": v.get("titulo", nome), "formato": v.get("formato", ""), "dia": str(dia), "tipo": "video", "tema": tema, "formato_edicao": fmt, "capa": v.get("capa", ""), "capa_cena": v.get("capa_cena", ""),
-                         "cenas": [c.get("tipo") for c in v["cenas"]], "buscas": buscas})
+                         "cenas": [c.get("tipo") for c in v["cenas"]], "buscas": buscas, "personalidade": v["personalidade"]})
             criados += 1
         for hora, c in zip(hc, plano.get("carrosseis", [])):
-            slides = [s for s in c.get("slides", []) if s.get("titulo") or s.get("tipo") == "perfil_cta"]
+            import estilo_ref
+            slides = [s for s in c.get("slides", []) if s.get("tipo") in estilo_ref.TIPOS and (s.get("titulo") or s.get("numero") or s.get("depois"))]
             if len(slides) < 4:
                 print("[aviso] carrossel descartado: poucos slides"); continue
+            fotos = {"pabllo": RAIZ / "assets/pessoas/pabllo_recorte.png", "sera_confiante": RAIZ / "carrossel/sera/confiante.png",
+                     "sera_pensando": RAIZ / "carrossel/sera/pensando.png"}
             for s in slides:
-                if s.get("sera") not in POSES:
-                    s.pop("sera", None)
-                s["titulo"] = re.sub(r"\s+([?!.,:;])", r"\1", s.get("titulo", ""))
-                tp = s.get("tipo")
-                falta = {"pilulas": not s.get("itens"), "whatsapp": not s.get("mensagens"), "passos": not s.get("itens"),
-                         "comparacao": not (s.get("esquerda") and s.get("direita")), "capa_noticia": not s.get("recortes"),
-                         "card": not (s.get("card") or s.get("texto"))}.get(tp)
-                if falta:
-                    s["tipo"] = "texto"
-            if slides[-1].get("tipo") not in ("perfil_cta", "capa"):
-                slides.append({"tipo": "perfil_cta", "titulo": "Gostou? *Salva* e segue", "texto": "Siga a " + ARROBA + " para mais."})
+                for k in ("titulo", "linha"):
+                    if isinstance(s.get(k), str):
+                        s[k] = re.sub(r"\s+([?!.,:;])", r"\1", s[k])
+                if s.get("pessoa") in fotos:
+                    s["foto"] = fotos[s["pessoa"]].as_uri()
+                if s["tipo"] == "capa":
+                    s.setdefault("foto", fotos["pabllo"].as_uri())
+                    ics = [i if i in ICONES else "sparkles" for i in (s.get("blocos_icones") or ["layers", "zap", "link"])][:3]
+                    s["blocos"] = list(zip(ics + ["zap"] * (3 - len(ics)), [40, 800, 820], [300, 220, 640], [-14, 12, -8], [230, 210, 170]))
+                for k in ("icone",):
+                    if s.get(k) and s[k] not in ICONES:
+                        s[k] = "sparkles"
+                if s.get("icones"):
+                    s["icones"] = [i if i in ICONES else "sparkles" for i in s["icones"]][:4]
+                if s["tipo"] == "abertura":
+                    s.setdefault("textos", []); s.setdefault("icones", ["zap", "clock", "users", "check-circle-2"])
+                if s["tipo"] == "topico":
+                    s.setdefault("textos", []); s.setdefault("rotulo", ""); s.setdefault("numero", "")
+                if s["tipo"] == "fecho":
+                    s.setdefault("textos", []); s.setdefault("cartoes", ["Salva", "Compartilha"])
+            if slides[-1]["tipo"] != "cta":
+                slides.append({"tipo": "cta", "titulo": "Gostou? *Salva* e segue", "texto": "Mais tecnologia com método."})
             nome = slug(c.get("nome") or c.get("titulo", "carrossel"))
             while nome in nomes:
                 nome += "-2"
             nomes.add(nome)
             destino = RAIZ / "fila" / f"{dia}_{hora.replace(':', '')}_{nome}"
-            tema = "noir"  # temas pausados: Pabllo reprovou (2026-10-10)
-            spec = {"nome": nome, "arroba": ARROBA, "slides": slides, "tema": tema}
-            tmp = RAIZ / "pedidos" / f"_car_{nome}.json"
-            tmp.write_text(json.dumps(spec, ensure_ascii=False), encoding="utf-8")
-            import carrossel
-            from PIL import Image
-            asyncio.run(carrossel.main(str(tmp), str(destino)))
-            tmp.unlink()
-            for png in sorted(destino.glob("slide-*.png")):
-                Image.open(png).convert("RGB").save(png.with_suffix(".jpg"), quality=92); png.unlink()
+            tema = "estilo"
+            tmpd = RAIZ / "testes" / "_car" / nome
+            asyncio.run(estilo_ref.render(slides, tmpd))
+            destino.mkdir(parents=True, exist_ok=True)
+            import shutil as _sh
+            for f in (tmpd / "instagram").glob("*.jpg"):
+                _sh.copy(f, destino / f.name)
+            _sh.copytree(tmpd / "tiktok", destino / "tiktok", dirs_exist_ok=True)
+            _sh.rmtree(tmpd, ignore_errors=True)
             (destino / "item.json").write_text(json.dumps({
-                "tipo": "carrossel", "legenda": c.get("legenda", "").strip() + "\n\n👉 Seraphim, link na bio.\n\n" + HT,
+                "tipo": "carrossel", "legenda": c.get("legenda", "").strip() + "\n\n" + tags(c),
+                "legenda_tiktok": (str(c.get("legenda_tiktok") or c.get("legenda", "")).strip() + "\n\n" + tags(c, 6)),
                 "quando": f"{dia}T{hora}:00-03:00"}, ensure_ascii=False, indent=2), encoding="utf-8")
-            # 1ª página = capa no sistema de capas (modelo diferente das últimas, com foto/IA quando der)
-            try:
-                import capa as _capa, ingredientes as _ing
-                recentes = [h["capa_modelo"] for h in hist if h.get("capa_modelo")]
-                tit_capa = c.get("capa") or c.get("titulo", nome)
-                img = None
-                if _capa.semente(tit_capa) % 5 < 3 and (c.get("capa_cena") or c.get("titulo")):
-                    img = _ing.ilustracao(c.get("capa_cena") or "", c.get("capa_cena") or "", destino / "_capa_img.jpg", "4:5")
-                modelo_capa = _capa.escolher(tit_capa, c.get("formato", "")[:24], recentes, tem_imagem=bool(img))
-                asyncio.run(_capa.gerar_varias([{"titulo": tit_capa, "rotulo": c.get("formato", "")[:24], "modelo": modelo_capa,
-                                                  "modo": "carrossel", "imagem": str(img or ""), "saida": destino / "slide-01.jpg"}]))
-                (destino / "_capa_img.jpg").unlink(missing_ok=True)
-            except Exception as e:
-                modelo_capa = ""
-                print(f"[aviso] capa do carrossel: {e}")
+            modelo_capa = slides[0]["tipo"]
             hist.append({"nome": nome, "titulo": c.get("titulo", nome), "formato": c.get("formato", ""), "dia": str(dia), "tipo": "carrossel", "tema": tema,
-                         "capa_modelo": modelo_capa, "capa_cena": c.get("capa_cena", "")})
+                         "capa_modelo": modelo_capa, "capa_cena": c.get("capa_cena", ""), "slides": [x["tipo"] for x in slides]})
             criados += 1
         HIST.write_text(json.dumps(hist, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{criados} post(s) planejado(s)")

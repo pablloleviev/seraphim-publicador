@@ -49,6 +49,9 @@ for pedido in sorted((RAIZ / "pedidos").glob("*.json")):
         (RAIZ / "revoz" / f"{nome}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"[revoz] {nome} saiu com voz reserva; será refeito com Gemini")
     pedido.unlink()
+    if spec.get("motor") == "estilo" and not (destino / "capa.jpg").exists():   # capa = quadro forte da 1ª cena
+        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-ss", "1.8", "-i", str(destino / "video.mp4"), "-frames:v", "1", "-q:v", "2",
+                        str(destino / "capa.jpg")])
     try:   # versão do TikTok com a capa no 1º quadro (se a capa já existir)
         import capa_no_video
         capa_no_video.fazer(destino)
