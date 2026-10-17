@@ -1,0 +1,14 @@
+{
+ "_nota": "Modelos de marca no Canva (autofill pela API). Campos de texto e 'foto' (asset_id do Canva).",
+ "modelos": {
+  "carta_aberta": {"id": "EAHYRzne2Zw", "campos": ["rotulo", "titulo", "subtitulo", "foto"], "uso": "manifesto, institucional"},
+  "pessoa_manchete": {"id": "EAHYSDSqq20", "campos": ["titulo", "destaque", "foto"], "uso": "pessoa em destaque, frase forte (estilo Blue Ocean)"},
+  "objeto_3d": {"id": "EAHYSHOOL3w", "campos": ["titulo", "destaque", "foto"], "uso": "pergunta ou tema com ícone 3D em fundo inteiro"}
+ },
+ "icones_3d": {
+  "interrogacao": "MAHYSLMWQmU",
+  "automacao_engrenagem_raio": "MAHYSKwHs-0",
+  "planilha_quebrando": "MAHYSAYfU1o"
+ },
+ "pessoas": {"pabllo_recorte": "MAHYRz84wIo", "sera_confiante": "MAHYR94rinw"}
+}
