@@ -1030,5 +1030,40 @@
   "formato_edicao": "noticia",
   "capa_modelo": "manifesto",
   "relancamento": "V14"
+ },
+ {
+  "nome": "v1-prazer-seraphim",
+  "titulo": "v1 prazer seraphim",
+  "formato": ""
+ },
+ {
+  "nome": "nosso-manifesto",
+  "titulo": "nosso manifesto",
+  "formato": ""
+ },
+ {
+  "nome": "o-que-e-a-seraphim",
+  "titulo": "o que e a seraphim",
+  "formato": ""
+ },
+ {
+  "nome": "passagem-de-bastao-venda-entrega",
+  "titulo": "O cliente fechou: e agora? 4 falhas na passagem de bastão",
+  "formato": "checklist",
+  "dia": "2026-10-18",
+  "tipo": "carrossel",
+  "tema": "noir",
+  "capa_modelo": "lista",
+  "capa_cena": "business person handing a clean paper folder to colleague across office table, morning sunlight"
+ },
+ {
+  "nome": "teste-dobro-de-clientes",
+  "titulo": "Sua empresa aguenta o dobro de clientes amanhã?",
+  "formato": "lista prática",
+  "dia": "2026-10-18",
+  "tipo": "carrossel",
+  "tema": "noir",
+  "capa_modelo": "blueprint",
+  "capa_cena": "small retail store counter crowded with packages and orders, warm side light"
  }
 ]
