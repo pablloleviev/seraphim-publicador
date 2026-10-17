@@ -66,12 +66,12 @@ def _s(t: str) -> str:
     return json.dumps(t, ensure_ascii=False)   # string GraphQL (mesma sintaxe de string JSON)
 
 
-def publicar_tiktok(video: Path, legenda: str, capa: Path = None) -> str:
+def publicar_tiktok(video: Path, legenda: str, capa: Path = None, rascunho=False) -> str:
     canal = canal_tiktok()
     url = url_publica(video)
     titulo = legenda.split("\n")[0][:90]
     base = (f'text: {_s(legenda[:2200])}, channelId: {_s(canal)}, schedulingType: automatic, mode: shareNow, '
-            f'assets: [{{ video: {{ url: {_s(url)}' + (f', thumbnailUrl: {_s(url_publica(capa))}, metadata: {{ thumbnailOffset: 0 }}' if capa and capa.exists() else '') + ' } }]')
+            f'assets: [{{ video: {{ url: {_s(url)}, metadata: {{ thumbnailOffset: 0 }} }} }}]' + (', saveToDraft: true' if rascunho else ''))   # capa = 1º quadro (video_tiktok.mp4); a rede não aceita imagem de capa avulsa
     sel = "{ ... on PostActionSuccess { post { id } } ... on MutationError { message } }"
     tentativas = [f"{base}, metadata: {{ tiktok: {{ title: {_s(titulo)} }} }}", base]
     erro = None
@@ -122,6 +122,10 @@ def esquema():
 if __name__ == "__main__":
     if sys.argv[1] == "esquema":
         esquema(); sys.exit(0)
+    if sys.argv[1] == "rascunho_video":   # teste sem publicar: RASCUNHO de vídeo no Buffer
+        pasta = RAIZ / sys.argv[2]
+        v = pasta / "video_tiktok.mp4" if (pasta / "video_tiktok.mp4").exists() else pasta / "video.mp4"
+        print("rascunho de vídeo:", publicar_tiktok(v, "teste (rascunho, não publicar)", rascunho=True)); sys.exit(0)
     if sys.argv[1] == "rascunho_fotos":   # teste sem publicar: cria RASCUNHO no Buffer
         fotos = sorted((RAIZ / sys.argv[2]).glob("slide-*.jpg"))
         print("rascunho de fotos:", publicar_tiktok_fotos(fotos, "teste (rascunho, não publicar)", rascunho=True)); sys.exit(0)
