@@ -1,0 +1,9 @@
+{
+ "ouro":      {"a": "#F5A623", "a2": "#FFD27A", "ae": "#B86E00", "nota": "institucional: dourado sobre preto"},
+ "gelo":      {"a": "#6FD0FF", "a2": "#D4F2FF", "ae": "#0A7FB8", "nota": "frio, técnico, limpo"},
+ "esmeralda": {"a": "#34D399", "a2": "#BDF7DE", "ae": "#0E8A5F", "nota": "dados, planilha, crescimento"},
+ "rubi":      {"a": "#FF4D6D", "a2": "#FFC7D1", "ae": "#C21E3C", "nota": "alerta, dor, urgência"},
+ "violeta":   {"a": "#A78BFA", "a2": "#E6DEFF", "ae": "#6D4CE0", "nota": "ideia, futuro, IA"},
+ "cobre":     {"a": "#FF8A4C", "a2": "#FFD9C2", "ae": "#C2531A", "nota": "humano, caloroso, artesanal"},
+ "prata":     {"a": "#E6E6EA", "a2": "#FFFFFF", "ae": "#55555E", "nota": "minimalista, quase monocromático"}
+}

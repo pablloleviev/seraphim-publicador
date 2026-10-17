@@ -6,8 +6,9 @@
  "genero_voz": "masculina",
  "cenas": [
   {
-   "tipo": "citacao",
-   "titulo": "Nem toda empresa precisa de *sob medida.*",
+   "tipo": "contraste",
+   "antes": "Todo mundo precisa de sob medida",
+   "depois": "Nem toda empresa *precisa.*",
    "narracao": "Nem toda empresa precisa de um sistema sob medida. E a gente fala isso de propósito."
   },
   {
@@ -28,9 +29,8 @@
    "narracao": "Sob medida faz sentido quando o seu jeito de trabalhar é o seu diferencial, quando você já usa três ferramentas que não conversam, ou quando o pronto te obriga a mudar o que funciona."
   },
   {
-   "tipo": "contraste",
-   "antes": "Qual é o melhor?",
-   "depois": "Qual *serve pra você?*",
+   "tipo": "citacao",
+   "titulo": "A pergunta certa: qual *serve pra você?*",
    "narracao": "A pergunta certa não é qual é melhor. É qual serve pra você."
   },
   {
@@ -43,5 +43,6 @@
    "narracao": "Em qual dos dois lados a sua empresa está hoje? Responde aqui."
   }
  ],
- "estilo_legenda": "sutil"
+ "estilo_legenda": "sutil",
+ "paleta": "prata"
 }

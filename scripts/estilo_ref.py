@@ -16,7 +16,8 @@ RAIZ = Path(__file__).resolve().parent.parent
 F = (RAIZ / "carrossel" / "fontes").as_uri()
 ICO = RAIZ / "carrossel" / "icones"
 LOGO = (RAIZ / "carrossel" / "marca" / "icone.png").as_uri()
-OURO, OURO2 = "#F5A623", "#FFD27A"
+OURO, OURO2 = "var(--a)", "var(--a2)"
+PALETAS = json.loads((Path(__file__).resolve().parent.parent / "estilos" / "paletas.json").read_text(encoding="utf-8"))
 sys.path.insert(0, str(Path(__file__).parent))
 try:
     from marca import ARROBA
@@ -30,7 +31,7 @@ CSS = f"""
 @font-face{{font-family:Man8;src:url({F}/manrope-800.woff2)}}
 *{{margin:0;padding:0;box-sizing:border-box}}
 body{{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:Man5}}
-.escuro{{background:radial-gradient(120% 70% at 85% 100%,#3a2606 0%,rgba(58,38,6,0) 55%),
+.escuro{{background:radial-gradient(120% 70% at 85% 100%,color-mix(in srgb, var(--a) 24%, black) 0%,transparent 55%),
         radial-gradient(90% 60% at 0% 0%,#1c1c22 0%,#08080a 70%);color:#F5F5F7}}
 .claro{{background:radial-gradient(80% 60% at 50% 40%,#fbfaf7,#ecebe6);color:#111}}
 .claro::after{{content:"";position:absolute;inset:0;opacity:.35;mix-blend-mode:multiply;
@@ -43,13 +44,13 @@ body{{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:M
 .pontos i{{width:11px;height:11px;border-radius:50%;background:currentColor;opacity:.25}}
 .pontos i.on{{opacity:.9}}
 h1{{font:700 76px/1.08 Sora;letter-spacing:-1.5px}}
-.d{{color:{OURO}}} .claro h1 .d{{color:#C77F00}}
+.d{{color:{OURO}}} .claro h1 .d{{color:var(--ae)}}
 .corpo p{{font:500 36px/1.38 Man5;margin-top:30px}}
 .corpo b{{font-family:Man8;font-weight:800}}
 .vidro{{position:relative;border-radius:34px;padding:34px 40px;overflow:hidden;
-  background:linear-gradient(135deg,#2b2b31 0%,#141418 55%,#24180a 100%);
+  background:linear-gradient(135deg,#2b2b31 0%,#141418 55%,color-mix(in srgb, var(--a) 14%, #141418) 100%);
   box-shadow:0 40px 80px rgba(0,0,0,.55),inset 0 2px 0 rgba(255,255,255,.18),inset 0 -2px 0 rgba(0,0,0,.6);
-  border:1.5px solid rgba(255,210,122,.35);transform:perspective(1200px) rotateX(10deg) rotateY(-8deg)}}
+  border:1.5px solid color-mix(in srgb, var(--a2) 35%, transparent);transform:perspective(1200px) rotateX(10deg) rotateY(-8deg)}}
 .vidro::before{{content:"";position:absolute;inset:-40% -10% auto -10%;height:70%;
   background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,0));transform:rotate(-8deg)}}
 .claro .vidro{{box-shadow:0 40px 70px rgba(80,60,20,.35),inset 0 2px 0 rgba(255,255,255,.25)}}
@@ -57,26 +58,26 @@ h1{{font:700 76px/1.08 Sora;letter-spacing:-1.5px}}
   background:linear-gradient(180deg,#fff 30%,{OURO2});-webkit-background-clip:text;color:transparent}}
 .rot{{font:800 22px Man8;color:{OURO2};letter-spacing:3px;position:relative}}
 .moeda{{width:230px;height:230px;border-radius:50%;display:flex;align-items:center;justify-content:center;
-  background:radial-gradient(circle at 32% 28%,#fff3cf 0%,{OURO2} 18%,{OURO} 45%,#8a5300 80%,#4a2c00 100%);
+  background:radial-gradient(circle at 32% 28%,color-mix(in srgb, var(--a2) 45%, white) 0%,{OURO2} 18%,{OURO} 45%,color-mix(in srgb, var(--a) 55%, black) 80%,color-mix(in srgb, var(--a) 30%, black) 100%);
   box-shadow:0 30px 60px rgba(0,0,0,.6),inset -10px -14px 30px rgba(0,0,0,.45),inset 10px 12px 26px rgba(255,255,255,.5);
   position:absolute}}
 .moeda svg{{filter:drop-shadow(0 4px 2px rgba(255,255,255,.4)) drop-shadow(0 -3px 2px rgba(0,0,0,.45))}}
 .fumaca{{position:absolute;border-radius:50%;filter:blur(60px);background:{OURO};opacity:.18}}
-.cartao{{flex:1;border:2.5px solid {OURO};border-radius:22px;padding:30px;background:rgba(245,166,35,.06);
-  box-shadow:0 0 50px rgba(245,166,35,.18),inset 0 0 30px rgba(245,166,35,.08)}}
+.cartao{{flex:1;border:2.5px solid {OURO};border-radius:22px;padding:30px;background:color-mix(in srgb, var(--a) 6%, transparent);
+  box-shadow:0 0 50px color-mix(in srgb, var(--a) 18%, transparent),inset 0 0 30px color-mix(in srgb, var(--a) 8%, transparent)}}
 .cartao .bolinha{{width:30px;height:30px;border-radius:50%;border:3px solid {OURO};display:flex;align-items:center;justify-content:center;margin-bottom:22px}}
 .cartao .bolinha:after{{content:"";width:14px;height:14px;border-radius:50%;background:{OURO}}}
 .cartao div{{font:500 30px/1.35 Man5}} .cartao b{{font-family:Man8}}
 """
 
 
-def icone(nome, cor="#3a2300", tam=120, traco=1.8):
+def icone(nome, cor="#161310", tam=120, traco=1.8):
     f = ICO / f"{nome}.svg"
     if not f.exists():
         return ""
     s = f.read_text()
     return (s.replace('width="24"', f'width="{tam}"').replace('height="24"', f'height="{tam}"')
-             .replace('stroke="currentColor"', f'stroke="{cor}"').replace('stroke-width="2"', f'stroke-width="{traco}"'))
+             .replace('stroke="currentColor"', f'stroke="currentColor" style="color:{cor}"').replace('stroke-width="2"', f'stroke-width="{traco}"'))
 
 
 def tit(t):
@@ -123,7 +124,7 @@ def s_abertura(d, n, T):
     moedas = ""
     for i, ic in enumerate(d.get("icones", ["brain", "shield-check", "trending-up", "database"])):
         x, y = [(150, 900), (420, 960), (690, 900), (300, 1120)][i % 4]
-        moedas += f'<div class="moeda" style="left:{x}px;top:{y}px;transform:perspective(700px) rotateX(18deg) rotate({[-10, 6, 12, -4][i % 4]}deg)">{icone(ic, "#3a2300", 110, 1.8)}</div>'
+        moedas += f'<div class="moeda" style="left:{x}px;top:{y}px;transform:perspective(700px) rotateX(18deg) rotate({[-10, 6, 12, -4][i % 4]}deg)">{icone(ic, "#161310", 110, 1.8)}</div>'
     corpo = (f'<div class="fumaca" style="left:250px;top:850px;width:600px;height:500px"></div>'
              f'<div style="position:absolute;left:72px;right:72px;top:210px"><h1>{tit(d["titulo"])}</h1><div class="corpo">{ps}</div></div>{moedas}')
     return d.get("fundo", "escuro"), moldura(corpo, n, T, "")
@@ -150,7 +151,7 @@ def s_fecho(d, n, T):
 
 def moeda(ic, tam=230, x=0, y=0, r=0):
     return (f'<div class="moeda" style="left:{x}px;top:{y}px;width:{tam}px;height:{tam}px;transform:perspective(700px) rotateX(16deg) rotate({r}deg)">'
-            f'{icone(ic, "#3a2300", int(tam * .48), 1.8)}</div>')
+            f'{icone(ic, "#161310", int(tam * .48), 1.8)}</div>')
 
 
 def s_capa_objeto(d, n, T):
@@ -162,8 +163,8 @@ def s_capa_objeto(d, n, T):
     else:
         obj = moeda(ic, 500, 290, 180, -8)
     corpo = (f'<div class="fumaca" style="left:140px;top:200px;width:800px;height:700px;opacity:.32"></div>'
-             f'<div style="position:absolute;left:190px;top:600px;width:700px;height:200px;border-radius:50%;border:3px solid rgba(245,166,35,.45);'
-             f'box-shadow:0 0 90px rgba(245,166,35,.45);transform:rotateX(60deg)"></div>{obj}'
+             f'<div style="position:absolute;left:190px;top:600px;width:700px;height:200px;border-radius:50%;border:3px solid color-mix(in srgb, var(--a) 45%, transparent);'
+             f'box-shadow:0 0 90px color-mix(in srgb, var(--a) 45%, transparent);transform:rotateX(60deg)"></div>{obj}'
              f'<div style="position:absolute;left:60px;right:60px;bottom:150px;text-align:center">'
              f'<div style="font:800 34px Man8;letter-spacing:4px;margin-bottom:16px;color:{OURO2}">{d.get("linha", "")}</div>'
              f'<div style="font:400 120px/0.98 Anton;text-transform:uppercase">{tit(d["titulo"])}</div></div>')
@@ -174,7 +175,7 @@ def s_capa_numero(d, n, T):
     corpo = (f'<div class="fumaca" style="left:200px;top:300px;width:700px;height:600px;opacity:.3"></div>'
              f'<div style="position:absolute;left:0;right:0;top:170px;text-align:center;font:400 620px/1 Anton;'
              f'background:linear-gradient(180deg,#fff 15%,{OURO2} 55%,{OURO});-webkit-background-clip:text;color:transparent;'
-             f'filter:drop-shadow(0 0 70px rgba(245,166,35,.4))">{d["numero"]}</div>'
+             f'filter:drop-shadow(0 0 70px color-mix(in srgb, var(--a) 40%, transparent))">{d["numero"]}</div>'
              f'<div style="position:absolute;left:60px;right:60px;bottom:160px;text-align:center">'
              f'<div style="font:400 104px/1 Anton;text-transform:uppercase">{tit(d["titulo"])}</div></div>')
     return "escuro", moldura(corpo, n, T, "")
@@ -235,12 +236,23 @@ def s_cta(d, n, T):
              f'<div style="position:absolute;left:72px;right:{380 if foto else 72}px;top:260px;z-index:3"><h1 style="font-size:84px">{tit(d["titulo"])}</h1>'
              f'<div class="corpo"><p>{neg(d.get("texto", ""))}</p></div>'
              f'<div style="display:inline-block;margin-top:60px;padding:24px 38px;border-radius:999px;background:{OURO};color:#111;font:800 34px Man8;'
-             f'box-shadow:0 0 50px rgba(245,166,35,.5)">{d.get("botao", "SIGA " + ARROBA.upper())}</div></div>')
+             f'box-shadow:0 0 50px color-mix(in srgb, var(--a) 50%, transparent)">{d.get("botao", "SIGA " + ARROBA.upper())}</div></div>')
     return "escuro", moldura(corpo, n, T, "")
 
 
+def s_capa_tipografica(d, n, T):
+    """capa clara e editorial: só tipografia, muito respiro, um detalhe de cor"""
+    corpo = (f'<div style="position:absolute;left:72px;right:72px;top:250px">'
+             f'<div style="font:800 28px Man8;letter-spacing:6px;color:var(--ae)">{d.get("linha", "")}</div>'
+             f'<div style="width:90px;height:6px;background:var(--a);margin:34px 0 60px"></div>'
+             f'<div style="font:700 138px/1.0 Sora;letter-spacing:-5px;color:#111">{tit(d["titulo"])}</div>'
+             f'<div style="font:500 38px/1.4 Man5;color:#555;margin-top:60px;max-width:760px">{neg(d.get("texto", ""))}</div></div>'
+             f'<div class="fumaca" style="left:600px;top:900px;width:600px;height:500px;opacity:.25"></div>')
+    return "claro", moldura(corpo, n, T, "")
+
+
 TIPOS = {"capa": s_capa, "abertura": s_abertura, "topico": s_topico, "fecho": s_fecho, "capa_objeto": s_capa_objeto,
-         "capa_numero": s_capa_numero, "verbete": s_verbete, "lista": s_lista, "contraste": s_contraste, "citacao": s_citacao, "cta": s_cta}
+         "capa_numero": s_capa_numero, "verbete": s_verbete, "lista": s_lista, "contraste": s_contraste, "citacao": s_citacao, "cta": s_cta, "capa_tipografica": s_capa_tipografica}
 
 
 EXEMPLO = [
@@ -269,13 +281,15 @@ EXEMPLO = [
 ]
 
 
-def html(fundo, corpo, alto):
-    extra = "" if alto == 1350 else f"body{{height:{alto}px}} .wrap{{position:absolute;left:0;top:285px;width:1080px;height:1350px}}"
+def html(fundo, corpo, alto, paleta="ouro"):
+    pal = PALETAS.get(paleta, PALETAS["ouro"]) if isinstance(paleta, str) else paleta
+    raiz = ":root{--a:%s;--a2:%s;--ae:%s}" % (pal["a"], pal["a2"], pal["ae"])
+    extra = raiz + ("" if alto == 1350 else f"body{{height:{alto}px}} .wrap{{position:absolute;left:0;top:285px;width:1080px;height:1350px}}")
     inner = corpo if alto == 1350 else f'<div class="wrap">{corpo}</div>'
     return f'<html><head><meta charset="utf-8"><style>{CSS}{extra}</style></head><body class="{fundo}">{inner}</body></html>'
 
 
-async def render(slides, out: Path):
+async def render(slides, out: Path, paleta="ouro"):
     from playwright.async_api import async_playwright
     from PIL import Image
     T = len(slides)
@@ -286,7 +300,7 @@ async def render(slides, out: Path):
             for k, d in enumerate(slides):
                 fundo, corpo = TIPOS[d["tipo"]](d, k + 1, T)
                 pg = await nav.new_page(viewport={"width": 1080, "height": alto})
-                tmp = out / "_tmp.html"; tmp.write_text(html(fundo, corpo, alto), encoding="utf-8")
+                tmp = out / "_tmp.html"; tmp.write_text(html(fundo, corpo, alto, paleta), encoding="utf-8")
                 await pg.goto(tmp.as_uri()); await pg.evaluate("document.fonts.ready"); await pg.wait_for_timeout(250)
                 Image.open(io.BytesIO(await pg.screenshot())).convert("RGB").save(out / rede / f"slide-{k + 1:02d}.jpg", quality=93)
                 await pg.close(); tmp.unlink()

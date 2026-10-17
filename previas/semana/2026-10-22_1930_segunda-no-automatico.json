@@ -6,9 +6,8 @@
  "genero_voz": "masculina",
  "cenas": [
   {
-   "tipo": "objeto",
-   "icone": "alarm-clock",
-   "titulo": "Segunda, *8h*",
+   "tipo": "citacao",
+   "titulo": "Segunda, 8h. Quanta coisa poderia acontecer *sozinha?*",
    "narracao": "Segunda-feira, oito da manhã. Olha quanta coisa poderia acontecer sozinha."
   },
   {
@@ -56,5 +55,6 @@
    "narracao": "Qual delas você tiraria das mãos do seu time primeiro? Comenta."
   }
  ],
- "estilo_legenda": "palavra"
+ "estilo_legenda": "palavra",
+ "paleta": "ouro"
 }

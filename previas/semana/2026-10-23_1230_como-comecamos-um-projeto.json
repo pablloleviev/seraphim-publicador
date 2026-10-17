@@ -6,15 +6,14 @@
  "genero_voz": "masculina",
  "cenas": [
   {
-   "tipo": "objeto",
-   "icone": "pen-tool",
+   "tipo": "pessoa",
+   "linha": "CANETA",
    "titulo": "Dia 1: *caneta*, não código",
    "narracao": "O primeiro dia de um projeto nosso não tem código. Tem caneta."
   },
   {
-   "tipo": "pessoa",
-   "linha": "OUVIR",
-   "titulo": "Com quem *faz* o trabalho",
+   "tipo": "citacao",
+   "titulo": "Com quem *faz* o trabalho. Não só com quem manda.",
    "narracao": "A gente senta com quem faz o trabalho, não só com quem manda nele."
   },
   {
@@ -49,5 +48,6 @@
   }
  ],
  "tarja": true,
- "estilo_legenda": "karaoke"
+ "estilo_legenda": "karaoke",
+ "paleta": "cobre"
 }

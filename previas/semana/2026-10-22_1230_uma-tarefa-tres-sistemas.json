@@ -6,10 +6,9 @@
  "genero_voz": "masculina",
  "cenas": [
   {
-   "tipo": "objeto",
-   "icone": "package",
+   "tipo": "frase",
+   "fundo": "claro",
    "titulo": "Um pedido *chega.*",
-   "transicao": "zoom",
    "narracao": "Um pedido chega. Quantas vezes alguém digita a mesma informação?"
   },
   {
@@ -59,5 +58,6 @@
    "narracao": "Salva e manda pra quem digita a mesma coisa três vezes."
   }
  ],
- "estilo_legenda": "karaoke"
+ "estilo_legenda": "karaoke",
+ "paleta": "violeta"
 }

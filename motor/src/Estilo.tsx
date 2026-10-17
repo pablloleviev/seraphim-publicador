@@ -4,14 +4,15 @@ import React from 'react';
 import {AbsoluteFill, Audio, Img, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig,
   continueRender, delayRender, Easing} from 'remotion';
 
-const OURO = '#F5A623', OURO2 = '#FFD27A', BRANCO = '#F5F5F7';
+const OURO = 'var(--a)', OURO2 = 'var(--a2)', BRANCO = '#F5F5F7';
+export type Paleta = {a: string; a2: string; ae: string};
 export type Palavra = {w: string; s: number; e: number};
 export type CenaE = {inicio: number; fim: number; tipo: string; linha?: string; titulo?: string; rotulo?: string;
   numero?: string; icones?: string[]; cartoes?: string[]; fundo?: string; foto?: string;
   transicao?: string; camera?: string; itens?: string[]; antes?: string; depois?: string; icone?: string};
 export type PropsE = {fps: number; duracao: number; arroba: string; audio: string | null; batida: string | null;
   palavras: Palavra[]; cenas: CenaE[]; trilha_mix?: boolean; sfx?: boolean;
-  personalidade?: string; legenda?: string; tarja?: boolean; semente?: number};
+  personalidade?: string; legenda?: string; tarja?: boolean; semente?: number; paleta?: Paleta};
 
 const FONTES: [string, string][] = [['Anton', 'anton.ttf'], ['Sora', 'sora-700.woff2'], ['Man5', 'manrope-500.woff2'], ['Man8', 'manrope-800.woff2']];
 const useFontes = () => {
@@ -41,7 +42,7 @@ const useIcone = (nome: string) => {
 };
 const Icone: React.FC<{nome: string; cor: string; tam: number}> = ({nome, cor, tam}) => {
   const s = useIcone(nome).replace(/width="24"/, `width="${tam}"`).replace(/height="24"/, `height="${tam}"`)
-    .replace(/stroke="currentColor"/, `stroke="${cor}"`).replace(/stroke-width="2"/, 'stroke-width="1.7"');
+    .replace(/stroke="currentColor"/, `stroke="currentColor" style="color:${cor}"`).replace(/stroke-width="2"/, 'stroke-width="1.7"');
   return <div style={{width: tam, height: tam, filter: 'drop-shadow(0 4px 2px rgba(255,255,255,.35)) drop-shadow(0 -3px 2px rgba(0,0,0,.4))'}} dangerouslySetInnerHTML={{__html: s}} />;
 };
 
@@ -116,8 +117,8 @@ const Transicao: React.FC<{dur: number; tipo: string; damp: number; children: Re
 
 const Vidro: React.FC<{style?: React.CSSProperties; children?: React.ReactNode; claro?: boolean}> = ({style, children, claro}) => (
   <div style={{position: 'relative', borderRadius: 40, overflow: 'hidden',
-    background: 'linear-gradient(135deg,#2b2b31 0%,#141418 55%,#24180a 100%)', border: '2px solid rgba(255,210,122,.38)',
-    boxShadow: claro ? '0 50px 90px rgba(80,60,20,.35), inset 0 2px 0 rgba(255,255,255,.25)' : '0 50px 100px rgba(0,0,0,.6), 0 0 80px rgba(245,166,35,.15), inset 0 2px 0 rgba(255,255,255,.18)',
+    background: 'linear-gradient(135deg,#2b2b31 0%,#141418 55%,color-mix(in srgb, var(--a) 14%, #141418) 100%)', border: '2px solid color-mix(in srgb, var(--a2) 38%, transparent)',
+    boxShadow: claro ? '0 50px 90px rgba(80,60,20,.35), inset 0 2px 0 rgba(255,255,255,.25)' : '0 50px 100px rgba(0,0,0,.6), 0 0 80px color-mix(in srgb, var(--a) 15%, transparent), inset 0 2px 0 rgba(255,255,255,.18)',
     ...style}}>
     <div style={{position: 'absolute', left: '-10%', right: '-10%', top: '-45%', height: '75%', transform: 'rotate(-8deg)',
       background: 'linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,0))'}} />
@@ -158,7 +159,7 @@ const Frase: React.FC<{c: CenaE; claro: boolean}> = ({c, claro}) => {
           const op = interpolate(f, [i * 3, i * 3 + 8], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
           const d = w.startsWith('*') || w.endsWith('*') || w.endsWith('*.') || w.endsWith('*,');
           return <span key={i} style={{opacity: op, display: 'inline-block', marginRight: 26, filter: `blur(${(1 - op) * 10}px)`,
-            transform: `translateY(${(1 - op) * 30}px)`, color: d ? (claro ? '#C77F00' : OURO) : undefined}}>{w.replace(/\*/g, '')}</span>;
+            transform: `translateY(${(1 - op) * 30}px)`, color: d ? (claro ? 'var(--ae)' : OURO) : undefined}}>{w.replace(/\*/g, '')}</span>;
         })}
       </div>
     </AbsoluteFill>
@@ -176,9 +177,9 @@ const Moedas: React.FC<{c: CenaE}> = ({c}) => {
         const [x, y] = pos[i]; const fl = Math.sin((f + i * 15) / 16) * 10;
         return <div key={i} style={{position: 'absolute', left: x, top: y - (1 - e) * 900 + fl, width: 250, height: 250, borderRadius: '50%',
           display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `perspective(700px) rotateX(18deg) rotate(${[-10, 6, 12, -4, 8][i]}deg) rotateY(${(1 - e) * 180}deg)`,
-          background: `radial-gradient(circle at 32% 28%,#fff3cf 0%,${OURO2} 18%,${OURO} 45%,#8a5300 80%,#4a2c00 100%)`,
-          boxShadow: '0 40px 70px rgba(0,0,0,.6), 0 0 60px rgba(245,166,35,.3), inset -10px -14px 30px rgba(0,0,0,.45), inset 10px 12px 26px rgba(255,255,255,.5)'}}>
-          <Icone nome={ic} cor="#3a2300" tam={120} /></div>;
+          background: `radial-gradient(circle at 32% 28%,color-mix(in srgb, var(--a2) 45%, white) 0%,${OURO2} 18%,${OURO} 45%,color-mix(in srgb, var(--a) 55%, black) 80%,color-mix(in srgb, var(--a) 30%, black) 100%)`,
+          boxShadow: '0 40px 70px rgba(0,0,0,.6), 0 0 60px color-mix(in srgb, var(--a) 30%, transparent), inset -10px -14px 30px rgba(0,0,0,.45), inset 10px 12px 26px rgba(255,255,255,.5)'}}>
+          <Icone nome={ic} cor="#161310" tam={120} /></div>;
       })}
     </AbsoluteFill>
   );
@@ -192,7 +193,7 @@ const Cartao: React.FC<{c: CenaE; claro: boolean}> = ({c, claro}) => {
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', left: 80, right: 80, top: 360, fontFamily: 'Sora', fontSize: 104, lineHeight: 1.08, letterSpacing: -2, color: claro ? '#111' : BRANCO}}>
-        <Tit t={c.titulo || ''} cor={claro ? '#C77F00' : OURO} /></div>
+        <Tit t={c.titulo || ''} cor={claro ? 'var(--ae)' : OURO} /></div>
       <div style={{position: 'absolute', left: 110, top: 800, transform: `perspective(1300px) rotateX(${12 - 2 * e}deg) rotateY(${-10 + (1 - e) * 40}deg) scale(${0.8 + 0.2 * e})`, opacity: e}}>
         <Vidro claro={claro} style={{width: 860, height: 360, padding: '44px 52px'}}>
           <div style={{position: 'relative', fontFamily: 'Man8', fontSize: 30, letterSpacing: 4, color: OURO2}}>{c.rotulo}</div>
@@ -216,8 +217,8 @@ const Fecho: React.FC<{c: CenaE; arroba: string}> = ({c, arroba}) => {
       <div style={{position: 'absolute', left: 80, right: 80, top: 1000, display: 'flex', gap: 34}}>
         {(c.cartoes || []).map((t, i) => {
           const e = spring({frame: f - 10 - i * 8, fps, config: {damping: 14}});
-          return <div key={i} style={{flex: 1, border: `3px solid ${OURO}`, borderRadius: 26, padding: 36, background: 'rgba(245,166,35,.06)', opacity: e,
-            transform: `translateY(${(1 - e) * 60}px)`, boxShadow: `0 0 ${40 + Math.sin(f / 8) * 15}px rgba(245,166,35,.25)`,
+          return <div key={i} style={{flex: 1, border: `3px solid ${OURO}`, borderRadius: 26, padding: 36, background: 'color-mix(in srgb, var(--a) 6%, transparent)', opacity: e,
+            transform: `translateY(${(1 - e) * 60}px)`, boxShadow: `0 0 ${40 + Math.sin(f / 8) * 15}px color-mix(in srgb, var(--a) 25%, transparent)`,
             fontFamily: 'Man5', fontSize: 40, lineHeight: 1.3, color: BRANCO}}>
             <div style={{width: 34, height: 34, borderRadius: '50%', border: `3px solid ${OURO}`, marginBottom: 24, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
               <div style={{width: 16, height: 16, borderRadius: '50%', background: OURO}} /></div>{t}</div>;
@@ -241,7 +242,7 @@ const Numero: React.FC<{c: CenaE}> = ({c}) => {
     <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
       <div style={{fontFamily: 'Man8', fontSize: 40, letterSpacing: 6, color: OURO2, marginBottom: 10}}>{c.rotulo}</div>
       <div style={{fontFamily: 'Anton', fontSize: 400, lineHeight: 0.9, background: `linear-gradient(180deg,#fff 20%,${OURO2} 60%,${OURO})`,
-        WebkitBackgroundClip: 'text', color: 'transparent', filter: `drop-shadow(0 0 60px rgba(245,166,35,${0.2 + 0.3 * p}))`}}>{pre}{v}{suf}</div>
+        WebkitBackgroundClip: 'text', color: 'transparent', filter: `drop-shadow(0 0 60px color-mix(in srgb, var(--a) ${Math.round((0.2 + 0.3 * p) * 100)}%, transparent))`}}>{pre}{v}{suf}</div>
       <div style={{fontFamily: 'Sora', fontSize: 76, color: BRANCO, textAlign: 'center', padding: '0 90px', marginTop: 30}}><Tit t={c.titulo || ''} /></div>
     </AbsoluteFill>
   );
@@ -291,8 +292,8 @@ const Objeto: React.FC<{c: CenaE}> = ({c}) => {
   const e = spring({frame: f, fps, config: {damping: 13}});
   return (
     <AbsoluteFill style={{alignItems: 'center'}}>
-      <div style={{position: 'absolute', top: 420, width: 700, height: 700, borderRadius: '50%', border: `3px solid rgba(245,166,35,.4)`,
-        boxShadow: `0 0 120px rgba(245,166,35,.35), inset 0 0 80px rgba(245,166,35,.2)`, transform: `rotateX(70deg) scale(${e})`}} />
+      <div style={{position: 'absolute', top: 420, width: 700, height: 700, borderRadius: '50%', border: `3px solid color-mix(in srgb, var(--a) 40%, transparent)`,
+        boxShadow: `0 0 120px color-mix(in srgb, var(--a) 35%, transparent), inset 0 0 80px color-mix(in srgb, var(--a) 20%, transparent)`, transform: `rotateX(70deg) scale(${e})`}} />
       <div style={{position: 'absolute', top: 470, transform: `perspective(900px) rotateY(${Math.sin(f / 30) * 25}deg) rotateX(${8 + Math.cos(f / 40) * 6}deg) scale(${e}) translateY(${Math.sin(f / 20) * 14}px)`}}>
         <Vidro style={{width: 520, height: 520, borderRadius: 110, display: 'flex', alignItems: 'center', justifyContent: 'center'}}><Icone nome={c.icone || 'zap'} cor={OURO2} tam={280} /></Vidro></div>
       <div style={{position: 'absolute', left: 80, right: 80, top: 1180, textAlign: 'center', fontFamily: 'Anton', fontSize: 130, lineHeight: 1, textTransform: 'uppercase', color: BRANCO}}><Tit t={c.titulo || ''} /></div>
@@ -337,7 +338,7 @@ const Legenda: React.FC<{palavras: Palavra[]; claro: (t: number) => boolean; est
   if (estilo === 'palavra') {
     const p = palavras[i]; const k = (t - p.s) / Math.max(0.05, p.e - p.s);
     return <div style={{position: 'absolute', left: 0, right: 0, bottom: 300, textAlign: 'center', fontFamily: 'Anton', fontSize: 120, textTransform: 'uppercase',
-      color: claro(t) ? '#111' : BRANCO, transform: `scale(${1.15 - 0.15 * Math.min(1, k * 3)})`, textShadow: claro(t) ? 'none' : `0 0 40px rgba(245,166,35,.45)`}}>{p.w}</div>;
+      color: claro(t) ? '#111' : BRANCO, transform: `scale(${1.15 - 0.15 * Math.min(1, k * 3)})`, textShadow: claro(t) ? 'none' : `0 0 40px color-mix(in srgb, var(--a) 45%, transparent)`}}>{p.w}</div>;
   }
   if (estilo === 'sutil') {
     const ini2 = Math.floor(i / 6) * 6;
@@ -348,7 +349,7 @@ const Legenda: React.FC<{palavras: Palavra[]; claro: (t: number) => boolean; est
   return <div style={{position: 'absolute', left: 60, right: 60, bottom: 250, textAlign: 'center', fontFamily: 'Man8', fontSize: 58, textTransform: 'uppercase',
     textShadow: cl ? 'none' : '0 4px 20px rgba(0,0,0,.8)'}}>
     {palavras.slice(ini, ini + 3).map((p, k) => <span key={k} style={{display: 'inline-block', margin: '0 14px',
-      color: ini + k === i ? (cl ? '#C77F00' : OURO) : (cl ? '#222' : BRANCO), transform: `scale(${ini + k === i ? 1.12 : 1})`}}>{p.w}</span>)
+      color: ini + k === i ? (cl ? 'var(--ae)' : OURO) : (cl ? '#222' : BRANCO), transform: `scale(${ini + k === i ? 1.12 : 1})`}}>{p.w}</span>)
       .reduce((a: React.ReactNode[], el, k) => k ? [...a, ' ', el] : [el], [])}</div>;
 };
 
@@ -358,7 +359,7 @@ export const Estilo: React.FC<PropsE> = (props) => {
   const ocultas = props.cenas.filter((c) => ['frase', 'citacao', 'objeto', 'numero', 'fecho'].includes(c.tipo));
   const ehClaro = (t: number) => props.cenas.some((c) => c.fundo === 'claro' && t >= c.inicio && t < c.fim);
   return (
-    <AbsoluteFill style={{background: '#08080a'}}>
+    <AbsoluteFill style={{background: '#08080a', ['--a' as any]: props.paleta?.a || '#F5A623', ['--a2' as any]: props.paleta?.a2 || '#FFD27A', ['--ae' as any]: props.paleta?.ae || '#B86E00'}}>
       {props.cenas.map((c, i) => {
         const from = Math.round(c.inicio * fps); const dur = Math.max(1, Math.round((c.fim - c.inicio) * fps));
         const claro = c.fundo === 'claro';

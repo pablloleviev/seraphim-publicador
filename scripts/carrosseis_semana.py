@@ -10,6 +10,9 @@ EU = (R / "assets/pessoas/pabllo_recorte.png").as_uri()
 SERA = (R / "motor/public/sera/confiante.png").as_uri()
 SERA_P = (R / "motor/public/sera/pensando.png").as_uri()
 
+PAL = {"o-que-e-a-seraphim": "ouro", "nosso-manifesto": "prata", "5-sinais": "rubi", "por-que-a-seraphim": "ouro", "tres-frentes": "esmeralda",
+       "sistema-proprio": "violeta", "cozinha": "cobre", "glossario": "gelo", "processo-5": "ouro", "nao-fazemos": "prata", "podemos-construir": "violeta"}
+
 C = {
 "2026-10-19_0900_o-que-e-a-seraphim": [
  {"tipo": "capa", "foto": EU, "linha": "EDIÇÃO DE ESTREIA", "titulo": "O que é a<br>*Seraphim*", "blocos": [("layers", 40, 300, -14, 230), ("zap", 800, 220, 12, 210), ("link", 820, 640, -8, 170)]},
@@ -38,7 +41,7 @@ C = {
  {"tipo": "fecho", "titulo": "Marcou 3 ou mais? *Hora de um sistema.*", "textos": ["Quantos você marcou? **Conta nos comentários.**"], "cartoes": ["Salva pra revisar depois", "Manda pra quem cuida da **operação**"]},
 ],
 "2026-10-20_1730_por-que-a-seraphim-existe": [
- {"tipo": "capa", "foto": EU, "linha": "CARTA ABERTA", "titulo": "Por que a<br>*Seraphim* existe", "blocos": [("heart", 50, 330, -10, 200), ("users", 820, 260, 10, 210), ("sparkles", 830, 660, -6, 160)]},
+ {"tipo": "capa_tipografica", "linha": "CARTA ABERTA", "titulo": "Por que a *Seraphim* existe", "texto": "Uma carta curta sobre o que nos tirou do lugar."},
  {"tipo": "citacao", "titulo": "A gente cansou de ver *gente boa presa* em trabalho repetitivo."},
  {"tipo": "contraste", "rotulo_a": "O SONHO", "antes": "Abrir um negócio pra atender bem", "rotulo_b": "A REALIDADE", "depois": "Passar o dia *conferindo planilha*"},
  {"tipo": "abertura", "fundo": "claro", "titulo": "A tecnologia que resolve isso *já existe*", "textos": ["Só que quase sempre é feita para **empresa grande**.", "Cara, complexa e do tamanho errado."], "icones": ["briefcase", "lock", "dollar-sign", "layers"]},
@@ -46,7 +49,7 @@ C = {
  {"tipo": "cta", "foto": EU, "titulo": "Sem complicar. Sem milagre. *Com método.*", "texto": "— Equipe Seraphim"},
 ],
 "2026-10-21_0900_as-tres-frentes-da-seraphim": [
- {"tipo": "capa_numero", "numero": "3", "titulo": "Frentes da *Seraphim*"},
+ {"tipo": "capa_tipografica", "linha": "O QUE FAZEMOS", "titulo": "Três frentes. *Um objetivo.*", "texto": "Tirar das pessoas o trabalho que não deveria ser delas."},
  {"tipo": "verbete", "rotulo": "FRENTE 01", "icone": "layers", "titulo": "Sistemas *sob medida*", "texto": "Ferramentas feitas para o **jeito que a sua empresa trabalha**.", "exemplo": "Pedidos, agenda e clientes **num lugar só**."},
  {"tipo": "verbete", "rotulo": "FRENTE 02", "fundo": "claro", "icone": "zap", "titulo": "*Automação*", "texto": "Tarefas repetidas **acontecendo sozinhas**.", "exemplo": "Lembretes, confirmações e relatórios **automáticos**."},
  {"tipo": "verbete", "rotulo": "FRENTE 03", "icone": "link", "titulo": "*Integração*", "texto": "As ferramentas que você já usa **conversando entre si**.", "exemplo": "O pedido vai do atendimento ao financeiro **sozinho**."},
@@ -79,7 +82,7 @@ C = {
  {"tipo": "cta", "foto": SERA_P, "titulo": "Faltou alguma *palavra?*", "texto": "Pede nos comentários.", "botao": "COMENTA AQUI"},
 ],
 "2026-10-23_0900_nosso-processo-5-etapas": [
- {"tipo": "capa", "foto": EU, "linha": "NOSSO MÉTODO", "titulo": "O processo em<br>*5 etapas*", "blocos": [("route", 40, 320, -12, 220), ("pen-tool", 810, 240, 10, 200), ("check-circle-2", 830, 650, -6, 170)]},
+ {"tipo": "capa_tipografica", "linha": "NOSSO MÉTODO", "titulo": "Do problema ao uso, em *5 etapas*", "texto": "Como um projeto da Seraphim acontece — sem caixa-preta."},
  {"tipo": "lista", "rotulo": "ETAPAS 1 A 3", "titulo": "Do problema ao *plano*", "itens": [("Escutar", "Conversamos com quem faz o trabalho."), ("Mapear", "Desenhamos o processo real e marcamos onde dói."), ("Priorizar", "Escolhemos o que resolve mais com menos.")]},
  {"tipo": "lista", "rotulo": "ETAPAS 4 E 5", "fundo": "claro", "titulo": "Do plano ao *uso*", "itens": [("Construir pequeno", "Entregamos uma parte que já funciona."), ("Melhorar com uso", "Ajustamos com quem usa todo dia.")]},
  {"tipo": "topico", "fundo": "escuro", "titulo": "Sem caixa-preta: você *acompanha tudo*", "rotulo": "ATUALIZAÇÕES", "numero": "SEMANAL", "textos": ["Você vê **o que está sendo construído**, enquanto é construído."]},
@@ -112,9 +115,14 @@ def main(filtros):
         dest = R / "fila" / pasta
         tmp = R / "testes" / "semana_carrosseis" / pasta
         shutil.rmtree(tmp, ignore_errors=True)
-        asyncio.run(E.render(slides, tmp))
+        pal = next((v for k, v in PAL.items() if k in pasta), "ouro")
+        asyncio.run(E.render(slides, tmp, pal))
         arq = R / "arquivo" / "semana_antiga" / pasta
-        if dest.exists():
+        if dest.exists() and arq.exists():   # o original já está guardado: só troca a versão anterior desta mesma rotina
+            for f in dest.glob("slide-*.jpg"):
+                f.unlink()
+            shutil.rmtree(dest / "tiktok", ignore_errors=True)
+        elif dest.exists():
             for f in list(dest.glob("slide-*.jpg")) + ([dest / "tiktok"] if (dest / "tiktok").exists() else []):
                 arq.mkdir(parents=True, exist_ok=True)
                 shutil.move(str(f), str(arq / f.name))

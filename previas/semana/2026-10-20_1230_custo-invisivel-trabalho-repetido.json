@@ -6,9 +6,10 @@
  "genero_voz": "masculina",
  "cenas": [
   {
-   "tipo": "objeto",
-   "icone": "hourglass",
-   "titulo": "Quanto custa *5 minutos?*",
+   "tipo": "numero",
+   "numero": "5",
+   "rotulo": "MINUTOS",
+   "titulo": "Quanto *custa?*",
    "narracao": "Quanto custa uma tarefa de cinco minutos?"
   },
   {
@@ -66,5 +67,6 @@
    "narracao": "Qual tarefa se repete todo santo dia na sua empresa? Conta nos comentários."
   }
  ],
- "estilo_legenda": "sutil"
+ "estilo_legenda": "sutil",
+ "paleta": "cobre"
 }

@@ -495,6 +495,8 @@ def main():
         for k in ("personalidade", "tarja"):
             if k in spec: props[k] = spec[k]
         if "estilo_legenda" in spec: props["legenda"] = spec["estilo_legenda"]
+        pals = json.loads((RAIZ / "estilos" / "paletas.json").read_text(encoding="utf-8"))
+        pl = spec.get("paleta", "ouro"); props["paleta"] = pals.get(pl, pals["ouro"]) if isinstance(pl, str) else pl
         props["semente"] = sum(map(ord, nome)) % 97
     if relanc:
         props["peca"] = spec.get("peca", nome)
