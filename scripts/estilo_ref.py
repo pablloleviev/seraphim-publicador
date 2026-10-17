@@ -146,7 +146,102 @@ def s_fecho(d, n, T):
     return d.get("fundo", "escuro"), moldura(corpo, n, T, "")
 
 
-TIPOS = {"capa": s_capa, "abertura": s_abertura, "topico": s_topico, "fecho": s_fecho}
+
+
+def moeda(ic, tam=230, x=0, y=0, r=0):
+    return (f'<div class="moeda" style="left:{x}px;top:{y}px;width:{tam}px;height:{tam}px;transform:perspective(700px) rotateX(16deg) rotate({r}deg)">'
+            f'{icone(ic, "#3a2300", int(tam * .48), 1.8)}</div>')
+
+
+def s_capa_objeto(d, n, T):
+    """capa sem pessoa: objeto 3D gigante (moeda/vidro) com anel de luz e fumaça"""
+    ic = d.get("icone", "zap")
+    if d.get("material") == "vidro":
+        obj = (f'<div class="vidro" style="position:absolute;left:290px;top:190px;width:500px;height:500px;border-radius:110px;padding:0;display:flex;'
+               f'align-items:center;justify-content:center;transform:perspective(900px) rotateY(-16deg) rotateX(10deg)">{icone(ic, OURO2, 270, 1.4)}</div>')
+    else:
+        obj = moeda(ic, 500, 290, 180, -8)
+    corpo = (f'<div class="fumaca" style="left:140px;top:200px;width:800px;height:700px;opacity:.32"></div>'
+             f'<div style="position:absolute;left:190px;top:600px;width:700px;height:200px;border-radius:50%;border:3px solid rgba(245,166,35,.45);'
+             f'box-shadow:0 0 90px rgba(245,166,35,.45);transform:rotateX(60deg)"></div>{obj}'
+             f'<div style="position:absolute;left:60px;right:60px;bottom:150px;text-align:center">'
+             f'<div style="font:800 34px Man8;letter-spacing:4px;margin-bottom:16px;color:{OURO2}">{d.get("linha", "")}</div>'
+             f'<div style="font:400 120px/0.98 Anton;text-transform:uppercase">{tit(d["titulo"])}</div></div>')
+    return "escuro", moldura(corpo, n, T, "")
+
+
+def s_capa_numero(d, n, T):
+    corpo = (f'<div class="fumaca" style="left:200px;top:300px;width:700px;height:600px;opacity:.3"></div>'
+             f'<div style="position:absolute;left:0;right:0;top:170px;text-align:center;font:400 620px/1 Anton;'
+             f'background:linear-gradient(180deg,#fff 15%,{OURO2} 55%,{OURO});-webkit-background-clip:text;color:transparent;'
+             f'filter:drop-shadow(0 0 70px rgba(245,166,35,.4))">{d["numero"]}</div>'
+             f'<div style="position:absolute;left:60px;right:60px;bottom:160px;text-align:center">'
+             f'<div style="font:400 104px/1 Anton;text-transform:uppercase">{tit(d["titulo"])}</div></div>')
+    return "escuro", moldura(corpo, n, T, "")
+
+
+def s_verbete(d, n, T):
+    """objeto 3D + palavra + definição + exemplo num cartão de vidro"""
+    corpo = (f'<div class="fumaca" style="left:450px;top:700px;width:600px;height:600px"></div>'
+             f'{moeda(d.get("icone", "book"), 400, 600, 830, 10)}'
+             f'<div style="position:absolute;left:72px;right:72px;top:210px">'
+             f'<div style="font:800 26px Man8;letter-spacing:5px;opacity:.6">{d.get("rotulo", "")}</div>'
+             f'<h1 style="font-size:120px;margin-top:20px">{tit(d["titulo"])}</h1>'
+             f'<div class="corpo"><p style="font-size:44px;max-width:640px">{neg(d["texto"])}</p></div>'
+             f'<div class="vidro" style="margin-top:70px;transform:perspective(1200px) rotateX(6deg) rotateY(-4deg)">'
+             f'<div class="rot">NA PRÁTICA</div><div style="position:relative;font:500 38px/1.35 Man5;color:#fff;margin-top:14px">{neg(d["exemplo"])}</div></div></div>')
+    return d.get("fundo", "escuro"), moldura(corpo, n, T, "")
+
+
+def s_lista(d, n, T):
+    itens = ""
+    for i, it in enumerate(d["itens"]):
+        t, x = (it if isinstance(it, (list, tuple)) else (it, ""))
+        itens += (f'<div class="vidro" style="display:flex;gap:34px;align-items:center;margin-top:28px;padding:30px 40px;'
+                  f'transform:perspective(1200px) rotateY({-5 if i % 2 else 5}deg)">'
+                  f'<div style="position:relative;font:400 84px/1 Anton;color:{OURO};width:70px">{d.get("marcador") or i + 1}</div>'
+                  f'<div style="position:relative"><div style="font:800 42px/1.15 Man8;color:#fff">{t}</div>'
+                  f'{f"<div style=font:500 30px/1.35 Man5;color:#cfcfd4;margin-top:8px>{x}</div>" if x else ""}</div></div>')
+    corpo = (f'<div style="position:absolute;left:72px;right:72px;top:200px"><div style="font:800 26px Man8;letter-spacing:5px;opacity:.6">{d.get("rotulo", "")}</div>'
+             f'<h1 style="margin:16px 0 30px">{tit(d["titulo"])}</h1>{itens}</div>')
+    return d.get("fundo", "escuro"), moldura(corpo, n, T, "")
+
+
+def s_contraste(d, n, T):
+    a, b = d["antes"], d["depois"]
+    corpo = (f'<div style="position:absolute;left:0;right:0;top:0;height:660px;background:#ecebe6;color:#222">'
+             f'<div style="position:absolute;left:72px;top:200px;font:800 26px Man8;letter-spacing:5px;color:#8a857a">{d.get("rotulo_a", "ANTES")}</div>'
+             f'<div style="position:absolute;left:72px;right:72px;top:250px;font:700 66px/1.12 Sora;text-decoration:line-through;text-decoration-color:{OURO};text-decoration-thickness:6px">{a}</div></div>'
+             f'<div style="position:absolute;left:0;right:0;top:655px;height:10px;background:{OURO};box-shadow:0 0 40px {OURO}"></div>'
+             f'<div style="position:absolute;left:72px;right:72px;top:740px"><div style="font:800 26px Man8;letter-spacing:5px;color:{OURO2}">{d.get("rotulo_b", "DEPOIS")}</div>'
+             f'<h1 style="margin-top:20px">{tit(b)}</h1><div class="corpo"><p>{neg(d.get("texto", ""))}</p></div></div>')
+    return "escuro", moldura(corpo, n, T, "")
+
+
+def s_citacao(d, n, T):
+    corpo = (f'<div class="fumaca" style="left:0;top:300px;width:600px;height:600px"></div>'
+             f'<div style="position:absolute;left:72px;right:72px;top:50%;transform:translateY(-55%)"><div style="font:400 300px/0.6 Anton;color:{OURO};opacity:.4">“</div>'
+             f'<h1 style="font-size:96px;margin-top:40px">{tit(d["titulo"])}</h1>'
+             f'<div style="width:140px;height:5px;background:{OURO};margin:50px 0 30px"></div>'
+             f'<div style="font:500 34px Man5;opacity:.75">{neg(d.get("texto", ""))}</div></div>')
+    return d.get("fundo", "escuro"), moldura(corpo, n, T, "")
+
+
+def s_cta(d, n, T):
+    foto = d.get("foto")
+    img = (f'<img src="{foto}" style="position:absolute;right:-60px;bottom:0;height:900px;z-index:1">'
+           f'<div style="position:absolute;left:0;right:0;bottom:0;height:500px;z-index:2;background:linear-gradient(180deg,rgba(8,8,10,0),#08080a 70%)"></div>') if foto else ""
+    corpo = (f'<div class="fumaca" style="left:400px;top:500px;width:700px;height:700px;opacity:.28"></div>{img}'
+             f'<div style="position:absolute;left:72px;right:{380 if foto else 72}px;top:260px;z-index:3"><h1 style="font-size:84px">{tit(d["titulo"])}</h1>'
+             f'<div class="corpo"><p>{neg(d.get("texto", ""))}</p></div>'
+             f'<div style="display:inline-block;margin-top:60px;padding:24px 38px;border-radius:999px;background:{OURO};color:#111;font:800 34px Man8;'
+             f'box-shadow:0 0 50px rgba(245,166,35,.5)">{d.get("botao", "SIGA " + ARROBA.upper())}</div></div>')
+    return "escuro", moldura(corpo, n, T, "")
+
+
+TIPOS = {"capa": s_capa, "abertura": s_abertura, "topico": s_topico, "fecho": s_fecho, "capa_objeto": s_capa_objeto,
+         "capa_numero": s_capa_numero, "verbete": s_verbete, "lista": s_lista, "contraste": s_contraste, "citacao": s_citacao, "cta": s_cta}
+
 
 EXEMPLO = [
     {"tipo": "capa", "foto": (RAIZ / "assets/pessoas/pabllo_recorte.png").as_uri(), "linha": "AS TAREFAS QUE",
