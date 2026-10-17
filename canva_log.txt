@@ -1,2 +1,2 @@
 refresh salvo no GitHub
-Canva conectado. Escopos: asset:read asset:write brandtemplate:content:read brandtemplate:meta:read design:content:read design:content:write design:meta:read
+0 modelos
