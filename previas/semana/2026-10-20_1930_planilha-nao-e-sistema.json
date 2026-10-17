@@ -1,0 +1,65 @@
+{
+ "nome": "planilha-nao-e-sistema",
+ "pasta": "2026-10-20_1930_planilha-nao-e-sistema",
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "legenda": "palavra",
+ "genero_voz": "masculina",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "file-text",
+   "titulo": "Sua planilha *funciona.*",
+   "transicao": "zoom",
+   "narracao": "Sua planilha funciona."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Até o dia em que *não funciona.*",
+   "transicao": "flash",
+   "camera": "tremor",
+   "narracao": "Até o dia em que não funciona."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O dia em que *quebra:*",
+   "itens": [
+    "Duas pessoas editando",
+    "A fórmula some",
+    "Qual é a versão certa?"
+   ],
+   "narracao": "Duas pessoas editam ao mesmo tempo. Uma fórmula some. Ninguém sabe qual é a versão certa."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Planilha como coração da empresa",
+   "depois": "Planilha para *começar*",
+   "narracao": "Planilha é ótima pra começar, mas não foi feita pra ser o coração de uma empresa."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Um sistema *guarda, controla e avisa*",
+   "icones": [
+    "database",
+    "lock",
+    "bell",
+    "shield-check"
+   ],
+   "narracao": "Um sistema guarda o histórico, controla quem mexe em quê e avisa quando algo sai do lugar."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "É sobre saber a hora de *crescer.*",
+   "narracao": "Não é sobre abandonar a planilha. É sobre saber a hora de crescer."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Manda pra quem *vive na planilha*",
+   "cartoes": [
+    "Salva o vídeo",
+    "Envia pra um amigo"
+   ],
+   "narracao": "Salva esse vídeo e manda pra quem vive dentro da planilha."
+  }
+ ]
+}

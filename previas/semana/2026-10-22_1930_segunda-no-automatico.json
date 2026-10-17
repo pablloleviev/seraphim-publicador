@@ -1,0 +1,60 @@
+{
+ "nome": "segunda-no-automatico",
+ "pasta": "2026-10-22_1930_segunda-no-automatico",
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "legenda": "palavra",
+ "genero_voz": "masculina",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "alarm-clock",
+   "titulo": "Segunda, *8h*",
+   "narracao": "Segunda-feira, oito da manhã. Olha quanta coisa poderia acontecer sozinha."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "Relatório da semana *na caixa*",
+   "rotulo": "08:00",
+   "numero": "PRONTO",
+   "narracao": "Oito horas: o relatório da semana já está na sua caixa."
+  },
+  {
+   "tipo": "cartao",
+   "fundo": "claro",
+   "titulo": "Pedido confirmado *sem digitar*",
+   "rotulo": "10:00",
+   "numero": "ENVIADO",
+   "narracao": "Dez: o cliente recebe a confirmação do pedido sem ninguém digitar."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "Lembrete *educado* de pagamento",
+   "rotulo": "12:00",
+   "numero": "AVISADO",
+   "narracao": "Meio-dia: quem está com pagamento atrasado ganha um lembrete educado."
+  },
+  {
+   "tipo": "cartao",
+   "fundo": "claro",
+   "titulo": "A agenda de amanhã *se organiza*",
+   "rotulo": "16:00",
+   "numero": "PRONTA",
+   "narracao": "Quatro da tarde: a agenda de amanhã se organiza."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "Não exige tecnologia nova. Exige *olhar pro seu dia.*",
+   "narracao": "Nada disso exige tecnologia nova. Exige olhar pro seu dia e decidir o que não precisa mais de uma pessoa."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Qual você tiraria *primeiro?*",
+   "cartoes": [
+    "Relatório",
+    "Lembrete de pagamento"
+   ],
+   "narracao": "Qual delas você tiraria das mãos do seu time primeiro? Comenta."
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "nome": "perguntas-antes-do-codigo",
+ "pasta": "2026-10-23_1930_perguntas-antes-do-codigo",
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "legenda": "palavra",
+ "genero_voz": "masculina",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "help-circle",
+   "titulo": "5 perguntas *antes do código*",
+   "narracao": "Cinco perguntas que a gente faz antes de construir qualquer coisa."
+  },
+  {
+   "tipo": "numero",
+   "numero": "1",
+   "rotulo": "PERGUNTA",
+   "titulo": "Quem vai usar *todo dia?*",
+   "narracao": "Quem vai usar isso todo dia?"
+  },
+  {
+   "tipo": "numero",
+   "numero": "2",
+   "rotulo": "PERGUNTA",
+   "titulo": "O que acontece quando *dá errado?*",
+   "narracao": "O que acontece hoje quando dá errado?"
+  },
+  {
+   "tipo": "numero",
+   "numero": "3",
+   "rotulo": "PERGUNTA",
+   "titulo": "O que *ninguém sentiria falta?*",
+   "narracao": "Qual tarefa, se sumisse amanhã, ninguém sentiria falta?"
+  },
+  {
+   "tipo": "numero",
+   "numero": "4",
+   "rotulo": "PERGUNTA",
+   "titulo": "Onde a informação *nasce?*",
+   "narracao": "Onde a informação nasce?"
+  },
+  {
+   "tipo": "numero",
+   "numero": "5",
+   "rotulo": "PERGUNTA",
+   "titulo": "Como saber que *deu certo?*",
+   "narracao": "E como a gente vai saber que deu certo?"
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Sem resposta? *Ainda não é hora.*",
+   "cartoes": [
+    "Salva as cinco",
+    "Responde antes de programar"
+   ],
+   "narracao": "Se uma delas fica sem resposta, ainda não é hora de programar. Salva essas cinco."
+  }
+ ]
+}

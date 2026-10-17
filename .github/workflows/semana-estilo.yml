@@ -1,0 +1,45 @@
+name: Semana no estilo novo (refaz vídeos)
+on:
+  workflow_dispatch:
+    inputs:
+      filtro: {description: "parte do nome (vazio = todos)", required: false, default: ""}
+permissions:
+  contents: write
+jobs:
+  listar:
+    runs-on: ubuntu-latest
+    outputs: {specs: "${{ steps.l.outputs.specs }}"}
+    steps:
+      - uses: actions/checkout@v4
+      - id: l
+        run: echo "specs=$(ls previas/semana/*.json | grep -- "${{ inputs.filtro }}" | python3 -c 'import sys,json;print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))')" >> "$GITHUB_OUTPUT"
+  render:
+    needs: listar
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix: {spec: "${{ fromJSON(needs.listar.outputs.specs) }}"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: "22", cache: npm, cache-dependency-path: motor/package-lock.json}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: |
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          pip install -q edge-tts faster-whisper soundfile numpy
+          cd motor && npm ci --no-audit --no-fund
+      - env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SPEC: ${{ matrix.spec }}
+        run: |
+          P=$(basename "$SPEC" .json); D="fila/$P"; mkdir -p "$D"
+          python scripts/fazer_video.py "$SPEC" --voz gemini --saida "$D/video.mp4" 2>&1 | tail -5
+          ffmpeg -loglevel error -y -ss 1.4 -i "$D/video.mp4" -frames:v 1 -q:v 2 "$D/capa.jpg"
+          rm -f "$D/video_tiktok.mp4"; python scripts/capa_no_video.py "$D"
+      - run: |
+          git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
+          P=$(basename "${{ matrix.spec }}" .json); git add "fila/$P"; git commit -qm "estilo novo: $P" || exit 0
+          for i in $(seq 1 12); do git pull -q --rebase -X theirs && git push -q && exit 0; sleep $((RANDOM % 10 + 3)); done; exit 1

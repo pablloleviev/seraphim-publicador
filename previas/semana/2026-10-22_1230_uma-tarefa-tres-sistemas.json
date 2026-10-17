@@ -1,0 +1,63 @@
+{
+ "nome": "uma-tarefa-tres-sistemas",
+ "pasta": "2026-10-22_1230_uma-tarefa-tres-sistemas",
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "legenda": "karaoke",
+ "genero_voz": "masculina",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "package",
+   "titulo": "Um pedido *chega.*",
+   "transicao": "zoom",
+   "narracao": "Um pedido chega. Quantas vezes alguém digita a mesma informação?"
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Atendimento. Financeiro. *Entrega.*",
+   "icones": [
+    "message-circle",
+    "wallet",
+    "truck"
+   ],
+   "narracao": "Uma no atendimento, outra no financeiro, outra na planilha de entrega."
+  },
+  {
+   "tipo": "numero",
+   "numero": "3",
+   "rotulo": "CHANCES DE ERRAR",
+   "titulo": "a cada *pedido*",
+   "camera": "tremor",
+   "narracao": "Três chances de errar."
+  },
+  {
+   "tipo": "cartao",
+   "fundo": "claro",
+   "titulo": "*Integração:* o dado entra uma vez",
+   "rotulo": "DE 3 DIGITAÇÕES PARA",
+   "numero": "1 SÓ VEZ",
+   "narracao": "Integração é fazer esses sistemas conversarem: o dado entra uma vez e aparece onde precisa."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Conferir e redigitar",
+   "depois": "Atender e *decidir*",
+   "narracao": "Quem atendia volta a atender. Quem conferia volta a decidir."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "O erro de digitação *deixa de existir.*",
+   "narracao": "E o erro de digitação simplesmente deixa de existir."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Manda pra quem digita *3 vezes*",
+   "cartoes": [
+    "Salva",
+    "Compartilha"
+   ],
+   "narracao": "Salva e manda pra quem digita a mesma coisa três vezes."
+  }
+ ]
+}

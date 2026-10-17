@@ -1,0 +1,70 @@
+{
+ "nome": "custo-invisivel-trabalho-repetido",
+ "pasta": "2026-10-20_1230_custo-invisivel-trabalho-repetido",
+ "motor": "estilo",
+ "personalidade": "emocional",
+ "legenda": "sutil",
+ "genero_voz": "masculina",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "hourglass",
+   "titulo": "Quanto custa *5 minutos?*",
+   "narracao": "Quanto custa uma tarefa de cinco minutos?"
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Parece *nada.*",
+   "narracao": "Parece nada."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Todo dia. Várias vezes. *Mesma pessoa.*",
+   "icones": [
+    "repeat",
+    "clock",
+    "user",
+    "repeat",
+    "alarm-clock"
+   ],
+   "narracao": "Mas ela se repete todo dia, às vezes várias vezes, e quase sempre cai na mesma pessoa."
+  },
+  {
+   "tipo": "numero",
+   "numero": "5 min",
+   "rotulo": "TODO DIA, O MÊS INTEIRO",
+   "titulo": "vira *horas* que ninguém vê",
+   "narracao": "Somando o mês, vira horas de trabalho que não aparecem em lugar nenhum."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Horas que *não viram:*",
+   "itens": [
+    "Venda",
+    "Atendimento",
+    "Descanso"
+   ],
+   "narracao": "Não vira venda, não vira atendimento, não vira descanso."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "Esse é o *custo invisível.*",
+   "narracao": "Esse é o custo invisível."
+  },
+  {
+   "tipo": "pessoa",
+   "linha": "ENXERGAR",
+   "titulo": "A gente *enxerga* e tira essas tarefas das mãos certas",
+   "narracao": "A gente enxerga essas tarefas e tira das mãos de quem deveria estar fazendo outra coisa."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Qual tarefa se *repete* aí?",
+   "cartoes": [
+    "Conta nos comentários",
+    "A gente responde"
+   ],
+   "narracao": "Qual tarefa se repete todo santo dia na sua empresa? Conta nos comentários."
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "nome": "sete-dias-uma-ideia",
+ "pasta": "2026-10-25_1930_sete-dias-uma-ideia",
+ "motor": "estilo",
+ "personalidade": "elegante",
+ "legenda": "karaoke",
+ "genero_voz": "masculina",
+ "cenas": [
+  {
+   "tipo": "numero",
+   "numero": "7",
+   "rotulo": "DIAS",
+   "titulo": "Agora é a *sua vez.*",
+   "narracao": "Em sete dias, a gente te contou quem é. Agora é a sua vez."
+  },
+  {
+   "tipo": "pessoa",
+   "linha": "SERAPHIM",
+   "titulo": "Tirar das pessoas o trabalho que *não é delas*",
+   "narracao": "A Seraphim existe pra tirar das pessoas o trabalho que não deveria ser delas."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Sistemas. Automação. *Integração.*",
+   "icones": [
+    "layers",
+    "zap",
+    "link"
+   ],
+   "narracao": "Com sistemas sob medida, automação e integração."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "Com método. *Sem promessa vazia.*",
+   "narracao": "Com método, sem promessa vazia. E com um primeiro produto, o AutoFlow."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "send",
+   "titulo": "Manda uma *mensagem*",
+   "narracao": "Se a sua empresa tem um trabalho que ninguém deveria estar fazendo, manda uma mensagem."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "A conversa começa com *caneta.*",
+   "cartoes": [
+    "Manda um direct",
+    "A gente escuta primeiro"
+   ],
+   "narracao": "A conversa começa com caneta. Manda um direct pra gente."
+  }
+ ],
+ "tarja": true
+}

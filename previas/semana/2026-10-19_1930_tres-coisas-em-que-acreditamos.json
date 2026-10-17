@@ -1,0 +1,54 @@
+{
+ "nome": "tres-coisas-em-que-acreditamos",
+ "pasta": "2026-10-19_1930_tres-coisas-em-que-acreditamos",
+ "motor": "estilo",
+ "personalidade": "elegante",
+ "legenda": "sutil",
+ "genero_voz": "masculina",
+ "cenas": [
+  {
+   "tipo": "citacao",
+   "titulo": "Antes da primeira linha de código, *três crenças.*",
+   "narracao": "Antes de escrever uma linha de código, a gente acredita em três coisas."
+  },
+  {
+   "tipo": "numero",
+   "numero": "1",
+   "rotulo": "PRIMEIRA",
+   "titulo": "Tecnologia boa é a que *some.*",
+   "narracao": "Primeira: tecnologia boa é a que some."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "O time volta a pensar no *cliente.*",
+   "narracao": "O time para de pensar na ferramenta e volta a pensar no cliente."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Automatizar a bagunça",
+   "depois": "Organizar o *processo* primeiro",
+   "narracao": "Segunda: o processo vem antes do software. Automatizar uma bagunça só deixa a bagunça mais rápida."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "store",
+   "titulo": "Sistema de empresa grande, *no seu tamanho*",
+   "narracao": "Terceira: pequena empresa merece sistema de empresa grande, no tamanho dela."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "É isso que guia *cada projeto.*",
+   "narracao": "É isso que guia cada projeto da Seraphim."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Qual delas faz mais *sentido* pra você?",
+   "cartoes": [
+    "Tecnologia que some",
+    "Processo antes do software"
+   ],
+   "narracao": "Qual dessas três faz mais sentido pra sua empresa hoje? Comenta aqui."
+  }
+ ],
+ "tarja": true
+}

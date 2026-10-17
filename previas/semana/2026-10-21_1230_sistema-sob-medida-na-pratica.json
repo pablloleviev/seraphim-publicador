@@ -1,0 +1,56 @@
+{
+ "nome": "sistema-sob-medida-na-pratica",
+ "pasta": "2026-10-21_1230_sistema-sob-medida-na-pratica",
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "legenda": "karaoke",
+ "genero_voz": "masculina",
+ "cenas": [
+  {
+   "tipo": "pessoa",
+   "linha": "SOB MEDIDA",
+   "titulo": "Não é luxo. É o *contrário de improviso.*",
+   "narracao": "Sistema sob medida não é luxo. É o contrário de improviso."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "search",
+   "titulo": "Primeiro, *estudar*",
+   "narracao": "Funciona assim: a gente estuda como a sua empresa trabalha hoje,"
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O caminho *real* do seu cliente",
+   "itens": [
+    "Começa no WhatsApp",
+    "Passa pelo pedido",
+    "Termina na nota"
+   ],
+   "narracao": "desenha o caminho ideal e constrói só o que você precisa. Se o seu atendimento começa no WhatsApp e termina numa nota, o sistema segue esse caminho."
+  },
+  {
+   "tipo": "numero",
+   "numero": "0",
+   "rotulo": "TELAS SOBRANDO",
+   "titulo": "Nem uma tela *a mais*",
+   "narracao": "Nem uma tela a mais."
+  },
+  {
+   "tipo": "cartao",
+   "fundo": "claro",
+   "titulo": "O time entende no *primeiro dia*",
+   "rotulo": "TEMPO PARA APRENDER",
+   "numero": "1 DIA",
+   "narracao": "O resultado é uma ferramenta que o time entende no primeiro dia."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Qual etapa mais precisa de um *sistema?*",
+   "cartoes": [
+    "Atendimento",
+    "Financeiro"
+   ],
+   "narracao": "Qual etapa do seu dia mais precisa de um sistema? Comenta aqui."
+  }
+ ]
+}

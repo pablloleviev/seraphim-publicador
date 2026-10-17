@@ -1,0 +1,53 @@
+{
+ "nome": "como-comecamos-um-projeto",
+ "pasta": "2026-10-23_1230_como-comecamos-um-projeto",
+ "motor": "estilo",
+ "personalidade": "emocional",
+ "legenda": "karaoke",
+ "genero_voz": "masculina",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "pen-tool",
+   "titulo": "Dia 1: *caneta*, não código",
+   "narracao": "O primeiro dia de um projeto nosso não tem código. Tem caneta."
+  },
+  {
+   "tipo": "pessoa",
+   "linha": "OUVIR",
+   "titulo": "Com quem *faz* o trabalho",
+   "narracao": "A gente senta com quem faz o trabalho, não só com quem manda nele."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "O processo como ele é: *jeitinhos e gambiarras*",
+   "narracao": "Desenha o processo como ele é de verdade, com os jeitinhos e as gambiarras."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Depois, marca *onde dói:*",
+   "itens": [
+    "O que atrasa",
+    "O que erra",
+    "O que se repete"
+   ],
+   "narracao": "Depois marca onde dói: o que atrasa, o que erra, o que se repete."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Pequeno. Testado. *Usado.*",
+   "icones": [
+    "target",
+    "check-circle-2",
+    "users"
+   ],
+   "narracao": "Só aí escolhe o que construir primeiro. Pequeno, testado, usado."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "Projeto bom *começa ouvindo.*",
+   "narracao": "Projeto bom começa ouvindo. Segue a Seraphim pra ver como a gente trabalha."
+  }
+ ],
+ "tarja": true
+}

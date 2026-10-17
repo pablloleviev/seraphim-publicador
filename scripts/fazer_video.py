@@ -491,6 +491,10 @@ def main():
                 props["batida"] = "job/trilha.wav"; props["trilha_mix"] = True
         except Exception as e:
             print(f"[aviso] trilha emocional falhou ({e}); usando a batida padrão")
+    if estilo:
+        for k in ("personalidade", "legenda", "tarja"):
+            if k in spec: props[k] = spec[k]
+        props["semente"] = sum(map(ord, nome)) % 97
     if relanc:
         props["peca"] = spec.get("peca", nome)
     props["tema"] = spec.get("tema", "noir")

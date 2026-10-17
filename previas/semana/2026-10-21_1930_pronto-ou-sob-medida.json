@@ -1,0 +1,47 @@
+{
+ "nome": "pronto-ou-sob-medida",
+ "pasta": "2026-10-21_1930_pronto-ou-sob-medida",
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "legenda": "sutil",
+ "genero_voz": "masculina",
+ "cenas": [
+  {
+   "tipo": "citacao",
+   "titulo": "Nem toda empresa precisa de *sob medida.*",
+   "narracao": "Nem toda empresa precisa de um sistema sob medida. E a gente fala isso de propósito."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "Processo comum? *Use o pronto.*",
+   "rotulo": "MAIS RÁPIDO E MAIS BARATO",
+   "numero": "PRONTO",
+   "narracao": "Se o seu processo é comum e um software pronto resolve, use o pronto: é mais rápido e mais barato."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Sob medida faz sentido *quando:*",
+   "itens": [
+    "Seu jeito é o diferencial",
+    "3 ferramentas não conversam",
+    "O pronto muda o que funciona"
+   ],
+   "narracao": "Sob medida faz sentido quando o seu jeito de trabalhar é o seu diferencial, quando você já usa três ferramentas que não conversam, ou quando o pronto te obriga a mudar o que funciona."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Qual é o melhor?",
+   "depois": "Qual *serve pra você?*",
+   "narracao": "A pergunta certa não é qual é melhor. É qual serve pra você."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "De que *lado* você está?",
+   "cartoes": [
+    "Software pronto",
+    "Sob medida"
+   ],
+   "narracao": "Em qual dos dois lados a sua empresa está hoje? Responde aqui."
+  }
+ ]
+}
