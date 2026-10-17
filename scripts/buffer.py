@@ -66,12 +66,12 @@ def _s(t: str) -> str:
     return json.dumps(t, ensure_ascii=False)   # string GraphQL (mesma sintaxe de string JSON)
 
 
-def publicar_tiktok(video: Path, legenda: str) -> str:
+def publicar_tiktok(video: Path, legenda: str, capa: Path = None) -> str:
     canal = canal_tiktok()
     url = url_publica(video)
     titulo = legenda.split("\n")[0][:90]
     base = (f'text: {_s(legenda[:2200])}, channelId: {_s(canal)}, schedulingType: automatic, mode: shareNow, '
-            f'assets: [{{ video: {{ url: {_s(url)} }} }}]')
+            f'assets: [{{ video: {{ url: {_s(url)}' + (f', thumbnailUrl: {_s(url_publica(capa))}, metadata: {{ thumbnailOffset: 0 }}' if capa and capa.exists() else '') + ' } }]')
     sel = "{ ... on PostActionSuccess { post { id } } ... on MutationError { message } }"
     tentativas = [f"{base}, metadata: {{ tiktok: {{ title: {_s(titulo)} }} }}", base]
     erro = None

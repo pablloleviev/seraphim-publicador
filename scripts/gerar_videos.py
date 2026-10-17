@@ -49,4 +49,9 @@ for pedido in sorted((RAIZ / "pedidos").glob("*.json")):
         (RAIZ / "revoz" / f"{nome}.json").write_text(json.dumps(spec, ensure_ascii=False, indent=1), encoding="utf-8")
         print(f"[revoz] {nome} saiu com voz reserva; será refeito com Gemini")
     pedido.unlink()
+    try:   # versão do TikTok com a capa no 1º quadro (se a capa já existir)
+        import capa_no_video
+        capa_no_video.fazer(destino)
+    except Exception as e:
+        print(f"[aviso] capa no vídeo: {e}")
     print(f"Na fila: {destino.name}")

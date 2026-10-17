@@ -61,6 +61,11 @@ def main(todas=False):
         asyncio.run(capa.gerar_varias(itens))
         for it in itens:
             Path(it["saida"].parent / "capa_img.jpg").unlink(missing_ok=True)
+            try:
+                import capa_no_video
+                capa_no_video.fazer(it["saida"].parent)
+            except Exception as e:
+                print(f"[aviso] capa no vídeo: {e}")
     print(f"capas geradas: {len(itens)}")
     return len(itens)
 

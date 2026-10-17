@@ -1,0 +1,18 @@
+name: Figma — enviar imagens
+on:
+  workflow_dispatch:
+    inputs:
+      itens: {description: "JSON", required: true}
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q pillow
+      - env:
+          ITENS: ${{ inputs.itens }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: python scripts/figma_upload.py

@@ -247,6 +247,14 @@ def enviar_para_aprovacao(pasta: Path, meta: dict, estado: dict):
                 redes = "Instagram + TikTok"
         except Exception as e:
             print(f"[aviso] TikTok indisponível: {e}")
+    elif meta["tipo"] == "carrossel":
+        try:
+            import buffer
+            if buffer.ativo():
+                item["tiktok"] = {"via": "buffer"}
+                redes = "Instagram + TikTok (fotos)"
+        except Exception as e:
+            print(f"[aviso] TikTok indisponível: {e}")
     hora = datetime.fromisoformat(meta["quando"]).astimezone(BRT).strftime("%d/%m às %H:%M")
     texto = (f"📌 *{nome}*\n🕗 Sai em: *{hora}*\nTipo: {meta['tipo']}  •  Vai para: *{redes}*\n\n{md(meta.get('legenda','')[:800])}\n\n"
              + (f"⚠️ Não feito automaticamente: {md(meta['nota'])}\n\n" if meta.get("nota") else ""))
@@ -456,7 +464,8 @@ def publicar_item(nome, item):
                         leg_tt = meta.get("legenda_tiktok") or meta.get("legenda", "")
                         if meta.get("palavra_chave") and meta["palavra_chave"] not in leg_tt:
                             leg_tt += "\n\n📩 Comenta " + meta["palavra_chave"] + " no nosso Instagram " + ARROBA + " que o material chega no direct."
-                        tt["id"] = buffer.publicar_tiktok(pasta / "video.mp4", leg_tt)
+                        vid = pasta / "video_tiktok.mp4" if (pasta / "video_tiktok.mp4").exists() else pasta / "video.mp4"
+                        tt["id"] = buffer.publicar_tiktok(vid, leg_tt, pasta / "capa.jpg")
                         tt["feito"] = "buffer"
                     except Exception as e:
                         tt["erro"] = str(e)[:300]
@@ -471,6 +480,15 @@ def publicar_item(nome, item):
                         tt["feito"] = tiktok.MODO; tt["status"] = tiktok.STATUS
                     except Exception as e:
                         tt["erro"] = str(e)[:300]
+            elif meta["tipo"] == "carrossel" and tt is not None and _buffer_ativo():
+                # carrossel no TikTok = post de FOTOS (formato nativo); usa a versão 9:16 se existir
+                try:
+                    import buffer
+                    fotos = sorted((pasta / "tiktok").glob("slide-*.jpg")) or sorted(pasta.glob("slide-*.jpg"))
+                    tt["id"] = buffer.publicar_tiktok_fotos(fotos, meta.get("legenda_tiktok") or meta.get("legenda", ""))
+                    tt["feito"] = "buffer"
+                except Exception as e:
+                    tt["erro"] = str(e)[:300]
             try:
                 tg("editMessageReplyMarkup", chat_id=CHAT, message_id=item["msg_id"], reply_markup={"inline_keyboard": []})
             except Exception:
