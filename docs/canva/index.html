@@ -1,0 +1,5 @@
+<!doctype html><html lang="pt-br"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Seraphim · Canva conectado</title>
+<style>body{font-family:system-ui;background:#0A0A0C;color:#F5F5F7;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0}
+.c{max-width:560px;padding:32px}h1{color:#F5A623}code{display:block;background:#1d1d22;padding:16px;border-radius:12px;word-break:break-all;margin:16px 0;font-size:15px}</style></head>
+<body><div class="c"><h1>Canva conectado</h1><p id="m">Copie o código abaixo e mande para o Claude no chat.</p><code id="k"></code></div>
+<script>const p=new URLSearchParams(location.search);document.getElementById('k').textContent=p.get('code')||p.get('error')||'(sem código)';</script></body></html>
