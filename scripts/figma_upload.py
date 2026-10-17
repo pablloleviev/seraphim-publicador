@@ -9,6 +9,10 @@ RAIZ = Path(__file__).resolve().parent.parent
 for it in json.loads(os.environ["ITENS"]):
     if it.get("f"):
         arq = RAIZ / it["f"]
+    elif it.get("ia"):
+        arq = Path(tempfile.mkdtemp()) / f"{it.get('nome', 'ia')}.jpg"
+        if not ingredientes.imagem_ia(it["ia"], arq, it.get("prop", "9:16")):
+            print("sem imagem IA:", it["ia"]); continue
     else:
         arq = Path(tempfile.mkdtemp()) / f"{it.get('nome', 'foto')}.jpg"
         if not ingredientes.foto(it["busca"], arq, it.get("orient", "vertical")):
