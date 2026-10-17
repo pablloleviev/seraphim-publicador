@@ -319,12 +319,16 @@
       "ig_manual": false
     },
     "2026-10-17_1200_como-organizar-caixa-de-entrada-ia": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-16T13:52:38.352121+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "erro": "Buffer recusou: Invalid post: Video thumbnailUrl is not supported: social networks do not accept custom video thumbnail images, so this value is never sent to the network. Remove thumbnailUrl from the video asset. To pick the video thumbnail, set metadata.thumbnailOffset on the video (offset into th"
       },
-      "msg_id": 766
+      "msg_id": 766,
+      "ig_id": "18124665034925640",
+      "publicado_em": "2026-10-17T15:01:06.826799+00:00",
+      "ig_manual": false
     },
     "2026-10-17_1800_5-coisas-para-ia-analisar-hoje": {
       "status": "agendado",
@@ -359,6 +363,14 @@
       "status": "aguardando",
       "enviado_em": "2026-10-17T13:44:55.912110+00:00",
       "msg_id": 799
+    },
+    "2026-10-18_1400_teste-dobro-de-clientes": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-17T15:00:14.545648+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 808
     }
   },
   "respondidos": {}
