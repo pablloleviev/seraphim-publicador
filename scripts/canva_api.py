@@ -21,7 +21,9 @@ def _salvar_refresh(rt):
     env = dict(os.environ, GH_TOKEN=os.environ.get("GH_PAT", ""))
     r = subprocess.run(["gh", "secret", "set", "CANVA_REFRESH", "--body", rt, "--repo",
                         os.environ.get("GITHUB_REPOSITORY", "pablloleviev/seraphim-publicador")], env=env, capture_output=True, text=True)
-    print("refresh salvo" if r.returncode == 0 else f"[ERRO] não salvou o refresh: {r.stderr[:200]}")
+    if r.returncode != 0:
+        raise RuntimeError(f"não salvou o refresh no GitHub (GH_PAT sem permissão de Secrets: escrita?): {r.stderr[:300]}")
+    print("refresh salvo no GitHub")
 
 
 def _token_req(dados):
