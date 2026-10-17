@@ -5,6 +5,8 @@ on:
       acao: {description: "conectar | teste", required: true, default: "teste"}
       code: {description: "código do login (só no conectar)", required: false}
       verifier: {description: "verificador PKCE (só no conectar)", required: false}
+permissions:
+  contents: write
 jobs:
   canva:
     runs-on: ubuntu-latest
@@ -14,5 +16,11 @@ jobs:
           CANVA_CLIENT_SECRET: ${{ secrets.CANVA_CLIENT_SECRET }}
           CANVA_REFRESH: ${{ secrets.CANVA_REFRESH }}
           GH_PAT: ${{ secrets.GH_PAT }}
+        shell: bash
         run: |
-          if [ "${{ inputs.acao }}" = "conectar" ]; then python scripts/canva_api.py conectar "${{ inputs.code }}" "${{ inputs.verifier }}"; else python scripts/canva_api.py teste; fi
+          if [ "${{ inputs.acao }}" = "conectar" ]; then python scripts/canva_api.py conectar "${{ inputs.code }}" "${{ inputs.verifier }}"; else python scripts/canva_api.py teste; fi 2>&1 | tee canva_log.txt; exit ${PIPESTATUS[0]}
+      - if: always()
+        run: |
+          git config user.name "seraphim-bot"; git config user.email "bot@users.noreply.github.com"
+          git add canva_log.txt; git commit -qm "canva: log" || exit 0
+          git pull -q --rebase -X theirs; git push -q
