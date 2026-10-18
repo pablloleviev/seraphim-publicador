@@ -379,6 +379,14 @@
         "via": "buffer"
       },
       "msg_id": 817
+    },
+    "2026-10-19_1230_v1-prazer-seraphim": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-18T13:30:27.503402+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 819
     }
   },
   "respondidos": {}
