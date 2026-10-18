@@ -1,12 +1,1 @@
-== 2026-10-18: faltam 0 vídeos e 2 carrosséis
-Modelos de texto: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview']
-[aviso] pesquisa com gemini-3.8-flash falhou: HTTP Error 429: Too Many Requests
-[aviso] pesquisa com gemini-3.7-flash falhou: HTTP Error 429: Too Many Requests
-[aviso] pesquisa com gemini-3.6-flash falhou: HTTP Error 429: Too Many Requests
-(roteiro escrito com gemini-3.8-flash)
-(roteiro escrito com gemini-3.8-flash)
-Pronto: 8 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-18_0930_passagem-de-bastao-venda-entrega
-[aviso] gemini-2.5-flash-image: HTTP Error 429: Too Many Requests b'{\n  "error": {\n    "code": 429,\n    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a'
-[ia] pollinations <- 'business person handing a clean paper folder to colleague ac'
-Pronto: 8 slides em /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-18_1400_teste-dobro-de-clientes
-2 post(s) planejado(s)
+0 post(s) planejado(s)
