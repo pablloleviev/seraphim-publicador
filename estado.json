@@ -371,6 +371,14 @@
         "via": "buffer"
       },
       "msg_id": 808
+    },
+    "2026-10-19_0900_o-que-e-a-seraphim": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-18T10:00:15.711717+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 817
     }
   },
   "respondidos": {}
