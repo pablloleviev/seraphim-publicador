@@ -1,401 +1,409 @@
 {
- "telegram_offset": 183630266,
- "itens": {
-  "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
-   "status": "publicado",
-   "msg_id": 10,
-   "enviado_em": "2026-10-09T02:58:12.104078+00:00",
-   "ig_id": "18035967551839897",
-   "publicado_em": "2026-10-09T09:14:21.282696+00:00"
-  },
-  "2026-10-09_0638_video-3-sinais": {
-   "status": "publicado",
-   "msg_id": 14,
-   "enviado_em": "2026-10-09T15:18:23.922049+00:00",
-   "ig_id": "17904518802571185",
-   "publicado_em": "2026-10-09T17:32:30.068167+00:00",
-   "tiktok": {
-    "opcoes": [
-     "PUBLIC_TO_EVERYONE",
-     "MUTUAL_FOLLOW_FRIENDS",
-     "SELF_ONLY"
-    ],
-    "info": {
-     "creator_nickname": "seraphimtech",
-     "creator_username": "seraphimtech"
+  "telegram_offset": 183630266,
+  "itens": {
+    "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
+      "status": "publicado",
+      "msg_id": 10,
+      "enviado_em": "2026-10-09T02:58:12.104078+00:00",
+      "ig_id": "18035967551839897",
+      "publicado_em": "2026-10-09T09:14:21.282696+00:00"
     },
-    "msg_id": 18,
-    "priv": "PUBLIC_TO_EVERYONE"
-   }
-  },
-  "2026-10-09_1201_1009-teste": {
-   "status": "cancelado",
-   "msg_id": 16,
-   "enviado_em": "2026-10-09T16:09:34.937629+00:00"
-  },
-  "2026-10-10_1200_orcamento-some": {
-   "status": "cancelado",
-   "enviado_em": "2026-10-10T04:25:49.587022+00:00",
-   "tiktok": {
-    "opcoes": [
-     "PUBLIC_TO_EVERYONE",
-     "MUTUAL_FOLLOW_FRIENDS",
-     "SELF_ONLY"
-    ],
-    "info": {
-     "creator_nickname": "seraphimtech",
-     "creator_username": "seraphimtech"
+    "2026-10-09_0638_video-3-sinais": {
+      "status": "publicado",
+      "msg_id": 14,
+      "enviado_em": "2026-10-09T15:18:23.922049+00:00",
+      "ig_id": "17904518802571185",
+      "publicado_em": "2026-10-09T17:32:30.068167+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "seraphimtech",
+          "creator_username": "seraphimtech"
+        },
+        "msg_id": 18,
+        "priv": "PUBLIC_TO_EVERYONE"
+      }
+    },
+    "2026-10-09_1201_1009-teste": {
+      "status": "cancelado",
+      "msg_id": 16,
+      "enviado_em": "2026-10-09T16:09:34.937629+00:00"
+    },
+    "2026-10-10_1200_orcamento-some": {
+      "status": "cancelado",
+      "enviado_em": "2026-10-10T04:25:49.587022+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "seraphimtech",
+          "creator_username": "seraphimtech"
+        }
+      },
+      "msg_id": 24
+    },
+    "2026-10-10_1800_como-precificar": {
+      "status": "cancelado",
+      "enviado_em": "2026-10-10T04:25:51.591497+00:00",
+      "msg_id": 32
+    },
+    "2026-10-10_1900_site-ou-instagram": {
+      "status": "cancelado",
+      "enviado_em": "2026-10-10T04:25:54.096895+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "seraphimtech",
+          "creator_username": "seraphimtech"
+        }
+      },
+      "msg_id": 34
+    },
+    "2026-10-10_1100_contratar-ou-automatizar": {
+      "status": "publicado",
+      "enviado_em": "2026-10-10T14:19:52.145205+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "Seraphim 🪽",
+          "creator_username": "seraphimtech"
+        },
+        "priv": "PUBLIC_TO_EVERYONE",
+        "id": "v_inbox_file~v2.7695044408022140936",
+        "feito": "rascunho"
+      },
+      "msg_id": 601,
+      "ig_id": "18108458750630107",
+      "publicado_em": "2026-10-10T14:25:08.686156+00:00"
+    },
+    "2026-10-10_1500_cliente-que-nao-volta": {
+      "status": "cancelado",
+      "enviado_em": "2026-10-10T14:19:56.770223+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "Seraphim 🪽",
+          "creator_username": "seraphimtech"
+        },
+        "priv": "PUBLIC_TO_EVERYONE"
+      },
+      "msg_id": 603
+    },
+    "2026-10-10_1800_5-comandos-chatgpt": {
+      "status": "cancelado",
+      "enviado_em": "2026-10-10T14:19:58.314354+00:00",
+      "msg_id": 611
+    },
+    "2026-10-10_1900_pecas-urgentes-oficina": {
+      "status": "cancelado",
+      "enviado_em": "2026-10-10T14:20:01.785627+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "Seraphim 🪽",
+          "creator_username": "seraphimtech"
+        },
+        "priv": "PUBLIC_TO_EVERYONE"
+      },
+      "msg_id": 613
+    },
+    "2026-10-11_0800_vale-a-pena-ia-paga": {
+      "status": "cancelado",
+      "enviado_em": "2026-10-10T14:20:06.647545+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "Seraphim 🪽",
+          "creator_username": "seraphimtech"
+        },
+        "priv": "PUBLIC_TO_EVERYONE"
+      },
+      "msg_id": 615
+    },
+    "2026-10-11_1200_cadeira-vazia-agendamento": {
+      "status": "cancelado",
+      "enviado_em": "2026-10-10T14:20:10.896171+00:00",
+      "tiktok": {
+        "opcoes": [
+          "PUBLIC_TO_EVERYONE",
+          "MUTUAL_FOLLOW_FRIENDS",
+          "SELF_ONLY"
+        ],
+        "info": {
+          "creator_nickname": "Seraphim 🪽",
+          "creator_username": "seraphimtech"
+        },
+        "priv": "PUBLIC_TO_EVERYONE"
+      },
+      "msg_id": 617
+    },
+    "2026-10-14_0800_ia-cameras-inteligentes": {
+      "status": "publicado",
+      "enviado_em": "2026-10-13T22:13:08.164796+00:00",
+      "tiktok": {
+        "via": "buffer",
+        "id": "6acf62a9be984f4200f4114b",
+        "feito": "buffer"
+      },
+      "msg_id": 649,
+      "ig_id": null,
+      "publicado_em": "2026-10-14T11:08:24.891725+00:00",
+      "ig_manual": true
+    },
+    "2026-10-14_1200_mito-ia-humano": {
+      "status": "publicado",
+      "enviado_em": "2026-10-13T22:13:11.158112+00:00",
+      "tiktok": {
+        "via": "buffer",
+        "id": "6acf98fc38098deaf9e5c23e",
+        "feito": "buffer"
+      },
+      "msg_id": 651,
+      "ig_id": null,
+      "publicado_em": "2026-10-14T15:00:05.198886+00:00",
+      "ig_manual": true
+    },
+    "2026-10-14_1800_ferramentas-gestao-equipe": {
+      "status": "publicado",
+      "enviado_em": "2026-10-13T22:13:12.172443+00:00",
+      "msg_id": 659,
+      "ig_id": null,
+      "publicado_em": "2026-10-14T21:00:09.002106+00:00",
+      "ig_manual": true
+    },
+    "2026-10-14_1900_dor-historico-cliente": {
+      "status": "publicado",
+      "enviado_em": "2026-10-13T22:13:15.052634+00:00",
+      "tiktok": {
+        "via": "buffer",
+        "id": "6acffb6efd7b73f9b828119a",
+        "feito": "buffer"
+      },
+      "msg_id": 661,
+      "ig_id": null,
+      "publicado_em": "2026-10-14T22:00:09.967497+00:00",
+      "ig_manual": true
+    },
+    "2026-10-15_0800_cameras-com-cerebro": {
+      "status": "publicado",
+      "enviado_em": "2026-10-14T15:28:12.460649+00:00",
+      "tiktok": {
+        "via": "buffer",
+        "id": "6ad0b2458e44c0222ce2cfbf",
+        "feito": "buffer"
+      },
+      "msg_id": 673,
+      "ig_id": null,
+      "publicado_em": "2026-10-15T11:00:18.396490+00:00",
+      "ig_manual": true
+    },
+    "2026-10-15_1200_software-burro-vs-ia": {
+      "status": "publicado",
+      "enviado_em": "2026-10-14T15:28:16.977005+00:00",
+      "tiktok": {
+        "via": "buffer",
+        "id": "6ad0ea7c4ed96805c7c14b56",
+        "feito": "buffer"
+      },
+      "msg_id": 675,
+      "ig_id": null,
+      "publicado_em": "2026-10-15T15:00:04.476726+00:00",
+      "ig_manual": true
+    },
+    "2026-10-15_1900_ia-nao-e-google": {
+      "status": "publicado",
+      "enviado_em": "2026-10-14T20:00:06.867843+00:00",
+      "tiktok": {
+        "via": "buffer",
+        "id": "6ad14ced4ed7d375a43278c5",
+        "feito": "buffer"
+      },
+      "msg_id": 677,
+      "ig_id": null,
+      "publicado_em": "2026-10-15T22:00:10.693655+00:00",
+      "ig_manual": true
+    },
+    "2026-10-16_1800_4-rotinas-para-eliminar-retrabalho": {
+      "status": "publicado",
+      "enviado_em": "2026-10-15T19:00:18.200608+00:00",
+      "msg_id": 725,
+      "ig_id": "18100566569536967",
+      "publicado_em": "2026-10-16T21:01:07.778042+00:00",
+      "ig_manual": false
+    },
+    "2026-10-16_1900_patio-travado-oficina-mecanica": {
+      "status": "publicado",
+      "enviado_em": "2026-10-15T20:00:19.819674+00:00",
+      "tiktok": {
+        "via": "buffer",
+        "id": "6ad29ea652adf2bfae636447",
+        "feito": "buffer"
+      },
+      "msg_id": 727,
+      "ig_id": "18114110519172881",
+      "publicado_em": "2026-10-16T22:01:09.153982+00:00",
+      "ig_manual": false
+    },
+    "2026-10-15_1800_4-automacoes-escritorio": {
+      "status": "publicado",
+      "enviado_em": "2026-10-15T20:05:00.159637+00:00",
+      "msg_id": 736,
+      "ig_id": null,
+      "publicado_em": "2026-10-15T21:00:18.049595+00:00",
+      "ig_manual": true
+    },
+    "2026-10-16_0800_compras-duplicadas-ralo-invisivel": {
+      "status": "publicado",
+      "enviado_em": "2026-10-15T20:05:03.905866+00:00",
+      "tiktok": {
+        "via": "buffer",
+        "id": "6ad203b3b948bf9e9d8ee120",
+        "feito": "buffer"
+      },
+      "msg_id": 738,
+      "ig_id": null,
+      "publicado_em": "2026-10-16T11:00:01.149067+00:00",
+      "ig_manual": true
+    },
+    "2026-10-16_1200_ia-que-usa-computador-sozinha": {
+      "status": "publicado",
+      "enviado_em": "2026-10-15T20:05:06.817971+00:00",
+      "tiktok": {
+        "via": "buffer",
+        "id": "6ad23c187521b87606150cb7",
+        "feito": "buffer"
+      },
+      "msg_id": 740,
+      "ig_id": "18236962966319873",
+      "publicado_em": "2026-10-16T15:00:39.517501+00:00",
+      "ig_manual": false
+    },
+    "2026-10-17_0800_ia-traduz-sua-voz-tempo-real": {
+      "status": "publicado",
+      "enviado_em": "2026-10-16T13:52:35.654755+00:00",
+      "tiktok": {
+        "via": "buffer",
+        "id": "6ad35558938409f1d080e5a7",
+        "feito": "buffer"
+      },
+      "msg_id": 764,
+      "ig_id": "17982823109904650",
+      "publicado_em": "2026-10-17T11:00:39.514178+00:00",
+      "ig_manual": false
+    },
+    "2026-10-17_1200_como-organizar-caixa-de-entrada-ia": {
+      "status": "publicado",
+      "enviado_em": "2026-10-16T13:52:38.352121+00:00",
+      "tiktok": {
+        "via": "buffer",
+        "erro": "Buffer recusou: Invalid post: Video thumbnailUrl is not supported: social networks do not accept custom video thumbnail images, so this value is never sent to the network. Remove thumbnailUrl from the video asset. To pick the video thumbnail, set metadata.thumbnailOffset on the video (offset into th"
+      },
+      "msg_id": 766,
+      "ig_id": "18124665034925640",
+      "publicado_em": "2026-10-17T15:01:06.826799+00:00",
+      "ig_manual": false
+    },
+    "2026-10-17_1800_5-coisas-para-ia-analisar-hoje": {
+      "status": "agendado",
+      "enviado_em": "2026-10-16T19:00:25.453612+00:00",
+      "msg_id": 778
+    },
+    "2026-10-17_1900_perigo-senhas-bloco-de-notas": {
+      "status": "agendado",
+      "enviado_em": "2026-10-16T20:00:48.965621+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 780
+    },
+    "2026-10-18_0800_o-sumico-dos-comprovantes": {
+      "status": "agendado",
+      "enviado_em": "2026-10-17T09:00:06.852820+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 786
+    },
+    "2026-10-18_1200_usinas-nucleares-e-ia": {
+      "status": "agendado",
+      "enviado_em": "2026-10-17T13:00:05.694865+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 790
+    },
+    "2026-10-18_0930_passagem-de-bastao-venda-entrega": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-17T13:44:55.912110+00:00",
+      "msg_id": 799
+    },
+    "2026-10-18_1400_teste-dobro-de-clientes": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-17T15:00:14.545648+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 808
+    },
+    "2026-10-19_0900_o-que-e-a-seraphim": {
+      "status": "agendado",
+      "enviado_em": "2026-10-18T10:00:15.711717+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 817
+    },
+    "2026-10-19_1230_v1-prazer-seraphim": {
+      "status": "agendado",
+      "enviado_em": "2026-10-18T13:30:27.503402+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 819
+    },
+    "2026-10-19_1730_nosso-manifesto": {
+      "status": "agendado",
+      "enviado_em": "2026-10-18T18:30:22.606915+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 827
+    },
+    "2026-10-19_1930_tres-coisas-em-que-acreditamos": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-18T20:30:15.050400+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 829
     }
-   },
-   "msg_id": 24
   },
-  "2026-10-10_1800_como-precificar": {
-   "status": "cancelado",
-   "enviado_em": "2026-10-10T04:25:51.591497+00:00",
-   "msg_id": 32
-  },
-  "2026-10-10_1900_site-ou-instagram": {
-   "status": "cancelado",
-   "enviado_em": "2026-10-10T04:25:54.096895+00:00",
-   "tiktok": {
-    "opcoes": [
-     "PUBLIC_TO_EVERYONE",
-     "MUTUAL_FOLLOW_FRIENDS",
-     "SELF_ONLY"
-    ],
-    "info": {
-     "creator_nickname": "seraphimtech",
-     "creator_username": "seraphimtech"
-    }
-   },
-   "msg_id": 34
-  },
-  "2026-10-10_1100_contratar-ou-automatizar": {
-   "status": "publicado",
-   "enviado_em": "2026-10-10T14:19:52.145205+00:00",
-   "tiktok": {
-    "opcoes": [
-     "PUBLIC_TO_EVERYONE",
-     "MUTUAL_FOLLOW_FRIENDS",
-     "SELF_ONLY"
-    ],
-    "info": {
-     "creator_nickname": "Seraphim 🪽",
-     "creator_username": "seraphimtech"
-    },
-    "priv": "PUBLIC_TO_EVERYONE",
-    "id": "v_inbox_file~v2.7695044408022140936",
-    "feito": "rascunho"
-   },
-   "msg_id": 601,
-   "ig_id": "18108458750630107",
-   "publicado_em": "2026-10-10T14:25:08.686156+00:00"
-  },
-  "2026-10-10_1500_cliente-que-nao-volta": {
-   "status": "cancelado",
-   "enviado_em": "2026-10-10T14:19:56.770223+00:00",
-   "tiktok": {
-    "opcoes": [
-     "PUBLIC_TO_EVERYONE",
-     "MUTUAL_FOLLOW_FRIENDS",
-     "SELF_ONLY"
-    ],
-    "info": {
-     "creator_nickname": "Seraphim 🪽",
-     "creator_username": "seraphimtech"
-    },
-    "priv": "PUBLIC_TO_EVERYONE"
-   },
-   "msg_id": 603
-  },
-  "2026-10-10_1800_5-comandos-chatgpt": {
-   "status": "cancelado",
-   "enviado_em": "2026-10-10T14:19:58.314354+00:00",
-   "msg_id": 611
-  },
-  "2026-10-10_1900_pecas-urgentes-oficina": {
-   "status": "cancelado",
-   "enviado_em": "2026-10-10T14:20:01.785627+00:00",
-   "tiktok": {
-    "opcoes": [
-     "PUBLIC_TO_EVERYONE",
-     "MUTUAL_FOLLOW_FRIENDS",
-     "SELF_ONLY"
-    ],
-    "info": {
-     "creator_nickname": "Seraphim 🪽",
-     "creator_username": "seraphimtech"
-    },
-    "priv": "PUBLIC_TO_EVERYONE"
-   },
-   "msg_id": 613
-  },
-  "2026-10-11_0800_vale-a-pena-ia-paga": {
-   "status": "cancelado",
-   "enviado_em": "2026-10-10T14:20:06.647545+00:00",
-   "tiktok": {
-    "opcoes": [
-     "PUBLIC_TO_EVERYONE",
-     "MUTUAL_FOLLOW_FRIENDS",
-     "SELF_ONLY"
-    ],
-    "info": {
-     "creator_nickname": "Seraphim 🪽",
-     "creator_username": "seraphimtech"
-    },
-    "priv": "PUBLIC_TO_EVERYONE"
-   },
-   "msg_id": 615
-  },
-  "2026-10-11_1200_cadeira-vazia-agendamento": {
-   "status": "cancelado",
-   "enviado_em": "2026-10-10T14:20:10.896171+00:00",
-   "tiktok": {
-    "opcoes": [
-     "PUBLIC_TO_EVERYONE",
-     "MUTUAL_FOLLOW_FRIENDS",
-     "SELF_ONLY"
-    ],
-    "info": {
-     "creator_nickname": "Seraphim 🪽",
-     "creator_username": "seraphimtech"
-    },
-    "priv": "PUBLIC_TO_EVERYONE"
-   },
-   "msg_id": 617
-  },
-  "2026-10-14_0800_ia-cameras-inteligentes": {
-   "status": "publicado",
-   "enviado_em": "2026-10-13T22:13:08.164796+00:00",
-   "tiktok": {
-    "via": "buffer",
-    "id": "6acf62a9be984f4200f4114b",
-    "feito": "buffer"
-   },
-   "msg_id": 649,
-   "ig_id": null,
-   "publicado_em": "2026-10-14T11:08:24.891725+00:00",
-   "ig_manual": true
-  },
-  "2026-10-14_1200_mito-ia-humano": {
-   "status": "publicado",
-   "enviado_em": "2026-10-13T22:13:11.158112+00:00",
-   "tiktok": {
-    "via": "buffer",
-    "id": "6acf98fc38098deaf9e5c23e",
-    "feito": "buffer"
-   },
-   "msg_id": 651,
-   "ig_id": null,
-   "publicado_em": "2026-10-14T15:00:05.198886+00:00",
-   "ig_manual": true
-  },
-  "2026-10-14_1800_ferramentas-gestao-equipe": {
-   "status": "publicado",
-   "enviado_em": "2026-10-13T22:13:12.172443+00:00",
-   "msg_id": 659,
-   "ig_id": null,
-   "publicado_em": "2026-10-14T21:00:09.002106+00:00",
-   "ig_manual": true
-  },
-  "2026-10-14_1900_dor-historico-cliente": {
-   "status": "publicado",
-   "enviado_em": "2026-10-13T22:13:15.052634+00:00",
-   "tiktok": {
-    "via": "buffer",
-    "id": "6acffb6efd7b73f9b828119a",
-    "feito": "buffer"
-   },
-   "msg_id": 661,
-   "ig_id": null,
-   "publicado_em": "2026-10-14T22:00:09.967497+00:00",
-   "ig_manual": true
-  },
-  "2026-10-15_0800_cameras-com-cerebro": {
-   "status": "publicado",
-   "enviado_em": "2026-10-14T15:28:12.460649+00:00",
-   "tiktok": {
-    "via": "buffer",
-    "id": "6ad0b2458e44c0222ce2cfbf",
-    "feito": "buffer"
-   },
-   "msg_id": 673,
-   "ig_id": null,
-   "publicado_em": "2026-10-15T11:00:18.396490+00:00",
-   "ig_manual": true
-  },
-  "2026-10-15_1200_software-burro-vs-ia": {
-   "status": "publicado",
-   "enviado_em": "2026-10-14T15:28:16.977005+00:00",
-   "tiktok": {
-    "via": "buffer",
-    "id": "6ad0ea7c4ed96805c7c14b56",
-    "feito": "buffer"
-   },
-   "msg_id": 675,
-   "ig_id": null,
-   "publicado_em": "2026-10-15T15:00:04.476726+00:00",
-   "ig_manual": true
-  },
-  "2026-10-15_1900_ia-nao-e-google": {
-   "status": "publicado",
-   "enviado_em": "2026-10-14T20:00:06.867843+00:00",
-   "tiktok": {
-    "via": "buffer",
-    "id": "6ad14ced4ed7d375a43278c5",
-    "feito": "buffer"
-   },
-   "msg_id": 677,
-   "ig_id": null,
-   "publicado_em": "2026-10-15T22:00:10.693655+00:00",
-   "ig_manual": true
-  },
-  "2026-10-16_1800_4-rotinas-para-eliminar-retrabalho": {
-   "status": "publicado",
-   "enviado_em": "2026-10-15T19:00:18.200608+00:00",
-   "msg_id": 725,
-   "ig_id": "18100566569536967",
-   "publicado_em": "2026-10-16T21:01:07.778042+00:00",
-   "ig_manual": false
-  },
-  "2026-10-16_1900_patio-travado-oficina-mecanica": {
-   "status": "publicado",
-   "enviado_em": "2026-10-15T20:00:19.819674+00:00",
-   "tiktok": {
-    "via": "buffer",
-    "id": "6ad29ea652adf2bfae636447",
-    "feito": "buffer"
-   },
-   "msg_id": 727,
-   "ig_id": "18114110519172881",
-   "publicado_em": "2026-10-16T22:01:09.153982+00:00",
-   "ig_manual": false
-  },
-  "2026-10-15_1800_4-automacoes-escritorio": {
-   "status": "publicado",
-   "enviado_em": "2026-10-15T20:05:00.159637+00:00",
-   "msg_id": 736,
-   "ig_id": null,
-   "publicado_em": "2026-10-15T21:00:18.049595+00:00",
-   "ig_manual": true
-  },
-  "2026-10-16_0800_compras-duplicadas-ralo-invisivel": {
-   "status": "publicado",
-   "enviado_em": "2026-10-15T20:05:03.905866+00:00",
-   "tiktok": {
-    "via": "buffer",
-    "id": "6ad203b3b948bf9e9d8ee120",
-    "feito": "buffer"
-   },
-   "msg_id": 738,
-   "ig_id": null,
-   "publicado_em": "2026-10-16T11:00:01.149067+00:00",
-   "ig_manual": true
-  },
-  "2026-10-16_1200_ia-que-usa-computador-sozinha": {
-   "status": "publicado",
-   "enviado_em": "2026-10-15T20:05:06.817971+00:00",
-   "tiktok": {
-    "via": "buffer",
-    "id": "6ad23c187521b87606150cb7",
-    "feito": "buffer"
-   },
-   "msg_id": 740,
-   "ig_id": "18236962966319873",
-   "publicado_em": "2026-10-16T15:00:39.517501+00:00",
-   "ig_manual": false
-  },
-  "2026-10-17_0800_ia-traduz-sua-voz-tempo-real": {
-   "status": "publicado",
-   "enviado_em": "2026-10-16T13:52:35.654755+00:00",
-   "tiktok": {
-    "via": "buffer",
-    "id": "6ad35558938409f1d080e5a7",
-    "feito": "buffer"
-   },
-   "msg_id": 764,
-   "ig_id": "17982823109904650",
-   "publicado_em": "2026-10-17T11:00:39.514178+00:00",
-   "ig_manual": false
-  },
-  "2026-10-17_1200_como-organizar-caixa-de-entrada-ia": {
-   "status": "publicado",
-   "enviado_em": "2026-10-16T13:52:38.352121+00:00",
-   "tiktok": {
-    "via": "buffer",
-    "erro": "Buffer recusou: Invalid post: Video thumbnailUrl is not supported: social networks do not accept custom video thumbnail images, so this value is never sent to the network. Remove thumbnailUrl from the video asset. To pick the video thumbnail, set metadata.thumbnailOffset on the video (offset into th"
-   },
-   "msg_id": 766,
-   "ig_id": "18124665034925640",
-   "publicado_em": "2026-10-17T15:01:06.826799+00:00",
-   "ig_manual": false
-  },
-  "2026-10-17_1800_5-coisas-para-ia-analisar-hoje": {
-   "status": "agendado",
-   "enviado_em": "2026-10-16T19:00:25.453612+00:00",
-   "msg_id": 778
-  },
-  "2026-10-17_1900_perigo-senhas-bloco-de-notas": {
-   "status": "agendado",
-   "enviado_em": "2026-10-16T20:00:48.965621+00:00",
-   "tiktok": {
-    "via": "buffer"
-   },
-   "msg_id": 780
-  },
-  "2026-10-18_0800_o-sumico-dos-comprovantes": {
-   "status": "agendado",
-   "enviado_em": "2026-10-17T09:00:06.852820+00:00",
-   "tiktok": {
-    "via": "buffer"
-   },
-   "msg_id": 786
-  },
-  "2026-10-18_1200_usinas-nucleares-e-ia": {
-   "status": "agendado",
-   "enviado_em": "2026-10-17T13:00:05.694865+00:00",
-   "tiktok": {
-    "via": "buffer"
-   },
-   "msg_id": 790
-  },
-  "2026-10-18_0930_passagem-de-bastao-venda-entrega": {
-   "status": "aguardando",
-   "enviado_em": "2026-10-17T13:44:55.912110+00:00",
-   "msg_id": 799
-  },
-  "2026-10-18_1400_teste-dobro-de-clientes": {
-   "status": "aguardando",
-   "enviado_em": "2026-10-17T15:00:14.545648+00:00",
-   "tiktok": {
-    "via": "buffer"
-   },
-   "msg_id": 808
-  },
-  "2026-10-19_0900_o-que-e-a-seraphim": {
-   "status": "agendado",
-   "enviado_em": "2026-10-18T10:00:15.711717+00:00",
-   "tiktok": {
-    "via": "buffer"
-   },
-   "msg_id": 817
-  },
-  "2026-10-19_1230_v1-prazer-seraphim": {
-   "status": "agendado",
-   "enviado_em": "2026-10-18T13:30:27.503402+00:00",
-   "tiktok": {
-    "via": "buffer"
-   },
-   "msg_id": 819
-  },
-  "2026-10-19_1730_nosso-manifesto": {
-   "status": "agendado",
-   "enviado_em": "2026-10-18T18:30:22.606915+00:00",
-   "tiktok": {
-    "via": "buffer"
-   },
-   "msg_id": 827
-  }
- },
- "respondidos": {}
+  "respondidos": {}
 }
