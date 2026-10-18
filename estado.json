@@ -387,6 +387,14 @@
         "via": "buffer"
       },
       "msg_id": 819
+    },
+    "2026-10-19_1730_nosso-manifesto": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-18T18:30:22.606915+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 827
     }
   },
   "respondidos": {}
