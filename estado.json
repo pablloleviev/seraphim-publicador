@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630265,
+  "telegram_offset": 183630266,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -389,12 +389,20 @@
       "msg_id": 819
     },
     "2026-10-19_1730_nosso-manifesto": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-18T18:30:22.606915+00:00",
       "tiktok": {
         "via": "buffer"
       },
       "msg_id": 827
+    },
+    "2026-10-19_1930_tres-coisas-em-que-acreditamos": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-18T20:30:15.050400+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 829
     }
   },
   "respondidos": {}
