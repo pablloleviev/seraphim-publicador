@@ -190,7 +190,7 @@ EXEMPLO_VIDEO = {
 CATALOGO_CENAS = """MOTOR "ESTILO" (direção criativa aprovada: preto + dourado, vidro 3D, objetos 3D dourados, fumaça, desfoque, cinema).
 Cada vídeo tem PERSONALIDADE própria e composição própria — identidade fixa, execução sempre diferente.
 Campos do vídeo: "personalidade": impacto | dinamico | elegante | minimal | emocional (escolha pelo assunto e emoção);
-"estilo_legenda": karaoke | palavra | sutil | nenhuma; "tarja": true/false (tarjas de cinema, combina com elegante/emocional);
+"estilo_legenda": karaoke | palavra | sutil | nenhuma; 
 "paleta": """ + " | ".join(json.loads((RAIZ / "estilos" / "paletas.json").read_text(encoding="utf-8"))) + """ (cor escolhida pela mensagem; varie no dia e na semana — o dourado não precisa estar em tudo).
 Tipos de cena (5 a 9 cenas; NUNCA o mesmo tipo duas vezes seguidas; cada cena 1 ideia, 1 a 4 s de fala; "titulo" usa *destaque* dourado):
 - capa: pessoa (Pabllo) com blocos de vidro 3D flutuando. "linha" (frase curta em caixa alta), "titulo" (manchete; <br> quebra linha), "icones": 3 nomes de ícone.
@@ -535,7 +535,7 @@ def main():
             fmt = proximo_formato(hist, evitar=formatos_do_dia, semente=f"{dia}{hora}")
             formatos_do_dia.append(fmt)
             spec = {"nome": nome, "arroba": ARROBA, "quando": f"{dia} {hora}", "cenas": v["cenas"], "motor": "estilo",
-                    "personalidade": v["personalidade"], "estilo_legenda": v["estilo_legenda"], "tarja": bool(v.get("tarja")), "paleta": v.get("paleta", "ouro"),
+                    "personalidade": v["personalidade"], "estilo_legenda": v["estilo_legenda"], "paleta": v.get("paleta", "ouro"),
                     "formato": fmt, "titulo": v.get("titulo", nome), "numero": criados + 1,
                     "funil": v["funil"], "genero_voz": "masculina" if criados % 3 else "feminina",
                     "legenda": (v.get("legenda", "").strip() + "\n\n" + tags(v)),

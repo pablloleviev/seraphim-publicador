@@ -380,7 +380,7 @@ export const Estilo: React.FC<PropsE> = (props) => {
       <Legenda palavras={props.palavras} claro={ehClaro} estilo={props.legenda} ocultar={ocultas.map((c) => [c.inicio, c.fim] as [number, number])} />
       <div style={{position: 'absolute', left: 70, top: 110, fontFamily: 'Man8', fontSize: 30, lineHeight: 0.95, color: BRANCO, mixBlendMode: 'difference'}}>SERA<br />PHIM</div>
       <Grao o={P(props.personalidade).grao} />
-      {props.tarja && <><div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 150, background: '#000'}} /><div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 150, background: '#000'}} /></>}
+      {false && props.tarja && <><div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 150, background: '#000'}} /><div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 150, background: '#000'}} /></>}
       {props.audio && <Audio src={staticFile(props.audio)} />}
       {props.batida && <Audio src={staticFile(props.batida)} volume={props.trilha_mix ? 1 : 0.14} />}
     </AbsoluteFill>
