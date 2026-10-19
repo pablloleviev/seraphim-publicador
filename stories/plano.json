@@ -1,0 +1,268 @@
+{
+ "_nota": "Stories 19–25/10. Interativos (enquete/perguntas/quiz) dependem de adesivo colocado no app; o resto pode sair pela API após aprovação.",
+ "stories": [
+  {
+   "dia": "2026-10-19",
+   "hora": "11:30",
+   "id": "1-enquete",
+   "tipo": "enquete_dupla",
+   "paleta": "ouro",
+   "rotulo": "PERGUNTA DO DIA",
+   "pergunta": "Tecnologia na sua empresa: o que vem *primeiro?*",
+   "opcoes": [
+    "Automatizar processos",
+    "Organizar a gestão"
+   ],
+   "icones": [
+    "zap",
+    "layers"
+   ],
+   "interativo": {
+    "adesivo": "enquete",
+    "pergunta": "O que vem primeiro?",
+    "opcoes": [
+     "Automatizar processos",
+     "Organizar a gestão"
+    ]
+   },
+   "objetivo": "descoberta: saber o que o público valoriza"
+  },
+  {
+   "dia": "2026-10-19",
+   "hora": "13:15",
+   "id": "2-nova-fase",
+   "tipo": "post_no_feed",
+   "paleta": "ouro",
+   "rotulo": "UMA NOVA FASE",
+   "titulo": "Tecnologia pra resolver *problema real.*",
+   "texto": "Começou hoje: no feed, a gente mostra **quem somos** e **como pensamos**.",
+   "capa_post": "fila/2026-10-19_0900_o-que-e-a-seraphim/slide-01.jpg",
+   "cta": "Tá no nosso perfil. Conta nos comentários o que achou.",
+   "interativo": {
+    "adesivo": "post do feed (opcional)",
+    "como": "compartilhar o post 'O que é a Seraphim' sobre a arte, no espaço marcado"
+   },
+   "objetivo": "relacionamento: levar ao primeiro post e gerar comentário"
+  },
+  {
+   "dia": "2026-10-20",
+   "hora": "10:00",
+   "id": "1-onde-mora",
+   "tipo": "enquete_dupla",
+   "paleta": "rubi",
+   "rotulo": "SINAL Nº 1",
+   "pergunta": "Na sua empresa, a informação *mora onde?*",
+   "opcoes": [
+    "Num sistema",
+    "Planilha + WhatsApp"
+   ],
+   "icones": [
+    "database",
+    "message-circle"
+   ],
+   "interativo": {
+    "adesivo": "enquete",
+    "pergunta": "Onde mora a informação?",
+    "opcoes": [
+     "Num sistema",
+     "Planilha + WhatsApp"
+    ]
+   },
+   "objetivo": "identificar dificuldades (liga com o carrossel 5 sinais)"
+  },
+  {
+   "dia": "2026-10-20",
+   "hora": "13:30",
+   "id": "2-tarefa-repetida",
+   "tipo": "caixa_pergunta",
+   "paleta": "cobre",
+   "rotulo": "CUSTO INVISÍVEL",
+   "pergunta": "Qual tarefa se repete *todo santo dia* aí?",
+   "interativo": {
+    "adesivo": "caixa de perguntas",
+    "texto": "Conta pra gente 👇"
+   },
+   "objetivo": "coletar dores reais (viram pauta e oportunidade)"
+  },
+  {
+   "dia": "2026-10-21",
+   "hora": "10:00",
+   "id": "1-uma-tarefa",
+   "tipo": "responda",
+   "paleta": "esmeralda",
+   "rotulo": "SE VOCÊ PUDESSE…",
+   "titulo": "Tirar *uma* tarefa do seu time amanhã. Qual seria?",
+   "texto": "A gente lê todas as respostas — e responde.",
+   "cta": "Responde esse story",
+   "interativo": {
+    "adesivo": "nenhum (resposta nativa)"
+   },
+   "objetivo": "descobrir interesse comercial por conversa no direct"
+  },
+  {
+   "dia": "2026-10-21",
+   "hora": "20:15",
+   "id": "2-pronto-ou-medida",
+   "tipo": "enquete_dupla",
+   "paleta": "prata",
+   "rotulo": "DEPOIS DO REELS DE HOJE",
+   "pergunta": "Pra sua empresa hoje, o que *serve melhor?*",
+   "opcoes": [
+    "Software pronto",
+    "Sob medida"
+   ],
+   "icones": [
+    "package",
+    "pen-tool"
+   ],
+   "interativo": {
+    "adesivo": "enquete",
+    "pergunta": "O que serve melhor?",
+    "opcoes": [
+     "Software pronto",
+     "Sob medida"
+    ]
+   },
+   "objetivo": "segmentar quem tem perfil de projeto sob medida"
+  },
+  {
+   "dia": "2026-10-22",
+   "hora": "10:00",
+   "id": "1-quiz-webhook",
+   "tipo": "quiz",
+   "paleta": "gelo",
+   "pergunta": "*Webhook* é…",
+   "interativo": {
+    "adesivo": "quiz",
+    "pergunta": "Webhook é…",
+    "opcoes": [
+     "Um aviso automático quando algo acontece ✅",
+     "Um tipo de planilha",
+     "Um vírus de computador"
+    ]
+   },
+   "objetivo": "educação + prévia do glossário das 17h30"
+  },
+  {
+   "dia": "2026-10-22",
+   "hora": "20:15",
+   "id": "2-segunda",
+   "tipo": "post_no_feed",
+   "paleta": "ouro",
+   "rotulo": "NO REELS DE HOJE",
+   "titulo": "Qual você tiraria *primeiro* das mãos do time?",
+   "texto": "Relatório, confirmação, cobrança ou agenda.",
+   "capa_post": "fila/2026-10-22_1930_segunda-no-automatico/capa.jpg",
+   "cta": "Comenta no Reels: a gente responde um por um.",
+   "interativo": {
+    "adesivo": "post do feed (opcional)",
+    "como": "compartilhar o Reels 'Segunda no automático'"
+   },
+   "objetivo": "levar comentários para o Reels"
+  },
+  {
+   "dia": "2026-10-23",
+   "hora": "13:30",
+   "id": "1-pergunte",
+   "tipo": "caixa_pergunta",
+   "paleta": "cobre",
+   "rotulo": "ABRIMOS A CAIXA",
+   "pergunta": "Quer tirar uma ideia do papel? *Pergunta pra gente.*",
+   "interativo": {
+    "adesivo": "caixa de perguntas",
+    "texto": "Sua dúvida sobre sistemas 👇"
+   },
+   "objetivo": "perguntas e relacionamento (respostas viram stories)"
+  },
+  {
+   "dia": "2026-10-23",
+   "hora": "20:15",
+   "id": "2-cinco-perguntas",
+   "tipo": "responda",
+   "paleta": "rubi",
+   "rotulo": "DEPOIS DO REELS DE HOJE",
+   "titulo": "Qual das 5 perguntas você *não saberia* responder?",
+   "texto": "Responde com o número. A gente te ajuda a pensar nela.",
+   "cta": "Responde com o número",
+   "interativo": {
+    "adesivo": "nenhum (resposta nativa)"
+   },
+   "objetivo": "conversa 1 a 1 com quem está pensando em projeto"
+  },
+  {
+   "dia": "2026-10-24",
+   "hora": "11:00",
+   "id": "1-oficina",
+   "tipo": "enquete_dupla",
+   "paleta": "cobre",
+   "rotulo": "PERGUNTA RÁPIDA",
+   "pergunta": "Você tem ou trabalha em uma *oficina mecânica?*",
+   "opcoes": [
+    "Sim, oficina",
+    "Outro ramo"
+   ],
+   "icones": [
+    "wrench",
+    "store"
+   ],
+   "interativo": {
+    "adesivo": "enquete",
+    "pergunta": "Você tem/trabalha em oficina?",
+    "opcoes": [
+     "Sim, oficina",
+     "Outro ramo"
+    ]
+   },
+   "objetivo": "identificar pessoas ligadas a oficinas (SEM mostrar o AutoFlow)",
+   "pendente": "AutoFlow: só após sua aprovação"
+  },
+  {
+   "dia": "2026-10-24",
+   "hora": "19:00",
+   "id": "2-dor-oficina",
+   "tipo": "caixa_pergunta",
+   "paleta": "ouro",
+   "rotulo": "PRA QUEM É DE OFICINA",
+   "pergunta": "Qual a *maior dor* da sua oficina hoje?",
+   "foto": "SERA_PENSANDO",
+   "interativo": {
+    "adesivo": "caixa de perguntas",
+    "texto": "Conta sem filtro 👇"
+   },
+   "objetivo": "mapear dores de oficinas",
+   "pendente": "AutoFlow: só após sua aprovação"
+  },
+  {
+   "dia": "2026-10-25",
+   "hora": "11:00",
+   "id": "1-conversa",
+   "tipo": "responda",
+   "paleta": "violeta",
+   "rotulo": "FIM DA PRIMEIRA SEMANA",
+   "titulo": "Tem um trabalho que *ninguém deveria* fazer aí?",
+   "texto": "Responde com uma palavra. A conversa começa com caneta.",
+   "cta": "Responde esse story",
+   "interativo": {
+    "adesivo": "nenhum (resposta nativa)"
+   },
+   "objetivo": "iniciar conversas com interessados"
+  },
+  {
+   "dia": "2026-10-25",
+   "hora": "18:30",
+   "id": "2-construir",
+   "tipo": "post_no_feed",
+   "paleta": "violeta",
+   "rotulo": "NO FEED AGORA",
+   "titulo": "5 coisas que dá pra *construir* pra você.",
+   "texto": "Qual delas resolveria sua semana?",
+   "capa_post": "fila/2026-10-25_1730_o-que-podemos-construir/slide-01.jpg",
+   "cta": "Comenta o número no post.",
+   "interativo": {
+    "adesivo": "post do feed (opcional)",
+    "como": "compartilhar o carrossel 'O que podemos construir'"
+   },
+   "objetivo": "levar ao carrossel e gerar comentário/direct"
+  }
+ ]
+}
