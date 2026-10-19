@@ -398,12 +398,17 @@
       "ig_manual": false
     },
     "2026-10-19_1730_nosso-manifesto": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-18T18:30:22.606915+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad67e13651afa7ffa10c3a6",
+        "feito": "buffer"
       },
-      "msg_id": 827
+      "msg_id": 827,
+      "ig_id": "18118430734986931",
+      "publicado_em": "2026-10-19T20:31:14.350922+00:00",
+      "ig_manual": false
     },
     "2026-10-20_1230_custo-invisivel-trabalho-repetido": {
       "status": "agendado",
@@ -436,6 +441,14 @@
         "via": "buffer"
       },
       "msg_id": 897
+    },
+    "2026-10-20_1930_planilha-nao-e-sistema": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-19T20:30:29.155645+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 899
     }
   },
   "respondidos": {},
