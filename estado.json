@@ -429,7 +429,8 @@
   "stories": {
     "2026-10-19_1-enquete": {
       "status": "aprovado",
-      "msg_id": 869
+      "msg_id": 869,
+      "lembrado": true
     },
     "2026-10-19_2-nova-fase": {
       "status": "aprovado",
