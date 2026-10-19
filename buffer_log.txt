@@ -1,1 +1,106 @@
-rascunho de vídeo: 6ad3b862e272c4918f97d6d1
+{
+ "posts": {
+  "edges": [
+   {
+    "node": {
+     "id": "6ad6066e7a42a610a510630b",
+     "status": "sent",
+     "text": "Prazer. Em poucas páginas, quem somos e o que fazemos. Salva pra lembrar de nós quando a sua empresa precisar.\n\n#tecnologia #sistemas #automacao #empresas #seraphimbr",
+     "dueAt": "2026-10-19T12:00:47.022Z",
+     "sentAt": "2026-10-19T12:05:23.201Z",
+     "error": null
+    }
+   },
+   {
+    "node": {
+     "id": "6ad3b862e272c4918f97d6d1",
+     "status": "draft",
+     "text": "teste (rascunho, não publicar)",
+     "dueAt": null,
+     "sentAt": null,
+     "error": null
+    }
+   },
+   {
+    "node": {
+     "id": "6ad371ba0b0d72757ad9b139",
+     "status": "draft",
+     "text": "teste (rascunho, não publicar)",
+     "dueAt": null,
+     "sentAt": null,
+     "error": null
+    }
+   },
+   {
+    "node": {
+     "id": "6ad35558938409f1d080e5a7",
+     "status": "sent",
+     "text": "A IA agora traduz sua voz mantendo seu tom e lábios em tempo real! 🤯 Segue a @seraphimbr_ para acompanhar.\n\n#inteligenciaartificial #tecnologia #curiosidades #inovacao #produtividade #seraphimbr",
+     "dueAt": "2026-10-17T11:00:40.658Z",
+     "sentAt": "2026-10-17T11:01:56.642Z",
+     "error": null
+    }
+   },
+   {
+    "node": {
+     "id": "6ad29ea652adf2bfae636447",
+     "status": "sent",
+     "text": "Pátio lotado não precisa ser sinônimo de dor de cabeça na oficina mecânica. Conheça o AutoFlow no link da bio!\n\n#oficinamecanica #mecanicaautomotiva #gestaodeoficina #mecanicos #automotivo #seraphimbr",
+     "dueAt": "2026-10-16T22:01:10.314Z",
+     "sentAt": "2026-10-16T22:01:59.336Z",
+     "error": null
+    }
+   },
+   {
+    "node": {
+     "id": "6ad23c187521b87606150cb7",
+     "status": "sent",
+     "text": "A IA agora clica no mouse e digita no teclado por você. Olha como isso muda qualquer trabalho!\n\n#inteligenciaartificial #tecnologia #inovacao #ia #futurodotrabalho #seraphimbr",
+     "dueAt": "2026-10-16T15:00:40.548Z",
+     "sentAt": "2026-10-16T15:02:50.725Z",
+     "error": null
+    }
+   },
+   {
+    "node": {
+     "id": "6ad203b3b948bf9e9d8ee120",
+     "status": "sent",
+     "text": "O ralo invisível da sua empresa que leva dinheiro embora todo mês sem você notar. Comenta COMPRAS!\n\n#gestaofinanceira #estoque #pequenasempresas #organizacaoempresarial #gestaoempresarial #seraphimbr",
+     "dueAt": "2026-10-16T11:00:03.097Z",
+     "sentAt": "2026-10-16T11:01:27.540Z",
+     "error": null
+    }
+   },
+   {
+    "node": {
+     "id": "6ad14ced4ed7d375a43278c5",
+     "status": "sent",
+     "text": "O erro que faz você odiar a IA 🤖 Pare de usar como o Google!\n\n#seraphimbr #chatgpt #ia #produtividade #dicasdeia",
+     "dueAt": "2026-10-15T22:00:13.620Z",
+     "sentAt": "2026-10-15T22:01:04.218Z",
+     "error": null
+    }
+   },
+   {
+    "node": {
+     "id": "6ad0ea7c4ed96805c7c14b56",
+     "status": "sent",
+     "text": "Software antigo vs IA: quem ganha na sua empresa? 🦾\n\n#seraphimbr #automacao #gestaoempresarial #sistemas #inteligenciaartificial",
+     "dueAt": "2026-10-15T15:00:12.902Z",
+     "sentAt": "2026-10-15T15:02:07.509Z",
+     "error": null
+    }
+   },
+   {
+    "node": {
+     "id": "6ad0b2458e44c0222ce2cfbf",
+     "status": "sent",
+     "text": "Sua câmera agora pensa! 📸 Inteligência Artificial na segurança do seu negócio.\n\n#seraphimbr #inteligenciaartificial #visaocomputacional #tecnologia #segurancadigital",
+     "dueAt": "2026-10-15T11:00:21.406Z",
+     "sentAt": "2026-10-15T11:02:33.987Z",
+     "error": null
+    }
+   }
+  ]
+ }
+}
