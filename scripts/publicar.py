@@ -156,8 +156,25 @@ def esperar_container(cid, limite=300):
     raise RuntimeError("Instagram demorou demais para processar a mídia")
 
 
+def ja_no_instagram(legenda: str):
+    """trava contra post duplicado: procura a mesma legenda nos últimos posts da conta"""
+    try:
+        alvo = legenda.strip()[:120]
+        r = http(f"{GRAPH}/{IG_USER}/media?fields=id,caption,timestamp&limit=15&access_token={IG_TOKEN}")
+        for m in r.get("data", []):
+            if alvo and (m.get("caption") or "").strip()[:120] == alvo:
+                return m["id"]
+    except Exception as e:
+        print(f"[aviso] checagem de duplicado: {e}")
+    return None
+
+
 def publicar_instagram(pasta: Path, meta: dict) -> str:
     legenda = meta.get("legenda", "")
+    ja = ja_no_instagram(legenda)
+    if ja:
+        print(f"[duplicado evitado] {pasta.name} já está no Instagram ({ja})")
+        return ja
     if meta["tipo"] == "reels":
         extra = {"cover_url": url_publica(pasta / "capa.jpg")} if (pasta / "capa.jpg").exists() else {}
         c = ig(f"{IG_USER}/media", media_type="REELS", video_url=url_publica(pasta / "video.mp4"),
