@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630273,
+  "telegram_offset": 183630274,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -428,6 +428,14 @@
         "via": "buffer"
       },
       "msg_id": 885
+    },
+    "2026-10-20_1730_por-que-a-seraphim-existe": {
+      "status": "agendado",
+      "enviado_em": "2026-10-19T18:30:17.337666+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 897
     }
   },
   "respondidos": {},
