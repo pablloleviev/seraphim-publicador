@@ -535,6 +535,13 @@ def main():
         import subprocess   # garante o estado mais recente antes de mandar qualquer coisa (evita reenviar posts)
         subprocess.run("git pull -q --rebase --autostash", shell=True, cwd=RAIZ)
     estado = carregar_estado()
+    # pedidos de reenvio (peça refeita depois de ir para aprovação): apaga do estado para mandar a versão nova
+    rq = RAIZ / "reenviar.json"
+    if rq.exists():
+        for n in json.loads(rq.read_text(encoding="utf-8")):
+            if estado["itens"].get(n, {}).get("status") in ("aguardando", "agendado", "falhou_envio"):
+                estado["itens"].pop(n, None); print(f"[reenvio] {n}")
+        rq.unlink()
     eu = tg("getMe")["result"]
     print(f"Bot conectado: @{eu.get('username')}")
     if not CHAT:
