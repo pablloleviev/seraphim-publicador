@@ -373,12 +373,16 @@
       "msg_id": 808
     },
     "2026-10-19_0900_o-que-e-a-seraphim": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-18T10:00:15.711717+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "feito": "provavel (rodada anterior)"
       },
-      "msg_id": 817
+      "msg_id": 817,
+      "ig_id": "18111140717190514",
+      "publicado_em": "2026-10-19T12:14:29.699447+00:00",
+      "duplicado_evitado": true
     },
     "2026-10-19_1230_v1-prazer-seraphim": {
       "status": "agendado",
@@ -403,6 +407,14 @@
         "via": "buffer"
       },
       "msg_id": 831
+    },
+    "2026-10-20_0900_5-sinais-passou-das-ferramentas": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-19T12:14:28.670952+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 865
     }
   },
   "respondidos": {}
