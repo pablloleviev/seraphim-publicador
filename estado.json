@@ -385,12 +385,17 @@
       "duplicado_evitado": true
     },
     "2026-10-19_1230_v1-prazer-seraphim": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-18T13:30:27.503402+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad6379f052a3a25666a2c18",
+        "feito": "buffer"
       },
-      "msg_id": 819
+      "msg_id": 819,
+      "ig_id": "18642768544015680",
+      "publicado_em": "2026-10-19T15:30:38.535666+00:00",
+      "ig_manual": false
     },
     "2026-10-19_1730_nosso-manifesto": {
       "status": "agendado",
