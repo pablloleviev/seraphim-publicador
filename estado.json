@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630274,
+  "telegram_offset": 183630276,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -448,7 +448,7 @@
       "msg_id": 897
     },
     "2026-10-20_1930_planilha-nao-e-sistema": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-19T20:30:29.155645+00:00",
       "tiktok": {
         "via": "buffer"
@@ -468,6 +468,10 @@
       "msg_id": 871,
       "ig_id": "17987324007080634",
       "publicado_em": "2026-10-19T16:15:07.138965+00:00"
+    },
+    "2026-10-20_1-onde-mora": {
+      "status": "aprovado",
+      "msg_id": 906
     }
   }
 }
