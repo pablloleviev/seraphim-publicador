@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630266,
+  "telegram_offset": 183630271,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -415,7 +415,25 @@
         "via": "buffer"
       },
       "msg_id": 865
+    },
+    "2026-10-20_1230_custo-invisivel-trabalho-repetido": {
+      "status": "agendado",
+      "enviado_em": "2026-10-19T13:30:19.867465+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 875
     }
   },
-  "respondidos": {}
+  "respondidos": {},
+  "stories": {
+    "2026-10-19_1-enquete": {
+      "status": "aprovado",
+      "msg_id": 869
+    },
+    "2026-10-19_2-nova-fase": {
+      "status": "aprovado",
+      "msg_id": 871
+    }
+  }
 }
