@@ -465,6 +465,13 @@ def publicar_item(nome, item):
             meta = json.loads((pasta / "item.json").read_text(encoding="utf-8"))
             manual = instagram_manual()
             pid = None
+            dup = None if manual else ja_no_instagram(meta.get("legenda", ""))
+            if dup:   # já saiu (ex.: rodada anterior publicou e não salvou o estado): não repete nem no TikTok
+                item.update(status="publicado", ig_id=dup, publicado_em=datetime.now(timezone.utc).isoformat(), duplicado_evitado=True)
+                if tt is not None:
+                    tt["feito"] = tt.get("feito") or "provavel (rodada anterior)"
+                print(f"[duplicado evitado] {nome}")
+                return
             if not manual:
                 try:
                     pid = publicar_instagram(pasta, meta)
