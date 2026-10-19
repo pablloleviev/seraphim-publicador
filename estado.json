@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630271,
+  "telegram_offset": 183630273,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -400,22 +400,6 @@
       },
       "msg_id": 827
     },
-    "2026-10-19_1930_tres-coisas-em-que-acreditamos": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-19T01:50:15.425414+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 831
-    },
-    "2026-10-20_0900_5-sinais-passou-das-ferramentas": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-19T12:14:28.670952+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 865
-    },
     "2026-10-20_1230_custo-invisivel-trabalho-repetido": {
       "status": "agendado",
       "enviado_em": "2026-10-19T13:30:19.867465+00:00",
@@ -423,6 +407,22 @@
         "via": "buffer"
       },
       "msg_id": 875
+    },
+    "2026-10-19_1930_tres-coisas-em-que-acreditamos": {
+      "status": "agendado",
+      "enviado_em": "2026-10-19T13:46:33.632467+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 877
+    },
+    "2026-10-20_0900_5-sinais-passou-das-ferramentas": {
+      "status": "agendado",
+      "enviado_em": "2026-10-19T13:46:34.921728+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 885
     }
   },
   "respondidos": {},
