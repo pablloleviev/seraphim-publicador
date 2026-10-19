@@ -438,8 +438,10 @@
       "lembrado": true
     },
     "2026-10-19_2-nova-fase": {
-      "status": "aprovado",
-      "msg_id": 871
+      "status": "publicado",
+      "msg_id": 871,
+      "ig_id": "17987324007080634",
+      "publicado_em": "2026-10-19T16:15:07.138965+00:00"
     }
   }
 }
