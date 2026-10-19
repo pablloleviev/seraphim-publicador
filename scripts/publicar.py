@@ -397,6 +397,13 @@ def processar_respostas(estado: dict, espera: int = 0):
         if not cq or str(cq["message"]["chat"]["id"]) != str(CHAT):
             continue
         acao, nome = cq["data"].split("|", 1)
+        if acao in ("sok", "sno", "snow"):   # Stories: fluxo próprio, aprovação individual
+            try:
+                import stories_fluxo
+                stories_fluxo.tratar(acao, nome, estado, cq, tg, responder, url_publica, ig, esperar_container, IG_USER, CHAT)
+            except Exception as e:
+                print(f"[stories] erro no botão: {e}")
+            continue
         nome = de_cod(nome, estado)
         atual = estado["itens"].get(nome) or {}
         if atual.get("msg_id") and cq["message"]["message_id"] != atual["msg_id"]:
@@ -613,6 +620,12 @@ def main():
                     continue
                 if datetime.fromisoformat(meta["quando"]) <= agora:
                     publicar_item(nome, item)
+        if not instagram_manual():
+            try:   # Stories: isolado — qualquer erro aqui não afeta os posts
+                import stories_fluxo
+                stories_fluxo.ciclo(estado, CHAT, tg, url_publica, ig, esperar_container, IG_USER)
+            except Exception as e:
+                print(f"[stories] erro: {e}")
         if time.time() - ultimo_coment > 60:
             ultimo_coment = time.time()
             try:
