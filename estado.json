@@ -484,7 +484,8 @@
     },
     "2026-10-20_1-onde-mora": {
       "status": "aprovado",
-      "msg_id": 906
+      "msg_id": 906,
+      "lembrado": true
     },
     "2026-10-20_2-tarefa-repetida": {
       "status": "aprovado",
