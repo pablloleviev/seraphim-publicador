@@ -411,12 +411,17 @@
       "ig_manual": false
     },
     "2026-10-20_1230_custo-invisivel-trabalho-repetido": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-19T13:30:19.867465+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad789638cf9a879674accd1",
+        "feito": "buffer"
       },
-      "msg_id": 875
+      "msg_id": 875,
+      "ig_id": "18130646806792004",
+      "publicado_em": "2026-10-20T15:31:42.563424+00:00",
+      "ig_manual": false
     },
     "2026-10-19_1930_tres-coisas-em-que-acreditamos": {
       "status": "publicado",
