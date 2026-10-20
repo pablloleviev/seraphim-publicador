@@ -12,3 +12,12 @@ Produto da Seraphim: sistema de gestão para oficinas mecânicas (acesso pelo na
 
 ## Funcionalidades confirmadas pelo Pabllo
 (nenhuma registrada ainda)
+
+## Material oficial recebido (20/10/2026) — assets/autoflow/
+- Logo oficial: assets/autoflow/logo-oficial.jpg (hexágono branco/laranja; versões escuro, claro e ícone de app).
+- Design system: tema escuro, fonte Stack Sans, laranja #FF6A13, fundo #0E0E10, ícones Lucide (design-system-*.png).
+- Telas reais (dados fictícios "Oficina Modelo"): telas/desktop-01..11.png e telas/mobile-1..2.png
+  Painel, Ordens de serviço (quadro Pendente/Em andamento/Finalizado/Entregue), Nova OS, Clientes, Histórico por placa,
+  Financeiro, Relatórios, Equipe, Meu plano, Minha oficina, Minha conta; versão celular (Painel e Ordens).
+- NÃO usar nas peças: tela "Meu plano" (tem [PREÇO] provisório) e a faixa "Teste grátis até 31/12" até o Pabllo confirmar a oferta.
+- Funcionalidades vistas nas telas: só afirmar como disponíveis depois da confirmação do Pabllo (no ar x protótipo).
