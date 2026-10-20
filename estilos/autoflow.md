@@ -21,3 +21,13 @@ Produto da Seraphim: sistema de gestão para oficinas mecânicas (acesso pelo na
   Financeiro, Relatórios, Equipe, Meu plano, Minha oficina, Minha conta; versão celular (Painel e Ordens).
 - NÃO usar nas peças: tela "Meu plano" (tem [PREÇO] provisório) e a faixa "Teste grátis até 31/12" até o Pabllo confirmar a oferta.
 - Funcionalidades vistas nas telas: só afirmar como disponíveis depois da confirmação do Pabllo (no ar x protótipo).
+
+## Estratégia comercial inicial (atualização de 20/10/2026) — REGRAS DE COMUNICAÇÃO
+Referência: assets/autoflow/AutoFlow_Proposta_Acesso_Qualificado.pdf (modelo inicial, não permanente).
+- **Plano único** (sem Básico/Pro/Premium). Preço mensal, duração do teste e critérios de aprovação: AINDA NÃO DEFINIDOS → nunca divulgar.
+- **Teste gratuito por acesso qualificado**: solicitação (nome, WhatsApp, oficina, função) → qualificação → contato → liberação → conversão. Sem CNPJ no 1º contato.
+- CTAs permitidos: "Conheça o AutoFlow", "Sua oficina merece uma gestão mais simples", "Solicite acesso gratuito", "Teste gratuito para oficinas selecionadas", "Solicite uma demonstração".
+- PROIBIDO: "Comece agora", "Crie sua conta", "Começar teste grátis", preço, duração do teste, promoção com data (ex.: "até 31/12"), vagas/escassez, clientes/resultados inventados.
+- Telas com "Teste grátis até 31/12", "Plano Pro · em teste" ou "Meu plano": NÃO usar (recortar/neutralizar).
+- Posicionamento: tecnologia profissional · proximidade · acesso antecipado.
+- Site em produção: NÃO alterar sem aprovação específica.
