@@ -450,12 +450,17 @@
       "ig_manual": false
     },
     "2026-10-20_1730_por-que-a-seraphim-existe": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-19T18:30:17.337666+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad7cf73ed28fb758abc9352",
+        "feito": "buffer"
       },
-      "msg_id": 897
+      "msg_id": 897,
+      "ig_id": "18112358165124668",
+      "publicado_em": "2026-10-20T20:30:43.027520+00:00",
+      "ig_manual": false
     },
     "2026-10-20_1930_planilha-nao-e-sistema": {
       "status": "agendado",
@@ -488,6 +493,14 @@
         "via": "buffer"
       },
       "msg_id": 932
+    },
+    "2026-10-21_1930_pronto-ou-sob-medida": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-20T20:30:05.820540+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 934
     }
   },
   "respondidos": {},
