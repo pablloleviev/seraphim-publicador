@@ -502,7 +502,8 @@
     },
     "2026-10-20_2-tarefa-repetida": {
       "status": "aprovado",
-      "msg_id": 909
+      "msg_id": 909,
+      "lembrado": true
     }
   }
 }
