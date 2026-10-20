@@ -432,12 +432,17 @@
       "ig_manual": false
     },
     "2026-10-20_0900_5-sinais-passou-das-ferramentas": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-19T13:46:34.921728+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad757f241bc4976d5449f7c",
+        "feito": "buffer"
       },
-      "msg_id": 885
+      "msg_id": 885,
+      "ig_id": "17954999091280599",
+      "publicado_em": "2026-10-20T12:00:49.569808+00:00",
+      "ig_manual": false
     },
     "2026-10-20_1730_por-que-a-seraphim-existe": {
       "status": "agendado",
