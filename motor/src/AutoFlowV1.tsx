@@ -23,10 +23,8 @@ const Grao: React.FC = () => {
   const f = useCurrentFrame();
   return (
     <AbsoluteFill style={{pointerEvents: 'none'}}>
-      <svg width="1080" height="1920" style={{position: 'absolute', opacity: 0.09, mixBlendMode: 'overlay'}}>
-        <filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed={f % 12} /></filter>
-        <rect width="1080" height="1920" filter="url(#g)" />
-      </svg>
+      <div style={{position: 'absolute', inset: -64, backgroundImage: `url(${staticFile('af/grao.png')})`, backgroundSize: '512px 512px',
+        transform: `translate(${(random(`gx${f % 8}`) * 64) | 0}px, ${(random(`gy${f % 8}`) * 64) | 0}px)`, opacity: 0.07, mixBlendMode: 'overlay'}} />
       <AbsoluteFill style={{background: 'radial-gradient(120% 80% at 50% 45%, transparent 55%, rgba(0,0,0,.65) 100%)'}} />
     </AbsoluteFill>
   );
@@ -44,7 +42,7 @@ const Poeira: React.FC<{n?: number; cor?: string; dur: number}> = ({n = 40, cor 
         const xx = x + Math.sin((f + i * 20) / 40) * 18;
         const a = 0.15 + 0.5 * random(`a${i}`);
         return <div key={i} style={{position: 'absolute', left: xx, top: y, width: r, height: r, borderRadius: '50%',
-          background: `rgba(${cor},${a})`, filter: `blur(${r > 4 ? 2 : 0.6}px)`, opacity: lerp(f, 0, 12, 0, 1) * lerp(f, dur - 10, dur, 1, 0)}} />;
+          background: `rgba(${cor},${a})`, opacity: lerp(f, 0, 12, 0, 1) * lerp(f, dur - 10, dur, 1, 0)}} />;
       })}
     </AbsoluteFill>
   );
@@ -127,7 +125,7 @@ const Produto: React.FC = () => {
   const z = zoom * (1 - 0.32 * recua);
   return (
     <AbsoluteFill style={{background: 'radial-gradient(80% 50% at 50% 50%, #2a1508 0%, #0E0E10 62%)'}}>
-      <div style={{position: 'absolute', left: 140, top: 640, width: 800, height: 640, borderRadius: '50%', background: LAR, filter: 'blur(170px)', opacity: 0.26 + 0.1 * Math.sin(f / 30)}} />
+      <div style={{position: 'absolute', left: 140, top: 640, width: 800, height: 640, borderRadius: '50%', background: `radial-gradient(closest-side, ${LAR}, transparent)`, opacity: 0.26 + 0.1 * Math.sin(f / 30)}} />
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', perspective: 2400}}>
         <div style={{transform: `translate(${px * (1 - recua)}px, ${ty + py * (1 - recua) - 180 * recua}px) scale(${z}) rotateX(${rx}deg) rotateY(${ry + 8 * recua}deg)`,
           opacity: op * (1 - 0.45 * recua), filter: `blur(${5 * recua}px)`, transformStyle: 'preserve-3d'}}>
@@ -157,7 +155,7 @@ const Fecho: React.FC = () => {
   const brilho = lerp(f, s(0.3), s(1.6), 0, 1) * lerp(f, s(1.6), s(3), 1, 0.35);
   return (
     <AbsoluteFill style={{background: '#0E0E10', alignItems: 'center', justifyContent: 'center'}}>
-      <div style={{position: 'absolute', width: 600, height: 600, borderRadius: '50%', background: LAR, filter: 'blur(200px)', opacity: 0.35 * brilho}} />
+      <div style={{position: 'absolute', width: 600, height: 600, borderRadius: '50%', background: `radial-gradient(closest-side, ${LAR}, transparent)`, opacity: 0.35 * brilho}} />
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: op, transform: `scale(${sc})`, marginTop: -120}}>
         <Img src={staticFile('af/logo-icone.png')} style={{width: 210}} />
         <div style={{font: '800 112px/1 StackH', color: '#F4F2EC', letterSpacing: -4, marginTop: 46}}>AutoFlow</div>
