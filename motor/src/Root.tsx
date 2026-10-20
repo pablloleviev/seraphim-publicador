@@ -4,6 +4,7 @@ import {SeraphimVideo, Props} from './Video';
 import {SeraphimCortes, PropsC} from './Cortes';
 import {Relancamento, PropsR} from './Relancamento';
 import {Estilo, PropsE} from './Estilo';
+import {AutoFlowV1, PropsAF} from './AutoFlowV1';
 
 const exemplo: Props = {
   fps: 30,
@@ -21,6 +22,7 @@ const exemplo: Props = {
 
 export const Root: React.FC = () => (
   <>
+  <Composition id="AutoFlowV1" component={AutoFlowV1 as any} width={1080} height={1920} fps={30} durationInFrames={1140} defaultProps={{trilha: null} as PropsAF} />
   <Composition
     id="Cortes"
     component={SeraphimCortes as any}

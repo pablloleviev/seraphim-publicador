@@ -31,3 +31,7 @@ Referência: assets/autoflow/AutoFlow_Proposta_Acesso_Qualificado.pdf (modelo in
 - Telas com "Teste grátis até 31/12", "Plano Pro · em teste" ou "Meu plano": NÃO usar (recortar/neutralizar).
 - Posicionamento: tecnologia profissional · proximidade · acesso antecipado.
 - Site em produção: NÃO alterar sem aprovação específica.
+
+## Tipografia (pedido do Pabllo, 20/10/2026)
+- Peças do AutoFlow usam **Stack Sans** majoritariamente: Stack Sans Headline (títulos, 600/700) e Stack Sans Text (apoio, 400/500).
+  Arquivos: motor/public/fontes/stack-sans-*.woff2 (Google Fonts via @fontsource, licença OFL).
