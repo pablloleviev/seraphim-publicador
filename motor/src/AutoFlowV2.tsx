@@ -44,8 +44,9 @@ const Match: React.FC = () => {
       <Img src={staticFile('af/cena-05.png')} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
         transformOrigin: '56% 44%', transform: `scale(${lerp(f, 0, D, 1.5, 3.2, io)})`, opacity: 1 - t, filter: 'contrast(1.05) saturate(.9)'}} />
       <AbsoluteFill style={{background: '#0E0E10', opacity: t}}>
-        <Img src={staticFile('af/ordens_conteudo.png')} style={{position: 'absolute', width: 2480 * 1.1, left: -530 * 1.1 + 40, top: -150 * 1.1 + 640,
-          transformOrigin: '30% 30%', transform: `scale(${lerp(f, s(1.6), D, 1.6, 1.0, ease)})`}} />
+        <Img src={staticFile('af/ordens_conteudo.png')} style={{position: 'absolute', width: 2728, left: -492, top: 207,
+          transformOrigin: '1032px 553px', transform: `scale(${lerp(f, s(1.6), D, 1.7, 1.15, ease)})`}} />
+        <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(14,14,16,0) 55%, rgba(14,14,16,.92) 72%)'}} />
       </AbsoluteFill>
       <Legenda texto="E se cada anotação tivesse um lugar?" dur={D} top={1300} />
     </AbsoluteFill>

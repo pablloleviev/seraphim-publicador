@@ -47,8 +47,8 @@ const InsertNovaOS: React.FC = () => {
   return (
     <Estudio tom="#24170c">
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-        <div style={{width: 600, borderRadius: 28, overflow: 'hidden', boxShadow: `0 0 0 2px #2a2a30, 0 80px 140px rgba(0,0,0,.75), 0 0 120px rgba(255,106,19,${0.12 * lerp(f, 10, 40, 0, 1)})`,
-          transform: `translateY(${lerp(f, 0, s(1.2), 140, -60)}px) scale(${lerp(f, 0, s(5), 0.96, 1.06, io)})`, opacity: lerp(f, 0, 10, 0, 1)}}>
+        <div style={{width: 500, borderRadius: 26, overflow: 'hidden', boxShadow: `0 0 0 2px #2a2a30, 0 80px 140px rgba(0,0,0,.75), 0 0 120px rgba(255,106,19,${0.12 * lerp(f, 10, 40, 0, 1)})`,
+          transform: `translateY(${lerp(f, 0, s(1.2), 60, -150)}px) scale(${lerp(f, 0, s(5), 0.96, 1.04, io)})`, opacity: lerp(f, 0, 10, 0, 1)}}>
           <Img src={staticFile('af/nova_os_painel.png')} style={{width: '100%', display: 'block'}} />
         </div>
       </AbsoluteFill>
