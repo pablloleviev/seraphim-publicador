@@ -23,7 +23,7 @@ for ped in sorted((RAIZ / "voz_pedidos").glob("*.json")):
         motor = None
         if i > 1 and d.get("pausa"):
             time.sleep(d["pausa"])  # respeita o limite de requisições por minuto do Gemini
-        tentativas = d.get("tentativas", 1)
+        tentativas = 0 if d.get("motor") == "edge" else d.get("tentativas", 1)
         for t in range(tentativas):
             try:
                 pal = F.voz_gemini(linha, mp3); motor = "gemini"

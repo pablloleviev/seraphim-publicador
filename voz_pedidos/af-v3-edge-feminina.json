@@ -1,0 +1,24 @@
+{
+ "voz": "feminina",
+ "estilo": "Narre em português do Brasil como uma mulher real contando o dia de uma oficina, de perto e com intimidade: voz feminina calorosa e segura, natural, com respiração e pequenas pausas, energia que sobe ao longo do dia, sem tom de locutora de propaganda e sem exagero",
+ "linhas": [
+  "Tem dia que começa antes de você terminar o café.",
+  "O portão sobe.",
+  "O primeiro carro chega.",
+  "E o ritmo muda.",
+  "No painel, um olhar pro que está acontecendo.",
+  "Uma nova ordem. Um novo serviço.",
+  "A manhã acelera.",
+  "A tarde pede atenção.",
+  "As ordens seguem com você, no celular.",
+  "Até a hora de baixar o portão.",
+  "Na mesa. Na palma da mão.",
+  "Para acompanhar a oficina que você faz acontecer.",
+  "AutoFlow. Teste gratuito para oficinas selecionadas. Solicite acesso pelo direct."
+ ],
+ "pausa": 0,
+ "tentativas": 5,
+ "fallback": true,
+ "motor": "edge",
+ "edge_voz": "pt-BR-ThalitaMultilingualNeural"
+}
