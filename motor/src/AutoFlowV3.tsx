@@ -93,26 +93,38 @@ export type PropsAF3 = {trilha: string | null};
 export const AutoFlowV3: React.FC<PropsAF3> = ({trilha}) => (
   <AbsoluteFill style={{background: '#000'}}>
     <style>{css}</style>
-    <Sequence from={0} durationInFrames={s(5.2)}>
-      <Plano src="af/cena-09.png" dur={s(5.2)} ent={14} mov={{z0: 1.1, z1: 1.24, oy: 60, e: io}} poeira grade="contrast(1.06) saturate(.9) brightness(.96) hue-rotate(-6deg)" />
-      <Relogio hora="07:42" dur={s(5.2)} />
+    <Sequence from={0} durationInFrames={s(2.7)}>
+      <Plano src="af/n-cadeado.png" dur={s(2.7)} ent={12} mov={{z0: 1.2, z1: 1.1, ox: 70, oy: 45, e: ease}} grade="contrast(1.06) saturate(.9) brightness(.96)" />
     </Sequence>
-    <Sequence from={s(5)} durationInFrames={s(5.2)}>
-      <Plano src="af/cena-10.png" dur={s(5.2)} ent={8} mov={{z0: 1.16, z1: 1.06, x0: 30, x1: -10, e: ease}} grade="contrast(1.06) saturate(.88) brightness(.96)" />
+    <Sequence from={s(2.6)} durationInFrames={s(2.7)}>
+      <Plano src="af/cena-09.png" dur={s(2.7)} ent={4} mov={{z0: 1.1, z1: 1.22, oy: 60, e: io}} poeira grade="contrast(1.06) saturate(.9) brightness(.96)" />
     </Sequence>
+    <Sequence from={s(5.2)} durationInFrames={s(2.5)}>
+      <Plano src="af/n-luzes.png" dur={s(2.5)} ent={3} mov={{z0: 1.08, z1: 1.16, ox: 45, oy: 40, e: io}} grade="contrast(1.06) saturate(.88) brightness(.98)" />
+    </Sequence>
+    <Sequence from={s(7.6)} durationInFrames={s(2.6)}>
+      <Plano src="af/cena-10.png" dur={s(2.6)} ent={3} mov={{z0: 1.16, z1: 1.06, x0: 20, x1: -6, e: ease}} grade="contrast(1.06) saturate(.88) brightness(.96)" />
+    </Sequence>
+    <Sequence from={0} durationInFrames={s(5.2)}><Relogio hora="07:42" dur={s(5.2)} /></Sequence>
     <Sequence from={s(10)} durationInFrames={s(5)}><InsertPainel /></Sequence>
-    <Sequence from={s(15)} durationInFrames={s(5.2)}>
-      <Plano src="af/cena-11.png" dur={s(5.2)} ent={8} mov={{z0: 1.1, z1: 1.2, ox: 55, oy: 52, e: io}} />
-      <Relogio hora="09:15" dur={s(5.2)} />
+    <Sequence from={s(15)} durationInFrames={s(2.7)}>
+      <Plano src="af/n-carro-entrando.png" dur={s(2.7)} ent={6} mov={{z0: 1.12, z1: 1.2, ox: 50, oy: 55, e: io}} />
     </Sequence>
+    <Sequence from={s(17.6)} durationInFrames={s(2.6)}>
+      <Plano src="af/n-digitando.png" dur={s(2.6)} ent={3} mov={{z0: 1.06, z1: 1.14, ox: 35, oy: 40, e: io}} />
+    </Sequence>
+    <Sequence from={s(15)} durationInFrames={s(5.2)}><Relogio hora="09:15" dur={s(5.2)} /></Sequence>
     <Sequence from={s(20)} durationInFrames={s(5)}><InsertNovaOS /></Sequence>
-    <Sequence from={s(25)} durationInFrames={s(6.2)}>
-      <Plano src="af/cena-12.png" dur={s(6.2)} ent={8} mov={{z0: 1.18, z1: 1.18, x0: -50, x1: 50, e: io}} grade="contrast(1.08) saturate(1) brightness(1.02)" />
-      <Relogio hora="13:40" dur={s(6.2)} />
+    <Sequence from={s(25)} durationInFrames={s(3.1)}>
+      <Plano src="af/n-elevador.png" dur={s(3.1)} ent={6} mov={{z0: 1.2, z1: 1.08, oy: 35, e: ease}} grade="contrast(1.08) saturate(1) brightness(1.02)" />
     </Sequence>
+    <Sequence from={s(28)} durationInFrames={s(3.2)}>
+      <Plano src="af/n-celular-maos.png" dur={s(3.2)} ent={3} mov={{z0: 1.1, z1: 1.2, ox: 30, oy: 30, e: io}} grade="contrast(1.08) saturate(1) brightness(1.02)" />
+    </Sequence>
+    <Sequence from={s(25)} durationInFrames={s(6.2)}><Relogio hora="13:40" dur={s(6.2)} /></Sequence>
     <Sequence from={s(31)} durationInFrames={s(4)}><InsertCelular /></Sequence>
     <Sequence from={s(35)} durationInFrames={s(5.2)}>
-      <Plano src="af/cena-13.png" dur={s(5.2)} ent={10} sai={10} mov={{z0: 1.06, z1: 1.12, e: io}} grade="contrast(1.05) saturate(1.05) brightness(1)" />
+      <Plano src="af/n-silhueta-portao.png" dur={s(5.2)} ent={10} sai={10} mov={{z0: 1.04, z1: 1.12, e: io}} grade="contrast(1.06) saturate(1.05) brightness(1)" />
       <Relogio hora="18:20" dur={s(5.2)} />
     </Sequence>
     <Sequence from={s(40)} durationInFrames={s(5)}><Fecho /></Sequence>

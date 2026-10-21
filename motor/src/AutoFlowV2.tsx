@@ -100,21 +100,30 @@ export type PropsAF2 = {trilha: string | null};
 export const AutoFlowV2: React.FC<PropsAF2> = ({trilha}) => (
   <AbsoluteFill style={{background: '#000'}}>
     <style>{css}</style>
-    <Sequence from={0} durationInFrames={s(5.2)}>
-      <Plano src="af/cena-05.png" dur={s(5.2)} ent={10} mov={{z0: 1.12, z1: 1.28, ox: 55, oy: 45, e: io}} grade="contrast(1.04) saturate(.95) brightness(1.02)" />
-      <Legenda texto="Esse caderno já sabe muita coisa da sua oficina." dur={s(5.2)} top={1300} />
+    <Sequence from={0} durationInFrames={s(2.5)}>
+      <Plano src="af/n-caneta.png" dur={s(2.5)} ent={10} mov={{z0: 1.25, z1: 1.12, ox: 70, oy: 55, e: ease}} grade="contrast(1.05) saturate(.95) brightness(1.02)" />
     </Sequence>
-    <Sequence from={s(5)} durationInFrames={s(5.2)}>
-      <Plano src="af/cena-06.png" dur={s(5.2)} ent={8} mov={{z0: 1.16, z1: 1.06, x0: -20, x1: 10, e: ease}} />
-      <Legenda texto="Só que nem sempre ele te encontra na hora certa." dur={s(5.2)} top={1300} />
+    <Sequence from={s(2.4)} durationInFrames={s(2.8)}>
+      <Plano src="af/cena-05.png" dur={s(2.8)} ent={4} mov={{z0: 1.1, z1: 1.2, ox: 55, oy: 45, e: io}} grade="contrast(1.04) saturate(.95) brightness(1.02)" />
     </Sequence>
-    <Sequence from={s(10)} durationInFrames={s(5.2)}>
-      <Plano src="af/cena-07.png" dur={s(5.2)} ent={8} mov={{z0: 1.18, z1: 1.18, x0: 60, x1: -60, e: io}} />
+    <Sequence from={s(5.2)} durationInFrames={s(1.9)}>
+      <Plano src="af/n-celular-tocando.png" dur={s(1.9)} ent={3} mov={{z0: 1.18, z1: 1.26, ox: 60, oy: 55}} />
     </Sequence>
+    <Sequence from={s(7.1)} durationInFrames={s(3.1)}>
+      <Plano src="af/n-recepcionista-folheando.png" dur={s(3.1)} ent={3} mov={{z0: 1.14, z1: 1.04, x0: -16, x1: 8, e: ease}} />
+    </Sequence>
+    <Sequence from={s(10.2)} durationInFrames={s(2.4)}>
+      <Plano src="af/n-mural.png" dur={s(2.4)} ent={3} mov={{z0: 1.08, z1: 1.18, x0: 30, x1: -20, e: io}} />
+    </Sequence>
+    <Sequence from={s(12.6)} durationInFrames={s(2.5)}>
+      <Plano src="af/n-cliente-relogio.png" dur={s(2.5)} ent={3} mov={{z0: 1.12, z1: 1.2, ox: 40, oy: 55, e: io}} />
+    </Sequence>
+    <Sequence from={s(0.3)} durationInFrames={s(4.9)}><Legenda texto="Esse caderno já sabe muita coisa da sua oficina." dur={s(4.9)} top={1300} /></Sequence>
+    <Sequence from={s(5.4)} durationInFrames={s(4.6)}><Legenda texto="Só que nem sempre ele te encontra na hora certa." dur={s(4.6)} top={1300} /></Sequence>
     <Sequence from={s(15)} durationInFrames={s(4.4)}><Match /></Sequence>
     <Sequence from={s(19.4)} durationInFrames={s(12.2)}><Sistema /></Sequence>
     <Sequence from={s(31.4)} durationInFrames={s(5.2)}>
-      <Plano src="af/cena-08.png" dur={s(5.2)} ent={12} sai={10} mov={{z0: 1.04, z1: 1.1, e: io}} />
+      <Plano src="af/n-caderno-notebook.png" dur={s(5.2)} ent={12} sai={10} mov={{z0: 1.04, z1: 1.14, ox: 40, oy: 55, e: io}} />
       <Legenda texto="O caderno pode descansar." dur={s(5.2)} top={1300} />
     </Sequence>
     <Grao />
