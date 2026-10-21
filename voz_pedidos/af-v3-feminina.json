@@ -1,4 +1,5 @@
-{"voz": "feminina",
+{
+ "voz": "feminina",
  "estilo": "Narre em português do Brasil como uma mulher real contando o dia de uma oficina, de perto e com intimidade: voz feminina calorosa e segura, natural, com respiração e pequenas pausas, energia que sobe ao longo do dia, sem tom de locutora de propaganda e sem exagero",
  "linhas": [
   "Tem dia que começa antes de você terminar o café.",
@@ -14,4 +15,8 @@
   "Na mesa. Na palma da mão.",
   "Para acompanhar a oficina que você faz acontecer.",
   "AutoFlow. Teste gratuito para oficinas selecionadas. Solicite acesso pelo direct."
- ]}
+ ],
+ "pausa": 12,
+ "tentativas": 5,
+ "fallback": false
+}
