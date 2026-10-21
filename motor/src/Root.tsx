@@ -25,7 +25,7 @@ const exemplo: Props = {
 export const Root: React.FC = () => (
   <>
   <Composition id="AutoFlowV1" component={AutoFlowV1 as any} width={1080} height={1920} fps={30} durationInFrames={1140} defaultProps={{trilha: null} as PropsAF} />
-  <Composition id="AutoFlowV2" component={AutoFlowV2 as any} width={1080} height={1920} fps={30} durationInFrames={1200} defaultProps={{trilha: null}} />
+  <Composition id="AutoFlowV2" component={AutoFlowV2 as any} width={1080} height={1920} fps={30} durationInFrames={1260} defaultProps={{trilha: null}} />
   <Composition id="AutoFlowV3" component={AutoFlowV3 as any} width={1080} height={1920} fps={30} durationInFrames={1350} defaultProps={{trilha: null}} />
   <Composition
     id="Cortes"

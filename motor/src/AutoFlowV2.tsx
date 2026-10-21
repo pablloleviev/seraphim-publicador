@@ -37,15 +37,15 @@ const Monitor: React.FC<{tela: string; zoom: number; px: number; py: number; ox?
 // 15-18 s: match-cut — o papel vira o cartão da OS
 const Match: React.FC = () => {
   const f = useCurrentFrame();
-  const D = s(3.2);
-  const t = lerp(f, s(0.9), s(2.0), 0, 1, io);
+  const D = s(4.4);
+  const t = lerp(f, s(1.6), s(2.8), 0, 1, io);
   return (
     <AbsoluteFill style={{background: '#000'}}>
       <Img src={staticFile('af/cena-05.png')} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
         transformOrigin: '56% 44%', transform: `scale(${lerp(f, 0, D, 1.5, 3.2, io)})`, opacity: 1 - t, filter: 'contrast(1.05) saturate(.9)'}} />
       <AbsoluteFill style={{background: '#0E0E10', opacity: t}}>
         <Img src={staticFile('af/ordens_conteudo.png')} style={{position: 'absolute', width: 2480 * 1.1, left: -530 * 1.1 + 40, top: -150 * 1.1 + 640,
-          transformOrigin: '30% 30%', transform: `scale(${lerp(f, s(0.9), D, 1.6, 1.0, ease)})`}} />
+          transformOrigin: '30% 30%', transform: `scale(${lerp(f, s(1.6), D, 1.6, 1.0, ease)})`}} />
       </AbsoluteFill>
       <Legenda texto="E se cada anotação tivesse um lugar?" dur={D} top={1300} />
     </AbsoluteFill>
@@ -71,8 +71,8 @@ const Sistema: React.FC = () => {
           </div>
         </div>
       </AbsoluteFill>
-      <Sequence from={s(0.6)} durationInFrames={s(6)}><Legenda texto="Pendente, em andamento, finalizado, entregue." dur={s(6)} top={1500} tam={54} /></Sequence>
-      <Sequence from={s(7.2)} durationInFrames={s(5.8)}><Legenda texto="O histórico do carro, pela placa." dur={s(5.8)} top={1500} tam={58} /></Sequence>
+      <Sequence from={s(0.5)} durationInFrames={s(6.1)}><Legenda texto="Cada ordem de serviço no quadro, do pendente à entrega." dur={s(6.1)} top={1500} tam={54} /></Sequence>
+      <Sequence from={s(6.8)} durationInFrames={s(5.4)}><Legenda texto="E o histórico de cada carro, pela placa." dur={s(5.4)} top={1500} tam={58} /></Sequence>
     </AbsoluteFill>
   );
 };
@@ -110,13 +110,13 @@ export const AutoFlowV2: React.FC<PropsAF2> = ({trilha}) => (
     <Sequence from={s(10)} durationInFrames={s(5.2)}>
       <Plano src="af/cena-07.png" dur={s(5.2)} ent={8} mov={{z0: 1.18, z1: 1.18, x0: 60, x1: -60, e: io}} />
     </Sequence>
-    <Sequence from={s(15)} durationInFrames={s(3.2)}><Match /></Sequence>
-    <Sequence from={s(18)} durationInFrames={s(13)}><Sistema /></Sequence>
-    <Sequence from={s(31)} durationInFrames={s(5.2)}>
+    <Sequence from={s(15)} durationInFrames={s(4.4)}><Match /></Sequence>
+    <Sequence from={s(19.4)} durationInFrames={s(12.2)}><Sistema /></Sequence>
+    <Sequence from={s(31.4)} durationInFrames={s(5.2)}>
       <Plano src="af/cena-08.png" dur={s(5.2)} ent={12} sai={10} mov={{z0: 1.04, z1: 1.1, e: io}} />
       <Legenda texto="O caderno pode descansar." dur={s(5.2)} top={1300} />
     </Sequence>
-    <Sequence from={s(36)} durationInFrames={s(4)}><Fecho /></Sequence>
+    <Sequence from={s(36.4)} durationInFrames={s(5.6)}><Fecho /></Sequence>
     <Grao />
     {trilha && <Audio src={staticFile(trilha)} />}
   </AbsoluteFill>
