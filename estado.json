@@ -489,12 +489,17 @@
       "ig_manual": false
     },
     "2026-10-21_1230_sistema-sob-medida-na-pratica": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-20T13:30:25.534429+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad8daa7ee069bfcd23537c7",
+        "feito": "buffer"
       },
-      "msg_id": 921
+      "msg_id": 921,
+      "ig_id": "17908764210330182",
+      "publicado_em": "2026-10-21T15:30:46.261357+00:00",
+      "ig_manual": false
     },
     "2026-10-21_1730_voce-precisa-de-sistema-proprio": {
       "status": "agendado",
