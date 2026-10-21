@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630285,
+  "telegram_offset": 183630288,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -502,12 +502,17 @@
       "ig_manual": false
     },
     "2026-10-21_1730_voce-precisa-de-sistema-proprio": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-20T18:30:08.398399+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad920ff74b7720f7e7ee147",
+        "feito": "buffer"
       },
-      "msg_id": 932
+      "msg_id": 932,
+      "ig_id": "18057367853801033",
+      "publicado_em": "2026-10-21T20:30:54.376758+00:00",
+      "ig_manual": false
     },
     "2026-10-21_1930_pronto-ou-sob-medida": {
       "status": "agendado",
@@ -534,12 +539,20 @@
       "msg_id": 956
     },
     "2026-10-22_1730_glossario-api-webhook": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-21T18:30:09.493637+00:00",
       "tiktok": {
         "via": "buffer"
       },
       "msg_id": 966
+    },
+    "2026-10-22_1930_segunda-no-automatico": {
+      "status": "agendado",
+      "enviado_em": "2026-10-21T20:30:08.990705+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 968
     }
   },
   "respondidos": {},
