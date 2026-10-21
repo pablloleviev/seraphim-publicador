@@ -48,17 +48,18 @@ const Poeira: React.FC<{n?: number; cor?: string; dur: number}> = ({n = 40, cor 
   );
 };
 
-type Mov = {z0: number; z1: number; x0?: number; x1?: number; y0?: number; y1?: number};
-const Plano: React.FC<{src: string; dur: number; mov: Mov; grade?: string; poeira?: boolean}> = ({src, dur, mov, grade, poeira}) => {
+type Mov = {z0: number; z1: number; x0?: number; x1?: number; y0?: number; y1?: number; ox?: number; oy?: number; e?: (n: number) => number};
+const Plano: React.FC<{src: string; dur: number; mov: Mov; grade?: string; poeira?: boolean; ent?: number; sai?: number}> = ({src, dur, mov, grade, poeira, ent = 3, sai = 0}) => {
   const f = useCurrentFrame();
-  const z = lerp(f, 0, dur, mov.z0, mov.z1, io);
-  const x = lerp(f, 0, dur, mov.x0 || 0, mov.x1 || 0, io);
-  const y = lerp(f, 0, dur, mov.y0 || 0, mov.y1 || 0, io);
-  const op = lerp(f, 0, 9, 0, 1) * lerp(f, dur - 9, dur, 1, 0);
+  const em = mov.e || io;
+  const z = lerp(f, 0, dur, mov.z0, mov.z1, em);
+  const x = lerp(f, 0, dur, mov.x0 || 0, mov.x1 || 0, em);
+  const y = lerp(f, 0, dur, mov.y0 || 0, mov.y1 || 0, em);
+  const op = (ent ? lerp(f, 0, ent, 0, 1) : 1) * (sai ? lerp(f, dur - sai, dur, 1, 0) : 1);
   return (
     <AbsoluteFill style={{background: '#000', opacity: op}}>
       <Img src={staticFile(src)} style={{width: '100%', height: '100%', objectFit: 'cover',
-        transform: `scale(${z}) translate(${x}px, ${y}px)`, filter: grade || 'contrast(1.08) saturate(.92) brightness(.95)'}} />
+        transformOrigin: `${mov.ox ?? 50}% ${mov.oy ?? 50}%`, transform: `scale(${z}) translate(${x}px, ${y}px)`, filter: grade || 'contrast(1.08) saturate(.92) brightness(.95)'}} />
       {/* varredura de luz quente */}
       <AbsoluteFill style={{background: `linear-gradient(105deg, transparent ${lerp(f, 0, dur, -30, 90)}%, rgba(255,140,60,.10) ${lerp(f, 0, dur, -20, 100)}%, transparent ${lerp(f, 0, dur, -10, 110)}%)`, mixBlendMode: 'screen'}} />
       {poeira && <Poeira dur={dur} />}
@@ -86,7 +87,7 @@ const Frase: React.FC<{texto: string; dur: number; top?: number; tam?: number; d
 
 // notebook 3D com tela real
 const Notebook: React.FC<{f: number; tela: string; tela2?: string; troca?: number}> = ({f, tela, tela2, troca = 99999}) => {
-  const liga = lerp(f, s(1.2), s(2.2), 0, 1);
+  const liga = lerp(f, s(0.9), s(1.7), 0, 1);
   const t2 = tela2 ? lerp(f, troca, troca + 12, 0, 1) : 0;
   return (
     <div style={{width: 900, transformStyle: 'preserve-3d'}}>
@@ -94,7 +95,7 @@ const Notebook: React.FC<{f: number; tela: string; tela2?: string; troca?: numbe
         <div style={{position: 'relative', borderRadius: 8, overflow: 'hidden', aspectRatio: '2690/1861', background: '#050506'}}>
           <Img src={staticFile(tela)} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: liga * (1 - t2), filter: `brightness(${0.4 + 0.6 * liga})`}} />
           {tela2 && <Img src={staticFile(tela2)} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: t2}} />}
-          <div style={{position: 'absolute', inset: 0, background: `linear-gradient(115deg, rgba(255,255,255,0) ${lerp(f, s(1.4), s(3.4), -40, 120)}%, rgba(255,255,255,.16) ${lerp(f, s(1.4), s(3.4), -25, 135)}%, rgba(255,255,255,0) ${lerp(f, s(1.4), s(3.4), -10, 150)}%)`}} />
+          <div style={{position: 'absolute', inset: 0, background: `linear-gradient(115deg, rgba(255,255,255,0) ${lerp(f, s(1.0), s(2.8), -40, 120)}%, rgba(255,255,255,.16) ${lerp(f, s(1.0), s(2.8), -25, 135)}%, rgba(255,255,255,0) ${lerp(f, s(1.0), s(2.8), -10, 150)}%)`}} />
         </div>
       </div>
       <div style={{height: 34, margin: '0 -64px', background: 'linear-gradient(180deg,#3c3c44,#16161a)', borderRadius: '0 0 30px 30px', boxShadow: '0 40px 80px rgba(0,0,0,.6)'}} />
@@ -114,7 +115,9 @@ const Produto: React.FC = () => {
   const f = useCurrentFrame();
   const D = s(18);
   // entrada do notebook
-  const ry = lerp(f, 0, s(4), -38, -14), rx = lerp(f, 0, s(4), 24, 12), ty = lerp(f, 0, s(3.5), 260, 0), op = lerp(f, 0, s(1.2), 0, 1);
+  const ry = lerp(f, 0, s(3.4), -30, -14), rx = lerp(f, 0, s(3.4), 30, 12), ty = lerp(f, 0, s(2.8), 340, 0), op = lerp(f, 0, s(0.5), 0, 1);
+  const luz = lerp(f, 0, s(1.6), 0, 1); // luz laranja controlada sobe com a trilha
+  const exp = lerp(f, s(0.2), s(1.8), 0.15, 1); // notebook sai da escuridão (exposição), sem fade barato
   // zoom nos cards (7-10 s) e no quadro de Ordens (10-13 s)
   const zoom = f < s(7) ? 1 : f < s(10) ? lerp(f, s(7), s(8.5), 1, 1.75) : lerp(f, s(10), s(11), 1.75, 1.55);
   const px = f < s(10) ? lerp(f, s(7), s(8.5), 0, 260) : lerp(f, s(10.3), s(13), 300, -260, io);
@@ -124,11 +127,16 @@ const Produto: React.FC = () => {
   const recua = lerp(f, s(12.6), s(14), 0, 1);
   const z = zoom * (1 - 0.32 * recua);
   return (
-    <AbsoluteFill style={{background: 'radial-gradient(80% 50% at 50% 50%, #2a1508 0%, #0E0E10 62%)'}}>
-      <div style={{position: 'absolute', left: 140, top: 640, width: 800, height: 640, borderRadius: '50%', background: `radial-gradient(closest-side, ${LAR}, transparent)`, opacity: 0.26 + 0.1 * Math.sin(f / 30)}} />
+    <AbsoluteFill style={{background: '#050506'}}>
+      <AbsoluteFill style={{background: 'radial-gradient(80% 50% at 50% 50%, #2a1508 0%, #0E0E10 62%)', opacity: luz}} />
+      <div style={{position: 'absolute', left: 140, top: 640, width: 800, height: 640, borderRadius: '50%', background: `radial-gradient(closest-side, ${LAR}, transparent)`, opacity: luz * (0.28 + 0.08 * Math.sin(f / 30)), transform: `scale(${0.6 + 0.4 * luz})`}} />
+      {/* linha de luz que abre a revelação */}
+      <div style={{position: 'absolute', left: 0, right: 0, top: 1180, height: 2, background: `linear-gradient(90deg, transparent, ${LAR}, transparent)`, opacity: lerp(f, 0, s(0.3), 0, 1) * lerp(f, s(0.6), s(1.4), 1, 0), transform: `scaleX(${lerp(f, 0, s(0.7), 0.05, 1)})`, boxShadow: `0 0 40px ${LAR}`}} />
+      {/* sombra de contato */}
+      <div style={{position: 'absolute', left: 190, right: 190, top: 1235, height: 90, borderRadius: '50%', background: 'radial-gradient(closest-side, rgba(0,0,0,.75), transparent)', opacity: op * (1 - recua)}} />
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', perspective: 2400}}>
         <div style={{transform: `translate(${px * (1 - recua)}px, ${ty + py * (1 - recua) - 180 * recua}px) scale(${z}) rotateX(${rx}deg) rotateY(${ry + 8 * recua}deg)`,
-          opacity: op * (1 - 0.45 * recua), filter: `blur(${5 * recua}px)`, transformStyle: 'preserve-3d'}}>
+          opacity: op * (1 - 0.45 * recua), filter: `blur(${3 * recua}px) brightness(${exp})`, transformStyle: 'preserve-3d'}}>
           <Notebook f={f} tela="af/painel_conteudo.png" tela2="af/ordens_conteudo.png" troca={s(10)} />
         </div>
       </AbsoluteFill>
@@ -139,12 +147,9 @@ const Produto: React.FC = () => {
           </div>
         </AbsoluteFill>
       )}
-      <Sequence from={0} durationInFrames={s(6.6)}><Frase texto="Apresentamos o AutoFlow." destaque="AutoFlow" dur={s(6.6)} top={300} tam={96} /></Sequence>
+      <Sequence from={s(1.1)} durationInFrames={s(5.5)}><Frase texto="Apresentamos o AutoFlow." destaque="AutoFlow" dur={s(5.5)} top={300} tam={96} /></Sequence>
       <Sequence from={s(7.2)} durationInFrames={s(5.6)}><Frase texto="Cada ordem de serviço, da entrada à entrega." dur={s(5.6)} top={300} tam={66} /></Sequence>
       <Sequence from={s(13.4)} durationInFrames={s(4.6)}><Frase texto="Na mesa ou no bolso." dur={s(4.6)} top={300} tam={80} /></Sequence>
-      {/* nota de rodapé honesta: interface real */}
-      <div style={{position: 'absolute', left: 0, right: 0, bottom: 360, textAlign: 'center', font: '500 24px StackT', color: 'rgba(244,242,236,.45)', letterSpacing: 2,
-        opacity: lerp(f, s(2), s(3), 0, 1) * lerp(f, D - 15, D, 1, 0) * (f > s(6.8) && f < s(13.2) ? 0 : 1)}}>INTERFACE REAL DO SISTEMA</div>
     </AbsoluteFill>
   );
 };
@@ -172,21 +177,34 @@ export type PropsAF = {trilha: string | null};
 export const AutoFlowV1: React.FC<PropsAF> = ({trilha}) => (
   <AbsoluteFill style={{background: '#000'}}>
     <style>{css}</style>
-    <Sequence from={0} durationInFrames={s(4.3)}>
-      <Plano src="af/cena-01.png" dur={s(4.3)} mov={{z0: 1.22, z1: 1.04, x0: -10, x1: 8}} poeira />
+    {/* 0-12 s: montagem com cortes motivados pelo movimento */}
+    <Sequence from={0} durationInFrames={s(1.9)}>
+      <Plano src="af/cena-01.png" dur={s(1.9)} ent={8} mov={{z0: 1.32, z1: 1.1, x0: -14, x1: 6, e: ease}} poeira />
     </Sequence>
-    <Sequence from={s(4)} durationInFrames={s(4.3)}>
-      <Plano src="af/cena-02.png" dur={s(4.3)} mov={{z0: 1.14, z1: 1.14, x0: 50, x1: -50}} />
-      <Frase texto="Toda oficina tem um ritmo." dur={s(4.3)} />
+    <Sequence from={s(1.9)} durationInFrames={s(1.0)}>
+      <Plano src="af/cena-01.png" dur={s(1.0)} mov={{z0: 2.0, z1: 2.15, ox: 62, oy: 72, x0: 10, x1: -6}} poeira />
     </Sequence>
-    <Sequence from={s(8)} durationInFrames={s(4)}>
-      <Plano src="af/cena-03.png" dur={s(4)} mov={{z0: 1.02, z1: 1.2, y0: 0, y1: -30}} />
-      <Frase texto="E toda gestão merece clareza." destaque="clareza" dur={s(4)} />
+    <Sequence from={s(2.9)} durationInFrames={s(2.7)}>
+      <Plano src="af/cena-02.png" dur={s(2.7)} mov={{z0: 1.2, z1: 1.12, x0: 70, x1: -40, e: ease}} />
     </Sequence>
+    <Sequence from={s(5.6)} durationInFrames={s(1.0)}>
+      <Plano src="af/cena-02.png" dur={s(1.0)} mov={{z0: 1.9, z1: 2.05, ox: 78, oy: 20, x0: -8, x1: 8}} />
+    </Sequence>
+    <Sequence from={s(6.6)} durationInFrames={s(2.4)}>
+      <Plano src="af/cena-03.png" dur={s(2.4)} mov={{z0: 1.06, z1: 1.18, ox: 45, oy: 45, e: ease}} />
+    </Sequence>
+    <Sequence from={s(9.0)} durationInFrames={s(1.2)}>
+      <Plano src="af/cena-03.png" dur={s(1.2)} mov={{z0: 1.85, z1: 1.95, ox: 18, oy: 30}} />
+    </Sequence>
+    <Sequence from={s(10.2)} durationInFrames={s(1.8)}>
+      <Plano src="af/cena-03.png" dur={s(1.8)} sai={14} mov={{z0: 1.3, z1: 1.6, ox: 70, oy: 52, e: io}} />
+    </Sequence>
+    <Sequence from={s(3.0)} durationInFrames={s(3.5)}><Frase texto="Toda oficina tem um ritmo." dur={s(3.5)} /></Sequence>
+    <Sequence from={s(6.8)} durationInFrames={s(5.0)}><Frase texto="E toda gestão merece clareza." destaque="clareza" dur={s(5.0)} /></Sequence>
     {/* 12-13 s: preto e silêncio */}
     <Sequence from={s(13)} durationInFrames={s(18)}><Produto /></Sequence>
     <Sequence from={s(31)} durationInFrames={s(3.2)}>
-      <Plano src="af/cena-04.png" dur={s(3.2)} mov={{z0: 1.06, z1: 1.16, x0: 0, x1: -20}} />
+      <Plano src="af/cena-04.png" dur={s(3.2)} ent={6} mov={{z0: 1.08, z1: 1.18, x0: 0, x1: -20, e: ease}} />
     </Sequence>
     <Sequence from={s(34)} durationInFrames={s(4)}><Fecho /></Sequence>
     <Grao />
