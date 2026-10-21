@@ -534,6 +534,10 @@
     "2026-10-21_1-uma-tarefa": {
       "status": "aprovado",
       "msg_id": 940
+    },
+    "2026-10-21_2-pronto-ou-medida": {
+      "status": "aguardando",
+      "msg_id": 943
     }
   }
 }
