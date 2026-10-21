@@ -59,13 +59,13 @@ const Sistema: React.FC = () => {
   const ent = lerp(f, 0, s(1.2), 0, 1);
   const fase2 = f >= s(7);
   const z = fase2 ? lerp(f, s(7), s(9), 1.0, 1.35, io) : lerp(f, 0, s(7), 1.12, 1.0, io);
-  const px = fase2 ? lerp(f, s(7), s(9), 0, -40, io) : lerp(f, s(0.5), s(6.5), 0, -420, io);
+  const px = fase2 ? lerp(f, s(7), s(9), 0, -40, io) : lerp(f, s(0.8), s(6.5), 0, -380, io);
   const troca = lerp(f, s(6.6), s(7.2), 0, 1);
   return (
     <AbsoluteFill style={{background: 'radial-gradient(90% 55% at 50% 42%, #22140b 0%, #0E0E10 65%)'}}>
       <div style={{position: 'absolute', left: 90, top: 520, width: 900, height: 700, borderRadius: '50%', background: `radial-gradient(closest-side, ${LAR}, transparent)`, opacity: 0.18}} />
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-        <div style={{transform: `translateY(${lerp(f, 0, s(1.4), 120, -40)}px) scale(${lerp(f, 0, s(1.4), 0.94, 1)})`, opacity: ent}}>
+        <div style={{transform: `translateY(${lerp(f, 0, s(1.4), 120, -60)}px) scale(${lerp(f, 0, s(1.4), 0.98, 1.04)})`, opacity: ent}}>
           <div style={{position: 'relative'}}>
             <div style={{opacity: 1 - troca}}><Monitor tela="af/ordens_conteudo.png" zoom={z * 1.5} px={px} py={0} ox={0} oy={0} /></div>
             <div style={{position: 'absolute', inset: 0, opacity: troca}}><Monitor tela="af/historico_conteudo.png" zoom={fase2 ? z : 1} px={fase2 ? px : 0} py={0} ox={10} oy={18} /></div>
@@ -83,7 +83,7 @@ const Fecho: React.FC = () => {
   return (
     <AbsoluteFill style={{background: CREME, alignItems: 'center', justifyContent: 'center'}}>
       <div style={{display: 'flex', alignItems: 'center', gap: 34, opacity: lerp(f, 0, 18, 0, 1), transform: `translateY(${lerp(f, 0, 24, 30, 0)}px)`, marginTop: -160}}>
-        <Img src={staticFile('af/logo-icone.png')} style={{width: 150, filter: 'drop-shadow(0 10px 30px rgba(0,0,0,.15))'}} />
+        <Img src={staticFile('af/logo-icone-claro.png')} style={{width: 150}} />
         <div>
           <div style={{font: '800 96px/1 StackH', color: '#121214', letterSpacing: -3}}>AutoFlow</div>
           <div style={{font: '500 28px StackT', color: 'rgba(18,18,20,.5)', marginTop: 10}}>by Seraphim</div>
@@ -117,8 +117,8 @@ export const AutoFlowV2: React.FC<PropsAF2> = ({trilha}) => (
       <Plano src="af/cena-08.png" dur={s(5.2)} ent={12} sai={10} mov={{z0: 1.04, z1: 1.1, e: io}} />
       <Legenda texto="O caderno pode descansar." dur={s(5.2)} top={1300} />
     </Sequence>
-    <Sequence from={s(36.4)} durationInFrames={s(5.6)}><Fecho /></Sequence>
     <Grao />
+    <Sequence from={s(36.4)} durationInFrames={s(5.6)}><Fecho /></Sequence>
     {trilha && <Audio src={staticFile(trilha)} />}
   </AbsoluteFill>
 );
