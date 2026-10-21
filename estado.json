@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630280,
+  "telegram_offset": 183630284,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -492,7 +492,7 @@
       "msg_id": 921
     },
     "2026-10-21_1730_voce-precisa-de-sistema-proprio": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-20T18:30:08.398399+00:00",
       "tiktok": {
         "via": "buffer"
@@ -500,12 +500,20 @@
       "msg_id": 932
     },
     "2026-10-21_1930_pronto-ou-sob-medida": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-20T20:30:05.820540+00:00",
       "tiktok": {
         "via": "buffer"
       },
       "msg_id": 934
+    },
+    "2026-10-22_0900_integracao-explicada-cozinha": {
+      "status": "agendado",
+      "enviado_em": "2026-10-21T10:00:19.668111+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 950
     }
   },
   "respondidos": {},
@@ -536,7 +544,7 @@
       "msg_id": 940
     },
     "2026-10-21_2-pronto-ou-medida": {
-      "status": "aguardando",
+      "status": "aprovado",
       "msg_id": 943
     }
   }
