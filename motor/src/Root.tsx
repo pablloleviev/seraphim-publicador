@@ -7,6 +7,7 @@ import {Estilo, PropsE} from './Estilo';
 import {AutoFlowV1, PropsAF} from './AutoFlowV1';
 import {AutoFlowV2} from './AutoFlowV2';
 import {AutoFlowV3} from './AutoFlowV3';
+import {AutoFlowLapidado, PropsLap} from './AutoFlowLapidado';
 
 const exemplo: Props = {
   fps: 30,
@@ -26,6 +27,12 @@ export const Root: React.FC = () => (
   <>
   <Composition id="AutoFlowV1" component={AutoFlowV1 as any} width={1080} height={1920} fps={30} durationInFrames={1140} defaultProps={{trilha: null} as PropsAF} />
   <Composition id="AutoFlowV2" component={AutoFlowV2 as any} width={1080} height={1920} fps={30} durationInFrames={1260} defaultProps={{trilha: null}} />
+  <Composition id="AFLapV2" component={AutoFlowLapidado as any} width={1080} height={1920} fps={30} durationInFrames={1110}
+    defaultProps={{video: 'lap/v2_limpo.mp4', audio: null, dur: 1110, shots: [], caps: [], hits: [], fimCard: 31, nome: 'v2'} as PropsLap}
+    calculateMetadata={({props}) => ({durationInFrames: Math.ceil((props as PropsLap).dur)})} />
+  <Composition id="AFLapV3" component={AutoFlowLapidado as any} width={1080} height={1920} fps={30} durationInFrames={1125}
+    defaultProps={{video: 'lap/v3_limpo.mp4', audio: null, dur: 1125, shots: [], caps: [], hits: [], fimCard: 30, nome: 'v3'} as PropsLap}
+    calculateMetadata={({props}) => ({durationInFrames: Math.ceil((props as PropsLap).dur)})} />
   <Composition id="AutoFlowV3" component={AutoFlowV3 as any} width={1080} height={1920} fps={30} durationInFrames={1350} defaultProps={{trilha: null}} />
   <Composition
     id="Cortes"
