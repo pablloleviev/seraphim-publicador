@@ -16,12 +16,16 @@ for ped in sorted((RAIZ / "voz_pedidos").glob("*.json")):
     if d.get("estilo"):
         os.environ["GEMINI_ESTILO"] = d["estilo"]
     usados = []
+    if d.get("voz"):  # "masculina" | "feminina" | nome de voz do Gemini
+        F.GEMINI_VOZ_ATUAL = F.VOZES_GEMINI.get(d["voz"], d["voz"])
     for i, linha in enumerate(d["linhas"], 1):
         mp3 = out / f"linha-{i:02d}.mp3"
         motor = None
         for nome, fn in (("gemini", F.voz_gemini), ("edge", lambda t, m: F.voz_edge(t, m, d.get("edge_voz", "pt-BR-AntonioNeural")))):
             try:
-                fn(linha, mp3); motor = nome; break
+                pal = fn(linha, mp3); motor = nome
+                if pal: (out / f"linha-{i:02d}.json").write_text(json.dumps(pal, ensure_ascii=False), encoding="utf-8")
+                break
             except Exception as e:
                 print(f"[aviso] {nome} falhou na linha {i}: {str(e)[:200]}")
         usados.append(motor)
