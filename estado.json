@@ -532,6 +532,14 @@
         "via": "buffer"
       },
       "msg_id": 956
+    },
+    "2026-10-22_1730_glossario-api-webhook": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-21T18:30:09.493637+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 966
     }
   },
   "respondidos": {},
