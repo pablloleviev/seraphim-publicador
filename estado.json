@@ -476,12 +476,17 @@
       "ig_manual": false
     },
     "2026-10-21_0900_as-tres-frentes-da-seraphim": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-20T10:00:25.847204+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ad8a9750807acdda12721a8",
+        "feito": "buffer"
       },
-      "msg_id": 916
+      "msg_id": 916,
+      "ig_id": "18485846998108685",
+      "publicado_em": "2026-10-21T12:00:53.061066+00:00",
+      "ig_manual": false
     },
     "2026-10-21_1230_sistema-sob-medida-na-pratica": {
       "status": "agendado",
