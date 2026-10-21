@@ -545,8 +545,10 @@
       "lembrado": true
     },
     "2026-10-21_1-uma-tarefa": {
-      "status": "aprovado",
-      "msg_id": 940
+      "status": "publicado",
+      "msg_id": 940,
+      "ig_id": "17915626773529904",
+      "publicado_em": "2026-10-21T13:00:00.855108+00:00"
     },
     "2026-10-21_2-pronto-ou-medida": {
       "status": "aprovado",
