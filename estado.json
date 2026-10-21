@@ -591,7 +591,8 @@
     },
     "2026-10-21_2-pronto-ou-medida": {
       "status": "aprovado",
-      "msg_id": 943
+      "msg_id": 943,
+      "lembrado": true
     },
     "2026-10-22_1-quiz-webhook": {
       "status": "aguardando",
