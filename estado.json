@@ -554,12 +554,17 @@
       "ig_manual": false
     },
     "2026-10-22_1730_glossario-api-webhook": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-21T18:30:09.493637+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ada728ef2eceac43739aa89",
+        "feito": "buffer"
       },
-      "msg_id": 966
+      "msg_id": 966,
+      "ig_id": "18106170838983260",
+      "publicado_em": "2026-10-22T20:31:09.909416+00:00",
+      "ig_manual": false
     },
     "2026-10-22_1930_segunda-no-automatico": {
       "status": "agendado",
@@ -592,6 +597,14 @@
         "via": "buffer"
       },
       "msg_id": 1000
+    },
+    "2026-10-23_1930_perguntas-antes-do-codigo": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-22T20:30:20.560558+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1002
     }
   },
   "respondidos": {},
