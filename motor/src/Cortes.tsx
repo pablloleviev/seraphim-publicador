@@ -33,6 +33,7 @@ const FONTES: [string, string, string?][] = [
   ['Playfair', 'playfair.ttf', '500'], ['InterX', 'inter800.ttf', '800'], ['InterM', 'inter500.ttf', '500'],
   ['Bebas', 'bebas.ttf'], ['Oswald', 'oswald-700.woff2', '700'], ['BigSh', 'big-shoulders-display-900.woff2', '900'],
   ['Sora', 'sora-700.woff2', '700'], ['Syne', 'syne-800.woff2', '800'], ['Unbounded', 'unbounded-800.woff2', '800'],
+  ['StackH', 'stack-sans-headline-latin-700-normal.woff2', '700'], ['StackT', 'stack-sans-text-latin-500-normal.woff2', '500'],
 ];
 // fonte de manchete por vídeo (Pabllo: diversificar também a tipografia). FT = condensadas (largura parecida com Anton),
 // FW = largas (no lugar da Montserrat). Sorteadas pelo SEED de cada vídeo.
@@ -526,7 +527,9 @@ const CCta: React.FC<CP> = ({c, f, fps, n}) => {
     <AbsoluteFill style={{background: PRETO}}>
       <AbsoluteFill style={{background: `radial-gradient(circle at 50% 34%, rgba(${ACRGB},.28), transparent 55%)`}} />
       <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center'}}>
-        <Img src={staticFile(`sera/${c.pose || 'confiante'}.png`)} style={{height: 640, transform: `scale(${s}) translateY(${Math.sin(f / 12) * 10}px)`}} />
+        {/* "marca": imagem no lugar da Sera (peças de produto, como o AutoFlow, não usam o mascote) */}
+        <Img src={staticFile((c as any).marca || `sera/${c.pose || 'confiante'}.png`)}
+          style={{height: (c as any).marca ? 300 : 640, transform: `scale(${s}) translateY(${Math.sin(f / 12) * 10}px)`}} />
         <div style={{fontFamily: FT, fontSize: 120, color: '#fff', textAlign: 'center', lineHeight: 1.02, marginTop: 10, textShadow: rgb(3), padding: '0 60px'}}>
           {(c.texto || '').split('*').map((t, i) => <span key={i} style={{color: i % 2 ? OURO : '#fff'}}>{t}</span>)}</div>
         {fundo && (
@@ -800,6 +803,9 @@ const FORMATOS: Record<string, Fmt> = {
     trans: [['chicote', 0.5], ['corte', 0.3], ['saturado', 0.2]], legBottom: 260, badge: false},
   eletrico: {aber: 1, pal: {OURO: '#5B6CFF', VERM: '#FF2E9A', PRETO: '#05050F', ACRGB: '91,108,255', TINTA: '#FFFFFF', VERMD: '#a31a66', VERML: '#ff7ac0', FRASEF: 'Mont', LEGF: 'InterX'},
     trans: [['chicote', 0.4], ['saturado', 0.3], ['luz', 0.2], ['corte', 0.1]], legBottom: 230, badge: true},
+  // identidade do AutoFlow (laranja #FF6A13 sobre #0E0E10, Stack Sans) dentro do nosso estilo de edição
+  autoflow: {aber: 0.4, pal: {OURO: '#FF6A13', VERM: '#E03A00', PRETO: '#0E0E10', ACRGB: '255,106,19', TINTA: '#0E0E10', VERMD: '#9a3a0c', VERML: '#ff9a5e', FRASEF: 'StackH', LEGF: 'StackT'},
+    trans: [['corte', 0.38], ['foco', 0.27], ['luz', 0.2], ['chicote', 0.15]], legBottom: 300, badge: false},
 };
 const aplicarFormato = (nome?: string): Fmt => {
   const F = FORMATOS[nome || 'noir'] || FORMATOS.noir;
@@ -1022,6 +1028,7 @@ export const SeraphimCortes: React.FC<PropsC> = (props) => {
   const FM = aplicarFormato(formato);
   SEED = hash(`${props.titulo || ''}${props.numero || ''}${props.cenas.length}`);
   FT = FTS[hash(SEED + 'ft') % FTS.length]; FW = FWS[hash(SEED + 'fw') % FWS.length]; ARROBA = props.arroba || ARROBA;
+  if (formato === 'autoflow') { FT = 'Anton'; FW = 'StackH'; }   // AutoFlow: impacto em Anton, apoio em Stack Sans
   if (FRASEF === 'Mont') FRASEF = FW; else if (FRASEF === 'Anton') FRASEF = FT;
   if (LEGF === 'Mont') LEGF = ['Mont', 'Sora', 'Mont', 'Syne'][hash(SEED + 'lg') % 4];
   if (SEED % 3 === 0) ABER = Math.min(ABER, 0.4);
