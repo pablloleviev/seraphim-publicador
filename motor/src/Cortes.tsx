@@ -531,7 +531,11 @@ const CCta: React.FC<CP> = ({c, f, fps, n}) => {
         <Img src={staticFile((c as any).marca || `sera/${c.pose || 'confiante'}.png`)}
           style={{height: (c as any).marca ? 300 : 640, transform: `scale(${s}) translateY(${Math.sin(f / 12) * 10}px)`}} />
         <div style={{fontFamily: FT, fontSize: 120, color: '#fff', textAlign: 'center', lineHeight: 1.02, marginTop: 10, textShadow: rgb(3), padding: '0 60px'}}>
-          {(c.texto || '').split('*').map((t, i) => <span key={i} style={{color: i % 2 ? OURO : '#fff'}}>{t}</span>)}</div>
+          {/* *destaque* = cor do formato; | = quebra de linha */}
+          {(c.texto || '').split('*').map((t, i) => (
+            <span key={i} style={{color: i % 2 ? OURO : '#fff'}}>
+              {t.split('|').map((l, k) => <React.Fragment key={k}>{k > 0 && <br />}{l}</React.Fragment>)}
+            </span>))}</div>
         {fundo && (
           <div style={{marginTop: 44, padding: '24px 56px', borderRadius: 999, background: OURO, color: PRETO, fontFamily: 'InterX', fontSize: 50,
             transform: `scale(${bs * pill})`}}>{c.apoio || 'link na bio'} →</div>

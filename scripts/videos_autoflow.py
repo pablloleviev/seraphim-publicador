@@ -20,10 +20,10 @@ FIM = "\n\n"
 
 # tela real -> imagem 9:16 pronta para entrar como cena (quanto da largura a tela ocupa, e de onde recortar)
 MONTAGENS = [
- dict(saida="tela-painel.png", tela="painel_conteudo.png", largura=0.96, corte=(0, 0, 0.55, 0.70)),
- dict(saida="tela-ordens.png", tela="ordens_conteudo.png", largura=0.98, corte=(0, 0, 0.62, 1)),
- dict(saida="tela-historico.png", tela="historico_conteudo.png", largura=0.98, corte=(0, 0, 0.78, 0.95)),
- dict(saida="tela-nova-os.png", tela="nova_os_painel.png", largura=0.80, corte=(0, 0, 1, 1)),
+ dict(saida="tela-painel.png", tela="painel_conteudo.png", largura=0.82, corte=(0, 0, 0.55, 0.70)),
+ dict(saida="tela-ordens.png", tela="ordens_conteudo.png", largura=0.82, corte=(0, 0, 0.62, 1)),
+ dict(saida="tela-historico.png", tela="historico_conteudo.png", largura=0.82, corte=(0, 0, 0.78, 0.95)),
+ dict(saida="tela-nova-os.png", tela="nova_os_painel.png", largura=0.70, corte=(0, 0, 1, 1)),
 ]
 
 
@@ -44,8 +44,8 @@ def montar_telas():
         tela = tela.crop((int(x0 * tela.width), int(y0 * tela.height), int(x1 * tela.width), int(y1 * tela.height)))
         larg = int(L * m["largura"])
         tela = tela.resize((larg, max(1, round(larg * tela.height / tela.width))), Image.LANCZOS)
-        if tela.height > A * 0.78:
-            alt = int(A * 0.78)
+        if tela.height > A * 0.66:
+            alt = int(A * 0.66)
             tela = tela.resize((max(1, round(alt * tela.width / tela.height)), alt), Image.LANCZOS)
 
         cantos = Image.new("L", tela.size, 0)
@@ -89,7 +89,7 @@ VIDEOS = [
  dict(peca="V13", nome="um-dia-na-oficina", quando="2026-10-25 12:30", voz="feminina", numero=13,
       titulo="Um dia na oficina",
       cenas=[
-       {"tipo": "palavra", "texto": "UM DIA|NA|*OFICINA*", "destaque": "OFICINA",
+       {"tipo": "palavra", "texto": "UM DIA|*NA OFICINA*", "destaque": "NA OFICINA",
         "narracao": "Um dia na oficina."},
        {"tipo": "foto", "imagem": "autoflow/cenas/n-cadeado.png", "tom": "normal", "texto": "07:42",
         "narracao": "Sete e quarenta e dois: o portão sobe."},
