@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630288,
+  "telegram_offset": 183630289,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -597,6 +597,10 @@
     "2026-10-22_1-quiz-webhook": {
       "status": "aguardando",
       "msg_id": 975
+    },
+    "2026-10-22_2-segunda": {
+      "status": "aprovado",
+      "msg_id": 978
     }
   }
 }
