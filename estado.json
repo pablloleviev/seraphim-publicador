@@ -584,6 +584,14 @@
         "via": "buffer"
       },
       "msg_id": 992
+    },
+    "2026-10-23_1730_o-que-nao-fazemos": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-22T18:30:16.254116+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1000
     }
   },
   "respondidos": {},
