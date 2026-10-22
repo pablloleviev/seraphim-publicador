@@ -541,12 +541,17 @@
       "ig_manual": false
     },
     "2026-10-22_1230_uma-tarefa-tres-sistemas": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-21T13:30:04.285244+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ada2c3aa6a09108d272af28",
+        "feito": "buffer"
       },
-      "msg_id": 956
+      "msg_id": 956,
+      "ig_id": "18076263524462051",
+      "publicado_em": "2026-10-22T15:31:05.780773+00:00",
+      "ig_manual": false
     },
     "2026-10-22_1730_glossario-api-webhook": {
       "status": "agendado",
