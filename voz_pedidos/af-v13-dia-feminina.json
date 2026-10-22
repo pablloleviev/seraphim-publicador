@@ -1,0 +1,19 @@
+{
+ "voz": "feminina",
+ "estilo": "Narre em português do Brasil como uma mulher real contando o dia de uma oficina, de perto e com intimidade: voz feminina calorosa e segura, natural, com respiração e pequenas pausas, energia que sobe ao longo do dia, sem tom de locutora de propaganda e sem exagero",
+ "pausa": 8,
+ "tentativas": 3,
+ "fallback": true,
+ "edge_voz": "pt-BR-ThalitaMultilingualNeural",
+ "linhas": [
+  "Sete e quarenta e dois. O portão sobe.",
+  "As luzes acendem antes do primeiro cliente.",
+  "O dia começa com o pátio na tela.",
+  "Nove e quinze. Mais um carro entra.",
+  "Nova ordem de serviço.",
+  "O meio do dia pede atenção.",
+  "Tudo acompanhado de onde você estiver.",
+  "E o portão desce com o dia inteiro registrado.",
+  "AutoFlow. Solicite acesso pelo direct."
+ ]
+}
