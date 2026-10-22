@@ -567,12 +567,17 @@
       "ig_manual": false
     },
     "2026-10-22_1930_segunda-no-automatico": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-21T20:30:08.990705+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ada8ea5eed382c2d35aa472",
+        "feito": "buffer"
       },
-      "msg_id": 968
+      "msg_id": 968,
+      "ig_id": "18090392594274542",
+      "publicado_em": "2026-10-22T22:31:00.815585+00:00",
+      "ig_manual": false
     },
     "2026-10-23_0900_nosso-processo-5-etapas": {
       "status": "agendado",
