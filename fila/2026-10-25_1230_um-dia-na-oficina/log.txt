@@ -1,83 +1,83 @@
-dered 922/971, time remaining: 27s
-Rendered 923/971, time remaining: 26s
-Rendered 924/971, time remaining: 26s
-Rendered 925/971, time remaining: 25s
-Rendered 925/971, time remaining: 25s
-Rendered 926/971, time remaining: 25s
-Rendered 926/971, time remaining: 25s
-Rendered 927/971, time remaining: 24s
-Rendered 928/971, time remaining: 24s
-Rendered 929/971, time remaining: 23s
-Rendered 929/971, time remaining: 23s
-Rendered 930/971, time remaining: 22s
-Rendered 931/971, time remaining: 22s
-Rendered 932/971, time remaining: 21s
-Rendered 932/971, time remaining: 21s
-Rendered 933/971, time remaining: 21s
-Rendered 933/971, time remaining: 21s
-Rendered 934/971, time remaining: 20s
-Rendered 935/971, time remaining: 20s
-Rendered 935/971, time remaining: 20s
-Rendered 936/971, time remaining: 19s
-Rendered 937/971, time remaining: 18s
-Rendered 937/971, time remaining: 18s
-Rendered 938/971, time remaining: 18s
-Rendered 939/971, time remaining: 17s
-Rendered 939/971, time remaining: 17s
-Rendered 940/971, time remaining: 17s
-Rendered 941/971, time remaining: 16s
-Rendered 941/971, time remaining: 16s
-Rendered 942/971, time remaining: 16s
-Rendered 943/971, time remaining: 15s
-Rendered 943/971, time remaining: 15s
-Rendered 944/971, time remaining: 15s
-Rendered 945/971, time remaining: 14s
-Rendered 946/971, time remaining: 13s
-Rendered 947/971, time remaining: 13s
-Rendered 947/971, time remaining: 13s
-Rendered 948/971, time remaining: 12s
-Rendered 948/971, time remaining: 12s
-Rendered 949/971, time remaining: 12s
-Rendered 950/971, time remaining: 11s
-Rendered 950/971, time remaining: 11s
-Rendered 951/971, time remaining: 11s
-Rendered 952/971, time remaining: 10s
-Rendered 953/971, time remaining: 10s
-Rendered 953/971, time remaining: 10s
-Rendered 954/971, time remaining: 9s
-Rendered 955/971, time remaining: 8s
-Rendered 956/971, time remaining: 8s
-Rendered 956/971, time remaining: 8s
-Rendered 957/971, time remaining: 7s
-Rendered 958/971, time remaining: 7s
-Rendered 958/971, time remaining: 7s
-Rendered 959/971, time remaining: 6s
-Rendered 960/971, time remaining: 6s
-Rendered 960/971, time remaining: 6s
-Rendered 961/971, time remaining: 5s
-Rendered 962/971, time remaining: 4s
-Rendered 962/971, time remaining: 4s
-Rendered 963/971, time remaining: 4s
-Rendered 964/971, time remaining: 3s
-Rendered 965/971, time remaining: 3s
-Rendered 965/971, time remaining: 3s
-Rendered 966/971, time remaining: 2s
-Rendered 967/971, time remaining: 2s
-Rendered 968/971, time remaining: 1s
-Rendered 968/971, time remaining: 1s
-Rendered 969/971, time remaining: 1s
-Rendered 969/971, time remaining: 1s
-Rendered 970/971, time remaining: 0s
-Stitched 726/971
-Stitched 734/971
-Stitched 746/971
-Stitched 760/971
-Stitched 773/971
-Stitched 777/971
-Stitched 971/971
+me remaining: 25s
+Rendered 887/940, time remaining: 24s
+Rendered 888/940, time remaining: 24s
+Rendered 889/940, time remaining: 23s
+Rendered 889/940, time remaining: 23s
+Rendered 890/940, time remaining: 23s
+Rendered 891/940, time remaining: 22s
+Rendered 892/940, time remaining: 22s
+Rendered 892/940, time remaining: 22s
+Rendered 893/940, time remaining: 21s
+Rendered 894/940, time remaining: 21s
+Rendered 895/940, time remaining: 20s
+Rendered 895/940, time remaining: 20s
+Rendered 896/940, time remaining: 20s
+Rendered 897/940, time remaining: 19s
+Rendered 898/940, time remaining: 19s
+Rendered 898/940, time remaining: 19s
+Rendered 899/940, time remaining: 18s
+Rendered 900/940, time remaining: 18s
+Rendered 901/940, time remaining: 18s
+Rendered 901/940, time remaining: 18s
+Rendered 902/940, time remaining: 17s
+Rendered 903/940, time remaining: 17s
+Rendered 904/940, time remaining: 16s
+Rendered 905/940, time remaining: 16s
+Rendered 905/940, time remaining: 16s
+Rendered 906/940, time remaining: 15s
+Rendered 907/940, time remaining: 15s
+Rendered 908/940, time remaining: 14s
+Rendered 908/940, time remaining: 14s
+Rendered 909/940, time remaining: 14s
+Rendered 910/940, time remaining: 13s
+Rendered 911/940, time remaining: 13s
+Rendered 911/940, time remaining: 13s
+Rendered 912/940, time remaining: 12s
+Rendered 913/940, time remaining: 12s
+Rendered 914/940, time remaining: 11s
+Rendered 914/940, time remaining: 11s
+Rendered 915/940, time remaining: 11s
+Rendered 916/940, time remaining: 11s
+Rendered 916/940, time remaining: 11s
+Rendered 917/940, time remaining: 10s
+Rendered 918/940, time remaining: 10s
+Rendered 919/940, time remaining: 9s
+Rendered 919/940, time remaining: 9s
+Rendered 920/940, time remaining: 9s
+Rendered 921/940, time remaining: 8s
+Rendered 922/940, time remaining: 8s
+Rendered 922/940, time remaining: 8s
+Rendered 923/940, time remaining: 7s
+Rendered 924/940, time remaining: 7s
+Rendered 925/940, time remaining: 6s
+Rendered 925/940, time remaining: 6s
+Rendered 926/940, time remaining: 6s
+Rendered 927/940, time remaining: 5s
+Rendered 928/940, time remaining: 5s
+Rendered 928/940, time remaining: 5s
+Rendered 929/940, time remaining: 5s
+Rendered 930/940, time remaining: 4s
+Rendered 930/940, time remaining: 4s
+Rendered 931/940, time remaining: 4s
+Rendered 932/940, time remaining: 3s
+Rendered 933/940, time remaining: 3s
+Rendered 934/940, time remaining: 2s
+Rendered 934/940, time remaining: 2s
+Rendered 935/940, time remaining: 2s
+Rendered 936/940, time remaining: 1s
+Rendered 936/940, time remaining: 1s
+Rendered 937/940, time remaining: 1s
+Rendered 938/940, time remaining: 0s
+Rendered 939/940, time remaining: 0s
+Stitched 700/940
+Stitched 707/940
+Stitched 726/940
+Stitched 742/940
+Stitched 752/940
+Stitched 940/940
 Voz: gemini (87 palavras)
-[trilha] trechos: epico 0.0-3.5s | emocao 3.5-32.4s
+[trilha] trechos: epico 0.0-3.7s | emocao 3.7-31.3s
 Editando no motor Remotion... (alguns minutos)
-Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-25_1230_um-dia-na-oficina/video.mp4 (32.4s)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-25_1230_um-dia-na-oficina/video.mp4 (31.3s)
 
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
