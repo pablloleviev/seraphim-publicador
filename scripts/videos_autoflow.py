@@ -20,9 +20,9 @@ FIM = "\n\n"
 
 # tela real -> imagem 9:16 pronta para entrar como cena (quanto da largura a tela ocupa, e de onde recortar)
 MONTAGENS = [
- dict(saida="tela-painel.png", tela="painel_conteudo.png", largura=0.82, corte=(0, 0, 0.55, 0.70)),
- dict(saida="tela-ordens.png", tela="ordens_conteudo.png", largura=0.82, corte=(0, 0, 0.62, 1)),
- dict(saida="tela-historico.png", tela="historico_conteudo.png", largura=0.82, corte=(0, 0, 0.78, 0.95)),
+ dict(saida="tela-painel.png", tela="painel_conteudo.png", largura=0.92, corte=(0, 0, 1, 0.97)),
+ dict(saida="tela-ordens.png", tela="ordens_conteudo.png", largura=0.86, corte=(0, 0, 0.74, 1)),
+ dict(saida="tela-historico.png", tela="historico_conteudo.png", largura=0.92, corte=(0, 0, 1, 0.95)),
  dict(saida="tela-nova-os.png", tela="nova_os_painel.png", largura=0.70, corte=(0, 0, 1, 1)),
 ]
 
@@ -110,6 +110,51 @@ VIDEOS = [
       legenda_tiktok="Um dia na oficina, com o AutoFlow.",
       hashtags=["#autoflow", "#oficinamecanica", "#gestaoautomotiva", "#rotina"]),
 ]
+
+
+CAPAS = {
+ "do-caderno-ao-sistema": dict(foto="n-caderno-notebook.png", rotulo="AUTOFLOW", titulo="Do caderno|ao *sistema*", pos="center 45%"),
+ "um-dia-na-oficina": dict(foto="n-silhueta-portao.png", rotulo="UM DIA NA OFICINA", titulo="Das 7h42|às *18h20*", pos="center 40%"),
+}
+
+
+def capas(pastas: dict):
+    """Capa 9:16 de cada vídeo (a do Reels e o 1º quadro do TikTok), na identidade do AutoFlow."""
+    import asyncio, io, re
+    from PIL import Image
+    from playwright.async_api import async_playwright
+    fontes = (RAIZ / "motor/public/fontes").as_uri()
+    logo = (RAIZ / "assets/autoflow/logo-icone.png").as_uri()
+
+    async def gerar():
+        async with async_playwright() as p:
+            nav = await p.chromium.launch()
+            for nome, destino in pastas.items():
+                d = CAPAS[nome]
+                img = (CENAS / d["foto"]).as_uri()
+                titulo = re.sub(r"\*(.+?)\*", r'<span style="color:#FF6A13">\1</span>', d["titulo"]).replace("|", "<br>")
+                html = f"""<html><head><meta charset="utf-8"><style>
+                @font-face{{font-family:SH;font-weight:700;src:url({fontes}/stack-sans-headline-latin-700-normal.woff2)}}
+                @font-face{{font-family:ST;font-weight:500;src:url({fontes}/stack-sans-text-latin-500-normal.woff2)}}
+                *{{margin:0;box-sizing:border-box}} body{{width:1080px;height:1920px;position:relative;background:#0E0E10;overflow:hidden}}
+                .f{{position:absolute;inset:0;background:url({img}) center/cover;background-position:{d['pos']}}}
+                .v{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,14,16,.6),rgba(14,14,16,.05) 32%,rgba(14,14,16,.9) 72%,#0E0E10)}}
+                .m{{position:absolute;left:84px;top:96px;display:flex;align-items:center;gap:18px;font:700 34px SH;color:#F4F2EC}}
+                .m img{{width:70px;height:70px;border-radius:18px}}
+                .r{{font:700 30px SH;letter-spacing:5px;color:#FF6A13;margin-bottom:26px}}
+                h1{{font:700 108px/1.02 SH;color:#F4F2EC;letter-spacing:-3px}}
+                .c{{position:absolute;left:84px;right:84px;bottom:420px}}</style></head>
+                <body><div class="f"></div><div class="v"></div>
+                <div class="m"><img src="{logo}">AutoFlow</div>
+                <div class="c"><div class="r">{d['rotulo']}</div><h1>{titulo}</h1></div></body></html>"""
+                pg = await nav.new_page(viewport={"width": 1080, "height": 1920})
+                tmp = RAIZ / "_capa_af.html"; tmp.write_text(html, encoding="utf-8")
+                await pg.goto(tmp.as_uri()); await pg.evaluate("document.fonts.ready"); await pg.wait_for_timeout(300)
+                Image.open(io.BytesIO(await pg.screenshot())).convert("RGB").save(destino / "capa.jpg", quality=93)
+                await pg.close(); tmp.unlink()
+                print("capa:", destino.name)
+            await nav.close()
+    asyncio.run(gerar())
 
 
 def pedidos():
