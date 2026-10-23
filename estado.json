@@ -677,7 +677,8 @@
     },
     "2026-10-23_1-pergunte": {
       "status": "aprovado",
-      "msg_id": 1010
+      "msg_id": 1010,
+      "lembrado": true
     },
     "2026-10-23_2-cinco-perguntas": {
       "status": "aprovado",
