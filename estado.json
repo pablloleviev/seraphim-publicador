@@ -652,8 +652,10 @@
       "lembrado": true
     },
     "2026-10-22_2-segunda": {
-      "status": "aprovado",
-      "msg_id": 978
+      "status": "publicado",
+      "msg_id": 978,
+      "ig_id": "18113986706124343",
+      "publicado_em": "2026-10-22T23:15:09.216008+00:00"
     }
   }
 }
