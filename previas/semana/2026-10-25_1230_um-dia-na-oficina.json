@@ -1,0 +1,60 @@
+{
+ "nome": "um-dia-na-oficina",
+ "pasta": "2026-10-25_1230_um-dia-na-oficina",
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "genero_voz": "feminina",
+ "estilo_legenda": "palavra",
+ "paleta": "autoflow",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "clock",
+   "titulo": "Um dia *na oficina*",
+   "narracao": "Sete e quarenta e dois. O portão sobe e o dia começa."
+  },
+  {
+   "tipo": "tela",
+   "tela": "af/painel_conteudo.png",
+   "rotulo": "PAINEL",
+   "titulo": "O pátio *na tela*",
+   "narracao": "No painel, o que entrou, o que está em andamento e o que já pode ser entregue."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Nove e quinze. Mais um *carro entra*.",
+   "narracao": "Nove e quinze. Mais um carro entra."
+  },
+  {
+   "tipo": "tela",
+   "tela": "af/nova_os_painel.png",
+   "dispositivo": "celular",
+   "rotulo": "NOVA ORDEM",
+   "titulo": "Uma ordem nova em *poucos campos*",
+   "narracao": "Cliente, veículo, serviço e valor: a ordem nova já entra no quadro."
+  },
+  {
+   "tipo": "tela",
+   "tela": "af/celular_painel.png",
+   "dispositivo": "celular",
+   "rotulo": "NO CELULAR",
+   "titulo": "Na mesa ou *no bolso*",
+   "narracao": "E a oficina continua com você, na mesa ou no bolso."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Dezoito e vinte. O portão *desce*.",
+   "narracao": "Dezoito e vinte. O portão desce com o dia inteiro registrado."
+  },
+  {
+   "tipo": "fecho",
+   "logo": "af/logo-icone.png",
+   "titulo": "O AutoFlow acompanha o *dia da sua oficina*",
+   "cartoes": [
+    "Teste gratuito para oficinas selecionadas",
+    "Solicite acesso pelo direct"
+   ],
+   "narracao": "O AutoFlow acompanha o dia da sua oficina. Teste gratuito para oficinas selecionadas: solicite acesso pelo direct."
+  }
+ ]
+}

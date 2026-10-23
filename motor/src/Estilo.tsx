@@ -9,7 +9,8 @@ export type Paleta = {a: string; a2: string; ae: string};
 export type Palavra = {w: string; s: number; e: number};
 export type CenaE = {inicio: number; fim: number; tipo: string; linha?: string; titulo?: string; rotulo?: string;
   numero?: string; icones?: string[]; cartoes?: string[]; fundo?: string; foto?: string;
-  transicao?: string; camera?: string; itens?: string[]; antes?: string; depois?: string; icone?: string};
+  transicao?: string; camera?: string; itens?: string[]; antes?: string; depois?: string; icone?: string;
+  tela?: string; dispositivo?: string; logo?: string};
 export type PropsE = {fps: number; duracao: number; arroba: string; audio: string | null; batida: string | null;
   palavras: Palavra[]; cenas: CenaE[]; trilha_mix?: boolean; sfx?: boolean;
   personalidade?: string; legenda?: string; tarja?: boolean; semente?: number; paleta?: Paleta};
@@ -213,7 +214,8 @@ const Fecho: React.FC<{c: CenaE; arroba: string}> = ({c, arroba}) => {
   const f = useCurrentFrame(); const {fps} = useVideoConfig();
   return (
     <AbsoluteFill>
-      <div style={{position: 'absolute', left: 80, right: 80, top: 420, fontFamily: 'Sora', fontSize: 96, lineHeight: 1.1, letterSpacing: -2, color: BRANCO}}><Tit t={c.titulo || ''} /></div>
+      {c.logo && <Img src={staticFile(c.logo)} style={{position: 'absolute', left: '50%', top: 230, width: 150, transform: `translateX(-50%) scale(${spring({frame: f - 2, fps, config: {damping: 13}})})`}} />}
+      <div style={{position: 'absolute', left: 80, right: 80, top: c.logo ? 460 : 420, fontFamily: 'Sora', fontSize: 96, lineHeight: 1.1, letterSpacing: -2, color: BRANCO}}><Tit t={c.titulo || ''} /></div>
       <div style={{position: 'absolute', left: 80, right: 80, top: 1000, display: 'flex', gap: 34}}>
         {(c.cartoes || []).map((t, i) => {
           const e = spring({frame: f - 10 - i * 8, fps, config: {damping: 14}});
@@ -230,6 +232,28 @@ const Fecho: React.FC<{c: CenaE; arroba: string}> = ({c, arroba}) => {
   );
 };
 
+
+
+// tela: a captura real do produto dentro do painel de vidro 3D do motor (identidade do produto, linguagem daqui)
+const Tela: React.FC<{c: CenaE}> = ({c}) => {
+  const f = useCurrentFrame(); const {fps} = useVideoConfig();
+  const e = spring({frame: f - 4, fps, config: {damping: 15}});
+  const cel = c.dispositivo === 'celular';
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', left: 80, right: 80, top: 300, fontFamily: 'Sora', fontSize: 92, lineHeight: 1.08, letterSpacing: -2, color: BRANCO}}><Tit t={c.titulo || ''} /></div>
+      <div style={{position: 'absolute', left: 0, right: 0, top: cel ? 620 : 720, display: 'flex', justifyContent: 'center',
+        transform: `perspective(1700px) rotateX(${10 - 4 * e}deg) rotateY(${-9 + (1 - e) * 26}deg) scale(${0.86 + 0.14 * e}) translateY(${(1 - e) * 90}px)`, opacity: e}}>
+        <Vidro style={{padding: cel ? 16 : 22, width: cel ? 470 : 920, borderRadius: cel ? 58 : 32}}>
+          <Img src={staticFile(c.tela || '')} style={{position: 'relative', display: 'block', width: '100%', maxHeight: cel ? 920 : 600,
+            objectFit: 'cover', objectPosition: 'top left', borderRadius: cel ? 44 : 14}} />
+        </Vidro>
+      </div>
+      {c.rotulo && <div style={{position: 'absolute', left: 0, right: 0, top: 1560, textAlign: 'center', fontFamily: 'Man8', fontSize: 36, letterSpacing: 5, color: OURO2,
+        opacity: interpolate(f, [12, 26], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}}>{c.rotulo}</div>}
+    </AbsoluteFill>
+  );
+};
 
 // número gigante contando, tela cheia
 const Numero: React.FC<{c: CenaE}> = ({c}) => {
@@ -366,7 +390,7 @@ export const Estilo: React.FC<PropsE> = (props) => {
         const C = c.tipo === 'capa' ? <Capa c={c} /> : c.tipo === 'moedas' ? <Moedas c={c} /> : c.tipo === 'cartao' ? <Cartao c={c} claro={claro} />
           : c.tipo === 'fecho' ? <Fecho c={c} arroba={props.arroba} /> : c.tipo === 'numero' ? <Numero c={c} /> : c.tipo === 'lista' ? <Lista c={c} />
           : c.tipo === 'contraste' ? <Contraste c={c} /> : c.tipo === 'objeto' ? <Objeto c={c} /> : c.tipo === 'pessoa' ? <Pessoa c={c} />
-          : c.tipo === 'citacao' ? <Citacao c={c} /> : <Frase c={c} claro={claro} />;
+          : c.tipo === 'citacao' ? <Citacao c={c} /> : c.tipo === 'tela' ? <Tela c={c} /> : <Frase c={c} claro={claro} />;
         const pp = P(props.personalidade); const sd = (props.semente || 0) + i * 7;
         const tr = i === 0 ? (c.transicao || 'desfoque') : (c.transicao || pp.trans[sd % pp.trans.length]);
         const cam = c.camera || pp.cam[(sd >> 1) % pp.cam.length];
