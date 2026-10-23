@@ -1,0 +1,60 @@
+{
+ "nome": "do-caderno-ao-sistema",
+ "pasta": "2026-10-24_1930_do-caderno-ao-sistema",
+ "motor": "estilo",
+ "personalidade": "elegante",
+ "genero_voz": "masculina",
+ "estilo_legenda": "palavra",
+ "paleta": "autoflow",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "notebook-pen",
+   "titulo": "Do caderno ao *sistema*",
+   "narracao": "Toda oficina anota. No caderno, na planilha, num papel em cima da bancada."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Anotar é fácil. Difícil é *achar depois*.",
+   "narracao": "Anotar é fácil. Difícil é achar depois, quando o cliente liga perguntando o que foi feito no carro dele."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Cada informação num lugar diferente",
+   "depois": "Tudo num *lugar só*",
+   "narracao": "O AutoFlow é um sistema de gestão feito para oficinas mecânicas."
+  },
+  {
+   "tipo": "tela",
+   "tela": "af/ordens_conteudo.png",
+   "rotulo": "ORDENS DE SERVIÇO",
+   "titulo": "Cada ordem no *quadro*",
+   "narracao": "Cada ordem de serviço no quadro: pendente, em andamento, finalizado, entregue."
+  },
+  {
+   "tipo": "tela",
+   "tela": "af/historico_conteudo.png",
+   "rotulo": "HISTÓRICO POR PLACA",
+   "titulo": "E o histórico *pela placa*",
+   "narracao": "E o histórico de cada carro pela placa, da primeira visita até hoje."
+  },
+  {
+   "tipo": "fecho",
+   "logo": "af/logo-icone.png",
+   "titulo": "Sua oficina merece uma *gestão mais simples*",
+   "cartoes": [
+    "Teste gratuito para oficinas selecionadas",
+    "Solicite acesso pelo direct"
+   ],
+   "narracao": "Sua oficina merece uma gestão mais simples. O teste é gratuito para oficinas selecionadas: solicite acesso pelo direct."
+  }
+ ],
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-24 19:30",
+ "titulo": "Do caderno ao sistema",
+ "funil": "topo",
+ "voz": "gemini",
+ "relancamento": "V12",
+ "legenda": "O caderno guarda muita coisa. O difícil é achar na hora certa.\n\nO AutoFlow é um sistema de gestão feito para oficinas mecânicas: as ordens de serviço num quadro e o histórico de cada carro pela placa.\n\nTeste gratuito para oficinas selecionadas. Solicite acesso pelo direct.\n\n#autoflow #oficinamecanica #gestaoautomotiva #mecanica #seraphimbr",
+ "legenda_tiktok": "Do caderno ao sistema: AutoFlow, gestão para oficinas mecânicas.\n\n#autoflow #oficinamecanica #gestaoautomotiva #seraphimbr"
+}

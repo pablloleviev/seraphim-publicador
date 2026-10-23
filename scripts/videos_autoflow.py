@@ -23,7 +23,7 @@ VIDEOS = [
         "narracao": "Toda oficina anota. No caderno, na planilha, num papel em cima da bancada."},
        {"tipo": "frase", "titulo": "Anotar é fácil. Difícil é *achar depois*.",
         "narracao": "Anotar é fácil. Difícil é achar depois, quando o cliente liga perguntando o que foi feito no carro dele."},
-       {"tipo": "contraste", "antes": "Cada informação num lugar", "depois": "Tudo num *lugar só*",
+       {"tipo": "contraste", "antes": "Cada informação num lugar diferente", "depois": "Tudo num *lugar só*",
         "narracao": "O AutoFlow é um sistema de gestão feito para oficinas mecânicas."},
        {"tipo": "tela", "tela": "af/ordens_conteudo.png", "rotulo": "ORDENS DE SERVIÇO", "titulo": "Cada ordem no *quadro*",
         "narracao": "Cada ordem de serviço no quadro: pendente, em andamento, finalizado, entregue."},

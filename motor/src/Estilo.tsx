@@ -241,16 +241,16 @@ const Tela: React.FC<{c: CenaE}> = ({c}) => {
   const cel = c.dispositivo === 'celular';
   return (
     <AbsoluteFill>
+      {c.rotulo && <div style={{position: 'absolute', left: 80, right: 80, top: 228, fontFamily: 'Man8', fontSize: 34, letterSpacing: 5, color: OURO2,
+        opacity: interpolate(f, [6, 18], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}}>{c.rotulo}</div>}
       <div style={{position: 'absolute', left: 80, right: 80, top: 300, fontFamily: 'Sora', fontSize: 92, lineHeight: 1.08, letterSpacing: -2, color: BRANCO}}><Tit t={c.titulo || ''} /></div>
-      <div style={{position: 'absolute', left: 0, right: 0, top: cel ? 620 : 720, display: 'flex', justifyContent: 'center',
+      <div style={{position: 'absolute', left: 0, right: 0, top: cel ? 560 : 660, display: 'flex', justifyContent: 'center',
         transform: `perspective(1700px) rotateX(${10 - 4 * e}deg) rotateY(${-9 + (1 - e) * 26}deg) scale(${0.86 + 0.14 * e}) translateY(${(1 - e) * 90}px)`, opacity: e}}>
         <Vidro style={{padding: cel ? 16 : 22, width: cel ? 470 : 920, borderRadius: cel ? 58 : 32}}>
           <Img src={staticFile(c.tela || '')} style={{position: 'relative', display: 'block', width: '100%', maxHeight: cel ? 920 : 600,
             objectFit: 'cover', objectPosition: 'top left', borderRadius: cel ? 44 : 14}} />
         </Vidro>
       </div>
-      {c.rotulo && <div style={{position: 'absolute', left: 0, right: 0, top: 1560, textAlign: 'center', fontFamily: 'Man8', fontSize: 36, letterSpacing: 5, color: OURO2,
-        opacity: interpolate(f, [12, 26], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}}>{c.rotulo}</div>}
     </AbsoluteFill>
   );
 };
