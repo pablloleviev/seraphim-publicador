@@ -1,4 +1,6 @@
-"""Trilhas dos vídeos AutoFlow V2 e V3 (ffmpeg). Uso: python scripts/trilha_autoflow.py v2|v3"""
+"""Trilhas dos vídeos AutoFlow (ffmpeg). Uso: python scripts/trilha_autoflow.py v2|v3|v12|v13
+V12 e V13 seguem o padrão do V1 aprovado: só música e efeitos (sem narração),
+com a música recuando no preto que antecede cada revelação do produto."""
 import subprocess, sys
 from pathlib import Path
 R = Path(__file__).resolve().parent.parent
@@ -40,5 +42,46 @@ def v3():
     fl.append("".join(tags) + f"amix=inputs={len(tags)}:normalize=0,atrim=0:45,loudnorm=I=-14:TP=-1.5:LRA=11[out]")
     run([*ins, "-filter_complex", ";".join(fl), "-map", "[out]", "-ar", "44100", "-ac", "2", str(OUT / "trilha_v3.wav")])
 
-{"v2": v2, "v3": v3}[sys.argv[1]]()
+
+def _dip(ini, fim, prof=0.07, r=0.55):
+    """Música recua no preto antes da revelação (como no V1) e volta em seguida."""
+    a, b, c, d = ini - r, ini, fim, fim + r
+    return (f"volume=eval=frame:volume='if(lt(t,{a}),1,if(lt(t,{b}),1-(t-{a})/{r}*{1-prof:.2f},"
+            f"if(lt(t,{c}),{prof},if(lt(t,{d}),{prof}+(t-{c})/{r}*{1-prof:.2f},1))))'")
+
+
+def _trilha(saida, musica, ss, dur, dips, efeitos, vol=0.62):
+    """musica = caminho; dips = [(ini, fim)]; efeitos = [(arquivo, segundo, volume, grave?)]"""
+    ins = ["-ss", str(ss), "-t", str(dur), "-i", str(musica)]
+    fl = [f"[0]aresample=44100,volume={vol},afade=t=in:d=1.3,afade=t=out:st={dur - 2.6:.2f}:d=2.6"
+          + "".join("," + _dip(a, b) for a, b in dips) + "[mus]"]
+    tags = ["[mus]"]
+    for j, (arq, t, v, grave) in enumerate(efeitos, start=1):
+        ins += ["-i", str(SFX / arq)]
+        ms = int(t * 1000)
+        grav = "lowpass=f=1500,aecho=0.8:0.6:140:0.2," if grave else ""
+        fl.append(f"[{j}]{grav}volume={v},adelay={ms}|{ms}[e{j}]")
+        tags.append(f"[e{j}]")
+    fl.append("".join(tags) + f"amix=inputs={len(tags)}:normalize=0,atrim=0:{dur},loudnorm=I=-14:TP=-1.5:LRA=11[out]")
+    run([*ins, "-filter_complex", ";".join(fl), "-map", "[out]", "-ar", "44100", "-ac", "2", str(OUT / saida)])
+
+
+def v12():
+    # 39 s: montagem (0-12) | preto 12-13 | produto 13-31 | oficina 31-34,2 | fecho 34,2-39
+    _trilha("trilha_v12.wav", R / "musica/inspira/06.mp3", 56, 39, [(11.9, 12.95)], [
+        ("whoosh.wav", 3.05, 0.18, False), ("whoosh.wav", 6.65, 0.18, False), ("whoosh.wav", 10.15, 0.2, False),
+        ("impacto.wav", 13.0, 0.4, True), ("clique.wav", 22.2, 0.22, False), ("whoosh.wav", 30.95, 0.2, False),
+        ("impacto.wav", 34.2, 0.35, True)])
+
+
+def v13():
+    # 44 s: manhã (0-9,9) | painel 10,8-20,2 | tarde 20,2-24,5 | nova OS + celular 25-35,4 | portão 35,4-39 | fecho 39-44
+    _trilha("trilha_v13.wav", R / "musica/emocao/03.mp3", 77, 44, [(9.95, 10.75), (24.2, 24.95)], [
+        ("tic.wav", 0.3, 0.3, False), ("whoosh.wav", 3.25, 0.18, False), ("whoosh.wav", 5.65, 0.18, False),
+        ("impacto.wav", 10.8, 0.4, True), ("tic.wav", 20.2, 0.3, False), ("whoosh.wav", 22.55, 0.2, False),
+        ("impacto.wav", 25.0, 0.38, True), ("whoosh.wav", 31.2, 0.18, False), ("tic.wav", 35.4, 0.28, False),
+        ("impacto.wav", 39.0, 0.35, True)])
+
+
+{"v2": v2, "v3": v3, "v12": v12, "v13": v13}[sys.argv[1]]()
 print("ok", sys.argv[1])
