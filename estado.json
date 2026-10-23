@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630297,
+  "telegram_offset": 183630299,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -619,12 +619,17 @@
       "ig_manual": false
     },
     "2026-10-23_1930_perguntas-antes-do-codigo": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-22T20:30:20.560558+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6adbe00d3d5b27036b552f00",
+        "feito": "buffer"
       },
-      "msg_id": 1002
+      "msg_id": 1002,
+      "ig_id": "17929461612182371",
+      "publicado_em": "2026-10-23T22:30:36.540911+00:00",
+      "ig_manual": false
     },
     "2026-10-24_0900_por-que-comecamos-pelas-oficinas": {
       "status": "agendado",
@@ -635,7 +640,7 @@
       "msg_id": 1021
     },
     "2026-10-24_1730_autoflow-em-6-slides": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-23T18:30:14.605166+00:00",
       "tiktok": {
         "via": "buffer"
@@ -643,7 +648,7 @@
       "msg_id": 1033
     },
     "2026-10-24_1930_do-caderno-ao-sistema": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-23T20:30:26.732532+00:00",
       "tiktok": {
         "via": "buffer"
