@@ -580,12 +580,17 @@
       "ig_manual": false
     },
     "2026-10-23_0900_nosso-processo-5-etapas": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-22T10:00:11.913965+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6adb4c746556f503c42db474",
+        "feito": "buffer"
       },
-      "msg_id": 986
+      "msg_id": 986,
+      "ig_id": "18136604602727830",
+      "publicado_em": "2026-10-23T12:00:52.041384+00:00",
+      "ig_manual": false
     },
     "2026-10-23_1230_como-comecamos-um-projeto": {
       "status": "agendado",
