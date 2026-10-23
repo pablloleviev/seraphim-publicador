@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630294,
+  "telegram_offset": 183630297,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -596,7 +596,7 @@
       "msg_id": 992
     },
     "2026-10-23_1730_o-que-nao-fazemos": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-22T18:30:16.254116+00:00",
       "tiktok": {
         "via": "buffer"
@@ -604,12 +604,20 @@
       "msg_id": 1000
     },
     "2026-10-23_1930_perguntas-antes-do-codigo": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-22T20:30:20.560558+00:00",
       "tiktok": {
         "via": "buffer"
       },
       "msg_id": 1002
+    },
+    "2026-10-24_0900_por-que-comecamos-pelas-oficinas": {
+      "status": "agendado",
+      "enviado_em": "2026-10-23T10:00:17.741964+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1021
     }
   },
   "respondidos": {},
