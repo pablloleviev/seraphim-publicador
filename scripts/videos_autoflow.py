@@ -170,7 +170,20 @@ def pedidos():
         print("pedido:", v["peca"], v["nome"], v["voz"])
 
 
+def pasta_na_fila(v: dict) -> Path:
+    return RAIZ / "fila" / f"{v['quando'].replace(' ', '_').replace(':', '')}_{v['nome']}"
+
+
 if __name__ == "__main__":
-    if sys.argv[1:2] != ["pedidos"]:
+    o = sys.argv[1] if len(sys.argv) > 1 else "tudo"
+    if o == "capas":          # capa do Reels + 1º quadro do TikTok, depois que o vídeo já está na fila
+        import capa_no_video
+        destinos = {v["nome"]: pasta_na_fila(v) for v in VIDEOS if pasta_na_fila(v).exists()}
+        capas(destinos)
+        for d in destinos.values():
+            (d / "video_tiktok.mp4").unlink(missing_ok=True)
+            print("tiktok:", capa_no_video.fazer(d))
+        sys.exit()
+    if o != "pedidos":
         montar_telas()
     pedidos()

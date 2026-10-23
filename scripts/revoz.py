@@ -24,5 +24,11 @@ for quando, f, spec in sorted(pend, key=lambda x: x[0]):
     if r.returncode == 3 or not tmp.exists():
         print("Cota do Gemini acabou por hoje. Continua amanhã."); break
     shutil.move(str(tmp), destino / "video.mp4")
+    try:   # a versão do TikTok também precisa da voz nova (senão fica com a voz reserva)
+        sys.path.insert(0, str(RAIZ / "scripts"))
+        import capa_no_video
+        capa_no_video.fazer(destino)
+    except Exception as e:
+        print(f"[aviso] capa no vídeo: {e}")
     f.unlink()
     print(f"{f.stem}: refeito com Gemini ✓")
