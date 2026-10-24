@@ -632,12 +632,17 @@
       "ig_manual": false
     },
     "2026-10-24_0900_por-que-comecamos-pelas-oficinas": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-23T10:00:17.741964+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6adc9df48b3d437ddcb851fe",
+        "feito": "buffer"
       },
-      "msg_id": 1021
+      "msg_id": 1021,
+      "ig_id": "18106127048363138",
+      "publicado_em": "2026-10-24T12:00:51.141285+00:00",
+      "ig_manual": false
     },
     "2026-10-24_1730_autoflow-em-6-slides": {
       "status": "agendado",
