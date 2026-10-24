@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630299,
+  "telegram_offset": 183630304,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -661,7 +661,7 @@
       "msg_id": 1035
     },
     "2026-10-25_0900_perguntas-sobre-o-autoflow": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-24T10:00:17.089005+00:00",
       "tiktok": {
         "via": "buffer"
@@ -669,12 +669,20 @@
       "msg_id": 1052
     },
     "2026-10-25_1230_um-dia-na-oficina": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-24T13:30:19.272961+00:00",
       "tiktok": {
         "via": "buffer"
       },
       "msg_id": 1056
+    },
+    "2026-10-25_1730_o-que-podemos-construir": {
+      "status": "agendado",
+      "enviado_em": "2026-10-24T18:30:20.870052+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1064
     }
   },
   "respondidos": {},
@@ -734,11 +742,12 @@
       "publicado_em": "2026-10-23T23:15:10.530333+00:00"
     },
     "2026-10-24_1-oficina": {
-      "status": "aguardando",
-      "msg_id": 1043
+      "status": "aprovado",
+      "msg_id": 1043,
+      "lembrado": true
     },
     "2026-10-24_2-dor-oficina": {
-      "status": "aguardando",
+      "status": "aprovado",
       "msg_id": 1045
     }
   }
