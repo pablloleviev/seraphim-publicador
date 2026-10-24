@@ -715,6 +715,10 @@
     "2026-10-24_1-oficina": {
       "status": "aguardando",
       "msg_id": 1043
+    },
+    "2026-10-24_2-dor-oficina": {
+      "status": "aguardando",
+      "msg_id": 1045
     }
   }
 }
