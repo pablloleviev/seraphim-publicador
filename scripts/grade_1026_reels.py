@@ -21,10 +21,10 @@ def decrescente(total, a=14, b=4):
 
 REELS = {
  "seg": dict(pasta="2026-10-26_seg_reel", titulo="A oficina fecha", dur=25.0, cenas=[
-   dict(inicio=0, fim=3.6, tipo="foto", img="af/cena-07.png", cam="desacelera", texto="A oficina fechou.", y=1130, tam=100, atraso=16, pos="50% 55%", brilho=.85),
+   dict(capa_em=2.4, inicio=0, fim=3.6, tipo="foto", img="af/cena-07.png", cam="desacelera", texto="A oficina fechou.", y=1130, tam=100, atraso=16, pos="50% 55%", brilho=.85),
    dict(inicio=3.6, fim=6.4, tipo="colagem", itens=[dict(k=k, d=d) for k, d in zip(["notifs", "agenda", "papel", "notifs", "agenda", "papel", "notifs", "agenda", "papel", "notifs", "agenda", "notifs", "papel"], decrescente(84, 12, 4))],
         som=dict(pings=[4.0, 4.5, 5.0, 5.6])),
-   dict(inicio=6.4, fim=9.4, tipo="texto", linhas=[dict(t="Mas a operação ainda está *aberta* na sua cabeça.", y=560, tam=100, atraso=22, entre=5, acento=ACIDO)], som=dict(mudo=(6.4, 7.2), hit=7.2)),
+   dict(inicio=6.4, fim=9.4, tipo="texto", linhas=[dict(t="Mas a operação ainda está *aberta* na sua cabeça.", y=760, tam=100, atraso=22, entre=5, acento=ACIDO)], som=dict(mudo=(6.4, 7.2), hit=7.2)),
    dict(inicio=9.4, fim=11.8, tipo="foto", img="af/n-cliente-relogio.png", cam="deriva-esq", texto="Cliente aguardando resposta.", y=1200, tam=76, atraso=8, pos="50% 40%"),
    dict(inicio=11.8, fim=14.2, tipo="foto", img="af/cena-05.png", cam="sobe", texto="O histórico que precisa ser encontrado.", y=1200, tam=76, atraso=8),
    dict(inicio=14.2, fim=16.6, tipo="foto", img="af/n-mural.png", cam="deriva-dir", texto="A rotina de amanhã, sendo lembrada.", y=1200, tam=76, atraso=8),
@@ -32,18 +32,18 @@ REELS = {
    dict(inicio=21.6, fim=25.0, tipo="fecho", texto="Conheça o *AutoFlow.*", y=980, tam=84, som=dict(hit=21.6, pad=True)),
  ]),
  "qui": dict(pasta="2026-10-29_qui_reel", titulo="Mais uma aba aberta", dur=19.6, cenas=[
-   dict(inicio=0, fim=2.6, tipo="texto", linhas=[dict(t="Quantas *abas abertas* a sua operação exige?", y=560, tam=100, atraso=6, entre=4)], som=dict(abrir=True)),
+   dict(capa_em=1.7, inicio=0, fim=2.6, tipo="texto", linhas=[dict(t="Quantas *abas abertas* a sua operação exige?", y=740, tam=100, atraso=6, entre=4)], som=dict(abrir=True)),
    dict(inicio=2.6, fim=6.6, tipo="colagem", itens=[dict(k=k, d=d) for k, d in zip((["caderno", "planilha", "celular-desfoque", "postits", "notifs"] * 8), decrescente(120, 14, 4))], som=dict(rapido=True)),
    dict(inicio=6.6, fim=9.8, tipo="janelas", alinhaEm=58, som=dict(alinha=6.6 + 58 / 30)),
    dict(inicio=9.8, fim=12.8, tipo="notebook", tela="gv/tela.png", som=dict(silencio_total=True)),
-   dict(inicio=12.8, fim=15.4, tipo="texto", fundo=MARFIM, brilho="rgba(47,107,255,.0)", linhas=[dict(t="A pergunta não é “qual *ferramenta* falta?”", y=600, tam=96, atraso=4, entre=4, acento=AZUL)]),
+   dict(inicio=12.8, fim=15.4, tipo="texto", fundo=MARFIM, brilho="rgba(47,107,255,.0)", linhas=[dict(t="A pergunta não é “qual *ferramenta* falta?”", y=760, tam=96, atraso=4, entre=4, acento=AZUL)]),
    dict(inicio=15.4, fim=19.6, tipo="fecho", texto="É “o que precisa parar de *ficar espalhado*?”", y=980, tam=66, som=dict(hit=15.4, pad=True)),
  ]),
  "sab": dict(pasta="2026-10-31_sab_reel", titulo="O verdadeiro terror da operação", dur=14.0, cenas=[
-   dict(inicio=0, fim=2.4, tipo="texto", linhas=[dict(t="O verdadeiro *terror* da operação?", y=600, tam=108, atraso=4, entre=4)], brilho="rgba(199,255,61,.10)", som=dict(seco=True)),
+   dict(capa_em=1.7, inicio=0, fim=2.4, tipo="texto", linhas=[dict(t="O verdadeiro *terror* da operação?", y=760, tam=108, atraso=4, entre=4)], brilho="rgba(199,255,61,.10)", som=dict(seco=True)),
    dict(inicio=2.4, fim=5.1, tipo="flashes", itens=[dict(k="papel", d=24), dict(k="mensagem", d=27), dict(k="celular-desfoque", d=30)], som=dict(flashes=[2.4, 3.2, 4.1])),
-   dict(inicio=5.1, fim=7.3, tipo="texto", linhas=[dict(t="Descobrir *tarde demais.*", y=620, tam=112, atraso=16, entre=6)], regua=860, som=dict(mudo=(5.1, 5.6), hit=5.6)),
-   dict(inicio=7.3, fim=10.8, tipo="texto", fundo=ACIDO, virada=9, linhas=[dict(t="Clareza não assusta. Ela evita *surpresa.*", y=600, tam=96, atraso=20, entre=5, acento=ACIDO)], som=dict(virada=7.3 + 9 / 30)),
+   dict(inicio=5.1, fim=7.3, tipo="texto", linhas=[dict(t="Descobrir *tarde demais.*", y=760, tam=112, atraso=16, entre=6)], regua=1030, som=dict(mudo=(5.1, 5.6), hit=5.6)),
+   dict(inicio=7.3, fim=10.8, tipo="texto", fundo=ACIDO, virada=9, linhas=[dict(t="Clareza não assusta. Ela evita *surpresa.*", y=760, tam=96, atraso=20, entre=5, acento=ACIDO)], som=dict(virada=7.3 + 9 / 30)),
    dict(inicio=10.8, fim=14.0, tipo="fecho", texto="Gestão mais simples para *oficinas.*", y=980, tam=74, som=dict(hit=10.8, pad=True)),
  ]),
 }

@@ -220,7 +220,7 @@ const Notebook: React.FC<{c: CenaV; dur: number}> = ({c, dur}) => {
     <AbsoluteFill style={{background: INK}}>
       <AbsoluteFill style={{background: `radial-gradient(60% 35% at 50% 62%,rgba(47,107,255,.40),transparent 70%)`}} />
       <AbsoluteFill style={{transform: `scale(${1.0 + 0.08 * l})`, perspective: 2100, perspectiveOrigin: '50% 45%'}}>
-        <div style={{position: 'absolute', left: 40, top: 640, width: 1000, transformStyle: 'preserve-3d', transform: `rotateX(${rotX}deg) rotateY(${rotY}deg)`}}>
+        <div style={{position: 'absolute', left: 40, top: 560, width: 1000, transformStyle: 'preserve-3d', transform: `rotateX(${rotX}deg) rotateY(${rotY}deg)`}}>
           <div style={{width: 1000, height: 631, borderRadius: 32, background: '#0a0b0e', padding: 22, boxShadow: '0 60px 80px rgba(0,0,0,.6),0 0 0 3px #2a2e38', position: 'relative'}}>
             <div style={{width: '100%', height: '100%', borderRadius: 12, overflow: 'hidden', position: 'relative'}}>
               <Img src={staticFile(c.tela)} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 0%', filter: 'brightness(.82) blur(0.6px)'}} />
