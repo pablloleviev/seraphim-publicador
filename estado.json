@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630304,
+  "telegram_offset": 183630306,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -658,12 +658,17 @@
       "ig_manual": false
     },
     "2026-10-24_1930_do-caderno-ao-sistema": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-23T20:30:26.732532+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6add31c5e4be8a4d867db8ee",
+        "feito": "buffer"
       },
-      "msg_id": 1035
+      "msg_id": 1035,
+      "ig_id": "18119430635060098",
+      "publicado_em": "2026-10-24T22:31:32.777885+00:00",
+      "ig_manual": false
     },
     "2026-10-25_0900_perguntas-sobre-o-autoflow": {
       "status": "agendado",
@@ -690,7 +695,7 @@
       "msg_id": 1064
     },
     "2026-10-25_1930_sete-dias-uma-ideia": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-24T20:30:10.053018+00:00",
       "tiktok": {
         "via": "buffer"
@@ -761,7 +766,8 @@
     },
     "2026-10-24_2-dor-oficina": {
       "status": "aprovado",
-      "msg_id": 1045
+      "msg_id": 1045,
+      "lembrado": true
     }
   }
 }
