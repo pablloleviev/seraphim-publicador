@@ -645,12 +645,17 @@
       "ig_manual": false
     },
     "2026-10-24_1730_autoflow-em-6-slides": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-23T18:30:14.605166+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6add15803d5b27036ba06594",
+        "feito": "buffer"
       },
-      "msg_id": 1033
+      "msg_id": 1033,
+      "ig_id": "18190390684414043",
+      "publicado_em": "2026-10-24T20:30:55.652160+00:00",
+      "ig_manual": false
     },
     "2026-10-24_1930_do-caderno-ao-sistema": {
       "status": "agendado",
@@ -683,6 +688,14 @@
         "via": "buffer"
       },
       "msg_id": 1064
+    },
+    "2026-10-25_1930_sete-dias-uma-ideia": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-24T20:30:10.053018+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1069
     }
   },
   "respondidos": {},
