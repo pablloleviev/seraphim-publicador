@@ -772,6 +772,10 @@
     "2026-10-25_1-conversa": {
       "status": "aguardando",
       "msg_id": 1076
+    },
+    "2026-10-25_2-construir": {
+      "status": "aguardando",
+      "msg_id": 1078
     }
   }
 }
