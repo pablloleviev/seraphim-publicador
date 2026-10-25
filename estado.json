@@ -684,12 +684,17 @@
       "ig_manual": false
     },
     "2026-10-25_1230_um-dia-na-oficina": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-24T13:30:19.272961+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ade20b3bd33ce99c37abeb8",
+        "feito": "buffer"
       },
-      "msg_id": 1056
+      "msg_id": 1056,
+      "ig_id": "18123778529475808",
+      "publicado_em": "2026-10-25T15:30:58.759060+00:00",
+      "ig_manual": false
     },
     "2026-10-25_1730_o-que-podemos-construir": {
       "status": "agendado",
