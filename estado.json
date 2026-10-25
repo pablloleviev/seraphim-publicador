@@ -768,6 +768,10 @@
       "status": "aprovado",
       "msg_id": 1045,
       "lembrado": true
+    },
+    "2026-10-25_1-conversa": {
+      "status": "aguardando",
+      "msg_id": 1076
     }
   }
 }
