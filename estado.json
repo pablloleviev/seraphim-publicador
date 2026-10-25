@@ -697,12 +697,17 @@
       "ig_manual": false
     },
     "2026-10-25_1730_o-que-podemos-construir": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-24T18:30:20.870052+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ade66f1bd33ce99c38d870e",
+        "feito": "buffer"
       },
-      "msg_id": 1064
+      "msg_id": 1064,
+      "ig_id": "18636689482028196",
+      "publicado_em": "2026-10-25T20:30:40.875720+00:00",
+      "ig_manual": false
     },
     "2026-10-25_1930_sete-dias-uma-ideia": {
       "status": "agendado",
