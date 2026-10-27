@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630309,
+  "telegram_offset": 183630310,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -723,15 +723,20 @@
       "ig_manual": false
     },
     "2026-10-27_1230_ia-na-operacao": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-26T23:40:18.258272+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae0c3f324d07dab298cb425",
+        "feito": "buffer"
       },
-      "msg_id": 1097
+      "msg_id": 1097,
+      "ig_id": "18108151298205185",
+      "publicado_em": "2026-10-27T15:32:02.972932+00:00",
+      "ig_manual": false
     },
     "2026-10-28_1230_tecnologia-que-comeca-ouvindo": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-27T13:30:16.761066+00:00",
       "tiktok": {
         "via": "buffer"
