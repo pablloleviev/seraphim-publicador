@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630310,
+  "telegram_offset": 183630318,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -742,6 +742,70 @@
         "via": "buffer"
       },
       "msg_id": 1099
+    },
+    "2026-10-28_0830_padronizar-antes-do-sistema": {
+      "status": "agendado",
+      "enviado_em": "2026-10-27T22:38:52.776828+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1108
+    },
+    "2026-10-28_1130_lead-para-venda-sem-ruido": {
+      "status": "agendado",
+      "enviado_em": "2026-10-27T22:38:54.790950+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1114
+    },
+    "2026-10-28_1500_visao-computacional-na-pratica": {
+      "status": "agendado",
+      "enviado_em": "2026-10-27T22:38:56.776763+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1121
+    },
+    "2026-10-28_1830_do-caderno-a-tela-oficina": {
+      "status": "agendado",
+      "enviado_em": "2026-10-27T22:38:58.831666+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1128
+    },
+    "2026-10-28_1800_historico-cliente-oficina": {
+      "status": "agendado",
+      "enviado_em": "2026-10-27T22:47:24.713388+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1130
+    },
+    "2026-10-28_1130_proposta-com-preco-velho": {
+      "status": "agendado",
+      "enviado_em": "2026-10-27T22:49:51.757370+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1132
+    },
+    "2026-10-28_1300_trabalho-braco-computador": {
+      "status": "agendado",
+      "enviado_em": "2026-10-27T22:49:54.788650+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1134
+    },
+    "2026-10-28_2030_resumo-reuniao-ia": {
+      "status": "agendado",
+      "enviado_em": "2026-10-27T22:49:58.342432+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1136
     }
   },
   "respondidos": {},
