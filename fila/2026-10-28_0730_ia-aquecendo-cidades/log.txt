@@ -1,0 +1,75 @@
+ed 899/941, time remaining: 23s
+Rendered 900/941, time remaining: 22s
+Rendered 901/941, time remaining: 22s
+Rendered 901/941, time remaining: 22s
+Rendered 902/941, time remaining: 21s
+Rendered 902/941, time remaining: 21s
+Rendered 903/941, time remaining: 20s
+Rendered 904/941, time remaining: 20s
+Rendered 905/941, time remaining: 19s
+Rendered 906/941, time remaining: 19s
+Rendered 906/941, time remaining: 19s
+Rendered 907/941, time remaining: 18s
+Rendered 908/941, time remaining: 18s
+Rendered 908/941, time remaining: 18s
+Rendered 909/941, time remaining: 17s
+Rendered 910/941, time remaining: 17s
+Rendered 910/941, time remaining: 17s
+Rendered 911/941, time remaining: 16s
+Rendered 912/941, time remaining: 15s
+Rendered 912/941, time remaining: 15s
+Rendered 913/941, time remaining: 15s
+Rendered 914/941, time remaining: 14s
+Rendered 915/941, time remaining: 14s
+Rendered 915/941, time remaining: 14s
+Rendered 916/941, time remaining: 13s
+Rendered 917/941, time remaining: 13s
+Rendered 918/941, time remaining: 12s
+Rendered 918/941, time remaining: 12s
+Rendered 919/941, time remaining: 12s
+Rendered 920/941, time remaining: 11s
+Rendered 920/941, time remaining: 11s
+Rendered 921/941, time remaining: 10s
+Rendered 922/941, time remaining: 10s
+Rendered 922/941, time remaining: 10s
+Rendered 923/941, time remaining: 9s
+Rendered 924/941, time remaining: 9s
+Rendered 925/941, time remaining: 8s
+Rendered 925/941, time remaining: 8s
+Rendered 926/941, time remaining: 8s
+Rendered 927/941, time remaining: 7s
+Rendered 927/941, time remaining: 7s
+Rendered 928/941, time remaining: 7s
+Rendered 929/941, time remaining: 6s
+Rendered 930/941, time remaining: 6s
+Rendered 930/941, time remaining: 6s
+Rendered 931/941, time remaining: 5s
+Rendered 932/941, time remaining: 4s
+Rendered 932/941, time remaining: 4s
+Rendered 933/941, time remaining: 4s
+Rendered 934/941, time remaining: 3s
+Rendered 934/941, time remaining: 3s
+Rendered 935/941, time remaining: 3s
+Rendered 936/941, time remaining: 2s
+Rendered 937/941, time remaining: 2s
+Rendered 937/941, time remaining: 2s
+Rendered 938/941, time remaining: 1s
+Rendered 939/941, time remaining: 1s
+Rendered 939/941, time remaining: 1s
+Rendered 940/941, time remaining: 0s
+Stitched 702/941
+Stitched 706/941
+Stitched 718/941
+Stitched 731/941
+Stitched 747/941
+Stitched 753/941
+Stitched 941/941
+[aviso] voz gemini falhou: gemini-2.5-pro-preview-tts: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Voz: edge (83 palavras)
+[trilha] trechos: epico 0.0-5.6s | energia 5.6-12.1s | inspira 12.1-18.5s | emocao 18.5-23.7s | epico 23.7-31.4s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-28_0730_ia-aquecendo-cidades/video.mp4 (31.4s)
+
