@@ -1,0 +1,68 @@
+{
+ "nome": "proposta-com-preco-velho",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-28 11:30",
+ "cenas": [
+  {
+   "tipo": "cartao",
+   "titulo": "O cliente *aprovou na hora.*",
+   "rotulo": "Alerta na empresa",
+   "numero": "ALERTA",
+   "transicao": "flash",
+   "clima": "tensao",
+   "narracao": "Quando o cliente aprova sua proposta sem pedir nenhum desconto, vale abrir o arquivo para checar."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O que costuma *acontecer:*",
+   "itens": [
+    "Custo do material subiu",
+    "Modelo antigo copiado",
+    "Validade sem data limite"
+   ],
+   "transicao": "corte",
+   "clima": "tensao",
+   "narracao": "Na maioria das vezes alguém reaproveitou um orçamento antigo. O fornecedor aumentou o preço e a sua margem sumiu."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Proposta salva na área de trabalho",
+   "depois": "Tabela centralizada no *sistema*",
+   "transicao": "deslize",
+   "clima": "energia",
+   "narracao": "Ter tabelas desatualizadas espalhadas nos computadores da equipe faz a empresa pagar o prejuízo no final do mês."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "Erros de cálculo *corroem o lucro silenciosamente.*",
+   "transicao": "dissolve",
+   "clima": "emocao",
+   "narracao": "Padronizar o envio dos valores evita que seu time venda pelo preço do ano passado."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Comenta *PROPOSTA* no post",
+   "cartoes": [
+    "Envio no seu direct",
+    "Checklist anti-erro comercial"
+   ],
+   "transicao": "chicote",
+   "clima": "energia",
+   "narracao": "Comenta PROPOSTA aqui no post que eu te mando no direct o checklist para blindar seus orçamentos."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "estilo_legenda": "palavra",
+ "paleta": "rubi",
+ "formato": "navegador",
+ "titulo": "O prejuízo da proposta desatualizada",
+ "numero": 2,
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Quando o orçamento fecha rápido demais, vale conferir se a tabela usada não era do ano passado. 📉 Já passou por essa situação?\n\n#vendasb2b #precificacao #gestaocomercial #lucro #seraphimbr",
+ "legenda_tiktok": "O cliente fechou na hora porque a proposta usava a tabela de preços antiga.\n\n#vendasb2b #precificacao #gestaocomercial #lucro #seraphimbr",
+ "palavra_chave": "PROPOSTA",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/proposta-com-preco-velho/",
+ "material_titulo": "Checklist de Validação de Proposta Comercial"
+}

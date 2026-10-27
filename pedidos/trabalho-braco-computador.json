@@ -1,0 +1,64 @@
+{
+ "nome": "trabalho-braco-computador",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-28 13:00",
+ "cenas": [
+  {
+   "tipo": "contraste",
+   "antes": "Pessoa digitando dados manualmente",
+   "depois": "Sistemas integrados em *segundos*",
+   "transicao": "deslize",
+   "clima": "energia",
+   "narracao": "Se o seu trabalho é copiar um dado do WhatsApp e colar dentro de uma planilha, você virou ponte entre dois programas."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "repeat",
+   "titulo": "O ciclo do *trabalho repetitivo*",
+   "transicao": "zoom",
+   "clima": "tensao",
+   "narracao": "A mensagem chega, você digita o nome, cadastra o telefone, confere o comprovante e envia para a equipe na mão."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O que deveria ser *automático:*",
+   "itens": [
+    "Novo contato cadastrado",
+    "Comprovante anexado",
+    "Aviso no canal de vendas"
+   ],
+   "transicao": "corte",
+   "clima": "inspira",
+   "narracao": "Ferramentas integradas fazem o dado entrar em um ponto e aparecer pronto no sistema, sem exigir digitação humana."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "Sua equipe foi feita para *conversar e vender.*",
+   "transicao": "dissolve",
+   "clima": "emocao",
+   "narracao": "Pessoas devem focar em atendimento e negociação, deixando a transferência de dados para as ferramentas certas."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Elimine *tarefas manuais*",
+   "cartoes": [
+    "Siga a @seraphimbr_",
+    "Tecnologia aplicada ao trabalho"
+   ],
+   "transicao": "zoom",
+   "clima": "epico",
+   "narracao": "Quer eliminar tarefas manuais da sua rotina? Segue a Seraphim para ver tecnologia aplicada aos negócios."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "estilo_legenda": "sutil",
+ "paleta": "esmeralda",
+ "formato": "hud",
+ "titulo": "Trabalhando de ponte para o computador",
+ "numero": 3,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Passar horas transferindo dados de um aplicativo para outro sinaliza um processo que precisa de ajuste. 🔄 Quanto tempo você gasta copiando informações?\n\n#produtividade #rotinadetrabalho #processos #automacao #seraphimbr",
+ "legenda_tiktok": "Sua função não é fazer transporte manual de dados entre dois aplicativos.\n\n#produtividade #rotinadetrabalho #processos #automacao #seraphimbr"
+}

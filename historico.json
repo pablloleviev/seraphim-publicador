@@ -1065,5 +1065,245 @@
   "tema": "noir",
   "capa_modelo": "blueprint",
   "capa_cena": "small retail store counter crowded with packages and orders, warm side light"
+ },
+ {
+  "nome": "por-que-comecamos-pelas-oficinas",
+  "titulo": "por que comecamos pelas oficinas",
+  "formato": ""
+ },
+ {
+  "nome": "perguntas-sobre-o-autoflow",
+  "titulo": "perguntas sobre o autoflow",
+  "formato": ""
+ },
+ {
+  "nome": "mais-uma-aba-aberta",
+  "titulo": "mais uma aba aberta",
+  "formato": ""
+ },
+ {
+  "nome": "construir-e-construir-clareza",
+  "titulo": "construir e construir clareza",
+  "formato": ""
+ },
+ {
+  "nome": "um-dia-na-oficina",
+  "titulo": "um dia na oficina",
+  "formato": ""
+ },
+ {
+  "nome": "do-caderno-ao-sistema",
+  "titulo": "do caderno ao sistema",
+  "formato": ""
+ },
+ {
+  "nome": "terror-da-operacao",
+  "titulo": "terror da operacao",
+  "formato": ""
+ },
+ {
+  "nome": "tecnologia-que-comeca-ouvindo",
+  "titulo": "tecnologia que comeca ouvindo",
+  "formato": ""
+ },
+ {
+  "nome": "ia-na-operacao",
+  "titulo": "ia na operacao",
+  "formato": ""
+ },
+ {
+  "nome": "checklist-fim-de-mes",
+  "titulo": "checklist fim de mes",
+  "formato": ""
+ },
+ {
+  "nome": "autoflow-em-6-slides",
+  "titulo": "autoflow em 6 slides",
+  "formato": ""
+ },
+ {
+  "nome": "ia-aquecendo-cidades",
+  "funil": "topo",
+  "titulo": "Data centers de IA aquecendo cidades",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-10-28",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "story",
+  "capa": "IA aquecendo *cidades inteiras*",
+  "capa_cena": "glowing blue server rack pipes glowing with warm orange heat water in a high tech facility",
+  "cenas": [
+   "objeto",
+   "cartao",
+   "lista",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "gelo"
+ },
+ {
+  "nome": "proposta-com-preco-velho",
+  "funil": "meio",
+  "titulo": "O prejuízo da proposta desatualizada",
+  "formato": "erro que você comete",
+  "dia": "2026-10-28",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "navegador",
+  "capa": "Cuidado com o *orçamento velho*",
+  "capa_cena": "worried business owner holding printed proposal document looking at laptop screen in dark modern office",
+  "cenas": [
+   "cartao",
+   "lista",
+   "contraste",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "rubi"
+ },
+ {
+  "nome": "trabalho-braco-computador",
+  "funil": "topo",
+  "titulo": "Trabalhando de ponte para o computador",
+  "formato": "comparação (X vs Y)",
+  "dia": "2026-10-28",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "hud",
+  "capa": "Você virou *ponte de aplicativo?*",
+  "capa_cena": "overhead view of hands typing mechanically on split keyboards with faint glowing lines between them",
+  "cenas": [
+   "contraste",
+   "objeto",
+   "lista",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "historico-cliente-oficina",
+  "funil": "fundo",
+  "titulo": "O atendimento com histórico na oficina",
+  "formato": "antes e depois",
+  "dia": "2026-10-28",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "celular",
+  "capa": "Histórico do carro *em segundos*",
+  "capa_cena": "clean modern mechanic shop owner holding tablet next to a car engine with professional warm lighting",
+  "cenas": [
+   "capa",
+   "contraste",
+   "lista",
+   "cartao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "autoflow"
+ },
+ {
+  "nome": "resumo-reuniao-ia",
+  "funil": "topo",
+  "titulo": "IA resumindo reuniões com clientes",
+  "formato": "tutorial passo a passo",
+  "dia": "2026-10-28",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "eletrico",
+  "capa": "Atas de reunião *em 3 tópicos*",
+  "capa_cena": "vintage microphone on clean wooden desk beside glowing modern smartphone showing audio waveform",
+  "cenas": [
+   "numero",
+   "objeto",
+   "lista",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "emocional",
+  "paleta": "ouro"
+ },
+ {
+  "nome": "padronizar-antes-do-sistema",
+  "titulo": "4 processos para arrumar antes de contratar tecnologia",
+  "formato": "",
+  "dia": "2026-10-28",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "",
+  "slides": [
+   "capa_tipografica",
+   "topico",
+   "topico",
+   "topico",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "prata"
+ },
+ {
+  "nome": "lead-para-venda-sem-ruido",
+  "titulo": "O fluxo sem atrito do contato até a venda",
+  "formato": "",
+  "dia": "2026-10-28",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "lista",
+   "verbete",
+   "cta"
+  ],
+  "paleta": "cobre"
+ },
+ {
+  "nome": "visao-computacional-na-pratica",
+  "titulo": "O que câmeras com IA conseguem ler hoje",
+  "formato": "",
+  "dia": "2026-10-28",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "",
+  "slides": [
+   "capa_numero",
+   "abertura",
+   "topico",
+   "topico",
+   "citacao",
+   "cta"
+  ],
+  "paleta": "violeta"
+ },
+ {
+  "nome": "do-caderno-a-tela-oficina",
+  "titulo": "A transição do papel para a tela na oficina",
+  "formato": "",
+  "dia": "2026-10-28",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa",
+  "capa_cena": "",
+  "slides": [
+   "capa",
+   "abertura",
+   "contraste",
+   "topico",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "autoflow"
  }
 ]
