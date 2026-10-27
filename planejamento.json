@@ -20,12 +20,10 @@
    "a_partir_de": "2026-10-19",
    "videos": [],
    "carrosseis": []
-  }
- ],
- "_fases_pausadas": [
+  },
   {
-   "nome": "fase 2 (semanas 3-4)",
-   "a_partir_de": "2026-10-24",
+   "nome": "fase 2: 5 vídeos + 4 carrosséis por dia (retomada após o relançamento; grade AutoFlow/Seraphim 26/10 mantida nos horários dela)",
+   "a_partir_de": "2026-10-28",
    "videos": [
     "07:30",
     "11:30",
