@@ -1,0 +1,81 @@
+6/846, time remaining: 23s
+Rendered 797/846, time remaining: 23s
+Rendered 798/846, time remaining: 22s
+Rendered 799/846, time remaining: 22s
+Rendered 799/846, time remaining: 22s
+Rendered 800/846, time remaining: 21s
+Rendered 801/846, time remaining: 21s
+Rendered 801/846, time remaining: 21s
+Rendered 802/846, time remaining: 20s
+Rendered 803/846, time remaining: 20s
+Rendered 804/846, time remaining: 19s
+Rendered 804/846, time remaining: 19s
+Rendered 805/846, time remaining: 19s
+Rendered 806/846, time remaining: 18s
+Rendered 806/846, time remaining: 18s
+Rendered 807/846, time remaining: 18s
+Rendered 808/846, time remaining: 18s
+Rendered 809/846, time remaining: 17s
+Rendered 810/846, time remaining: 17s
+Rendered 810/846, time remaining: 17s
+Rendered 811/846, time remaining: 16s
+Rendered 812/846, time remaining: 16s
+Rendered 812/846, time remaining: 16s
+Rendered 813/846, time remaining: 15s
+Rendered 814/846, time remaining: 15s
+Rendered 814/846, time remaining: 15s
+Rendered 815/846, time remaining: 14s
+Rendered 816/846, time remaining: 14s
+Rendered 817/846, time remaining: 13s
+Rendered 817/846, time remaining: 13s
+Rendered 818/846, time remaining: 13s
+Rendered 819/846, time remaining: 12s
+Rendered 819/846, time remaining: 12s
+Rendered 820/846, time remaining: 12s
+Rendered 821/846, time remaining: 11s
+Rendered 822/846, time remaining: 11s
+Rendered 822/846, time remaining: 11s
+Rendered 823/846, time remaining: 10s
+Rendered 824/846, time remaining: 10s
+Rendered 824/846, time remaining: 10s
+Rendered 825/846, time remaining: 9s
+Rendered 826/846, time remaining: 9s
+Rendered 826/846, time remaining: 9s
+Rendered 827/846, time remaining: 8s
+Rendered 828/846, time remaining: 8s
+Rendered 829/846, time remaining: 8s
+Rendered 830/846, time remaining: 7s
+Rendered 830/846, time remaining: 7s
+Rendered 831/846, time remaining: 7s
+Rendered 832/846, time remaining: 6s
+Rendered 832/846, time remaining: 6s
+Rendered 833/846, time remaining: 6s
+Rendered 834/846, time remaining: 5s
+Rendered 834/846, time remaining: 5s
+Rendered 835/846, time remaining: 5s
+Rendered 836/846, time remaining: 4s
+Rendered 837/846, time remaining: 4s
+Rendered 838/846, time remaining: 3s
+Rendered 838/846, time remaining: 3s
+Rendered 839/846, time remaining: 3s
+Rendered 840/846, time remaining: 2s
+Rendered 840/846, time remaining: 2s
+Rendered 841/846, time remaining: 2s
+Rendered 842/846, time remaining: 1s
+Rendered 842/846, time remaining: 1s
+Rendered 843/846, time remaining: 1s
+Rendered 844/846, time remaining: 0s
+Rendered 845/846, time remaining: 0s
+Rendered 845/846, time remaining: 0s
+Stitched 627/846
+Stitched 642/846
+Stitched 658/846
+Stitched 673/846
+Stitched 677/846
+Stitched 846/846
+Voz: gemini (92 palavras)
+[trilha] trechos: epico 0.0-5.4s | tensao 5.4-11.1s | inspira 11.1-16.9s | emocao 16.9-22.1s | epico 22.1-28.2s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-28_1300_trabalho-braco-computador/video.mp4 (28.2s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
