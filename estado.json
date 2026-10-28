@@ -808,12 +808,17 @@
       "msg_id": 1136
     },
     "2026-10-28_0730_ia-aquecendo-cidades": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-28T00:30:11.108270+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae1cee34e936aa1bcbf82e2",
+        "feito": "buffer"
       },
-      "msg_id": 1138
+      "msg_id": 1138,
+      "ig_id": "18121734091898236",
+      "publicado_em": "2026-10-28T10:30:58.674686+00:00",
+      "ig_manual": false
     }
   },
   "respondidos": {},
