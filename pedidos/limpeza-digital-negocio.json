@@ -1,0 +1,69 @@
+{
+ "nome": "limpeza-digital-negocio",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-29 18:00",
+ "cenas": [
+  {
+   "tipo": "citacao",
+   "titulo": "Onde está aquele *comprovante?*",
+   "transicao": "dissolve",
+   "narracao": "Sua equipe perde tempo procurando planilhas, notas fiscais e comprovantes espalhados no WhatsApp?"
+  },
+  {
+   "tipo": "lista",
+   "titulo": "3 passos para a *ordem:*",
+   "itens": [
+    "Pasta centralizada",
+    "Nomes padronizados",
+    "Lixo eliminado"
+   ],
+   "narracao": "A bagunça digital consome minutos preciosos todos os dias."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Crie uma *rotina clara.*",
+   "camera": "inclina",
+   "narracao": "Para resolver, siga três passos simples: escolha uma pasta central para a empresa, defina um padrão para dar nome aos arquivos e apague o que for lixo."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "sparkles",
+   "titulo": "ACESSO *RÁPIDO*",
+   "transicao": "zoom",
+   "narracao": "Quando tudo tem lugar certo, o trabalho anda mais rápido e ninguém fica travado procurando documentos."
+  },
+  {
+   "tipo": "cartao",
+   "rotulo": "ROTINA",
+   "numero": "SEM CAOS",
+   "titulo": "Ganhe *velocidade*",
+   "narracao": "Isso reduz o estresse da equipe e deixa os processos leves."
+  },
+  {
+   "tipo": "pessoa",
+   "linha": "CLAREZA",
+   "titulo": "Sua empresa *organizada*",
+   "narracao": "Retome o controle dos seus arquivos sem complicação."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Simplifique sua *operação*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Envie para a equipe"
+   ],
+   "narracao": "Segue a Seraphim para ver como simplificar a rotina da sua equipe."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "elegante",
+ "estilo_legenda": "karaoke",
+ "paleta": "violeta",
+ "formato": "vhs",
+ "titulo": "Faxina digital na sua empresa",
+ "numero": 4,
+ "funil": "topo",
+ "genero_voz": "feminina",
+ "legenda": "Arquivos perdidos e pastas bagunçadas custam tempo e paciência todos os dias. 📁 Como está a organização digital na sua empresa hoje?\n\n#organizacao #produtividade #processos #gestao #seraphimbr",
+ "legenda_tiktok": "3 passos simples para acabar com o caos de arquivos e planilhas no seu trabalho.\n\n#organizacao #produtividade #processos #gestao #seraphimbr"
+}

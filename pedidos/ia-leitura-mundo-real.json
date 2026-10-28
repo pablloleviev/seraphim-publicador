@@ -1,0 +1,74 @@
+{
+ "nome": "ia-leitura-mundo-real",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-29 20:30",
+ "cenas": [
+  {
+   "tipo": "pessoa",
+   "linha": "VISÃO",
+   "titulo": "A IA enxerga o *mundo*",
+   "transicao": "chicote",
+   "narracao": "A inteligência artificial aprendeu a enxergar o mundo físico pelas câmeras."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Digitação manual de papel",
+   "depois": "Leitura por *câmera*",
+   "narracao": "Em vez de digitar manualmente dados de comprovantes e formulários em papel, você aponta a câmera e o sistema lê tudo em segundos."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Zero *retrabalho*",
+   "icones": [
+    "scan",
+    "eye",
+    "zap"
+   ],
+   "camera": "tremor",
+   "narracao": "Isso elimina falhas humanas de digitação e poupa horas de retrabalho no escritório."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Leitura em *tempo real:*",
+   "itens": [
+    "Notas fiscais",
+    "Conferência de estoque",
+    "Documentos físicos"
+   ],
+   "narracao": "A tecnologia lê notas fiscais, confere caixas no estoque e valida documentos em tempo real."
+  },
+  {
+   "tipo": "cartao",
+   "rotulo": "CÂMERA",
+   "numero": "SENSOR",
+   "titulo": "Coleta *automática*",
+   "narracao": "Sua câmera passa a funcionar como um coletor de dados inteligente."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Processos mais *rápidos.*",
+   "transicao": "flash",
+   "narracao": "É a tecnologia trabalhando para acelerar a rotina da sua equipe."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Acompanhe a *evolução*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Envie para a equipe"
+   ],
+   "narracao": "Quer transformar a câmera do celular em uma ferramenta de gestão? Segue a Seraphim para acompanhar as novidades."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "palavra",
+ "paleta": "cobre",
+ "formato": "hud",
+ "titulo": "A IA agora tem olhos",
+ "numero": 5,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "A visão computacional está mudando a forma como registramos dados no dia a dia. 👁️ O que você mais gostaria de automatizar por foto na sua empresa?\n\n#ia #automacao #inovacao #tecnologia #seraphimbr",
+ "legenda_tiktok": "A IA aprendeu a ler papéis e objetos pela câmera. Chega de digitar nota por nota.\n\n#ia #automacao #inovacao #tecnologia #seraphimbr"
+}

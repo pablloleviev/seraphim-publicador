@@ -1305,5 +1305,197 @@
    "cta"
   ],
   "paleta": "autoflow"
+ },
+ {
+  "nome": "ia-descoberta-antibiotico",
+  "funil": "topo",
+  "titulo": "IA encontra o que humanos não viram",
+  "formato": "notícia de IA explicada",
+  "dia": "2026-10-29",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "documentario",
+  "capa": "IA resolve mistério de *60 anos*",
+  "capa_cena": "microscopic view of glowing golden molecules moving fast, dark green laboratory background, cinematic lighting",
+  "cenas": [
+   "frase",
+   "lista",
+   "objeto",
+   "cartao",
+   "contraste",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "segundo-cerebro-gestao",
+  "funil": "topo",
+  "titulo": "Seu segundo cérebro digital",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-10-29",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "terminal",
+  "capa": "Sua cabeça não é *depósito*",
+  "capa_cena": "minimalist white desk, a single glowing glass brain sculpture, soft natural light, high-end photography",
+  "cenas": [
+   "lista",
+   "frase",
+   "cartao",
+   "pessoa",
+   "moedas",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "gelo"
+ },
+ {
+  "nome": "protocolo-cliente-sumido",
+  "funil": "meio",
+  "titulo": "O cliente que sumiu",
+  "formato": "erro que você comete",
+  "dia": "2026-10-29",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "story",
+  "capa": "O lucro que está *sumindo*",
+  "capa_cena": "abandoned shop counter with a single glowing golden phone, dusty atmosphere, dramatic shadows",
+  "cenas": [
+   "moedas",
+   "citacao",
+   "cartao",
+   "lista",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "emocional",
+  "paleta": "rubi"
+ },
+ {
+  "nome": "limpeza-digital-negocio",
+  "funil": "topo",
+  "titulo": "Faxina digital na sua empresa",
+  "formato": "tutorial passo a passo",
+  "dia": "2026-10-29",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "vhs",
+  "capa": "Faxina digital em *3 passos*",
+  "capa_cena": "neatly arranged glass folders floating in a dark violet space, glowing edges, cinematic depth of field",
+  "cenas": [
+   "citacao",
+   "lista",
+   "frase",
+   "objeto",
+   "cartao",
+   "pessoa",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "violeta"
+ },
+ {
+  "nome": "ia-leitura-mundo-real",
+  "funil": "topo",
+  "titulo": "A IA agora tem olhos",
+  "formato": "antes e depois",
+  "dia": "2026-10-29",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "hud",
+  "capa": "A IA agora tem *olhos*",
+  "capa_cena": "close up of a professional camera lens reflecting a digital neural network, dark copper tones, high tech aesthetic",
+  "cenas": [
+   "pessoa",
+   "contraste",
+   "moedas",
+   "lista",
+   "cartao",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "cobre"
+ },
+ {
+  "nome": "habitos-produtividade-2027",
+  "titulo": "Hábitos de quem não se perde no caos",
+  "formato": "",
+  "dia": "2026-10-29",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "top view of a sleek black smartphone next to a gold fountain pen on a textured dark desk, dramatic side lighting",
+  "slides": [
+   "capa_tipografica",
+   "abertura",
+   "topico",
+   "topico",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "ouro"
+ },
+ {
+  "nome": "erro-rastreio-caixa",
+  "titulo": "Onde o seu lucro se esconde",
+  "formato": "",
+  "dia": "2026-10-29",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "stacks of silver coins slowly dissolving into digital dust on a glass surface, dark aesthetic, cinematic lighting",
+  "slides": [
+   "capa_numero",
+   "abertura",
+   "lista",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "prata"
+ },
+ {
+  "nome": "evolucao-ui-negocios",
+  "titulo": "O fim das interfaces difíceis",
+  "formato": "",
+  "dia": "2026-10-29",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "a sleek floating glass tablet displaying a simple golden circle, clean white studio background, high-end 3D render",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "verbete",
+   "verbete",
+   "citacao",
+   "cta"
+  ],
+  "paleta": "gelo"
+ },
+ {
+  "nome": "custo-nao-ter-autoflow",
+  "titulo": "O preço da desorganização na oficina",
+  "formato": "",
+  "dia": "2026-10-29",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa",
+  "capa_cena": "inside a high-end modern mechanic garage, orange neon lights, clean floor, glowing digital screen in the background",
+  "slides": [
+   "capa",
+   "abertura",
+   "topico",
+   "contraste",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "autoflow"
  }
 ]

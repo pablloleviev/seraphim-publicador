@@ -1,0 +1,64 @@
+{
+ "nome": "ia-descoberta-antibiotico",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-29 07:30",
+ "cenas": [
+  {
+   "tipo": "frase",
+   "titulo": "A ciência passou *60 anos* travada.",
+   "transicao": "chicote",
+   "narracao": "A ciência passou 60 anos sem encontrar uma nova classe de antibióticos."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "A IA analisou *milhões* de dados:",
+   "itens": [
+    "Moléculas em segundos",
+    "Padrões ocultos",
+    "Testes em tempo recorde"
+   ],
+   "narracao": "Agora, a inteligência artificial analisou milhões de moléculas em poucos dias e achou o que ninguém via."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "brain",
+   "titulo": "PODER DE *PROCESSAMENTO*",
+   "transicao": "flash",
+   "camera": "empurra",
+   "narracao": "Isso prova o verdadeiro poder da tecnologia: processar volumes absurdos de informação sem errar."
+  },
+  {
+   "tipo": "cartao",
+   "rotulo": "APLICAÇÃO",
+   "numero": "ROTINA",
+   "titulo": "Resolução de *gargalos*",
+   "narracao": "Se a IA resolve gargalos de décadas na ciência, imagine o que ela faz na rotina do seu negócio."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Tentativa e erro manual",
+   "depois": "Decisão baseada em *dados*",
+   "narracao": "É a mudança da tentativa e erro para decisões baseadas em dados puros."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "O futuro já *começou*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Compartilhe o vídeo"
+   ],
+   "narracao": "Acompanhe a Seraphim para entender como usar essa evolução na sua empresa."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "estilo_legenda": "karaoke",
+ "paleta": "esmeralda",
+ "formato": "documentario",
+ "titulo": "IA encontra o que humanos não viram",
+ "numero": 1,
+ "funil": "topo",
+ "genero_voz": "feminina",
+ "legenda": "A IA acabou de encontrar um novo caminho na medicina após 60 anos de buscas. 🧬 Se ela resolve problemas desse porte, imagine o impacto na eficiência da sua empresa. Como você vê essa mudança?\n\n#tecnologia #ia #inovacao #ciencia #seraphimbr",
+ "legenda_tiktok": "A IA achou em dias o que a ciência buscava há 60 anos. O jogo mudou.\n\n#tecnologia #ia #inovacao #ciencia #seraphimbr"
+}

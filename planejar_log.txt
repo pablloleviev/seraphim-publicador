@@ -1,10 +1,16 @@
-== 2026-10-28: faltam 5 vídeos e 4 carrosséis
+== 2026-10-29: faltam 5 vídeos e 4 carrosséis
 Modelos de texto: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-3-flash-preview']
 [aviso] pesquisa com gemini-3.8-flash falhou: HTTP Error 429: Too Many Requests
 [aviso] pesquisa com gemini-3.7-flash falhou: HTTP Error 429: Too Many Requests
 [aviso] pesquisa com gemini-3.6-flash falhou: HTTP Error 429: Too Many Requests
-(roteiro escrito com gemini-3.8-flash)
-[aviso] gemini-3.8-flash: Remote end closed connection without response
+[aviso] gemini-3.8-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
 [aviso] gemini-3.7-flash: 503 {
   "error": {
     "code": 503,
@@ -21,11 +27,15 @@ Modelos de texto: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', '
   }
 }
 
-(roteiro escrito com gemini-3.5-flash)
-== 2026-10-29: faltam 5 vídeos e 4 carrosséis
-[aviso] pesquisa com gemini-3.8-flash falhou: HTTP Error 429: Too Many Requests
-[aviso] pesquisa com gemini-3.7-flash falhou: HTTP Error 429: Too Many Requests
-[aviso] pesquisa com gemini-3.6-flash falhou: HTTP Error 429: Too Many Requests
+[aviso] gemini-3.5-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+(roteiro escrito com gemini-3-flash-preview)
 [aviso] gemini-3.8-flash: 503 {
   "error": {
     "code": 503,
@@ -34,6 +44,159 @@ Modelos de texto: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', '
   }
 }
 
+[aviso] gemini-3.7-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+(roteiro escrito com gemini-3.6-flash)
+[aviso] gemini-3.6-flash: Expecting ',' delimiter: line 1 column 19988 (char 19987)
+[aviso] gemini-3.5-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3-flash-preview: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-2.5-flash: 404 {
+  "error": {
+    "code": 404,
+    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a
+[aviso] gemini-omni-1.1-flash: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a
+[aviso] gemini-flash-latest: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-omni-flash-preview: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a
+[aviso] gemini-flash-latest: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-2.5-flash: 404 {
+  "error": {
+    "code": 404,
+    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a
+[aviso] revisão falhou na tentativa 1/3 (Gemini falhou: gemini-2.5-flash: 404 {
+  "error": {
+    "code": 404,
+    "message": "This model models/gemini-2.5-flash is no longer available to new users. Ple)
+[aviso] gemini-3.8-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.7-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.6-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.5-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3-flash-preview: Remote end closed connection without response
+[aviso] gemini-2.5-flash: 404 {
+  "error": {
+    "code": 404,
+    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a
+[aviso] gemini-omni-1.1-flash: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a
+[aviso] gemini-flash-latest: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-omni-flash-preview: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-a
+[aviso] gemini-flash-latest: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-2.5-flash: 404 {
+  "error": {
+    "code": 404,
+    "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a
+[aviso] revisão falhou na tentativa 2/3 (Gemini falhou: gemini-2.5-flash: 404 {
+  "error": {
+    "code": 404,
+    "message": "This model models/gemini-2.5-flash is no longer available to new users. Ple)
+[aviso] gemini-3.8-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+[aviso] gemini-3.7-flash: 503 {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+(roteiro escrito com gemini-3.6-flash)
+== 2026-10-30: faltam 5 vídeos e 4 carrosséis
+[aviso] pesquisa com gemini-3.8-flash falhou: HTTP Error 429: Too Many Requests
+[aviso] pesquisa com gemini-3.7-flash falhou: HTTP Error 429: Too Many Requests
+[aviso] pesquisa com gemini-3.6-flash falhou: HTTP Error 429: Too Many Requests
+[aviso] gemini-3.8-flash: Remote end closed connection without response
 [aviso] gemini-3.7-flash: Remote end closed connection without response
 [aviso] gemini-3.6-flash: 503 {
   "error": {
