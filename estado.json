@@ -812,12 +812,17 @@
       "ig_manual": false
     },
     "2026-10-28_1300_trabalho-braco-computador": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-27T22:49:54.788650+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae21c42e490badbade78f4c",
+        "feito": "buffer"
       },
-      "msg_id": 1134
+      "msg_id": 1134,
+      "ig_id": "18466692310191630",
+      "publicado_em": "2026-10-28T16:01:05.744685+00:00",
+      "ig_manual": false
     },
     "2026-10-28_2030_resumo-reuniao-ia": {
       "status": "agendado",
