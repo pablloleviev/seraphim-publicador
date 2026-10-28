@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630327,
+  "telegram_offset": 183630329,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -788,12 +788,17 @@
       "ig_manual": true
     },
     "2026-10-28_1830_do-caderno-a-tela-oficina": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-27T22:38:58.831666+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae2698c98678c04af5abac0",
+        "feito": "buffer"
       },
-      "msg_id": 1128
+      "msg_id": 1128,
+      "ig_id": "18100982897640251",
+      "publicado_em": "2026-10-28T21:30:51.495251+00:00",
+      "ig_manual": false
     },
     "2026-10-28_1800_historico-cliente-oficina": {
       "status": "publicado",
@@ -920,12 +925,20 @@
       "msg_id": 1196
     },
     "2026-10-29_1930_mais-uma-aba-aberta": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-28T20:30:21.945069+00:00",
       "tiktok": {
         "via": "buffer"
       },
       "msg_id": 1198
+    },
+    "2026-10-29_2030_ia-leitura-mundo-real": {
+      "status": "agendado",
+      "enviado_em": "2026-10-28T21:30:05.936166+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1202
     }
   },
   "respondidos": {},
