@@ -1,0 +1,79 @@
+, time remaining: 27s
+Rendered 1057/1104, time remaining: 26s
+Rendered 1057/1104, time remaining: 26s
+Rendered 1058/1104, time remaining: 25s
+Rendered 1059/1104, time remaining: 25s
+Rendered 1060/1104, time remaining: 24s
+Rendered 1060/1104, time remaining: 24s
+Rendered 1061/1104, time remaining: 24s
+Rendered 1062/1104, time remaining: 23s
+Rendered 1063/1104, time remaining: 23s
+Rendered 1063/1104, time remaining: 23s
+Rendered 1064/1104, time remaining: 22s
+Rendered 1065/1104, time remaining: 21s
+Rendered 1065/1104, time remaining: 21s
+Rendered 1066/1104, time remaining: 21s
+Rendered 1067/1104, time remaining: 20s
+Rendered 1068/1104, time remaining: 20s
+Rendered 1068/1104, time remaining: 20s
+Rendered 1069/1104, time remaining: 19s
+Rendered 1070/1104, time remaining: 19s
+Rendered 1070/1104, time remaining: 19s
+Rendered 1071/1104, time remaining: 18s
+Rendered 1072/1104, time remaining: 17s
+Rendered 1073/1104, time remaining: 17s
+Rendered 1073/1104, time remaining: 17s
+Rendered 1074/1104, time remaining: 16s
+Rendered 1075/1104, time remaining: 16s
+Rendered 1075/1104, time remaining: 16s
+Rendered 1076/1104, time remaining: 15s
+Rendered 1077/1104, time remaining: 15s
+Rendered 1077/1104, time remaining: 15s
+Rendered 1078/1104, time remaining: 14s
+Rendered 1079/1104, time remaining: 13s
+Rendered 1080/1104, time remaining: 13s
+Rendered 1080/1104, time remaining: 13s
+Rendered 1081/1104, time remaining: 12s
+Rendered 1082/1104, time remaining: 12s
+Rendered 1083/1104, time remaining: 11s
+Rendered 1083/1104, time remaining: 11s
+Rendered 1084/1104, time remaining: 11s
+Rendered 1085/1104, time remaining: 10s
+Rendered 1085/1104, time remaining: 10s
+Rendered 1086/1104, time remaining: 10s
+Rendered 1087/1104, time remaining: 9s
+Rendered 1087/1104, time remaining: 9s
+Rendered 1088/1104, time remaining: 8s
+Rendered 1089/1104, time remaining: 8s
+Rendered 1090/1104, time remaining: 7s
+Rendered 1090/1104, time remaining: 7s
+Rendered 1091/1104, time remaining: 7s
+Rendered 1092/1104, time remaining: 6s
+Rendered 1093/1104, time remaining: 6s
+Rendered 1093/1104, time remaining: 6s
+Rendered 1094/1104, time remaining: 5s
+Rendered 1095/1104, time remaining: 5s
+Rendered 1095/1104, time remaining: 5s
+Rendered 1096/1104, time remaining: 4s
+Rendered 1097/1104, time remaining: 3s
+Rendered 1098/1104, time remaining: 3s
+Rendered 1098/1104, time remaining: 3s
+Rendered 1099/1104, time remaining: 2s
+Rendered 1100/1104, time remaining: 2s
+Rendered 1101/1104, time remaining: 1s
+Rendered 1101/1104, time remaining: 1s
+Rendered 1102/1104, time remaining: 1s
+Rendered 1103/1104, time remaining: 0s
+Rendered 1103/1104, time remaining: 0s
+Stitched 832/1104
+Stitched 841/1104
+Stitched 854/1104
+Stitched 870/1104
+Stitched 883/1104
+Stitched 1104/1104
+Voz: gemini (102 palavras)
+[trilha] trechos: epico 0.0-4.1s | emocao 4.1-36.8s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-29_2030_ia-leitura-mundo-real/video.mp4 (36.8s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
