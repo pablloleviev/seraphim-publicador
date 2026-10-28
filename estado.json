@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630319,
+  "telegram_offset": 183630324,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -844,6 +844,54 @@
       "ig_id": "18121734091898236",
       "publicado_em": "2026-10-28T10:30:58.674686+00:00",
       "ig_manual": false
+    },
+    "2026-10-29_0830_habitos-produtividade-2027": {
+      "status": "agendado",
+      "enviado_em": "2026-10-28T17:01:20.435183+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1157
+    },
+    "2026-10-29_1130_erro-rastreio-caixa": {
+      "status": "agendado",
+      "enviado_em": "2026-10-28T17:01:22.733909+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1163
+    },
+    "2026-10-29_1500_evolucao-ui-negocios": {
+      "status": "agendado",
+      "enviado_em": "2026-10-28T17:01:25.043313+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1170
+    },
+    "2026-10-29_1300_protocolo-cliente-sumido": {
+      "status": "agendado",
+      "enviado_em": "2026-10-28T17:20:44.048838+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1172
+    },
+    "2026-10-29_0730_ia-descoberta-antibiotico": {
+      "status": "agendado",
+      "enviado_em": "2026-10-28T17:27:16.863962+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1174
+    },
+    "2026-10-29_1130_segundo-cerebro-gestao": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-28T17:29:32.388527+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1176
     }
   },
   "respondidos": {},
