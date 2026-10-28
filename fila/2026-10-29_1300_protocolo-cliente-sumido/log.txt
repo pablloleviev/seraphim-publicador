@@ -1,0 +1,82 @@
+ 771/825, time remaining: 23s
+Rendered 772/825, time remaining: 22s
+Rendered 773/825, time remaining: 22s
+Rendered 774/825, time remaining: 21s
+Rendered 774/825, time remaining: 21s
+Rendered 775/825, time remaining: 21s
+Rendered 776/825, time remaining: 20s
+Rendered 776/825, time remaining: 20s
+Rendered 777/825, time remaining: 20s
+Rendered 778/825, time remaining: 20s
+Rendered 779/825, time remaining: 19s
+Rendered 780/825, time remaining: 19s
+Rendered 780/825, time remaining: 19s
+Rendered 781/825, time remaining: 18s
+Rendered 782/825, time remaining: 18s
+Rendered 783/825, time remaining: 17s
+Rendered 783/825, time remaining: 17s
+Rendered 784/825, time remaining: 17s
+Rendered 785/825, time remaining: 17s
+Rendered 786/825, time remaining: 16s
+Rendered 786/825, time remaining: 16s
+Rendered 787/825, time remaining: 16s
+Rendered 788/825, time remaining: 15s
+Rendered 789/825, time remaining: 15s
+Rendered 789/825, time remaining: 15s
+Rendered 790/825, time remaining: 14s
+Rendered 791/825, time remaining: 14s
+Rendered 792/825, time remaining: 14s
+Rendered 793/825, time remaining: 13s
+Rendered 793/825, time remaining: 13s
+Rendered 794/825, time remaining: 13s
+Rendered 795/825, time remaining: 12s
+Rendered 795/825, time remaining: 12s
+Rendered 796/825, time remaining: 12s
+Rendered 797/825, time remaining: 11s
+Rendered 798/825, time remaining: 11s
+Rendered 798/825, time remaining: 11s
+Rendered 799/825, time remaining: 11s
+Rendered 800/825, time remaining: 10s
+Rendered 801/825, time remaining: 10s
+Rendered 801/825, time remaining: 10s
+Rendered 802/825, time remaining: 9s
+Rendered 803/825, time remaining: 9s
+Rendered 804/825, time remaining: 8s
+Rendered 804/825, time remaining: 8s
+Rendered 805/825, time remaining: 8s
+Rendered 806/825, time remaining: 8s
+Rendered 807/825, time remaining: 7s
+Rendered 807/825, time remaining: 7s
+Rendered 808/825, time remaining: 7s
+Rendered 809/825, time remaining: 6s
+Rendered 810/825, time remaining: 6s
+Rendered 811/825, time remaining: 5s
+Rendered 811/825, time remaining: 5s
+Rendered 812/825, time remaining: 5s
+Rendered 813/825, time remaining: 5s
+Rendered 814/825, time remaining: 4s
+Rendered 814/825, time remaining: 4s
+Rendered 815/825, time remaining: 4s
+Rendered 816/825, time remaining: 3s
+Rendered 817/825, time remaining: 3s
+Rendered 817/825, time remaining: 3s
+Rendered 818/825, time remaining: 2s
+Rendered 819/825, time remaining: 2s
+Rendered 820/825, time remaining: 2s
+Rendered 820/825, time remaining: 2s
+Rendered 821/825, time remaining: 1s
+Rendered 822/825, time remaining: 1s
+Rendered 823/825, time remaining: 0s
+Rendered 823/825, time remaining: 0s
+Rendered 824/825, time remaining: 0s
+Stitched 609/825
+Stitched 625/825
+Stitched 644/825
+Stitched 660/825
+Stitched 825/825
+Voz: gemini (83 palavras)
+[trilha] trechos: epico 0.0-4.6s | emocao 4.6-27.5s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-29_1300_protocolo-cliente-sumido/video.mp4 (27.5s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
