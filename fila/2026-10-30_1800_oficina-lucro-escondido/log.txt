@@ -1,0 +1,82 @@
+/978, time remaining: 29s
+Rendered 926/978, time remaining: 29s
+Rendered 927/978, time remaining: 28s
+Rendered 928/978, time remaining: 27s
+Rendered 928/978, time remaining: 27s
+Rendered 929/978, time remaining: 27s
+Rendered 930/978, time remaining: 26s
+Rendered 931/978, time remaining: 26s
+Rendered 932/978, time remaining: 25s
+Rendered 932/978, time remaining: 25s
+Rendered 933/978, time remaining: 25s
+Rendered 934/978, time remaining: 24s
+Rendered 934/978, time remaining: 24s
+Rendered 935/978, time remaining: 23s
+Rendered 936/978, time remaining: 23s
+Rendered 937/978, time remaining: 22s
+Rendered 937/978, time remaining: 22s
+Rendered 938/978, time remaining: 22s
+Rendered 939/978, time remaining: 21s
+Rendered 940/978, time remaining: 21s
+Rendered 940/978, time remaining: 21s
+Rendered 941/978, time remaining: 20s
+Rendered 942/978, time remaining: 20s
+Rendered 942/978, time remaining: 20s
+Rendered 943/978, time remaining: 19s
+Rendered 944/978, time remaining: 18s
+Rendered 945/978, time remaining: 18s
+Rendered 945/978, time remaining: 18s
+Rendered 946/978, time remaining: 17s
+Rendered 947/978, time remaining: 17s
+Rendered 948/978, time remaining: 16s
+Rendered 948/978, time remaining: 16s
+Rendered 949/978, time remaining: 16s
+Rendered 950/978, time remaining: 15s
+Rendered 951/978, time remaining: 14s
+Rendered 951/978, time remaining: 14s
+Rendered 952/978, time remaining: 14s
+Rendered 953/978, time remaining: 13s
+Rendered 954/978, time remaining: 13s
+Rendered 954/978, time remaining: 13s
+Rendered 955/978, time remaining: 12s
+Rendered 956/978, time remaining: 12s
+Rendered 957/978, time remaining: 11s
+Rendered 957/978, time remaining: 11s
+Rendered 958/978, time remaining: 11s
+Rendered 959/978, time remaining: 10s
+Rendered 960/978, time remaining: 9s
+Rendered 960/978, time remaining: 9s
+Rendered 961/978, time remaining: 9s
+Rendered 962/978, time remaining: 8s
+Rendered 962/978, time remaining: 8s
+Rendered 963/978, time remaining: 8s
+Rendered 964/978, time remaining: 7s
+Rendered 965/978, time remaining: 7s
+Rendered 965/978, time remaining: 7s
+Rendered 966/978, time remaining: 6s
+Rendered 967/978, time remaining: 6s
+Rendered 968/978, time remaining: 5s
+Rendered 968/978, time remaining: 5s
+Rendered 969/978, time remaining: 4s
+Rendered 970/978, time remaining: 4s
+Rendered 970/978, time remaining: 4s
+Rendered 971/978, time remaining: 3s
+Rendered 972/978, time remaining: 3s
+Rendered 973/978, time remaining: 2s
+Rendered 973/978, time remaining: 2s
+Rendered 974/978, time remaining: 2s
+Rendered 975/978, time remaining: 1s
+Rendered 976/978, time remaining: 1s
+Rendered 976/978, time remaining: 1s
+Rendered 977/978, time remaining: 0s
+Stitched 732/978
+Stitched 738/978
+Stitched 761/978
+Stitched 782/978
+Stitched 978/978
+Voz: gemini (80 palavras)
+[trilha] trechos: epico 0.0-6.6s | emocao 6.6-32.6s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-30_1800_oficina-lucro-escondido/video.mp4 (32.6s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
