@@ -1,0 +1,83 @@
+endered 771/821, time remaining: 25s
+Rendered 772/821, time remaining: 25s
+Rendered 773/821, time remaining: 24s
+Rendered 774/821, time remaining: 24s
+Rendered 774/821, time remaining: 24s
+Rendered 775/821, time remaining: 23s
+Rendered 776/821, time remaining: 23s
+Rendered 777/821, time remaining: 22s
+Rendered 777/821, time remaining: 22s
+Rendered 778/821, time remaining: 22s
+Rendered 779/821, time remaining: 21s
+Rendered 779/821, time remaining: 21s
+Rendered 780/821, time remaining: 21s
+Rendered 781/821, time remaining: 20s
+Rendered 781/821, time remaining: 20s
+Rendered 782/821, time remaining: 20s
+Rendered 783/821, time remaining: 19s
+Rendered 784/821, time remaining: 19s
+Rendered 784/821, time remaining: 19s
+Rendered 785/821, time remaining: 18s
+Rendered 786/821, time remaining: 18s
+Rendered 786/821, time remaining: 18s
+Rendered 787/821, time remaining: 17s
+Rendered 788/821, time remaining: 17s
+Rendered 789/821, time remaining: 16s
+Rendered 789/821, time remaining: 16s
+Rendered 790/821, time remaining: 16s
+Rendered 791/821, time remaining: 15s
+Rendered 791/821, time remaining: 15s
+Rendered 792/821, time remaining: 14s
+Rendered 793/821, time remaining: 14s
+Rendered 793/821, time remaining: 14s
+Rendered 794/821, time remaining: 13s
+Rendered 795/821, time remaining: 13s
+Rendered 796/821, time remaining: 12s
+Rendered 796/821, time remaining: 12s
+Rendered 797/821, time remaining: 12s
+Rendered 798/821, time remaining: 11s
+Rendered 798/821, time remaining: 11s
+Rendered 799/821, time remaining: 11s
+Rendered 800/821, time remaining: 10s
+Rendered 801/821, time remaining: 10s
+Rendered 801/821, time remaining: 10s
+Rendered 802/821, time remaining: 9s
+Rendered 803/821, time remaining: 9s
+Rendered 803/821, time remaining: 9s
+Rendered 804/821, time remaining: 8s
+Rendered 805/821, time remaining: 8s
+Rendered 805/821, time remaining: 8s
+Rendered 806/821, time remaining: 7s
+Rendered 807/821, time remaining: 7s
+Rendered 807/821, time remaining: 7s
+Rendered 808/821, time remaining: 6s
+Rendered 809/821, time remaining: 6s
+Rendered 810/821, time remaining: 5s
+Rendered 811/821, time remaining: 5s
+Rendered 811/821, time remaining: 5s
+Rendered 812/821, time remaining: 4s
+Rendered 813/821, time remaining: 4s
+Rendered 813/821, time remaining: 4s
+Rendered 814/821, time remaining: 3s
+Rendered 815/821, time remaining: 3s
+Rendered 815/821, time remaining: 3s
+Rendered 816/821, time remaining: 2s
+Rendered 817/821, time remaining: 2s
+Rendered 817/821, time remaining: 2s
+Rendered 818/821, time remaining: 1s
+Rendered 819/821, time remaining: 1s
+Rendered 820/821, time remaining: 0s
+Rendered 820/821, time remaining: 0s
+Stitched 607/821
+Stitched 618/821
+Stitched 630/821
+Stitched 641/821
+Stitched 654/821
+Stitched 657/821
+Stitched 821/821
+Voz: gemini (80 palavras)
+[trilha] trechos: epico 0.0-5.6s | emocao 5.6-27.4s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-30_2030_mito-esforco-bruto/video.mp4 (27.4s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
