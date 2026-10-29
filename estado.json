@@ -900,12 +900,17 @@
       "msg_id": 1170
     },
     "2026-10-29_1300_protocolo-cliente-sumido": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-28T17:20:44.048838+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae36db925e7fa4a8db71ba2",
+        "feito": "buffer"
       },
-      "msg_id": 1172
+      "msg_id": 1172,
+      "ig_id": "18134323120823035",
+      "publicado_em": "2026-10-29T16:00:56.389798+00:00",
+      "ig_manual": false
     },
     "2026-10-29_0730_ia-descoberta-antibiotico": {
       "status": "publicado",
