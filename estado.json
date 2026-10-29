@@ -944,12 +944,17 @@
       "ig_manual": false
     },
     "2026-10-29_1800_limpeza-digital-negocio": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-28T19:00:07.655176+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae3b414397c2ef8f345725d",
+        "feito": "buffer"
       },
-      "msg_id": 1189
+      "msg_id": 1189,
+      "ig_id": "17932504578165671",
+      "publicado_em": "2026-10-29T21:01:07.081211+00:00",
+      "ig_manual": false
     },
     "2026-10-29_1830_custo-nao-ter-autoflow": {
       "status": "agendado",
