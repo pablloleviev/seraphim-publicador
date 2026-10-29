@@ -1,0 +1,82 @@
+Rendered 888/942, time remaining: 24s
+Rendered 889/942, time remaining: 23s
+Rendered 890/942, time remaining: 23s
+Rendered 891/942, time remaining: 22s
+Rendered 891/942, time remaining: 22s
+Rendered 892/942, time remaining: 22s
+Rendered 893/942, time remaining: 21s
+Rendered 894/942, time remaining: 21s
+Rendered 894/942, time remaining: 21s
+Rendered 895/942, time remaining: 20s
+Rendered 896/942, time remaining: 20s
+Rendered 897/942, time remaining: 20s
+Rendered 897/942, time remaining: 20s
+Rendered 898/942, time remaining: 19s
+Rendered 899/942, time remaining: 19s
+Rendered 900/942, time remaining: 18s
+Rendered 900/942, time remaining: 18s
+Rendered 901/942, time remaining: 18s
+Rendered 902/942, time remaining: 17s
+Rendered 903/942, time remaining: 17s
+Rendered 903/942, time remaining: 17s
+Rendered 904/942, time remaining: 16s
+Rendered 905/942, time remaining: 16s
+Rendered 906/942, time remaining: 16s
+Rendered 906/942, time remaining: 16s
+Rendered 907/942, time remaining: 15s
+Rendered 908/942, time remaining: 15s
+Rendered 909/942, time remaining: 14s
+Rendered 910/942, time remaining: 14s
+Rendered 910/942, time remaining: 14s
+Rendered 911/942, time remaining: 13s
+Rendered 912/942, time remaining: 13s
+Rendered 912/942, time remaining: 13s
+Rendered 913/942, time remaining: 12s
+Rendered 914/942, time remaining: 12s
+Rendered 915/942, time remaining: 11s
+Rendered 916/942, time remaining: 11s
+Rendered 916/942, time remaining: 11s
+Rendered 917/942, time remaining: 11s
+Rendered 918/942, time remaining: 10s
+Rendered 918/942, time remaining: 10s
+Rendered 919/942, time remaining: 10s
+Rendered 920/942, time remaining: 9s
+Rendered 921/942, time remaining: 9s
+Rendered 922/942, time remaining: 8s
+Rendered 922/942, time remaining: 8s
+Rendered 923/942, time remaining: 8s
+Rendered 924/942, time remaining: 7s
+Rendered 925/942, time remaining: 7s
+Rendered 925/942, time remaining: 7s
+Rendered 926/942, time remaining: 7s
+Rendered 927/942, time remaining: 6s
+Rendered 928/942, time remaining: 6s
+Rendered 928/942, time remaining: 6s
+Rendered 929/942, time remaining: 5s
+Rendered 930/942, time remaining: 5s
+Rendered 931/942, time remaining: 4s
+Rendered 931/942, time remaining: 4s
+Rendered 932/942, time remaining: 4s
+Rendered 933/942, time remaining: 3s
+Rendered 934/942, time remaining: 3s
+Rendered 934/942, time remaining: 3s
+Rendered 935/942, time remaining: 3s
+Rendered 936/942, time remaining: 2s
+Rendered 937/942, time remaining: 2s
+Rendered 937/942, time remaining: 2s
+Rendered 938/942, time remaining: 1s
+Rendered 939/942, time remaining: 1s
+Rendered 940/942, time remaining: 0s
+Rendered 940/942, time remaining: 0s
+Rendered 941/942, time remaining: 0s
+Stitched 703/942
+Stitched 717/942
+Stitched 734/942
+Stitched 754/942
+Stitched 942/942
+Voz: gemini (92 palavras)
+[trilha] trechos: epico 0.0-4.3s | emocao 4.3-31.4s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-30_0730_ia-vendas-clima/video.mp4 (31.4s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
