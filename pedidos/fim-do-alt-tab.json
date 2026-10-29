@@ -1,0 +1,69 @@
+{
+ "nome": "fim-do-alt-tab",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-31 20:30",
+ "cenas": [
+  {
+   "tipo": "moedas",
+   "titulo": "O pedágio invisível do *Alt + Tab*",
+   "icones": [
+    "clock",
+    "layers",
+    "alert-triangle",
+    "refresh-cw"
+   ],
+   "clima": "tensao",
+   "transicao": "zoom",
+   "narracao": "Você passa metade do expediente trocando de janela para juntar informações que deveriam estar juntas."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Um sistema pra cada tarefa",
+   "depois": "Painel *integrado*",
+   "clima": "energia",
+   "transicao": "chicote",
+   "narracao": "É um programa para o recibo, outro para o chat e mais um para conferir o estoque."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O que você gasta no *caminho*",
+   "itens": [
+    "Atenção fragmentada",
+    "Digitação repetida",
+    "Erros de copiar e colar"
+   ],
+   "clima": "tensao",
+   "transicao": "deslize",
+   "narracao": "Essa ponte manual rouba seu foco e causa erros tolos de digitação em valores e nomes de clientes."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Integrar ferramentas é devolver *tempo para quem produz.*",
+   "clima": "inspira",
+   "transicao": "dissolve",
+   "narracao": "Conectar suas ferramentas não é capricho, é parar de desperdiçar a energia do seu time."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Descomplique a *sua operação*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Sistemas integrados"
+   ],
+   "clima": "epico",
+   "transicao": "luz",
+   "narracao": "Segue a Seraphim para descobrir como simplificar o dia a dia da sua empresa com tecnologia."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "karaoke",
+ "paleta": "cobre",
+ "formato": "noticia",
+ "titulo": "A síndrome das dez ferramentas abertas",
+ "numero": 14,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Ficar copiando dados de uma janela para colar em outra drena mais tempo do que parece. 💻 Quantas abas você precisa manter abertas para trabalhar hoje?\n\n#produtividade #integracao #sistemas #gestao #seraphimbr",
+ "legenda_tiktok": "A síndrome do Alt+Tab está roubando sua paciência e seu tempo de trabalho.\n\n#produtividade #integracao #sistemas #gestao #seraphimbr"
+}

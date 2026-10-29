@@ -1,0 +1,57 @@
+{
+ "nome": "voz-comando-negocios",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-30 13:00",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "mic",
+   "titulo": "Fim do *teclado?*",
+   "transicao": "flash",
+   "narracao": "Em breve, você não vai mais precisar de dez cliques para gerar um relatório da sua empresa."
+  },
+  {
+   "tipo": "pessoa",
+   "linha": "INTERFACE",
+   "titulo": "Sua voz é o *comando*",
+   "narracao": "A inteligência artificial transformou a voz na interface definitiva para os negócios."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "A nova *rotina*:",
+   "itens": [
+    "Cadastrar produtos",
+    "Resumo do dia",
+    "Agendar clientes"
+   ],
+   "narracao": "Imagine cadastrar itens, pedir o balanço do dia ou agendar serviços apenas falando com o seu sistema."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "Telas *inteligentes*",
+   "rotulo": "MÉTODO",
+   "numero": "NATURAL",
+   "narracao": "A tecnologia agora entende o que você quer dizer, não apenas onde você clica. É o fim das interfaces difíceis."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "O futuro é *agora*",
+   "cartoes": [
+    "Seguir Seraphim",
+    "Inovação diária"
+   ],
+   "narracao": "A Seraphim constrói o que vem depois. Segue a gente para não ficar no passado."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "palavra",
+ "paleta": "violeta",
+ "formato": "noticia",
+ "titulo": "Sua voz é o novo mouse",
+ "numero": 3,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "O mouse está perdendo espaço. 🖱️ A voz é a forma mais rápida de comandar sua empresa e a tecnologia atual já permite isso.\n\n#inovacao #futurodotrabalho #ia #produtividade #seraphimbr",
+ "legenda_tiktok": "O fim do teclado? A voz é a nova interface. 🎙️⚡\n\n#inovacao #futurodotrabalho #ia #produtividade #seraphimbr"
+}

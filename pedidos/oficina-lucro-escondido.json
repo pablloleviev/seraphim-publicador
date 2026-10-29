@@ -1,0 +1,65 @@
+{
+ "nome": "oficina-lucro-escondido",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-10-30 18:00",
+ "cenas": [
+  {
+   "tipo": "capa",
+   "linha": "PARA OFICINAS",
+   "titulo": "Pátio cheio,<br>caixa *vazio?*",
+   "icones": [
+    "car",
+    "wrench",
+    "trending-down"
+   ],
+   "transicao": "chicote",
+   "narracao": "Pátio cheio nem sempre é sinal de lucro. Muitas vezes, é apenas sinal de desorganização."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Procurar peças no grito",
+   "depois": "Fluxo *organizado*",
+   "narracao": "Se você perde tempo procurando peças ou ligando para clientes, você está perdendo dinheiro."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Onde o lucro *some*:",
+   "itens": [
+    "Serviços não cobrados",
+    "Peças paradas",
+    "Retrabalho constante"
+   ],
+   "narracao": "O dinheiro escapa quando você esquece de cobrar um extra ou deixa peças mofando no estoque por falta de registro."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Gestão que *liberta*",
+   "icones": [
+    "check-circle-2",
+    "calculator",
+    "clock"
+   ],
+   "narracao": "Organizar sua oficina em um só lugar é o que permite você crescer de verdade."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Conheça o *AutoFlow*",
+   "cartoes": [
+    "Link na Bio",
+    "Para Oficinas"
+   ],
+   "narracao": "Sua oficina merece uma gestão mais simples. Clica no link da bio e conheça o AutoFlow."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "estilo_legenda": "karaoke",
+ "paleta": "autoflow",
+ "formato": "celular",
+ "titulo": "O Caos da Oficina",
+ "numero": 4,
+ "funil": "fundo",
+ "genero_voz": "feminina",
+ "legenda": "Trabalhar muito não é o mesmo que ganhar muito. 🛠️ O AutoFlow ajuda você a organizar o pátio para o lucro finalmente aparecer no caixa. Link na bio.\n\n#oficinamecanica #mecanico #autoflow #gestaoautomotiva #seraphimbr",
+ "legenda_tiktok": "Pátio lotado nem sempre é dinheiro no bolso. 🚗💸\n\n#oficinamecanica #mecanico #autoflow #gestaoautomotiva #seraphimbr"
+}

@@ -1497,5 +1497,378 @@
    "cta"
   ],
   "paleta": "autoflow"
+ },
+ {
+  "nome": "ia-vendas-clima",
+  "funil": "topo",
+  "titulo": "IA e o Microclima",
+  "formato": "notícia de IA explicada",
+  "dia": "2026-10-30",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "eletrico",
+  "capa": "IA que lê o *tempo*",
+  "capa_cena": "A digital holographic weather map overlaying a street market scene, cinematic lighting, soft focus background.",
+  "cenas": [
+   "capa",
+   "objeto",
+   "lista",
+   "contraste",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "recuperar-orcamento",
+  "funil": "meio",
+  "titulo": "O Limbo dos Orçamentos",
+  "formato": "erro que você comete",
+  "dia": "2026-10-30",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "navegador",
+  "capa": "Recupere o *vácuo* do cliente",
+  "capa_cena": "A smartphone on a marble table showing a chat with a 'Seen' blue tick, dramatic shadow, golden lighting.",
+  "cenas": [
+   "cartao",
+   "moedas",
+   "frase",
+   "lista",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "rubi"
+ },
+ {
+  "nome": "voz-comando-negocios",
+  "funil": "topo",
+  "titulo": "Sua voz é o novo mouse",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-10-30",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noticia",
+  "capa": "Sua voz é o *novo mouse*",
+  "capa_cena": "Abstract golden sound waves flowing through a glass cube, dark background with particles.",
+  "cenas": [
+   "objeto",
+   "pessoa",
+   "lista",
+   "cartao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "violeta"
+ },
+ {
+  "nome": "oficina-lucro-escondido",
+  "funil": "fundo",
+  "titulo": "O Caos da Oficina",
+  "formato": "antes e depois",
+  "dia": "2026-10-30",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "celular",
+  "capa": "Pátio cheio, *caixa vazio?*",
+  "capa_cena": "A blurred busy mechanic shop background with a sharp, glowing orange hexagon logo in the foreground.",
+  "cenas": [
+   "capa",
+   "contraste",
+   "lista",
+   "moedas",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "autoflow"
+ },
+ {
+  "nome": "mito-esforco-bruto",
+  "funil": "topo",
+  "titulo": "O Mito do Esforço",
+  "formato": "pergunta polêmica",
+  "dia": "2026-10-30",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "vhs",
+  "capa": "Trabalhar demais é um *erro*",
+  "capa_cena": "A minimalist office desk with a single laptop and a glass of water, bright natural lighting, zen atmosphere.",
+  "cenas": [
+   "objeto",
+   "numero",
+   "cartao",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "emocional",
+  "paleta": "prata"
+ },
+ {
+  "nome": "agilidade-no-caixa",
+  "titulo": "O fim do 'vou ver e te aviso'",
+  "formato": "",
+  "dia": "2026-10-30",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "lista",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "cobre"
+ },
+ {
+  "nome": "funcoes-essenciais-sistema",
+  "titulo": "O que seu sistema deveria fazer",
+  "formato": "",
+  "dia": "2026-10-30",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "",
+  "slides": [
+   "capa_numero",
+   "verbete",
+   "verbete",
+   "verbete",
+   "citacao",
+   "cta"
+  ],
+  "paleta": "gelo"
+ },
+ {
+  "nome": "adeus-papelada-oficina",
+  "titulo": "Guia: Fim da papelada",
+  "formato": "",
+  "dia": "2026-10-30",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "",
+  "slides": [
+   "capa_tipografica",
+   "abertura",
+   "topico",
+   "topico",
+   "topico",
+   "cta"
+  ],
+  "paleta": "ouro"
+ },
+ {
+  "nome": "agentes-ia-explicados",
+  "titulo": "O que é um Agente de IA",
+  "formato": "",
+  "dia": "2026-10-30",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa",
+  "capa_cena": "",
+  "slides": [
+   "capa",
+   "verbete",
+   "lista",
+   "contraste",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "chips-fotonicos-luz",
+  "funil": "topo",
+  "titulo": "Computadores que pensam com luz",
+  "formato": "notícia de IA explicada",
+  "dia": "2026-10-31",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "hud",
+  "capa": "Computadores que *usam luz*",
+  "capa_cena": "glowing purple laser beam entering microscopic silicon prism in dark lab",
+  "cenas": [
+   "frase",
+   "objeto",
+   "contraste",
+   "lista",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "violeta"
+ },
+ {
+  "nome": "o-telefone-fantasma",
+  "funil": "topo",
+  "titulo": "O telefone fantasma da recepção",
+  "formato": "história curta de cliente",
+  "dia": "2026-10-31",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "story",
+  "capa": "O cliente que *sumiu às 18h*",
+  "capa_cena": "smartphone lying on empty office reception desk glowing in dark room",
+  "cenas": [
+   "numero",
+   "objeto",
+   "citacao",
+   "contraste",
+   "lista",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "prata"
+ },
+ {
+  "nome": "triagem-pedidos-caos",
+  "funil": "meio",
+  "titulo": "Organizando a fila de pedidos",
+  "formato": "lista prática",
+  "dia": "2026-10-31",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noir",
+  "capa": "Quando tudo vira *urgente*",
+  "capa_cena": "stressful stack of red labeled folders on a dark wooden office desk",
+  "cenas": [
+   "pessoa",
+   "objeto",
+   "lista",
+   "cartao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "rubi"
+ },
+ {
+  "nome": "ia-sintetica-colapso",
+  "funil": "topo",
+  "titulo": "O que acontece quando a IA lê a si mesma",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-10-31",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "terminal",
+  "capa": "O colapso da *IA sintética*",
+  "capa_cena": "infinite mirror tunnel reflecting subtle golden light glitching into digital void",
+  "cenas": [
+   "citacao",
+   "objeto",
+   "contraste",
+   "lista",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "ouro"
+ },
+ {
+  "nome": "fim-do-alt-tab",
+  "funil": "topo",
+  "titulo": "A síndrome das dez ferramentas abertas",
+  "formato": "comparação (X vs Y)",
+  "dia": "2026-10-31",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noticia",
+  "capa": "O cansaço do *Alt + Tab*",
+  "capa_cena": "exhausted worker hands resting beside multiple glowing laptop screens in dark ambient office",
+  "cenas": [
+   "moedas",
+   "contraste",
+   "lista",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "cobre"
+ },
+ {
+  "nome": "como-organizar-fila-atendimento",
+  "titulo": "O roteiro da resposta sem atraso",
+  "formato": "",
+  "dia": "2026-10-31",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "",
+  "slides": [
+   "capa_numero",
+   "abertura",
+   "topico",
+   "topico",
+   "topico",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "anatomia-tarefa-automatizavel",
+  "titulo": "O teste dos 3 minutos repetidos",
+  "formato": "",
+  "dia": "2026-10-31",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa",
+  "capa_cena": "",
+  "slides": [
+   "capa",
+   "verbete",
+   "verbete",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "ouro"
+ },
+ {
+  "nome": "diferenca-software-e-site",
+  "titulo": "Site institucional versus Sistema web",
+  "formato": "",
+  "dia": "2026-10-31",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "",
+  "slides": [
+   "capa_tipografica",
+   "abertura",
+   "contraste",
+   "lista",
+   "cta"
+  ],
+  "paleta": "gelo"
+ },
+ {
+  "nome": "seguranca-senhas-compartilhadas",
+  "titulo": "O perigo da senha no post-it",
+  "formato": "",
+  "dia": "2026-10-31",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "topico",
+   "topico",
+   "topico",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "cobre"
  }
 ]
