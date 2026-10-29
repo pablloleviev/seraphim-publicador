@@ -957,12 +957,17 @@
       "ig_manual": false
     },
     "2026-10-29_1830_custo-nao-ter-autoflow": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-28T19:30:22.572343+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae3bb1060532fc2b0d0f8ec",
+        "feito": "buffer"
       },
-      "msg_id": 1196
+      "msg_id": 1196,
+      "ig_id": "18450927808121509",
+      "publicado_em": "2026-10-29T21:30:55.411586+00:00",
+      "ig_manual": false
     },
     "2026-10-29_1930_mais-uma-aba-aberta": {
       "status": "agendado",
@@ -1051,6 +1056,14 @@
         "via": "buffer"
       },
       "msg_id": 1261
+    },
+    "2026-10-30_2030_mito-esforco-bruto": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-29T21:30:15.494874+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1265
     }
   },
   "respondidos": {},
