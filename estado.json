@@ -954,6 +954,14 @@
         "via": "buffer"
       },
       "msg_id": 1202
+    },
+    "2026-10-30_1230_checklist-fim-de-mes": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-29T13:30:19.373583+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1218
     }
   },
   "respondidos": {},
