@@ -840,12 +840,17 @@
       "ig_manual": false
     },
     "2026-10-28_2030_resumo-reuniao-ia": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-27T22:49:58.342432+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae285a2b5c2969a071eea79",
+        "feito": "buffer"
       },
-      "msg_id": 1136
+      "msg_id": 1136,
+      "ig_id": "18153060466543247",
+      "publicado_em": "2026-10-28T23:30:41.637897+00:00",
+      "ig_manual": false
     },
     "2026-10-28_0730_ia-aquecendo-cidades": {
       "status": "publicado",
