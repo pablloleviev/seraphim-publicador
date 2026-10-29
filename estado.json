@@ -879,12 +879,17 @@
       "ig_manual": false
     },
     "2026-10-29_1130_erro-rastreio-caixa": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-28T17:01:22.733909+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae3589da87e7858ef1251ac",
+        "feito": "buffer"
       },
-      "msg_id": 1163
+      "msg_id": 1163,
+      "ig_id": "17999665635039971",
+      "publicado_em": "2026-10-29T14:30:52.266635+00:00",
+      "ig_manual": false
     },
     "2026-10-29_1500_evolucao-ui-negocios": {
       "status": "agendado",
@@ -916,12 +921,17 @@
       "ig_manual": false
     },
     "2026-10-29_1130_segundo-cerebro-gestao": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-28T17:29:32.388527+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae35903a87e7858ef126b19",
+        "feito": "buffer"
       },
-      "msg_id": 1176
+      "msg_id": 1176,
+      "ig_id": "17992129496863252",
+      "publicado_em": "2026-10-29T14:32:34.706000+00:00",
+      "ig_manual": false
     },
     "2026-10-29_1800_limpeza-digital-negocio": {
       "status": "agendado",
