@@ -1,0 +1,78 @@
+71/1019, time remaining: 23s
+Rendered 972/1019, time remaining: 22s
+Rendered 973/1019, time remaining: 22s
+Rendered 973/1019, time remaining: 22s
+Rendered 974/1019, time remaining: 21s
+Rendered 975/1019, time remaining: 21s
+Rendered 976/1019, time remaining: 20s
+Rendered 976/1019, time remaining: 20s
+Rendered 977/1019, time remaining: 20s
+Rendered 978/1019, time remaining: 19s
+Rendered 979/1019, time remaining: 19s
+Rendered 979/1019, time remaining: 19s
+Rendered 980/1019, time remaining: 18s
+Rendered 981/1019, time remaining: 18s
+Rendered 981/1019, time remaining: 18s
+Rendered 982/1019, time remaining: 17s
+Rendered 983/1019, time remaining: 17s
+Rendered 983/1019, time remaining: 17s
+Rendered 984/1019, time remaining: 16s
+Rendered 985/1019, time remaining: 16s
+Rendered 986/1019, time remaining: 15s
+Rendered 987/1019, time remaining: 15s
+Rendered 987/1019, time remaining: 15s
+Rendered 988/1019, time remaining: 15s
+Rendered 989/1019, time remaining: 14s
+Rendered 989/1019, time remaining: 14s
+Rendered 990/1019, time remaining: 14s
+Rendered 991/1019, time remaining: 13s
+Rendered 991/1019, time remaining: 13s
+Rendered 992/1019, time remaining: 13s
+Rendered 993/1019, time remaining: 12s
+Rendered 994/1019, time remaining: 12s
+Rendered 995/1019, time remaining: 11s
+Rendered 995/1019, time remaining: 11s
+Rendered 996/1019, time remaining: 11s
+Rendered 997/1019, time remaining: 10s
+Rendered 997/1019, time remaining: 10s
+Rendered 998/1019, time remaining: 10s
+Rendered 999/1019, time remaining: 9s
+Rendered 999/1019, time remaining: 9s
+Rendered 1000/1019, time remaining: 9s
+Rendered 1001/1019, time remaining: 8s
+Rendered 1002/1019, time remaining: 8s
+Rendered 1002/1019, time remaining: 8s
+Rendered 1003/1019, time remaining: 7s
+Rendered 1004/1019, time remaining: 7s
+Rendered 1005/1019, time remaining: 6s
+Rendered 1005/1019, time remaining: 6s
+Rendered 1006/1019, time remaining: 6s
+Rendered 1007/1019, time remaining: 5s
+Rendered 1007/1019, time remaining: 5s
+Rendered 1008/1019, time remaining: 5s
+Rendered 1009/1019, time remaining: 4s
+Rendered 1010/1019, time remaining: 4s
+Rendered 1010/1019, time remaining: 4s
+Rendered 1011/1019, time remaining: 3s
+Rendered 1012/1019, time remaining: 3s
+Rendered 1013/1019, time remaining: 2s
+Rendered 1013/1019, time remaining: 2s
+Rendered 1014/1019, time remaining: 2s
+Rendered 1015/1019, time remaining: 1s
+Rendered 1015/1019, time remaining: 1s
+Rendered 1016/1019, time remaining: 1s
+Rendered 1016/1019, time remaining: 1s
+Rendered 1017/1019, time remaining: 0s
+Rendered 1018/1019, time remaining: 0s
+Stitched 763/1019
+Stitched 771/1019
+Stitched 786/1019
+Stitched 802/1019
+Stitched 815/1019
+Stitched 1019/1019
+Voz: gemini (86 palavras)
+[trilha] trechos: epico 0.0-4.1s | tensao 4.1-9.3s | emocao 9.3-16.3s | energia 16.3-22.5s | inspira 22.5-27.7s | epico 27.7-34.0s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-31_0730_chips-fotonicos-luz/video.mp4 (34.0s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
