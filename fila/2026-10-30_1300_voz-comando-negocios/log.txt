@@ -1,0 +1,83 @@
+ning: 29s
+Rendered 821/870, time remaining: 29s
+Rendered 822/870, time remaining: 28s
+Rendered 822/870, time remaining: 28s
+Rendered 823/870, time remaining: 28s
+Rendered 824/870, time remaining: 27s
+Rendered 824/870, time remaining: 27s
+Rendered 825/870, time remaining: 26s
+Rendered 826/870, time remaining: 26s
+Rendered 826/870, time remaining: 26s
+Rendered 827/870, time remaining: 25s
+Rendered 828/870, time remaining: 25s
+Rendered 828/870, time remaining: 25s
+Rendered 829/870, time remaining: 24s
+Rendered 830/870, time remaining: 23s
+Rendered 831/870, time remaining: 23s
+Rendered 831/870, time remaining: 23s
+Rendered 832/870, time remaining: 22s
+Rendered 833/870, time remaining: 22s
+Rendered 834/870, time remaining: 21s
+Rendered 834/870, time remaining: 21s
+Rendered 835/870, time remaining: 20s
+Rendered 836/870, time remaining: 20s
+Rendered 836/870, time remaining: 20s
+Rendered 837/870, time remaining: 19s
+Rendered 838/870, time remaining: 19s
+Rendered 838/870, time remaining: 19s
+Rendered 839/870, time remaining: 18s
+Rendered 840/870, time remaining: 17s
+Rendered 840/870, time remaining: 17s
+Rendered 841/870, time remaining: 17s
+Rendered 842/870, time remaining: 16s
+Rendered 843/870, time remaining: 16s
+Rendered 843/870, time remaining: 16s
+Rendered 844/870, time remaining: 15s
+Rendered 845/870, time remaining: 14s
+Rendered 846/870, time remaining: 14s
+Rendered 846/870, time remaining: 14s
+Rendered 847/870, time remaining: 13s
+Rendered 848/870, time remaining: 13s
+Rendered 848/870, time remaining: 13s
+Rendered 849/870, time remaining: 12s
+Rendered 849/870, time remaining: 12s
+Rendered 850/870, time remaining: 11s
+Rendered 851/870, time remaining: 11s
+Rendered 852/870, time remaining: 10s
+Rendered 852/870, time remaining: 10s
+Rendered 853/870, time remaining: 10s
+Rendered 854/870, time remaining: 9s
+Rendered 854/870, time remaining: 9s
+Rendered 855/870, time remaining: 8s
+Rendered 856/870, time remaining: 8s
+Rendered 856/870, time remaining: 8s
+Rendered 857/870, time remaining: 7s
+Rendered 858/870, time remaining: 7s
+Rendered 859/870, time remaining: 6s
+Rendered 859/870, time remaining: 6s
+Rendered 860/870, time remaining: 5s
+Rendered 861/870, time remaining: 5s
+Rendered 862/870, time remaining: 4s
+Rendered 862/870, time remaining: 4s
+Rendered 863/870, time remaining: 4s
+Rendered 864/870, time remaining: 3s
+Rendered 864/870, time remaining: 3s
+Rendered 865/870, time remaining: 2s
+Rendered 866/870, time remaining: 2s
+Rendered 866/870, time remaining: 2s
+Rendered 867/870, time remaining: 1s
+Rendered 868/870, time remaining: 1s
+Rendered 868/870, time remaining: 1s
+Rendered 869/870, time remaining: 0s
+Stitched 646/870
+Stitched 651/870
+Stitched 667/870
+Stitched 681/870
+Stitched 696/870
+Stitched 870/870
+Voz: gemini (81 palavras)
+[trilha] trechos: epico 0.0-4.8s | emocao 4.8-29.0s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-10-30_1300_voz-comando-negocios/video.mp4 (29.0s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
