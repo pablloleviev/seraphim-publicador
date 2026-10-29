@@ -1030,6 +1030,22 @@
         "via": "buffer"
       },
       "msg_id": 1250
+    },
+    "2026-10-30_1800_oficina-lucro-escondido": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-29T19:00:25.962722+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1254
+    },
+    "2026-10-30_1830_agentes-ia-explicados": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-29T19:30:22.397461+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1261
     }
   },
   "respondidos": {},
