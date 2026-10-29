@@ -892,12 +892,17 @@
       "ig_manual": false
     },
     "2026-10-29_1500_evolucao-ui-negocios": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-28T17:01:25.043313+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae389c7313060a14e20ebd6",
+        "feito": "buffer"
       },
-      "msg_id": 1170
+      "msg_id": 1170,
+      "ig_id": "18099951041557354",
+      "publicado_em": "2026-10-29T18:00:39.058447+00:00",
+      "ig_manual": false
     },
     "2026-10-29_1300_protocolo-cliente-sumido": {
       "status": "publicado",
@@ -977,6 +982,54 @@
         "via": "buffer"
       },
       "msg_id": 1218
+    },
+    "2026-10-30_0830_agilidade-no-caixa": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-29T17:26:34.505122+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1230
+    },
+    "2026-10-30_1130_funcoes-essenciais-sistema": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-29T17:26:36.591343+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1237
+    },
+    "2026-10-30_1500_adeus-papelada-oficina": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-29T17:26:38.613728+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1244
+    },
+    "2026-10-30_1130_recuperar-orcamento": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-29T17:35:16.776386+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1246
+    },
+    "2026-10-30_0730_ia-vendas-clima": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-29T17:37:31.450402+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1248
+    },
+    "2026-10-30_1300_voz-comando-negocios": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-29T17:37:34.119537+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1250
     }
   },
   "respondidos": {},
