@@ -866,12 +866,17 @@
       "ig_manual": false
     },
     "2026-10-29_0830_habitos-produtividade-2027": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-28T17:01:20.435183+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae32e59a0a200dca8b997ce",
+        "feito": "buffer"
       },
-      "msg_id": 1157
+      "msg_id": 1157,
+      "ig_id": "17920128201459940",
+      "publicado_em": "2026-10-29T11:30:32.805382+00:00",
+      "ig_manual": false
     },
     "2026-10-29_1130_erro-rastreio-caixa": {
       "status": "agendado",
