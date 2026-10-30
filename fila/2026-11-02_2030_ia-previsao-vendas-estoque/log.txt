@@ -1,0 +1,74 @@
+me remaining: 23s
+Rendered 959/1000, time remaining: 23s
+Rendered 960/1000, time remaining: 22s
+Rendered 961/1000, time remaining: 22s
+Rendered 962/1000, time remaining: 21s
+Rendered 962/1000, time remaining: 21s
+Rendered 963/1000, time remaining: 20s
+Rendered 964/1000, time remaining: 20s
+Rendered 964/1000, time remaining: 20s
+Rendered 965/1000, time remaining: 19s
+Rendered 966/1000, time remaining: 19s
+Rendered 967/1000, time remaining: 18s
+Rendered 967/1000, time remaining: 18s
+Rendered 968/1000, time remaining: 18s
+Rendered 969/1000, time remaining: 17s
+Rendered 970/1000, time remaining: 16s
+Rendered 970/1000, time remaining: 16s
+Rendered 971/1000, time remaining: 16s
+Rendered 972/1000, time remaining: 15s
+Rendered 972/1000, time remaining: 15s
+Rendered 973/1000, time remaining: 15s
+Rendered 974/1000, time remaining: 14s
+Rendered 975/1000, time remaining: 14s
+Rendered 975/1000, time remaining: 14s
+Rendered 976/1000, time remaining: 13s
+Rendered 977/1000, time remaining: 12s
+Rendered 977/1000, time remaining: 12s
+Rendered 978/1000, time remaining: 12s
+Rendered 979/1000, time remaining: 11s
+Rendered 979/1000, time remaining: 11s
+Rendered 980/1000, time remaining: 11s
+Rendered 981/1000, time remaining: 10s
+Rendered 982/1000, time remaining: 10s
+Rendered 983/1000, time remaining: 9s
+Rendered 983/1000, time remaining: 9s
+Rendered 984/1000, time remaining: 8s
+Rendered 985/1000, time remaining: 8s
+Rendered 985/1000, time remaining: 8s
+Rendered 986/1000, time remaining: 7s
+Rendered 987/1000, time remaining: 7s
+Rendered 987/1000, time remaining: 7s
+Rendered 988/1000, time remaining: 6s
+Rendered 989/1000, time remaining: 6s
+Rendered 990/1000, time remaining: 5s
+Rendered 991/1000, time remaining: 5s
+Rendered 991/1000, time remaining: 5s
+Rendered 992/1000, time remaining: 4s
+Rendered 993/1000, time remaining: 3s
+Rendered 993/1000, time remaining: 3s
+Rendered 994/1000, time remaining: 3s
+Rendered 995/1000, time remaining: 2s
+Rendered 995/1000, time remaining: 2s
+Rendered 996/1000, time remaining: 2s
+Rendered 997/1000, time remaining: 1s
+Rendered 998/1000, time remaining: 1s
+Rendered 998/1000, time remaining: 1s
+Rendered 999/1000, time remaining: 0s
+Stitched 750/1000
+Stitched 762/1000
+Stitched 777/1000
+Stitched 794/1000
+Stitched 800/1000
+Stitched 1000/1000
+[aviso] voz gemini falhou: gemini-2.5-pro-preview-tts: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+[aviso] voz edge falhou: No audio was received. Please verify that your parameters are correct.
+Voz: kokoro (98 palavras)
+[trilha] trechos: epico 0.0-7.1s | emocao 7.1-33.3s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-02_2030_ia-previsao-vendas-estoque/video.mp4 (33.3s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
