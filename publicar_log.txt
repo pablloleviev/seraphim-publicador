@@ -1,1 +1,2 @@
 Bot conectado: @seraphim_aprova_bot
+[aviso] Instagram automático falhou, indo para o manual: 500 {"error":{"message":"An unexpected error has occurred. Please retry your request later.","type":"OAuthException","is_transient":true,"code":2,"fbtrace_id":"ArRGs2YUesmN6-URUfmPhDf"}}

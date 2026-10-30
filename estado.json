@@ -1113,12 +1113,17 @@
       "ig_manual": false
     },
     "2026-10-30_2030_mito-esforco-bruto": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-29T21:30:15.494874+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae528b1b84259308ba8d97a",
+        "feito": "buffer"
       },
-      "msg_id": 1265
+      "msg_id": 1265,
+      "ig_id": null,
+      "publicado_em": "2026-10-30T23:30:56.222930+00:00",
+      "ig_manual": true
     },
     "2026-10-31_0730_chips-fotonicos-luz": {
       "status": "agendado",
