@@ -1100,12 +1100,17 @@
       "ig_manual": false
     },
     "2026-10-30_1830_agentes-ia-explicados": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-29T19:30:22.397461+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae50c83406ab8a018837b71",
+        "feito": "buffer"
       },
-      "msg_id": 1261
+      "msg_id": 1261,
+      "ig_id": "18134124151743233",
+      "publicado_em": "2026-10-30T21:30:41.159488+00:00",
+      "ig_manual": false
     },
     "2026-10-30_2030_mito-esforco-bruto": {
       "status": "agendado",
@@ -1186,6 +1191,14 @@
         "via": "buffer"
       },
       "msg_id": 1322
+    },
+    "2026-10-31_2030_fim-do-alt-tab": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-30T21:30:04.609553+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1326
     }
   },
   "respondidos": {},
