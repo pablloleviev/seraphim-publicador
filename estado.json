@@ -1087,12 +1087,17 @@
       "ig_manual": false
     },
     "2026-10-30_1800_oficina-lucro-escondido": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-29T19:00:25.962722+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae50580a1145743496c1b28",
+        "feito": "buffer"
       },
-      "msg_id": 1254
+      "msg_id": 1254,
+      "ig_id": "17977273677153528",
+      "publicado_em": "2026-10-30T21:00:47.140931+00:00",
+      "ig_manual": false
     },
     "2026-10-30_1830_agentes-ia-explicados": {
       "status": "agendado",
@@ -1173,6 +1178,14 @@
         "via": "buffer"
       },
       "msg_id": 1320
+    },
+    "2026-10-31_1930_terror-da-operacao": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-30T20:30:13.442774+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1322
     }
   },
   "respondidos": {},
