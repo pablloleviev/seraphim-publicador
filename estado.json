@@ -1165,6 +1165,14 @@
         "via": "buffer"
       },
       "msg_id": 1313
+    },
+    "2026-10-31_1830_seguranca-senhas-compartilhadas": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-30T19:30:06.882563+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1320
     }
   },
   "respondidos": {},
