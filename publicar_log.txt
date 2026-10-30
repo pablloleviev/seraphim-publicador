@@ -1,3 +1,4 @@
+Bot conectado: @seraphim_aprova_bot
 Traceback (most recent call last):
   File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/publicar.py", line 68, in http
     with urllib.request.urlopen(req, timeout=60) as r:
@@ -26,9 +27,11 @@ During handling of the above exception, another exception occurred:
 Traceback (most recent call last):
   File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/publicar.py", line 643, in <module>
     main()
-  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/publicar.py", line 576, in main
-    eu = tg("getMe")["result"]
-         ^^^^^^^^^^^
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/publicar.py", line 595, in main
+    processar_respostas(estado, espera=0 if time.time() >= fim else 25)
+  File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/publicar.py", line 390, in processar_respostas
+    r = tg("getUpdates", offset=estado.get("telegram_offset", 0) + 1, timeout=espera,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/home/runner/work/seraphim-publicador/seraphim-publicador/scripts/publicar.py", line 78, in tg
     return http(f"https://api.telegram.org/bot{TG}/{metodo}", dados)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
