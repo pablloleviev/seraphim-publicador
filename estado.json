@@ -1074,6 +1074,14 @@
         "via": "buffer"
       },
       "msg_id": 1265
+    },
+    "2026-10-31_0730_chips-fotonicos-luz": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-30T08:30:06.831938+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1273
     }
   },
   "respondidos": {},
