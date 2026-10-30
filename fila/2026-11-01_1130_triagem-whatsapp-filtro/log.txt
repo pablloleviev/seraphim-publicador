@@ -1,0 +1,79 @@
+ning: 18s
+Rendered 1023/1075, time remaining: 18s
+Rendered 1024/1075, time remaining: 17s
+Rendered 1025/1075, time remaining: 17s
+Rendered 1025/1075, time remaining: 17s
+Rendered 1026/1075, time remaining: 17s
+Rendered 1027/1075, time remaining: 16s
+Rendered 1028/1075, time remaining: 16s
+Rendered 1028/1075, time remaining: 16s
+Rendered 1029/1075, time remaining: 16s
+Rendered 1030/1075, time remaining: 15s
+Rendered 1031/1075, time remaining: 15s
+Rendered 1032/1075, time remaining: 15s
+Rendered 1032/1075, time remaining: 15s
+Rendered 1033/1075, time remaining: 14s
+Rendered 1034/1075, time remaining: 14s
+Rendered 1035/1075, time remaining: 14s
+Rendered 1035/1075, time remaining: 14s
+Rendered 1036/1075, time remaining: 13s
+Rendered 1037/1075, time remaining: 13s
+Rendered 1038/1075, time remaining: 12s
+Rendered 1039/1075, time remaining: 12s
+Rendered 1039/1075, time remaining: 12s
+Rendered 1040/1075, time remaining: 12s
+Rendered 1041/1075, time remaining: 11s
+Rendered 1042/1075, time remaining: 11s
+Rendered 1042/1075, time remaining: 11s
+Rendered 1043/1075, time remaining: 11s
+Rendered 1044/1075, time remaining: 10s
+Rendered 1045/1075, time remaining: 10s
+Rendered 1046/1075, time remaining: 10s
+Rendered 1046/1075, time remaining: 10s
+Rendered 1047/1075, time remaining: 9s
+Rendered 1048/1075, time remaining: 9s
+Rendered 1049/1075, time remaining: 9s
+Rendered 1050/1075, time remaining: 8s
+Rendered 1050/1075, time remaining: 8s
+Rendered 1051/1075, time remaining: 8s
+Rendered 1052/1075, time remaining: 8s
+Rendered 1052/1075, time remaining: 8s
+Rendered 1053/1075, time remaining: 7s
+Rendered 1054/1075, time remaining: 7s
+Rendered 1055/1075, time remaining: 7s
+Rendered 1056/1075, time remaining: 6s
+Rendered 1056/1075, time remaining: 6s
+Rendered 1057/1075, time remaining: 6s
+Rendered 1058/1075, time remaining: 5s
+Rendered 1059/1075, time remaining: 5s
+Rendered 1059/1075, time remaining: 5s
+Rendered 1060/1075, time remaining: 5s
+Rendered 1061/1075, time remaining: 4s
+Rendered 1062/1075, time remaining: 4s
+Rendered 1063/1075, time remaining: 4s
+Rendered 1063/1075, time remaining: 4s
+Rendered 1064/1075, time remaining: 3s
+Rendered 1065/1075, time remaining: 3s
+Rendered 1066/1075, time remaining: 3s
+Rendered 1066/1075, time remaining: 3s
+Rendered 1067/1075, time remaining: 2s
+Rendered 1068/1075, time remaining: 2s
+Rendered 1069/1075, time remaining: 2s
+Rendered 1070/1075, time remaining: 1s
+Rendered 1070/1075, time remaining: 1s
+Rendered 1071/1075, time remaining: 1s
+Rendered 1072/1075, time remaining: 1s
+Rendered 1072/1075, time remaining: 1s
+Rendered 1073/1075, time remaining: 0s
+Rendered 1074/1075, time remaining: 0s
+Stitched 809/1075
+Stitched 817/1075
+Stitched 847/1075
+Stitched 860/1075
+Stitched 1075/1075
+Voz: gemini (105 palavras)
+[trilha] trechos: epico 0.0-7.7s | emocao 7.7-35.8s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-01_1130_triagem-whatsapp-filtro/video.mp4 (35.8s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
