@@ -1,0 +1,79 @@
+e remaining: 29s
+Rendered 1248/1294, time remaining: 28s
+Rendered 1248/1294, time remaining: 28s
+Rendered 1249/1294, time remaining: 27s
+Rendered 1250/1294, time remaining: 27s
+Rendered 1250/1294, time remaining: 27s
+Rendered 1251/1294, time remaining: 26s
+Rendered 1252/1294, time remaining: 26s
+Rendered 1252/1294, time remaining: 26s
+Rendered 1253/1294, time remaining: 25s
+Rendered 1254/1294, time remaining: 24s
+Rendered 1255/1294, time remaining: 24s
+Rendered 1255/1294, time remaining: 24s
+Rendered 1256/1294, time remaining: 23s
+Rendered 1257/1294, time remaining: 22s
+Rendered 1258/1294, time remaining: 22s
+Rendered 1258/1294, time remaining: 22s
+Rendered 1259/1294, time remaining: 21s
+Rendered 1260/1294, time remaining: 21s
+Rendered 1260/1294, time remaining: 21s
+Rendered 1261/1294, time remaining: 20s
+Rendered 1262/1294, time remaining: 19s
+Rendered 1262/1294, time remaining: 19s
+Rendered 1263/1294, time remaining: 19s
+Rendered 1264/1294, time remaining: 18s
+Rendered 1264/1294, time remaining: 18s
+Rendered 1265/1294, time remaining: 17s
+Rendered 1266/1294, time remaining: 17s
+Rendered 1267/1294, time remaining: 16s
+Rendered 1267/1294, time remaining: 16s
+Rendered 1268/1294, time remaining: 16s
+Rendered 1269/1294, time remaining: 15s
+Rendered 1269/1294, time remaining: 15s
+Rendered 1270/1294, time remaining: 14s
+Rendered 1271/1294, time remaining: 14s
+Rendered 1271/1294, time remaining: 14s
+Rendered 1272/1294, time remaining: 13s
+Rendered 1273/1294, time remaining: 12s
+Rendered 1273/1294, time remaining: 12s
+Rendered 1274/1294, time remaining: 12s
+Rendered 1275/1294, time remaining: 11s
+Rendered 1276/1294, time remaining: 11s
+Rendered 1276/1294, time remaining: 11s
+Rendered 1277/1294, time remaining: 10s
+Rendered 1278/1294, time remaining: 9s
+Rendered 1279/1294, time remaining: 9s
+Rendered 1279/1294, time remaining: 9s
+Rendered 1280/1294, time remaining: 8s
+Rendered 1281/1294, time remaining: 8s
+Rendered 1281/1294, time remaining: 8s
+Rendered 1282/1294, time remaining: 7s
+Rendered 1283/1294, time remaining: 6s
+Rendered 1283/1294, time remaining: 6s
+Rendered 1284/1294, time remaining: 6s
+Rendered 1285/1294, time remaining: 5s
+Rendered 1286/1294, time remaining: 4s
+Rendered 1286/1294, time remaining: 4s
+Rendered 1287/1294, time remaining: 4s
+Rendered 1288/1294, time remaining: 3s
+Rendered 1288/1294, time remaining: 3s
+Rendered 1289/1294, time remaining: 3s
+Rendered 1290/1294, time remaining: 2s
+Rendered 1291/1294, time remaining: 1s
+Rendered 1291/1294, time remaining: 1s
+Rendered 1292/1294, time remaining: 1s
+Rendered 1293/1294, time remaining: 0s
+Rendered 1293/1294, time remaining: 0s
+Stitched 986/1294
+Stitched 998/1294
+Stitched 1010/1294
+Stitched 1022/1294
+Stitched 1035/1294
+Stitched 1294/1294
+Voz: gemini (122 palavras)
+[trilha] trechos: epico 0.0-7.7s | emocao 7.7-43.1s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-01_0730_fim-do-silicio-grafeno/video.mp4 (43.1s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
