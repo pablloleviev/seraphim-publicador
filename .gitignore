@@ -3,3 +3,4 @@ node_modules
 motor/public/job/
 *.pcm
 gravacoes/*.mp4
+motor/public/sem/

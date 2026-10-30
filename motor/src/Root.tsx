@@ -5,6 +5,7 @@ import {SeraphimCortes, PropsC} from './Cortes';
 import {Relancamento, PropsR} from './Relancamento';
 import {Estilo, PropsE} from './Estilo';
 import {SinalVivo, PropsV} from './SinalVivo';
+import {Seminario, PropsS} from './Seminario';
 import {AutoFlowV1, PropsAF} from './AutoFlowV1';
 import {AutoFlowV2} from './AutoFlowV2';
 import {AutoFlowV3} from './AutoFlowV3';
@@ -59,6 +60,9 @@ export const Root: React.FC = () => (
     defaultProps={{fps: 30, duracao: 6, arroba: '@seraphimbr_', audio: null, batida: null, palavras: [], peca: 'V1', cenas: [{inicio: 0, fim: 6, tipo: 'cresce'}]} as PropsR}
     calculateMetadata={({props}) => ({durationInFrames: Math.ceil((props as PropsR).duracao * (props as PropsR).fps), fps: (props as PropsR).fps})}
   />
+  <Composition id="Seminario" component={Seminario as any} width={1920} height={1080} fps={30} durationInFrames={300}
+    defaultProps={{duracao: 10, video: 'sem/video.mp4', secoes: [], partes: [{inicio: 0, fim: 9999, escala: 1, ox: 0, oy: 0}], cortes: [], titulo: '', nome: 'Pabllo'} as PropsS}
+    calculateMetadata={({props}) => ({durationInFrames: Math.ceil((props as PropsS).duracao * 30)})} />
   <Composition
     id="SinalVivo"
     component={SinalVivo as any}
