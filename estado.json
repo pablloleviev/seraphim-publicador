@@ -1100,6 +1100,14 @@
         "via": "buffer"
       },
       "msg_id": 1281
+    },
+    "2026-10-31_1130_anatomia-tarefa-automatizavel": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-30T12:30:15.958602+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1291
     }
   },
   "respondidos": {},
