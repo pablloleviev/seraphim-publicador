@@ -1,0 +1,79 @@
+d 1219/1265, time remaining: 25s
+Rendered 1219/1265, time remaining: 25s
+Rendered 1220/1265, time remaining: 24s
+Rendered 1221/1265, time remaining: 24s
+Rendered 1221/1265, time remaining: 24s
+Rendered 1222/1265, time remaining: 23s
+Rendered 1223/1265, time remaining: 23s
+Rendered 1223/1265, time remaining: 23s
+Rendered 1224/1265, time remaining: 22s
+Rendered 1225/1265, time remaining: 22s
+Rendered 1225/1265, time remaining: 22s
+Rendered 1226/1265, time remaining: 21s
+Rendered 1227/1265, time remaining: 20s
+Rendered 1227/1265, time remaining: 20s
+Rendered 1228/1265, time remaining: 20s
+Rendered 1229/1265, time remaining: 19s
+Rendered 1229/1265, time remaining: 19s
+Rendered 1230/1265, time remaining: 19s
+Rendered 1231/1265, time remaining: 18s
+Rendered 1231/1265, time remaining: 18s
+Rendered 1232/1265, time remaining: 18s
+Rendered 1233/1265, time remaining: 17s
+Rendered 1234/1265, time remaining: 17s
+Rendered 1234/1265, time remaining: 17s
+Rendered 1235/1265, time remaining: 16s
+Rendered 1236/1265, time remaining: 15s
+Rendered 1236/1265, time remaining: 15s
+Rendered 1237/1265, time remaining: 15s
+Rendered 1238/1265, time remaining: 14s
+Rendered 1238/1265, time remaining: 14s
+Rendered 1239/1265, time remaining: 14s
+Rendered 1240/1265, time remaining: 13s
+Rendered 1241/1265, time remaining: 13s
+Rendered 1241/1265, time remaining: 13s
+Rendered 1242/1265, time remaining: 12s
+Rendered 1243/1265, time remaining: 12s
+Rendered 1243/1265, time remaining: 12s
+Rendered 1244/1265, time remaining: 11s
+Rendered 1245/1265, time remaining: 10s
+Rendered 1246/1265, time remaining: 10s
+Rendered 1246/1265, time remaining: 10s
+Rendered 1247/1265, time remaining: 9s
+Rendered 1248/1265, time remaining: 9s
+Rendered 1248/1265, time remaining: 9s
+Rendered 1249/1265, time remaining: 8s
+Rendered 1250/1265, time remaining: 8s
+Rendered 1250/1265, time remaining: 8s
+Rendered 1251/1265, time remaining: 7s
+Rendered 1252/1265, time remaining: 7s
+Rendered 1253/1265, time remaining: 6s
+Rendered 1253/1265, time remaining: 6s
+Rendered 1254/1265, time remaining: 6s
+Rendered 1255/1265, time remaining: 5s
+Rendered 1256/1265, time remaining: 4s
+Rendered 1256/1265, time remaining: 4s
+Rendered 1257/1265, time remaining: 4s
+Rendered 1258/1265, time remaining: 3s
+Rendered 1258/1265, time remaining: 3s
+Rendered 1259/1265, time remaining: 3s
+Rendered 1260/1265, time remaining: 2s
+Rendered 1260/1265, time remaining: 2s
+Rendered 1261/1265, time remaining: 2s
+Rendered 1262/1265, time remaining: 1s
+Rendered 1262/1265, time remaining: 1s
+Rendered 1263/1265, time remaining: 1s
+Rendered 1264/1265, time remaining: 0s
+Stitched 961/1265
+Stitched 968/1265
+Stitched 981/1265
+Stitched 994/1265
+Stitched 1009/1265
+Stitched 1012/1265
+Stitched 1265/1265
+Voz: gemini (115 palavras)
+[trilha] trechos: epico 0.0-10.2s | emocao 10.2-42.2s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-02_0730_agentes-ia-computador-sozinho/video.mp4 (42.2s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
