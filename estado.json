@@ -1004,12 +1004,17 @@
       "msg_id": 1218
     },
     "2026-10-30_0830_agilidade-no-caixa": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-29T17:26:34.505122+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae47fdfab6b84214cd0f8d7",
+        "feito": "buffer"
       },
-      "msg_id": 1230
+      "msg_id": 1230,
+      "ig_id": "18646473187014541",
+      "publicado_em": "2026-10-30T11:30:38.352069+00:00",
+      "ig_manual": false
     },
     "2026-10-30_1130_funcoes-essenciais-sistema": {
       "status": "agendado",
