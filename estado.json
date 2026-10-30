@@ -996,12 +996,17 @@
       "ig_manual": false
     },
     "2026-10-30_1230_checklist-fim-de-mes": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-29T13:30:19.373583+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae4b828df85d8ab2f416986",
+        "feito": "buffer"
       },
-      "msg_id": 1218
+      "msg_id": 1218,
+      "ig_id": "18569313283079295",
+      "publicado_em": "2026-10-30T15:30:47.561620+00:00",
+      "ig_manual": false
     },
     "2026-10-30_0830_agilidade-no-caixa": {
       "status": "publicado",
@@ -1126,6 +1131,14 @@
         "via": "buffer"
       },
       "msg_id": 1293
+    },
+    "2026-10-31_1130_o-telefone-fantasma": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-30T15:34:05.958425+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1301
     }
   },
   "respondidos": {},
