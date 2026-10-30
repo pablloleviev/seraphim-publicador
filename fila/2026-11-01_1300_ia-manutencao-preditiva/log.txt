@@ -1,0 +1,80 @@
+aining: 19s
+Rendered 966/1021, time remaining: 19s
+Rendered 966/1021, time remaining: 19s
+Rendered 967/1021, time remaining: 18s
+Rendered 968/1021, time remaining: 18s
+Rendered 969/1021, time remaining: 17s
+Rendered 970/1021, time remaining: 17s
+Rendered 970/1021, time remaining: 17s
+Rendered 971/1021, time remaining: 17s
+Rendered 972/1021, time remaining: 16s
+Rendered 973/1021, time remaining: 16s
+Rendered 974/1021, time remaining: 16s
+Rendered 974/1021, time remaining: 16s
+Rendered 975/1021, time remaining: 15s
+Rendered 976/1021, time remaining: 15s
+Rendered 977/1021, time remaining: 15s
+Rendered 978/1021, time remaining: 14s
+Rendered 978/1021, time remaining: 14s
+Rendered 979/1021, time remaining: 14s
+Rendered 980/1021, time remaining: 14s
+Rendered 981/1021, time remaining: 13s
+Rendered 982/1021, time remaining: 13s
+Rendered 982/1021, time remaining: 13s
+Rendered 983/1021, time remaining: 13s
+Rendered 984/1021, time remaining: 12s
+Rendered 985/1021, time remaining: 12s
+Rendered 986/1021, time remaining: 12s
+Rendered 986/1021, time remaining: 12s
+Rendered 987/1021, time remaining: 11s
+Rendered 988/1021, time remaining: 11s
+Rendered 989/1021, time remaining: 11s
+Rendered 990/1021, time remaining: 10s
+Rendered 990/1021, time remaining: 10s
+Rendered 991/1021, time remaining: 10s
+Rendered 992/1021, time remaining: 9s
+Rendered 993/1021, time remaining: 9s
+Rendered 994/1021, time remaining: 9s
+Rendered 995/1021, time remaining: 8s
+Rendered 995/1021, time remaining: 8s
+Rendered 996/1021, time remaining: 8s
+Rendered 997/1021, time remaining: 8s
+Rendered 998/1021, time remaining: 7s
+Rendered 999/1021, time remaining: 7s
+Rendered 999/1021, time remaining: 7s
+Rendered 1000/1021, time remaining: 7s
+Rendered 1001/1021, time remaining: 6s
+Rendered 1002/1021, time remaining: 6s
+Rendered 1003/1021, time remaining: 6s
+Rendered 1004/1021, time remaining: 5s
+Rendered 1004/1021, time remaining: 5s
+Rendered 1005/1021, time remaining: 5s
+Rendered 1006/1021, time remaining: 5s
+Rendered 1007/1021, time remaining: 4s
+Rendered 1008/1021, time remaining: 4s
+Rendered 1008/1021, time remaining: 4s
+Rendered 1009/1021, time remaining: 4s
+Rendered 1010/1021, time remaining: 3s
+Rendered 1011/1021, time remaining: 3s
+Rendered 1012/1021, time remaining: 3s
+Rendered 1012/1021, time remaining: 3s
+Rendered 1013/1021, time remaining: 2s
+Rendered 1014/1021, time remaining: 2s
+Rendered 1015/1021, time remaining: 2s
+Rendered 1016/1021, time remaining: 1s
+Rendered 1016/1021, time remaining: 1s
+Rendered 1017/1021, time remaining: 1s
+Rendered 1018/1021, time remaining: 1s
+Rendered 1019/1021, time remaining: 0s
+Rendered 1020/1021, time remaining: 0s
+Stitched 764/1021
+Stitched 770/1021
+Stitched 794/1021
+Stitched 817/1021
+Stitched 1021/1021
+Voz: gemini (102 palavras)
+[trilha] trechos: epico 0.0-6.8s | emocao 6.8-34.0s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-01_1300_ia-manutencao-preditiva/video.mp4 (34.0s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
