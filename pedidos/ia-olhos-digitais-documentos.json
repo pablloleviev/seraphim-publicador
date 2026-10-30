@@ -1,0 +1,57 @@
+{
+ "nome": "ia-olhos-digitais-documentos",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-02 11:30",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "camera",
+   "titulo": "OLHOS *DIGITAIS*",
+   "transicao": "chicote",
+   "narracao": "Aquela montanha de notas fiscais ou pedidos escritos à mão que você odeia digitar? A inteligência artificial já resolveu isso com um clique."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "DADOS *ESTRUTURADOS*",
+   "rotulo": "Processamento",
+   "numero": "1 SEG",
+   "narracao": "Sua câmera agora entende o contexto. Ela lê um papel amassado, identifica o valor, a data e o fornecedor em menos de um segundo."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Ela extrai *tudo:*",
+   "itens": [
+    "Tabelas de PDFs",
+    "Recibos de balcão",
+    "Rascunhos de caneta"
+   ],
+   "narracao": "Pode ser uma tabela complexa em PDF ou um rascunho de caneta no balcão da oficina. A IA extrai o dado e joga direto para o seu sistema."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Digitar por 2 horas",
+   "depois": "Foto e *conferência*",
+   "narracao": "Você deixa de ser um digitador de luxo para ser um gestor. O erro humano cai e a velocidade da sua empresa dobra."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Aprenda a *automatizar*",
+   "cartoes": [
+    "Salva o post",
+    "Seguir Seraphim"
+   ],
+   "narracao": "Cansado de perder tempo com papelada? Segue a Seraphim para transformar sua câmera em uma máquina de produtividade."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "karaoke",
+ "paleta": "gelo",
+ "formato": "terminal",
+ "titulo": "Sua câmera agora entende tudo",
+ "numero": 11,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Sua câmera não serve só para tirar fotos, ela é sua nova porta de entrada de dados automática. 📸\n\n#ia #ocr #produtividade #tecnologia #seraphimbr",
+ "legenda_tiktok": "Sua câmera agora tem cérebro. Pare de digitar o que a IA já lê.\n\n#ia #ocr #produtividade #tecnologia #seraphimbr"
+}

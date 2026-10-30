@@ -1,0 +1,56 @@
+{
+ "nome": "ia-faxina-inbox-foco",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-02 18:00",
+ "cenas": [
+  {
+   "tipo": "numero",
+   "numero": "99+",
+   "rotulo": "NOTIFICAÇÕES",
+   "titulo": "Sua caixa de *entrada*",
+   "narracao": "Sua caixa de entrada virou uma lista de tarefas que você não escolheu. Cada e-mail novo é uma interrupção no seu foco principal."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "mail",
+   "titulo": "FILTRO *INTELIGENTE*",
+   "transicao": "zoom",
+   "narracao": "A maioria das mensagens que chegam hoje não deveriam nem passar pela sua frente. A IA pode ser o seu primeiro filtro de defesa."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Como a *IA ajuda:*",
+   "itens": [
+    "Resume fios longos",
+    "Prioriza clientes",
+    "Arquiva o ruído"
+   ],
+   "narracao": "Use ferramentas para resumir conversas longas, destacar mensagens de clientes vips e arquivar automaticamente todo o lixo que rouba seu tempo."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "O e-mail serve a *você*",
+   "narracao": "Não deixe o seu dia ser ditado pela notificação de outra pessoa. Recupere o controle da sua agenda e do seu tempo."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Siga para *mais tempo*",
+   "cartoes": [
+    "Compartilha",
+    "Seguir Seraphim"
+   ],
+   "narracao": "Quer mais dicas de como domar a tecnologia para trabalhar menos e melhor? Segue a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "estilo_legenda": "palavra",
+ "paleta": "ouro",
+ "formato": "noticia",
+ "titulo": "Domando sua caixa de entrada",
+ "numero": 13,
+ "funil": "topo",
+ "genero_voz": "feminina",
+ "legenda": "E-mail não é trabalho, é canal. Use a tecnologia para filtrar o ruído e focar no que importa. 📧\n\n#produtividade #email #gestao #tecnologia #seraphimbr",
+ "legenda_tiktok": "Inbox 99+? Como usar IA para limpar seu e-mail e ganhar tempo.\n\n#produtividade #email #gestao #tecnologia #seraphimbr"
+}

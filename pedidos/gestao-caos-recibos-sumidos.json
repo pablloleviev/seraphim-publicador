@@ -1,0 +1,61 @@
+{
+ "nome": "gestao-caos-recibos-sumidos",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-02 13:00",
+ "cenas": [
+  {
+   "tipo": "frase",
+   "titulo": "Onde está o *recibo?*",
+   "transicao": "desfoque",
+   "narracao": "O contador pede um comprovante de três meses atrás e começa o desespero. Você revira gavetas, pastas e e-mails, mas nada aparece."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "LUCRO QUE *SOME*",
+   "icones": [
+    "receipt",
+    "alert-triangle",
+    "trending-down"
+   ],
+   "narracao": "A gaveta de recibos soltos é o lugar onde o lucro da sua empresa vai para morrer. Papel que some é dinheiro que você não controla."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O custo do *caos:*",
+   "itens": [
+    "Multas evitáveis",
+    "Pagamentos duplos",
+    "Saldo que não bate"
+   ],
+   "narracao": "Sem organização, você paga multas por atraso, faz pagamentos duplicados e nunca sabe o saldo real da sua conta no fim do dia."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "Gestão não é guardar papel, é *ter dados*",
+   "narracao": "Organizar sua empresa não é sobre o passado, é sobre ter segurança e clareza para tomar decisões que fazem você crescer."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Comenta *NOTAS*",
+   "cartoes": [
+    "Receba o checklist",
+    "Seguir Seraphim"
+   ],
+   "narracao": "Montei um guia para você digitalizar sua papelada hoje. Comenta NOTAS aqui que eu te mando no direct."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "emocional",
+ "estilo_legenda": "sutil",
+ "paleta": "esmeralda",
+ "formato": "documentario",
+ "titulo": "O cemitério de comprovantes",
+ "numero": 12,
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Papel acumula poeira e esconde prejuízo. É hora de transformar sua gaveta de recibos em um fluxo digital. 📄\n\n#gestao #financeiro #pequenasempresas #organizacao #seraphimbr",
+ "legenda_tiktok": "Sua empresa é um cemitério de recibos? Comenta NOTAS para organizar tudo.\n\n#gestao #financeiro #pequenasempresas #organizacao #seraphimbr",
+ "palavra_chave": "NOTAS",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/gestao-caos-recibos-sumidos/",
+ "material_titulo": "Organização de Documentos 2.0"
+}

@@ -1,0 +1,57 @@
+{
+ "nome": "equipe-resistencia-sistema",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-01 20:30",
+ "cenas": [
+  {
+   "tipo": "lista",
+   "titulo": "3 motivos da *resistência*:",
+   "itens": [
+    "Parece mais trabalho",
+    "Medo de ser vigiado",
+    "Falta de clareza"
+   ],
+   "narracao": "Por que sua equipe torce o nariz para qualquer sistema novo? Geralmente é medo de ter mais trabalho ou de ser vigiado o tempo todo."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Tecnologia é *meio*, não fim",
+   "transicao": "desfoque",
+   "narracao": "O erro é focar na ferramenta e esquecer das pessoas. Se o sistema não resolve uma dor real deles, ele vai ser ignorado."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "users",
+   "titulo": "Envolva o *time*",
+   "camera": "tremor",
+   "narracao": "A mudança começa ouvindo quem está na ponta. O sistema precisa ser o aliado que tira o trabalho chato, não o fiscal."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "Cultura de *Eficiência*",
+   "rotulo": "FOCO",
+   "numero": "PESSOAS",
+   "narracao": "Quando o time entende que a tecnologia libera tempo para o que importa, a resistência vira colaboração."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Lidere a *mudança*",
+   "cartoes": [
+    "Segue a Seraphim",
+    "Salva o post"
+   ],
+   "narracao": "A mudança começa na cultura, não no código. Segue a gente para aprender a liderar essa transição na sua empresa."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "estilo_legenda": "palavra",
+ "paleta": "rubi",
+ "formato": "vhs",
+ "titulo": "Por que sua equipe odeia o sistema novo",
+ "numero": 5,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Não adianta ter a melhor ferramenta se ninguém quer usar. 🤝 A implementação de um sistema é 20% tecnologia e 80% cultura. Como seu time reage a novidades?\n\n#lideranca #gestao #culturaorganizacional #seraphimbr",
+ "legenda_tiktok": "Sua equipe odeia sistemas novos? Saiba o porquê. #gestao #lideranca #equipe #tecnologia #seraphimbr\n\n#lideranca #gestao #culturaorganizacional #seraphimbr"
+}

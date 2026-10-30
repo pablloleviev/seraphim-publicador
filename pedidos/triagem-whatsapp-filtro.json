@@ -1,0 +1,59 @@
+{
+ "nome": "triagem-whatsapp-filtro",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-01 11:30",
+ "cenas": [
+  {
+   "tipo": "cartao",
+   "titulo": "Sua empresa não é um *SAC*",
+   "rotulo": "ATENÇÃO",
+   "numero": "!",
+   "narracao": "Sua empresa não pode ser um balcão de informações infinitas. Você passa o dia respondendo curiosos e não sobra tempo para vender?"
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "O erro é a *falta de triagem*",
+   "icones": [
+    "filter",
+    "clock",
+    "message-circle-warning"
+   ],
+   "narracao": "O erro é tratar todo mundo com a mesma prioridade. Nem toda mensagem que chega no seu WhatsApp merece sua atenção imediata."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Responder todo mundo",
+   "depois": "Focar em *quem compra*",
+   "transicao": "chicote",
+   "narracao": "A IA pode filtrar quem só está olhando, responder dúvidas básicas e te entregar apenas o lead qualificado no ponto de fechar."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Recupere *horas* do seu dia",
+   "narracao": "Imagine ganhar três horas por dia focando apenas em propostas que realmente têm chance de virar contrato."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Comenta *FILTRO* aqui embaixo",
+   "cartoes": [
+    "Script de triagem",
+    "Siga @seraphimbr_"
+   ],
+   "narracao": "Comenta FILTRO aqui embaixo que eu te mando o script que a gente usa para limpar o WhatsApp e focar no lucro."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "karaoke",
+ "paleta": "esmeralda",
+ "formato": "eletrico",
+ "titulo": "Sua empresa não é um SAC",
+ "numero": 2,
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Você atende todo mundo e não vende pra ninguém? 😰 O segredo das empresas que escalam é a triagem automática. Comenta FILTRO que eu te mando nosso modelo de script.\n\n#whatsappbusiness #vendas #gestao #crm #seraphimbr",
+ "legenda_tiktok": "Cansado de responder curiosos no WhatsApp? Comenta FILTRO. #produtividade #vendas #automacao #seraphimbr\n\n#whatsappbusiness #vendas #gestao #crm #seraphimbr",
+ "palavra_chave": "FILTRO",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/triagem-whatsapp-filtro/",
+ "material_titulo": "Script de Triagem Automática"
+}

@@ -1870,5 +1870,376 @@
    "cta"
   ],
   "paleta": "cobre"
+ },
+ {
+  "nome": "fim-do-silicio-grafeno",
+  "funil": "topo",
+  "titulo": "O fim da era do silício",
+  "formato": "notícia de IA explicada",
+  "dia": "2026-11-01",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "navegador",
+  "capa": "O chip de silício *morreu*?",
+  "capa_cena": "microscopic view of a glowing hexagonal graphene lattice, silver and blue light, cinematic macro photography",
+  "cenas": [
+   "capa",
+   "objeto",
+   "lista",
+   "frase",
+   "numero",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "prata"
+ },
+ {
+  "nome": "triagem-whatsapp-filtro",
+  "funil": "meio",
+  "titulo": "Sua empresa não é um SAC",
+  "formato": "erro que você comete",
+  "dia": "2026-11-01",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "eletrico",
+  "capa": "Pare de *responder* curiosos",
+  "capa_cena": "a smartphone on a dark desk with hundreds of green notification bubbles floating above it, cinematic lighting",
+  "cenas": [
+   "cartao",
+   "moedas",
+   "contraste",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "ia-manutencao-preditiva",
+  "funil": "topo",
+  "titulo": "A IA que ouve o que você não ouve",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-11-01",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "hud",
+  "capa": "IA que *prevê* quebras?",
+  "capa_cena": "industrial machinery with glowing purple sound waves emanating from a bearing, dark cinematic factory background",
+  "cenas": [
+   "objeto",
+   "lista",
+   "cartao",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "violeta"
+ },
+ {
+  "nome": "autoflow-lucro-oficina",
+  "funil": "fundo",
+  "titulo": "Onde o dinheiro da oficina some",
+  "formato": "comparação (X vs Y)",
+  "dia": "2026-11-01",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "celular",
+  "capa": "Pátio cheio ou *Lucro* real?",
+  "capa_cena": "aerial view of a professional auto repair shop with cars aligned, soft orange sunset light hitting the floor",
+  "cenas": [
+   "capa",
+   "pessoa",
+   "contraste",
+   "objeto",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "emocional",
+  "paleta": "autoflow"
+ },
+ {
+  "nome": "equipe-resistencia-sistema",
+  "funil": "topo",
+  "titulo": "Por que sua equipe odeia o sistema novo",
+  "formato": "história curta de cliente",
+  "dia": "2026-11-01",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "vhs",
+  "capa": "Por que eles *odeiam* o sistema?",
+  "capa_cena": "a group of diverse employees in a modern office looking at a glowing screen with mixed expressions of curiosity and doubt",
+  "cenas": [
+   "lista",
+   "frase",
+   "objeto",
+   "cartao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "rubi"
+ },
+ {
+  "nome": "tarefas-agente-ia",
+  "titulo": "3 coisas que um Agente de IA faz hoje",
+  "formato": "",
+  "dia": "2026-11-01",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "topico",
+   "topico",
+   "topico",
+   "cta"
+  ],
+  "paleta": "ouro"
+ },
+ {
+  "nome": "ralo-copia-e-cola",
+  "titulo": "O ralo de dinheiro do 'Copia e Cola'",
+  "formato": "",
+  "dia": "2026-11-01",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "",
+  "slides": [
+   "capa_tipografica",
+   "abertura",
+   "lista",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "gelo"
+ },
+ {
+  "nome": "metodo-antes-da-ferramenta",
+  "titulo": "O erro de comprar a ferramenta antes do método",
+  "formato": "",
+  "dia": "2026-11-01",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "",
+  "slides": [
+   "capa_numero",
+   "verbete",
+   "verbete",
+   "verbete",
+   "citacao",
+   "cta"
+  ],
+  "paleta": "cobre"
+ },
+ {
+  "nome": "planilha-virou-monstro",
+  "titulo": "Sua planilha virou um monstro?",
+  "formato": "",
+  "dia": "2026-11-01",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "topico",
+   "topico",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "agentes-ia-computador-sozinho",
+  "funil": "topo",
+  "titulo": "O computador que trabalha sozinho",
+  "formato": "notícia de IA explicada",
+  "dia": "2026-11-02",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "story",
+  "capa": "A IA que *usa* o computador",
+  "capa_cena": "A high-end mechanical keyboard and mouse on a dark desk with a ghostly golden hand outline hovering above them, cinematic lighting.",
+  "cenas": [
+   "pessoa",
+   "moedas",
+   "lista",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "violeta"
+ },
+ {
+  "nome": "ia-olhos-digitais-documentos",
+  "funil": "topo",
+  "titulo": "Sua câmera agora entende tudo",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-11-02",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "terminal",
+  "capa": "Pare de *copiar* papel",
+  "capa_cena": "A smartphone lens focusing on a crumpled paper receipt, with glowing golden data strings lifting off the paper into the air.",
+  "cenas": [
+   "objeto",
+   "cartao",
+   "lista",
+   "contraste",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "gelo"
+ },
+ {
+  "nome": "gestao-caos-recibos-sumidos",
+  "funil": "meio",
+  "titulo": "O cemitério de comprovantes",
+  "formato": "erro que você comete",
+  "dia": "2026-11-02",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "documentario",
+  "capa": "O ralo de *dinheiro* da gaveta",
+  "capa_cena": "A mountain of messy, yellowed paper receipts on a dark wooden desk, with one single golden digital icon glowing above them.",
+  "cenas": [
+   "frase",
+   "moedas",
+   "lista",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "emocional",
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "ia-faxina-inbox-foco",
+  "funil": "topo",
+  "titulo": "Domando sua caixa de entrada",
+  "formato": "lista prática",
+  "dia": "2026-11-02",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noticia",
+  "capa": "Fim do *caos* no e-mail",
+  "capa_cena": "A sleek, minimalist laptop on a white desk, with golden envelopes flying into a neat 3D glass box, soft bokeh background.",
+  "cenas": [
+   "numero",
+   "objeto",
+   "lista",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "ouro"
+ },
+ {
+  "nome": "ia-previsao-vendas-estoque",
+  "funil": "topo",
+  "titulo": "IA prevê o que você vai vender",
+  "formato": "notícia/tendência de IA explicada",
+  "dia": "2026-11-02",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "celular",
+  "capa": "A IA sabe o seu *futuro*",
+  "capa_cena": "An organized warehouse aisle with golden translucent holograms of bar charts rising from the boxes, cinematic lighting.",
+  "cenas": [
+   "capa",
+   "pessoa",
+   "lista",
+   "cartao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "cobre"
+ },
+ {
+  "nome": "agentes-ia-casos-uso",
+  "titulo": "3 Jeitos de usar Agentes de IA",
+  "formato": "",
+  "dia": "2026-11-02",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "verbete",
+   "verbete",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "ouro"
+ },
+ {
+  "nome": "whatsapp-prisao-operacional",
+  "titulo": "Sua empresa é refém do WhatsApp?",
+  "formato": "",
+  "dia": "2026-11-02",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "",
+  "slides": [
+   "capa_numero",
+   "abertura",
+   "topico",
+   "topico",
+   "lista",
+   "cta"
+  ],
+  "paleta": "rubi"
+ },
+ {
+  "nome": "escolha-sistema-momento-certo",
+  "titulo": "Pronto ou Sob Medida?",
+  "formato": "",
+  "dia": "2026-11-02",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "",
+  "slides": [
+   "capa_tipografica",
+   "contraste",
+   "verbete",
+   "verbete",
+   "lista",
+   "cta"
+  ],
+  "paleta": "prata"
+ },
+ {
+  "nome": "checklist-preparacao-escala",
+  "titulo": "Sua empresa aguenta o dobro de clientes?",
+  "formato": "",
+  "dia": "2026-11-02",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "lista",
+   "citacao",
+   "cta"
+  ],
+  "paleta": "violeta"
  }
 ]
