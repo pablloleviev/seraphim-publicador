@@ -1,0 +1,79 @@
+ing: 20s
+Rendered 1086/1137, time remaining: 20s
+Rendered 1086/1137, time remaining: 20s
+Rendered 1087/1137, time remaining: 19s
+Rendered 1088/1137, time remaining: 19s
+Rendered 1088/1137, time remaining: 19s
+Rendered 1089/1137, time remaining: 19s
+Rendered 1090/1137, time remaining: 18s
+Rendered 1091/1137, time remaining: 18s
+Rendered 1092/1137, time remaining: 17s
+Rendered 1092/1137, time remaining: 17s
+Rendered 1093/1137, time remaining: 17s
+Rendered 1094/1137, time remaining: 17s
+Rendered 1095/1137, time remaining: 16s
+Rendered 1095/1137, time remaining: 16s
+Rendered 1096/1137, time remaining: 16s
+Rendered 1097/1137, time remaining: 15s
+Rendered 1098/1137, time remaining: 15s
+Rendered 1098/1137, time remaining: 15s
+Rendered 1099/1137, time remaining: 15s
+Rendered 1100/1137, time remaining: 14s
+Rendered 1101/1137, time remaining: 14s
+Rendered 1102/1137, time remaining: 13s
+Rendered 1102/1137, time remaining: 13s
+Rendered 1103/1137, time remaining: 13s
+Rendered 1104/1137, time remaining: 13s
+Rendered 1105/1137, time remaining: 12s
+Rendered 1105/1137, time remaining: 12s
+Rendered 1106/1137, time remaining: 12s
+Rendered 1107/1137, time remaining: 11s
+Rendered 1108/1137, time remaining: 11s
+Rendered 1109/1137, time remaining: 11s
+Rendered 1109/1137, time remaining: 11s
+Rendered 1110/1137, time remaining: 10s
+Rendered 1111/1137, time remaining: 10s
+Rendered 1111/1137, time remaining: 10s
+Rendered 1112/1137, time remaining: 9s
+Rendered 1113/1137, time remaining: 9s
+Rendered 1114/1137, time remaining: 9s
+Rendered 1115/1137, time remaining: 8s
+Rendered 1115/1137, time remaining: 8s
+Rendered 1116/1137, time remaining: 8s
+Rendered 1117/1137, time remaining: 7s
+Rendered 1118/1137, time remaining: 7s
+Rendered 1119/1137, time remaining: 7s
+Rendered 1119/1137, time remaining: 7s
+Rendered 1120/1137, time remaining: 6s
+Rendered 1121/1137, time remaining: 6s
+Rendered 1121/1137, time remaining: 6s
+Rendered 1122/1137, time remaining: 5s
+Rendered 1123/1137, time remaining: 5s
+Rendered 1124/1137, time remaining: 5s
+Rendered 1125/1137, time remaining: 4s
+Rendered 1125/1137, time remaining: 4s
+Rendered 1126/1137, time remaining: 4s
+Rendered 1127/1137, time remaining: 3s
+Rendered 1128/1137, time remaining: 3s
+Rendered 1128/1137, time remaining: 3s
+Rendered 1129/1137, time remaining: 3s
+Rendered 1130/1137, time remaining: 2s
+Rendered 1131/1137, time remaining: 2s
+Rendered 1132/1137, time remaining: 1s
+Rendered 1132/1137, time remaining: 1s
+Rendered 1133/1137, time remaining: 1s
+Rendered 1134/1137, time remaining: 1s
+Rendered 1134/1137, time remaining: 1s
+Rendered 1135/1137, time remaining: 0s
+Rendered 1136/1137, time remaining: 0s
+Stitched 858/1137
+Stitched 867/1137
+Stitched 888/1137
+Stitched 910/1137
+Stitched 1137/1137
+Voz: gemini (106 palavras)
+[trilha] trechos: epico 0.0-8.1s | emocao 8.1-37.9s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-02_1800_ia-faxina-inbox-foco/video.mp4 (37.9s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
