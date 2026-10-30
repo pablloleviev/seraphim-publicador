@@ -1017,12 +1017,17 @@
       "ig_manual": false
     },
     "2026-10-30_1130_funcoes-essenciais-sistema": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-29T17:26:36.591343+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae4aa1f9394ea34c11b7f72",
+        "feito": "buffer"
       },
-      "msg_id": 1237
+      "msg_id": 1237,
+      "ig_id": "18226047814337262",
+      "publicado_em": "2026-10-30T14:30:54.679009+00:00",
+      "ig_manual": false
     },
     "2026-10-30_1500_adeus-papelada-oficina": {
       "status": "agendado",
@@ -1033,12 +1038,17 @@
       "msg_id": 1244
     },
     "2026-10-30_1130_recuperar-orcamento": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-29T17:35:16.776386+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae4aa51df85d8ab2f3c7b67",
+        "feito": "buffer"
       },
-      "msg_id": 1246
+      "msg_id": 1246,
+      "ig_id": "18020225975959712",
+      "publicado_em": "2026-10-30T14:31:44.393617+00:00",
+      "ig_manual": false
     },
     "2026-10-30_0730_ia-vendas-clima": {
       "status": "publicado",
