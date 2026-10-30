@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630341,
+  "telegram_offset": 183630342,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -1102,12 +1102,20 @@
       "msg_id": 1281
     },
     "2026-10-31_1130_anatomia-tarefa-automatizavel": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-30T12:30:15.958602+00:00",
       "tiktok": {
         "via": "buffer"
       },
       "msg_id": 1291
+    },
+    "2026-10-31_1300_triagem-pedidos-caos": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-30T14:00:05.995757+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1293
     }
   },
   "respondidos": {},
