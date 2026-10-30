@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630329,
+  "telegram_offset": 183630339,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -996,7 +996,7 @@
       "ig_manual": false
     },
     "2026-10-30_1230_checklist-fim-de-mes": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-29T13:30:19.373583+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1004,7 +1004,7 @@
       "msg_id": 1218
     },
     "2026-10-30_0830_agilidade-no-caixa": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-29T17:26:34.505122+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1012,7 +1012,7 @@
       "msg_id": 1230
     },
     "2026-10-30_1130_funcoes-essenciais-sistema": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-29T17:26:36.591343+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1020,7 +1020,7 @@
       "msg_id": 1237
     },
     "2026-10-30_1500_adeus-papelada-oficina": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-29T17:26:38.613728+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1028,7 +1028,7 @@
       "msg_id": 1244
     },
     "2026-10-30_1130_recuperar-orcamento": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-29T17:35:16.776386+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1036,7 +1036,7 @@
       "msg_id": 1246
     },
     "2026-10-30_0730_ia-vendas-clima": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-29T17:37:31.450402+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1044,7 +1044,7 @@
       "msg_id": 1248
     },
     "2026-10-30_1300_voz-comando-negocios": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-29T17:37:34.119537+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1052,7 +1052,7 @@
       "msg_id": 1250
     },
     "2026-10-30_1800_oficina-lucro-escondido": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-29T19:00:25.962722+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1060,7 +1060,7 @@
       "msg_id": 1254
     },
     "2026-10-30_1830_agentes-ia-explicados": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-29T19:30:22.397461+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1068,7 +1068,7 @@
       "msg_id": 1261
     },
     "2026-10-30_2030_mito-esforco-bruto": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-29T21:30:15.494874+00:00",
       "tiktok": {
         "via": "buffer"
