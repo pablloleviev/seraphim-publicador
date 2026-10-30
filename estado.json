@@ -983,12 +983,17 @@
       "ig_manual": false
     },
     "2026-10-29_2030_ia-leitura-mundo-real": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-28T21:30:05.936166+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae3d7264b8768bfb2cb66a2",
+        "feito": "buffer"
       },
-      "msg_id": 1202
+      "msg_id": 1202,
+      "ig_id": "18094705853188552",
+      "publicado_em": "2026-10-29T23:30:45.527394+00:00",
+      "ig_manual": false
     },
     "2026-10-30_1230_checklist-fim-de-mes": {
       "status": "aguardando",
