@@ -1,0 +1,83 @@
+ 875/925, time remaining: 26s
+Rendered 876/925, time remaining: 26s
+Rendered 876/925, time remaining: 26s
+Rendered 877/925, time remaining: 25s
+Rendered 878/925, time remaining: 25s
+Rendered 879/925, time remaining: 24s
+Rendered 879/925, time remaining: 24s
+Rendered 880/925, time remaining: 24s
+Rendered 881/925, time remaining: 23s
+Rendered 881/925, time remaining: 23s
+Rendered 882/925, time remaining: 23s
+Rendered 883/925, time remaining: 22s
+Rendered 883/925, time remaining: 22s
+Rendered 884/925, time remaining: 21s
+Rendered 885/925, time remaining: 21s
+Rendered 886/925, time remaining: 20s
+Rendered 886/925, time remaining: 20s
+Rendered 887/925, time remaining: 20s
+Rendered 888/925, time remaining: 19s
+Rendered 889/925, time remaining: 19s
+Rendered 889/925, time remaining: 19s
+Rendered 890/925, time remaining: 18s
+Rendered 890/925, time remaining: 18s
+Rendered 891/925, time remaining: 18s
+Rendered 892/925, time remaining: 17s
+Rendered 893/925, time remaining: 17s
+Rendered 894/925, time remaining: 16s
+Rendered 894/925, time remaining: 16s
+Rendered 895/925, time remaining: 16s
+Rendered 896/925, time remaining: 15s
+Rendered 896/925, time remaining: 15s
+Rendered 897/925, time remaining: 14s
+Rendered 898/925, time remaining: 14s
+Rendered 898/925, time remaining: 14s
+Rendered 899/925, time remaining: 13s
+Rendered 900/925, time remaining: 13s
+Rendered 900/925, time remaining: 13s
+Rendered 901/925, time remaining: 12s
+Rendered 902/925, time remaining: 12s
+Rendered 903/925, time remaining: 11s
+Rendered 903/925, time remaining: 11s
+Rendered 904/925, time remaining: 11s
+Rendered 905/925, time remaining: 10s
+Rendered 905/925, time remaining: 10s
+Rendered 906/925, time remaining: 10s
+Rendered 907/925, time remaining: 9s
+Rendered 908/925, time remaining: 9s
+Rendered 908/925, time remaining: 9s
+Rendered 909/925, time remaining: 8s
+Rendered 910/925, time remaining: 7s
+Rendered 910/925, time remaining: 7s
+Rendered 911/925, time remaining: 7s
+Rendered 912/925, time remaining: 6s
+Rendered 912/925, time remaining: 6s
+Rendered 913/925, time remaining: 6s
+Rendered 914/925, time remaining: 5s
+Rendered 915/925, time remaining: 5s
+Rendered 915/925, time remaining: 5s
+Rendered 916/925, time remaining: 4s
+Rendered 917/925, time remaining: 4s
+Rendered 918/925, time remaining: 3s
+Rendered 918/925, time remaining: 3s
+Rendered 919/925, time remaining: 3s
+Rendered 920/925, time remaining: 2s
+Rendered 920/925, time remaining: 2s
+Rendered 921/925, time remaining: 2s
+Rendered 922/925, time remaining: 1s
+Rendered 922/925, time remaining: 1s
+Rendered 923/925, time remaining: 1s
+Rendered 924/925, time remaining: 0s
+Stitched 689/925
+Stitched 694/925
+Stitched 706/925
+Stitched 721/925
+Stitched 736/925
+Stitched 740/925
+Stitched 925/925
+Voz: gemini (84 palavras)
+[trilha] trechos: epico 0.0-5.6s | emocao 5.6-30.8s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-03_1300_a-febre-do-vamos-marcar/video.mp4 (30.8s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
