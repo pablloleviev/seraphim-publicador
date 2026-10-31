@@ -1,0 +1,57 @@
+{
+ "nome": "a-febre-do-vamos-marcar",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-03 13:00",
+ "cenas": [
+  {
+   "tipo": "citacao",
+   "titulo": "Essa reunião poderia ter sido *um documento claro?*",
+   "transicao": "zoom",
+   "camera": "afasta",
+   "narracao": "Você já passou a tarde inteira em reuniões e terminou o expediente sentindo que não produziu absolutamente nada?"
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Uma hora de conversa sem decisão",
+   "depois": "Processo escrito com *responsável e prazo*",
+   "narracao": "Reunir seis pessoas para descobrir o que cada um está fazendo custa caro e paralisa a operação."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Filtro prático antes *do convite*:",
+   "itens": [
+    "Existe uma decisão pendente?",
+    "Os dados estão reunidos?",
+    "Um recado no quadro resolveria?"
+   ],
+   "narracao": "Se não há decisão para tomar com dados na mesa, um alinhamento assíncrono resolve em dois minutos."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "clock",
+   "titulo": "Proteja a *atenção da equipe*",
+   "transicao": "flash",
+   "narracao": "Atenção fragmentada é o motivo pelo qual tarefas simples demoram dias para sair do papel."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Trabalhe com *processos claros*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Salve para o sócio"
+   ],
+   "narracao": "Menos bate-papo improdutivo e mais clareza operacional. Siga a Seraphim para transformar rotinas confusas em sistemas eficientes."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "karaoke",
+ "paleta": "violeta",
+ "formato": "noir",
+ "titulo": "A armadilha da reunião sem pauta",
+ "numero": 3,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Marcar reunião para decidir a próxima reunião drena a energia da equipe. 🗓️ Quantas chamadas na sua semana poderiam ter sido resolvidas com um painel bem alinhado?\n\n#produtividade #gestaodetempo #lideranca #trabalho #seraphimbr",
+ "legenda_tiktok": "Terminou o dia exausto de reunião sem ter produzido nada? Olha o motivo.\n\n#produtividade #gestaodetempo #lideranca #trabalho #seraphimbr"
+}

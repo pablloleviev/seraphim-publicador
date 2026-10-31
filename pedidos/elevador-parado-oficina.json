@@ -1,0 +1,61 @@
+{
+ "nome": "elevador-parado-oficina",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-03 18:00",
+ "cenas": [
+  {
+   "tipo": "contraste",
+   "antes": "Pátio lotado com carros travados",
+   "depois": "Serviços concluídos e *caixa girando*",
+   "transicao": "chicote",
+   "narracao": "Pátio cheio nem sempre significa lucro no final do mês. Muitas vezes é só sinal de serviço parado por falta de controle."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "O custo de cada *box parado*",
+   "icones": [
+    "car",
+    "clock",
+    "dollar-sign"
+   ],
+   "transicao": "dissolve",
+   "narracao": "Veículo desmontado no elevador aguardando peça sem previsão consome espaço valioso de outro conserto que já estaria pronto."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "A clareza que o *AutoFlow entrega*:",
+   "itens": [
+    "Saída do caderno e da planilha",
+    "Gestão da oficina em tela única",
+    "Acompanhamento sem confusão"
+   ],
+   "narracao": "O AutoFlow foi desenhado para colocar a rotina da sua oficina mecânica em ordem, saindo de vez das anotações em papéis e planilhas espalhadas."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Sua oficina mecânica merece *gestão profissional.*",
+   "camera": "empurra",
+   "narracao": "Quando as etapas do atendimento ficam centralizadas, o pátio flui e o trabalho rende muito mais."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Conheça o *AutoFlow*",
+   "cartoes": [
+    "Link na Bio",
+    "Siga a Seraphim"
+   ],
+   "narracao": "Sua oficina merece uma gestão mais simples e organizada. Acesse o link da bio para conhecer o AutoFlow e siga a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "estilo_legenda": "sutil",
+ "paleta": "autoflow",
+ "formato": "eletrico",
+ "titulo": "O elevador ocupado que não fatura",
+ "numero": 4,
+ "funil": "fundo",
+ "genero_voz": "feminina",
+ "legenda": "Carro parado no elevador sem peça definida é espaço que deixa de faturar na sua oficina mecânica. 🔧 Conheça o AutoFlow pelo link da nossa bio e leve ordem para o seu pátio.\n\n#oficinamecanica #autoflow #gestaoautomotiva #centroautomotivo #seraphimbr",
+ "legenda_tiktok": "Pátio lotado de oficina mecânica não quer dizer caixa cheio. Veja o motivo.\n\n#oficinamecanica #autoflow #gestaoautomotiva #centroautomotivo #seraphimbr"
+}

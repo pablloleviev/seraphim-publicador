@@ -2241,5 +2241,187 @@
    "cta"
   ],
   "paleta": "violeta"
+ },
+ {
+  "nome": "vidro-eterno-dados",
+  "funil": "topo",
+  "titulo": "Dados gravados em vidro por 10 mil anos",
+  "formato": "notícia de IA explicada",
+  "dia": "2026-11-03",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "hud",
+  "capa": "Dados em *vidro* por 10 mil anos",
+  "capa_cena": "a futuristic laser etching intricate microscopic data patterns into a glowing quartz glass plate, dark dramatic laboratory",
+  "cenas": [
+   "cartao",
+   "objeto",
+   "lista",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "prata"
+ },
+ {
+  "nome": "o-produto-fantasma-estoque",
+  "funil": "meio",
+  "titulo": "A gaveta de produtos fantasmas",
+  "formato": "erro que você comete",
+  "dia": "2026-11-03",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "vhs",
+  "capa": "O *estoque fantasma* te engana",
+  "capa_cena": "an empty warehouse wooden pallet illuminated by a clean golden spotlight in a dark industrial space",
+  "cenas": [
+   "moedas",
+   "contraste",
+   "lista",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "a-febre-do-vamos-marcar",
+  "funil": "topo",
+  "titulo": "A armadilha da reunião sem pauta",
+  "formato": "pergunta polêmica",
+  "dia": "2026-11-03",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noir",
+  "capa": "Reunião ou *perda de tempo*?",
+  "capa_cena": "a high-end conference room with an illuminated empty chair and an elegant glass clock on the table",
+  "cenas": [
+   "citacao",
+   "contraste",
+   "lista",
+   "objeto",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "violeta"
+ },
+ {
+  "nome": "elevador-parado-oficina",
+  "funil": "fundo",
+  "titulo": "O elevador ocupado que não fatura",
+  "formato": "comparação (X vs Y)",
+  "dia": "2026-11-03",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "eletrico",
+  "capa": "Elevador *parado* não fatura",
+  "capa_cena": "a spotless mechanical lift in a dark modern automotive workshop with precise orange neon accents",
+  "cenas": [
+   "contraste",
+   "moedas",
+   "lista",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "autoflow"
+ },
+ {
+  "nome": "o-software-que-desaparece",
+  "funil": "topo",
+  "titulo": "A era dos computadores sem tela visível",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-11-03",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "navegador",
+  "capa": "O software que *desaparece*",
+  "capa_cena": "a warm minimalist desk with a notebook and a discreet golden light beam cutting through soft ambient smoke",
+  "cenas": [
+   "cartao",
+   "objeto",
+   "lista",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "emocional",
+  "paleta": "ouro"
+ },
+ {
+  "nome": "o-gargalo-primeiro-contato",
+  "titulo": "Onde seu cliente desiste antes do orçamento",
+  "formato": "",
+  "dia": "2026-11-03",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "topico",
+   "lista",
+   "cta"
+  ],
+  "paleta": "cobre"
+ },
+ {
+  "nome": "o-ex-funcionario-conectado",
+  "titulo": "Quem ainda tem a chave digital da sua empresa?",
+  "formato": "",
+  "dia": "2026-11-03",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "",
+  "slides": [
+   "capa_tipografica",
+   "verbete",
+   "contraste",
+   "lista",
+   "cta"
+  ],
+  "paleta": "rubi"
+ },
+ {
+  "nome": "a-regra-da-tela-limpa",
+  "titulo": "Por que sistemas complexos são abandonados",
+  "formato": "",
+  "dia": "2026-11-03",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "",
+  "slides": [
+   "capa_numero",
+   "abertura",
+   "topico",
+   "citacao",
+   "cta"
+  ],
+  "paleta": "gelo"
+ },
+ {
+  "nome": "anatomia-de-um-processo-enxuto",
+  "titulo": "Antes de automatizar, desenhe o fluxo",
+  "formato": "",
+  "dia": "2026-11-03",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "lista",
+   "topico",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "ouro"
  }
 ]

@@ -1,0 +1,63 @@
+{
+ "nome": "o-produto-fantasma-estoque",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-03 11:30",
+ "cenas": [
+  {
+   "tipo": "moedas",
+   "titulo": "O dinheiro que *evapora na prateleira*",
+   "icones": [
+    "package",
+    "alert-triangle",
+    "trending-down"
+   ],
+   "transicao": "chicote",
+   "narracao": "Você fecha uma venda pelo WhatsApp e promete entregar hoje. Na hora de pegar o pacote, a prateleira está vazia."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Contagem no desespero de fim de ano",
+   "depois": "Conferência cíclica com *registro diário*",
+   "narracao": "A maioria dos negócios tenta resolver o inventário fechando a loja no réveillon. O controle real acontece em checagens rotineiras de dez minutos."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Três brechas que *geram furos*:",
+   "itens": [
+    "Venda sem registro de saída",
+    "Devolução que nunca volta ao sistema",
+    "Compra duplicada de item encalhado"
+   ],
+   "narracao": "Vendas registradas de boca, mercadorias devolvidas esquecidas na bancada e pedidos repetidos enquanto o dinheiro fica imobilizado."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Estoque sem método é *caixa cego.*",
+   "camera": "parada",
+   "narracao": "Quem não confia na quantidade de peças que tem guardadas perde vendas boas e compra o que não precisa."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Organize seu *armazém de vez*",
+   "cartoes": [
+    "Comente INVENTARIO",
+    "Receba o checklist"
+   ],
+   "narracao": "Preparei um checklist prático para você zerar discrepâncias de estoque. Comenta INVENTARIO que eu te mando no direct."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "elegante",
+ "estilo_legenda": "sutil",
+ "paleta": "esmeralda",
+ "formato": "vhs",
+ "titulo": "A gaveta de produtos fantasmas",
+ "numero": 2,
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Vender um produto que você não tem em mãos custa caro para a reputação do seu negócio. 📦 Como você faz a contagem das suas peças hoje? Comenta INVENTARIO para receber nosso roteiro.\n\n#estoque #gestaoempresarial #logistica #inventario #seraphimbr",
+ "legenda_tiktok": "Prometeu o produto pro cliente e a caixa estava vazia? O erro do estoque fantasma.\n\n#estoque #gestaoempresarial #logistica #inventario #seraphimbr",
+ "palavra_chave": "INVENTARIO",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/o-produto-fantasma-estoque/",
+ "material_titulo": "Rotina Sem Erro de Inventário"
+}
