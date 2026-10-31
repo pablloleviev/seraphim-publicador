@@ -1267,6 +1267,14 @@
         "via": "buffer"
       },
       "msg_id": 1360
+    },
+    "2026-11-01_1500_metodo-antes-da-ferramenta": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-31T16:00:21.770607+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1369
     }
   },
   "respondidos": {},
