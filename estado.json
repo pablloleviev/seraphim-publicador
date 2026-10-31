@@ -1152,12 +1152,17 @@
       "ig_manual": false
     },
     "2026-10-31_1130_anatomia-tarefa-automatizavel": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-30T12:30:15.958602+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae5fb8e5fdbd4dd6291690d",
+        "feito": "buffer"
       },
-      "msg_id": 1291
+      "msg_id": 1291,
+      "ig_id": "18596606368069668",
+      "publicado_em": "2026-10-31T14:30:37.898076+00:00",
+      "ig_manual": false
     },
     "2026-10-31_1300_triagem-pedidos-caos": {
       "status": "aguardando",
@@ -1254,6 +1259,14 @@
         "via": "buffer"
       },
       "msg_id": 1358
+    },
+    "2026-11-01_1300_ia-manutencao-preditiva": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-31T14:01:26.326067+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1360
     }
   },
   "respondidos": {},
