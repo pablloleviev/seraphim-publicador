@@ -1212,6 +1212,14 @@
         "via": "buffer"
       },
       "msg_id": 1337
+    },
+    "2026-11-01_0830_tarefas-agente-ia": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-31T09:30:15.566301+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1344
     }
   },
   "respondidos": {},
