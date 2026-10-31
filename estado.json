@@ -1283,6 +1283,14 @@
         "via": "buffer"
       },
       "msg_id": 1371
+    },
+    "2026-11-01_1830_planilha-virou-monstro": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-31T19:30:28.581906+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1378
     }
   },
   "respondidos": {},
