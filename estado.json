@@ -1275,6 +1275,14 @@
         "via": "buffer"
       },
       "msg_id": 1369
+    },
+    "2026-11-01_1800_autoflow-lucro-oficina": {
+      "status": "aguardando",
+      "enviado_em": "2026-10-31T19:00:16.576181+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1371
     }
   },
   "respondidos": {},
