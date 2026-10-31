@@ -1126,12 +1126,17 @@
       "ig_manual": true
     },
     "2026-10-31_0730_chips-fotonicos-luz": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-30T08:30:06.831938+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae5c3671891472093c8c7fd",
+        "feito": "buffer"
       },
-      "msg_id": 1273
+      "msg_id": 1273,
+      "ig_id": "17915359563538274",
+      "publicado_em": "2026-10-31T10:31:02.754383+00:00",
+      "ig_manual": false
     },
     "2026-10-31_0830_como-organizar-fila-atendimento": {
       "status": "agendado",
