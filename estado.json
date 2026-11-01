@@ -1340,12 +1340,17 @@
       "ig_manual": false
     },
     "2026-11-01_1830_planilha-virou-monstro": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-31T19:30:28.581906+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae7af9548ce42a6b429d061",
+        "feito": "buffer"
       },
-      "msg_id": 1378
+      "msg_id": 1378,
+      "ig_id": "18120500359780921",
+      "publicado_em": "2026-11-01T21:31:00.289434+00:00",
+      "ig_manual": false
     },
     "2026-11-01_2030_equipe-resistencia-sistema": {
       "status": "agendado",
@@ -1418,6 +1423,14 @@
         "via": "buffer"
       },
       "msg_id": 1435
+    },
+    "2026-11-02_2030_ia-previsao-vendas-estoque": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-01T21:30:18.441894+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1439
     }
   },
   "respondidos": {},
