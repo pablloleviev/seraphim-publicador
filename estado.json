@@ -1314,12 +1314,17 @@
       "ig_manual": false
     },
     "2026-11-01_1500_metodo-antes-da-ferramenta": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-31T16:00:21.770607+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae77e51cfdcf9feb717a0e1",
+        "feito": "buffer"
       },
-      "msg_id": 1369
+      "msg_id": 1369,
+      "ig_id": "18453138457135676",
+      "publicado_em": "2026-11-01T18:00:48.305002+00:00",
+      "ig_manual": false
     },
     "2026-11-01_1800_autoflow-lucro-oficina": {
       "status": "agendado",
