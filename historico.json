@@ -2423,5 +2423,192 @@
    "cta"
   ],
   "paleta": "ouro"
+ },
+ {
+  "nome": "ia-de-tato-digital",
+  "funil": "topo",
+  "titulo": "Sua tela agora sente o tato",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-11-04",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "terminal",
+  "capa": "A IA que aprendeu a *sentir*",
+  "capa_cena": "robotic metallic fingertip gently pressing against rough dark stone, micro sensors glowing cold blue, cinematic macro photography",
+  "cenas": [
+   "capa",
+   "objeto",
+   "lista",
+   "numero",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "gelo"
+ },
+ {
+  "nome": "custo-da-troca-contexto",
+  "funil": "topo",
+  "titulo": "O mito da multitarefa",
+  "formato": "mito vs verdade",
+  "dia": "2026-11-04",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "celular",
+  "capa": "O mito da *multitarefa*",
+  "capa_cena": "lone glowing purple hourglass on a clean polished slate table, subtle atmospheric haze, moody studio lighting",
+  "cenas": [
+   "objeto",
+   "frase",
+   "contraste",
+   "lista",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "violeta"
+ },
+ {
+  "nome": "o-cliente-que-esfriou",
+  "funil": "meio",
+  "titulo": "Onde a venda morre",
+  "formato": "história curta de cliente",
+  "dia": "2026-11-04",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noticia",
+  "capa": "Onde o orçamento *esfria*",
+  "capa_cena": "warm gold vintage pocket watch lying on top of an open ledger, golden ambient lighting, cinematic shadows",
+  "cenas": [
+   "lista",
+   "frase",
+   "cartao",
+   "moedas",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "emocional",
+  "paleta": "ouro"
+ },
+ {
+  "nome": "ia-preve-estoque",
+  "funil": "topo",
+  "titulo": "Previsão de compras com IA",
+  "formato": "notícia/tendência de IA explicada",
+  "dia": "2026-11-04",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "story",
+  "capa": "O fim das compras no *chute*",
+  "capa_cena": "emerald green acrylic cube resting on clean industrial metal shelving, soft volumetric green light, dramatic perspective",
+  "cenas": [
+   "numero",
+   "pessoa",
+   "objeto",
+   "lista",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "empresa-quebra-cabeca",
+  "funil": "topo",
+  "titulo": "Setores que não conversam",
+  "formato": "lista prática",
+  "dia": "2026-11-04",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noir",
+  "capa": "Setores que *não conversam*",
+  "capa_cena": "two solid ruby red glass geometric blocks standing separate on matte dark stone, narrow crimson slit of light in between",
+  "cenas": [
+   "pessoa",
+   "objeto",
+   "lista",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "rubi"
+ },
+ {
+  "nome": "mapa-fluxo-trabalho",
+  "titulo": "O mapa do seu fluxo de trabalho",
+  "formato": "",
+  "dia": "2026-11-04",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "topico",
+   "topico",
+   "lista",
+   "cta"
+  ],
+  "paleta": "cobre"
+ },
+ {
+  "nome": "perguntas-antes-de-contratar-dev",
+  "titulo": "3 perguntas antes de contratar um software",
+  "formato": "",
+  "dia": "2026-11-04",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "",
+  "slides": [
+   "capa_numero",
+   "topico",
+   "topico",
+   "topico",
+   "citacao",
+   "cta"
+  ],
+  "paleta": "prata"
+ },
+ {
+  "nome": "checklist-gestao-fragil",
+  "titulo": "Checklist: Sua operação é dependente de você?",
+  "formato": "",
+  "dia": "2026-11-04",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "",
+  "slides": [
+   "capa_tipografica",
+   "lista",
+   "contraste",
+   "verbete",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "gelo"
+ },
+ {
+  "nome": "custo-de-nao-ter-sistema",
+  "titulo": "O custo de não ter um sistema integrado",
+  "formato": "",
+  "dia": "2026-11-04",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "topico",
+   "contraste",
+   "lista",
+   "cta"
+  ],
+  "paleta": "ouro"
  }
 ]

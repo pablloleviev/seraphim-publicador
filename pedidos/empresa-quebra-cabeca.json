@@ -1,0 +1,55 @@
+{
+ "nome": "empresa-quebra-cabeca",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-04 20:30",
+ "cenas": [
+  {
+   "tipo": "pessoa",
+   "linha": "DIAGNÓSTICO",
+   "titulo": "Sua operação parece *fatiada?*",
+   "narracao": "Se o seu time de vendas promete um prazo que a produção não sabe e o financeiro só descobre no final, você vive em ilhas isoladas."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "workflow",
+   "titulo": "DADOS *DESCONEXOS*",
+   "camera": "afasta",
+   "narracao": "Cada setor abre seu próprio controle, usa nomes diferentes para o mesmo cliente e ninguém tem o quadro completo do que está acontecendo."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Os sintomas *claros:*",
+   "itens": [
+    "Cobrança de dados pelo WhatsApp",
+    "Planilhas com valores divergentes",
+    "Retrabalho ao passar bastão"
+   ],
+   "narracao": "O trabalho da sua equipe vira copiar dados de uma tela para outra e ficar tirando dúvidas que já deveriam estar respondidas."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Um canal único de *verdade.*",
+   "narracao": "A função primária de um bom sistema é fazer a informação nascer uma única vez e atualizar todas as pontas da empresa."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Chega de retrabalho *cego.*",
+   "cartoes": [
+    "Segue a Seraphim",
+    "Manda para a equipe"
+   ],
+   "narracao": "Sua equipe deveria gastar tempo atendendo clientes, não conferindo papel. Segue a Seraphim para integrar seus processos."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "estilo_legenda": "sutil",
+ "paleta": "rubi",
+ "formato": "noir",
+ "titulo": "Setores que não conversam",
+ "numero": 5,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Quando cada departamento cuida apenas da sua própria planilha, o cliente sempre sente o impacto na ponta. 🧩 Integrar o fluxo de dados poupa horas de bate-boca interno e evita retrabalho. Como os setores da sua empresa trocam informações hoje? Segue a Seraphim.\n\n#processosinternos #integracao #gestaoempresarial #eficiencia #seraphimbr",
+ "legenda_tiktok": "Sua empresa parece dividida em ilhas? Segue a Seraphim para organizar.\n\n#processosinternos #integracao #gestaoempresarial #eficiencia #seraphimbr"
+}

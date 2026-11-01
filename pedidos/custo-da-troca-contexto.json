@@ -1,0 +1,55 @@
+{
+ "nome": "custo-da-troca-contexto",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-04 11:30",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "clock",
+   "titulo": "A ilusão de *produzir muito*",
+   "narracao": "Pular de tarefa em tarefa o dia inteiro parece sinal de dedicação, mas a neurociência mostra que isso drena sua energia mental."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "O foco cobra *pedágio.*",
+   "transicao": "desfoque",
+   "narracao": "Toda vez que você interrompe uma análise para responder uma mensagem urgente, seu cérebro demora minutos para retomar o raciocínio."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Dez abas e atenção picada",
+   "depois": "Um bloco *fechado* por vez",
+   "narracao": "Empresas eficientes protegem a atenção da equipe criando blocos de execução contínua em vez de viverem de interrupções."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Para proteger a *rotina:*",
+   "itens": [
+    "Alertas automáticos agrupados",
+    "Tarefas parecidas no mesmo horário",
+    "Status de trabalho visível"
+   ],
+   "narracao": "Defina horários certos para checar mensagens e use sistemas para disparar avisos só quando algo realmente sai da rota."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Foco é *método.*",
+   "cartoes": [
+    "Segue a Seraphim",
+    "Compartilha"
+   ],
+   "narracao": "Automação serve para poupar a mente do que é mecânico. Segue a Seraphim para trabalhar com mais clareza."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "elegante",
+ "estilo_legenda": "sutil",
+ "paleta": "violeta",
+ "formato": "celular",
+ "titulo": "O mito da multitarefa",
+ "numero": 2,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Trocar de tarefa a cada cinco minutos não é agilidade, é sobrecarga. 🧠 Quando a operação depende de avisar tudo no grito ou no chat, ninguém consegue terminar nada em paz. Como sua equipe lida com as interrupções hoje? Segue a Seraphim para organizar seus fluxos.\n\n#gestaodetempo #produtividade #rotinadetrabalho #foco #seraphimbr",
+ "legenda_tiktok": "O custo invisível de fazer dez coisas ao mesmo tempo. Segue a Seraphim.\n\n#gestaodetempo #produtividade #rotinadetrabalho #foco #seraphimbr"
+}
