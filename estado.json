@@ -1315,6 +1315,22 @@
         "via": "buffer"
       },
       "msg_id": 1389
+    },
+    "2026-11-02_1130_ia-olhos-digitais-documentos": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-01T12:30:18.010177+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1391
+    },
+    "2026-11-02_1130_whatsapp-prisao-operacional": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-01T12:30:20.121447+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1398
     }
   },
   "respondidos": {},
