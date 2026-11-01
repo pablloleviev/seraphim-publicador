@@ -1,0 +1,79 @@
+23s
+Rendered 1010/1060, time remaining: 23s
+Rendered 1010/1060, time remaining: 23s
+Rendered 1011/1060, time remaining: 22s
+Rendered 1012/1060, time remaining: 22s
+Rendered 1013/1060, time remaining: 21s
+Rendered 1013/1060, time remaining: 21s
+Rendered 1014/1060, time remaining: 21s
+Rendered 1015/1060, time remaining: 21s
+Rendered 1016/1060, time remaining: 20s
+Rendered 1016/1060, time remaining: 20s
+Rendered 1017/1060, time remaining: 20s
+Rendered 1018/1060, time remaining: 19s
+Rendered 1019/1060, time remaining: 19s
+Rendered 1020/1060, time remaining: 18s
+Rendered 1020/1060, time remaining: 18s
+Rendered 1021/1060, time remaining: 18s
+Rendered 1022/1060, time remaining: 17s
+Rendered 1022/1060, time remaining: 17s
+Rendered 1023/1060, time remaining: 17s
+Rendered 1024/1060, time remaining: 16s
+Rendered 1025/1060, time remaining: 16s
+Rendered 1025/1060, time remaining: 16s
+Rendered 1026/1060, time remaining: 15s
+Rendered 1027/1060, time remaining: 15s
+Rendered 1027/1060, time remaining: 15s
+Rendered 1028/1060, time remaining: 14s
+Rendered 1029/1060, time remaining: 14s
+Rendered 1030/1060, time remaining: 13s
+Rendered 1031/1060, time remaining: 13s
+Rendered 1031/1060, time remaining: 13s
+Rendered 1032/1060, time remaining: 13s
+Rendered 1033/1060, time remaining: 12s
+Rendered 1034/1060, time remaining: 12s
+Rendered 1034/1060, time remaining: 12s
+Rendered 1035/1060, time remaining: 11s
+Rendered 1036/1060, time remaining: 11s
+Rendered 1037/1060, time remaining: 10s
+Rendered 1037/1060, time remaining: 10s
+Rendered 1038/1060, time remaining: 10s
+Rendered 1039/1060, time remaining: 9s
+Rendered 1039/1060, time remaining: 9s
+Rendered 1040/1060, time remaining: 9s
+Rendered 1041/1060, time remaining: 8s
+Rendered 1042/1060, time remaining: 8s
+Rendered 1043/1060, time remaining: 7s
+Rendered 1043/1060, time remaining: 7s
+Rendered 1044/1060, time remaining: 7s
+Rendered 1045/1060, time remaining: 6s
+Rendered 1045/1060, time remaining: 6s
+Rendered 1046/1060, time remaining: 6s
+Rendered 1047/1060, time remaining: 6s
+Rendered 1048/1060, time remaining: 5s
+Rendered 1049/1060, time remaining: 5s
+Rendered 1049/1060, time remaining: 5s
+Rendered 1050/1060, time remaining: 4s
+Rendered 1051/1060, time remaining: 4s
+Rendered 1051/1060, time remaining: 4s
+Rendered 1052/1060, time remaining: 3s
+Rendered 1053/1060, time remaining: 3s
+Rendered 1054/1060, time remaining: 2s
+Rendered 1055/1060, time remaining: 2s
+Rendered 1055/1060, time remaining: 2s
+Rendered 1056/1060, time remaining: 1s
+Rendered 1057/1060, time remaining: 1s
+Rendered 1057/1060, time remaining: 1s
+Rendered 1058/1060, time remaining: 0s
+Rendered 1059/1060, time remaining: 0s
+Stitched 797/1060
+Stitched 808/1060
+Stitched 830/1060
+Stitched 848/1060
+Stitched 1060/1060
+Voz: gemini (110 palavras)
+[trilha] trechos: epico 0.0-7.5s | emocao 7.5-35.3s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-04_2030_empresa-quebra-cabeca/video.mp4 (35.3s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
