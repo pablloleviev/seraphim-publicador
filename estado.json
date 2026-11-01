@@ -1299,6 +1299,14 @@
         "via": "buffer"
       },
       "msg_id": 1380
+    },
+    "2026-11-02_0730_agentes-ia-computador-sozinho": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-01T08:30:10.330752+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1382
     }
   },
   "respondidos": {},
