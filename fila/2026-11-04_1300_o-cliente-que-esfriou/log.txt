@@ -1,0 +1,80 @@
+ndered 961/1009, time remaining: 28s
+Rendered 961/1009, time remaining: 28s
+Rendered 962/1009, time remaining: 27s
+Rendered 963/1009, time remaining: 27s
+Rendered 964/1009, time remaining: 26s
+Rendered 964/1009, time remaining: 26s
+Rendered 965/1009, time remaining: 26s
+Rendered 966/1009, time remaining: 25s
+Rendered 966/1009, time remaining: 25s
+Rendered 967/1009, time remaining: 24s
+Rendered 968/1009, time remaining: 24s
+Rendered 968/1009, time remaining: 24s
+Rendered 969/1009, time remaining: 23s
+Rendered 970/1009, time remaining: 23s
+Rendered 970/1009, time remaining: 23s
+Rendered 971/1009, time remaining: 22s
+Rendered 972/1009, time remaining: 21s
+Rendered 973/1009, time remaining: 21s
+Rendered 973/1009, time remaining: 21s
+Rendered 974/1009, time remaining: 20s
+Rendered 975/1009, time remaining: 20s
+Rendered 975/1009, time remaining: 20s
+Rendered 976/1009, time remaining: 19s
+Rendered 977/1009, time remaining: 18s
+Rendered 978/1009, time remaining: 18s
+Rendered 978/1009, time remaining: 18s
+Rendered 979/1009, time remaining: 17s
+Rendered 980/1009, time remaining: 17s
+Rendered 980/1009, time remaining: 17s
+Rendered 981/1009, time remaining: 16s
+Rendered 982/1009, time remaining: 15s
+Rendered 983/1009, time remaining: 15s
+Rendered 983/1009, time remaining: 15s
+Rendered 984/1009, time remaining: 14s
+Rendered 985/1009, time remaining: 14s
+Rendered 985/1009, time remaining: 14s
+Rendered 986/1009, time remaining: 13s
+Rendered 987/1009, time remaining: 12s
+Rendered 988/1009, time remaining: 12s
+Rendered 988/1009, time remaining: 12s
+Rendered 989/1009, time remaining: 11s
+Rendered 990/1009, time remaining: 11s
+Rendered 991/1009, time remaining: 10s
+Rendered 991/1009, time remaining: 10s
+Rendered 992/1009, time remaining: 9s
+Rendered 993/1009, time remaining: 9s
+Rendered 993/1009, time remaining: 9s
+Rendered 994/1009, time remaining: 8s
+Rendered 995/1009, time remaining: 8s
+Rendered 995/1009, time remaining: 8s
+Rendered 996/1009, time remaining: 7s
+Rendered 997/1009, time remaining: 7s
+Rendered 997/1009, time remaining: 7s
+Rendered 998/1009, time remaining: 6s
+Rendered 999/1009, time remaining: 5s
+Rendered 1000/1009, time remaining: 5s
+Rendered 1001/1009, time remaining: 4s
+Rendered 1001/1009, time remaining: 4s
+Rendered 1002/1009, time remaining: 4s
+Rendered 1003/1009, time remaining: 3s
+Rendered 1003/1009, time remaining: 3s
+Rendered 1004/1009, time remaining: 2s
+Rendered 1005/1009, time remaining: 2s
+Rendered 1005/1009, time remaining: 2s
+Rendered 1006/1009, time remaining: 1s
+Rendered 1007/1009, time remaining: 1s
+Rendered 1007/1009, time remaining: 1s
+Rendered 1008/1009, time remaining: 0s
+Stitched 757/1009
+Stitched 764/1009
+Stitched 778/1009
+Stitched 791/1009
+Stitched 807/1009
+Stitched 1009/1009
+Voz: gemini (96 palavras)
+[trilha] trechos: epico 0.0-7.3s | emocao 7.3-33.6s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-04_1300_o-cliente-que-esfriou/video.mp4 (33.6s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
