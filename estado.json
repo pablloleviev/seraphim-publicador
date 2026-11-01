@@ -1307,6 +1307,14 @@
         "via": "buffer"
       },
       "msg_id": 1382
+    },
+    "2026-11-02_0830_agentes-ia-casos-uso": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-01T09:30:10.085997+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1389
     }
   },
   "respondidos": {},
