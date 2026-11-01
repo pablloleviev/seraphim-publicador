@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630342,
+  "telegram_offset": 183630363,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -1189,44 +1189,69 @@
       "msg_id": 1307
     },
     "2026-10-31_1800_ia-sintetica-colapso": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-10-30T19:00:22.396206+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae75f668755094b828fe762",
+        "feito": "buffer"
       },
-      "msg_id": 1313
+      "msg_id": 1313,
+      "ig_id": "18106060520631673",
+      "publicado_em": "2026-11-01T15:48:53.993254+00:00",
+      "ig_manual": false
     },
     "2026-10-31_1830_seguranca-senhas-compartilhadas": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-10-30T19:30:06.882563+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae75f39fa39ab5d4d81d187",
+        "feito": "buffer"
       },
-      "msg_id": 1320
+      "msg_id": 1320,
+      "ig_id": "18116039296844868",
+      "publicado_em": "2026-11-01T15:48:09.057163+00:00",
+      "ig_manual": false
     },
     "2026-10-31_1930_terror-da-operacao": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-10-30T20:30:13.442774+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae75f0fcd0d0de2bf844f01",
+        "feito": "buffer"
       },
-      "msg_id": 1322
+      "msg_id": 1322,
+      "ig_id": "18127922981513801",
+      "publicado_em": "2026-11-01T15:47:26.385531+00:00",
+      "ig_manual": false
     },
     "2026-10-31_2030_fim-do-alt-tab": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-10-30T21:30:04.609553+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae75ea48755094b828fbe02",
+        "feito": "buffer"
       },
-      "msg_id": 1326
+      "msg_id": 1326,
+      "ig_id": "18032098670906554",
+      "publicado_em": "2026-11-01T15:45:39.211404+00:00",
+      "ig_manual": false
     },
     "2026-11-01_0730_fim-do-silicio-grafeno": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-10-31T08:30:16.926567+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae75fc6dbb50f7b82dea62a",
+        "feito": "buffer"
       },
-      "msg_id": 1337
+      "msg_id": 1337,
+      "ig_id": "18106973552261961",
+      "publicado_em": "2026-11-01T15:50:29.804416+00:00",
+      "ig_manual": false
     },
     "2026-11-01_0830_tarefas-agente-ia": {
       "status": "aguardando",
@@ -1237,39 +1262,59 @@
       "msg_id": 1344
     },
     "2026-11-01_1130_ralo-copia-e-cola": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-10-31T12:30:20.145093+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae75ff28755094b82900e24",
+        "feito": "buffer"
       },
-      "msg_id": 1354
+      "msg_id": 1354,
+      "ig_id": "18034917557913035",
+      "publicado_em": "2026-11-01T15:51:13.389568+00:00",
+      "ig_manual": false
     },
     "2026-11-01_1130_triagem-whatsapp-filtro": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-10-31T12:30:23.792852+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae7602e36ecc998481345b1",
+        "feito": "buffer"
       },
-      "msg_id": 1356
+      "msg_id": 1356,
+      "ig_id": "18008067432006032",
+      "publicado_em": "2026-11-01T15:52:13.904430+00:00",
+      "ig_manual": false
     },
     "2026-11-01_1230_construir-e-construir-clareza": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-10-31T13:30:25.903453+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae760458755094b82901f11",
+        "feito": "buffer"
       },
-      "msg_id": 1358
+      "msg_id": 1358,
+      "ig_id": "18112462352463717",
+      "publicado_em": "2026-11-01T15:52:36.780083+00:00",
+      "ig_manual": false
     },
     "2026-11-01_1300_ia-manutencao-preditiva": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-10-31T14:01:26.326067+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae7623193985ec108e0462f",
+        "feito": "buffer"
       },
-      "msg_id": 1360
+      "msg_id": 1360,
+      "ig_id": "18133561589495018",
+      "publicado_em": "2026-11-01T16:00:48.646074+00:00",
+      "ig_manual": false
     },
     "2026-11-01_1500_metodo-antes-da-ferramenta": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-31T16:00:21.770607+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1277,7 +1322,7 @@
       "msg_id": 1369
     },
     "2026-11-01_1800_autoflow-lucro-oficina": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-31T19:00:16.576181+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1285,7 +1330,7 @@
       "msg_id": 1371
     },
     "2026-11-01_1830_planilha-virou-monstro": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-31T19:30:28.581906+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1293,7 +1338,7 @@
       "msg_id": 1378
     },
     "2026-11-01_2030_equipe-resistencia-sistema": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-10-31T21:30:03.681312+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1301,7 +1346,7 @@
       "msg_id": 1380
     },
     "2026-11-02_0730_agentes-ia-computador-sozinho": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-01T08:30:10.330752+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1309,7 +1354,7 @@
       "msg_id": 1382
     },
     "2026-11-02_0830_agentes-ia-casos-uso": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-01T09:30:10.085997+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1317,7 +1362,7 @@
       "msg_id": 1389
     },
     "2026-11-02_1130_ia-olhos-digitais-documentos": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-01T12:30:18.010177+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1325,7 +1370,7 @@
       "msg_id": 1391
     },
     "2026-11-02_1130_whatsapp-prisao-operacional": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-01T12:30:20.121447+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1333,12 +1378,20 @@
       "msg_id": 1398
     },
     "2026-11-02_1300_gestao-caos-recibos-sumidos": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-01T14:00:14.411444+00:00",
       "tiktok": {
         "via": "buffer"
       },
       "msg_id": 1400
+    },
+    "2026-11-02_1500_escolha-sistema-momento-certo": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-01T16:00:15.059442+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1423
     }
   },
   "respondidos": {},
