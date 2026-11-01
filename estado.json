@@ -1327,12 +1327,17 @@
       "ig_manual": false
     },
     "2026-11-01_1800_autoflow-lucro-oficina": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-31T19:00:16.576181+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae7a87e07b774c8fb2e1366",
+        "feito": "buffer"
       },
-      "msg_id": 1371
+      "msg_id": 1371,
+      "ig_id": "18228641374332684",
+      "publicado_em": "2026-11-01T21:00:45.193196+00:00",
+      "ig_manual": false
     },
     "2026-11-01_1830_planilha-virou-monstro": {
       "status": "agendado",
