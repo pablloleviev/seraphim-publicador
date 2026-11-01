@@ -1353,12 +1353,17 @@
       "ig_manual": false
     },
     "2026-11-01_2030_equipe-resistencia-sistema": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-10-31T21:30:03.681312+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae7cbb0902c3fb1dec2b12d",
+        "feito": "buffer"
       },
-      "msg_id": 1380
+      "msg_id": 1380,
+      "ig_id": "18090720104306265",
+      "publicado_em": "2026-11-01T23:30:55.281655+00:00",
+      "ig_manual": false
     },
     "2026-11-02_0730_agentes-ia-computador-sozinho": {
       "status": "agendado",
