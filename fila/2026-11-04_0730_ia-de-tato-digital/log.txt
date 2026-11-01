@@ -1,0 +1,80 @@
+26s
+Rendered 1254/1302, time remaining: 26s
+Rendered 1255/1302, time remaining: 26s
+Rendered 1256/1302, time remaining: 25s
+Rendered 1257/1302, time remaining: 24s
+Rendered 1257/1302, time remaining: 24s
+Rendered 1258/1302, time remaining: 24s
+Rendered 1259/1302, time remaining: 23s
+Rendered 1259/1302, time remaining: 23s
+Rendered 1260/1302, time remaining: 23s
+Rendered 1261/1302, time remaining: 22s
+Rendered 1261/1302, time remaining: 22s
+Rendered 1262/1302, time remaining: 22s
+Rendered 1263/1302, time remaining: 21s
+Rendered 1264/1302, time remaining: 21s
+Rendered 1264/1302, time remaining: 21s
+Rendered 1265/1302, time remaining: 20s
+Rendered 1266/1302, time remaining: 19s
+Rendered 1267/1302, time remaining: 19s
+Rendered 1267/1302, time remaining: 19s
+Rendered 1268/1302, time remaining: 18s
+Rendered 1269/1302, time remaining: 18s
+Rendered 1269/1302, time remaining: 18s
+Rendered 1270/1302, time remaining: 17s
+Rendered 1271/1302, time remaining: 17s
+Rendered 1272/1302, time remaining: 16s
+Rendered 1272/1302, time remaining: 16s
+Rendered 1273/1302, time remaining: 16s
+Rendered 1274/1302, time remaining: 15s
+Rendered 1275/1302, time remaining: 14s
+Rendered 1275/1302, time remaining: 14s
+Rendered 1276/1302, time remaining: 14s
+Rendered 1277/1302, time remaining: 13s
+Rendered 1277/1302, time remaining: 13s
+Rendered 1278/1302, time remaining: 13s
+Rendered 1279/1302, time remaining: 12s
+Rendered 1279/1302, time remaining: 12s
+Rendered 1280/1302, time remaining: 12s
+Rendered 1281/1302, time remaining: 11s
+Rendered 1282/1302, time remaining: 11s
+Rendered 1282/1302, time remaining: 11s
+Rendered 1283/1302, time remaining: 10s
+Rendered 1284/1302, time remaining: 9s
+Rendered 1285/1302, time remaining: 9s
+Rendered 1285/1302, time remaining: 9s
+Rendered 1286/1302, time remaining: 8s
+Rendered 1287/1302, time remaining: 8s
+Rendered 1287/1302, time remaining: 8s
+Rendered 1288/1302, time remaining: 7s
+Rendered 1289/1302, time remaining: 7s
+Rendered 1289/1302, time remaining: 7s
+Rendered 1290/1302, time remaining: 6s
+Rendered 1291/1302, time remaining: 6s
+Rendered 1291/1302, time remaining: 6s
+Rendered 1292/1302, time remaining: 5s
+Rendered 1293/1302, time remaining: 4s
+Rendered 1294/1302, time remaining: 4s
+Rendered 1294/1302, time remaining: 4s
+Rendered 1295/1302, time remaining: 3s
+Rendered 1296/1302, time remaining: 3s
+Rendered 1297/1302, time remaining: 2s
+Rendered 1297/1302, time remaining: 2s
+Rendered 1298/1302, time remaining: 2s
+Rendered 1299/1302, time remaining: 1s
+Rendered 1299/1302, time remaining: 1s
+Rendered 1300/1302, time remaining: 1s
+Rendered 1301/1302, time remaining: 0s
+Stitched 990/1302
+Stitched 996/1302
+Stitched 1006/1302
+Stitched 1017/1302
+Stitched 1030/1302
+Stitched 1042/1302
+Stitched 1302/1302
+Voz: gemini (104 palavras)
+[trilha] trechos: epico 0.0-7.9s | emocao 7.9-43.4s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-04_0730_ia-de-tato-digital/video.mp4 (43.4s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
