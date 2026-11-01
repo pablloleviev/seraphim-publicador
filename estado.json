@@ -1397,6 +1397,14 @@
         "via": "buffer"
       },
       "msg_id": 1423
+    },
+    "2026-11-02_1800_ia-faxina-inbox-foco": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-01T19:00:14.509978+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1429
     }
   },
   "respondidos": {},
