@@ -1,0 +1,79 @@
+: 22s
+Rendered 1093/1144, time remaining: 22s
+Rendered 1094/1144, time remaining: 21s
+Rendered 1094/1144, time remaining: 21s
+Rendered 1095/1144, time remaining: 21s
+Rendered 1096/1144, time remaining: 20s
+Rendered 1097/1144, time remaining: 20s
+Rendered 1098/1144, time remaining: 19s
+Rendered 1098/1144, time remaining: 19s
+Rendered 1099/1144, time remaining: 19s
+Rendered 1100/1144, time remaining: 19s
+Rendered 1101/1144, time remaining: 18s
+Rendered 1101/1144, time remaining: 18s
+Rendered 1102/1144, time remaining: 18s
+Rendered 1103/1144, time remaining: 17s
+Rendered 1104/1144, time remaining: 17s
+Rendered 1104/1144, time remaining: 17s
+Rendered 1105/1144, time remaining: 16s
+Rendered 1106/1144, time remaining: 16s
+Rendered 1107/1144, time remaining: 16s
+Rendered 1108/1144, time remaining: 15s
+Rendered 1108/1144, time remaining: 15s
+Rendered 1109/1144, time remaining: 15s
+Rendered 1110/1144, time remaining: 14s
+Rendered 1111/1144, time remaining: 14s
+Rendered 1111/1144, time remaining: 14s
+Rendered 1112/1144, time remaining: 13s
+Rendered 1113/1144, time remaining: 13s
+Rendered 1114/1144, time remaining: 12s
+Rendered 1114/1144, time remaining: 12s
+Rendered 1115/1144, time remaining: 12s
+Rendered 1116/1144, time remaining: 12s
+Rendered 1117/1144, time remaining: 11s
+Rendered 1117/1144, time remaining: 11s
+Rendered 1118/1144, time remaining: 11s
+Rendered 1119/1144, time remaining: 10s
+Rendered 1120/1144, time remaining: 10s
+Rendered 1121/1144, time remaining: 9s
+Rendered 1121/1144, time remaining: 9s
+Rendered 1122/1144, time remaining: 9s
+Rendered 1123/1144, time remaining: 9s
+Rendered 1124/1144, time remaining: 8s
+Rendered 1124/1144, time remaining: 8s
+Rendered 1125/1144, time remaining: 8s
+Rendered 1126/1144, time remaining: 7s
+Rendered 1127/1144, time remaining: 7s
+Rendered 1127/1144, time remaining: 7s
+Rendered 1128/1144, time remaining: 6s
+Rendered 1129/1144, time remaining: 6s
+Rendered 1130/1144, time remaining: 6s
+Rendered 1131/1144, time remaining: 5s
+Rendered 1131/1144, time remaining: 5s
+Rendered 1132/1144, time remaining: 5s
+Rendered 1133/1144, time remaining: 4s
+Rendered 1133/1144, time remaining: 4s
+Rendered 1134/1144, time remaining: 4s
+Rendered 1135/1144, time remaining: 3s
+Rendered 1136/1144, time remaining: 3s
+Rendered 1137/1144, time remaining: 3s
+Rendered 1137/1144, time remaining: 3s
+Rendered 1138/1144, time remaining: 2s
+Rendered 1139/1144, time remaining: 2s
+Rendered 1140/1144, time remaining: 1s
+Rendered 1141/1144, time remaining: 1s
+Rendered 1141/1144, time remaining: 1s
+Rendered 1142/1144, time remaining: 0s
+Rendered 1143/1144, time remaining: 0s
+Rendered 1143/1144, time remaining: 0s
+Stitched 866/1144
+Stitched 882/1144
+Stitched 904/1144
+Stitched 915/1144
+Stitched 1144/1144
+Voz: gemini (97 palavras)
+[trilha] trechos: epico 0.0-8.0s | emocao 8.0-38.1s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-04_1130_custo-da-troca-contexto/video.mp4 (38.1s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
