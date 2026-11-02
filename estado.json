@@ -1470,12 +1470,17 @@
       "ig_manual": false
     },
     "2026-11-02_2030_ia-previsao-vendas-estoque": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-01T21:30:18.441894+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae91d3e967eeee46f562f76",
+        "feito": "buffer"
       },
-      "msg_id": 1439
+      "msg_id": 1439,
+      "ig_id": "18118096739322966",
+      "publicado_em": "2026-11-02T23:31:09.593507+00:00",
+      "ig_manual": false
     },
     "2026-11-03_0730_vidro-eterno-dados": {
       "status": "agendado",
