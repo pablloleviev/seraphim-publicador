@@ -1444,6 +1444,14 @@
         "via": "buffer"
       },
       "msg_id": 1445
+    },
+    "2026-11-03_0830_o-gargalo-primeiro-contato": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-02T09:30:12.346477+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1451
     }
   },
   "respondidos": {},
