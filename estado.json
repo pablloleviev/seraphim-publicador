@@ -1514,6 +1514,14 @@
         "via": "buffer"
       },
       "msg_id": 1475
+    },
+    "2026-11-03_1800_elevador-parado-oficina": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-02T19:00:14.068042+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1482
     }
   },
   "respondidos": {},
