@@ -1,0 +1,77 @@
+remaining: 24s
+Rendered 1110/1156, time remaining: 24s
+Rendered 1111/1156, time remaining: 23s
+Rendered 1112/1156, time remaining: 22s
+Rendered 1113/1156, time remaining: 22s
+Rendered 1113/1156, time remaining: 22s
+Rendered 1114/1156, time remaining: 21s
+Rendered 1115/1156, time remaining: 21s
+Rendered 1115/1156, time remaining: 21s
+Rendered 1116/1156, time remaining: 20s
+Rendered 1117/1156, time remaining: 20s
+Rendered 1118/1156, time remaining: 19s
+Rendered 1118/1156, time remaining: 19s
+Rendered 1119/1156, time remaining: 19s
+Rendered 1120/1156, time remaining: 18s
+Rendered 1120/1156, time remaining: 18s
+Rendered 1121/1156, time remaining: 18s
+Rendered 1122/1156, time remaining: 17s
+Rendered 1123/1156, time remaining: 17s
+Rendered 1123/1156, time remaining: 17s
+Rendered 1124/1156, time remaining: 16s
+Rendered 1125/1156, time remaining: 16s
+Rendered 1126/1156, time remaining: 15s
+Rendered 1126/1156, time remaining: 15s
+Rendered 1127/1156, time remaining: 15s
+Rendered 1128/1156, time remaining: 14s
+Rendered 1128/1156, time remaining: 14s
+Rendered 1129/1156, time remaining: 14s
+Rendered 1130/1156, time remaining: 13s
+Rendered 1130/1156, time remaining: 13s
+Rendered 1131/1156, time remaining: 12s
+Rendered 1132/1156, time remaining: 12s
+Rendered 1133/1156, time remaining: 11s
+Rendered 1133/1156, time remaining: 11s
+Rendered 1134/1156, time remaining: 11s
+Rendered 1134/1156, time remaining: 11s
+Rendered 1135/1156, time remaining: 10s
+Rendered 1136/1156, time remaining: 10s
+Rendered 1137/1156, time remaining: 9s
+Rendered 1137/1156, time remaining: 9s
+Rendered 1138/1156, time remaining: 9s
+Rendered 1139/1156, time remaining: 8s
+Rendered 1140/1156, time remaining: 8s
+Rendered 1140/1156, time remaining: 8s
+Rendered 1141/1156, time remaining: 7s
+Rendered 1142/1156, time remaining: 7s
+Rendered 1142/1156, time remaining: 7s
+Rendered 1143/1156, time remaining: 6s
+Rendered 1144/1156, time remaining: 6s
+Rendered 1144/1156, time remaining: 6s
+Rendered 1145/1156, time remaining: 5s
+Rendered 1146/1156, time remaining: 5s
+Rendered 1146/1156, time remaining: 5s
+Rendered 1147/1156, time remaining: 4s
+Rendered 1148/1156, time remaining: 4s
+Rendered 1149/1156, time remaining: 3s
+Rendered 1150/1156, time remaining: 3s
+Rendered 1150/1156, time remaining: 3s
+Rendered 1151/1156, time remaining: 2s
+Rendered 1152/1156, time remaining: 2s
+Rendered 1152/1156, time remaining: 2s
+Rendered 1153/1156, time remaining: 1s
+Rendered 1154/1156, time remaining: 1s
+Rendered 1155/1156, time remaining: 0s
+Rendered 1155/1156, time remaining: 0s
+Stitched 874/1156
+Stitched 884/1156
+Stitched 900/1156
+Stitched 916/1156
+Stitched 925/1156
+Stitched 1156/1156
+Voz: gemini (112 palavras)
+[trilha] trechos: epico 0.0-5.9s | tensao 5.9-11.3s | energia 11.3-18.5s | inspira 18.5-24.9s | energia 24.9-31.2s | epico 31.2-38.5s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-05_1800_balcao-versus-oficina-recados/video.mp4 (38.5s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
