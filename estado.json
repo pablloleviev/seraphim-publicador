@@ -1522,6 +1522,14 @@
         "via": "buffer"
       },
       "msg_id": 1482
+    },
+    "2026-11-03_1830_anatomia-de-um-processo-enxuto": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-02T19:30:26.066293+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1488
     }
   },
   "respondidos": {},
