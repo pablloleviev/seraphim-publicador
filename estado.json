@@ -1431,12 +1431,17 @@
       "ig_manual": false
     },
     "2026-11-02_1500_escolha-sistema-momento-certo": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-01T16:00:15.059442+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae8cfd86b1d49ecbdea6b1d",
+        "feito": "buffer"
       },
-      "msg_id": 1423
+      "msg_id": 1423,
+      "ig_id": "18023979926934025",
+      "publicado_em": "2026-11-02T18:00:55.137555+00:00",
+      "ig_manual": false
     },
     "2026-11-02_1800_ia-faxina-inbox-foco": {
       "status": "agendado",
