@@ -1,0 +1,69 @@
+{
+ "nome": "balcao-versus-oficina-recados",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-05 18:00",
+ "cenas": [
+  {
+   "tipo": "citacao",
+   "clima": "tensao",
+   "titulo": "O recado falado na correria *se perde no pátio.*",
+   "transicao": "corte",
+   "camera": "empurra",
+   "narracao": "Aquele recado passado na pressa entre a recepção e o pátio quase sempre se perde no barulho da oficina."
+  },
+  {
+   "tipo": "frase",
+   "clima": "tensao",
+   "titulo": "O cliente pediu um detalhe, *mas ninguém anotou.*",
+   "transicao": "chicote",
+   "narracao": "O motorista pediu para checar um ruído específico, mas quem mexeu no carro nem ficou sabendo."
+  },
+  {
+   "tipo": "contraste",
+   "clima": "energia",
+   "antes": "Recado no grito ou papel solto",
+   "depois": "Gestão num *lugar só*",
+   "transicao": "zoom",
+   "narracao": "Quando a oficina troca o papel e os avisos verbais por um sistema acessível no navegador, todo mundo se entende."
+  },
+  {
+   "tipo": "objeto",
+   "clima": "inspira",
+   "icone": "car",
+   "titulo": "AutoFlow: feito para *oficinas mecânicas*",
+   "transicao": "luz",
+   "narracao": "É com esse foco que desenvolvemos o AutoFlow, o sistema de gestão da Seraphim feito para oficinas mecânicas."
+  },
+  {
+   "tipo": "cartao",
+   "clima": "energia",
+   "titulo": "Saindo do caderno e da planilha",
+   "rotulo": "ACESSO",
+   "numero": "PELO NAVEGADOR",
+   "transicao": "deslize",
+   "narracao": "Ele ajuda a organizar a gestão da oficina num lugar só, saindo de vez do caderno e da planilha."
+  },
+  {
+   "tipo": "fecho",
+   "clima": "epico",
+   "titulo": "Conheça o *AutoFlow*",
+   "cartoes": [
+    "Link na bio",
+    "Siga a Seraphim"
+   ],
+   "transicao": "zoom",
+   "narracao": "Sua oficina merece uma gestão mais simples. Acesse o link na bio para conhecer o AutoFlow e siga nosso perfil."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "karaoke",
+ "paleta": "autoflow",
+ "formato": "terminal",
+ "titulo": "A conversa entre balcão e pátio",
+ "numero": 4,
+ "funil": "fundo",
+ "genero_voz": "feminina",
+ "legenda": "Quando a recepção e a mecânica não conversam na mesma frequência, o cliente percebe no balcão. 🚗 Conheça o AutoFlow pelo link na bio.\n\n#oficinamecanica #autoflow #mecanico #gestaodeoficina #seraphimbr",
+ "legenda_tiktok": "Como organizar o fluxo entre recepção e mecânicos sem depender de recados soltos.\n\n#oficinamecanica #autoflow #mecanico #gestaodeoficina #seraphimbr"
+}

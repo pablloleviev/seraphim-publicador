@@ -1,0 +1,73 @@
+{
+ "nome": "abas-abertas-computador-lento",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-05 13:00",
+ "cenas": [
+  {
+   "tipo": "cartao",
+   "clima": "tensao",
+   "titulo": "Seu computador *pedindo socorro*",
+   "rotulo": "MEMÓRIA PRESA",
+   "numero": "40 ABAS",
+   "transicao": "corte",
+   "narracao": "Quarenta abas abertas ao mesmo tempo no navegador raramente mostram produtividade; quase sempre revelam sobrecarga."
+  },
+  {
+   "tipo": "objeto",
+   "clima": "tensao",
+   "icone": "laptop",
+   "titulo": "Cada aba é um *consumo silencioso*",
+   "transicao": "zoom",
+   "narracao": "Cada aba acumula memória do computador e divide sua atenção entre várias frentes inacabadas ao mesmo tempo."
+  },
+  {
+   "tipo": "contraste",
+   "clima": "energia",
+   "antes": "Navegador usado como depósito",
+   "depois": "Fluxo com *espaço de trabalho*",
+   "transicao": "chicote",
+   "narracao": "Tratar o navegador como lista de tarefas deixa sua máquina lenta e rouba o foco do que realmente importa."
+  },
+  {
+   "tipo": "lista",
+   "clima": "inspira",
+   "titulo": "Higiene *digital básica:*",
+   "itens": [
+    "Fechar o que já foi finalizado",
+    "Salvar referências em bloco único",
+    "Uma tela limpa para cada tarefa"
+   ],
+   "transicao": "desfoque",
+   "narracao": "Feche o que concluiu, guarde links em um painel fixo e mantenha abertas apenas as ferramentas daquele momento."
+  },
+  {
+   "tipo": "frase",
+   "clima": "inspira",
+   "titulo": "Ambiente limpo, *trabalho com clareza.*",
+   "transicao": "dissolve",
+   "narracao": "Quando o seu espaço digital respira, o ritmo do trabalho flui com muito mais naturalidade."
+  },
+  {
+   "tipo": "fecho",
+   "clima": "epico",
+   "titulo": "Trabalhe melhor com a *Seraphim*",
+   "cartoes": [
+    "Siga nosso perfil",
+    "Envie para quem acumula abas"
+   ],
+   "transicao": "zoom",
+   "narracao": "Siga a Seraphim para mais reflexões práticas sobre tecnologia, foco e organização no trabalho."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "elegante",
+ "estilo_legenda": "sutil",
+ "paleta": "prata",
+ "formato": "navegador",
+ "titulo": "A armadilha das quarenta abas abertas",
+ "numero": 3,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Quantas abas você mantém abertas na sua tela agora mesmo? 💻 Manter o navegador limpo muda o rendimento da rotina.\n\n#foco #organizacaodigital #produtividade #tecnologia #seraphimbr",
+ "legenda_tiktok": "O hábito de acumular abas no navegador drena o computador e o foco.\n\n#foco #organizacaodigital #produtividade #tecnologia #seraphimbr"
+}

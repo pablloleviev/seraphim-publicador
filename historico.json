@@ -2610,5 +2610,197 @@
    "cta"
   ],
   "paleta": "ouro"
+ },
+ {
+  "nome": "ia-no-proprio-dispositivo",
+  "funil": "topo",
+  "titulo": "A IA que roda sem internet",
+  "formato": "notícia/tendência de IA explicada",
+  "dia": "2026-11-05",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "vhs",
+  "capa": "IA que roda *sem internet*",
+  "capa_cena": "glowing microchip on a dark circuit board with neon purple lighting macro shot",
+  "cenas": [
+   "frase",
+   "cartao",
+   "objeto",
+   "contraste",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "violeta"
+ },
+ {
+  "nome": "o-caos-dos-audios-de-pedido",
+  "funil": "meio",
+  "titulo": "O perigo do pedido anotado por áudio",
+  "formato": "erro que você comete",
+  "dia": "2026-11-05",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "eletrico",
+  "capa": "O perigo do pedido *por áudio*",
+  "capa_cena": "smartphone lying on messy office counter showing green audio waveforms warm dramatic light",
+  "cenas": [
+   "contraste",
+   "objeto",
+   "lista",
+   "cartao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "emocional",
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "abas-abertas-computador-lento",
+  "funil": "topo",
+  "titulo": "A armadilha das quarenta abas abertas",
+  "formato": "comparação (X vs Y)",
+  "dia": "2026-11-05",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "navegador",
+  "capa": "As 40 abas que *travam tudo*",
+  "capa_cena": "close up of a modern laptop screen showing countless browser tabs soft studio reflection",
+  "cenas": [
+   "cartao",
+   "objeto",
+   "contraste",
+   "lista",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "prata"
+ },
+ {
+  "nome": "balcao-versus-oficina-recados",
+  "funil": "fundo",
+  "titulo": "A conversa entre balcão e pátio",
+  "formato": "antes e depois",
+  "dia": "2026-11-05",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "terminal",
+  "capa": "Balcão e pátio *alinhados*",
+  "capa_cena": "auto repair shop interior with clean lift and modern tablet on tool cart warm atmospheric lighting",
+  "cenas": [
+   "citacao",
+   "frase",
+   "contraste",
+   "objeto",
+   "cartao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "autoflow"
+ },
+ {
+  "nome": "computacao-espacial-sensores",
+  "funil": "topo",
+  "titulo": "Como os computadores começaram a ler o espaço",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-11-05",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noticia",
+  "capa": "Computadores que *enxergam salas*",
+  "capa_cena": "sleek optical sensor emitting golden light pulses scanning empty modern room",
+  "cenas": [
+   "moedas",
+   "objeto",
+   "lista",
+   "cartao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "ouro"
+ },
+ {
+  "nome": "ciclo-invisivel-da-interrupcao",
+  "titulo": "Como romper o ciclo da interrupção",
+  "formato": "",
+  "dia": "2026-11-05",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "desk with an elegant copper hourglass beside an organized minimal notepad moody office lighting",
+  "slides": [
+   "capa_tipografica",
+   "abertura",
+   "topico",
+   "contraste",
+   "topico",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "cobre"
+ },
+ {
+  "nome": "banco-de-dados-explicado-facil",
+  "titulo": "Banco de dados explicado sem termos técnicos",
+  "formato": "",
+  "dia": "2026-11-05",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "glowing crystal blue database cylinder floating against a dark minimalist studio backdrop",
+  "slides": [
+   "capa_objeto",
+   "verbete",
+   "lista",
+   "topico",
+   "citacao",
+   "cta"
+  ],
+  "paleta": "gelo"
+ },
+ {
+  "nome": "seguranca-digital-pequena-empresa",
+  "titulo": "Checklist de segurança para pequenas empresas",
+  "formato": "",
+  "dia": "2026-11-05",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "dark modern desk with a glowing red padlock hologram on top of a closed metal laptop",
+  "slides": [
+   "capa_numero",
+   "abertura",
+   "lista",
+   "topico",
+   "contraste",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "rubi"
+ },
+ {
+  "nome": "como-desenhar-um-procedimento-sem-manual",
+  "titulo": "Como documentar um processo sem escrever manuais gigantes",
+  "formato": "",
+  "dia": "2026-11-05",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa",
+  "capa_cena": "clean golden hued architectural drawing board with a sleek pen and clean checklist",
+  "slides": [
+   "capa",
+   "abertura",
+   "topico",
+   "verbete",
+   "lista",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "ouro"
  }
 ]

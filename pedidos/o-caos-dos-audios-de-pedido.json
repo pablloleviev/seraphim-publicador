@@ -1,0 +1,70 @@
+{
+ "nome": "o-caos-dos-audios-de-pedido",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-05 11:30",
+ "cenas": [
+  {
+   "tipo": "contraste",
+   "clima": "tensao",
+   "antes": "Áudios perdidos na conversa",
+   "depois": "Pedidos em *painel central*",
+   "transicao": "corte",
+   "camera": "empurra",
+   "narracao": "Aquele áudio de dois minutos no WhatsApp parece prático, até alguém da equipe separar o item errado."
+  },
+  {
+   "tipo": "objeto",
+   "clima": "tensao",
+   "icone": "headphones",
+   "titulo": "O cliente cobra e *ninguém acha*",
+   "transicao": "deslize",
+   "narracao": "Na hora de entregar, a peça foi trocada, o endereço sumiu e ninguém sabe qual atendente ouviu o recado."
+  },
+  {
+   "tipo": "lista",
+   "clima": "emocao",
+   "titulo": "O custo do *desalinhamento:*",
+   "itens": [
+    "Entrega com produto trocado",
+    "Cliente cobrando no balcão",
+    "Tarde inteira caçando mensagens"
+   ],
+   "transicao": "chicote",
+   "narracao": "A consequência é retrabalho, custo de frete dobrado e horas perdidas procurando mensagem antiga na conversa."
+  },
+  {
+   "tipo": "cartao",
+   "clima": "energia",
+   "titulo": "Mensagem padronizada na *entrada*",
+   "rotulo": "PADRÃO",
+   "numero": "3 DADOS",
+   "transicao": "zoom",
+   "narracao": "Quando o pedido entra com dados estruturados na largada, qualquer pessoa da equipe sabe exatamente o que executar."
+  },
+  {
+   "tipo": "fecho",
+   "clima": "inspira",
+   "titulo": "Comente *PEDIDO* para receber",
+   "cartoes": [
+    "Passo a passo no direct",
+    "Siga a Seraphim"
+   ],
+   "transicao": "dissolve",
+   "narracao": "Comenta PEDIDO aqui nos comentários que eu te envio nosso roteiro prático no direct para organizar o fluxo de mensagens."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "emocional",
+ "estilo_legenda": "karaoke",
+ "paleta": "esmeralda",
+ "formato": "eletrico",
+ "titulo": "O perigo do pedido anotado por áudio",
+ "numero": 2,
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Áudio no WhatsApp não é pedido fechado, é brecha para erro na separação. 📦 Como vocês registram os pedidos por aí?\n\n#atendimento #gestaoempresarial #processos #produtividade #seraphimbr",
+ "legenda_tiktok": "O perigo de confiar pedidos inteiros em áudios soltos de WhatsApp.\n\n#atendimento #gestaoempresarial #processos #produtividade #seraphimbr",
+ "palavra_chave": "PEDIDO",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/o-caos-dos-audios-de-pedido/",
+ "material_titulo": "Roteiro de Confirmação de Pedidos Sem Ruído"
+}
