@@ -1392,20 +1392,30 @@
       "ig_manual": false
     },
     "2026-11-02_1130_ia-olhos-digitais-documentos": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-01T12:30:18.010177+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae89ea8c03187867e4258e7",
+        "feito": "buffer"
       },
-      "msg_id": 1391
+      "msg_id": 1391,
+      "ig_id": "18106163794995191",
+      "publicado_em": "2026-11-02T14:31:03.592683+00:00",
+      "ig_manual": false
     },
     "2026-11-02_1130_whatsapp-prisao-operacional": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-01T12:30:20.121447+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae89ed6c03187867e42784b",
+        "feito": "buffer"
       },
-      "msg_id": 1398
+      "msg_id": 1398,
+      "ig_id": "17964949170215821",
+      "publicado_em": "2026-11-02T14:31:48.666637+00:00",
+      "ig_manual": false
     },
     "2026-11-02_1300_gestao-caos-recibos-sumidos": {
       "status": "agendado",
@@ -1478,6 +1488,14 @@
         "via": "buffer"
       },
       "msg_id": 1463
+    },
+    "2026-11-03_1300_a-febre-do-vamos-marcar": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-02T14:00:17.743162+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1465
     }
   },
   "respondidos": {},
