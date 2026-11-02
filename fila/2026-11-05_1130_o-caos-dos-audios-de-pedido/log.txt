@@ -1,0 +1,80 @@
+: 24s
+Rendered 877/928, time remaining: 24s
+Rendered 878/928, time remaining: 23s
+Rendered 879/928, time remaining: 23s
+Rendered 880/928, time remaining: 22s
+Rendered 881/928, time remaining: 22s
+Rendered 881/928, time remaining: 22s
+Rendered 882/928, time remaining: 21s
+Rendered 883/928, time remaining: 21s
+Rendered 883/928, time remaining: 21s
+Rendered 884/928, time remaining: 20s
+Rendered 885/928, time remaining: 20s
+Rendered 886/928, time remaining: 19s
+Rendered 886/928, time remaining: 19s
+Rendered 887/928, time remaining: 19s
+Rendered 888/928, time remaining: 18s
+Rendered 889/928, time remaining: 18s
+Rendered 890/928, time remaining: 17s
+Rendered 890/928, time remaining: 17s
+Rendered 891/928, time remaining: 17s
+Rendered 892/928, time remaining: 16s
+Rendered 892/928, time remaining: 16s
+Rendered 893/928, time remaining: 16s
+Rendered 894/928, time remaining: 16s
+Rendered 895/928, time remaining: 15s
+Rendered 896/928, time remaining: 15s
+Rendered 896/928, time remaining: 15s
+Rendered 897/928, time remaining: 14s
+Rendered 898/928, time remaining: 14s
+Rendered 898/928, time remaining: 14s
+Rendered 899/928, time remaining: 13s
+Rendered 900/928, time remaining: 13s
+Rendered 901/928, time remaining: 12s
+Rendered 901/928, time remaining: 12s
+Rendered 902/928, time remaining: 12s
+Rendered 903/928, time remaining: 11s
+Rendered 904/928, time remaining: 11s
+Rendered 904/928, time remaining: 11s
+Rendered 905/928, time remaining: 10s
+Rendered 906/928, time remaining: 10s
+Rendered 907/928, time remaining: 9s
+Rendered 908/928, time remaining: 9s
+Rendered 908/928, time remaining: 9s
+Rendered 909/928, time remaining: 8s
+Rendered 910/928, time remaining: 8s
+Rendered 910/928, time remaining: 8s
+Rendered 911/928, time remaining: 7s
+Rendered 912/928, time remaining: 7s
+Rendered 913/928, time remaining: 7s
+Rendered 914/928, time remaining: 6s
+Rendered 914/928, time remaining: 6s
+Rendered 915/928, time remaining: 6s
+Rendered 916/928, time remaining: 5s
+Rendered 917/928, time remaining: 5s
+Rendered 917/928, time remaining: 5s
+Rendered 918/928, time remaining: 4s
+Rendered 919/928, time remaining: 4s
+Rendered 920/928, time remaining: 3s
+Rendered 920/928, time remaining: 3s
+Rendered 921/928, time remaining: 3s
+Rendered 922/928, time remaining: 2s
+Rendered 922/928, time remaining: 2s
+Rendered 923/928, time remaining: 2s
+Rendered 924/928, time remaining: 1s
+Rendered 925/928, time remaining: 1s
+Rendered 926/928, time remaining: 0s
+Rendered 926/928, time remaining: 0s
+Rendered 927/928, time remaining: 0s
+Stitched 692/928
+Stitched 701/928
+Stitched 718/928
+Stitched 736/928
+Stitched 742/928
+Stitched 928/928
+[aviso] voz gemini falhou: The read operation timed out
+Voz: edge (90 palavras)
+[trilha] trechos: epico 0.0-5.7s | tensao 5.7-11.6s | emocao 11.6-17.7s | energia 17.7-23.8s | inspira 23.8-30.9s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-05_1130_o-caos-dos-audios-de-pedido/video.mp4 (30.9s)
+
