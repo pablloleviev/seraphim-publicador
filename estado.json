@@ -1444,20 +1444,30 @@
       "ig_manual": false
     },
     "2026-11-02_1800_ia-faxina-inbox-foco": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-01T19:00:14.509978+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae8f9fa25a58c431d0508af",
+        "feito": "buffer"
       },
-      "msg_id": 1429
+      "msg_id": 1429,
+      "ig_id": "18095332790163874",
+      "publicado_em": "2026-11-02T21:00:41.639666+00:00",
+      "ig_manual": false
     },
     "2026-11-02_1830_checklist-preparacao-escala": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-01T19:30:06.527725+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae90111d0e732df448dbd31",
+        "feito": "buffer"
       },
-      "msg_id": 1435
+      "msg_id": 1435,
+      "ig_id": "18096165389168273",
+      "publicado_em": "2026-11-02T21:30:55.980965+00:00",
+      "ig_manual": false
     },
     "2026-11-02_2030_ia-previsao-vendas-estoque": {
       "status": "agendado",
@@ -1530,6 +1540,14 @@
         "via": "buffer"
       },
       "msg_id": 1488
+    },
+    "2026-11-03_2030_o-software-que-desaparece": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-02T21:30:27.936505+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1493
     }
   },
   "respondidos": {},
