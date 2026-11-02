@@ -1366,12 +1366,17 @@
       "ig_manual": false
     },
     "2026-11-02_0730_agentes-ia-computador-sozinho": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-01T08:30:10.330752+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae8665d796ca84be0cf4780",
+        "feito": "buffer"
       },
-      "msg_id": 1382
+      "msg_id": 1382,
+      "ig_id": "18126275218700733",
+      "publicado_em": "2026-11-02T10:30:52.600789+00:00",
+      "ig_manual": false
     },
     "2026-11-02_0830_agentes-ia-casos-uso": {
       "status": "agendado",
