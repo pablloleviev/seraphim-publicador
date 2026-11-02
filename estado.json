@@ -1418,12 +1418,17 @@
       "ig_manual": false
     },
     "2026-11-02_1300_gestao-caos-recibos-sumidos": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-01T14:00:14.411444+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae8b3d1a8c7e349215abd34",
+        "feito": "buffer"
       },
-      "msg_id": 1400
+      "msg_id": 1400,
+      "ig_id": "17933178960163728",
+      "publicado_em": "2026-11-02T16:01:20.105245+00:00",
+      "ig_manual": false
     },
     "2026-11-02_1500_escolha-sistema-momento-certo": {
       "status": "agendado",
@@ -1496,6 +1501,14 @@
         "via": "buffer"
       },
       "msg_id": 1465
+    },
+    "2026-11-03_1500_a-regra-da-tela-limpa": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-02T16:00:26.553121+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1475
     }
   },
   "respondidos": {},
