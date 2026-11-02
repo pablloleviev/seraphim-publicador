@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630363,
+  "telegram_offset": 183630372,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -1426,7 +1426,7 @@
       "msg_id": 1400
     },
     "2026-11-02_1500_escolha-sistema-momento-certo": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-01T16:00:15.059442+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1434,7 +1434,7 @@
       "msg_id": 1423
     },
     "2026-11-02_1800_ia-faxina-inbox-foco": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-01T19:00:14.509978+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1442,7 +1442,7 @@
       "msg_id": 1429
     },
     "2026-11-02_1830_checklist-preparacao-escala": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-01T19:30:06.527725+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1450,7 +1450,7 @@
       "msg_id": 1435
     },
     "2026-11-02_2030_ia-previsao-vendas-estoque": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-01T21:30:18.441894+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1458,7 +1458,7 @@
       "msg_id": 1439
     },
     "2026-11-03_0730_vidro-eterno-dados": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-02T08:30:06.311850+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1466,7 +1466,7 @@
       "msg_id": 1445
     },
     "2026-11-03_0830_o-gargalo-primeiro-contato": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-02T09:30:12.346477+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1474,7 +1474,7 @@
       "msg_id": 1451
     },
     "2026-11-03_1130_o-ex-funcionario-conectado": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-02T12:30:18.571223+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1482,7 +1482,7 @@
       "msg_id": 1461
     },
     "2026-11-03_1130_o-produto-fantasma-estoque": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-02T12:30:22.360967+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1490,7 +1490,7 @@
       "msg_id": 1463
     },
     "2026-11-03_1300_a-febre-do-vamos-marcar": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-02T14:00:17.743162+00:00",
       "tiktok": {
         "via": "buffer"
