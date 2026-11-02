@@ -1436,6 +1436,14 @@
         "via": "buffer"
       },
       "msg_id": 1439
+    },
+    "2026-11-03_0730_vidro-eterno-dados": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-02T08:30:06.311850+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1445
     }
   },
   "respondidos": {},
