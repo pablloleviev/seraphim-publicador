@@ -1496,12 +1496,17 @@
       "ig_manual": false
     },
     "2026-11-03_0830_o-gargalo-primeiro-contato": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-02T09:30:12.346477+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae9c5e6e9a91b5943cd3e03",
+        "feito": "buffer"
       },
-      "msg_id": 1451
+      "msg_id": 1451,
+      "ig_id": "17992075242116691",
+      "publicado_em": "2026-11-03T11:30:45.945045+00:00",
+      "ig_manual": false
     },
     "2026-11-03_1130_o-ex-funcionario-conectado": {
       "status": "agendado",
