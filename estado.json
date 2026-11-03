@@ -1553,6 +1553,14 @@
         "via": "buffer"
       },
       "msg_id": 1493
+    },
+    "2026-11-04_0730_ia-de-tato-digital": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-03T08:30:09.345303+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1499
     }
   },
   "respondidos": {},
