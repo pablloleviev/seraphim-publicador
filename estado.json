@@ -1483,12 +1483,17 @@
       "ig_manual": false
     },
     "2026-11-03_0730_vidro-eterno-dados": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-02T08:30:06.311850+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6ae9b7f7f0e18de9ba17eacb",
+        "feito": "buffer"
       },
-      "msg_id": 1445
+      "msg_id": 1445,
+      "ig_id": "18137754634677869",
+      "publicado_em": "2026-11-03T10:31:18.812311+00:00",
+      "ig_manual": false
     },
     "2026-11-03_0830_o-gargalo-primeiro-contato": {
       "status": "agendado",
