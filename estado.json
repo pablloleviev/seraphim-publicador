@@ -1579,6 +1579,22 @@
         "via": "buffer"
       },
       "msg_id": 1506
+    },
+    "2026-11-04_1130_custo-da-troca-contexto": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-03T12:30:22.603985+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1512
+    },
+    "2026-11-04_1130_perguntas-antes-de-contratar-dev": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-03T12:30:24.728356+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1519
     }
   },
   "respondidos": {},
