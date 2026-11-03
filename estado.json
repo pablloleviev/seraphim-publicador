@@ -1561,6 +1561,14 @@
         "via": "buffer"
       },
       "msg_id": 1499
+    },
+    "2026-11-04_0830_mapa-fluxo-trabalho": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-03T09:30:01.698429+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1506
     }
   },
   "respondidos": {},
