@@ -1647,12 +1647,17 @@
       "ig_manual": false
     },
     "2026-11-04_1300_o-cliente-que-esfriou": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-03T14:00:22.533963+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aeb56e872db9694c0478b86",
+        "feito": "buffer"
       },
-      "msg_id": 1521
+      "msg_id": 1521,
+      "ig_id": "17949474474072470",
+      "publicado_em": "2026-11-04T16:01:43.825149+00:00",
+      "ig_manual": false
     },
     "2026-11-04_1500_checklist-gestao-fragil": {
       "status": "agendado",
@@ -1725,6 +1730,14 @@
         "via": "buffer"
       },
       "msg_id": 1576
+    },
+    "2026-11-05_1500_seguranca-digital-pequena-empresa": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-04T16:00:04.562470+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1588
     }
   },
   "respondidos": {},
