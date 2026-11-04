@@ -1699,12 +1699,17 @@
       "ig_manual": false
     },
     "2026-11-04_2030_empresa-quebra-cabeca": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-03T22:59:05.499432+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aebc0349c5b05a1212e4564",
+        "feito": "buffer"
       },
-      "msg_id": 1545
+      "msg_id": 1545,
+      "ig_id": "18136850911678421",
+      "publicado_em": "2026-11-04T23:30:59.809577+00:00",
+      "ig_manual": false
     },
     "2026-11-05_0730_ia-no-proprio-dispositivo": {
       "status": "agendado",
