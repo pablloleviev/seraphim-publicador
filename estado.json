@@ -1660,12 +1660,17 @@
       "ig_manual": false
     },
     "2026-11-04_1500_checklist-gestao-fragil": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-03T16:07:15.788910+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aeb72deb60af5ca167c7258",
+        "feito": "buffer"
       },
-      "msg_id": 1532
+      "msg_id": 1532,
+      "ig_id": "18132537922812624",
+      "publicado_em": "2026-11-04T18:01:01.613947+00:00",
+      "ig_manual": false
     },
     "2026-11-04_1800_ia-preve-estoque": {
       "status": "agendado",
