@@ -1621,20 +1621,30 @@
       "ig_manual": false
     },
     "2026-11-04_1130_custo-da-troca-contexto": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-03T12:30:22.603985+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aeb41958e3da7e721494905",
+        "feito": "buffer"
       },
-      "msg_id": 1512
+      "msg_id": 1512,
+      "ig_id": "18113693519188001",
+      "publicado_em": "2026-11-04T14:30:44.806436+00:00",
+      "ig_manual": false
     },
     "2026-11-04_1130_perguntas-antes-de-contratar-dev": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-03T12:30:24.728356+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aeb41c2bf0b7294966a7bf7",
+        "feito": "buffer"
       },
-      "msg_id": 1519
+      "msg_id": 1519,
+      "ig_id": "17969934177194168",
+      "publicado_em": "2026-11-04T14:31:29.726084+00:00",
+      "ig_manual": false
     },
     "2026-11-04_1300_o-cliente-que-esfriou": {
       "status": "agendado",
@@ -1707,6 +1717,14 @@
         "via": "buffer"
       },
       "msg_id": 1574
+    },
+    "2026-11-05_1300_abas-abertas-computador-lento": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-04T14:00:09.637350+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1576
     }
   },
   "respondidos": {},
