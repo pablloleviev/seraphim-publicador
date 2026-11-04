@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630385,
+  "telegram_offset": 183630387,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -1595,12 +1595,17 @@
       "ig_manual": false
     },
     "2026-11-04_0730_ia-de-tato-digital": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-03T08:30:09.345303+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aeb09790eea02ace32eba49",
+        "feito": "buffer"
       },
-      "msg_id": 1499
+      "msg_id": 1499,
+      "ig_id": "18034428200676330",
+      "publicado_em": "2026-11-04T10:31:20.239922+00:00",
+      "ig_manual": false
     },
     "2026-11-04_0830_mapa-fluxo-trabalho": {
       "status": "agendado",
@@ -1667,7 +1672,7 @@
       "msg_id": 1545
     },
     "2026-11-05_0730_ia-no-proprio-dispositivo": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-04T08:30:53.074014+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1675,7 +1680,7 @@
       "msg_id": 1553
     },
     "2026-11-05_0830_ciclo-invisivel-da-interrupcao": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-04T09:30:09.699188+00:00",
       "tiktok": {
         "via": "buffer"
