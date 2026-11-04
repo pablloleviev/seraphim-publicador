@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630387,
+  "telegram_offset": 183630393,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -1713,7 +1713,7 @@
       "msg_id": 1561
     },
     "2026-11-05_1130_banco-de-dados-explicado-facil": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-04T12:30:13.774678+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1721,7 +1721,7 @@
       "msg_id": 1572
     },
     "2026-11-05_1130_o-caos-dos-audios-de-pedido": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-04T12:30:17.440114+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1729,7 +1729,7 @@
       "msg_id": 1574
     },
     "2026-11-05_1300_abas-abertas-computador-lento": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-04T14:00:09.637350+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1737,12 +1737,28 @@
       "msg_id": 1576
     },
     "2026-11-05_1500_seguranca-digital-pequena-empresa": {
-      "status": "aguardando",
+      "status": "pulado",
       "enviado_em": "2026-11-04T16:00:04.562470+00:00",
       "tiktok": {
         "via": "buffer"
       },
       "msg_id": 1588
+    },
+    "2026-11-05_1800_balcao-versus-oficina-recados": {
+      "status": "agendado",
+      "enviado_em": "2026-11-04T19:00:23.774218+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1594
+    },
+    "2026-11-05_1830_como-desenhar-um-procedimento-sem-manual": {
+      "status": "agendado",
+      "enviado_em": "2026-11-04T19:30:22.360418+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1602
     }
   },
   "respondidos": {},
