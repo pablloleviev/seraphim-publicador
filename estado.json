@@ -1691,6 +1691,22 @@
         "via": "buffer"
       },
       "msg_id": 1561
+    },
+    "2026-11-05_1130_banco-de-dados-explicado-facil": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-04T12:30:13.774678+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1572
+    },
+    "2026-11-05_1130_o-caos-dos-audios-de-pedido": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-04T12:30:17.440114+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1574
     }
   },
   "respondidos": {},
