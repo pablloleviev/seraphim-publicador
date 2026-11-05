@@ -1712,12 +1712,17 @@
       "ig_manual": false
     },
     "2026-11-05_0730_ia-no-proprio-dispositivo": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-04T08:30:53.074014+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aec5adde37b539a4c1c2e4c",
+        "feito": "buffer"
       },
-      "msg_id": 1553
+      "msg_id": 1553,
+      "ig_id": "17994225360073696",
+      "publicado_em": "2026-11-05T10:30:53.216241+00:00",
+      "ig_manual": false
     },
     "2026-11-05_0830_ciclo-invisivel-da-interrupcao": {
       "status": "agendado",
