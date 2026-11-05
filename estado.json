@@ -1764,12 +1764,17 @@
       "ig_manual": false
     },
     "2026-11-05_1300_abas-abertas-computador-lento": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-04T14:00:09.637350+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aeca83bf28015a0fe56daa8",
+        "feito": "buffer"
       },
-      "msg_id": 1576
+      "msg_id": 1576,
+      "ig_id": "18120606887000641",
+      "publicado_em": "2026-11-05T16:00:58.359339+00:00",
+      "ig_manual": false
     },
     "2026-11-05_1500_seguranca-digital-pequena-empresa": {
       "status": "pulado",
