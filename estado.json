@@ -1855,6 +1855,22 @@
         "via": "buffer"
       },
       "msg_id": 1646
+    },
+    "2026-11-06_1800_fim-dos-manuais-impressos": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-05T19:00:05.761374+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1648
+    },
+    "2026-11-06_1830_memoria-contextual-ia": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-05T19:30:05.407435+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1655
     }
   },
   "respondidos": {},
