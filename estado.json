@@ -1785,20 +1785,30 @@
       "msg_id": 1588
     },
     "2026-11-05_1800_balcao-versus-oficina-recados": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-04T19:00:23.774218+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aeceeaecf99e575e90c3466",
+        "feito": "buffer"
       },
-      "msg_id": 1594
+      "msg_id": 1594,
+      "ig_id": "17914732623551023",
+      "publicado_em": "2026-11-05T21:01:32.707711+00:00",
+      "ig_manual": false
     },
     "2026-11-05_1830_como-desenhar-um-procedimento-sem-manual": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-04T19:30:22.360418+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aecf58b67d1d04c53171fee",
+        "feito": "buffer"
       },
-      "msg_id": 1602
+      "msg_id": 1602,
+      "ig_id": "18113866559239901",
+      "publicado_em": "2026-11-05T21:30:50.923078+00:00",
+      "ig_manual": false
     },
     "2026-11-05_2030_computacao-espacial-sensores": {
       "status": "aguardando",
@@ -1871,6 +1881,14 @@
         "via": "buffer"
       },
       "msg_id": 1655
+    },
+    "2026-11-06_2030_sensores-manutencao-preventiva": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-05T21:30:06.166962+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1659
     }
   },
   "respondidos": {},
