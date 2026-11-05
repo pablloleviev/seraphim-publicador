@@ -1,0 +1,83 @@
+me remaining: 21s
+Rendered 687/739, time remaining: 21s
+Rendered 687/739, time remaining: 21s
+Rendered 688/739, time remaining: 21s
+Rendered 689/739, time remaining: 20s
+Rendered 690/739, time remaining: 20s
+Rendered 691/739, time remaining: 19s
+Rendered 691/739, time remaining: 19s
+Rendered 692/739, time remaining: 19s
+Rendered 693/739, time remaining: 19s
+Rendered 693/739, time remaining: 19s
+Rendered 694/739, time remaining: 18s
+Rendered 695/739, time remaining: 18s
+Rendered 696/739, time remaining: 17s
+Rendered 697/739, time remaining: 17s
+Rendered 697/739, time remaining: 17s
+Rendered 698/739, time remaining: 16s
+Rendered 699/739, time remaining: 16s
+Rendered 699/739, time remaining: 16s
+Rendered 700/739, time remaining: 16s
+Rendered 701/739, time remaining: 15s
+Rendered 702/739, time remaining: 15s
+Rendered 702/739, time remaining: 15s
+Rendered 703/739, time remaining: 14s
+Rendered 704/739, time remaining: 14s
+Rendered 705/739, time remaining: 14s
+Rendered 705/739, time remaining: 14s
+Rendered 706/739, time remaining: 13s
+Rendered 707/739, time remaining: 13s
+Rendered 708/739, time remaining: 12s
+Rendered 708/739, time remaining: 12s
+Rendered 709/739, time remaining: 12s
+Rendered 710/739, time remaining: 11s
+Rendered 711/739, time remaining: 11s
+Rendered 711/739, time remaining: 11s
+Rendered 712/739, time remaining: 11s
+Rendered 713/739, time remaining: 10s
+Rendered 713/739, time remaining: 10s
+Rendered 714/739, time remaining: 10s
+Rendered 715/739, time remaining: 9s
+Rendered 716/739, time remaining: 9s
+Rendered 716/739, time remaining: 9s
+Rendered 717/739, time remaining: 9s
+Rendered 718/739, time remaining: 8s
+Rendered 719/739, time remaining: 8s
+Rendered 720/739, time remaining: 7s
+Rendered 720/739, time remaining: 7s
+Rendered 721/739, time remaining: 7s
+Rendered 722/739, time remaining: 6s
+Rendered 723/739, time remaining: 6s
+Rendered 723/739, time remaining: 6s
+Rendered 724/739, time remaining: 6s
+Rendered 725/739, time remaining: 5s
+Rendered 726/739, time remaining: 5s
+Rendered 726/739, time remaining: 5s
+Rendered 727/739, time remaining: 4s
+Rendered 728/739, time remaining: 4s
+Rendered 728/739, time remaining: 4s
+Rendered 729/739, time remaining: 4s
+Rendered 730/739, time remaining: 3s
+Rendered 731/739, time remaining: 3s
+Rendered 732/739, time remaining: 2s
+Rendered 732/739, time remaining: 2s
+Rendered 733/739, time remaining: 2s
+Rendered 734/739, time remaining: 2s
+Rendered 734/739, time remaining: 2s
+Rendered 735/739, time remaining: 1s
+Rendered 736/739, time remaining: 1s
+Rendered 737/739, time remaining: 0s
+Rendered 738/739, time remaining: 0s
+Rendered 738/739, time remaining: 0s
+Stitched 542/739
+Stitched 553/739
+Stitched 570/739
+Stitched 587/739
+Stitched 591/739
+Stitched 739/739
+Voz: gemini (64 palavras)
+[trilha] trechos: epico 0.0-5.6s | emocao 5.6-24.6s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-06_1130_lixo-digital-servidor/video.mp4 (24.6s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
