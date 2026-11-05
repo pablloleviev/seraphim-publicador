@@ -1,0 +1,56 @@
+{
+ "nome": "lixo-digital-servidor",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-06 11:30",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "hard-drive",
+   "titulo": "Arquivos *esquecidos*",
+   "transicao": "luz",
+   "narracao": "Sua empresa pode estar pagando caro por armazenamento para guardar arquivos que ninguém abre há três anos."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O acúmulo *diário:*",
+   "itens": [
+    "Relatórios duplicados",
+    "Downloads pesados",
+    "Versões velhas de planilhas"
+   ],
+   "narracao": "Relatórios duplicados, vídeos brutos de reuniões e dezenas de versões do mesmo documento viram entulho digital."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Servidor lotado e lento",
+   "depois": "Organização por *regras*",
+   "camera": "empurra",
+   "narracao": "Limpar esse excesso deixa os sistemas mais rápidos e reduz custos operacionais."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Menos volume, mais *clareza*",
+   "narracao": "Organização digital não é capricho, é eficiência de trabalho."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Simplifique sua *operação*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Guarde este vídeo"
+   ],
+   "narracao": "Quer manter sua empresa leve e eficiente? Siga a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "estilo_legenda": "karaoke",
+ "paleta": "esmeralda",
+ "formato": "story",
+ "titulo": "O peso do lixo digital",
+ "numero": 2,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Você sabe quanto lixo digital sua equipe acumula no servidor toda semana? 📁 Arquivos velhos custam tempo e dinheiro.\n\n#produtividade #gestao #tecnologia #seraphimbr",
+ "legenda_tiktok": "O peso invisível que deixa os sistemas da sua empresa lentos.\n\n#produtividade #gestao #tecnologia #seraphimbr"
+}

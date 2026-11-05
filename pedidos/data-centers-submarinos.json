@@ -1,0 +1,54 @@
+{
+ "nome": "data-centers-submarinos",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-06 07:30",
+ "cenas": [
+  {
+   "tipo": "numero",
+   "numero": "100 METROS",
+   "rotulo": "ABAIXO DO MAR",
+   "titulo": "Servidores *submersos*",
+   "transicao": "zoom",
+   "narracao": "Cem metros abaixo da superfície da água, computadores de inteligência artificial já estão rodando no fundo do oceano."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "database",
+   "titulo": "Energia e *resfriamento*",
+   "camera": "afasta",
+   "narracao": "A água do mar resfria os módulos de forma natural. Isso reduz drasticamente o consumo de energia elétrica da infraestrutura."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Resfriamento tradicional caro",
+   "depois": "Troca de calor *natural*",
+   "transicao": "flash",
+   "narracao": "Enquanto um data center tradicional gasta fortunas com ar-condicionado, o oceano resolve o problema de graça."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "A infraestrutura *invisível*",
+   "narracao": "É a tecnologia mais avançada do mundo buscando eficiência na própria natureza."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Siga para acompanhar a *evolução*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Compartilhe o vídeo"
+   ],
+   "narracao": "Quer acompanhar o que está mudando no mundo da tecnologia? Segue a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "emocional",
+ "estilo_legenda": "palavra",
+ "paleta": "gelo",
+ "formato": "celular",
+ "titulo": "Servidores no fundo do oceano",
+ "numero": 1,
+ "funil": "topo",
+ "genero_voz": "feminina",
+ "legenda": "O oceano agora é a casa dos computadores que processam IA. 🌊 Uma solução impressionante para economizar energia e manter servidores frios.\n\n#tecnologia #ia #inovacao #seraphimbr",
+ "legenda_tiktok": "Servidores de IA rodando no fundo do oceano. Você já sabia dessa?\n\n#tecnologia #ia #inovacao #seraphimbr"
+}

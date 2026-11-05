@@ -2802,5 +2802,189 @@
    "cta"
   ],
   "paleta": "ouro"
+ },
+ {
+  "nome": "data-centers-submarinos",
+  "funil": "topo",
+  "titulo": "Servidores no fundo do oceano",
+  "formato": "notícia de IA explicada",
+  "dia": "2026-11-06",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "celular",
+  "capa": "Servidores no *fundo do mar*",
+  "capa_cena": "A futuristic glowing oceanic data capsule resting on the seabed surrounded by dark blue water, cinematic lighting",
+  "cenas": [
+   "numero",
+   "objeto",
+   "contraste",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "emocional",
+  "paleta": "gelo"
+ },
+ {
+  "nome": "lixo-digital-servidor",
+  "funil": "topo",
+  "titulo": "O peso do lixo digital",
+  "formato": "erro que você comete",
+  "dia": "2026-11-06",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "story",
+  "capa": "O peso do *lixo digital*",
+  "capa_cena": "A sleek digital storage drive surrounded by translucent glowing green data blocks on a dark metallic table",
+  "cenas": [
+   "objeto",
+   "lista",
+   "contraste",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "padrao-entrada-pedidos",
+  "funil": "meio",
+  "titulo": "Pedidos sem erro no balcão",
+  "formato": "lista prática",
+  "dia": "2026-11-06",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noir",
+  "capa": "Pedidos *sem erros* no balcão",
+  "capa_cena": "",
+  "cenas": [
+   "pessoa",
+   "lista",
+   "cartao",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "cobre"
+ },
+ {
+  "nome": "fim-dos-manuais-impressos",
+  "funil": "topo",
+  "titulo": "O fim dos manuais impressos",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-11-06",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "vhs",
+  "capa": "O fim dos *manuais de papel*",
+  "capa_cena": "A minimalist sleek smartphone scanning a subtle golden QR code etched on a dark matte product surface",
+  "cenas": [
+   "capa",
+   "objeto",
+   "lista",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "violeta"
+ },
+ {
+  "nome": "sensores-manutencao-preventiva",
+  "funil": "topo",
+  "titulo": "O sensor que ouve motores",
+  "formato": "curiosidade",
+  "dia": "2026-11-06",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "hud",
+  "capa": "O sensor que *prevê falhas*",
+  "capa_cena": "A metallic industrial sensor attached to a mechanical gear unit glowing with subtle silver light",
+  "cenas": [
+   "lista",
+   "objeto",
+   "contraste",
+   "frase",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "prata"
+ },
+ {
+  "nome": "centralizacao-decisoes-dono",
+  "titulo": "O perigo de centralizar tudo no dono",
+  "formato": "",
+  "dia": "2026-11-06",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "A single elevated glass armchair in a minimalist dark boardroom lit by a subtle ruby spotlight",
+  "slides": [
+   "capa_tipografica",
+   "abertura",
+   "topico",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "rubi"
+ },
+ {
+  "nome": "sinais-cobranca-automatica",
+  "titulo": "5 sinais de que você precisa automatizar cobranças",
+  "formato": "",
+  "dia": "2026-11-06",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "Five golden translucent cards arrayed neatly on a dark wooden surface with warm side lighting",
+  "slides": [
+   "capa_numero",
+   "verbete",
+   "verbete",
+   "lista",
+   "citacao",
+   "cta"
+  ],
+  "paleta": "ouro"
+ },
+ {
+  "nome": "autoflow-painel-oficina",
+  "titulo": "Como o AutoFlow organiza o pátio num único painel",
+  "formato": "",
+  "dia": "2026-11-06",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "An orange hex icon glowing over a clean interface schematic of an auto repair workflow",
+  "slides": [
+   "capa_objeto",
+   "topico",
+   "lista",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "autoflow"
+ },
+ {
+  "nome": "memoria-contextual-ia",
+  "titulo": "Como funciona a memória contextual das IAs",
+  "formato": "",
+  "dia": "2026-11-06",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "A 3D translucent glass brain glowing with soft violet light, showing layered connections inside",
+  "slides": [
+   "capa_tipografica",
+   "abertura",
+   "verbete",
+   "verbete",
+   "fecho",
+   "cta"
+  ],
+  "paleta": "violeta"
  }
 ]
