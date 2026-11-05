@@ -1738,20 +1738,30 @@
       "ig_manual": false
     },
     "2026-11-05_1130_banco-de-dados-explicado-facil": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-04T12:30:13.774678+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aec9311ee89f47b0fbfc811",
+        "feito": "buffer"
       },
-      "msg_id": 1572
+      "msg_id": 1572,
+      "ig_id": "18115077044464595",
+      "publicado_em": "2026-11-05T14:30:40.521622+00:00",
+      "ig_manual": false
     },
     "2026-11-05_1130_o-caos-dos-audios-de-pedido": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-04T12:30:17.440114+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aec9344fe41022b90d7ccdd",
+        "feito": "buffer"
       },
-      "msg_id": 1574
+      "msg_id": 1574,
+      "ig_id": "18358328437220303",
+      "publicado_em": "2026-11-05T14:31:31.616908+00:00",
+      "ig_manual": false
     },
     "2026-11-05_1300_abas-abertas-computador-lento": {
       "status": "agendado",
