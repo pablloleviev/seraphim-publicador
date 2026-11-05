@@ -1807,6 +1807,54 @@
         "via": "buffer"
       },
       "msg_id": 1607
+    },
+    "2026-11-06_1130_sinais-cobranca-automatica": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-05T18:07:15.679667+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1628
+    },
+    "2026-11-06_1500_autoflow-painel-oficina": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-05T18:07:18.473346+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1634
+    },
+    "2026-11-06_0830_centralizacao-decisoes-dono": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-05T18:07:47.549096+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1640
+    },
+    "2026-11-06_0730_data-centers-submarinos": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-05T18:15:45.504918+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1642
+    },
+    "2026-11-06_1130_lixo-digital-servidor": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-05T18:15:49.608168+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1644
+    },
+    "2026-11-06_1300_padrao-entrada-pedidos": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-05T18:15:52.756793+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1646
     }
   },
   "respondidos": {},
