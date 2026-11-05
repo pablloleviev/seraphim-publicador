@@ -1,0 +1,83 @@
+ 24s
+Rendered 758/808, time remaining: 24s
+Rendered 759/808, time remaining: 23s
+Rendered 759/808, time remaining: 23s
+Rendered 760/808, time remaining: 23s
+Rendered 761/808, time remaining: 22s
+Rendered 761/808, time remaining: 22s
+Rendered 762/808, time remaining: 22s
+Rendered 763/808, time remaining: 21s
+Rendered 764/808, time remaining: 21s
+Rendered 764/808, time remaining: 21s
+Rendered 765/808, time remaining: 20s
+Rendered 766/808, time remaining: 20s
+Rendered 766/808, time remaining: 20s
+Rendered 767/808, time remaining: 19s
+Rendered 768/808, time remaining: 19s
+Rendered 768/808, time remaining: 19s
+Rendered 769/808, time remaining: 18s
+Rendered 770/808, time remaining: 18s
+Rendered 771/808, time remaining: 17s
+Rendered 771/808, time remaining: 17s
+Rendered 772/808, time remaining: 17s
+Rendered 773/808, time remaining: 16s
+Rendered 773/808, time remaining: 16s
+Rendered 774/808, time remaining: 16s
+Rendered 775/808, time remaining: 16s
+Rendered 776/808, time remaining: 15s
+Rendered 776/808, time remaining: 15s
+Rendered 777/808, time remaining: 15s
+Rendered 778/808, time remaining: 14s
+Rendered 779/808, time remaining: 14s
+Rendered 779/808, time remaining: 14s
+Rendered 780/808, time remaining: 13s
+Rendered 781/808, time remaining: 13s
+Rendered 781/808, time remaining: 13s
+Rendered 782/808, time remaining: 12s
+Rendered 783/808, time remaining: 12s
+Rendered 784/808, time remaining: 11s
+Rendered 784/808, time remaining: 11s
+Rendered 785/808, time remaining: 11s
+Rendered 786/808, time remaining: 10s
+Rendered 786/808, time remaining: 10s
+Rendered 787/808, time remaining: 10s
+Rendered 788/808, time remaining: 9s
+Rendered 789/808, time remaining: 9s
+Rendered 789/808, time remaining: 9s
+Rendered 790/808, time remaining: 8s
+Rendered 791/808, time remaining: 8s
+Rendered 792/808, time remaining: 7s
+Rendered 792/808, time remaining: 7s
+Rendered 793/808, time remaining: 7s
+Rendered 794/808, time remaining: 6s
+Rendered 794/808, time remaining: 6s
+Rendered 795/808, time remaining: 6s
+Rendered 796/808, time remaining: 5s
+Rendered 796/808, time remaining: 5s
+Rendered 797/808, time remaining: 5s
+Rendered 798/808, time remaining: 4s
+Rendered 799/808, time remaining: 4s
+Rendered 800/808, time remaining: 3s
+Rendered 800/808, time remaining: 3s
+Rendered 801/808, time remaining: 3s
+Rendered 802/808, time remaining: 2s
+Rendered 802/808, time remaining: 2s
+Rendered 803/808, time remaining: 2s
+Rendered 804/808, time remaining: 1s
+Rendered 804/808, time remaining: 1s
+Rendered 805/808, time remaining: 1s
+Rendered 806/808, time remaining: 0s
+Rendered 807/808, time remaining: 0s
+Rendered 807/808, time remaining: 0s
+Stitched 597/808
+Stitched 608/808
+Stitched 624/808
+Stitched 638/808
+Stitched 646/808
+Stitched 808/808
+Voz: gemini (71 palavras)
+[trilha] trechos: epico 0.0-6.6s | emocao 6.6-26.9s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-06_2030_sensores-manutencao-preventiva/video.mp4 (26.9s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
