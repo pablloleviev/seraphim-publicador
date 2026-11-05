@@ -1,0 +1,82 @@
+dered 878/933, time remaining: 20s
+Rendered 878/933, time remaining: 20s
+Rendered 879/933, time remaining: 20s
+Rendered 880/933, time remaining: 20s
+Rendered 881/933, time remaining: 19s
+Rendered 882/933, time remaining: 19s
+Rendered 882/933, time remaining: 19s
+Rendered 883/933, time remaining: 18s
+Rendered 884/933, time remaining: 18s
+Rendered 885/933, time remaining: 18s
+Rendered 885/933, time remaining: 18s
+Rendered 886/933, time remaining: 17s
+Rendered 887/933, time remaining: 17s
+Rendered 888/933, time remaining: 17s
+Rendered 889/933, time remaining: 16s
+Rendered 889/933, time remaining: 16s
+Rendered 890/933, time remaining: 16s
+Rendered 891/933, time remaining: 15s
+Rendered 892/933, time remaining: 15s
+Rendered 892/933, time remaining: 15s
+Rendered 893/933, time remaining: 15s
+Rendered 894/933, time remaining: 14s
+Rendered 895/933, time remaining: 14s
+Rendered 896/933, time remaining: 13s
+Rendered 896/933, time remaining: 13s
+Rendered 897/933, time remaining: 13s
+Rendered 898/933, time remaining: 13s
+Rendered 899/933, time remaining: 12s
+Rendered 899/933, time remaining: 12s
+Rendered 900/933, time remaining: 12s
+Rendered 901/933, time remaining: 12s
+Rendered 902/933, time remaining: 11s
+Rendered 903/933, time remaining: 11s
+Rendered 903/933, time remaining: 11s
+Rendered 904/933, time remaining: 10s
+Rendered 905/933, time remaining: 10s
+Rendered 906/933, time remaining: 10s
+Rendered 907/933, time remaining: 9s
+Rendered 907/933, time remaining: 9s
+Rendered 908/933, time remaining: 9s
+Rendered 909/933, time remaining: 9s
+Rendered 910/933, time remaining: 8s
+Rendered 910/933, time remaining: 8s
+Rendered 911/933, time remaining: 8s
+Rendered 912/933, time remaining: 7s
+Rendered 913/933, time remaining: 7s
+Rendered 913/933, time remaining: 7s
+Rendered 914/933, time remaining: 7s
+Rendered 915/933, time remaining: 6s
+Rendered 916/933, time remaining: 6s
+Rendered 917/933, time remaining: 6s
+Rendered 917/933, time remaining: 6s
+Rendered 918/933, time remaining: 5s
+Rendered 919/933, time remaining: 5s
+Rendered 920/933, time remaining: 4s
+Rendered 921/933, time remaining: 4s
+Rendered 921/933, time remaining: 4s
+Rendered 922/933, time remaining: 4s
+Rendered 923/933, time remaining: 3s
+Rendered 924/933, time remaining: 3s
+Rendered 924/933, time remaining: 3s
+Rendered 925/933, time remaining: 3s
+Rendered 926/933, time remaining: 2s
+Rendered 927/933, time remaining: 2s
+Rendered 928/933, time remaining: 1s
+Rendered 928/933, time remaining: 1s
+Rendered 929/933, time remaining: 1s
+Rendered 930/933, time remaining: 1s
+Rendered 931/933, time remaining: 0s
+Rendered 931/933, time remaining: 0s
+Rendered 932/933, time remaining: 0s
+Stitched 696/933
+Stitched 714/933
+Stitched 735/933
+Stitched 746/933
+Stitched 933/933
+Voz: gemini (79 palavras)
+[trilha] trechos: epico 0.0-7.3s | emocao 7.3-31.1s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-06_0730_data-centers-submarinos/video.mp4 (31.1s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
