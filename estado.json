@@ -1956,6 +1956,46 @@
         "via": "buffer"
       },
       "msg_id": 1699
+    },
+    "2026-11-07_0700_ia-processamento-audio-nativa": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-06T18:15:12.099752+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1701
+    },
+    "2026-11-07_1400_memoria-humana-limites-gestao": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-06T18:17:27.592052+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1703
+    },
+    "2026-11-07_1000_mitos-automacao-atendimento": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-06T18:19:45.646205+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1705
+    },
+    "2026-11-07_1700_valor-historico-cliente": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-06T18:24:13.710394+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1707
+    },
+    "2026-11-07_0830_gargalo-agendamento-recepcao": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-06T18:43:44.728513+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1709
     }
   },
   "respondidos": {},
