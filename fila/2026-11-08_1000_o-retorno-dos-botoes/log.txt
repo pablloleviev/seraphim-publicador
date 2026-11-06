@@ -1,0 +1,77 @@
+me remaining: 22s
+Rendered 831/874, time remaining: 22s
+Rendered 831/874, time remaining: 22s
+Rendered 832/874, time remaining: 21s
+Rendered 833/874, time remaining: 21s
+Rendered 833/874, time remaining: 21s
+Rendered 834/874, time remaining: 20s
+Rendered 835/874, time remaining: 20s
+Rendered 835/874, time remaining: 20s
+Rendered 836/874, time remaining: 19s
+Rendered 837/874, time remaining: 19s
+Rendered 838/874, time remaining: 18s
+Rendered 839/874, time remaining: 17s
+Rendered 839/874, time remaining: 17s
+Rendered 840/874, time remaining: 17s
+Rendered 841/874, time remaining: 16s
+Rendered 841/874, time remaining: 16s
+Rendered 842/874, time remaining: 16s
+Rendered 843/874, time remaining: 15s
+Rendered 843/874, time remaining: 15s
+Rendered 844/874, time remaining: 15s
+Rendered 845/874, time remaining: 14s
+Rendered 846/874, time remaining: 14s
+Rendered 846/874, time remaining: 14s
+Rendered 847/874, time remaining: 13s
+Rendered 848/874, time remaining: 13s
+Rendered 849/874, time remaining: 12s
+Rendered 849/874, time remaining: 12s
+Rendered 850/874, time remaining: 12s
+Rendered 851/874, time remaining: 11s
+Rendered 851/874, time remaining: 11s
+Rendered 852/874, time remaining: 11s
+Rendered 853/874, time remaining: 10s
+Rendered 854/874, time remaining: 10s
+Rendered 854/874, time remaining: 10s
+Rendered 855/874, time remaining: 9s
+Rendered 856/874, time remaining: 9s
+Rendered 857/874, time remaining: 8s
+Rendered 857/874, time remaining: 8s
+Rendered 858/874, time remaining: 8s
+Rendered 859/874, time remaining: 7s
+Rendered 859/874, time remaining: 7s
+Rendered 860/874, time remaining: 7s
+Rendered 861/874, time remaining: 6s
+Rendered 861/874, time remaining: 6s
+Rendered 862/874, time remaining: 6s
+Rendered 863/874, time remaining: 5s
+Rendered 863/874, time remaining: 5s
+Rendered 864/874, time remaining: 5s
+Rendered 865/874, time remaining: 4s
+Rendered 866/874, time remaining: 4s
+Rendered 866/874, time remaining: 4s
+Rendered 867/874, time remaining: 3s
+Rendered 868/874, time remaining: 3s
+Rendered 869/874, time remaining: 2s
+Rendered 869/874, time remaining: 2s
+Rendered 870/874, time remaining: 2s
+Rendered 871/874, time remaining: 1s
+Rendered 871/874, time remaining: 1s
+Rendered 872/874, time remaining: 1s
+Rendered 873/874, time remaining: 0s
+Stitched 648/874
+Stitched 653/874
+Stitched 664/874
+Stitched 680/874
+Stitched 695/874
+Stitched 699/874
+Stitched 874/874
+[aviso] voz gemini falhou: gemini-2.5-pro-preview-tts: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+Voz: edge (86 palavras)
+[trilha] trechos: epico 0.0-5.0s | emocao 5.0-29.1s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-08_1000_o-retorno-dos-botoes/video.mp4 (29.1s)
+
