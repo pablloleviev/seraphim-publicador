@@ -1837,12 +1837,17 @@
       "ig_manual": false
     },
     "2026-11-06_1500_autoflow-painel-oficina": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-05T18:07:18.473346+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aee15c6229bf05daffed3e4",
+        "feito": "buffer"
       },
-      "msg_id": 1634
+      "msg_id": 1634,
+      "ig_id": "18110153660577816",
+      "publicado_em": "2026-11-06T18:00:37.309990+00:00",
+      "ig_manual": false
     },
     "2026-11-06_0830_centralizacao-decisoes-dono": {
       "status": "publicado",
@@ -1919,6 +1924,38 @@
         "via": "buffer"
       },
       "msg_id": 1659
+    },
+    "2026-11-07_0900_efeito-domino-atraso-proposta": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-06T17:59:28.894231+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1681
+    },
+    "2026-11-07_1300_sinais-equipe-sobrecarregada-admin": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-06T17:59:31.434225+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1688
+    },
+    "2026-11-07_1530_perguntas-antes-mudar-gestao-vendas": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-06T17:59:33.645156+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1695
+    },
+    "2026-11-07_1130_autoflow-fim-patio-cegas": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-06T18:10:40.706439+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1699
     }
   },
   "respondidos": {},
