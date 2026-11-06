@@ -1,0 +1,73 @@
+ time remaining: 19s
+Rendered 994/1037, time remaining: 19s
+Rendered 994/1037, time remaining: 19s
+Rendered 995/1037, time remaining: 18s
+Rendered 996/1037, time remaining: 18s
+Rendered 997/1037, time remaining: 18s
+Rendered 998/1037, time remaining: 17s
+Rendered 998/1037, time remaining: 17s
+Rendered 999/1037, time remaining: 17s
+Rendered 1000/1037, time remaining: 16s
+Rendered 1000/1037, time remaining: 16s
+Rendered 1001/1037, time remaining: 16s
+Rendered 1002/1037, time remaining: 15s
+Rendered 1003/1037, time remaining: 15s
+Rendered 1003/1037, time remaining: 15s
+Rendered 1004/1037, time remaining: 14s
+Rendered 1005/1037, time remaining: 14s
+Rendered 1006/1037, time remaining: 13s
+Rendered 1006/1037, time remaining: 13s
+Rendered 1007/1037, time remaining: 13s
+Rendered 1008/1037, time remaining: 13s
+Rendered 1009/1037, time remaining: 12s
+Rendered 1009/1037, time remaining: 12s
+Rendered 1010/1037, time remaining: 12s
+Rendered 1011/1037, time remaining: 11s
+Rendered 1012/1037, time remaining: 11s
+Rendered 1012/1037, time remaining: 11s
+Rendered 1013/1037, time remaining: 10s
+Rendered 1014/1037, time remaining: 10s
+Rendered 1014/1037, time remaining: 10s
+Rendered 1015/1037, time remaining: 9s
+Rendered 1016/1037, time remaining: 9s
+Rendered 1017/1037, time remaining: 8s
+Rendered 1018/1037, time remaining: 8s
+Rendered 1018/1037, time remaining: 8s
+Rendered 1019/1037, time remaining: 8s
+Rendered 1020/1037, time remaining: 7s
+Rendered 1020/1037, time remaining: 7s
+Rendered 1021/1037, time remaining: 7s
+Rendered 1022/1037, time remaining: 6s
+Rendered 1023/1037, time remaining: 6s
+Rendered 1024/1037, time remaining: 5s
+Rendered 1024/1037, time remaining: 5s
+Rendered 1025/1037, time remaining: 5s
+Rendered 1026/1037, time remaining: 4s
+Rendered 1027/1037, time remaining: 4s
+Rendered 1027/1037, time remaining: 4s
+Rendered 1028/1037, time remaining: 4s
+Rendered 1029/1037, time remaining: 3s
+Rendered 1030/1037, time remaining: 3s
+Rendered 1030/1037, time remaining: 3s
+Rendered 1031/1037, time remaining: 2s
+Rendered 1032/1037, time remaining: 2s
+Rendered 1033/1037, time remaining: 1s
+Rendered 1034/1037, time remaining: 1s
+Rendered 1034/1037, time remaining: 1s
+Rendered 1035/1037, time remaining: 0s
+Rendered 1036/1037, time remaining: 0s
+Stitched 777/1037
+Stitched 783/1037
+Stitched 798/1037
+Stitched 816/1037
+Stitched 830/1037
+Stitched 1037/1037
+[aviso] voz gemini falhou: gemini-2.5-pro-preview-tts: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Voz: edge (102 palavras)
+[trilha] trechos: epico 0.0-5.0s | emocao 5.0-34.5s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-07_2000_historia-agendamento-clinica-domingo/video.mp4 (34.5s)
+
