@@ -1,0 +1,79 @@
+maining: 28s
+Rendered 1279/1325, time remaining: 28s
+Rendered 1280/1325, time remaining: 27s
+Rendered 1280/1325, time remaining: 27s
+Rendered 1281/1325, time remaining: 26s
+Rendered 1282/1325, time remaining: 26s
+Rendered 1282/1325, time remaining: 26s
+Rendered 1283/1325, time remaining: 25s
+Rendered 1284/1325, time remaining: 25s
+Rendered 1284/1325, time remaining: 25s
+Rendered 1285/1325, time remaining: 24s
+Rendered 1286/1325, time remaining: 23s
+Rendered 1287/1325, time remaining: 23s
+Rendered 1287/1325, time remaining: 23s
+Rendered 1288/1325, time remaining: 22s
+Rendered 1289/1325, time remaining: 21s
+Rendered 1289/1325, time remaining: 21s
+Rendered 1290/1325, time remaining: 21s
+Rendered 1291/1325, time remaining: 20s
+Rendered 1291/1325, time remaining: 20s
+Rendered 1292/1325, time remaining: 20s
+Rendered 1293/1325, time remaining: 19s
+Rendered 1293/1325, time remaining: 19s
+Rendered 1294/1325, time remaining: 18s
+Rendered 1295/1325, time remaining: 18s
+Rendered 1296/1325, time remaining: 17s
+Rendered 1296/1325, time remaining: 17s
+Rendered 1297/1325, time remaining: 17s
+Rendered 1298/1325, time remaining: 16s
+Rendered 1299/1325, time remaining: 15s
+Rendered 1299/1325, time remaining: 15s
+Rendered 1300/1325, time remaining: 15s
+Rendered 1301/1325, time remaining: 14s
+Rendered 1301/1325, time remaining: 14s
+Rendered 1302/1325, time remaining: 13s
+Rendered 1303/1325, time remaining: 13s
+Rendered 1304/1325, time remaining: 12s
+Rendered 1304/1325, time remaining: 12s
+Rendered 1305/1325, time remaining: 12s
+Rendered 1306/1325, time remaining: 11s
+Rendered 1306/1325, time remaining: 11s
+Rendered 1307/1325, time remaining: 10s
+Rendered 1308/1325, time remaining: 10s
+Rendered 1308/1325, time remaining: 10s
+Rendered 1309/1325, time remaining: 9s
+Rendered 1310/1325, time remaining: 9s
+Rendered 1311/1325, time remaining: 8s
+Rendered 1311/1325, time remaining: 8s
+Rendered 1312/1325, time remaining: 7s
+Rendered 1313/1325, time remaining: 7s
+Rendered 1313/1325, time remaining: 7s
+Rendered 1314/1325, time remaining: 6s
+Rendered 1315/1325, time remaining: 6s
+Rendered 1315/1325, time remaining: 6s
+Rendered 1316/1325, time remaining: 5s
+Rendered 1317/1325, time remaining: 4s
+Rendered 1317/1325, time remaining: 4s
+Rendered 1318/1325, time remaining: 4s
+Rendered 1319/1325, time remaining: 3s
+Rendered 1320/1325, time remaining: 3s
+Rendered 1320/1325, time remaining: 3s
+Rendered 1321/1325, time remaining: 2s
+Rendered 1322/1325, time remaining: 1s
+Rendered 1322/1325, time remaining: 1s
+Rendered 1323/1325, time remaining: 1s
+Rendered 1324/1325, time remaining: 0s
+Rendered 1324/1325, time remaining: 0s
+Stitched 1010/1325
+Stitched 1022/1325
+Stitched 1034/1325
+Stitched 1049/1325
+Stitched 1060/1325
+Stitched 1325/1325
+Voz: gemini (124 palavras)
+[trilha] trechos: epico 0.0-6.3s | emocao 6.3-44.2s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-07_1130_autoflow-fim-patio-cegas/video.mp4 (44.2s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
