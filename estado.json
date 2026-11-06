@@ -1848,12 +1848,17 @@
       "msg_id": 1640
     },
     "2026-11-06_0730_data-centers-submarinos": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-05T18:15:45.504918+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aedac9007f945cca9594dd5",
+        "feito": "buffer"
       },
-      "msg_id": 1642
+      "msg_id": 1642,
+      "ig_id": "17918645610532359",
+      "publicado_em": "2026-11-06T10:31:43.352835+00:00",
+      "ig_manual": false
     },
     "2026-11-06_1130_lixo-digital-servidor": {
       "status": "agendado",
