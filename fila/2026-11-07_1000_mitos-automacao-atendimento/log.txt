@@ -1,0 +1,79 @@
+ed 1273/1320, time remaining: 24s
+Rendered 1274/1320, time remaining: 23s
+Rendered 1275/1320, time remaining: 23s
+Rendered 1275/1320, time remaining: 23s
+Rendered 1276/1320, time remaining: 22s
+Rendered 1277/1320, time remaining: 21s
+Rendered 1277/1320, time remaining: 21s
+Rendered 1278/1320, time remaining: 21s
+Rendered 1279/1320, time remaining: 20s
+Rendered 1279/1320, time remaining: 20s
+Rendered 1280/1320, time remaining: 20s
+Rendered 1281/1320, time remaining: 19s
+Rendered 1281/1320, time remaining: 19s
+Rendered 1282/1320, time remaining: 19s
+Rendered 1283/1320, time remaining: 18s
+Rendered 1284/1320, time remaining: 18s
+Rendered 1284/1320, time remaining: 18s
+Rendered 1285/1320, time remaining: 17s
+Rendered 1286/1320, time remaining: 17s
+Rendered 1286/1320, time remaining: 17s
+Rendered 1287/1320, time remaining: 16s
+Rendered 1288/1320, time remaining: 16s
+Rendered 1288/1320, time remaining: 16s
+Rendered 1289/1320, time remaining: 15s
+Rendered 1290/1320, time remaining: 15s
+Rendered 1291/1320, time remaining: 14s
+Rendered 1291/1320, time remaining: 14s
+Rendered 1292/1320, time remaining: 14s
+Rendered 1293/1320, time remaining: 13s
+Rendered 1293/1320, time remaining: 13s
+Rendered 1294/1320, time remaining: 13s
+Rendered 1295/1320, time remaining: 12s
+Rendered 1296/1320, time remaining: 12s
+Rendered 1296/1320, time remaining: 12s
+Rendered 1297/1320, time remaining: 11s
+Rendered 1298/1320, time remaining: 11s
+Rendered 1298/1320, time remaining: 11s
+Rendered 1299/1320, time remaining: 10s
+Rendered 1300/1320, time remaining: 10s
+Rendered 1300/1320, time remaining: 10s
+Rendered 1301/1320, time remaining: 9s
+Rendered 1302/1320, time remaining: 9s
+Rendered 1302/1320, time remaining: 9s
+Rendered 1303/1320, time remaining: 8s
+Rendered 1304/1320, time remaining: 8s
+Rendered 1305/1320, time remaining: 7s
+Rendered 1305/1320, time remaining: 7s
+Rendered 1306/1320, time remaining: 7s
+Rendered 1307/1320, time remaining: 6s
+Rendered 1308/1320, time remaining: 6s
+Rendered 1308/1320, time remaining: 6s
+Rendered 1309/1320, time remaining: 5s
+Rendered 1310/1320, time remaining: 5s
+Rendered 1310/1320, time remaining: 5s
+Rendered 1311/1320, time remaining: 4s
+Rendered 1312/1320, time remaining: 4s
+Rendered 1312/1320, time remaining: 4s
+Rendered 1313/1320, time remaining: 3s
+Rendered 1314/1320, time remaining: 3s
+Rendered 1315/1320, time remaining: 2s
+Rendered 1315/1320, time remaining: 2s
+Rendered 1316/1320, time remaining: 2s
+Rendered 1317/1320, time remaining: 1s
+Rendered 1317/1320, time remaining: 1s
+Rendered 1318/1320, time remaining: 1s
+Rendered 1319/1320, time remaining: 0s
+Stitched 1005/1320
+Stitched 1011/1320
+Stitched 1022/1320
+Stitched 1035/1320
+Stitched 1049/1320
+Stitched 1056/1320
+Stitched 1320/1320
+Voz: gemini (131 palavras)
+[trilha] trechos: epico 0.0-5.8s | emocao 5.8-44.0s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-07_1000_mitos-automacao-atendimento/video.mp4 (44.0s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
