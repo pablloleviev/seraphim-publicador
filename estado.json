@@ -1840,12 +1840,17 @@
       "msg_id": 1634
     },
     "2026-11-06_0830_centralizacao-decisoes-dono": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-05T18:07:47.549096+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aedba65c57409593f9d29fb",
+        "feito": "buffer"
       },
-      "msg_id": 1640
+      "msg_id": 1640,
+      "ig_id": "18025714718928274",
+      "publicado_em": "2026-11-06T11:30:44.771390+00:00",
+      "ig_manual": false
     },
     "2026-11-06_0730_data-centers-submarinos": {
       "status": "publicado",
