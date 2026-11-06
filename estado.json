@@ -2004,6 +2004,14 @@
         "via": "buffer"
       },
       "msg_id": 1711
+    },
+    "2026-11-07_1900_perigo-planilha-computador-unico": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-06T20:00:52.772902+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1718
     }
   },
   "respondidos": {},
