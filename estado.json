@@ -1902,20 +1902,30 @@
       "ig_manual": false
     },
     "2026-11-06_1800_fim-dos-manuais-impressos": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-05T19:00:05.761374+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aee4034004e4879a7158755",
+        "feito": "buffer"
       },
-      "msg_id": 1648
+      "msg_id": 1648,
+      "ig_id": "18443169973178819",
+      "publicado_em": "2026-11-06T21:01:39.210885+00:00",
+      "ig_manual": false
     },
     "2026-11-06_1830_memoria-contextual-ia": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-05T19:30:05.407435+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aee4701a7751de7c9abbe66",
+        "feito": "buffer"
       },
-      "msg_id": 1655
+      "msg_id": 1655,
+      "ig_id": "18119924507078132",
+      "publicado_em": "2026-11-06T21:30:40.535066+00:00",
+      "ig_manual": false
     },
     "2026-11-06_2030_sensores-manutencao-preventiva": {
       "status": "agendado",
