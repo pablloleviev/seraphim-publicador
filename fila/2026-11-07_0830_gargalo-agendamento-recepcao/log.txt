@@ -1,0 +1,80 @@
+s
+Rendered 967/1018, time remaining: 23s
+Rendered 968/1018, time remaining: 22s
+Rendered 969/1018, time remaining: 22s
+Rendered 969/1018, time remaining: 22s
+Rendered 970/1018, time remaining: 21s
+Rendered 971/1018, time remaining: 21s
+Rendered 972/1018, time remaining: 21s
+Rendered 972/1018, time remaining: 21s
+Rendered 973/1018, time remaining: 20s
+Rendered 974/1018, time remaining: 20s
+Rendered 975/1018, time remaining: 19s
+Rendered 976/1018, time remaining: 19s
+Rendered 976/1018, time remaining: 19s
+Rendered 977/1018, time remaining: 18s
+Rendered 978/1018, time remaining: 18s
+Rendered 978/1018, time remaining: 18s
+Rendered 979/1018, time remaining: 17s
+Rendered 980/1018, time remaining: 17s
+Rendered 981/1018, time remaining: 16s
+Rendered 981/1018, time remaining: 16s
+Rendered 982/1018, time remaining: 16s
+Rendered 983/1018, time remaining: 15s
+Rendered 984/1018, time remaining: 15s
+Rendered 984/1018, time remaining: 15s
+Rendered 985/1018, time remaining: 15s
+Rendered 986/1018, time remaining: 14s
+Rendered 987/1018, time remaining: 14s
+Rendered 987/1018, time remaining: 14s
+Rendered 988/1018, time remaining: 13s
+Rendered 989/1018, time remaining: 13s
+Rendered 990/1018, time remaining: 12s
+Rendered 990/1018, time remaining: 12s
+Rendered 991/1018, time remaining: 12s
+Rendered 992/1018, time remaining: 11s
+Rendered 993/1018, time remaining: 11s
+Rendered 994/1018, time remaining: 10s
+Rendered 994/1018, time remaining: 10s
+Rendered 995/1018, time remaining: 10s
+Rendered 996/1018, time remaining: 9s
+Rendered 996/1018, time remaining: 9s
+Rendered 997/1018, time remaining: 9s
+Rendered 998/1018, time remaining: 9s
+Rendered 999/1018, time remaining: 8s
+Rendered 1000/1018, time remaining: 8s
+Rendered 1000/1018, time remaining: 8s
+Rendered 1001/1018, time remaining: 7s
+Rendered 1002/1018, time remaining: 7s
+Rendered 1002/1018, time remaining: 7s
+Rendered 1003/1018, time remaining: 6s
+Rendered 1004/1018, time remaining: 6s
+Rendered 1005/1018, time remaining: 5s
+Rendered 1006/1018, time remaining: 5s
+Rendered 1006/1018, time remaining: 5s
+Rendered 1007/1018, time remaining: 4s
+Rendered 1008/1018, time remaining: 4s
+Rendered 1008/1018, time remaining: 4s
+Rendered 1009/1018, time remaining: 4s
+Rendered 1010/1018, time remaining: 3s
+Rendered 1011/1018, time remaining: 3s
+Rendered 1012/1018, time remaining: 2s
+Rendered 1012/1018, time remaining: 2s
+Rendered 1013/1018, time remaining: 2s
+Rendered 1014/1018, time remaining: 1s
+Rendered 1014/1018, time remaining: 1s
+Rendered 1015/1018, time remaining: 1s
+Rendered 1016/1018, time remaining: 0s
+Rendered 1017/1018, time remaining: 0s
+Rendered 1017/1018, time remaining: 0s
+Stitched 765/1018
+Stitched 782/1018
+Stitched 802/1018
+Stitched 814/1018
+Stitched 1018/1018
+Voz: gemini (102 palavras)
+[trilha] trechos: epico 0.0-6.1s | emocao 6.1-33.9s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-07_0830_gargalo-agendamento-recepcao/video.mp4 (33.9s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
