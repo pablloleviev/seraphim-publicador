@@ -1824,12 +1824,17 @@
       "ig_manual": false
     },
     "2026-11-06_1130_sinais-cobranca-automatica": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-05T18:07:15.679667+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aede499bbaeea3ce9f13f71",
+        "feito": "buffer"
       },
-      "msg_id": 1628
+      "msg_id": 1628,
+      "ig_id": "18027036941935544",
+      "publicado_em": "2026-11-06T14:30:48.888649+00:00",
+      "ig_manual": false
     },
     "2026-11-06_1500_autoflow-painel-oficina": {
       "status": "agendado",
@@ -1866,12 +1871,17 @@
       "ig_manual": false
     },
     "2026-11-06_1130_lixo-digital-servidor": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-05T18:15:49.608168+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aede4c8bbaeea3ce9f15a05",
+        "feito": "buffer"
       },
-      "msg_id": 1644
+      "msg_id": 1644,
+      "ig_id": "18646740268000228",
+      "publicado_em": "2026-11-06T14:31:35.638754+00:00",
+      "ig_manual": false
     },
     "2026-11-06_1300_padrao-entrada-pedidos": {
       "status": "agendado",
