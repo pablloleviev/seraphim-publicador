@@ -1996,6 +1996,14 @@
         "via": "buffer"
       },
       "msg_id": 1709
+    },
+    "2026-11-07_1830_rastreio-propostas-comerciais": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-06T19:30:21.625300+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1711
     }
   },
   "respondidos": {},
