@@ -1,0 +1,60 @@
+{
+ "nome": "estoque-lucro-escondido",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-08 08:30",
+ "cenas": [
+  {
+   "tipo": "numero",
+   "numero": "0",
+   "rotulo": "Divergências aceitáveis",
+   "titulo": "Onde está o seu *lucro?*",
+   "transicao": "corte",
+   "narracao": "Onde foi parar o lucro que deveria estar naquela prateleira? Estoque parado ou errado é dinheiro sumindo."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "3 passos para *ajustar:*",
+   "itens": [
+    "Mapeie as prateleiras",
+    "Zere a movimentação",
+    "Lance os dados na hora"
+   ],
+   "narracao": "Para resolver, você precisa mapear cada canto, parar as vendas por uma hora e lançar tudo direto na tela."
+  },
+  {
+   "tipo": "cartao",
+   "rotulo": "RESULTADO",
+   "numero": "100%",
+   "titulo": "Visibilidade total do *pátio*",
+   "narracao": "Só com o estoque batendo você consegue saber o que realmente precisa comprar e o que está encalhado."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Gestão é sobre *clareza.*",
+   "narracao": "Sem números reais, você está apenas chutando o resultado do seu mês."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Comenta *CONTAGEM* para o guia",
+   "cartoes": [
+    "Comenta CONTAGEM",
+    "Receba no direct"
+   ],
+   "narracao": "Comenta CONTAGEM aqui embaixo que eu te mando o checklist completo para organizar seu estoque."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "estilo_legenda": "karaoke",
+ "paleta": "gelo",
+ "formato": "celular",
+ "titulo": "Onde o lucro se esconde no estoque",
+ "numero": 17,
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Estoque errado é o ralo por onde seu lucro escorre. 📦 Quer organizar a casa? Comenta CONTAGEM para receber nosso checklist!\n\n#estoque #gestao #inventario #lucro #seraphimbr",
+ "legenda_tiktok": "Onde foi parar o lucro da sua prateleira? Veja como organizar seu estoque.\n\n#estoque #gestao #inventario #lucro #seraphimbr",
+ "palavra_chave": "CONTAGEM",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/estoque-lucro-escondido/",
+ "material_titulo": "Checklist: Inventário Sem Erros"
+}

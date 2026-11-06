@@ -1,0 +1,67 @@
+{
+ "nome": "historia-agendamento-clinica-domingo",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-07 20:00",
+ "cenas": [
+  {
+   "tipo": "cartao",
+   "titulo": "Domingo à noite",
+   "rotulo": "CENÁRIO",
+   "numero": "21:00",
+   "transicao": "dissolve",
+   "camera": "empurra",
+   "narracao": "Era domingo à noite quando um paciente tentou agendar uma consulta urgente para a manhã de segunda."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "A recepção estava *fechada.*",
+   "transicao": "corte",
+   "narracao": "A recepção física estava fechada, mas o sistema web da clínica continuava ativo e rodando sozinho."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Mensagem ignorada até segunda",
+   "depois": "Consulta *confirmada* na hora",
+   "transicao": "chicote",
+   "narracao": "Em vez de esperar até o dia seguinte, o paciente escolheu o horário livre e confirmou tudo sozinho."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O que aconteceu na *segunda:*",
+   "itens": [
+    "Paciente já na agenda",
+    "Ficha preenchida",
+    "Dono sem estresse"
+   ],
+   "transicao": "deslize",
+   "narracao": "Na segunda bem cedo, o primeiro horário já estava ocupado sem ninguém precisar atender o telefone no domingo."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "calendar-check",
+   "titulo": "Trabalho *autônomo*",
+   "transicao": "zoom",
+   "narracao": "Isso não é mágica. É colocar um fluxo de software simples a serviço da conveniência do seu cliente."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Sua empresa *funciona sempre*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Automação de processos"
+   ],
+   "narracao": "Quer que seu negócio atenda com eficiência mesmo fora do horário comercial? Segue a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "emocional",
+ "estilo_legenda": "sutil",
+ "paleta": "violeta",
+ "formato": "story",
+ "titulo": "Consultório no fim de semana",
+ "numero": 9,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Seu cliente tem hábitos e horários variados. Se a sua empresa só aceita novos agendamentos enquanto o balcão está aberto, você está perdendo espaço. 🏥\n\nSua empresa facilita a vida do cliente nos finais de semana?\n\nSiga a @seraphimbr_ para ver como automatizar processos de forma elegante.\n\n#automacao #agendamento #clinicas #seraphimbr",
+ "legenda_tiktok": "Veja como essa clínica garante agendamentos no domingo sem ninguém no balcão. Segue a Seraphim!\n\n#automacao #agendamento #clinicas #seraphimbr"
+}

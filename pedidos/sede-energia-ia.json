@@ -1,0 +1,71 @@
+{
+ "nome": "sede-energia-ia",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-07 12:30",
+ "cenas": [
+  {
+   "tipo": "moedas",
+   "titulo": "Processamento consome *energia real*",
+   "icones": [
+    "zap",
+    "cpu",
+    "flame",
+    "database"
+   ],
+   "transicao": "zoom",
+   "camera": "empurra",
+   "narracao": "Já parou para pensar quanta energia física é necessária para a Inteligência Artificial responder uma pergunta simples?"
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Servidores exigem *fontes contínuas.*",
+   "transicao": "corte",
+   "narracao": "Os novos centros de dados estão sendo construídos perto de usinas dedicadas para não sobrecarregar as cidades."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "cpu",
+   "titulo": "Chips de *alta potência*",
+   "transicao": "chicote",
+   "narracao": "Milhares de processadores trabalhando juntos geram calor e consomem eletricidade sem parar, dia e noite."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Nuvem abstrata e invisível",
+   "depois": "Infraestrutura *física gigante*",
+   "transicao": "mascara",
+   "narracao": "A nuvem não é algo solto no ar. Ela é feita de prédios imensos, cabos submarinos e muita engenharia pesada."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O impacto na *tecnologia:*",
+   "itens": [
+    "Busca por energia renovável",
+    "Refrigeração avançada",
+    "Chips muito mais eficientes"
+   ],
+   "transicao": "deslize",
+   "narracao": "Essa demanda está acelerando a busca por chips que gastam menos e fontes de energia limpa em todo o planeta."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Entenda o *mundo digital*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Tecnologia explicada"
+   ],
+   "narracao": "Gosta de entender o que acontece nos bastidores do mundo digital? Segue a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "estilo_legenda": "palavra",
+ "paleta": "esmeralda",
+ "formato": "terminal",
+ "titulo": "A sede de energia da IA",
+ "numero": 5,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Por trás de cada resposta rápida na tela existe uma estrutura gigante consumindo eletricidade e água de refrigeração. ⚡\n\nA tecnologia digital é profundamente ancorada no mundo físico.\n\nSiga a @seraphimbr_ para entender a tecnologia por trás do seu dia a dia.\n\n#tecnologia #inteligenciaartificial #infraestrutura #seraphimbr",
+ "legenda_tiktok": "A nuvem não é invisível: por trás da IA existem usinas e servidores físicos gigantes. Segue a gente!\n\n#tecnologia #inteligenciaartificial #infraestrutura #seraphimbr"
+}

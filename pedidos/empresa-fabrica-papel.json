@@ -1,0 +1,60 @@
+{
+ "nome": "empresa-fabrica-papel",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-08 21:30",
+ "cenas": [
+  {
+   "tipo": "capa",
+   "linha": "EFICIÊNCIA DIGITAL",
+   "titulo": "Sua empresa é uma<br>*fábrica de papel?*",
+   "icones": [
+    "file-text",
+    "sparkles",
+    "zap"
+   ],
+   "narracao": "Sua empresa ainda gasta horas transformando informações de papéis em dados no computador?"
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Digitar é um *custo invisível.*",
+   "narracao": "Cada minuto que sua equipe passa preenchendo formulários manuais é um minuto que ela não está atendendo um cliente."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "IA lê e *preenche sozinha*",
+   "icones": [
+    "scan",
+    "database",
+    "sparkles",
+    "check-circle-2"
+   ],
+   "narracao": "A inteligência artificial hoje já consegue ler documentos físicos e alimentar seu sistema sem nenhum erro humano."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "rocket",
+   "titulo": "Liberte sua *equipe*",
+   "narracao": "Eliminar o trabalho repetitivo é o primeiro passo para escalar o seu negócio de verdade."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Siga para *eliminar o papel*",
+   "cartoes": [
+    "Fim do repetitivo",
+    "Siga a Seraphim"
+   ],
+   "narracao": "Quer acabar com o trabalho chato na sua operação? Siga o perfil da Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "palavra",
+ "paleta": "violeta",
+ "formato": "navegador",
+ "titulo": "Sua empresa é uma fábrica de papel?",
+ "numero": 25,
+ "funil": "topo",
+ "genero_voz": "feminina",
+ "legenda": "O preenchimento manual de dados é um ralo de produtividade. 📄 Deixe a tecnologia fazer o trabalho mecânico por você. Siga a Seraphim!\n\n#produtividade #ia #automacao #gestao #seraphimbr",
+ "legenda_tiktok": "Sua empresa ainda perde tempo digitando papéis no computador? Veja como mudar isso.\n\n#produtividade #ia #automacao #gestao #seraphimbr"
+}

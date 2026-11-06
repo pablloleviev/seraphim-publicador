@@ -1,0 +1,56 @@
+{
+ "nome": "estoque-loja-bairro",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-08 20:00",
+ "cenas": [
+  {
+   "tipo": "lista",
+   "titulo": "O cenário do *caos:*",
+   "itens": [
+    "Prateleiras vazias",
+    "Compras duplicadas",
+    "Falta de previsão"
+   ],
+   "transicao": "zoom",
+   "narracao": "O estoque acabou e ninguém viu. De novo. Essa era a rotina de uma loja que perdia vendas por falta de controle."
+  },
+  {
+   "tipo": "cartao",
+   "rotulo": "MUDANÇA",
+   "numero": "AVISO",
+   "titulo": "Alerta de *estoque baixo*",
+   "narracao": "Implementamos um sistema simples que avisa o dono exatamente quando o produto atinge o nível crítico."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Comprar no susto e caro",
+   "depois": "Compra planejada e *barata*",
+   "narracao": "Em vez de correr atrás de fornecedor na última hora, agora ele compra com antecedência e melhores preços."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Tecnologia é para *qualquer tamanho.*",
+   "narracao": "Você não precisa de uma estrutura gigante para ter o controle do seu negócio na palma da mão."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Siga para ver a *prática*",
+   "cartoes": [
+    "Exemplos reais",
+    "Siga a Seraphim"
+   ],
+   "narracao": "A tecnologia certa simplifica a sua vida. Siga a Seraphim para ver como aplicar isso na sua empresa."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "estilo_legenda": "karaoke",
+ "paleta": "ouro",
+ "formato": "noir",
+ "titulo": "A loja que parou de perder vendas",
+ "numero": 24,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Controle de estoque não é luxo, é sobrevivência para o pequeno negócio. 🛒 Veja como a organização traz previsibilidade. Siga o perfil!\n\n#gestao #estoque #pequenosnegocios #varejo #seraphimbr",
+ "legenda_tiktok": "Como uma pequena loja parou de perder vendas organizando os alertas de estoque.\n\n#gestao #estoque #pequenosnegocios #varejo #seraphimbr"
+}

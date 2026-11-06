@@ -1,0 +1,75 @@
+{
+ "nome": "gargalo-agendamento-recepcao",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-07 08:30",
+ "cenas": [
+  {
+   "tipo": "contraste",
+   "antes": "Agenda cheia de buracos e confusão",
+   "depois": "Fluxo contínuo *sem atrasos*",
+   "transicao": "chicote",
+   "camera": "tremor",
+   "narracao": "Sua recepção passa o dia inteiro respondendo 'que horas você pode' e mesmo assim a agenda fica cheia de buracos?"
+  },
+  {
+   "tipo": "frase",
+   "titulo": "O problema é o *atrito para marcar.*",
+   "transicao": "corte",
+   "narracao": "Quase nunca é falta de interesse do cliente. O problema é a dificuldade que ele encontra para agendar."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "3 pontos de *vazamento:*",
+   "itens": [
+    "Demorar para responder",
+    "Não ter horários claros",
+    "Depender de confirmação manual"
+   ],
+   "transicao": "zoom",
+   "narracao": "Quando o cliente precisa mandar três mensagens para achar um horário livre, ele acaba buscando outro lugar."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "Resposta imediata",
+   "rotulo": "FLUXO",
+   "numero": "1 MIN",
+   "transicao": "deslize",
+   "narracao": "Um fluxo simples de respostas automáticas organiza as opções antes da pessoa desistir de você."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Tempo da equipe *preservado*",
+   "icones": [
+    "calendar-check",
+    "clock",
+    "users",
+    "check"
+   ],
+   "transicao": "luz",
+   "narracao": "Sua equipe para de fazer papel de secretária de mensagens e foca no atendimento presencial de qualidade."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Organize seu *atendimento*",
+   "cartoes": [
+    "Comenta DIAGNOSTICO",
+    "Receba o checklist"
+   ],
+   "narracao": "Quer mapear onde sua recepção está travando? Comenta DIAGNOSTICO que eu te mando o checklist."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "estilo_legenda": "karaoke",
+ "paleta": "rubi",
+ "formato": "documentario",
+ "titulo": "Filtro de agendamentos perdidos",
+ "numero": 2,
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Cada minuto sem resposta no WhatsApp é uma chance a mais para o cliente procurar o concorrente. 📲\n\nVocê sente que sua equipe passa o dia apagando incêndio no atendimento?\n\nComenta DIAGNOSTICO aqui no post que eu te mando um material prático no direct para mapear esses gargalos.\n\n#atendimento #gestaodenegocios #agendamento #seraphimbr",
+ "legenda_tiktok": "Sua recepção perde clientes na demora de responder? Comenta DIAGNOSTICO para receber nosso checklist.\n\n#atendimento #gestaodenegocios #agendamento #seraphimbr",
+ "palavra_chave": "DIAGNOSTICO",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/gargalo-agendamento-recepcao/",
+ "material_titulo": "Checklist de Gargalos no Atendimento"
+}

@@ -1,0 +1,61 @@
+{
+ "nome": "autoflow-gestao-oficina",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-08 11:30",
+ "cenas": [
+  {
+   "tipo": "capa",
+   "linha": "OFICINA PROFISSIONAL",
+   "titulo": "Sua oficina num<br>*único painel*",
+   "icones": [
+    "car",
+    "wrench",
+    "sparkles"
+   ],
+   "narracao": "Sua oficina ainda depende de papelada na recepção e gritos no pátio para saber o que está pronto?"
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Cadernos e quadros riscados",
+   "depois": "Gestão digital *organizada*",
+   "transicao": "flash",
+   "narracao": "Antes era o caos de não achar o histórico do cliente. Com o AutoFlow, tudo fica centralizado."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "clipboard-list",
+   "titulo": "Abandone de vez o *caderno*",
+   "narracao": "O AutoFlow é o sistema de gestão feito para oficinas que querem profissionalismo e controle total."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O que você ganha com o *AutoFlow:*",
+   "itens": [
+    "Fim das informações perdidas",
+    "Pátio organizado visualmente",
+    "Histórico completo por placa"
+   ],
+   "narracao": "Você organiza a rotina, sai da dependência do papel e tem a visão clara de cada veículo no seu pátio."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Conheça o *AutoFlow* na bio",
+   "cartoes": [
+    "Link na Bio",
+    "Siga a Seraphim"
+   ],
+   "narracao": "Sua oficina merece uma gestão mais simples e profissional. Clique no link da bio e conheça o AutoFlow."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "palavra",
+ "paleta": "autoflow",
+ "formato": "noticia",
+ "titulo": "Gestão de oficina sem caos",
+ "numero": 19,
+ "funil": "fundo",
+ "genero_voz": "feminina",
+ "legenda": "Chega de perder tempo procurando anotações em cadernos sujos de graxa. 🚘 O AutoFlow organiza sua oficina em um só lugar. Link na bio!\n\n#autoflow #oficinamecanica #gestaooficina #mecanico #seraphimbr",
+ "legenda_tiktok": "Sua oficina mecânica organizada em um só painel digital. Conheça o AutoFlow.\n\n#autoflow #oficinamecanica #gestaooficina #mecanico #seraphimbr"
+}

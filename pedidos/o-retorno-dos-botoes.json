@@ -1,0 +1,56 @@
+{
+ "nome": "o-retorno-dos-botoes",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-08 10:00",
+ "cenas": [
+  {
+   "tipo": "capa",
+   "linha": "DESIGN E SEGURANÇA",
+   "titulo": "Por que os *botões físicos*<br>estão voltando?",
+   "icones": [
+    "mouse-pointer-click",
+    "sparkles",
+    "shield-check"
+   ],
+   "narracao": "Por que as telas gigantes em carros e aviões estão perdendo espaço para os botões físicos de novo?"
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Menus infinitos no touch",
+   "depois": "Resposta tátil *imediata*",
+   "transicao": "flash",
+   "narracao": "Menus escondidos em telas sensíveis ao toque causam distração e erros em momentos críticos."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "O tato é mais rápido que o *olhar.*",
+   "narracao": "A ciência provou que o cérebro prefere a resposta física. Você sabe onde o botão está sem precisar desviar o olho."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "settings",
+   "titulo": "Tecnologia a serviço da *atenção*",
+   "narracao": "A tecnologia eficiente é aquela que não exige toda a sua atenção para uma tarefa simples."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Siga para ver *tecnologia real*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Acompanhe as tendências"
+   ],
+   "narracao": "Gostou dessa curiosidade? Siga a Seraphim para entender como a tecnologia molda o nosso dia a dia."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "estilo_legenda": "palavra",
+ "paleta": "cobre",
+ "formato": "eletrico",
+ "titulo": "O retorno dos botões físicos",
+ "numero": 18,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Nem tudo que é moderno precisa ser touch. 🎛️ O retorno dos botões físicos mostra que a ergonomia vence a moda. Siga para mais insights!\n\n#design #tecnologia #ergonomia #inovacao #seraphimbr",
+ "legenda_tiktok": "Por que os carros de luxo estão voltando a usar botões físicos? Descubra o motivo.\n\n#design #tecnologia #ergonomia #inovacao #seraphimbr"
+}

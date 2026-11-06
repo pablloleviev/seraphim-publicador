@@ -1,0 +1,55 @@
+{
+ "nome": "armazenamento-dna",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-08 17:00",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "sparkles",
+   "titulo": "Toda a internet numa<br>*caixa de sapatos*",
+   "transicao": "desfoque",
+   "narracao": "E se toda a informação digital do mundo pudesse ser guardada dentro de uma pequena caixa de sapatos?"
+  },
+  {
+   "tipo": "frase",
+   "titulo": "O armazenamento em *DNA*",
+   "narracao": "Cientistas já conseguem converter arquivos binários em sequências genéticas para guardar dados por milhares de anos."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "A natureza é o melhor *disco rígido.*",
+   "narracao": "Diferente de HDs que quebram, o DNA é ultra compacto e não precisa de energia para manter a informação salva."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "O fim dos *data centers* gigantes",
+   "icones": [
+    "database",
+    "sparkles",
+    "sparkles",
+    "sparkles"
+   ],
+   "narracao": "Isso pode acabar com o custo absurdo de energia dos grandes servidores e mudar como guardamos nossa história."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Siga para ver o *amanhã*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Futuro da tecnologia"
+   ],
+   "narracao": "O futuro do armazenamento é biológico. Siga a Seraphim para acompanhar as maiores inovações tecnológicas."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "estilo_legenda": "sutil",
+ "paleta": "prata",
+ "formato": "story",
+ "titulo": "Dados guardados em DNA",
+ "numero": 22,
+ "funil": "topo",
+ "genero_voz": "feminina",
+ "legenda": "O DNA pode ser o disco rígido do futuro. 🧬 Imagine guardar dados por milênios sem gastar um watt de energia. Siga para mais curiosidades!\n\n#inovacao #dna #tecnologia #futuro #seraphimbr",
+ "legenda_tiktok": "Toda a internet do mundo caberia em uma caixa de sapatos? Conheça o armazenamento em DNA.\n\n#inovacao #dna #tecnologia #futuro #seraphimbr"
+}

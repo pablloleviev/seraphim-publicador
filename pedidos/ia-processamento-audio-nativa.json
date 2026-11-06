@@ -1,0 +1,73 @@
+{
+ "nome": "ia-processamento-audio-nativa",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-07 07:00",
+ "cenas": [
+  {
+   "tipo": "frase",
+   "titulo": "A IA parou de tentar *ler* o que você diz.",
+   "transicao": "zoom",
+   "camera": "empurra",
+   "narracao": "A Inteligência Artificial parou de tentar ler o que você diz e começou a ouvir de verdade."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "Sem etapa intermediária",
+   "rotulo": "VELOCIDADE",
+   "numero": "DIRETO",
+   "transicao": "chicote",
+   "narracao": "Antes, o sistema precisava transformar seu áudio em texto escrito para só depois processar o que você queria."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "mic",
+   "titulo": "Tom e *intenção*",
+   "transicao": "flash",
+   "narracao": "Agora, o som entra direto na rede neural. Ela capta o seu tom de voz, as pausas e até a ironia na hora."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O que isso *muda:*",
+   "itens": [
+    "Respostas sem nenhum atraso",
+    "Entendimento de emoções",
+    "Conversas muito naturais"
+   ],
+   "transicao": "corte",
+   "narracao": "As respostas ficam instantâneas e a máquina entende quando você hesita ou troca de assunto no meio da frase."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Transcrição lenta palavra por palavra",
+   "depois": "Compreensão de *áudio nativa*",
+   "transicao": "deslize",
+   "narracao": "É a diferença entre um tradutor lendo um livro e alguém conversando com você no mesmo ambiente."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "A tecnologia está *ficando invisível.*",
+   "transicao": "dissolve",
+   "narracao": "O computador deixa de parecer uma máquina e passa a agir como um ouvinte atento ao que você precisa."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Acompanhe a *evolução*",
+   "cartoes": [
+    "Siga a Seraphim",
+    "Tecnologia na prática"
+   ],
+   "narracao": "Quer acompanhar o que realmente muda no mundo da tecnologia sem complicação? Segue a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "emocional",
+ "estilo_legenda": "palavra",
+ "paleta": "violeta",
+ "formato": "noticia",
+ "titulo": "O fim da tradução de áudio para texto",
+ "numero": 1,
+ "funil": "topo",
+ "genero_voz": "feminina",
+ "legenda": "A forma como os computadores escutam mudou completamente. Áudios agora são processados diretamente como som, sem passar por texto antes. 🎙️\n\nQuer ficar por dentro das transformações da tecnologia no dia a dia?\n\nSiga a @seraphimbr_ para ver a evolução da tecnologia sem jargão.\n\n#inteligenciaartificial #tecnologia #inovacao #seraphimbr",
+ "legenda_tiktok": "A IA agora entende áudio direto, sem precisar virar texto antes. Segue para acompanhar!\n\n#inteligenciaartificial #tecnologia #inovacao #seraphimbr"
+}
