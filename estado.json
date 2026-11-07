@@ -2032,12 +2032,17 @@
       "ig_manual": false
     },
     "2026-11-07_1700_valor-historico-cliente": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-06T18:24:13.710394+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef8379562f2e6de97a5d03",
+        "feito": "buffer"
       },
-      "msg_id": 1707
+      "msg_id": 1707,
+      "ig_id": "17981308314132330",
+      "publicado_em": "2026-11-07T20:00:56.895629+00:00",
+      "ig_manual": false
     },
     "2026-11-07_0830_gargalo-agendamento-recepcao": {
       "status": "publicado",
@@ -2192,6 +2197,14 @@
         "via": "buffer"
       },
       "msg_id": 1800
+    },
+    "2026-11-08_1900_custo-software-legado": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T20:00:01.756296+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1806
     }
   },
   "respondidos": {},
