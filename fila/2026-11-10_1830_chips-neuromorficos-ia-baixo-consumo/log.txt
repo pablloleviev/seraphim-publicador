@@ -1,0 +1,81 @@
+emaining: 24s
+Rendered 888/940, time remaining: 23s
+Rendered 889/940, time remaining: 23s
+Rendered 889/940, time remaining: 23s
+Rendered 890/940, time remaining: 22s
+Rendered 891/940, time remaining: 22s
+Rendered 892/940, time remaining: 21s
+Rendered 892/940, time remaining: 21s
+Rendered 893/940, time remaining: 21s
+Rendered 894/940, time remaining: 20s
+Rendered 895/940, time remaining: 20s
+Rendered 895/940, time remaining: 20s
+Rendered 896/940, time remaining: 19s
+Rendered 897/940, time remaining: 19s
+Rendered 898/940, time remaining: 19s
+Rendered 899/940, time remaining: 18s
+Rendered 899/940, time remaining: 18s
+Rendered 900/940, time remaining: 18s
+Rendered 901/940, time remaining: 17s
+Rendered 902/940, time remaining: 17s
+Rendered 902/940, time remaining: 17s
+Rendered 903/940, time remaining: 16s
+Rendered 904/940, time remaining: 16s
+Rendered 905/940, time remaining: 15s
+Rendered 905/940, time remaining: 15s
+Rendered 906/940, time remaining: 15s
+Rendered 907/940, time remaining: 14s
+Rendered 908/940, time remaining: 14s
+Rendered 908/940, time remaining: 14s
+Rendered 909/940, time remaining: 14s
+Rendered 910/940, time remaining: 13s
+Rendered 910/940, time remaining: 13s
+Rendered 911/940, time remaining: 13s
+Rendered 912/940, time remaining: 12s
+Rendered 913/940, time remaining: 12s
+Rendered 914/940, time remaining: 11s
+Rendered 914/940, time remaining: 11s
+Rendered 915/940, time remaining: 11s
+Rendered 916/940, time remaining: 10s
+Rendered 917/940, time remaining: 10s
+Rendered 918/940, time remaining: 9s
+Rendered 918/940, time remaining: 9s
+Rendered 919/940, time remaining: 9s
+Rendered 920/940, time remaining: 9s
+Rendered 920/940, time remaining: 9s
+Rendered 921/940, time remaining: 8s
+Rendered 922/940, time remaining: 8s
+Rendered 923/940, time remaining: 7s
+Rendered 924/940, time remaining: 7s
+Rendered 924/940, time remaining: 7s
+Rendered 925/940, time remaining: 6s
+Rendered 926/940, time remaining: 6s
+Rendered 926/940, time remaining: 6s
+Rendered 927/940, time remaining: 5s
+Rendered 928/940, time remaining: 5s
+Rendered 929/940, time remaining: 4s
+Rendered 930/940, time remaining: 4s
+Rendered 930/940, time remaining: 4s
+Rendered 931/940, time remaining: 4s
+Rendered 932/940, time remaining: 3s
+Rendered 932/940, time remaining: 3s
+Rendered 933/940, time remaining: 3s
+Rendered 934/940, time remaining: 2s
+Rendered 935/940, time remaining: 2s
+Rendered 936/940, time remaining: 1s
+Rendered 936/940, time remaining: 1s
+Rendered 937/940, time remaining: 1s
+Rendered 938/940, time remaining: 0s
+Rendered 939/940, time remaining: 0s
+Stitched 700/940
+Stitched 703/940
+Stitched 721/940
+Stitched 739/940
+Stitched 752/940
+Stitched 940/940
+Voz: gemini (67 palavras)
+[trilha] trechos: epico 0.0-5.2s | tensao 5.2-11.1s | emocao 11.1-18.0s | energia 18.0-24.8s | inspira 24.8-31.3s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-10_1830_chips-neuromorficos-ia-baixo-consumo/video.mp4 (31.3s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
