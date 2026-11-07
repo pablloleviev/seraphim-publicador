@@ -1967,12 +1967,17 @@
       "ig_manual": false
     },
     "2026-11-07_1530_perguntas-antes-mudar-gestao-vendas": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-06T17:59:33.645156+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef6e59562f2e6de974181f",
+        "feito": "buffer"
       },
-      "msg_id": 1695
+      "msg_id": 1695,
+      "ig_id": "17888997711506044",
+      "publicado_em": "2026-11-07T18:30:48.869750+00:00",
+      "ig_manual": false
     },
     "2026-11-07_1130_autoflow-fim-patio-cegas": {
       "status": "publicado",
