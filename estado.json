@@ -2067,6 +2067,14 @@
         "via": "buffer"
       },
       "msg_id": 1744
+    },
+    "2026-11-07_2000_historia-agendamento-clinica-domingo": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T13:00:05.088955+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1746
     }
   },
   "respondidos": {},
