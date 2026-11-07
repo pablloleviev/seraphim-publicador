@@ -2001,12 +2001,17 @@
       "ig_manual": false
     },
     "2026-11-07_1400_memoria-humana-limites-gestao": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-06T18:17:27.592052+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef59719214322f68054e79",
+        "feito": "buffer"
       },
-      "msg_id": 1703
+      "msg_id": 1703,
+      "ig_id": "18085525877356175",
+      "publicado_em": "2026-11-07T17:01:36.593936+00:00",
+      "ig_manual": false
     },
     "2026-11-07_1000_mitos-automacao-atendimento": {
       "status": "publicado",
@@ -2158,6 +2163,14 @@
         "via": "buffer"
       },
       "msg_id": 1774
+    },
+    "2026-11-08_1530_checklist-empresa-digital": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T16:30:26.812639+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1792
     }
   },
   "respondidos": {},
