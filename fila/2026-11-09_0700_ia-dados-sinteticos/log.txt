@@ -1,0 +1,83 @@
+ time remaining: 21s
+Rendered 830/880, time remaining: 20s
+Rendered 830/880, time remaining: 20s
+Rendered 831/880, time remaining: 20s
+Rendered 832/880, time remaining: 19s
+Rendered 833/880, time remaining: 19s
+Rendered 833/880, time remaining: 19s
+Rendered 834/880, time remaining: 19s
+Rendered 835/880, time remaining: 18s
+Rendered 835/880, time remaining: 18s
+Rendered 836/880, time remaining: 18s
+Rendered 837/880, time remaining: 17s
+Rendered 837/880, time remaining: 17s
+Rendered 838/880, time remaining: 17s
+Rendered 839/880, time remaining: 16s
+Rendered 840/880, time remaining: 16s
+Rendered 840/880, time remaining: 16s
+Rendered 841/880, time remaining: 16s
+Rendered 842/880, time remaining: 15s
+Rendered 843/880, time remaining: 15s
+Rendered 843/880, time remaining: 15s
+Rendered 844/880, time remaining: 14s
+Rendered 845/880, time remaining: 14s
+Rendered 846/880, time remaining: 14s
+Rendered 846/880, time remaining: 14s
+Rendered 847/880, time remaining: 13s
+Rendered 848/880, time remaining: 13s
+Rendered 848/880, time remaining: 13s
+Rendered 849/880, time remaining: 12s
+Rendered 850/880, time remaining: 12s
+Rendered 850/880, time remaining: 12s
+Rendered 851/880, time remaining: 11s
+Rendered 852/880, time remaining: 11s
+Rendered 852/880, time remaining: 11s
+Rendered 853/880, time remaining: 11s
+Rendered 854/880, time remaining: 10s
+Rendered 855/880, time remaining: 10s
+Rendered 855/880, time remaining: 10s
+Rendered 856/880, time remaining: 9s
+Rendered 857/880, time remaining: 9s
+Rendered 858/880, time remaining: 9s
+Rendered 858/880, time remaining: 9s
+Rendered 859/880, time remaining: 8s
+Rendered 860/880, time remaining: 8s
+Rendered 860/880, time remaining: 8s
+Rendered 861/880, time remaining: 7s
+Rendered 862/880, time remaining: 7s
+Rendered 863/880, time remaining: 7s
+Rendered 863/880, time remaining: 7s
+Rendered 864/880, time remaining: 6s
+Rendered 865/880, time remaining: 6s
+Rendered 866/880, time remaining: 5s
+Rendered 866/880, time remaining: 5s
+Rendered 867/880, time remaining: 5s
+Rendered 868/880, time remaining: 4s
+Rendered 869/880, time remaining: 4s
+Rendered 869/880, time remaining: 4s
+Rendered 870/880, time remaining: 4s
+Rendered 871/880, time remaining: 3s
+Rendered 871/880, time remaining: 3s
+Rendered 872/880, time remaining: 3s
+Rendered 873/880, time remaining: 2s
+Rendered 874/880, time remaining: 2s
+Rendered 874/880, time remaining: 2s
+Rendered 875/880, time remaining: 2s
+Rendered 876/880, time remaining: 1s
+Rendered 876/880, time remaining: 1s
+Rendered 877/880, time remaining: 1s
+Rendered 878/880, time remaining: 0s
+Rendered 878/880, time remaining: 0s
+Rendered 879/880, time remaining: 0s
+Stitched 654/880
+Stitched 663/880
+Stitched 683/880
+Stitched 700/880
+Stitched 704/880
+Stitched 880/880
+Voz: gemini (76 palavras)
+[trilha] trechos: epico 0.0-5.9s | emocao 5.9-29.3s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-09_0700_ia-dados-sinteticos/video.mp4 (29.3s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
