@@ -2083,6 +2083,22 @@
         "via": "buffer"
       },
       "msg_id": 1748
+    },
+    "2026-11-08_1300_pipeline-de-dados-explicado": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T14:00:26.205436+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1754
+    },
+    "2026-11-07_2130_risco-whatsapp-pessoal-servidor": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T14:30:11.790908+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1756
     }
   },
   "respondidos": {},
