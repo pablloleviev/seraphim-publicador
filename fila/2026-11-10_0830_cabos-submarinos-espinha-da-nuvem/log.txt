@@ -1,0 +1,81 @@
+red 904/952, time remaining: 27s
+Rendered 904/952, time remaining: 27s
+Rendered 905/952, time remaining: 26s
+Rendered 906/952, time remaining: 26s
+Rendered 906/952, time remaining: 26s
+Rendered 907/952, time remaining: 25s
+Rendered 908/952, time remaining: 25s
+Rendered 909/952, time remaining: 24s
+Rendered 909/952, time remaining: 24s
+Rendered 910/952, time remaining: 23s
+Rendered 911/952, time remaining: 23s
+Rendered 911/952, time remaining: 23s
+Rendered 912/952, time remaining: 22s
+Rendered 913/952, time remaining: 22s
+Rendered 914/952, time remaining: 21s
+Rendered 914/952, time remaining: 21s
+Rendered 915/952, time remaining: 21s
+Rendered 916/952, time remaining: 20s
+Rendered 916/952, time remaining: 20s
+Rendered 917/952, time remaining: 19s
+Rendered 918/952, time remaining: 19s
+Rendered 918/952, time remaining: 19s
+Rendered 919/952, time remaining: 18s
+Rendered 920/952, time remaining: 18s
+Rendered 921/952, time remaining: 17s
+Rendered 922/952, time remaining: 17s
+Rendered 922/952, time remaining: 17s
+Rendered 923/952, time remaining: 16s
+Rendered 924/952, time remaining: 15s
+Rendered 924/952, time remaining: 15s
+Rendered 925/952, time remaining: 15s
+Rendered 926/952, time remaining: 14s
+Rendered 926/952, time remaining: 14s
+Rendered 927/952, time remaining: 14s
+Rendered 928/952, time remaining: 13s
+Rendered 928/952, time remaining: 13s
+Rendered 929/952, time remaining: 13s
+Rendered 930/952, time remaining: 12s
+Rendered 931/952, time remaining: 11s
+Rendered 931/952, time remaining: 11s
+Rendered 932/952, time remaining: 11s
+Rendered 933/952, time remaining: 10s
+Rendered 934/952, time remaining: 10s
+Rendered 934/952, time remaining: 10s
+Rendered 935/952, time remaining: 9s
+Rendered 936/952, time remaining: 9s
+Rendered 936/952, time remaining: 9s
+Rendered 937/952, time remaining: 8s
+Rendered 938/952, time remaining: 7s
+Rendered 938/952, time remaining: 7s
+Rendered 939/952, time remaining: 7s
+Rendered 940/952, time remaining: 6s
+Rendered 940/952, time remaining: 6s
+Rendered 941/952, time remaining: 6s
+Rendered 942/952, time remaining: 5s
+Rendered 942/952, time remaining: 5s
+Rendered 943/952, time remaining: 5s
+Rendered 944/952, time remaining: 4s
+Rendered 944/952, time remaining: 4s
+Rendered 945/952, time remaining: 3s
+Rendered 946/952, time remaining: 3s
+Rendered 946/952, time remaining: 3s
+Rendered 947/952, time remaining: 2s
+Rendered 948/952, time remaining: 2s
+Rendered 948/952, time remaining: 2s
+Rendered 949/952, time remaining: 1s
+Rendered 950/952, time remaining: 1s
+Rendered 951/952, time remaining: 0s
+Stitched 710/952
+Stitched 715/952
+Stitched 727/952
+Stitched 741/952
+Stitched 754/952
+Stitched 762/952
+Stitched 952/952
+Voz: gemini (85 palavras)
+[trilha] trechos: epico 0.0-6.5s | tensao 6.5-12.8s | emocao 12.8-19.1s | energia 19.1-24.4s | inspira 24.4-31.7s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-10_0830_cabos-submarinos-espinha-da-nuvem/video.mp4 (31.7s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
