@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630403,
+  "telegram_offset": 183630424,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -1941,15 +1941,20 @@
       "ig_manual": false
     },
     "2026-11-07_0900_efeito-domino-atraso-proposta": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-11-06T17:59:28.894231+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef41d7004e4879a7641800",
+        "feito": "buffer"
       },
-      "msg_id": 1681
+      "msg_id": 1681,
+      "ig_id": null,
+      "publicado_em": "2026-11-07T15:20:54.584364+00:00",
+      "ig_manual": true
     },
     "2026-11-07_1300_sinais-equipe-sobrecarregada-admin": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-06T17:59:31.434225+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1957,7 +1962,7 @@
       "msg_id": 1688
     },
     "2026-11-07_1530_perguntas-antes-mudar-gestao-vendas": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-06T17:59:33.645156+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1965,23 +1970,33 @@
       "msg_id": 1695
     },
     "2026-11-07_1130_autoflow-fim-patio-cegas": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-11-06T18:10:40.706439+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef423851492b796ee511c4",
+        "feito": "buffer"
       },
-      "msg_id": 1699
+      "msg_id": 1699,
+      "ig_id": "18139741435732602",
+      "publicado_em": "2026-11-07T15:22:31.540416+00:00",
+      "ig_manual": false
     },
     "2026-11-07_0700_ia-processamento-audio-nativa": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-11-06T18:15:12.099752+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef427e562f2e6de96604bd",
+        "feito": "buffer"
       },
-      "msg_id": 1701
+      "msg_id": 1701,
+      "ig_id": "17968194822203298",
+      "publicado_em": "2026-11-07T15:23:41.547399+00:00",
+      "ig_manual": false
     },
     "2026-11-07_1400_memoria-humana-limites-gestao": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-06T18:17:27.592052+00:00",
       "tiktok": {
         "via": "buffer"
@@ -1989,15 +2004,20 @@
       "msg_id": 1703
     },
     "2026-11-07_1000_mitos-automacao-atendimento": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-11-06T18:19:45.646205+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef42bf9214322f68fdfdf3",
+        "feito": "buffer"
       },
-      "msg_id": 1705
+      "msg_id": 1705,
+      "ig_id": "17990923701073651",
+      "publicado_em": "2026-11-07T15:24:46.939229+00:00",
+      "ig_manual": false
     },
     "2026-11-07_1700_valor-historico-cliente": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-06T18:24:13.710394+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2005,15 +2025,20 @@
       "msg_id": 1707
     },
     "2026-11-07_0830_gargalo-agendamento-recepcao": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-11-06T18:43:44.728513+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef42f0229bf05daf5b27fc",
+        "feito": "buffer"
       },
-      "msg_id": 1709
+      "msg_id": 1709,
+      "ig_id": "18037326080849574",
+      "publicado_em": "2026-11-07T15:25:36.045298+00:00",
+      "ig_manual": false
     },
     "2026-11-07_1830_rastreio-propostas-comerciais": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-06T19:30:21.625300+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2021,7 +2046,7 @@
       "msg_id": 1711
     },
     "2026-11-07_1900_perigo-planilha-computador-unico": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-06T20:00:52.772902+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2029,7 +2054,7 @@
       "msg_id": 1718
     },
     "2026-11-07_2100_filtro-invisivel-validacao-dados": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-06T22:00:14.310597+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2037,7 +2062,7 @@
       "msg_id": 1730
     },
     "2026-11-07_1230_sede-energia-ia": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T05:30:15.516713+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2045,7 +2070,7 @@
       "msg_id": 1734
     },
     "2026-11-08_0700_ia-programando-sozinha": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T08:00:11.817034+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2053,7 +2078,7 @@
       "msg_id": 1736
     },
     "2026-11-08_0830_estoque-lucro-escondido": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T09:30:19.969271+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2061,7 +2086,7 @@
       "msg_id": 1738
     },
     "2026-11-08_0900_5-tarefas-automacao": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T10:00:12.402418+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2069,7 +2094,7 @@
       "msg_id": 1744
     },
     "2026-11-07_2000_historia-agendamento-clinica-domingo": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T13:00:05.088955+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2077,7 +2102,7 @@
       "msg_id": 1746
     },
     "2026-11-08_1230_como-ia-le-imagens": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T13:30:27.139549+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2085,7 +2110,7 @@
       "msg_id": 1748
     },
     "2026-11-08_1300_pipeline-de-dados-explicado": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T14:00:26.205436+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2093,12 +2118,36 @@
       "msg_id": 1754
     },
     "2026-11-07_2130_risco-whatsapp-pessoal-servidor": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T14:30:11.790908+00:00",
       "tiktok": {
         "via": "buffer"
       },
       "msg_id": 1756
+    },
+    "2026-11-08_1400_automacao-ou-software": {
+      "status": "agendado",
+      "enviado_em": "2026-11-07T15:00:18.541208+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1758
+    },
+    "2026-11-08_1000_o-retorno-dos-botoes": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T15:21:15.443172+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1772
+    },
+    "2026-11-08_1130_autoflow-gestao-oficina": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T15:21:18.725855+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1774
     }
   },
   "respondidos": {},
