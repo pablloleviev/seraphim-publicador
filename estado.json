@@ -2071,12 +2071,17 @@
       "ig_manual": false
     },
     "2026-11-07_1900_perigo-planilha-computador-unico": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-06T20:00:52.772902+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef9fa1004e4879a78064a7",
+        "feito": "buffer"
       },
-      "msg_id": 1718
+      "msg_id": 1718,
+      "ig_id": "18221930704345472",
+      "publicado_em": "2026-11-07T22:01:05.017946+00:00",
+      "ig_manual": false
     },
     "2026-11-07_2100_filtro-invisivel-validacao-dados": {
       "status": "agendado",
@@ -2218,6 +2223,22 @@
         "via": "buffer"
       },
       "msg_id": 1810
+    },
+    "2026-11-08_2100_suporte-cliente-agil": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T22:00:23.342601+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1818
+    },
+    "2026-11-08_2130_empresa-fabrica-papel": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T22:30:22.488511+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1822
     }
   },
   "respondidos": {},
