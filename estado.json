@@ -1928,12 +1928,17 @@
       "ig_manual": false
     },
     "2026-11-06_2030_sensores-manutencao-preventiva": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-05T21:30:06.166962+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aee6457229bf05daf17d554",
+        "feito": "buffer"
       },
-      "msg_id": 1659
+      "msg_id": 1659,
+      "ig_id": "18104732327457695",
+      "publicado_em": "2026-11-06T23:35:50.617441+00:00",
+      "ig_manual": false
     },
     "2026-11-07_0900_efeito-domino-atraso-proposta": {
       "status": "aguardando",
