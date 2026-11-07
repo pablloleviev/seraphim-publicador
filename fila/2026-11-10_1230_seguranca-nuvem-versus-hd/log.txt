@@ -1,0 +1,81 @@
+3, time remaining: 24s
+Rendered 874/923, time remaining: 24s
+Rendered 875/923, time remaining: 23s
+Rendered 876/923, time remaining: 23s
+Rendered 876/923, time remaining: 23s
+Rendered 877/923, time remaining: 22s
+Rendered 878/923, time remaining: 22s
+Rendered 878/923, time remaining: 22s
+Rendered 879/923, time remaining: 21s
+Rendered 880/923, time remaining: 21s
+Rendered 881/923, time remaining: 20s
+Rendered 881/923, time remaining: 20s
+Rendered 882/923, time remaining: 20s
+Rendered 883/923, time remaining: 19s
+Rendered 883/923, time remaining: 19s
+Rendered 884/923, time remaining: 19s
+Rendered 885/923, time remaining: 18s
+Rendered 886/923, time remaining: 18s
+Rendered 886/923, time remaining: 18s
+Rendered 887/923, time remaining: 17s
+Rendered 888/923, time remaining: 17s
+Rendered 889/923, time remaining: 16s
+Rendered 889/923, time remaining: 16s
+Rendered 890/923, time remaining: 16s
+Rendered 891/923, time remaining: 15s
+Rendered 891/923, time remaining: 15s
+Rendered 892/923, time remaining: 15s
+Rendered 893/923, time remaining: 14s
+Rendered 893/923, time remaining: 14s
+Rendered 894/923, time remaining: 14s
+Rendered 895/923, time remaining: 13s
+Rendered 896/923, time remaining: 13s
+Rendered 896/923, time remaining: 13s
+Rendered 897/923, time remaining: 12s
+Rendered 898/923, time remaining: 12s
+Rendered 898/923, time remaining: 12s
+Rendered 899/923, time remaining: 11s
+Rendered 900/923, time remaining: 11s
+Rendered 900/923, time remaining: 11s
+Rendered 901/923, time remaining: 10s
+Rendered 902/923, time remaining: 10s
+Rendered 903/923, time remaining: 9s
+Rendered 904/923, time remaining: 9s
+Rendered 904/923, time remaining: 9s
+Rendered 905/923, time remaining: 8s
+Rendered 906/923, time remaining: 8s
+Rendered 906/923, time remaining: 8s
+Rendered 907/923, time remaining: 7s
+Rendered 908/923, time remaining: 7s
+Rendered 908/923, time remaining: 7s
+Rendered 909/923, time remaining: 6s
+Rendered 910/923, time remaining: 6s
+Rendered 911/923, time remaining: 5s
+Rendered 911/923, time remaining: 5s
+Rendered 912/923, time remaining: 5s
+Rendered 913/923, time remaining: 4s
+Rendered 914/923, time remaining: 4s
+Rendered 914/923, time remaining: 4s
+Rendered 915/923, time remaining: 3s
+Rendered 916/923, time remaining: 3s
+Rendered 916/923, time remaining: 3s
+Rendered 917/923, time remaining: 2s
+Rendered 918/923, time remaining: 2s
+Rendered 918/923, time remaining: 2s
+Rendered 919/923, time remaining: 1s
+Rendered 920/923, time remaining: 1s
+Rendered 921/923, time remaining: 0s
+Rendered 922/923, time remaining: 0s
+Rendered 922/923, time remaining: 0s
+Stitched 689/923
+Stitched 702/923
+Stitched 714/923
+Stitched 730/923
+Stitched 738/923
+Stitched 923/923
+Voz: gemini (81 palavras)
+[trilha] trechos: epico 0.0-5.9s | sombrio 5.9-12.1s | emocao 12.1-18.6s | energia 18.6-24.2s | inspira 24.2-30.8s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-10_1230_seguranca-nuvem-versus-hd/video.mp4 (30.8s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
