@@ -1,0 +1,63 @@
+{
+ "nome": "mensagem-fora-do-horario-atendimento",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-10 07:00",
+ "cenas": [
+  {
+   "tipo": "cartao",
+   "titulo": "Mensagem *às 21h*",
+   "rotulo": "MENSAGEM NOTURNA",
+   "numero": "21:00",
+   "clima": "tensao",
+   "narracao": "Seu cliente manda mensagem às nove da noite pedindo orçamento com pressa."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Responder no sofá e esquecer",
+   "depois": "Triagem *automática* e fila limpa",
+   "clima": "sombrio",
+   "narracao": "Você responde ali no sofá, não anota nada no sistema e acorda com o pedido soterrado."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "Atendimento bom não é viver *refém do celular.*",
+   "clima": "emocao",
+   "narracao": "Atendimento bom não significa misturar vida pessoal e trabalhar sem descanso."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O que um *fluxo certo* faz:",
+   "itens": [
+    "Acolhe com horário claro",
+    "Coleta o pedido completo",
+    "Organiza o início do dia"
+   ],
+   "clima": "energia",
+   "narracao": "Um fluxo bem montado recebe o cliente, coleta os detalhes e deixa tudo arrumado para a equipe abrir às oito."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Comente *ATENDIMENTO*",
+   "cartoes": [
+    "Receba o guia no direct",
+    "Siga @seraphimbr_"
+   ],
+   "clima": "inspira",
+   "narracao": "Comente ATENDIMENTO aqui no post que eu te mando nosso guia prático no direct."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "estilo_legenda": "palavra",
+ "paleta": "violeta",
+ "formato": "hud",
+ "titulo": "O cliente que chega às 21h",
+ "numero": 7,
+ "funil": "meio",
+ "genero_voz": "feminina",
+ "legenda": "Responder cliente tarde da noite pelo WhatsApp pessoal parece dedicação, mas quase sempre vira orçamento esquecido na manhã seguinte. 📱 Você costuma atender fora do horário de trabalho?\n\n#atendimentoaocliente #produtividade #gestaodenegocios #pequenasempresas #seraphimbr",
+ "legenda_tiktok": "Responder cliente às nove da noite no sofá custa sua paz e seus orçamentos.\n\n#atendimentoaocliente #produtividade #gestaodenegocios #pequenasempresas #seraphimbr",
+ "palavra_chave": "ATENDIMENTO",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/mensagem-fora-do-horario-atendimento/",
+ "material_titulo": "Estrutura de Atendimento Fora do Horário"
+}

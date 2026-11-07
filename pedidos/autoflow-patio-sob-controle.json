@@ -1,0 +1,61 @@
+{
+ "nome": "autoflow-patio-sob-controle",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-10 10:00",
+ "cenas": [
+  {
+   "tipo": "contraste",
+   "antes": "Balcão cheio de notas soltas",
+   "depois": "Gestão no *navegador*, tudo reunido",
+   "clima": "tensao",
+   "narracao": "De um lado, papel de pão anotando serviço. Do outro, sua oficina inteira organizada na tela do computador."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "Tudo em um *único lugar*",
+   "rotulo": "ACESSO DIRETO",
+   "numero": "WEB",
+   "clima": "emocao",
+   "narracao": "O AutoFlow é o sistema feito para oficinas mecânicas que querem sair do caderno e das planilhas."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Rotina *organizada:*",
+   "itens": [
+    "Chega de papéis perdidos",
+    "Histórico fácil de consultar",
+    "Acesso pelo navegador"
+   ],
+   "clima": "energia",
+   "narracao": "Você acessa direto pelo navegador, reúne as informações em um só ponto e ganha tranquilidade na rotina."
+  },
+  {
+   "tipo": "objeto",
+   "icone": "wrench",
+   "titulo": "Sua oficina merece *clareza*",
+   "clima": "inspira",
+   "narracao": "Sua oficina merece uma gestão mais simples para você focar no motor e nos clientes."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Conheça o *AutoFlow*",
+   "cartoes": [
+    "Link na bio",
+    "Solicite demonstração"
+   ],
+   "clima": "epico",
+   "narracao": "Acesse o link na bio da Seraphim e solicite uma demonstração do AutoFlow hoje mesmo."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "estilo_legenda": "sutil",
+ "paleta": "autoflow",
+ "formato": "vhs",
+ "titulo": "O balcão da oficina sem papéis",
+ "numero": 9,
+ "funil": "fundo",
+ "genero_voz": "masculina",
+ "legenda": "Chega de caçar anotação de cliente em papel amassado no balcão da oficina mecânica. 🔧 Acesse o link da nossa bio e solicite uma demonstração do AutoFlow.\n\n#oficinamecanica #mecanica #autoflow #gestaodeoficina #seraphimbr",
+ "legenda_tiktok": "O balcão da sua oficina mecânica ainda depende de papel e anotação solta?\n\n#oficinamecanica #mecanica #autoflow #gestaodeoficina #seraphimbr"
+}

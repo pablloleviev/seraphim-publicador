@@ -1,0 +1,56 @@
+{
+ "nome": "seguranca-nuvem-versus-hd",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-10 12:30",
+ "cenas": [
+  {
+   "tipo": "pessoa",
+   "linha": "DADOS",
+   "titulo": "Guardar na gaveta *protege?*",
+   "clima": "tensao",
+   "narracao": "Tem empresário que ainda acredita que guardar os dados da empresa num HD externo é o jeito mais seguro."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Disco físico sujeito a queda",
+   "depois": "Nuvem com *réplicas blindadas*",
+   "clima": "sombrio",
+   "narracao": "Um pico de energia, uma queda no chão ou um café derramado podem apagar anos de histórico financeiro."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "Cópias em *servidores seguros*",
+   "rotulo": "REPLICAÇÃO",
+   "numero": "CÓPIAS",
+   "clima": "emocao",
+   "narracao": "Servidores profissionais mantêm os dados espelhados em locais diferentes com camadas de proteção contínua."
+  },
+  {
+   "tipo": "citacao",
+   "titulo": "Segurança real é a empresa *não parar.*",
+   "clima": "energia",
+   "narracao": "Segurança de verdade é saber que se o computador queimar agora, sua empresa continua faturando normalmente."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Proteja sua operação com a *Seraphim*",
+   "cartoes": [
+    "Siga o perfil",
+    "Mande pro sócio"
+   ],
+   "clima": "inspira",
+   "narracao": "Quer manter o seu negócio protegido e moderno? Siga a Seraphim para mais conteúdos."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "emocional",
+ "estilo_legenda": "karaoke",
+ "paleta": "rubi",
+ "formato": "celular",
+ "titulo": "Seu HD na gaveta não é seguro",
+ "numero": 11,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Achar que um disco externo na gaveta é mais confiável que servidores com cópias contínuas é um risco perigoso. 🔒 Onde estão salvos os dados do seu negócio hoje?\n\n#segurancadigital #gestaodenegocios #nuvem #tecnologia #seraphimbr",
+ "legenda_tiktok": "Aquele HD externo guardado na gaveta da empresa é uma armadilha pronta.\n\n#segurancadigital #gestaodenegocios #nuvem #tecnologia #seraphimbr"
+}

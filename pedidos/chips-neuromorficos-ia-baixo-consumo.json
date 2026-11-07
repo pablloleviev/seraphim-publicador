@@ -1,0 +1,61 @@
+{
+ "nome": "chips-neuromorficos-ia-baixo-consumo",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-10 18:30",
+ "cenas": [
+  {
+   "tipo": "citacao",
+   "titulo": "Processadores que *funcionam como o cérebro.*",
+   "clima": "epico",
+   "narracao": "Engenheiros estão criando chips que fogem da arquitetura padrão dos computadores tradicionais."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "Circuitos *neuromórficos*",
+   "rotulo": "NOVA COMPUTAÇÃO",
+   "numero": "SINAPSES",
+   "clima": "tensao",
+   "narracao": "Esses novos processadores transmitem informações por pulsos elétricos semelhantes às sinapses humanas."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Servidores com consumo extremo",
+   "depois": "IA avançada com *energia mínima*",
+   "clima": "emocao",
+   "narracao": "Enquanto data centers convencionais exigem redes elétricas pesadas, esses modelos consomem pouquíssima energia."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Inteligência *no aparelho*",
+   "icones": [
+    "brain",
+    "cpu",
+    "zap",
+    "sparkles"
+   ],
+   "clima": "energia",
+   "narracao": "Essa tecnologia viabiliza inteligência artificial rodando em pequenos sensores e aparelhos portáteis sem depender de conexão."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Acompanhe o futuro na *Seraphim*",
+   "cartoes": [
+    "Siga o perfil",
+    "Salve o post"
+   ],
+   "clima": "inspira",
+   "narracao": "Quer entender as grandes viradas da tecnologia sem enrolação? Siga o perfil da Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "elegante",
+ "estilo_legenda": "palavra",
+ "paleta": "gelo",
+ "formato": "navegador",
+ "titulo": "Chips que imitam neurônios",
+ "numero": 14,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Imitar o disparo dos neurônios no silício é o caminho para termos inteligência artificial potente em dispositivos pequenos. 🧠 O que você acha dessa mudança nos computadores?\n\n#computacao #inovacao #chips #hardware #seraphimbr",
+ "legenda_tiktok": "Processadores que imitam neurônios podem mudar tudo o que sabemos sobre computadores.\n\n#computacao #inovacao #chips #hardware #seraphimbr"
+}

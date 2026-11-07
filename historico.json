@@ -3631,5 +3631,431 @@
    "cta"
   ],
   "paleta": "cobre"
+ },
+ {
+  "nome": "ia-dados-sinteticos",
+  "funil": "topo",
+  "titulo": "A IA aprendendo com dados sintéticos",
+  "formato": "notícia/tendência de IA explicada",
+  "dia": "2026-11-09",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noticia",
+  "capa": "O fim da *internet humana*",
+  "capa_cena": "glowing neon circuits forming an abstract neural network sphere in a dark clean room, cinematic lighting",
+  "cenas": [
+   "frase",
+   "cartao",
+   "contraste",
+   "moedas",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "gelo"
+ },
+ {
+  "nome": "fluxo-aprovacao-reembolso-equipe",
+  "titulo": "Aprovação de reembolsos sem bagunça",
+  "formato": "",
+  "dia": "2026-11-09",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "verbete",
+   "verbete",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "gelo"
+ },
+ {
+  "nome": "zero-trust-seguranca-pequenas-empresas",
+  "titulo": "O que é Confiança Zero (Zero Trust)",
+  "formato": "",
+  "dia": "2026-11-09",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa",
+  "capa_cena": "",
+  "slides": [
+   "capa",
+   "verbete",
+   "lista",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "ouro"
+ },
+ {
+  "nome": "formularios-inteligentes-operacao",
+  "titulo": "4 formulários que trabalham sozinhos",
+  "formato": "",
+  "dia": "2026-11-09",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "",
+  "slides": [
+   "capa_numero",
+   "topico",
+   "topico",
+   "topico",
+   "topico",
+   "cta"
+  ],
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "jornada-nota-fiscal-contador",
+  "titulo": "A jornada inteligente da Nota Fiscal",
+  "formato": "",
+  "dia": "2026-11-09",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "",
+  "slides": [
+   "capa_tipografica",
+   "abertura",
+   "contraste",
+   "citacao",
+   "cta"
+  ],
+  "paleta": "rubi"
+ },
+ {
+  "nome": "checklist-backup-final-de-semana",
+  "titulo": "Checklist do Backup Perfeito",
+  "formato": "",
+  "dia": "2026-11-09",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "lista",
+   "verbete",
+   "cta"
+  ],
+  "paleta": "cobre"
+ },
+ {
+  "nome": "mensagem-fora-do-horario-atendimento",
+  "funil": "meio",
+  "titulo": "O cliente que chega às 21h",
+  "formato": "erro que você comete",
+  "dia": "2026-11-10",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "hud",
+  "capa": "O cliente que *chega às 21h*",
+  "capa_cena": "glowing smartphone screen on a wooden nightstand in a dark room showing unread notification badge",
+  "cenas": [
+   "cartao",
+   "contraste",
+   "citacao",
+   "lista",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "violeta"
+ },
+ {
+  "nome": "cabos-submarinos-espinha-da-nuvem",
+  "funil": "topo",
+  "titulo": "A nuvem fica no fundo do mar",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-11-10",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "eletrico",
+  "capa": "A nuvem fica no *fundo do mar*",
+  "capa_cena": "underwater deep sea shot of an armored fiber optic telecommunications cable resting on ocean sand with sunbeams penetrating water",
+  "cenas": [
+   "citacao",
+   "cartao",
+   "contraste",
+   "moedas",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "ouro"
+ },
+ {
+  "nome": "autoflow-patio-sob-controle",
+  "funil": "fundo",
+  "titulo": "O balcão da oficina sem papéis",
+  "formato": "antes e depois",
+  "dia": "2026-11-10",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "vhs",
+  "capa": "O balcão da oficina *sem papéis*",
+  "capa_cena": "clean laptop on an automotive workshop counter displaying modern interface with blurred tools and car lift in background",
+  "cenas": [
+   "contraste",
+   "cartao",
+   "lista",
+   "objeto",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "autoflow"
+ },
+ {
+  "nome": "busca-semantica-arquivos-locais",
+  "funil": "topo",
+  "titulo": "Achar arquivos pelo sentido",
+  "formato": "lista prática",
+  "dia": "2026-11-10",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "story",
+  "capa": "Achar arquivos *pelo sentido*",
+  "capa_cena": "hands typing on sleek metallic laptop in a warm lit minimalist office with digital search bar graphic overlay",
+  "cenas": [
+   "pessoa",
+   "cartao",
+   "lista",
+   "contraste",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "cobre"
+ },
+ {
+  "nome": "seguranca-nuvem-versus-hd",
+  "funil": "topo",
+  "titulo": "Seu HD na gaveta não é seguro",
+  "formato": "mito vs verdade",
+  "dia": "2026-11-10",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "celular",
+  "capa": "Seu HD na gaveta *não é seguro*",
+  "capa_cena": "a black external hard drive lying open inside an office wooden drawer next to keys and stationery",
+  "cenas": [
+   "pessoa",
+   "contraste",
+   "cartao",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "emocional",
+  "paleta": "rubi"
+ },
+ {
+  "nome": "visao-computacional-defeitos-fabrica",
+  "funil": "topo",
+  "titulo": "Câmeras que acham microtrincas",
+  "formato": "notícia/tendência de IA explicada",
+  "dia": "2026-11-10",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noticia",
+  "capa": "Câmeras que *acham microtrincas*",
+  "capa_cena": "industrial camera lens scanning metal machined parts on a conveyor belt with laser alignment light",
+  "cenas": [
+   "cartao",
+   "contraste",
+   "objeto",
+   "lista",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "impacto",
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "compras-duplicadas-estoque-invisivel",
+  "funil": "meio",
+  "titulo": "O armário das compras duplicadas",
+  "formato": "história curta de cliente",
+  "dia": "2026-11-10",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "terminal",
+  "capa": "O armário das *compras duplicadas*",
+  "capa_cena": "dusty cardboard boxes stacked in a dimly lit backroom storage shelf with one opened revealing unused supplies",
+  "cenas": [
+   "contraste",
+   "citacao",
+   "cartao",
+   "lista",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "minimal",
+  "paleta": "prata"
+ },
+ {
+  "nome": "chips-neuromorficos-ia-baixo-consumo",
+  "funil": "topo",
+  "titulo": "Chips que imitam neurônios",
+  "formato": "curiosidade/você sabia",
+  "dia": "2026-11-10",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "navegador",
+  "capa": "Chips que *imitam neurônios*",
+  "capa_cena": "macro shot of a microchip circuit board with subtle glowing blue and gold fiber optic connections",
+  "cenas": [
+   "citacao",
+   "cartao",
+   "contraste",
+   "moedas",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "elegante",
+  "paleta": "gelo"
+ },
+ {
+  "nome": "padronizacao-nomes-arquivos-equipe",
+  "funil": "topo",
+  "titulo": "Nunca mais salve como Final-V2",
+  "formato": "tutorial passo a passo",
+  "dia": "2026-11-10",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "documentario",
+  "capa": "Nunca mais salve *Final-V2*",
+  "capa_cena": "computer monitor screen showing a neat digital file explorer with orderly chronological document names",
+  "cenas": [
+   "cartao",
+   "contraste",
+   "lista",
+   "citacao",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "dinamico",
+  "paleta": "ouro"
+ },
+ {
+  "nome": "organizar-fluxo-antes-da-automacao",
+  "funil": "topo",
+  "titulo": "Automatizar bagunça gera erro rápido",
+  "formato": "comparação (X vs Y)",
+  "dia": "2026-11-10",
+  "tipo": "video",
+  "tema": "noir",
+  "formato_edicao": "noir",
+  "capa": "Automatizar bagunça *gera erro rápido*",
+  "capa_cena": "architect style desk with hand drawing a clear process flow chart using black pen on graph paper",
+  "cenas": [
+   "pessoa",
+   "contraste",
+   "cartao",
+   "lista",
+   "fecho"
+  ],
+  "buscas": [],
+  "personalidade": "emocional",
+  "paleta": "violeta"
+ },
+ {
+  "nome": "sinais-arquivos-mandam-na-empresa",
+  "titulo": "Sua equipe trabalha para os arquivos?",
+  "formato": "",
+  "dia": "2026-11-10",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_tipografica",
+  "capa_cena": "",
+  "slides": [
+   "capa_tipografica",
+   "topico",
+   "topico",
+   "topico",
+   "topico",
+   "cta"
+  ],
+  "paleta": "prata"
+ },
+ {
+  "nome": "atrito-financeiro-comercial-empresa",
+  "titulo": "Onde o Comercial e o Financeiro brigam",
+  "formato": "",
+  "dia": "2026-11-10",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_numero",
+  "capa_cena": "",
+  "slides": [
+   "capa_numero",
+   "abertura",
+   "topico",
+   "topico",
+   "topico",
+   "cta"
+  ],
+  "paleta": "cobre"
+ },
+ {
+  "nome": "o-que-e-latencia-sistema-pesado",
+  "titulo": "Por que o sistema parece pesado?",
+  "formato": "",
+  "dia": "2026-11-10",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "verbete",
+   "contraste",
+   "lista",
+   "cta"
+  ],
+  "paleta": "rubi"
+ },
+ {
+  "nome": "rotina-fechamento-caixa-sem-susto",
+  "titulo": "Checklist do fechamento de caixa diário",
+  "formato": "",
+  "dia": "2026-11-10",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa",
+  "capa_cena": "",
+  "slides": [
+   "capa",
+   "abertura",
+   "lista",
+   "contraste",
+   "cta"
+  ],
+  "paleta": "esmeralda"
+ },
+ {
+  "nome": "esteira-pos-venda-servicos",
+  "titulo": "O pós-venda que ninguém faz",
+  "formato": "",
+  "dia": "2026-11-10",
+  "tipo": "carrossel",
+  "tema": "estilo",
+  "capa_modelo": "capa_objeto",
+  "capa_cena": "",
+  "slides": [
+   "capa_objeto",
+   "abertura",
+   "topico",
+   "topico",
+   "topico",
+   "cta"
+  ],
+  "paleta": "ouro"
  }
 ]
