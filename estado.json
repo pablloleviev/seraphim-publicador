@@ -2043,6 +2043,14 @@
         "via": "buffer"
       },
       "msg_id": 1734
+    },
+    "2026-11-08_0700_ia-programando-sozinha": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T08:00:11.817034+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1736
     }
   },
   "respondidos": {},
