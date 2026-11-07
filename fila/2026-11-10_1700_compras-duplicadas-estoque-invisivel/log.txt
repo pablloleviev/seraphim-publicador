@@ -1,0 +1,80 @@
+16/966, time remaining: 25s
+Rendered 917/966, time remaining: 25s
+Rendered 918/966, time remaining: 24s
+Rendered 919/966, time remaining: 24s
+Rendered 919/966, time remaining: 24s
+Rendered 920/966, time remaining: 23s
+Rendered 921/966, time remaining: 23s
+Rendered 921/966, time remaining: 23s
+Rendered 922/966, time remaining: 22s
+Rendered 923/966, time remaining: 22s
+Rendered 924/966, time remaining: 21s
+Rendered 924/966, time remaining: 21s
+Rendered 925/966, time remaining: 21s
+Rendered 926/966, time remaining: 20s
+Rendered 927/966, time remaining: 20s
+Rendered 927/966, time remaining: 20s
+Rendered 928/966, time remaining: 19s
+Rendered 929/966, time remaining: 19s
+Rendered 929/966, time remaining: 19s
+Rendered 930/966, time remaining: 18s
+Rendered 931/966, time remaining: 18s
+Rendered 931/966, time remaining: 18s
+Rendered 932/966, time remaining: 17s
+Rendered 933/966, time remaining: 16s
+Rendered 934/966, time remaining: 16s
+Rendered 934/966, time remaining: 16s
+Rendered 935/966, time remaining: 15s
+Rendered 936/966, time remaining: 15s
+Rendered 937/966, time remaining: 14s
+Rendered 937/966, time remaining: 14s
+Rendered 938/966, time remaining: 14s
+Rendered 939/966, time remaining: 13s
+Rendered 939/966, time remaining: 13s
+Rendered 940/966, time remaining: 13s
+Rendered 941/966, time remaining: 12s
+Rendered 942/966, time remaining: 12s
+Rendered 942/966, time remaining: 12s
+Rendered 943/966, time remaining: 11s
+Rendered 944/966, time remaining: 11s
+Rendered 944/966, time remaining: 11s
+Rendered 945/966, time remaining: 10s
+Rendered 946/966, time remaining: 10s
+Rendered 947/966, time remaining: 9s
+Rendered 947/966, time remaining: 9s
+Rendered 948/966, time remaining: 9s
+Rendered 949/966, time remaining: 8s
+Rendered 949/966, time remaining: 8s
+Rendered 950/966, time remaining: 8s
+Rendered 951/966, time remaining: 7s
+Rendered 952/966, time remaining: 7s
+Rendered 952/966, time remaining: 7s
+Rendered 953/966, time remaining: 6s
+Rendered 954/966, time remaining: 6s
+Rendered 955/966, time remaining: 5s
+Rendered 955/966, time remaining: 5s
+Rendered 956/966, time remaining: 5s
+Rendered 957/966, time remaining: 4s
+Rendered 958/966, time remaining: 4s
+Rendered 958/966, time remaining: 4s
+Rendered 959/966, time remaining: 3s
+Rendered 960/966, time remaining: 3s
+Rendered 960/966, time remaining: 3s
+Rendered 961/966, time remaining: 2s
+Rendered 962/966, time remaining: 2s
+Rendered 962/966, time remaining: 2s
+Rendered 963/966, time remaining: 1s
+Rendered 964/966, time remaining: 1s
+Rendered 965/966, time remaining: 0s
+Rendered 965/966, time remaining: 0s
+Stitched 723/966
+Stitched 737/966
+Stitched 755/966
+Stitched 773/966
+Stitched 966/966
+Voz: gemini (77 palavras)
+[trilha] trechos: epico 0.0-5.2s | sombrio 5.2-11.3s | emocao 11.3-17.5s | energia 17.5-24.9s | inspira 24.9-32.2s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-10_1700_compras-duplicadas-estoque-invisivel/video.mp4 (32.2s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
