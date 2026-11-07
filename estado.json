@@ -2051,6 +2051,22 @@
         "via": "buffer"
       },
       "msg_id": 1736
+    },
+    "2026-11-08_0830_estoque-lucro-escondido": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T09:30:19.969271+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1738
+    },
+    "2026-11-08_0900_5-tarefas-automacao": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T10:00:12.402418+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1744
     }
   },
   "respondidos": {},
