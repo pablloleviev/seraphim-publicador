@@ -2129,12 +2129,17 @@
       "msg_id": 1744
     },
     "2026-11-07_2000_historia-agendamento-clinica-domingo": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T13:00:05.088955+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aefadae004e4879a7845ace",
+        "feito": "buffer"
       },
-      "msg_id": 1746
+      "msg_id": 1746,
+      "ig_id": "18129166009899661",
+      "publicado_em": "2026-11-07T23:01:01.907179+00:00",
+      "ig_manual": false
     },
     "2026-11-08_1230_como-ia-le-imagens": {
       "status": "agendado",
