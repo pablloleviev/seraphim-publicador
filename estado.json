@@ -1954,12 +1954,17 @@
       "ig_manual": true
     },
     "2026-11-07_1300_sinais-equipe-sobrecarregada-admin": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-06T17:59:31.434225+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef4b35229bf05daf5dbe1b",
+        "feito": "buffer"
       },
-      "msg_id": 1688
+      "msg_id": 1688,
+      "ig_id": "17909729697597666",
+      "publicado_em": "2026-11-07T16:00:52.337802+00:00",
+      "ig_manual": false
     },
     "2026-11-07_1530_perguntas-antes-mudar-gestao-vendas": {
       "status": "agendado",
@@ -2062,12 +2067,17 @@
       "msg_id": 1730
     },
     "2026-11-07_1230_sede-energia-ia": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T05:30:15.516713+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef442dd6bbae6fa1968101",
+        "feito": "buffer"
       },
-      "msg_id": 1734
+      "msg_id": 1734,
+      "ig_id": "17930741379431683",
+      "publicado_em": "2026-11-07T15:30:52.885184+00:00",
+      "ig_manual": false
     },
     "2026-11-08_0700_ia-programando-sozinha": {
       "status": "agendado",
