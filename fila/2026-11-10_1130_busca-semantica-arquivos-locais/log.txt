@@ -1,0 +1,81 @@
+me remaining: 26s
+Rendered 906/955, time remaining: 25s
+Rendered 907/955, time remaining: 25s
+Rendered 908/955, time remaining: 24s
+Rendered 908/955, time remaining: 24s
+Rendered 909/955, time remaining: 24s
+Rendered 910/955, time remaining: 23s
+Rendered 911/955, time remaining: 22s
+Rendered 911/955, time remaining: 22s
+Rendered 912/955, time remaining: 22s
+Rendered 913/955, time remaining: 21s
+Rendered 913/955, time remaining: 21s
+Rendered 914/955, time remaining: 21s
+Rendered 915/955, time remaining: 20s
+Rendered 915/955, time remaining: 20s
+Rendered 916/955, time remaining: 20s
+Rendered 917/955, time remaining: 19s
+Rendered 918/955, time remaining: 19s
+Rendered 918/955, time remaining: 19s
+Rendered 919/955, time remaining: 18s
+Rendered 920/955, time remaining: 18s
+Rendered 921/955, time remaining: 17s
+Rendered 921/955, time remaining: 17s
+Rendered 922/955, time remaining: 17s
+Rendered 923/955, time remaining: 16s
+Rendered 923/955, time remaining: 16s
+Rendered 924/955, time remaining: 16s
+Rendered 925/955, time remaining: 15s
+Rendered 925/955, time remaining: 15s
+Rendered 926/955, time remaining: 15s
+Rendered 927/955, time remaining: 14s
+Rendered 928/955, time remaining: 14s
+Rendered 929/955, time remaining: 13s
+Rendered 929/955, time remaining: 13s
+Rendered 930/955, time remaining: 12s
+Rendered 930/955, time remaining: 12s
+Rendered 931/955, time remaining: 12s
+Rendered 932/955, time remaining: 11s
+Rendered 933/955, time remaining: 11s
+Rendered 933/955, time remaining: 11s
+Rendered 934/955, time remaining: 10s
+Rendered 935/955, time remaining: 10s
+Rendered 936/955, time remaining: 9s
+Rendered 936/955, time remaining: 9s
+Rendered 937/955, time remaining: 9s
+Rendered 938/955, time remaining: 8s
+Rendered 938/955, time remaining: 8s
+Rendered 939/955, time remaining: 8s
+Rendered 940/955, time remaining: 7s
+Rendered 940/955, time remaining: 7s
+Rendered 941/955, time remaining: 7s
+Rendered 942/955, time remaining: 6s
+Rendered 943/955, time remaining: 6s
+Rendered 944/955, time remaining: 5s
+Rendered 944/955, time remaining: 5s
+Rendered 945/955, time remaining: 5s
+Rendered 946/955, time remaining: 4s
+Rendered 946/955, time remaining: 4s
+Rendered 947/955, time remaining: 4s
+Rendered 948/955, time remaining: 3s
+Rendered 948/955, time remaining: 3s
+Rendered 949/955, time remaining: 3s
+Rendered 950/955, time remaining: 2s
+Rendered 950/955, time remaining: 2s
+Rendered 951/955, time remaining: 2s
+Rendered 952/955, time remaining: 1s
+Rendered 953/955, time remaining: 1s
+Rendered 954/955, time remaining: 0s
+Rendered 954/955, time remaining: 0s
+Stitched 714/955
+Stitched 721/955
+Stitched 736/955
+Stitched 754/955
+Stitched 764/955
+Stitched 955/955
+Voz: gemini (89 palavras)
+[trilha] trechos: epico 0.0-5.4s | emocao 5.4-12.5s | energia 12.5-19.0s | inspira 19.0-24.8s | epico 24.8-31.8s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-10_1130_busca-semantica-arquivos-locais/video.mp4 (31.8s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
