@@ -2184,6 +2184,14 @@
         "via": "buffer"
       },
       "msg_id": 1796
+    },
+    "2026-11-08_1830_tempo-resposta-whatsapp": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T19:30:20.333915+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1800
     }
   },
   "respondidos": {},
