@@ -2058,12 +2058,17 @@
       "ig_manual": false
     },
     "2026-11-07_1830_rastreio-propostas-comerciais": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-06T19:30:21.625300+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aef98d6229bf05daf75ad77",
+        "feito": "buffer"
       },
-      "msg_id": 1711
+      "msg_id": 1711,
+      "ig_id": "18099064058651798",
+      "publicado_em": "2026-11-07T21:32:05.605677+00:00",
+      "ig_manual": false
     },
     "2026-11-07_1900_perigo-planilha-computador-unico": {
       "status": "agendado",
@@ -2205,6 +2210,14 @@
         "via": "buffer"
       },
       "msg_id": 1806
+    },
+    "2026-11-08_2000_estoque-loja-bairro": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-07T21:00:08.145412+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1810
     }
   },
   "respondidos": {},
