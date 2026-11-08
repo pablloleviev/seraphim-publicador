@@ -2201,12 +2201,17 @@
       "ig_manual": false
     },
     "2026-11-08_1400_automacao-ou-software": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T15:00:18.541208+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af0aacad6bbae6fa1fe5a43",
+        "feito": "buffer"
       },
-      "msg_id": 1758
+      "msg_id": 1758,
+      "ig_id": "18132630058770040",
+      "publicado_em": "2026-11-08T17:00:56.700617+00:00",
+      "ig_manual": false
     },
     "2026-11-08_1000_o-retorno-dos-botoes": {
       "status": "publicado",
@@ -2313,6 +2318,38 @@
         "via": "buffer"
       },
       "msg_id": 1849
+    },
+    "2026-11-09_1530_formularios-inteligentes-operacao": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T16:30:46.782299+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1865
+    },
+    "2026-11-09_1130_gestao-completa-oficina-autoflow": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T17:12:38.038955+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1869
+    },
+    "2026-11-09_1230_agentes-de-voz-entendem-sotaque": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T17:12:41.128010+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1871
+    },
+    "2026-11-09_0830_o-rombo-das-devolucoes-sem-registro": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T17:19:12.923455+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1873
     }
   },
   "respondidos": {},
