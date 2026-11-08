@@ -2261,12 +2261,17 @@
       "ig_manual": false
     },
     "2026-11-08_1830_tempo-resposta-whatsapp": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T19:30:20.333915+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af0ea08d6bbae6fa111d07b",
+        "feito": "buffer"
       },
-      "msg_id": 1800
+      "msg_id": 1800,
+      "ig_id": "18138142588662966",
+      "publicado_em": "2026-11-08T21:30:47.426670+00:00",
+      "ig_manual": false
     },
     "2026-11-08_1900_custo-software-legado": {
       "status": "agendado",
