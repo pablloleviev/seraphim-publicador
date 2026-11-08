@@ -1,0 +1,82 @@
+red 881/929, time remaining: 24s
+Rendered 882/929, time remaining: 24s
+Rendered 883/929, time remaining: 23s
+Rendered 883/929, time remaining: 23s
+Rendered 884/929, time remaining: 22s
+Rendered 885/929, time remaining: 22s
+Rendered 885/929, time remaining: 22s
+Rendered 886/929, time remaining: 21s
+Rendered 887/929, time remaining: 21s
+Rendered 887/929, time remaining: 21s
+Rendered 888/929, time remaining: 20s
+Rendered 889/929, time remaining: 20s
+Rendered 890/929, time remaining: 19s
+Rendered 890/929, time remaining: 19s
+Rendered 891/929, time remaining: 19s
+Rendered 892/929, time remaining: 18s
+Rendered 892/929, time remaining: 18s
+Rendered 893/929, time remaining: 18s
+Rendered 894/929, time remaining: 17s
+Rendered 894/929, time remaining: 17s
+Rendered 895/929, time remaining: 17s
+Rendered 896/929, time remaining: 16s
+Rendered 896/929, time remaining: 16s
+Rendered 897/929, time remaining: 16s
+Rendered 897/929, time remaining: 16s
+Rendered 898/929, time remaining: 15s
+Rendered 899/929, time remaining: 15s
+Rendered 899/929, time remaining: 15s
+Rendered 900/929, time remaining: 14s
+Rendered 901/929, time remaining: 14s
+Rendered 901/929, time remaining: 14s
+Rendered 902/929, time remaining: 13s
+Rendered 903/929, time remaining: 13s
+Rendered 903/929, time remaining: 13s
+Rendered 904/929, time remaining: 12s
+Rendered 905/929, time remaining: 12s
+Rendered 905/929, time remaining: 12s
+Rendered 906/929, time remaining: 11s
+Rendered 907/929, time remaining: 11s
+Rendered 907/929, time remaining: 11s
+Rendered 908/929, time remaining: 10s
+Rendered 909/929, time remaining: 10s
+Rendered 909/929, time remaining: 10s
+Rendered 910/929, time remaining: 9s
+Rendered 911/929, time remaining: 9s
+Rendered 911/929, time remaining: 9s
+Rendered 912/929, time remaining: 8s
+Rendered 913/929, time remaining: 8s
+Rendered 914/929, time remaining: 7s
+Rendered 914/929, time remaining: 7s
+Rendered 915/929, time remaining: 7s
+Rendered 916/929, time remaining: 6s
+Rendered 916/929, time remaining: 6s
+Rendered 917/929, time remaining: 6s
+Rendered 918/929, time remaining: 5s
+Rendered 919/929, time remaining: 5s
+Rendered 919/929, time remaining: 5s
+Rendered 920/929, time remaining: 4s
+Rendered 921/929, time remaining: 4s
+Rendered 921/929, time remaining: 4s
+Rendered 922/929, time remaining: 3s
+Rendered 923/929, time remaining: 3s
+Rendered 923/929, time remaining: 3s
+Rendered 924/929, time remaining: 2s
+Rendered 924/929, time remaining: 2s
+Rendered 925/929, time remaining: 2s
+Rendered 926/929, time remaining: 1s
+Rendered 926/929, time remaining: 1s
+Rendered 927/929, time remaining: 1s
+Rendered 928/929, time remaining: 0s
+Stitched 692/929
+Stitched 698/929
+Stitched 713/929
+Stitched 728/929
+Stitched 743/929
+Stitched 929/929
+Voz: gemini (86 palavras)
+[trilha] trechos: epico 0.0-5.4s | emocao 5.4-31.0s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-09_2130_regras-fixas-vs-inteligencia-contextual/video.mp4 (31.0s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
