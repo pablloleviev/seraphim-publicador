@@ -2110,12 +2110,17 @@
       "ig_manual": false
     },
     "2026-11-08_0700_ia-programando-sozinha": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T08:00:11.817034+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af0485351492b796e2da287",
+        "feito": "buffer"
       },
-      "msg_id": 1736
+      "msg_id": 1736,
+      "ig_id": "17970202380197305",
+      "publicado_em": "2026-11-08T10:00:49.822584+00:00",
+      "ig_manual": false
     },
     "2026-11-08_0830_estoque-lucro-escondido": {
       "status": "agendado",
@@ -2262,6 +2267,14 @@
         "via": "buffer"
       },
       "msg_id": 1830
+    },
+    "2026-11-09_0900_fluxo-aprovacao-reembolso-equipe": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T10:00:15.318116+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1837
     }
   },
   "respondidos": {},
