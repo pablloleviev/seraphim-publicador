@@ -2163,12 +2163,17 @@
       "msg_id": 1754
     },
     "2026-11-07_2130_risco-whatsapp-pessoal-servidor": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T14:30:11.790908+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aefc34b9214322f682434c0",
+        "feito": "buffer"
       },
-      "msg_id": 1756
+      "msg_id": 1756,
+      "ig_id": "18146442379565719",
+      "publicado_em": "2026-11-08T00:33:14.937857+00:00",
+      "ig_manual": false
     },
     "2026-11-08_1400_automacao-ou-software": {
       "status": "agendado",
