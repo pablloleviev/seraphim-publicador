@@ -1,0 +1,78 @@
+9, time remaining: 19s
+Rendered 1026/1079, time remaining: 18s
+Rendered 1027/1079, time remaining: 18s
+Rendered 1028/1079, time remaining: 18s
+Rendered 1028/1079, time remaining: 18s
+Rendered 1029/1079, time remaining: 17s
+Rendered 1030/1079, time remaining: 17s
+Rendered 1031/1079, time remaining: 17s
+Rendered 1032/1079, time remaining: 16s
+Rendered 1032/1079, time remaining: 16s
+Rendered 1033/1079, time remaining: 16s
+Rendered 1034/1079, time remaining: 16s
+Rendered 1035/1079, time remaining: 15s
+Rendered 1036/1079, time remaining: 15s
+Rendered 1036/1079, time remaining: 15s
+Rendered 1037/1079, time remaining: 15s
+Rendered 1038/1079, time remaining: 14s
+Rendered 1039/1079, time remaining: 14s
+Rendered 1039/1079, time remaining: 14s
+Rendered 1040/1079, time remaining: 13s
+Rendered 1041/1079, time remaining: 13s
+Rendered 1042/1079, time remaining: 13s
+Rendered 1042/1079, time remaining: 13s
+Rendered 1043/1079, time remaining: 12s
+Rendered 1044/1079, time remaining: 12s
+Rendered 1045/1079, time remaining: 12s
+Rendered 1046/1079, time remaining: 11s
+Rendered 1046/1079, time remaining: 11s
+Rendered 1047/1079, time remaining: 11s
+Rendered 1048/1079, time remaining: 11s
+Rendered 1049/1079, time remaining: 10s
+Rendered 1050/1079, time remaining: 10s
+Rendered 1050/1079, time remaining: 10s
+Rendered 1051/1079, time remaining: 9s
+Rendered 1052/1079, time remaining: 9s
+Rendered 1053/1079, time remaining: 9s
+Rendered 1054/1079, time remaining: 8s
+Rendered 1054/1079, time remaining: 8s
+Rendered 1055/1079, time remaining: 8s
+Rendered 1056/1079, time remaining: 8s
+Rendered 1057/1079, time remaining: 7s
+Rendered 1058/1079, time remaining: 7s
+Rendered 1058/1079, time remaining: 7s
+Rendered 1059/1079, time remaining: 7s
+Rendered 1060/1079, time remaining: 6s
+Rendered 1061/1079, time remaining: 6s
+Rendered 1062/1079, time remaining: 6s
+Rendered 1062/1079, time remaining: 6s
+Rendered 1063/1079, time remaining: 5s
+Rendered 1064/1079, time remaining: 5s
+Rendered 1065/1079, time remaining: 4s
+Rendered 1066/1079, time remaining: 4s
+Rendered 1066/1079, time remaining: 4s
+Rendered 1067/1079, time remaining: 4s
+Rendered 1068/1079, time remaining: 3s
+Rendered 1069/1079, time remaining: 3s
+Rendered 1070/1079, time remaining: 3s
+Rendered 1070/1079, time remaining: 3s
+Rendered 1071/1079, time remaining: 2s
+Rendered 1072/1079, time remaining: 2s
+Rendered 1073/1079, time remaining: 2s
+Rendered 1074/1079, time remaining: 1s
+Rendered 1074/1079, time remaining: 1s
+Rendered 1075/1079, time remaining: 1s
+Rendered 1076/1079, time remaining: 1s
+Rendered 1077/1079, time remaining: 0s
+Rendered 1078/1079, time remaining: 0s
+Rendered 1078/1079, time remaining: 0s
+Stitched 814/1079
+Stitched 839/1079
+Stitched 863/1079
+Stitched 1079/1079
+Voz: gemini (87 palavras)
+[trilha] trechos: epico 0.0-5.9s | emocao 5.9-36.0s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-11_2130_edge-computing-decisao-local/video.mp4 (36.0s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
