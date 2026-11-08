@@ -2084,12 +2084,17 @@
       "ig_manual": false
     },
     "2026-11-07_2100_filtro-invisivel-validacao-dados": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-06T22:00:14.310597+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6aefbbb8d6bbae6fa1b9d1ed",
+        "feito": "buffer"
       },
-      "msg_id": 1730
+      "msg_id": 1730,
+      "ig_id": "17965592910231617",
+      "publicado_em": "2026-11-08T00:00:55.194204+00:00",
+      "ig_manual": false
     },
     "2026-11-07_1230_sede-energia-ia": {
       "status": "publicado",
