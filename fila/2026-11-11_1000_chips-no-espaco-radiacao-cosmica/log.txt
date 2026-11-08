@@ -1,0 +1,82 @@
+endered 795/845, time remaining: 28s
+Rendered 796/845, time remaining: 27s
+Rendered 797/845, time remaining: 27s
+Rendered 797/845, time remaining: 27s
+Rendered 798/845, time remaining: 26s
+Rendered 799/845, time remaining: 26s
+Rendered 800/845, time remaining: 25s
+Rendered 800/845, time remaining: 25s
+Rendered 801/845, time remaining: 25s
+Rendered 802/845, time remaining: 24s
+Rendered 802/845, time remaining: 24s
+Rendered 803/845, time remaining: 23s
+Rendered 804/845, time remaining: 23s
+Rendered 804/845, time remaining: 23s
+Rendered 805/845, time remaining: 22s
+Rendered 806/845, time remaining: 22s
+Rendered 806/845, time remaining: 22s
+Rendered 807/845, time remaining: 21s
+Rendered 808/845, time remaining: 21s
+Rendered 808/845, time remaining: 21s
+Rendered 809/845, time remaining: 20s
+Rendered 810/845, time remaining: 19s
+Rendered 810/845, time remaining: 19s
+Rendered 811/845, time remaining: 19s
+Rendered 812/845, time remaining: 18s
+Rendered 813/845, time remaining: 18s
+Rendered 813/845, time remaining: 18s
+Rendered 814/845, time remaining: 17s
+Rendered 815/845, time remaining: 17s
+Rendered 816/845, time remaining: 16s
+Rendered 816/845, time remaining: 16s
+Rendered 817/845, time remaining: 15s
+Rendered 818/845, time remaining: 15s
+Rendered 818/845, time remaining: 15s
+Rendered 819/845, time remaining: 14s
+Rendered 820/845, time remaining: 14s
+Rendered 820/845, time remaining: 14s
+Rendered 821/845, time remaining: 13s
+Rendered 822/845, time remaining: 13s
+Rendered 823/845, time remaining: 12s
+Rendered 823/845, time remaining: 12s
+Rendered 824/845, time remaining: 11s
+Rendered 825/845, time remaining: 11s
+Rendered 826/845, time remaining: 10s
+Rendered 826/845, time remaining: 10s
+Rendered 827/845, time remaining: 10s
+Rendered 828/845, time remaining: 9s
+Rendered 828/845, time remaining: 9s
+Rendered 829/845, time remaining: 9s
+Rendered 830/845, time remaining: 8s
+Rendered 830/845, time remaining: 8s
+Rendered 831/845, time remaining: 7s
+Rendered 832/845, time remaining: 7s
+Rendered 833/845, time remaining: 6s
+Rendered 833/845, time remaining: 6s
+Rendered 834/845, time remaining: 6s
+Rendered 835/845, time remaining: 5s
+Rendered 836/845, time remaining: 5s
+Rendered 836/845, time remaining: 5s
+Rendered 837/845, time remaining: 4s
+Rendered 838/845, time remaining: 3s
+Rendered 838/845, time remaining: 3s
+Rendered 839/845, time remaining: 3s
+Rendered 840/845, time remaining: 2s
+Rendered 841/845, time remaining: 2s
+Rendered 841/845, time remaining: 2s
+Rendered 842/845, time remaining: 1s
+Rendered 843/845, time remaining: 1s
+Rendered 843/845, time remaining: 1s
+Rendered 844/845, time remaining: 0s
+Stitched 626/845
+Stitched 633/845
+Stitched 646/845
+Stitched 662/845
+Stitched 676/845
+Stitched 845/845
+Voz: gemini (71 palavras)
+[trilha] trechos: epico 0.0-5.5s | emocao 5.5-28.2s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-11_1000_chips-no-espaco-radiacao-cosmica/video.mp4 (28.2s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
