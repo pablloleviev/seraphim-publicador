@@ -2136,12 +2136,17 @@
       "ig_manual": false
     },
     "2026-11-08_0900_5-tarefas-automacao": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T10:00:12.402418+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af06527229bf05dafacb796",
+        "feito": "buffer"
       },
-      "msg_id": 1744
+      "msg_id": 1744,
+      "ig_id": "18138045250631159",
+      "publicado_em": "2026-11-08T12:03:50.924395+00:00",
+      "ig_manual": false
     },
     "2026-11-07_2000_historia-agendamento-clinica-domingo": {
       "status": "publicado",
