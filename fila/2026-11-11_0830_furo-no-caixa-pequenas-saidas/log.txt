@@ -1,0 +1,83 @@
+: 25s
+Rendered 672/724, time remaining: 24s
+Rendered 673/724, time remaining: 24s
+Rendered 673/724, time remaining: 24s
+Rendered 674/724, time remaining: 23s
+Rendered 675/724, time remaining: 23s
+Rendered 675/724, time remaining: 23s
+Rendered 676/724, time remaining: 22s
+Rendered 677/724, time remaining: 22s
+Rendered 678/724, time remaining: 21s
+Rendered 679/724, time remaining: 21s
+Rendered 679/724, time remaining: 21s
+Rendered 680/724, time remaining: 20s
+Rendered 681/724, time remaining: 20s
+Rendered 681/724, time remaining: 20s
+Rendered 682/724, time remaining: 19s
+Rendered 683/724, time remaining: 19s
+Rendered 683/724, time remaining: 19s
+Rendered 684/724, time remaining: 18s
+Rendered 685/724, time remaining: 18s
+Rendered 686/724, time remaining: 17s
+Rendered 687/724, time remaining: 17s
+Rendered 687/724, time remaining: 17s
+Rendered 688/724, time remaining: 16s
+Rendered 689/724, time remaining: 16s
+Rendered 690/724, time remaining: 15s
+Rendered 690/724, time remaining: 15s
+Rendered 691/724, time remaining: 15s
+Rendered 692/724, time remaining: 14s
+Rendered 693/724, time remaining: 14s
+Rendered 693/724, time remaining: 14s
+Rendered 694/724, time remaining: 14s
+Rendered 695/724, time remaining: 13s
+Rendered 696/724, time remaining: 13s
+Rendered 696/724, time remaining: 13s
+Rendered 697/724, time remaining: 12s
+Rendered 698/724, time remaining: 12s
+Rendered 699/724, time remaining: 11s
+Rendered 699/724, time remaining: 11s
+Rendered 700/724, time remaining: 11s
+Rendered 701/724, time remaining: 10s
+Rendered 701/724, time remaining: 10s
+Rendered 702/724, time remaining: 10s
+Rendered 703/724, time remaining: 9s
+Rendered 704/724, time remaining: 9s
+Rendered 705/724, time remaining: 8s
+Rendered 705/724, time remaining: 8s
+Rendered 706/724, time remaining: 8s
+Rendered 707/724, time remaining: 7s
+Rendered 707/724, time remaining: 7s
+Rendered 708/724, time remaining: 7s
+Rendered 709/724, time remaining: 6s
+Rendered 710/724, time remaining: 6s
+Rendered 711/724, time remaining: 6s
+Rendered 711/724, time remaining: 6s
+Rendered 712/724, time remaining: 5s
+Rendered 713/724, time remaining: 5s
+Rendered 713/724, time remaining: 5s
+Rendered 714/724, time remaining: 4s
+Rendered 715/724, time remaining: 4s
+Rendered 716/724, time remaining: 3s
+Rendered 716/724, time remaining: 3s
+Rendered 717/724, time remaining: 3s
+Rendered 718/724, time remaining: 2s
+Rendered 719/724, time remaining: 2s
+Rendered 719/724, time remaining: 2s
+Rendered 720/724, time remaining: 1s
+Rendered 721/724, time remaining: 1s
+Rendered 722/724, time remaining: 0s
+Rendered 723/724, time remaining: 0s
+Rendered 723/724, time remaining: 0s
+Stitched 529/724
+Stitched 542/724
+Stitched 558/724
+Stitched 574/724
+Stitched 579/724
+Stitched 724/724
+Voz: gemini (70 palavras)
+[trilha] trechos: epico 0.0-3.8s | emocao 3.8-24.1s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-11_0830_furo-no-caixa-pequenas-saidas/video.mp4 (24.1s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
