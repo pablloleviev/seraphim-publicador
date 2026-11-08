@@ -1,0 +1,83 @@
+23s
+Rendered 837/887, time remaining: 23s
+Rendered 838/887, time remaining: 22s
+Rendered 839/887, time remaining: 22s
+Rendered 839/887, time remaining: 22s
+Rendered 840/887, time remaining: 21s
+Rendered 841/887, time remaining: 21s
+Rendered 842/887, time remaining: 20s
+Rendered 842/887, time remaining: 20s
+Rendered 843/887, time remaining: 20s
+Rendered 844/887, time remaining: 19s
+Rendered 844/887, time remaining: 19s
+Rendered 845/887, time remaining: 19s
+Rendered 846/887, time remaining: 19s
+Rendered 847/887, time remaining: 18s
+Rendered 847/887, time remaining: 18s
+Rendered 848/887, time remaining: 18s
+Rendered 849/887, time remaining: 17s
+Rendered 849/887, time remaining: 17s
+Rendered 850/887, time remaining: 17s
+Rendered 851/887, time remaining: 16s
+Rendered 852/887, time remaining: 16s
+Rendered 852/887, time remaining: 16s
+Rendered 853/887, time remaining: 15s
+Rendered 854/887, time remaining: 15s
+Rendered 854/887, time remaining: 15s
+Rendered 855/887, time remaining: 14s
+Rendered 856/887, time remaining: 14s
+Rendered 856/887, time remaining: 14s
+Rendered 857/887, time remaining: 13s
+Rendered 858/887, time remaining: 13s
+Rendered 858/887, time remaining: 13s
+Rendered 859/887, time remaining: 12s
+Rendered 860/887, time remaining: 12s
+Rendered 861/887, time remaining: 12s
+Rendered 861/887, time remaining: 12s
+Rendered 862/887, time remaining: 11s
+Rendered 863/887, time remaining: 11s
+Rendered 864/887, time remaining: 10s
+Rendered 864/887, time remaining: 10s
+Rendered 865/887, time remaining: 10s
+Rendered 866/887, time remaining: 9s
+Rendered 866/887, time remaining: 9s
+Rendered 867/887, time remaining: 9s
+Rendered 868/887, time remaining: 8s
+Rendered 869/887, time remaining: 8s
+Rendered 869/887, time remaining: 8s
+Rendered 870/887, time remaining: 7s
+Rendered 871/887, time remaining: 7s
+Rendered 872/887, time remaining: 6s
+Rendered 872/887, time remaining: 6s
+Rendered 873/887, time remaining: 6s
+Rendered 874/887, time remaining: 6s
+Rendered 874/887, time remaining: 6s
+Rendered 875/887, time remaining: 5s
+Rendered 876/887, time remaining: 5s
+Rendered 876/887, time remaining: 5s
+Rendered 877/887, time remaining: 4s
+Rendered 878/887, time remaining: 4s
+Rendered 878/887, time remaining: 4s
+Rendered 879/887, time remaining: 3s
+Rendered 880/887, time remaining: 3s
+Rendered 881/887, time remaining: 2s
+Rendered 882/887, time remaining: 2s
+Rendered 882/887, time remaining: 2s
+Rendered 883/887, time remaining: 1s
+Rendered 883/887, time remaining: 1s
+Rendered 884/887, time remaining: 1s
+Rendered 885/887, time remaining: 0s
+Rendered 886/887, time remaining: 0s
+Rendered 886/887, time remaining: 0s
+Stitched 660/887
+Stitched 670/887
+Stitched 686/887
+Stitched 702/887
+Stitched 710/887
+Stitched 887/887
+Voz: gemini (73 palavras)
+[trilha] trechos: epico 0.0-5.6s | emocao 5.6-29.6s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-11_1400_machine-unlearning-ia-que-esquece/video.mp4 (29.6s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
