@@ -1,0 +1,63 @@
+{
+ "nome": "janela-de-contexto-gigante",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-09 10:00",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "brain",
+   "titulo": "O fim da *memória curta*",
+   "transicao": "chicote",
+   "narracao": "Lembra quando a inteligência artificial esquecia o início da conversa depois de apenas três perguntas?"
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Agora elas leem *enciclopédias inteiras*",
+   "transicao": "flash",
+   "narracao": "As versões mais recentes suportam milhões de palavras em uma única janela de contexto."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O que isso muda *no trabalho:*",
+   "itens": [
+    "Cruzamento de contratos de 200 páginas",
+    "Auditoria de balanços anuais inteiros",
+    "Busca precisa em códigos extensos"
+   ],
+   "transicao": "deslize",
+   "narracao": "Você pode anexar um livro contábil inteiro ou a documentação de um projeto completo de uma vez só."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Respostas com *visão panorâmica*",
+   "icones": [
+    "file-text",
+    "database",
+    "zap"
+   ],
+   "transicao": "zoom",
+   "narracao": "A ferramenta cruza cláusulas escondidas, compara períodos de vendas e acha inconsistências sem alucinar."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Acompanhe a *nova era*",
+   "cartoes": [
+    "Salve o conteúdo",
+    "Siga a Seraphim"
+   ],
+   "transicao": "dissolve",
+   "narracao": "Para entender como usar as tecnologias mais avançadas na rotina do seu negócio, siga a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "karaoke",
+ "paleta": "violeta",
+ "formato": "vhs",
+ "titulo": "A expansão da memória nas IAs",
+ "numero": 2,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "A janela de contexto dos modelos avançados mudou de patamar. 🧠 Você já tentou analisar documentos pesados de uma só vez na IA?\n\nSiga a @seraphimbr_ para acompanhar a evolução da inteligência artificial aplicada aos negócios.\n\n#inteligenciaartificial #tecnologia #dados #produtividade #seraphimbr",
+ "legenda_tiktok": "As novas IAs agora leem livros contábeis inteiros de uma vez só.\n\n#inteligenciaartificial #tecnologia #dados #produtividade #seraphimbr"
+}

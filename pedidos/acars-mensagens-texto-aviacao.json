@@ -1,0 +1,56 @@
+{
+ "nome": "acars-mensagens-texto-aviacao",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-11 20:00",
+ "cenas": [
+  {
+   "tipo": "citacao",
+   "titulo": "No meio do oceano, pilotos não usam rádio: *usam mensagens de texto*",
+   "transicao": "luz",
+   "narracao": "No meio do oceano, pilotos comerciais quase não usam voz no rádio. Eles conversam por mensagens de texto."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "O sistema chamado *ACARS*",
+   "rotulo": "CRIADO EM",
+   "numero": "1978",
+   "narracao": "Esse sistema se chama ACARS e transmite dados de voo e rotas desde o final dos anos setenta."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Voz cortada por chiados no rádio",
+   "depois": "Texto preciso registrado no *painel de bordo*",
+   "narracao": "O rádio chiava, gerava mal-entendidos e exigia repetição constante em frequências congestionadas."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O que isso ensina sobre *processos:*",
+   "itens": [
+    "Texto gravado evita confusão verbal",
+    "Comandos críticos precisam de registro",
+    "Simplicidade salva operações"
+   ],
+   "narracao": "O texto digital eliminou erros de interpretação em rotas críticas e automatizou relatórios da aeronave para o solo."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Tecnologia bem aplicada. *Siga a Seraphim*",
+   "cartoes": [
+    "Siga o perfil",
+    "Envie para um amigo"
+   ],
+   "narracao": "Gosta de saber como a tecnologia resolve problemas do mundo real? Segue a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "palavra",
+ "paleta": "gelo",
+ "formato": "eletrico",
+ "titulo": "Como aviões conversam por texto",
+ "numero": 18,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Desde os anos 70, a aviação comercial descobriu que comandos críticos de voo funcionam muito melhor por texto digital do que por voz chiada no rádio. O registro claro salva operações. ✈️\n\nVocê já sabia que os aviões conversavam por mensagens de texto?\n\nSiga a @seraphimbr_ para mais bastidores surpreendentes da tecnologia.\n\n#aviacao #tecnologia #comunicacao #curiosidades #seraphimbr",
+ "legenda_tiktok": "Por que pilotos comerciais preferem trocar mensagens de texto no meio do voo.\n\n#aviacao #tecnologia #comunicacao #curiosidades #seraphimbr"
+}

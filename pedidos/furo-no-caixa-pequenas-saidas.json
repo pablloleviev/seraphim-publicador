@@ -1,0 +1,59 @@
+{
+ "nome": "furo-no-caixa-pequenas-saidas",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-11 08:30",
+ "cenas": [
+  {
+   "tipo": "citacao",
+   "titulo": "Vinte reais de combustível, *quinze do lanche e trinta do motoboy*",
+   "transicao": "chicote",
+   "narracao": "Vinte reais de combustível, quinze de lanche, trinta de motoboy."
+  },
+  {
+   "tipo": "pessoa",
+   "linha": "DESPERDÍCIO",
+   "titulo": "No fim do mês, *cadê o lucro que estava aqui?*",
+   "narracao": "Chega o fim do mês e o lucro que o relatório prometeu simplesmente sumiu."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "O perigo do *caixa sem nota*",
+   "rotulo": "IMPACTO",
+   "numero": "TODO DIA",
+   "narracao": "O ralo do caixa não são as grandes contas. São os gastos miúdos sem comprovante."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Como fechar essa *torneira:*",
+   "itens": [
+    "Fundo fixo na gaveta",
+    "Foto do cupom na hora",
+    "Conferência diária de 5 minutos"
+   ],
+   "narracao": "Tenha um valor fixo semanal na gaveta, exija foto do comprovante e feche o saldo todo dia."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Comente *CAIXINHA* para receber o guia",
+   "cartoes": [
+    "Comente CAIXINHA",
+    "Receba no direct"
+   ],
+   "narracao": "Comenta CAIXINHA aqui no post que eu te envio nosso guia prático no direct."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "emocional",
+ "estilo_legenda": "karaoke",
+ "paleta": "cobre",
+ "formato": "vhs",
+ "titulo": "O sumiço do dinheiro miúdo",
+ "numero": 11,
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Dinheiro saindo de cinco em cinco reais sem comprovante destrói o lucro do final do mês. Ter um controle simples protege seu caixa sem burocracia. 💵\n\nVocê fecha os pequenos gastos todo dia ou deixa acumular para o fim do mês?\n\nComente CAIXINHA que enviamos o guia direto no seu direct.\n\n#fluxodecaixa #gestaofinanceira #pequenasempresas #controlefinanceiro #seraphimbr",
+ "legenda_tiktok": "O rombo dos gastos miúdos sem comprovante. Comenta CAIXINHA para ver o guia.\n\n#fluxodecaixa #gestaofinanceira #pequenasempresas #controlefinanceiro #seraphimbr",
+ "palavra_chave": "CAIXINHA",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/furo-no-caixa-pequenas-saidas/",
+ "material_titulo": "Guia do Fechamento de Pequenos Gastos"
+}

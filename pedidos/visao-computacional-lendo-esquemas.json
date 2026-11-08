@@ -1,0 +1,63 @@
+{
+ "nome": "visao-computacional-lendo-esquemas",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-09 20:00",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "eye",
+   "titulo": "Câmeras que *entendem diagramas*",
+   "transicao": "chicote",
+   "narracao": "Modelos de visão computacional agora conseguem decodificar plantas baixas, diagramas hidráulicos e circuitos elétricos."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Da foto direto para o *diagnóstico*",
+   "transicao": "flash",
+   "narracao": "O técnico aponta o telefone para uma placa de máquinas e o sistema aponta onde está o componente com falha."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Usos práticos *na manutenção:*",
+   "itens": [
+    "Cruzamento com manuais de fábrica",
+    "Detecção de ligações incorretas",
+    "Histórico visual de instalações"
+   ],
+   "transicao": "deslize",
+   "narracao": "Isso reduz o tempo gasto folheando apostilas antigas e previne erros críticos na substituição de componentes."
+  },
+  {
+   "tipo": "moedas",
+   "titulo": "Agilidade no *chão de fábrica*",
+   "icones": [
+    "check-circle-2",
+    "camera",
+    "cpu"
+   ],
+   "transicao": "zoom",
+   "narracao": "A equipe de campo ganha suporte técnico especializado no bolso para resolver chamados complexos na primeira visita."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Tecnologia que *resolve*",
+   "cartoes": [
+    "Salve a referência",
+    "Siga a Seraphim"
+   ],
+   "transicao": "dissolve",
+   "narracao": "Acompanhe a Seraphim para descobrir como soluções práticas de tecnologia otimizam a rotina de quem produz."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "estilo_legenda": "karaoke",
+ "paleta": "gelo",
+ "formato": "story",
+ "titulo": "Câmeras lendo esquemas técnicos",
+ "numero": 8,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Câmeras inteligentes deixaram de ser brinquedo para virar ferramenta essencial de campo. 🔍\n\nSua equipe técnica ainda perde horas consultando manuais em papel? Siga a @seraphimbr_.\n\n#visaocomputacional #manutencao #engenharia #tecnologia #seraphimbr",
+ "legenda_tiktok": "A inteligência visual agora lê esquemas elétricos complexos direto pela câmera.\n\n#visaocomputacional #manutencao #engenharia #tecnologia #seraphimbr"
+}

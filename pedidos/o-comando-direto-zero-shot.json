@@ -1,0 +1,60 @@
+{
+ "nome": "o-comando-direto-zero-shot",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-09 14:00",
+ "cenas": [
+  {
+   "tipo": "numero",
+   "numero": "Zero exemplos",
+   "rotulo": "Prompt Zero-Shot",
+   "titulo": "O que você manda *de primeira*",
+   "transicao": "zoom",
+   "narracao": "Você ainda perde meia hora redigindo exemplos gigantescos antes de pedir algo simples para a inteligência artificial?"
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Modelos avançados *aprendem de imediato*",
+   "transicao": "corte",
+   "narracao": "O chamado Zero-Shot é a técnica onde você dá a ordem direta sem fornecer amostras prévias de respostas."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "Onde essa abordagem *funciona muito:*",
+   "itens": [
+    "Resumo de atas e conversas",
+    "Tradução técnica de manuais",
+    "Extração de tabelas em texto"
+   ],
+   "transicao": "deslize",
+   "narracao": "Para tarefas objetivas, tentar educar demais o robô só polui a resposta com detalhes desnecessários."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Página cheia de instruções confusas",
+   "depois": "Ordem direta com *função e limites*",
+   "transicao": "mascara",
+   "narracao": "Basta definir o formato final e o critério de exclusão para obter um resultado limpo logo na primeira tentativa."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Use tecnologia *com estratégia*",
+   "cartoes": [
+    "Compartilhe o método",
+    "Siga a Seraphim"
+   ],
+   "transicao": "dissolve",
+   "narracao": "Mande esse vídeo para quem passa trabalho configurando comandos na IA e acompanhe a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "estilo_legenda": "palavra",
+ "paleta": "prata",
+ "formato": "terminal",
+ "titulo": "Você gasta tempo demais instruindo a IA?",
+ "numero": 5,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Menos rodeios, mais clareza. ⚡ Você costuma encher seus comandos de exemplos ou prefere ir direto ao ponto?\n\nSiga a @seraphimbr_ para refinar a forma como você usa inteligência artificial na rotina.\n\n#chatgpt #prompts #produtividade #ia #seraphimbr",
+ "legenda_tiktok": "Você não precisa passar horas ensinando a IA se souber formular o comando.\n\n#chatgpt #prompts #produtividade #ia #seraphimbr"
+}

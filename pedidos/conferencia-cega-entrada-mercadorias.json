@@ -1,0 +1,59 @@
+{
+ "nome": "conferencia-cega-entrada-mercadorias",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-11 18:30",
+ "cenas": [
+  {
+   "tipo": "contraste",
+   "antes": "Assinar o canhoto na correria da entrega",
+   "depois": "Conferência cega antes de *liberar o frete*",
+   "narracao": "O caminhão encosta, você assina o canhoto na pressa e só descobre a falta de peças três dias depois."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Quem confere olhando a nota *sempre deixa passar erro*",
+   "transicao": "chicote",
+   "narracao": "Quando o conferente olha a quantidade impressa na nota, ele tende a confirmar no automático sem abrir as caixas."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "A regra da *conferência cega:*",
+   "itens": [
+    "Esconda a quantidade da folha",
+    "O estoquista conta o que vê",
+    "O sistema cruza as diferenças"
+   ],
+   "narracao": "Entregue a lista sem as quantidades. O funcionário conta o físico e o sistema avisa na hora se faltou algo."
+  },
+  {
+   "tipo": "cartao",
+   "titulo": "Controle que *estanca o prejuízo*",
+   "rotulo": "ESTOQUE",
+   "numero": "ZERO FALTA",
+   "narracao": "Assim você cobra o fornecedor antes de pagar o boleto e protege seu estoque."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Comente *RECEBIMENTO* para ter o roteiro",
+   "cartoes": [
+    "Comente RECEBIMENTO",
+    "Receba o passo a passo"
+   ],
+   "narracao": "Comenta RECEBIMENTO aqui no post que eu te mando esse roteiro passo a passo no direct."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "impacto",
+ "estilo_legenda": "karaoke",
+ "paleta": "ouro",
+ "formato": "hud",
+ "titulo": "O erro no recebimento de caixas",
+ "numero": 17,
+ "funil": "meio",
+ "genero_voz": "masculina",
+ "legenda": "Assinar o canhoto de entrega sem contar caixa por caixa é receita certa para pagar por peças que nunca entraram no estoque. A conferência cega resolve isso sem complicação. 📦\n\nComo sua equipe confere as mercadorias que chegam dos fornecedores?\n\nComente RECEBIMENTO para receber nosso guia prático no direct.\n\n#estoque #logistica #gestaoempresarial #comercio #seraphimbr",
+ "legenda_tiktok": "O perigo de conferir mercadoria olhando a nota fiscal. Comente RECEBIMENTO para ver o roteiro.\n\n#estoque #logistica #gestaoempresarial #comercio #seraphimbr",
+ "palavra_chave": "RECEBIMENTO",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/conferencia-cega-entrada-mercadorias/",
+ "material_titulo": "Roteiro da Conferência Cega de Estoque"
+}

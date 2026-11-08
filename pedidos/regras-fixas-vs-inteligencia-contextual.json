@@ -1,0 +1,59 @@
+{
+ "nome": "regras-fixas-vs-inteligencia-contextual",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-09 21:30",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "workflow",
+   "titulo": "Quando o software *simplesmente trava*",
+   "transicao": "zoom",
+   "narracao": "Você tenta salvar um pedido, mas o sistema acusa erro porque o cliente digitou o endereço em uma linha diferente."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Código antigo é *burro por natureza*",
+   "transicao": "corte",
+   "narracao": "Sistemas tradicionais seguem regras duras. Qualquer vírgula fora da casa decimal quebra o fluxo de trabalho."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Erro de validação que interrompe a venda",
+   "depois": "IA que corrige e *mantém o processo ativo*",
+   "transicao": "mascara",
+   "narracao": "A camada de inteligência contextual interpreta a intenção do usuário, padroniza as informações e não trava a operação."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "A flexibilidade do *contexto:*",
+   "itens": [
+    "Aceita dados com pequenas falhas",
+    "Elimina formulários engessados",
+    "Acelera a rotina da equipe"
+   ],
+   "transicao": "deslize",
+   "narracao": "Sua equipe trabalha com velocidade em vez de ficar preenchendo campos desnecessários só para agradar o programa."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Sistemas que *facilitam a vida*",
+   "cartoes": [
+    "Encaminhe para o sócio",
+    "Siga a Seraphim"
+   ],
+   "transicao": "dissolve",
+   "narracao": "Para entender como desenhar sistemas inteligentes sob medida para a sua empresa, siga a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "elegante",
+ "estilo_legenda": "sutil",
+ "paleta": "ouro",
+ "formato": "celular",
+ "titulo": "Regras fixas versus Inteligência contextual",
+ "numero": 9,
+ "funil": "topo",
+ "genero_voz": "masculina",
+ "legenda": "Software bom não é aquele que exige perfeição do atendente, é o que entende o contexto e resolve. ⚙️\n\nQuantas vezes o sistema da sua empresa já travou por besteira? Siga a @seraphimbr_.\n\n#software #tecnologia #automacao #sistemas #seraphimbr",
+ "legenda_tiktok": "A diferença real entre sistemas rígidos e inteligência com contexto.\n\n#software #tecnologia #automacao #sistemas #seraphimbr"
+}

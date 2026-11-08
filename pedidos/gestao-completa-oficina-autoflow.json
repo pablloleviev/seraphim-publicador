@@ -1,0 +1,59 @@
+{
+ "nome": "gestao-completa-oficina-autoflow",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-09 11:30",
+ "cenas": [
+  {
+   "tipo": "objeto",
+   "icone": "car",
+   "titulo": "Pátio cheio, *gestão cega*",
+   "transicao": "zoom",
+   "narracao": "Cinco carros na rampa, peças chegando do distribuidor e as informações espalhadas em papéis molhados de graxa."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "O caderno cobra um *preço alto*",
+   "transicao": "corte",
+   "narracao": "Quando o atendimento depende de notas soltas, o dono passa o dia apagando incêndio em vez de gerenciar o lucro."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Anotações perdidas na bancada",
+   "depois": "Operação reunida *num só sistema*",
+   "transicao": "mascara",
+   "narracao": "O AutoFlow é o sistema feito para oficinas mecânicas organizarem a gestão em um painel único, direto no navegador."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "A clareza que o *AutoFlow traz:*",
+   "itens": [
+    "Adeus pilhas de cadernos",
+    "Acesso rápido pelo celular ou PC",
+    "Toda a operação conectada"
+   ],
+   "transicao": "deslize",
+   "narracao": "Você aposenta as folhas de papel e assume o controle do negócio pelo computador ou pelo celular, sem complicação."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Conheça o *AutoFlow*",
+   "cartoes": [
+    "Acesse o link na bio",
+    "Siga a Seraphim"
+   ],
+   "transicao": "dissolve",
+   "narracao": "Sua oficina merece uma gestão mais simples. Clica no link da bio para conhecer o AutoFlow e siga a Seraphim."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "minimal",
+ "estilo_legenda": "palavra",
+ "paleta": "autoflow",
+ "formato": "noticia",
+ "titulo": "Gestão completa da oficina num só lugar",
+ "numero": 3,
+ "funil": "fundo",
+ "genero_voz": "masculina",
+ "legenda": "Oficina mecânica não precisa viver refém de anotações perdidas no balcão. 🛠️ O AutoFlow reúne a gestão da sua oficina em um único sistema pelo navegador.\n\nAcesse o link na bio para conhecer e siga a @seraphimbr_.\n\n#autoflow #oficinamecanica #mecanico #gestaooficina #seraphimbr",
+ "legenda_tiktok": "Sua oficina mecânica pode sair dos cadernos com o AutoFlow.\n\n#autoflow #oficinamecanica #mecanico #gestaooficina #seraphimbr"
+}

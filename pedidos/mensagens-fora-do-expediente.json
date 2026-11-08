@@ -1,0 +1,63 @@
+{
+ "nome": "mensagens-fora-do-expediente",
+ "arroba": "@seraphimbr_",
+ "quando": "2026-11-09 18:30",
+ "cenas": [
+  {
+   "tipo": "numero",
+   "numero": "Ex.: 21:40",
+   "rotulo": "Horário do contato sem retorno",
+   "titulo": "O cliente que manda *mensagem à noite*",
+   "transicao": "zoom",
+   "narracao": "A pessoa entra em contato querendo fechar negócio, encontra o WhatsApp mudo e compra do concorrente às sete da manhã."
+  },
+  {
+   "tipo": "frase",
+   "titulo": "Silêncio noturno é *venda perdida*",
+   "transicao": "corte",
+   "narracao": "Você não precisa trabalhar de madrugada, mas o seu canal de vendas não pode simplesmente fechar as portas e apagar as luzes."
+  },
+  {
+   "tipo": "lista",
+   "titulo": "O fluxo noturno *ideal:*",
+   "itens": [
+    "Aviso cordial instantâneo",
+    "Coleta do pedido e telefone",
+    "Fila pronta para a manhã"
+   ],
+   "transicao": "deslize",
+   "narracao": "Um roteiro automático coleta o interesse do cliente, registra os dados e deixa o atendimento engatilhado para as oito da manhã."
+  },
+  {
+   "tipo": "contraste",
+   "antes": "Dezenas de conversas esquecidas",
+   "depois": "Contatos organizados para *a equipe ligar*",
+   "transicao": "mascara",
+   "narracao": "Seu time comercial começa o dia falando com pessoas interessadas, em vez de correr atrás de quem já desistiu."
+  },
+  {
+   "tipo": "fecho",
+   "titulo": "Monte o seu *fluxo*",
+   "cartoes": [
+    "Comente NOTURNO",
+    "Siga a Seraphim"
+   ],
+   "transicao": "dissolve",
+   "narracao": "Comenta NOTURNO aqui que eu te envio o passo a passo completo para blindar o atendimento noturno da sua empresa."
+  }
+ ],
+ "motor": "estilo",
+ "personalidade": "dinamico",
+ "estilo_legenda": "palavra",
+ "paleta": "ouro",
+ "formato": "documentario",
+ "titulo": "O rombo das mensagens fora do expediente",
+ "numero": 7,
+ "funil": "meio",
+ "genero_voz": "feminina",
+ "legenda": "Cliente sem resposta à noite é venda entregue de bandeja para a concorrência. 📱 Você tem algum fluxo automático quando fecha a empresa?\n\nComenta NOTURNO para receber o guia no direct e siga a @seraphimbr_.\n\n#whatsapp #vendas #atendimento #automacao #seraphimbr",
+ "legenda_tiktok": "Deixar o WhatsApp sem resposta fora do expediente custa vendas reais.\n\n#whatsapp #vendas #atendimento #automacao #seraphimbr",
+ "palavra_chave": "NOTURNO",
+ "material_url": "https://pablloleviev.github.io/seraphim-publicador/m/mensagens-fora-do-expediente/",
+ "material_titulo": "Roteiro de Atendimento Noturno Automático"
+}
