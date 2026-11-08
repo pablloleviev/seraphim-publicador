@@ -1,0 +1,80 @@
+ng: 20s
+Rendered 962/1015, time remaining: 20s
+Rendered 963/1015, time remaining: 19s
+Rendered 963/1015, time remaining: 19s
+Rendered 964/1015, time remaining: 19s
+Rendered 965/1015, time remaining: 19s
+Rendered 966/1015, time remaining: 18s
+Rendered 967/1015, time remaining: 18s
+Rendered 967/1015, time remaining: 18s
+Rendered 968/1015, time remaining: 18s
+Rendered 969/1015, time remaining: 17s
+Rendered 970/1015, time remaining: 17s
+Rendered 971/1015, time remaining: 16s
+Rendered 971/1015, time remaining: 16s
+Rendered 972/1015, time remaining: 16s
+Rendered 973/1015, time remaining: 16s
+Rendered 974/1015, time remaining: 15s
+Rendered 974/1015, time remaining: 15s
+Rendered 975/1015, time remaining: 15s
+Rendered 976/1015, time remaining: 14s
+Rendered 977/1015, time remaining: 14s
+Rendered 977/1015, time remaining: 14s
+Rendered 978/1015, time remaining: 14s
+Rendered 979/1015, time remaining: 13s
+Rendered 980/1015, time remaining: 13s
+Rendered 981/1015, time remaining: 12s
+Rendered 981/1015, time remaining: 12s
+Rendered 982/1015, time remaining: 12s
+Rendered 983/1015, time remaining: 12s
+Rendered 984/1015, time remaining: 11s
+Rendered 985/1015, time remaining: 11s
+Rendered 985/1015, time remaining: 11s
+Rendered 986/1015, time remaining: 11s
+Rendered 987/1015, time remaining: 10s
+Rendered 988/1015, time remaining: 10s
+Rendered 988/1015, time remaining: 10s
+Rendered 989/1015, time remaining: 9s
+Rendered 990/1015, time remaining: 9s
+Rendered 991/1015, time remaining: 9s
+Rendered 991/1015, time remaining: 9s
+Rendered 992/1015, time remaining: 8s
+Rendered 993/1015, time remaining: 8s
+Rendered 994/1015, time remaining: 7s
+Rendered 995/1015, time remaining: 7s
+Rendered 995/1015, time remaining: 7s
+Rendered 996/1015, time remaining: 7s
+Rendered 997/1015, time remaining: 6s
+Rendered 998/1015, time remaining: 6s
+Rendered 999/1015, time remaining: 6s
+Rendered 999/1015, time remaining: 6s
+Rendered 1000/1015, time remaining: 5s
+Rendered 1001/1015, time remaining: 5s
+Rendered 1002/1015, time remaining: 4s
+Rendered 1002/1015, time remaining: 4s
+Rendered 1003/1015, time remaining: 4s
+Rendered 1004/1015, time remaining: 4s
+Rendered 1005/1015, time remaining: 3s
+Rendered 1005/1015, time remaining: 3s
+Rendered 1006/1015, time remaining: 3s
+Rendered 1007/1015, time remaining: 3s
+Rendered 1008/1015, time remaining: 2s
+Rendered 1008/1015, time remaining: 2s
+Rendered 1009/1015, time remaining: 2s
+Rendered 1010/1015, time remaining: 1s
+Rendered 1011/1015, time remaining: 1s
+Rendered 1012/1015, time remaining: 1s
+Rendered 1012/1015, time remaining: 1s
+Rendered 1013/1015, time remaining: 0s
+Rendered 1014/1015, time remaining: 0s
+Stitched 761/1015
+Stitched 766/1015
+Stitched 792/1015
+Stitched 812/1015
+Stitched 1015/1015
+Voz: gemini (95 palavras)
+[trilha] trechos: epico 0.0-7.1s | emocao 7.1-33.8s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-09_1130_gestao-completa-oficina-autoflow/video.mp4 (33.8s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
