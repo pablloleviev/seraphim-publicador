@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630424,
+  "telegram_offset": 183630436,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -2175,12 +2175,17 @@
       "ig_manual": false
     },
     "2026-11-08_1300_pipeline-de-dados-explicado": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T14:00:26.205436+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af09ca451492b796e493c00",
+        "feito": "buffer"
       },
-      "msg_id": 1754
+      "msg_id": 1754,
+      "ig_id": "18119697041069117",
+      "publicado_em": "2026-11-08T16:00:35.968036+00:00",
+      "ig_manual": false
     },
     "2026-11-07_2130_risco-whatsapp-pessoal-servidor": {
       "status": "publicado",
@@ -2204,23 +2209,33 @@
       "msg_id": 1758
     },
     "2026-11-08_1000_o-retorno-dos-botoes": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-11-07T15:21:15.443172+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af09a9a229bf05dafbe922b",
+        "feito": "buffer"
       },
-      "msg_id": 1772
+      "msg_id": 1772,
+      "ig_id": "18123744425059626",
+      "publicado_em": "2026-11-08T15:51:53.674225+00:00",
+      "ig_manual": false
     },
     "2026-11-08_1130_autoflow-gestao-oficina": {
-      "status": "aguardando",
+      "status": "publicado",
       "enviado_em": "2026-11-07T15:21:18.725855+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af09ac2d6bbae6fa1f945fe",
+        "feito": "buffer"
       },
-      "msg_id": 1774
+      "msg_id": 1774,
+      "ig_id": "17913133998584836",
+      "publicado_em": "2026-11-08T15:52:33.440896+00:00",
+      "ig_manual": false
     },
     "2026-11-08_1530_checklist-empresa-digital": {
-      "status": "aguardando",
+      "status": "pulado",
       "enviado_em": "2026-11-07T16:30:26.812639+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2228,7 +2243,7 @@
       "msg_id": 1792
     },
     "2026-11-08_1700_armazenamento-dna": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T18:00:20.970557+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2236,7 +2251,7 @@
       "msg_id": 1796
     },
     "2026-11-08_1830_tempo-resposta-whatsapp": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T19:30:20.333915+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2244,7 +2259,7 @@
       "msg_id": 1800
     },
     "2026-11-08_1900_custo-software-legado": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T20:00:01.756296+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2252,7 +2267,7 @@
       "msg_id": 1806
     },
     "2026-11-08_2000_estoque-loja-bairro": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T21:00:08.145412+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2260,7 +2275,7 @@
       "msg_id": 1810
     },
     "2026-11-08_2100_suporte-cliente-agil": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T22:00:23.342601+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2268,7 +2283,7 @@
       "msg_id": 1818
     },
     "2026-11-08_2130_empresa-fabrica-papel": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-07T22:30:22.488511+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2276,7 +2291,7 @@
       "msg_id": 1822
     },
     "2026-11-09_0700_ia-dados-sinteticos": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-08T08:00:27.063922+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2284,7 +2299,7 @@
       "msg_id": 1830
     },
     "2026-11-09_0900_fluxo-aprovacao-reembolso-equipe": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-08T10:00:15.318116+00:00",
       "tiktok": {
         "via": "buffer"
@@ -2292,7 +2307,7 @@
       "msg_id": 1837
     },
     "2026-11-09_1300_zero-trust-seguranca-pequenas-empresas": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-08T14:00:05.812425+00:00",
       "tiktok": {
         "via": "buffer"
