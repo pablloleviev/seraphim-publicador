@@ -2248,12 +2248,17 @@
       "msg_id": 1792
     },
     "2026-11-08_1700_armazenamento-dna": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T18:00:20.970557+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af0d504d6bbae6fa10b81f6",
+        "feito": "buffer"
       },
-      "msg_id": 1796
+      "msg_id": 1796,
+      "ig_id": "18118545275017337",
+      "publicado_em": "2026-11-08T20:01:07.669239+00:00",
+      "ig_manual": false
     },
     "2026-11-08_1830_tempo-resposta-whatsapp": {
       "status": "agendado",
@@ -2358,6 +2363,22 @@
         "via": "buffer"
       },
       "msg_id": 1875
+    },
+    "2026-11-09_1830_mensagens-fora-do-expediente": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T19:30:03.944324+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1877
+    },
+    "2026-11-09_1900_jornada-nota-fiscal-contador": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T20:00:24.658792+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1883
     }
   },
   "respondidos": {},
