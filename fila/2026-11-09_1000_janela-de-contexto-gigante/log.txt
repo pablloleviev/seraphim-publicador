@@ -1,0 +1,76 @@
+/852, time remaining: 25s
+Rendered 812/852, time remaining: 24s
+Rendered 812/852, time remaining: 24s
+Rendered 813/852, time remaining: 23s
+Rendered 814/852, time remaining: 23s
+Rendered 814/852, time remaining: 23s
+Rendered 815/852, time remaining: 22s
+Rendered 816/852, time remaining: 22s
+Rendered 816/852, time remaining: 22s
+Rendered 817/852, time remaining: 21s
+Rendered 817/852, time remaining: 21s
+Rendered 818/852, time remaining: 20s
+Rendered 819/852, time remaining: 20s
+Rendered 820/852, time remaining: 19s
+Rendered 820/852, time remaining: 19s
+Rendered 821/852, time remaining: 19s
+Rendered 822/852, time remaining: 18s
+Rendered 822/852, time remaining: 18s
+Rendered 823/852, time remaining: 17s
+Rendered 824/852, time remaining: 17s
+Rendered 824/852, time remaining: 17s
+Rendered 825/852, time remaining: 16s
+Rendered 826/852, time remaining: 15s
+Rendered 826/852, time remaining: 15s
+Rendered 827/852, time remaining: 15s
+Rendered 828/852, time remaining: 14s
+Rendered 828/852, time remaining: 14s
+Rendered 829/852, time remaining: 14s
+Rendered 830/852, time remaining: 13s
+Rendered 830/852, time remaining: 13s
+Rendered 831/852, time remaining: 12s
+Rendered 831/852, time remaining: 12s
+Rendered 832/852, time remaining: 12s
+Rendered 833/852, time remaining: 11s
+Rendered 833/852, time remaining: 11s
+Rendered 834/852, time remaining: 11s
+Rendered 835/852, time remaining: 10s
+Rendered 835/852, time remaining: 10s
+Rendered 836/852, time remaining: 9s
+Rendered 837/852, time remaining: 9s
+Rendered 838/852, time remaining: 8s
+Rendered 838/852, time remaining: 8s
+Rendered 839/852, time remaining: 7s
+Rendered 840/852, time remaining: 7s
+Rendered 840/852, time remaining: 7s
+Rendered 841/852, time remaining: 6s
+Rendered 842/852, time remaining: 6s
+Rendered 842/852, time remaining: 6s
+Rendered 843/852, time remaining: 5s
+Rendered 844/852, time remaining: 4s
+Rendered 844/852, time remaining: 4s
+Rendered 845/852, time remaining: 4s
+Rendered 846/852, time remaining: 3s
+Rendered 846/852, time remaining: 3s
+Rendered 847/852, time remaining: 3s
+Rendered 848/852, time remaining: 2s
+Rendered 848/852, time remaining: 2s
+Rendered 849/852, time remaining: 1s
+Rendered 850/852, time remaining: 1s
+Rendered 850/852, time remaining: 1s
+Rendered 851/852, time remaining: 0s
+Stitched 631/852
+Stitched 640/852
+Stitched 655/852
+Stitched 672/852
+Stitched 682/852
+Stitched 852/852
+[aviso] voz gemini falhou: gemini-2.5-pro-preview-tts: 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+Voz: edge (77 palavras)
+[trilha] trechos: epico 0.0-5.3s | emocao 5.3-28.4s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-09_1000_janela-de-contexto-gigante/video.mp4 (28.4s)
+
