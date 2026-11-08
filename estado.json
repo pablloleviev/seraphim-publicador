@@ -2379,6 +2379,14 @@
         "via": "buffer"
       },
       "msg_id": 1883
+    },
+    "2026-11-09_2000_visao-computacional-lendo-esquemas": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T21:00:14.910086+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1887
     }
   },
   "respondidos": {},
