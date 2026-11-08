@@ -2350,6 +2350,14 @@
         "via": "buffer"
       },
       "msg_id": 1873
+    },
+    "2026-11-09_1400_o-comando-direto-zero-shot": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T17:25:05.676863+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1875
     }
   },
   "respondidos": {},
