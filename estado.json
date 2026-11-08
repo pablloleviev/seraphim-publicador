@@ -2123,12 +2123,17 @@
       "ig_manual": false
     },
     "2026-11-08_0830_estoque-lucro-escondido": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T09:30:19.969271+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af05d9e9214322f684d3b81",
+        "feito": "buffer"
       },
-      "msg_id": 1738
+      "msg_id": 1738,
+      "ig_id": "18318820015304358",
+      "publicado_em": "2026-11-08T11:31:41.409391+00:00",
+      "ig_manual": false
     },
     "2026-11-08_0900_5-tarefas-automacao": {
       "status": "agendado",
