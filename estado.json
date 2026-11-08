@@ -2285,6 +2285,14 @@
         "via": "buffer"
       },
       "msg_id": 1837
+    },
+    "2026-11-09_1300_zero-trust-seguranca-pequenas-empresas": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T14:00:05.812425+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1849
     }
   },
   "respondidos": {},
