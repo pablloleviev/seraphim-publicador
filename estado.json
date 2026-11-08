@@ -2274,12 +2274,17 @@
       "ig_manual": false
     },
     "2026-11-08_1900_custo-software-legado": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T20:00:01.756296+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af0f1379214322f687c56b4",
+        "feito": "buffer"
       },
-      "msg_id": 1806
+      "msg_id": 1806,
+      "ig_id": "18134671144773181",
+      "publicado_em": "2026-11-08T22:01:27.113054+00:00",
+      "ig_manual": false
     },
     "2026-11-08_2000_estoque-loja-bairro": {
       "status": "agendado",
@@ -2392,6 +2397,22 @@
         "via": "buffer"
       },
       "msg_id": 1887
+    },
+    "2026-11-09_2100_checklist-backup-final-de-semana": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T22:00:59.536560+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1894
+    },
+    "2026-11-09_2130_regras-fixas-vs-inteligencia-contextual": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-08T22:30:21.952188+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1898
     }
   },
   "respondidos": {},
