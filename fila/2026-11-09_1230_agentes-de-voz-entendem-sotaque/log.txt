@@ -1,0 +1,80 @@
+
+Rendered 984/1035, time remaining: 21s
+Rendered 985/1035, time remaining: 20s
+Rendered 985/1035, time remaining: 20s
+Rendered 986/1035, time remaining: 20s
+Rendered 987/1035, time remaining: 20s
+Rendered 987/1035, time remaining: 20s
+Rendered 988/1035, time remaining: 19s
+Rendered 989/1035, time remaining: 19s
+Rendered 990/1035, time remaining: 18s
+Rendered 991/1035, time remaining: 18s
+Rendered 991/1035, time remaining: 18s
+Rendered 992/1035, time remaining: 18s
+Rendered 993/1035, time remaining: 17s
+Rendered 993/1035, time remaining: 17s
+Rendered 994/1035, time remaining: 17s
+Rendered 995/1035, time remaining: 16s
+Rendered 996/1035, time remaining: 16s
+Rendered 997/1035, time remaining: 15s
+Rendered 997/1035, time remaining: 15s
+Rendered 998/1035, time remaining: 15s
+Rendered 999/1035, time remaining: 15s
+Rendered 999/1035, time remaining: 15s
+Rendered 1000/1035, time remaining: 14s
+Rendered 1001/1035, time remaining: 14s
+Rendered 1002/1035, time remaining: 13s
+Rendered 1003/1035, time remaining: 13s
+Rendered 1003/1035, time remaining: 13s
+Rendered 1004/1035, time remaining: 12s
+Rendered 1005/1035, time remaining: 12s
+Rendered 1006/1035, time remaining: 12s
+Rendered 1007/1035, time remaining: 11s
+Rendered 1007/1035, time remaining: 11s
+Rendered 1008/1035, time remaining: 11s
+Rendered 1009/1035, time remaining: 10s
+Rendered 1009/1035, time remaining: 10s
+Rendered 1010/1035, time remaining: 10s
+Rendered 1011/1035, time remaining: 10s
+Rendered 1012/1035, time remaining: 9s
+Rendered 1013/1035, time remaining: 9s
+Rendered 1013/1035, time remaining: 9s
+Rendered 1014/1035, time remaining: 8s
+Rendered 1015/1035, time remaining: 8s
+Rendered 1015/1035, time remaining: 8s
+Rendered 1016/1035, time remaining: 7s
+Rendered 1017/1035, time remaining: 7s
+Rendered 1018/1035, time remaining: 7s
+Rendered 1019/1035, time remaining: 6s
+Rendered 1019/1035, time remaining: 6s
+Rendered 1020/1035, time remaining: 6s
+Rendered 1021/1035, time remaining: 5s
+Rendered 1021/1035, time remaining: 5s
+Rendered 1022/1035, time remaining: 5s
+Rendered 1023/1035, time remaining: 4s
+Rendered 1024/1035, time remaining: 4s
+Rendered 1025/1035, time remaining: 4s
+Rendered 1025/1035, time remaining: 4s
+Rendered 1026/1035, time remaining: 3s
+Rendered 1027/1035, time remaining: 3s
+Rendered 1028/1035, time remaining: 2s
+Rendered 1028/1035, time remaining: 2s
+Rendered 1029/1035, time remaining: 2s
+Rendered 1030/1035, time remaining: 2s
+Rendered 1031/1035, time remaining: 1s
+Rendered 1031/1035, time remaining: 1s
+Rendered 1032/1035, time remaining: 1s
+Rendered 1033/1035, time remaining: 0s
+Rendered 1034/1035, time remaining: 0s
+Stitched 776/1035
+Stitched 782/1035
+Stitched 798/1035
+Stitched 819/1035
+Stitched 828/1035
+Stitched 1035/1035
+Voz: gemini (82 palavras)
+[trilha] trechos: epico 0.0-6.4s | emocao 6.4-34.5s
+Editando no motor Remotion... (alguns minutos)
+Pronto: /home/runner/work/seraphim-publicador/seraphim-publicador/fila/2026-11-09_1230_agentes-de-voz-entendem-sotaque/video.mp4 (34.5s)
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
