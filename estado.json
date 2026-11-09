@@ -331,46 +331,52 @@
    "ig_manual": false
   },
   "2026-10-17_1800_5-coisas-para-ia-analisar-hoje": {
-   "status": "agendado",
+   "status": "pulado",
    "enviado_em": "2026-10-16T19:00:25.453612+00:00",
-   "msg_id": 778
+   "msg_id": 778,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-10-17_1900_perigo-senhas-bloco-de-notas": {
-   "status": "agendado",
+   "status": "pulado",
    "enviado_em": "2026-10-16T20:00:48.965621+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 780
+   "msg_id": 780,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-10-18_0800_o-sumico-dos-comprovantes": {
-   "status": "agendado",
+   "status": "pulado",
    "enviado_em": "2026-10-17T09:00:06.852820+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 786
+   "msg_id": 786,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-10-18_1200_usinas-nucleares-e-ia": {
-   "status": "agendado",
+   "status": "pulado",
    "enviado_em": "2026-10-17T13:00:05.694865+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 790
+   "msg_id": 790,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-10-18_0930_passagem-de-bastao-venda-entrega": {
-   "status": "aguardando",
+   "status": "pulado",
    "enviado_em": "2026-10-17T13:44:55.912110+00:00",
-   "msg_id": 799
+   "msg_id": 799,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-10-18_1400_teste-dobro-de-clientes": {
-   "status": "aguardando",
+   "status": "pulado",
    "enviado_em": "2026-10-17T15:00:14.545648+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 808
+   "msg_id": 808,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-10-19_0900_o-que-e-a-seraphim": {
    "status": "publicado",
@@ -1165,28 +1171,31 @@
    "ig_manual": false
   },
   "2026-10-31_1300_triagem-pedidos-caos": {
-   "status": "aguardando",
+   "status": "pulado",
    "enviado_em": "2026-10-30T14:00:05.995757+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 1293
+   "msg_id": 1293,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-10-31_1130_o-telefone-fantasma": {
-   "status": "aguardando",
+   "status": "pulado",
    "enviado_em": "2026-10-30T15:34:05.958425+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 1301
+   "msg_id": 1301,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-10-31_1500_diferenca-software-e-site": {
-   "status": "aguardando",
+   "status": "pulado",
    "enviado_em": "2026-10-30T16:00:24.046855+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 1307
+   "msg_id": 1307,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-10-31_1800_ia-sintetica-colapso": {
    "status": "publicado",
@@ -1254,12 +1263,13 @@
    "ig_manual": false
   },
   "2026-11-01_0830_tarefas-agente-ia": {
-   "status": "aguardando",
+   "status": "pulado",
    "enviado_em": "2026-10-31T09:30:15.566301+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 1344
+   "msg_id": 1344,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-11-01_1130_ralo-copia-e-cola": {
    "status": "publicado",
@@ -2365,36 +2375,40 @@
    "ig_manual": false
   },
   "2026-11-09_1530_formularios-inteligentes-operacao": {
-   "status": "aguardando",
+   "status": "pulado",
    "enviado_em": "2026-11-08T16:30:46.782299+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 1865
+   "msg_id": 1865,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-11-09_1130_gestao-completa-oficina-autoflow": {
-   "status": "aguardando",
+   "status": "pulado",
    "enviado_em": "2026-11-08T17:12:38.038955+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 1869
+   "msg_id": 1869,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-11-09_1230_agentes-de-voz-entendem-sotaque": {
-   "status": "aguardando",
+   "status": "pulado",
    "enviado_em": "2026-11-08T17:12:41.128010+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 1871
+   "msg_id": 1871,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-11-09_0830_o-rombo-das-devolucoes-sem-registro": {
-   "status": "aguardando",
+   "status": "pulado",
    "enviado_em": "2026-11-08T17:19:12.923455+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 1873
+   "msg_id": 1873,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-11-09_1400_o-comando-direto-zero-shot": {
    "status": "publicado",
@@ -2455,12 +2469,13 @@
    "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
   },
   "2026-11-09_1000_janela-de-contexto-gigante": {
-   "status": "aguardando",
+   "status": "pulado",
    "enviado_em": "2026-11-09T03:00:11.481370+00:00",
    "tiktok": {
     "via": "buffer"
    },
-   "msg_id": 1906
+   "msg_id": 1906,
+   "motivo": "pausa total 09/11 (pendência antiga)"
   },
   "2026-11-10_0700_mensagem-fora-do-horario-atendimento": {
    "status": "pulado",
