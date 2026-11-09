@@ -2339,12 +2339,17 @@
       "ig_manual": false
     },
     "2026-11-09_0900_fluxo-aprovacao-reembolso-equipe": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-08T10:00:15.318116+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af1b62c8a471bd245b68aa4",
+        "feito": "buffer"
       },
-      "msg_id": 1837
+      "msg_id": 1837,
+      "ig_id": "18016354148990911",
+      "publicado_em": "2026-11-09T12:01:47.465184+00:00",
+      "ig_manual": false
     },
     "2026-11-09_1300_zero-trust-seguranca-pequenas-empresas": {
       "status": "agendado",
@@ -2481,6 +2486,14 @@
         "via": "buffer"
       },
       "msg_id": 1923
+    },
+    "2026-11-10_1130_busca-semantica-arquivos-locais": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-09T12:30:23.897582+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1927
     }
   },
   "respondidos": {},
