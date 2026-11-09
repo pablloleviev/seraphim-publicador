@@ -2510,6 +2510,14 @@
         "via": "buffer"
       },
       "msg_id": 1936
+    },
+    "2026-11-10_1400_visao-computacional-defeitos-fabrica": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-09T15:00:09.224536+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1938
     }
   },
   "respondidos": {},
