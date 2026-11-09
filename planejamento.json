@@ -60,6 +60,12 @@
     "19:00",
     "21:00"
    ]
+  },
+  {
+   "nome": "PAUSA (09/11, pedido do Pabllo): sem vídeos nesta semana e planejador parado até nova ordem",
+   "a_partir_de": "2026-11-09",
+   "videos": [],
+   "carrosseis": []
   }
  ]
 }

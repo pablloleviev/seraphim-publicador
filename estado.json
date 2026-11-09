@@ -1,2626 +1,2637 @@
 {
-  "telegram_offset": 183630437,
-  "itens": {
-    "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
-      "status": "publicado",
-      "msg_id": 10,
-      "enviado_em": "2026-10-09T02:58:12.104078+00:00",
-      "ig_id": "18035967551839897",
-      "publicado_em": "2026-10-09T09:14:21.282696+00:00"
-    },
-    "2026-10-09_0638_video-3-sinais": {
-      "status": "publicado",
-      "msg_id": 14,
-      "enviado_em": "2026-10-09T15:18:23.922049+00:00",
-      "ig_id": "17904518802571185",
-      "publicado_em": "2026-10-09T17:32:30.068167+00:00",
-      "tiktok": {
-        "opcoes": [
-          "PUBLIC_TO_EVERYONE",
-          "MUTUAL_FOLLOW_FRIENDS",
-          "SELF_ONLY"
-        ],
-        "info": {
-          "creator_nickname": "seraphimtech",
-          "creator_username": "seraphimtech"
-        },
-        "msg_id": 18,
-        "priv": "PUBLIC_TO_EVERYONE"
-      }
-    },
-    "2026-10-09_1201_1009-teste": {
-      "status": "cancelado",
-      "msg_id": 16,
-      "enviado_em": "2026-10-09T16:09:34.937629+00:00"
-    },
-    "2026-10-10_1200_orcamento-some": {
-      "status": "cancelado",
-      "enviado_em": "2026-10-10T04:25:49.587022+00:00",
-      "tiktok": {
-        "opcoes": [
-          "PUBLIC_TO_EVERYONE",
-          "MUTUAL_FOLLOW_FRIENDS",
-          "SELF_ONLY"
-        ],
-        "info": {
-          "creator_nickname": "seraphimtech",
-          "creator_username": "seraphimtech"
-        }
-      },
-      "msg_id": 24
-    },
-    "2026-10-10_1800_como-precificar": {
-      "status": "cancelado",
-      "enviado_em": "2026-10-10T04:25:51.591497+00:00",
-      "msg_id": 32
-    },
-    "2026-10-10_1900_site-ou-instagram": {
-      "status": "cancelado",
-      "enviado_em": "2026-10-10T04:25:54.096895+00:00",
-      "tiktok": {
-        "opcoes": [
-          "PUBLIC_TO_EVERYONE",
-          "MUTUAL_FOLLOW_FRIENDS",
-          "SELF_ONLY"
-        ],
-        "info": {
-          "creator_nickname": "seraphimtech",
-          "creator_username": "seraphimtech"
-        }
-      },
-      "msg_id": 34
-    },
-    "2026-10-10_1100_contratar-ou-automatizar": {
-      "status": "publicado",
-      "enviado_em": "2026-10-10T14:19:52.145205+00:00",
-      "tiktok": {
-        "opcoes": [
-          "PUBLIC_TO_EVERYONE",
-          "MUTUAL_FOLLOW_FRIENDS",
-          "SELF_ONLY"
-        ],
-        "info": {
-          "creator_nickname": "Seraphim 🪽",
-          "creator_username": "seraphimtech"
-        },
-        "priv": "PUBLIC_TO_EVERYONE",
-        "id": "v_inbox_file~v2.7695044408022140936",
-        "feito": "rascunho"
-      },
-      "msg_id": 601,
-      "ig_id": "18108458750630107",
-      "publicado_em": "2026-10-10T14:25:08.686156+00:00"
-    },
-    "2026-10-10_1500_cliente-que-nao-volta": {
-      "status": "cancelado",
-      "enviado_em": "2026-10-10T14:19:56.770223+00:00",
-      "tiktok": {
-        "opcoes": [
-          "PUBLIC_TO_EVERYONE",
-          "MUTUAL_FOLLOW_FRIENDS",
-          "SELF_ONLY"
-        ],
-        "info": {
-          "creator_nickname": "Seraphim 🪽",
-          "creator_username": "seraphimtech"
-        },
-        "priv": "PUBLIC_TO_EVERYONE"
-      },
-      "msg_id": 603
-    },
-    "2026-10-10_1800_5-comandos-chatgpt": {
-      "status": "cancelado",
-      "enviado_em": "2026-10-10T14:19:58.314354+00:00",
-      "msg_id": 611
-    },
-    "2026-10-10_1900_pecas-urgentes-oficina": {
-      "status": "cancelado",
-      "enviado_em": "2026-10-10T14:20:01.785627+00:00",
-      "tiktok": {
-        "opcoes": [
-          "PUBLIC_TO_EVERYONE",
-          "MUTUAL_FOLLOW_FRIENDS",
-          "SELF_ONLY"
-        ],
-        "info": {
-          "creator_nickname": "Seraphim 🪽",
-          "creator_username": "seraphimtech"
-        },
-        "priv": "PUBLIC_TO_EVERYONE"
-      },
-      "msg_id": 613
-    },
-    "2026-10-11_0800_vale-a-pena-ia-paga": {
-      "status": "cancelado",
-      "enviado_em": "2026-10-10T14:20:06.647545+00:00",
-      "tiktok": {
-        "opcoes": [
-          "PUBLIC_TO_EVERYONE",
-          "MUTUAL_FOLLOW_FRIENDS",
-          "SELF_ONLY"
-        ],
-        "info": {
-          "creator_nickname": "Seraphim 🪽",
-          "creator_username": "seraphimtech"
-        },
-        "priv": "PUBLIC_TO_EVERYONE"
-      },
-      "msg_id": 615
-    },
-    "2026-10-11_1200_cadeira-vazia-agendamento": {
-      "status": "cancelado",
-      "enviado_em": "2026-10-10T14:20:10.896171+00:00",
-      "tiktok": {
-        "opcoes": [
-          "PUBLIC_TO_EVERYONE",
-          "MUTUAL_FOLLOW_FRIENDS",
-          "SELF_ONLY"
-        ],
-        "info": {
-          "creator_nickname": "Seraphim 🪽",
-          "creator_username": "seraphimtech"
-        },
-        "priv": "PUBLIC_TO_EVERYONE"
-      },
-      "msg_id": 617
-    },
-    "2026-10-14_0800_ia-cameras-inteligentes": {
-      "status": "publicado",
-      "enviado_em": "2026-10-13T22:13:08.164796+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6acf62a9be984f4200f4114b",
-        "feito": "buffer"
-      },
-      "msg_id": 649,
-      "ig_id": null,
-      "publicado_em": "2026-10-14T11:08:24.891725+00:00",
-      "ig_manual": true
-    },
-    "2026-10-14_1200_mito-ia-humano": {
-      "status": "publicado",
-      "enviado_em": "2026-10-13T22:13:11.158112+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6acf98fc38098deaf9e5c23e",
-        "feito": "buffer"
-      },
-      "msg_id": 651,
-      "ig_id": null,
-      "publicado_em": "2026-10-14T15:00:05.198886+00:00",
-      "ig_manual": true
-    },
-    "2026-10-14_1800_ferramentas-gestao-equipe": {
-      "status": "publicado",
-      "enviado_em": "2026-10-13T22:13:12.172443+00:00",
-      "msg_id": 659,
-      "ig_id": null,
-      "publicado_em": "2026-10-14T21:00:09.002106+00:00",
-      "ig_manual": true
-    },
-    "2026-10-14_1900_dor-historico-cliente": {
-      "status": "publicado",
-      "enviado_em": "2026-10-13T22:13:15.052634+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6acffb6efd7b73f9b828119a",
-        "feito": "buffer"
-      },
-      "msg_id": 661,
-      "ig_id": null,
-      "publicado_em": "2026-10-14T22:00:09.967497+00:00",
-      "ig_manual": true
-    },
-    "2026-10-15_0800_cameras-com-cerebro": {
-      "status": "publicado",
-      "enviado_em": "2026-10-14T15:28:12.460649+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad0b2458e44c0222ce2cfbf",
-        "feito": "buffer"
-      },
-      "msg_id": 673,
-      "ig_id": null,
-      "publicado_em": "2026-10-15T11:00:18.396490+00:00",
-      "ig_manual": true
-    },
-    "2026-10-15_1200_software-burro-vs-ia": {
-      "status": "publicado",
-      "enviado_em": "2026-10-14T15:28:16.977005+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad0ea7c4ed96805c7c14b56",
-        "feito": "buffer"
-      },
-      "msg_id": 675,
-      "ig_id": null,
-      "publicado_em": "2026-10-15T15:00:04.476726+00:00",
-      "ig_manual": true
-    },
-    "2026-10-15_1900_ia-nao-e-google": {
-      "status": "publicado",
-      "enviado_em": "2026-10-14T20:00:06.867843+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad14ced4ed7d375a43278c5",
-        "feito": "buffer"
-      },
-      "msg_id": 677,
-      "ig_id": null,
-      "publicado_em": "2026-10-15T22:00:10.693655+00:00",
-      "ig_manual": true
-    },
-    "2026-10-16_1800_4-rotinas-para-eliminar-retrabalho": {
-      "status": "publicado",
-      "enviado_em": "2026-10-15T19:00:18.200608+00:00",
-      "msg_id": 725,
-      "ig_id": "18100566569536967",
-      "publicado_em": "2026-10-16T21:01:07.778042+00:00",
-      "ig_manual": false
-    },
-    "2026-10-16_1900_patio-travado-oficina-mecanica": {
-      "status": "publicado",
-      "enviado_em": "2026-10-15T20:00:19.819674+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad29ea652adf2bfae636447",
-        "feito": "buffer"
-      },
-      "msg_id": 727,
-      "ig_id": "18114110519172881",
-      "publicado_em": "2026-10-16T22:01:09.153982+00:00",
-      "ig_manual": false
-    },
-    "2026-10-15_1800_4-automacoes-escritorio": {
-      "status": "publicado",
-      "enviado_em": "2026-10-15T20:05:00.159637+00:00",
-      "msg_id": 736,
-      "ig_id": null,
-      "publicado_em": "2026-10-15T21:00:18.049595+00:00",
-      "ig_manual": true
-    },
-    "2026-10-16_0800_compras-duplicadas-ralo-invisivel": {
-      "status": "publicado",
-      "enviado_em": "2026-10-15T20:05:03.905866+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad203b3b948bf9e9d8ee120",
-        "feito": "buffer"
-      },
-      "msg_id": 738,
-      "ig_id": null,
-      "publicado_em": "2026-10-16T11:00:01.149067+00:00",
-      "ig_manual": true
-    },
-    "2026-10-16_1200_ia-que-usa-computador-sozinha": {
-      "status": "publicado",
-      "enviado_em": "2026-10-15T20:05:06.817971+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad23c187521b87606150cb7",
-        "feito": "buffer"
-      },
-      "msg_id": 740,
-      "ig_id": "18236962966319873",
-      "publicado_em": "2026-10-16T15:00:39.517501+00:00",
-      "ig_manual": false
-    },
-    "2026-10-17_0800_ia-traduz-sua-voz-tempo-real": {
-      "status": "publicado",
-      "enviado_em": "2026-10-16T13:52:35.654755+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad35558938409f1d080e5a7",
-        "feito": "buffer"
-      },
-      "msg_id": 764,
-      "ig_id": "17982823109904650",
-      "publicado_em": "2026-10-17T11:00:39.514178+00:00",
-      "ig_manual": false
-    },
-    "2026-10-17_1200_como-organizar-caixa-de-entrada-ia": {
-      "status": "publicado",
-      "enviado_em": "2026-10-16T13:52:38.352121+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "erro": "Buffer recusou: Invalid post: Video thumbnailUrl is not supported: social networks do not accept custom video thumbnail images, so this value is never sent to the network. Remove thumbnailUrl from the video asset. To pick the video thumbnail, set metadata.thumbnailOffset on the video (offset into th"
-      },
-      "msg_id": 766,
-      "ig_id": "18124665034925640",
-      "publicado_em": "2026-10-17T15:01:06.826799+00:00",
-      "ig_manual": false
-    },
-    "2026-10-17_1800_5-coisas-para-ia-analisar-hoje": {
-      "status": "agendado",
-      "enviado_em": "2026-10-16T19:00:25.453612+00:00",
-      "msg_id": 778
-    },
-    "2026-10-17_1900_perigo-senhas-bloco-de-notas": {
-      "status": "agendado",
-      "enviado_em": "2026-10-16T20:00:48.965621+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 780
-    },
-    "2026-10-18_0800_o-sumico-dos-comprovantes": {
-      "status": "agendado",
-      "enviado_em": "2026-10-17T09:00:06.852820+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 786
-    },
-    "2026-10-18_1200_usinas-nucleares-e-ia": {
-      "status": "agendado",
-      "enviado_em": "2026-10-17T13:00:05.694865+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 790
-    },
-    "2026-10-18_0930_passagem-de-bastao-venda-entrega": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-17T13:44:55.912110+00:00",
-      "msg_id": 799
-    },
-    "2026-10-18_1400_teste-dobro-de-clientes": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-17T15:00:14.545648+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 808
-    },
-    "2026-10-19_0900_o-que-e-a-seraphim": {
-      "status": "publicado",
-      "enviado_em": "2026-10-18T10:00:15.711717+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "feito": "provavel (rodada anterior)"
-      },
-      "msg_id": 817,
-      "ig_id": "18111140717190514",
-      "publicado_em": "2026-10-19T12:14:29.699447+00:00",
-      "duplicado_evitado": true
-    },
-    "2026-10-19_1230_v1-prazer-seraphim": {
-      "status": "publicado",
-      "enviado_em": "2026-10-18T13:30:27.503402+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad6379f052a3a25666a2c18",
-        "feito": "buffer"
-      },
-      "msg_id": 819,
-      "ig_id": "18642768544015680",
-      "publicado_em": "2026-10-19T15:30:38.535666+00:00",
-      "ig_manual": false
-    },
-    "2026-10-19_1730_nosso-manifesto": {
-      "status": "publicado",
-      "enviado_em": "2026-10-18T18:30:22.606915+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad67e13651afa7ffa10c3a6",
-        "feito": "buffer"
-      },
-      "msg_id": 827,
-      "ig_id": "18118430734986931",
-      "publicado_em": "2026-10-19T20:31:14.350922+00:00",
-      "ig_manual": false
-    },
-    "2026-10-20_1230_custo-invisivel-trabalho-repetido": {
-      "status": "publicado",
-      "enviado_em": "2026-10-19T13:30:19.867465+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad789638cf9a879674accd1",
-        "feito": "buffer"
-      },
-      "msg_id": 875,
-      "ig_id": "18130646806792004",
-      "publicado_em": "2026-10-20T15:31:42.563424+00:00",
-      "ig_manual": false
-    },
-    "2026-10-19_1930_tres-coisas-em-que-acreditamos": {
-      "status": "publicado",
-      "enviado_em": "2026-10-19T13:46:33.632467+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad69a1dfb737fdba8f30c02",
-        "feito": "buffer"
-      },
-      "msg_id": 877,
-      "ig_id": "17958600879252990",
-      "publicado_em": "2026-10-19T22:30:53.046538+00:00",
-      "ig_manual": false
-    },
-    "2026-10-20_0900_5-sinais-passou-das-ferramentas": {
-      "status": "publicado",
-      "enviado_em": "2026-10-19T13:46:34.921728+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad757f241bc4976d5449f7c",
-        "feito": "buffer"
-      },
-      "msg_id": 885,
-      "ig_id": "17954999091280599",
-      "publicado_em": "2026-10-20T12:00:49.569808+00:00",
-      "ig_manual": false
-    },
-    "2026-10-20_1730_por-que-a-seraphim-existe": {
-      "status": "publicado",
-      "enviado_em": "2026-10-19T18:30:17.337666+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad7cf73ed28fb758abc9352",
-        "feito": "buffer"
-      },
-      "msg_id": 897,
-      "ig_id": "18112358165124668",
-      "publicado_em": "2026-10-20T20:30:43.027520+00:00",
-      "ig_manual": false
-    },
-    "2026-10-20_1930_planilha-nao-e-sistema": {
-      "status": "publicado",
-      "enviado_em": "2026-10-19T20:30:29.155645+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad7eb90294af05c91bb21cf",
-        "feito": "buffer"
-      },
-      "msg_id": 899,
-      "ig_id": "18118306066966721",
-      "publicado_em": "2026-10-20T22:30:39.845837+00:00",
-      "ig_manual": false
-    },
-    "2026-10-21_0900_as-tres-frentes-da-seraphim": {
-      "status": "publicado",
-      "enviado_em": "2026-10-20T10:00:25.847204+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad8a9750807acdda12721a8",
-        "feito": "buffer"
-      },
-      "msg_id": 916,
-      "ig_id": "18485846998108685",
-      "publicado_em": "2026-10-21T12:00:53.061066+00:00",
-      "ig_manual": false
-    },
-    "2026-10-21_1230_sistema-sob-medida-na-pratica": {
-      "status": "publicado",
-      "enviado_em": "2026-10-20T13:30:25.534429+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad8daa7ee069bfcd23537c7",
-        "feito": "buffer"
-      },
-      "msg_id": 921,
-      "ig_id": "17908764210330182",
-      "publicado_em": "2026-10-21T15:30:46.261357+00:00",
-      "ig_manual": false
-    },
-    "2026-10-21_1730_voce-precisa-de-sistema-proprio": {
-      "status": "publicado",
-      "enviado_em": "2026-10-20T18:30:08.398399+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad920ff74b7720f7e7ee147",
-        "feito": "buffer"
-      },
-      "msg_id": 932,
-      "ig_id": "18057367853801033",
-      "publicado_em": "2026-10-21T20:30:54.376758+00:00",
-      "ig_manual": false
-    },
-    "2026-10-21_1930_pronto-ou-sob-medida": {
-      "status": "publicado",
-      "enviado_em": "2026-10-20T20:30:05.820540+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad93d1d9b7af5217d151be2",
-        "feito": "buffer"
-      },
-      "msg_id": 934,
-      "ig_id": "17885850330689918",
-      "publicado_em": "2026-10-21T22:30:52.817732+00:00",
-      "ig_manual": false
-    },
-    "2026-10-22_0900_integracao-explicada-cozinha": {
-      "status": "publicado",
-      "enviado_em": "2026-10-21T10:00:19.668111+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ad9faf4ebec8224f3bea5a2",
-        "feito": "buffer"
-      },
-      "msg_id": 950,
-      "ig_id": "17879455455632220",
-      "publicado_em": "2026-10-22T12:00:49.064069+00:00",
-      "ig_manual": false
-    },
-    "2026-10-22_1230_uma-tarefa-tres-sistemas": {
-      "status": "publicado",
-      "enviado_em": "2026-10-21T13:30:04.285244+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ada2c3aa6a09108d272af28",
-        "feito": "buffer"
-      },
-      "msg_id": 956,
-      "ig_id": "18076263524462051",
-      "publicado_em": "2026-10-22T15:31:05.780773+00:00",
-      "ig_manual": false
-    },
-    "2026-10-22_1730_glossario-api-webhook": {
-      "status": "publicado",
-      "enviado_em": "2026-10-21T18:30:09.493637+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ada728ef2eceac43739aa89",
-        "feito": "buffer"
-      },
-      "msg_id": 966,
-      "ig_id": "18106170838983260",
-      "publicado_em": "2026-10-22T20:31:09.909416+00:00",
-      "ig_manual": false
-    },
-    "2026-10-22_1930_segunda-no-automatico": {
-      "status": "publicado",
-      "enviado_em": "2026-10-21T20:30:08.990705+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ada8ea5eed382c2d35aa472",
-        "feito": "buffer"
-      },
-      "msg_id": 968,
-      "ig_id": "18090392594274542",
-      "publicado_em": "2026-10-22T22:31:00.815585+00:00",
-      "ig_manual": false
-    },
-    "2026-10-23_0900_nosso-processo-5-etapas": {
-      "status": "publicado",
-      "enviado_em": "2026-10-22T10:00:11.913965+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6adb4c746556f503c42db474",
-        "feito": "buffer"
-      },
-      "msg_id": 986,
-      "ig_id": "18136604602727830",
-      "publicado_em": "2026-10-23T12:00:52.041384+00:00",
-      "ig_manual": false
-    },
-    "2026-10-23_1230_como-comecamos-um-projeto": {
-      "status": "publicado",
-      "enviado_em": "2026-10-22T13:30:10.140128+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6adb7db07af932dee4e9d724",
-        "feito": "buffer"
-      },
-      "msg_id": 992,
-      "ig_id": "18127973881872469",
-      "publicado_em": "2026-10-23T15:30:55.431409+00:00",
-      "ig_manual": false
-    },
-    "2026-10-23_1730_o-que-nao-fazemos": {
-      "status": "publicado",
-      "enviado_em": "2026-10-22T18:30:16.254116+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6adbc411e4be8a4d8624dc3a",
-        "feito": "buffer"
-      },
-      "msg_id": 1000,
-      "ig_id": "17925258984441229",
-      "publicado_em": "2026-10-23T20:31:13.384053+00:00",
-      "ig_manual": false
-    },
-    "2026-10-23_1930_perguntas-antes-do-codigo": {
-      "status": "publicado",
-      "enviado_em": "2026-10-22T20:30:20.560558+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6adbe00d3d5b27036b552f00",
-        "feito": "buffer"
-      },
-      "msg_id": 1002,
-      "ig_id": "17929461612182371",
-      "publicado_em": "2026-10-23T22:30:36.540911+00:00",
-      "ig_manual": false
-    },
-    "2026-10-24_0900_por-que-comecamos-pelas-oficinas": {
-      "status": "publicado",
-      "enviado_em": "2026-10-23T10:00:17.741964+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6adc9df48b3d437ddcb851fe",
-        "feito": "buffer"
-      },
-      "msg_id": 1021,
-      "ig_id": "18106127048363138",
-      "publicado_em": "2026-10-24T12:00:51.141285+00:00",
-      "ig_manual": false
-    },
-    "2026-10-24_1730_autoflow-em-6-slides": {
-      "status": "publicado",
-      "enviado_em": "2026-10-23T18:30:14.605166+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6add15803d5b27036ba06594",
-        "feito": "buffer"
-      },
-      "msg_id": 1033,
-      "ig_id": "18190390684414043",
-      "publicado_em": "2026-10-24T20:30:55.652160+00:00",
-      "ig_manual": false
-    },
-    "2026-10-24_1930_do-caderno-ao-sistema": {
-      "status": "publicado",
-      "enviado_em": "2026-10-23T20:30:26.732532+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6add31c5e4be8a4d867db8ee",
-        "feito": "buffer"
-      },
-      "msg_id": 1035,
-      "ig_id": "18119430635060098",
-      "publicado_em": "2026-10-24T22:31:32.777885+00:00",
-      "ig_manual": false
-    },
-    "2026-10-25_0900_perguntas-sobre-o-autoflow": {
-      "status": "publicado",
-      "enviado_em": "2026-10-24T10:00:17.089005+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6addef6b8b3d437ddc06ceaf",
-        "feito": "buffer"
-      },
-      "msg_id": 1052,
-      "ig_id": "18091099877298672",
-      "publicado_em": "2026-10-25T12:00:43.289895+00:00",
-      "ig_manual": false
-    },
-    "2026-10-25_1230_um-dia-na-oficina": {
-      "status": "publicado",
-      "enviado_em": "2026-10-24T13:30:19.272961+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ade20b3bd33ce99c37abeb8",
-        "feito": "buffer"
-      },
-      "msg_id": 1056,
-      "ig_id": "18123778529475808",
-      "publicado_em": "2026-10-25T15:30:58.759060+00:00",
-      "ig_manual": false
-    },
-    "2026-10-25_1730_o-que-podemos-construir": {
-      "status": "publicado",
-      "enviado_em": "2026-10-24T18:30:20.870052+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ade66f1bd33ce99c38d870e",
-        "feito": "buffer"
-      },
-      "msg_id": 1064,
-      "ig_id": "18636689482028196",
-      "publicado_em": "2026-10-25T20:30:40.875720+00:00",
-      "ig_manual": false
-    },
-    "2026-10-25_1930_sete-dias-uma-ideia": {
-      "status": "publicado",
-      "enviado_em": "2026-10-24T20:30:10.053018+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ade83470b5343d070f51e81",
-        "feito": "buffer"
-      },
-      "msg_id": 1069,
-      "ig_id": "18115693781520259",
-      "publicado_em": "2026-10-25T22:31:34.551855+00:00",
-      "ig_manual": false
-    },
-    "2026-10-27_1230_ia-na-operacao": {
-      "status": "publicado",
-      "enviado_em": "2026-10-26T23:40:18.258272+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae0c3f324d07dab298cb425",
-        "feito": "buffer"
-      },
-      "msg_id": 1097,
-      "ig_id": "18108151298205185",
-      "publicado_em": "2026-10-27T15:32:02.972932+00:00",
-      "ig_manual": false
-    },
-    "2026-10-28_1230_tecnologia-que-comeca-ouvindo": {
-      "status": "publicado",
-      "enviado_em": "2026-10-27T13:30:16.761066+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae21506aa69cd87977972b7",
-        "feito": "buffer"
-      },
-      "msg_id": 1099,
-      "ig_id": "18009620201781533",
-      "publicado_em": "2026-10-28T15:30:13.455553+00:00",
-      "ig_manual": false
-    },
-    "2026-10-28_0830_padronizar-antes-do-sistema": {
-      "status": "publicado",
-      "enviado_em": "2026-10-27T22:38:52.776828+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae1dce663bb1a485a2a10f3",
-        "feito": "buffer"
-      },
-      "msg_id": 1108,
-      "ig_id": "18160631905503873",
-      "publicado_em": "2026-10-28T11:30:45.977983+00:00",
-      "ig_manual": false
-    },
-    "2026-10-28_1130_lead-para-venda-sem-ruido": {
-      "status": "publicado",
-      "enviado_em": "2026-10-27T22:38:54.790950+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae20709620f841dd347b56e",
-        "feito": "buffer"
-      },
-      "msg_id": 1114,
-      "ig_id": "17936742366402327",
-      "publicado_em": "2026-10-28T14:30:32.159069+00:00",
-      "ig_manual": false
-    },
-    "2026-10-28_1500_visao-computacional-na-pratica": {
-      "status": "publicado",
-      "enviado_em": "2026-10-27T22:38:56.776763+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae2384d3990f55bf461ac44",
-        "feito": "buffer"
-      },
-      "msg_id": 1121,
-      "ig_id": null,
-      "publicado_em": "2026-10-28T18:00:44.763975+00:00",
-      "ig_manual": true
-    },
-    "2026-10-28_1830_do-caderno-a-tela-oficina": {
-      "status": "publicado",
-      "enviado_em": "2026-10-27T22:38:58.831666+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae2698c98678c04af5abac0",
-        "feito": "buffer"
-      },
-      "msg_id": 1128,
-      "ig_id": "18100982897640251",
-      "publicado_em": "2026-10-28T21:30:51.495251+00:00",
-      "ig_manual": false
-    },
-    "2026-10-28_1800_historico-cliente-oficina": {
-      "status": "publicado",
-      "enviado_em": "2026-10-27T22:47:24.713388+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae2627da840ef151b6699cc",
-        "feito": "buffer"
-      },
-      "msg_id": 1130,
-      "ig_id": "18025771985933332",
-      "publicado_em": "2026-10-28T21:00:44.206743+00:00",
-      "ig_manual": false
-    },
-    "2026-10-28_1130_proposta-com-preco-velho": {
-      "status": "publicado",
-      "enviado_em": "2026-10-27T22:49:51.757370+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae2073e00f35d308c7ff4b7",
-        "feito": "buffer"
-      },
-      "msg_id": 1132,
-      "ig_id": "17914010442489871",
-      "publicado_em": "2026-10-28T14:31:25.954517+00:00",
-      "ig_manual": false
-    },
-    "2026-10-28_1300_trabalho-braco-computador": {
-      "status": "publicado",
-      "enviado_em": "2026-10-27T22:49:54.788650+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae21c42e490badbade78f4c",
-        "feito": "buffer"
-      },
-      "msg_id": 1134,
-      "ig_id": "18466692310191630",
-      "publicado_em": "2026-10-28T16:01:05.744685+00:00",
-      "ig_manual": false
-    },
-    "2026-10-28_2030_resumo-reuniao-ia": {
-      "status": "publicado",
-      "enviado_em": "2026-10-27T22:49:58.342432+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae285a2b5c2969a071eea79",
-        "feito": "buffer"
-      },
-      "msg_id": 1136,
-      "ig_id": "18153060466543247",
-      "publicado_em": "2026-10-28T23:30:41.637897+00:00",
-      "ig_manual": false
-    },
-    "2026-10-28_0730_ia-aquecendo-cidades": {
-      "status": "publicado",
-      "enviado_em": "2026-10-28T00:30:11.108270+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae1cee34e936aa1bcbf82e2",
-        "feito": "buffer"
-      },
-      "msg_id": 1138,
-      "ig_id": "18121734091898236",
-      "publicado_em": "2026-10-28T10:30:58.674686+00:00",
-      "ig_manual": false
-    },
-    "2026-10-29_0830_habitos-produtividade-2027": {
-      "status": "publicado",
-      "enviado_em": "2026-10-28T17:01:20.435183+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae32e59a0a200dca8b997ce",
-        "feito": "buffer"
-      },
-      "msg_id": 1157,
-      "ig_id": "17920128201459940",
-      "publicado_em": "2026-10-29T11:30:32.805382+00:00",
-      "ig_manual": false
-    },
-    "2026-10-29_1130_erro-rastreio-caixa": {
-      "status": "publicado",
-      "enviado_em": "2026-10-28T17:01:22.733909+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae3589da87e7858ef1251ac",
-        "feito": "buffer"
-      },
-      "msg_id": 1163,
-      "ig_id": "17999665635039971",
-      "publicado_em": "2026-10-29T14:30:52.266635+00:00",
-      "ig_manual": false
-    },
-    "2026-10-29_1500_evolucao-ui-negocios": {
-      "status": "publicado",
-      "enviado_em": "2026-10-28T17:01:25.043313+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae389c7313060a14e20ebd6",
-        "feito": "buffer"
-      },
-      "msg_id": 1170,
-      "ig_id": "18099951041557354",
-      "publicado_em": "2026-10-29T18:00:39.058447+00:00",
-      "ig_manual": false
-    },
-    "2026-10-29_1300_protocolo-cliente-sumido": {
-      "status": "publicado",
-      "enviado_em": "2026-10-28T17:20:44.048838+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae36db925e7fa4a8db71ba2",
-        "feito": "buffer"
-      },
-      "msg_id": 1172,
-      "ig_id": "18134323120823035",
-      "publicado_em": "2026-10-29T16:00:56.389798+00:00",
-      "ig_manual": false
-    },
-    "2026-10-29_0730_ia-descoberta-antibiotico": {
-      "status": "publicado",
-      "enviado_em": "2026-10-28T17:27:16.863962+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae3205c7b777f7b03c148ed",
-        "feito": "buffer"
-      },
-      "msg_id": 1174,
-      "ig_id": "18027262949876712",
-      "publicado_em": "2026-10-29T10:30:51.277498+00:00",
-      "ig_manual": false
-    },
-    "2026-10-29_1130_segundo-cerebro-gestao": {
-      "status": "publicado",
-      "enviado_em": "2026-10-28T17:29:32.388527+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae35903a87e7858ef126b19",
-        "feito": "buffer"
-      },
-      "msg_id": 1176,
-      "ig_id": "17992129496863252",
-      "publicado_em": "2026-10-29T14:32:34.706000+00:00",
-      "ig_manual": false
-    },
-    "2026-10-29_1800_limpeza-digital-negocio": {
-      "status": "publicado",
-      "enviado_em": "2026-10-28T19:00:07.655176+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae3b414397c2ef8f345725d",
-        "feito": "buffer"
-      },
-      "msg_id": 1189,
-      "ig_id": "17932504578165671",
-      "publicado_em": "2026-10-29T21:01:07.081211+00:00",
-      "ig_manual": false
-    },
-    "2026-10-29_1830_custo-nao-ter-autoflow": {
-      "status": "publicado",
-      "enviado_em": "2026-10-28T19:30:22.572343+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae3bb1060532fc2b0d0f8ec",
-        "feito": "buffer"
-      },
-      "msg_id": 1196,
-      "ig_id": "18450927808121509",
-      "publicado_em": "2026-10-29T21:30:55.411586+00:00",
-      "ig_manual": false
-    },
-    "2026-10-29_1930_mais-uma-aba-aberta": {
-      "status": "publicado",
-      "enviado_em": "2026-10-28T20:30:21.945069+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae3c9298d19aa0a5be9a709",
-        "feito": "buffer"
-      },
-      "msg_id": 1198,
-      "ig_id": "18067896767789348",
-      "publicado_em": "2026-10-29T22:31:05.025111+00:00",
-      "ig_manual": false
-    },
-    "2026-10-29_2030_ia-leitura-mundo-real": {
-      "status": "publicado",
-      "enviado_em": "2026-10-28T21:30:05.936166+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae3d7264b8768bfb2cb66a2",
-        "feito": "buffer"
-      },
-      "msg_id": 1202,
-      "ig_id": "18094705853188552",
-      "publicado_em": "2026-10-29T23:30:45.527394+00:00",
-      "ig_manual": false
-    },
-    "2026-10-30_1230_checklist-fim-de-mes": {
-      "status": "publicado",
-      "enviado_em": "2026-10-29T13:30:19.373583+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae4b828df85d8ab2f416986",
-        "feito": "buffer"
-      },
-      "msg_id": 1218,
-      "ig_id": "18569313283079295",
-      "publicado_em": "2026-10-30T15:30:47.561620+00:00",
-      "ig_manual": false
-    },
-    "2026-10-30_0830_agilidade-no-caixa": {
-      "status": "publicado",
-      "enviado_em": "2026-10-29T17:26:34.505122+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae47fdfab6b84214cd0f8d7",
-        "feito": "buffer"
-      },
-      "msg_id": 1230,
-      "ig_id": "18646473187014541",
-      "publicado_em": "2026-10-30T11:30:38.352069+00:00",
-      "ig_manual": false
-    },
-    "2026-10-30_1130_funcoes-essenciais-sistema": {
-      "status": "publicado",
-      "enviado_em": "2026-10-29T17:26:36.591343+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae4aa1f9394ea34c11b7f72",
-        "feito": "buffer"
-      },
-      "msg_id": 1237,
-      "ig_id": "18226047814337262",
-      "publicado_em": "2026-10-30T14:30:54.679009+00:00",
-      "ig_manual": false
-    },
-    "2026-10-30_1500_adeus-papelada-oficina": {
-      "status": "publicado",
-      "enviado_em": "2026-10-29T17:26:38.613728+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae4db53cd8290b9b904c471",
-        "feito": "buffer"
-      },
-      "msg_id": 1244,
-      "ig_id": "17891621088685571",
-      "publicado_em": "2026-10-30T18:00:50.656042+00:00",
-      "ig_manual": false
-    },
-    "2026-10-30_1130_recuperar-orcamento": {
-      "status": "publicado",
-      "enviado_em": "2026-10-29T17:35:16.776386+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae4aa51df85d8ab2f3c7b67",
-        "feito": "buffer"
-      },
-      "msg_id": 1246,
-      "ig_id": "18020225975959712",
-      "publicado_em": "2026-10-30T14:31:44.393617+00:00",
-      "ig_manual": false
-    },
-    "2026-10-30_0730_ia-vendas-clima": {
-      "status": "publicado",
-      "enviado_em": "2026-10-29T17:37:31.450402+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae471d398895fbf5a469d5a",
-        "feito": "buffer"
-      },
-      "msg_id": 1248,
-      "ig_id": "18074618777753072",
-      "publicado_em": "2026-10-30T10:30:42.012250+00:00",
-      "ig_manual": false
-    },
-    "2026-10-30_1300_voz-comando-negocios": {
-      "status": "publicado",
-      "enviado_em": "2026-10-29T17:37:34.119537+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae4bf42a351214acf967e6d",
-        "feito": "buffer"
-      },
-      "msg_id": 1250,
-      "ig_id": "17889573831687060",
-      "publicado_em": "2026-10-30T16:01:05.536587+00:00",
-      "ig_manual": false
-    },
-    "2026-10-30_1800_oficina-lucro-escondido": {
-      "status": "publicado",
-      "enviado_em": "2026-10-29T19:00:25.962722+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae50580a1145743496c1b28",
-        "feito": "buffer"
-      },
-      "msg_id": 1254,
-      "ig_id": "17977273677153528",
-      "publicado_em": "2026-10-30T21:00:47.140931+00:00",
-      "ig_manual": false
-    },
-    "2026-10-30_1830_agentes-ia-explicados": {
-      "status": "publicado",
-      "enviado_em": "2026-10-29T19:30:22.397461+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae50c83406ab8a018837b71",
-        "feito": "buffer"
-      },
-      "msg_id": 1261,
-      "ig_id": "18134124151743233",
-      "publicado_em": "2026-10-30T21:30:41.159488+00:00",
-      "ig_manual": false
-    },
-    "2026-10-30_2030_mito-esforco-bruto": {
-      "status": "publicado",
-      "enviado_em": "2026-10-29T21:30:15.494874+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae528b1b84259308ba8d97a",
-        "feito": "buffer"
-      },
-      "msg_id": 1265,
-      "ig_id": null,
-      "publicado_em": "2026-10-30T23:30:56.222930+00:00",
-      "ig_manual": true
-    },
-    "2026-10-31_0730_chips-fotonicos-luz": {
-      "status": "publicado",
-      "enviado_em": "2026-10-30T08:30:06.831938+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae5c3671891472093c8c7fd",
-        "feito": "buffer"
-      },
-      "msg_id": 1273,
-      "ig_id": "17915359563538274",
-      "publicado_em": "2026-10-31T10:31:02.754383+00:00",
-      "ig_manual": false
-    },
-    "2026-10-31_0830_como-organizar-fila-atendimento": {
-      "status": "publicado",
-      "enviado_em": "2026-10-30T09:30:16.692175+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae5d16e1891472093ccd96c",
-        "feito": "buffer"
-      },
-      "msg_id": 1281,
-      "ig_id": "18065557502795709",
-      "publicado_em": "2026-10-31T11:30:53.552603+00:00",
-      "ig_manual": false
-    },
-    "2026-10-31_1130_anatomia-tarefa-automatizavel": {
-      "status": "publicado",
-      "enviado_em": "2026-10-30T12:30:15.958602+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae5fb8e5fdbd4dd6291690d",
-        "feito": "buffer"
-      },
-      "msg_id": 1291,
-      "ig_id": "18596606368069668",
-      "publicado_em": "2026-10-31T14:30:37.898076+00:00",
-      "ig_manual": false
-    },
-    "2026-10-31_1300_triagem-pedidos-caos": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-30T14:00:05.995757+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1293
-    },
-    "2026-10-31_1130_o-telefone-fantasma": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-30T15:34:05.958425+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1301
-    },
-    "2026-10-31_1500_diferenca-software-e-site": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-30T16:00:24.046855+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1307
-    },
-    "2026-10-31_1800_ia-sintetica-colapso": {
-      "status": "publicado",
-      "enviado_em": "2026-10-30T19:00:22.396206+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae75f668755094b828fe762",
-        "feito": "buffer"
-      },
-      "msg_id": 1313,
-      "ig_id": "18106060520631673",
-      "publicado_em": "2026-11-01T15:48:53.993254+00:00",
-      "ig_manual": false
-    },
-    "2026-10-31_1830_seguranca-senhas-compartilhadas": {
-      "status": "publicado",
-      "enviado_em": "2026-10-30T19:30:06.882563+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae75f39fa39ab5d4d81d187",
-        "feito": "buffer"
-      },
-      "msg_id": 1320,
-      "ig_id": "18116039296844868",
-      "publicado_em": "2026-11-01T15:48:09.057163+00:00",
-      "ig_manual": false
-    },
-    "2026-10-31_1930_terror-da-operacao": {
-      "status": "publicado",
-      "enviado_em": "2026-10-30T20:30:13.442774+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae75f0fcd0d0de2bf844f01",
-        "feito": "buffer"
-      },
-      "msg_id": 1322,
-      "ig_id": "18127922981513801",
-      "publicado_em": "2026-11-01T15:47:26.385531+00:00",
-      "ig_manual": false
-    },
-    "2026-10-31_2030_fim-do-alt-tab": {
-      "status": "publicado",
-      "enviado_em": "2026-10-30T21:30:04.609553+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae75ea48755094b828fbe02",
-        "feito": "buffer"
-      },
-      "msg_id": 1326,
-      "ig_id": "18032098670906554",
-      "publicado_em": "2026-11-01T15:45:39.211404+00:00",
-      "ig_manual": false
-    },
-    "2026-11-01_0730_fim-do-silicio-grafeno": {
-      "status": "publicado",
-      "enviado_em": "2026-10-31T08:30:16.926567+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae75fc6dbb50f7b82dea62a",
-        "feito": "buffer"
-      },
-      "msg_id": 1337,
-      "ig_id": "18106973552261961",
-      "publicado_em": "2026-11-01T15:50:29.804416+00:00",
-      "ig_manual": false
-    },
-    "2026-11-01_0830_tarefas-agente-ia": {
-      "status": "aguardando",
-      "enviado_em": "2026-10-31T09:30:15.566301+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1344
-    },
-    "2026-11-01_1130_ralo-copia-e-cola": {
-      "status": "publicado",
-      "enviado_em": "2026-10-31T12:30:20.145093+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae75ff28755094b82900e24",
-        "feito": "buffer"
-      },
-      "msg_id": 1354,
-      "ig_id": "18034917557913035",
-      "publicado_em": "2026-11-01T15:51:13.389568+00:00",
-      "ig_manual": false
-    },
-    "2026-11-01_1130_triagem-whatsapp-filtro": {
-      "status": "publicado",
-      "enviado_em": "2026-10-31T12:30:23.792852+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae7602e36ecc998481345b1",
-        "feito": "buffer"
-      },
-      "msg_id": 1356,
-      "ig_id": "18008067432006032",
-      "publicado_em": "2026-11-01T15:52:13.904430+00:00",
-      "ig_manual": false
-    },
-    "2026-11-01_1230_construir-e-construir-clareza": {
-      "status": "publicado",
-      "enviado_em": "2026-10-31T13:30:25.903453+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae760458755094b82901f11",
-        "feito": "buffer"
-      },
-      "msg_id": 1358,
-      "ig_id": "18112462352463717",
-      "publicado_em": "2026-11-01T15:52:36.780083+00:00",
-      "ig_manual": false
-    },
-    "2026-11-01_1300_ia-manutencao-preditiva": {
-      "status": "publicado",
-      "enviado_em": "2026-10-31T14:01:26.326067+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae7623193985ec108e0462f",
-        "feito": "buffer"
-      },
-      "msg_id": 1360,
-      "ig_id": "18133561589495018",
-      "publicado_em": "2026-11-01T16:00:48.646074+00:00",
-      "ig_manual": false
-    },
-    "2026-11-01_1500_metodo-antes-da-ferramenta": {
-      "status": "publicado",
-      "enviado_em": "2026-10-31T16:00:21.770607+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae77e51cfdcf9feb717a0e1",
-        "feito": "buffer"
-      },
-      "msg_id": 1369,
-      "ig_id": "18453138457135676",
-      "publicado_em": "2026-11-01T18:00:48.305002+00:00",
-      "ig_manual": false
-    },
-    "2026-11-01_1800_autoflow-lucro-oficina": {
-      "status": "publicado",
-      "enviado_em": "2026-10-31T19:00:16.576181+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae7a87e07b774c8fb2e1366",
-        "feito": "buffer"
-      },
-      "msg_id": 1371,
-      "ig_id": "18228641374332684",
-      "publicado_em": "2026-11-01T21:00:45.193196+00:00",
-      "ig_manual": false
-    },
-    "2026-11-01_1830_planilha-virou-monstro": {
-      "status": "publicado",
-      "enviado_em": "2026-10-31T19:30:28.581906+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae7af9548ce42a6b429d061",
-        "feito": "buffer"
-      },
-      "msg_id": 1378,
-      "ig_id": "18120500359780921",
-      "publicado_em": "2026-11-01T21:31:00.289434+00:00",
-      "ig_manual": false
-    },
-    "2026-11-01_2030_equipe-resistencia-sistema": {
-      "status": "publicado",
-      "enviado_em": "2026-10-31T21:30:03.681312+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae7cbb0902c3fb1dec2b12d",
-        "feito": "buffer"
-      },
-      "msg_id": 1380,
-      "ig_id": "18090720104306265",
-      "publicado_em": "2026-11-01T23:30:55.281655+00:00",
-      "ig_manual": false
-    },
-    "2026-11-02_0730_agentes-ia-computador-sozinho": {
-      "status": "publicado",
-      "enviado_em": "2026-11-01T08:30:10.330752+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae8665d796ca84be0cf4780",
-        "feito": "buffer"
-      },
-      "msg_id": 1382,
-      "ig_id": "18126275218700733",
-      "publicado_em": "2026-11-02T10:30:52.600789+00:00",
-      "ig_manual": false
-    },
-    "2026-11-02_0830_agentes-ia-casos-uso": {
-      "status": "publicado",
-      "enviado_em": "2026-11-01T09:30:10.085997+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae8746b146ca029aa14fe02",
-        "feito": "buffer"
-      },
-      "msg_id": 1389,
-      "ig_id": "18127039174901179",
-      "publicado_em": "2026-11-02T11:30:50.750136+00:00",
-      "ig_manual": false
-    },
-    "2026-11-02_1130_ia-olhos-digitais-documentos": {
-      "status": "publicado",
-      "enviado_em": "2026-11-01T12:30:18.010177+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae89ea8c03187867e4258e7",
-        "feito": "buffer"
-      },
-      "msg_id": 1391,
-      "ig_id": "18106163794995191",
-      "publicado_em": "2026-11-02T14:31:03.592683+00:00",
-      "ig_manual": false
-    },
-    "2026-11-02_1130_whatsapp-prisao-operacional": {
-      "status": "publicado",
-      "enviado_em": "2026-11-01T12:30:20.121447+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae89ed6c03187867e42784b",
-        "feito": "buffer"
-      },
-      "msg_id": 1398,
-      "ig_id": "17964949170215821",
-      "publicado_em": "2026-11-02T14:31:48.666637+00:00",
-      "ig_manual": false
-    },
-    "2026-11-02_1300_gestao-caos-recibos-sumidos": {
-      "status": "publicado",
-      "enviado_em": "2026-11-01T14:00:14.411444+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae8b3d1a8c7e349215abd34",
-        "feito": "buffer"
-      },
-      "msg_id": 1400,
-      "ig_id": "17933178960163728",
-      "publicado_em": "2026-11-02T16:01:20.105245+00:00",
-      "ig_manual": false
-    },
-    "2026-11-02_1500_escolha-sistema-momento-certo": {
-      "status": "publicado",
-      "enviado_em": "2026-11-01T16:00:15.059442+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae8cfd86b1d49ecbdea6b1d",
-        "feito": "buffer"
-      },
-      "msg_id": 1423,
-      "ig_id": "18023979926934025",
-      "publicado_em": "2026-11-02T18:00:55.137555+00:00",
-      "ig_manual": false
-    },
-    "2026-11-02_1800_ia-faxina-inbox-foco": {
-      "status": "publicado",
-      "enviado_em": "2026-11-01T19:00:14.509978+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae8f9fa25a58c431d0508af",
-        "feito": "buffer"
-      },
-      "msg_id": 1429,
-      "ig_id": "18095332790163874",
-      "publicado_em": "2026-11-02T21:00:41.639666+00:00",
-      "ig_manual": false
-    },
-    "2026-11-02_1830_checklist-preparacao-escala": {
-      "status": "publicado",
-      "enviado_em": "2026-11-01T19:30:06.527725+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae90111d0e732df448dbd31",
-        "feito": "buffer"
-      },
-      "msg_id": 1435,
-      "ig_id": "18096165389168273",
-      "publicado_em": "2026-11-02T21:30:55.980965+00:00",
-      "ig_manual": false
-    },
-    "2026-11-02_2030_ia-previsao-vendas-estoque": {
-      "status": "publicado",
-      "enviado_em": "2026-11-01T21:30:18.441894+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae91d3e967eeee46f562f76",
-        "feito": "buffer"
-      },
-      "msg_id": 1439,
-      "ig_id": "18118096739322966",
-      "publicado_em": "2026-11-02T23:31:09.593507+00:00",
-      "ig_manual": false
-    },
-    "2026-11-03_0730_vidro-eterno-dados": {
-      "status": "publicado",
-      "enviado_em": "2026-11-02T08:30:06.311850+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae9b7f7f0e18de9ba17eacb",
-        "feito": "buffer"
-      },
-      "msg_id": 1445,
-      "ig_id": "18137754634677869",
-      "publicado_em": "2026-11-03T10:31:18.812311+00:00",
-      "ig_manual": false
-    },
-    "2026-11-03_0830_o-gargalo-primeiro-contato": {
-      "status": "publicado",
-      "enviado_em": "2026-11-02T09:30:12.346477+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae9c5e6e9a91b5943cd3e03",
-        "feito": "buffer"
-      },
-      "msg_id": 1451,
-      "ig_id": "17992075242116691",
-      "publicado_em": "2026-11-03T11:30:45.945045+00:00",
-      "ig_manual": false
-    },
-    "2026-11-03_1130_o-ex-funcionario-conectado": {
-      "status": "publicado",
-      "enviado_em": "2026-11-02T12:30:18.571223+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae9f00e985f73e5825066bf",
-        "feito": "buffer"
-      },
-      "msg_id": 1461,
-      "ig_id": "18137108032715498",
-      "publicado_em": "2026-11-03T14:30:38.005093+00:00",
-      "ig_manual": false
-    },
-    "2026-11-03_1130_o-produto-fantasma-estoque": {
-      "status": "publicado",
-      "enviado_em": "2026-11-02T12:30:22.360967+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6ae9f039b75704f9ac59156c",
-        "feito": "buffer"
-      },
-      "msg_id": 1463,
-      "ig_id": "18090921617502828",
-      "publicado_em": "2026-11-03T14:31:20.181711+00:00",
-      "ig_manual": false
-    },
-    "2026-11-03_1300_a-febre-do-vamos-marcar": {
-      "status": "publicado",
-      "enviado_em": "2026-11-02T14:00:17.743162+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aea06d301362e3aaea41d37",
-        "feito": "buffer"
-      },
-      "msg_id": 1465,
-      "ig_id": "18149227405561086",
-      "publicado_em": "2026-11-03T16:07:46.440836+00:00",
-      "ig_manual": false
-    },
-    "2026-11-03_1500_a-regra-da-tela-limpa": {
-      "status": "pulado",
-      "enviado_em": "2026-11-02T16:00:26.553121+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1475
-    },
-    "2026-11-03_1800_elevador-parado-oficina": {
-      "status": "publicado",
-      "enviado_em": "2026-11-02T19:00:14.068042+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aea675f7d619ce3a64479f7",
-        "feito": "buffer"
-      },
-      "msg_id": 1482,
-      "ig_id": "17870731623663086",
-      "publicado_em": "2026-11-03T22:59:42.567718+00:00",
-      "ig_manual": false
-    },
-    "2026-11-03_1830_anatomia-de-um-processo-enxuto": {
-      "status": "publicado",
-      "enviado_em": "2026-11-02T19:30:26.066293+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aea67932fbe315a4d654bc7",
-        "feito": "buffer"
-      },
-      "msg_id": 1488,
-      "ig_id": "18114646160268575",
-      "publicado_em": "2026-11-03T23:00:34.511060+00:00",
-      "ig_manual": false
-    },
-    "2026-11-03_2030_o-software-que-desaparece": {
-      "status": "publicado",
-      "enviado_em": "2026-11-02T21:30:27.936505+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aea6eaa87b7c6d24c7b3ec6",
-        "feito": "buffer"
-      },
-      "msg_id": 1493,
-      "ig_id": "18120313922004036",
-      "publicado_em": "2026-11-03T23:30:49.173957+00:00",
-      "ig_manual": false
-    },
-    "2026-11-04_0730_ia-de-tato-digital": {
-      "status": "publicado",
-      "enviado_em": "2026-11-03T08:30:09.345303+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aeb09790eea02ace32eba49",
-        "feito": "buffer"
-      },
-      "msg_id": 1499,
-      "ig_id": "18034428200676330",
-      "publicado_em": "2026-11-04T10:31:20.239922+00:00",
-      "ig_manual": false
-    },
-    "2026-11-04_0830_mapa-fluxo-trabalho": {
-      "status": "publicado",
-      "enviado_em": "2026-11-03T09:30:01.698429+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aeb17686e21919416d60991",
-        "feito": "buffer"
-      },
-      "msg_id": 1506,
-      "ig_id": "17996015553058266",
-      "publicado_em": "2026-11-04T11:30:47.863415+00:00",
-      "ig_manual": false
-    },
-    "2026-11-04_1130_custo-da-troca-contexto": {
-      "status": "publicado",
-      "enviado_em": "2026-11-03T12:30:22.603985+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aeb41958e3da7e721494905",
-        "feito": "buffer"
-      },
-      "msg_id": 1512,
-      "ig_id": "18113693519188001",
-      "publicado_em": "2026-11-04T14:30:44.806436+00:00",
-      "ig_manual": false
-    },
-    "2026-11-04_1130_perguntas-antes-de-contratar-dev": {
-      "status": "publicado",
-      "enviado_em": "2026-11-03T12:30:24.728356+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aeb41c2bf0b7294966a7bf7",
-        "feito": "buffer"
-      },
-      "msg_id": 1519,
-      "ig_id": "17969934177194168",
-      "publicado_em": "2026-11-04T14:31:29.726084+00:00",
-      "ig_manual": false
-    },
-    "2026-11-04_1300_o-cliente-que-esfriou": {
-      "status": "publicado",
-      "enviado_em": "2026-11-03T14:00:22.533963+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aeb56e872db9694c0478b86",
-        "feito": "buffer"
-      },
-      "msg_id": 1521,
-      "ig_id": "17949474474072470",
-      "publicado_em": "2026-11-04T16:01:43.825149+00:00",
-      "ig_manual": false
-    },
-    "2026-11-04_1500_checklist-gestao-fragil": {
-      "status": "publicado",
-      "enviado_em": "2026-11-03T16:07:15.788910+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aeb72deb60af5ca167c7258",
-        "feito": "buffer"
-      },
-      "msg_id": 1532,
-      "ig_id": "18132537922812624",
-      "publicado_em": "2026-11-04T18:01:01.613947+00:00",
-      "ig_manual": false
-    },
-    "2026-11-04_1800_ia-preve-estoque": {
-      "status": "publicado",
-      "enviado_em": "2026-11-03T19:09:00.464149+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aeb9d0eb080155a2dc3d456",
-        "feito": "buffer"
-      },
-      "msg_id": 1536,
-      "ig_id": "18107189534526745",
-      "publicado_em": "2026-11-04T21:01:01.559196+00:00",
-      "ig_manual": false
-    },
-    "2026-11-04_1830_custo-de-nao-ter-sistema": {
-      "status": "publicado",
-      "enviado_em": "2026-11-03T19:30:25.694041+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aeba413c91738fad50538b6",
-        "feito": "buffer"
-      },
-      "msg_id": 1543,
-      "ig_id": "18120646339769507",
-      "publicado_em": "2026-11-04T21:30:58.640592+00:00",
-      "ig_manual": false
-    },
-    "2026-11-04_2030_empresa-quebra-cabeca": {
-      "status": "publicado",
-      "enviado_em": "2026-11-03T22:59:05.499432+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aebc0349c5b05a1212e4564",
-        "feito": "buffer"
-      },
-      "msg_id": 1545,
-      "ig_id": "18136850911678421",
-      "publicado_em": "2026-11-04T23:30:59.809577+00:00",
-      "ig_manual": false
-    },
-    "2026-11-05_0730_ia-no-proprio-dispositivo": {
-      "status": "publicado",
-      "enviado_em": "2026-11-04T08:30:53.074014+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aec5adde37b539a4c1c2e4c",
-        "feito": "buffer"
-      },
-      "msg_id": 1553,
-      "ig_id": "17994225360073696",
-      "publicado_em": "2026-11-05T10:30:53.216241+00:00",
-      "ig_manual": false
-    },
-    "2026-11-05_0830_ciclo-invisivel-da-interrupcao": {
-      "status": "publicado",
-      "enviado_em": "2026-11-04T09:30:09.699188+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aec68eaf5b4b5564cb41d0a",
-        "feito": "buffer"
-      },
-      "msg_id": 1561,
-      "ig_id": "17992680789114820",
-      "publicado_em": "2026-11-05T11:30:49.632638+00:00",
-      "ig_manual": false
-    },
-    "2026-11-05_1130_banco-de-dados-explicado-facil": {
-      "status": "publicado",
-      "enviado_em": "2026-11-04T12:30:13.774678+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aec9311ee89f47b0fbfc811",
-        "feito": "buffer"
-      },
-      "msg_id": 1572,
-      "ig_id": "18115077044464595",
-      "publicado_em": "2026-11-05T14:30:40.521622+00:00",
-      "ig_manual": false
-    },
-    "2026-11-05_1130_o-caos-dos-audios-de-pedido": {
-      "status": "publicado",
-      "enviado_em": "2026-11-04T12:30:17.440114+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aec9344fe41022b90d7ccdd",
-        "feito": "buffer"
-      },
-      "msg_id": 1574,
-      "ig_id": "18358328437220303",
-      "publicado_em": "2026-11-05T14:31:31.616908+00:00",
-      "ig_manual": false
-    },
-    "2026-11-05_1300_abas-abertas-computador-lento": {
-      "status": "publicado",
-      "enviado_em": "2026-11-04T14:00:09.637350+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aeca83bf28015a0fe56daa8",
-        "feito": "buffer"
-      },
-      "msg_id": 1576,
-      "ig_id": "18120606887000641",
-      "publicado_em": "2026-11-05T16:00:58.359339+00:00",
-      "ig_manual": false
-    },
-    "2026-11-05_1500_seguranca-digital-pequena-empresa": {
-      "status": "pulado",
-      "enviado_em": "2026-11-04T16:00:04.562470+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1588
-    },
-    "2026-11-05_1800_balcao-versus-oficina-recados": {
-      "status": "publicado",
-      "enviado_em": "2026-11-04T19:00:23.774218+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aeceeaecf99e575e90c3466",
-        "feito": "buffer"
-      },
-      "msg_id": 1594,
-      "ig_id": "17914732623551023",
-      "publicado_em": "2026-11-05T21:01:32.707711+00:00",
-      "ig_manual": false
-    },
-    "2026-11-05_1830_como-desenhar-um-procedimento-sem-manual": {
-      "status": "publicado",
-      "enviado_em": "2026-11-04T19:30:22.360418+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aecf58b67d1d04c53171fee",
-        "feito": "buffer"
-      },
-      "msg_id": 1602,
-      "ig_id": "18113866559239901",
-      "publicado_em": "2026-11-05T21:30:50.923078+00:00",
-      "ig_manual": false
-    },
-    "2026-11-05_2030_computacao-espacial-sensores": {
-      "status": "publicado",
-      "enviado_em": "2026-11-04T21:30:24.841985+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aed1b1507f945cca92dd4c5",
-        "feito": "buffer"
-      },
-      "msg_id": 1607,
-      "ig_id": "17994722637052774",
-      "publicado_em": "2026-11-06T00:11:00.527690+00:00",
-      "ig_manual": false
-    },
-    "2026-11-06_1130_sinais-cobranca-automatica": {
-      "status": "publicado",
-      "enviado_em": "2026-11-05T18:07:15.679667+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aede499bbaeea3ce9f13f71",
-        "feito": "buffer"
-      },
-      "msg_id": 1628,
-      "ig_id": "18027036941935544",
-      "publicado_em": "2026-11-06T14:30:48.888649+00:00",
-      "ig_manual": false
-    },
-    "2026-11-06_1500_autoflow-painel-oficina": {
-      "status": "publicado",
-      "enviado_em": "2026-11-05T18:07:18.473346+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aee15c6229bf05daffed3e4",
-        "feito": "buffer"
-      },
-      "msg_id": 1634,
-      "ig_id": "18110153660577816",
-      "publicado_em": "2026-11-06T18:00:37.309990+00:00",
-      "ig_manual": false
-    },
-    "2026-11-06_0830_centralizacao-decisoes-dono": {
-      "status": "publicado",
-      "enviado_em": "2026-11-05T18:07:47.549096+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aedba65c57409593f9d29fb",
-        "feito": "buffer"
-      },
-      "msg_id": 1640,
-      "ig_id": "18025714718928274",
-      "publicado_em": "2026-11-06T11:30:44.771390+00:00",
-      "ig_manual": false
-    },
-    "2026-11-06_0730_data-centers-submarinos": {
-      "status": "publicado",
-      "enviado_em": "2026-11-05T18:15:45.504918+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aedac9007f945cca9594dd5",
-        "feito": "buffer"
-      },
-      "msg_id": 1642,
-      "ig_id": "17918645610532359",
-      "publicado_em": "2026-11-06T10:31:43.352835+00:00",
-      "ig_manual": false
-    },
-    "2026-11-06_1130_lixo-digital-servidor": {
-      "status": "publicado",
-      "enviado_em": "2026-11-05T18:15:49.608168+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aede4c8bbaeea3ce9f15a05",
-        "feito": "buffer"
-      },
-      "msg_id": 1644,
-      "ig_id": "18646740268000228",
-      "publicado_em": "2026-11-06T14:31:35.638754+00:00",
-      "ig_manual": false
-    },
-    "2026-11-06_1300_padrao-entrada-pedidos": {
-      "status": "publicado",
-      "enviado_em": "2026-11-05T18:15:52.756793+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aedf9a94525bf695e6cd08c",
-        "feito": "buffer"
-      },
-      "msg_id": 1646,
-      "ig_id": "18101209508536234",
-      "publicado_em": "2026-11-06T16:00:40.393558+00:00",
-      "ig_manual": false
-    },
-    "2026-11-06_1800_fim-dos-manuais-impressos": {
-      "status": "publicado",
-      "enviado_em": "2026-11-05T19:00:05.761374+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aee4034004e4879a7158755",
-        "feito": "buffer"
-      },
-      "msg_id": 1648,
-      "ig_id": "18443169973178819",
-      "publicado_em": "2026-11-06T21:01:39.210885+00:00",
-      "ig_manual": false
-    },
-    "2026-11-06_1830_memoria-contextual-ia": {
-      "status": "publicado",
-      "enviado_em": "2026-11-05T19:30:05.407435+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aee4701a7751de7c9abbe66",
-        "feito": "buffer"
-      },
-      "msg_id": 1655,
-      "ig_id": "18119924507078132",
-      "publicado_em": "2026-11-06T21:30:40.535066+00:00",
-      "ig_manual": false
-    },
-    "2026-11-06_2030_sensores-manutencao-preventiva": {
-      "status": "publicado",
-      "enviado_em": "2026-11-05T21:30:06.166962+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aee6457229bf05daf17d554",
-        "feito": "buffer"
-      },
-      "msg_id": 1659,
-      "ig_id": "18104732327457695",
-      "publicado_em": "2026-11-06T23:35:50.617441+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_0900_efeito-domino-atraso-proposta": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T17:59:28.894231+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef41d7004e4879a7641800",
-        "feito": "buffer"
-      },
-      "msg_id": 1681,
-      "ig_id": null,
-      "publicado_em": "2026-11-07T15:20:54.584364+00:00",
-      "ig_manual": true
-    },
-    "2026-11-07_1300_sinais-equipe-sobrecarregada-admin": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T17:59:31.434225+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef4b35229bf05daf5dbe1b",
-        "feito": "buffer"
-      },
-      "msg_id": 1688,
-      "ig_id": "17909729697597666",
-      "publicado_em": "2026-11-07T16:00:52.337802+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_1530_perguntas-antes-mudar-gestao-vendas": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T17:59:33.645156+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef6e59562f2e6de974181f",
-        "feito": "buffer"
-      },
-      "msg_id": 1695,
-      "ig_id": "17888997711506044",
-      "publicado_em": "2026-11-07T18:30:48.869750+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_1130_autoflow-fim-patio-cegas": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T18:10:40.706439+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef423851492b796ee511c4",
-        "feito": "buffer"
-      },
-      "msg_id": 1699,
-      "ig_id": "18139741435732602",
-      "publicado_em": "2026-11-07T15:22:31.540416+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_0700_ia-processamento-audio-nativa": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T18:15:12.099752+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef427e562f2e6de96604bd",
-        "feito": "buffer"
-      },
-      "msg_id": 1701,
-      "ig_id": "17968194822203298",
-      "publicado_em": "2026-11-07T15:23:41.547399+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_1400_memoria-humana-limites-gestao": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T18:17:27.592052+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef59719214322f68054e79",
-        "feito": "buffer"
-      },
-      "msg_id": 1703,
-      "ig_id": "18085525877356175",
-      "publicado_em": "2026-11-07T17:01:36.593936+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_1000_mitos-automacao-atendimento": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T18:19:45.646205+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef42bf9214322f68fdfdf3",
-        "feito": "buffer"
-      },
-      "msg_id": 1705,
-      "ig_id": "17990923701073651",
-      "publicado_em": "2026-11-07T15:24:46.939229+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_1700_valor-historico-cliente": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T18:24:13.710394+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef8379562f2e6de97a5d03",
-        "feito": "buffer"
-      },
-      "msg_id": 1707,
-      "ig_id": "17981308314132330",
-      "publicado_em": "2026-11-07T20:00:56.895629+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_0830_gargalo-agendamento-recepcao": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T18:43:44.728513+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef42f0229bf05daf5b27fc",
-        "feito": "buffer"
-      },
-      "msg_id": 1709,
-      "ig_id": "18037326080849574",
-      "publicado_em": "2026-11-07T15:25:36.045298+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_1830_rastreio-propostas-comerciais": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T19:30:21.625300+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef98d6229bf05daf75ad77",
-        "feito": "buffer"
-      },
-      "msg_id": 1711,
-      "ig_id": "18099064058651798",
-      "publicado_em": "2026-11-07T21:32:05.605677+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_1900_perigo-planilha-computador-unico": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T20:00:52.772902+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef9fa1004e4879a78064a7",
-        "feito": "buffer"
-      },
-      "msg_id": 1718,
-      "ig_id": "18221930704345472",
-      "publicado_em": "2026-11-07T22:01:05.017946+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_2100_filtro-invisivel-validacao-dados": {
-      "status": "publicado",
-      "enviado_em": "2026-11-06T22:00:14.310597+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aefbbb8d6bbae6fa1b9d1ed",
-        "feito": "buffer"
-      },
-      "msg_id": 1730,
-      "ig_id": "17965592910231617",
-      "publicado_em": "2026-11-08T00:00:55.194204+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_1230_sede-energia-ia": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T05:30:15.516713+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aef442dd6bbae6fa1968101",
-        "feito": "buffer"
-      },
-      "msg_id": 1734,
-      "ig_id": "17930741379431683",
-      "publicado_em": "2026-11-07T15:30:52.885184+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_0700_ia-programando-sozinha": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T08:00:11.817034+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af0485351492b796e2da287",
-        "feito": "buffer"
-      },
-      "msg_id": 1736,
-      "ig_id": "17970202380197305",
-      "publicado_em": "2026-11-08T10:00:49.822584+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_0830_estoque-lucro-escondido": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T09:30:19.969271+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af05d9e9214322f684d3b81",
-        "feito": "buffer"
-      },
-      "msg_id": 1738,
-      "ig_id": "18318820015304358",
-      "publicado_em": "2026-11-08T11:31:41.409391+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_0900_5-tarefas-automacao": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T10:00:12.402418+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af06527229bf05dafacb796",
-        "feito": "buffer"
-      },
-      "msg_id": 1744,
-      "ig_id": "18138045250631159",
-      "publicado_em": "2026-11-08T12:03:50.924395+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_2000_historia-agendamento-clinica-domingo": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T13:00:05.088955+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aefadae004e4879a7845ace",
-        "feito": "buffer"
-      },
-      "msg_id": 1746,
-      "ig_id": "18129166009899661",
-      "publicado_em": "2026-11-07T23:01:01.907179+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_1230_como-ia-le-imagens": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T13:30:27.139549+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af095b8229bf05dafbd4d50",
-        "feito": "buffer"
-      },
-      "msg_id": 1748,
-      "ig_id": "18103467350655087",
-      "publicado_em": "2026-11-08T15:31:03.089681+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_1300_pipeline-de-dados-explicado": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T14:00:26.205436+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af09ca451492b796e493c00",
-        "feito": "buffer"
-      },
-      "msg_id": 1754,
-      "ig_id": "18119697041069117",
-      "publicado_em": "2026-11-08T16:00:35.968036+00:00",
-      "ig_manual": false
-    },
-    "2026-11-07_2130_risco-whatsapp-pessoal-servidor": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T14:30:11.790908+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6aefc34b9214322f682434c0",
-        "feito": "buffer"
-      },
-      "msg_id": 1756,
-      "ig_id": "18146442379565719",
-      "publicado_em": "2026-11-08T00:33:14.937857+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_1400_automacao-ou-software": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T15:00:18.541208+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af0aacad6bbae6fa1fe5a43",
-        "feito": "buffer"
-      },
-      "msg_id": 1758,
-      "ig_id": "18132630058770040",
-      "publicado_em": "2026-11-08T17:00:56.700617+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_1000_o-retorno-dos-botoes": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T15:21:15.443172+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af09a9a229bf05dafbe922b",
-        "feito": "buffer"
-      },
-      "msg_id": 1772,
-      "ig_id": "18123744425059626",
-      "publicado_em": "2026-11-08T15:51:53.674225+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_1130_autoflow-gestao-oficina": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T15:21:18.725855+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af09ac2d6bbae6fa1f945fe",
-        "feito": "buffer"
-      },
-      "msg_id": 1774,
-      "ig_id": "17913133998584836",
-      "publicado_em": "2026-11-08T15:52:33.440896+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_1530_checklist-empresa-digital": {
-      "status": "pulado",
-      "enviado_em": "2026-11-07T16:30:26.812639+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1792
-    },
-    "2026-11-08_1700_armazenamento-dna": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T18:00:20.970557+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af0d504d6bbae6fa10b81f6",
-        "feito": "buffer"
-      },
-      "msg_id": 1796,
-      "ig_id": "18118545275017337",
-      "publicado_em": "2026-11-08T20:01:07.669239+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_1830_tempo-resposta-whatsapp": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T19:30:20.333915+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af0ea08d6bbae6fa111d07b",
-        "feito": "buffer"
-      },
-      "msg_id": 1800,
-      "ig_id": "18138142588662966",
-      "publicado_em": "2026-11-08T21:30:47.426670+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_1900_custo-software-legado": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T20:00:01.756296+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af0f1379214322f687c56b4",
-        "feito": "buffer"
-      },
-      "msg_id": 1806,
-      "ig_id": "18134671144773181",
-      "publicado_em": "2026-11-08T22:01:27.113054+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_2000_estoque-loja-bairro": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T21:00:08.145412+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af0ff2ed6bbae6fa1180830",
-        "feito": "buffer"
-      },
-      "msg_id": 1810,
-      "ig_id": "18012178452002707",
-      "publicado_em": "2026-11-08T23:01:01.068537+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_2100_suporte-cliente-agil": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T22:00:23.342601+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af10d2cd6bbae6fa11c0960",
-        "feito": "buffer"
-      },
-      "msg_id": 1818,
-      "ig_id": "18112008665235455",
-      "publicado_em": "2026-11-09T00:00:42.418541+00:00",
-      "ig_manual": false
-    },
-    "2026-11-08_2130_empresa-fabrica-papel": {
-      "status": "publicado",
-      "enviado_em": "2026-11-07T22:30:22.488511+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af1144251492b796e6e513e",
-        "feito": "buffer"
-      },
-      "msg_id": 1822,
-      "ig_id": "17887126131513577",
-      "publicado_em": "2026-11-09T00:30:57.505149+00:00",
-      "ig_manual": false
-    },
-    "2026-11-09_0700_ia-dados-sinteticos": {
-      "status": "publicado",
-      "enviado_em": "2026-11-08T08:00:27.063922+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af199d4f309feb7ee036e04",
-        "feito": "buffer"
-      },
-      "msg_id": 1830,
-      "ig_id": "18148141594588451",
-      "publicado_em": "2026-11-09T10:00:51.165603+00:00",
-      "ig_manual": false
-    },
-    "2026-11-09_0900_fluxo-aprovacao-reembolso-equipe": {
-      "status": "publicado",
-      "enviado_em": "2026-11-08T10:00:15.318116+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af1b62c8a471bd245b68aa4",
-        "feito": "buffer"
-      },
-      "msg_id": 1837,
-      "ig_id": "18016354148990911",
-      "publicado_em": "2026-11-09T12:01:47.465184+00:00",
-      "ig_manual": false
-    },
-    "2026-11-09_1300_zero-trust-seguranca-pequenas-empresas": {
-      "status": "publicado",
-      "enviado_em": "2026-11-08T14:00:05.812425+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af1ee2a6de9b6a6d77c54a3",
-        "feito": "buffer"
-      },
-      "msg_id": 1849,
-      "ig_id": "18117178784032041",
-      "publicado_em": "2026-11-09T16:00:41.696819+00:00",
-      "ig_manual": false
-    },
-    "2026-11-09_1530_formularios-inteligentes-operacao": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-08T16:30:46.782299+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1865
-    },
-    "2026-11-09_1130_gestao-completa-oficina-autoflow": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-08T17:12:38.038955+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1869
-    },
-    "2026-11-09_1230_agentes-de-voz-entendem-sotaque": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-08T17:12:41.128010+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1871
-    },
-    "2026-11-09_0830_o-rombo-das-devolucoes-sem-registro": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-08T17:19:12.923455+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1873
-    },
-    "2026-11-09_1400_o-comando-direto-zero-shot": {
-      "status": "publicado",
-      "enviado_em": "2026-11-08T17:25:05.676863+00:00",
-      "tiktok": {
-        "via": "buffer",
-        "id": "6af1fc7208578dcbeb67d698",
-        "feito": "buffer"
-      },
-      "msg_id": 1875,
-      "ig_id": "17964017583258818",
-      "publicado_em": "2026-11-09T17:01:37.878068+00:00",
-      "ig_manual": false
-    },
-    "2026-11-09_1830_mensagens-fora-do-expediente": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-08T19:30:03.944324+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1877
-    },
-    "2026-11-09_1900_jornada-nota-fiscal-contador": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-08T20:00:24.658792+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1883
-    },
-    "2026-11-09_2000_visao-computacional-lendo-esquemas": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-08T21:00:14.910086+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1887
-    },
-    "2026-11-09_2100_checklist-backup-final-de-semana": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-08T22:00:59.536560+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1894
-    },
-    "2026-11-09_2130_regras-fixas-vs-inteligencia-contextual": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-08T22:30:21.952188+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1898
-    },
-    "2026-11-09_1000_janela-de-contexto-gigante": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T03:00:11.481370+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1906
-    },
-    "2026-11-10_0700_mensagem-fora-do-horario-atendimento": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T08:02:48.586533+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1908
-    },
-    "2026-11-10_0830_cabos-submarinos-espinha-da-nuvem": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T09:30:04.887978+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1910
-    },
-    "2026-11-09_1700_peso-do-acumulo-de-arquivos-digitais": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T10:00:09.292947+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1912
-    },
-    "2026-11-10_0900_sinais-arquivos-mandam-na-empresa": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T10:00:11.575810+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1919
-    },
-    "2026-11-10_1000_autoflow-patio-sob-controle": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T11:00:05.327928+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1923
-    },
-    "2026-11-10_1130_busca-semantica-arquivos-locais": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T12:30:23.897582+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1927
-    },
-    "2026-11-10_1230_seguranca-nuvem-versus-hd": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T13:30:06.955514+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1929
-    },
-    "2026-11-10_1300_atrito-financeiro-comercial-empresa": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T14:00:23.879309+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1936
-    },
-    "2026-11-10_1400_visao-computacional-defeitos-fabrica": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T15:00:09.224536+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1938
-    },
-    "2026-11-10_1530_o-que-e-latencia-sistema-pesado": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T16:30:09.940015+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1946
-    },
-    "2026-11-10_1700_compras-duplicadas-estoque-invisivel": {
-      "status": "aguardando",
-      "enviado_em": "2026-11-09T18:03:17.289947+00:00",
-      "tiktok": {
-        "via": "buffer"
-      },
-      "msg_id": 1950
-    }
+ "telegram_offset": 183630437,
+ "itens": {
+  "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
+   "status": "publicado",
+   "msg_id": 10,
+   "enviado_em": "2026-10-09T02:58:12.104078+00:00",
+   "ig_id": "18035967551839897",
+   "publicado_em": "2026-10-09T09:14:21.282696+00:00"
   },
-  "respondidos": {},
-  "stories": {
-    "2026-10-19_1-enquete": {
-      "status": "aprovado",
-      "msg_id": 869,
-      "lembrado": true
+  "2026-10-09_0638_video-3-sinais": {
+   "status": "publicado",
+   "msg_id": 14,
+   "enviado_em": "2026-10-09T15:18:23.922049+00:00",
+   "ig_id": "17904518802571185",
+   "publicado_em": "2026-10-09T17:32:30.068167+00:00",
+   "tiktok": {
+    "opcoes": [
+     "PUBLIC_TO_EVERYONE",
+     "MUTUAL_FOLLOW_FRIENDS",
+     "SELF_ONLY"
+    ],
+    "info": {
+     "creator_nickname": "seraphimtech",
+     "creator_username": "seraphimtech"
     },
-    "2026-10-19_2-nova-fase": {
-      "status": "publicado",
-      "msg_id": 871,
-      "ig_id": "17987324007080634",
-      "publicado_em": "2026-10-19T16:15:07.138965+00:00"
-    },
-    "2026-10-20_1-onde-mora": {
-      "status": "aprovado",
-      "msg_id": 906,
-      "lembrado": true
-    },
-    "2026-10-20_2-tarefa-repetida": {
-      "status": "aprovado",
-      "msg_id": 909,
-      "lembrado": true
-    },
-    "2026-10-21_1-uma-tarefa": {
-      "status": "publicado",
-      "msg_id": 940,
-      "ig_id": "17915626773529904",
-      "publicado_em": "2026-10-21T13:00:00.855108+00:00"
-    },
-    "2026-10-21_2-pronto-ou-medida": {
-      "status": "aprovado",
-      "msg_id": 943,
-      "lembrado": true
-    },
-    "2026-10-22_1-quiz-webhook": {
-      "status": "aprovado",
-      "msg_id": 975,
-      "lembrado": true
-    },
-    "2026-10-22_2-segunda": {
-      "status": "publicado",
-      "msg_id": 978,
-      "ig_id": "18113986706124343",
-      "publicado_em": "2026-10-22T23:15:09.216008+00:00"
-    },
-    "2026-10-23_1-pergunte": {
-      "status": "aprovado",
-      "msg_id": 1010,
-      "lembrado": true
-    },
-    "2026-10-23_2-cinco-perguntas": {
-      "status": "publicado",
-      "msg_id": 1013,
-      "ig_id": "18118332469976502",
-      "publicado_em": "2026-10-23T23:15:10.530333+00:00"
-    },
-    "2026-10-24_1-oficina": {
-      "status": "aprovado",
-      "msg_id": 1043,
-      "lembrado": true
-    },
-    "2026-10-24_2-dor-oficina": {
-      "status": "aprovado",
-      "msg_id": 1045,
-      "lembrado": true
-    },
-    "2026-10-25_1-conversa": {
-      "status": "publicado",
-      "msg_id": 1089,
-      "ig_id": "18162574225495148",
-      "publicado_em": "2026-10-26T16:49:19.152560+00:00"
-    },
-    "2026-10-25_2-construir": {
-      "status": "aguardando",
-      "msg_id": 1078
+    "msg_id": 18,
+    "priv": "PUBLIC_TO_EVERYONE"
+   }
+  },
+  "2026-10-09_1201_1009-teste": {
+   "status": "cancelado",
+   "msg_id": 16,
+   "enviado_em": "2026-10-09T16:09:34.937629+00:00"
+  },
+  "2026-10-10_1200_orcamento-some": {
+   "status": "cancelado",
+   "enviado_em": "2026-10-10T04:25:49.587022+00:00",
+   "tiktok": {
+    "opcoes": [
+     "PUBLIC_TO_EVERYONE",
+     "MUTUAL_FOLLOW_FRIENDS",
+     "SELF_ONLY"
+    ],
+    "info": {
+     "creator_nickname": "seraphimtech",
+     "creator_username": "seraphimtech"
     }
+   },
+   "msg_id": 24
+  },
+  "2026-10-10_1800_como-precificar": {
+   "status": "cancelado",
+   "enviado_em": "2026-10-10T04:25:51.591497+00:00",
+   "msg_id": 32
+  },
+  "2026-10-10_1900_site-ou-instagram": {
+   "status": "cancelado",
+   "enviado_em": "2026-10-10T04:25:54.096895+00:00",
+   "tiktok": {
+    "opcoes": [
+     "PUBLIC_TO_EVERYONE",
+     "MUTUAL_FOLLOW_FRIENDS",
+     "SELF_ONLY"
+    ],
+    "info": {
+     "creator_nickname": "seraphimtech",
+     "creator_username": "seraphimtech"
+    }
+   },
+   "msg_id": 34
+  },
+  "2026-10-10_1100_contratar-ou-automatizar": {
+   "status": "publicado",
+   "enviado_em": "2026-10-10T14:19:52.145205+00:00",
+   "tiktok": {
+    "opcoes": [
+     "PUBLIC_TO_EVERYONE",
+     "MUTUAL_FOLLOW_FRIENDS",
+     "SELF_ONLY"
+    ],
+    "info": {
+     "creator_nickname": "Seraphim 🪽",
+     "creator_username": "seraphimtech"
+    },
+    "priv": "PUBLIC_TO_EVERYONE",
+    "id": "v_inbox_file~v2.7695044408022140936",
+    "feito": "rascunho"
+   },
+   "msg_id": 601,
+   "ig_id": "18108458750630107",
+   "publicado_em": "2026-10-10T14:25:08.686156+00:00"
+  },
+  "2026-10-10_1500_cliente-que-nao-volta": {
+   "status": "cancelado",
+   "enviado_em": "2026-10-10T14:19:56.770223+00:00",
+   "tiktok": {
+    "opcoes": [
+     "PUBLIC_TO_EVERYONE",
+     "MUTUAL_FOLLOW_FRIENDS",
+     "SELF_ONLY"
+    ],
+    "info": {
+     "creator_nickname": "Seraphim 🪽",
+     "creator_username": "seraphimtech"
+    },
+    "priv": "PUBLIC_TO_EVERYONE"
+   },
+   "msg_id": 603
+  },
+  "2026-10-10_1800_5-comandos-chatgpt": {
+   "status": "cancelado",
+   "enviado_em": "2026-10-10T14:19:58.314354+00:00",
+   "msg_id": 611
+  },
+  "2026-10-10_1900_pecas-urgentes-oficina": {
+   "status": "cancelado",
+   "enviado_em": "2026-10-10T14:20:01.785627+00:00",
+   "tiktok": {
+    "opcoes": [
+     "PUBLIC_TO_EVERYONE",
+     "MUTUAL_FOLLOW_FRIENDS",
+     "SELF_ONLY"
+    ],
+    "info": {
+     "creator_nickname": "Seraphim 🪽",
+     "creator_username": "seraphimtech"
+    },
+    "priv": "PUBLIC_TO_EVERYONE"
+   },
+   "msg_id": 613
+  },
+  "2026-10-11_0800_vale-a-pena-ia-paga": {
+   "status": "cancelado",
+   "enviado_em": "2026-10-10T14:20:06.647545+00:00",
+   "tiktok": {
+    "opcoes": [
+     "PUBLIC_TO_EVERYONE",
+     "MUTUAL_FOLLOW_FRIENDS",
+     "SELF_ONLY"
+    ],
+    "info": {
+     "creator_nickname": "Seraphim 🪽",
+     "creator_username": "seraphimtech"
+    },
+    "priv": "PUBLIC_TO_EVERYONE"
+   },
+   "msg_id": 615
+  },
+  "2026-10-11_1200_cadeira-vazia-agendamento": {
+   "status": "cancelado",
+   "enviado_em": "2026-10-10T14:20:10.896171+00:00",
+   "tiktok": {
+    "opcoes": [
+     "PUBLIC_TO_EVERYONE",
+     "MUTUAL_FOLLOW_FRIENDS",
+     "SELF_ONLY"
+    ],
+    "info": {
+     "creator_nickname": "Seraphim 🪽",
+     "creator_username": "seraphimtech"
+    },
+    "priv": "PUBLIC_TO_EVERYONE"
+   },
+   "msg_id": 617
+  },
+  "2026-10-14_0800_ia-cameras-inteligentes": {
+   "status": "publicado",
+   "enviado_em": "2026-10-13T22:13:08.164796+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6acf62a9be984f4200f4114b",
+    "feito": "buffer"
+   },
+   "msg_id": 649,
+   "ig_id": null,
+   "publicado_em": "2026-10-14T11:08:24.891725+00:00",
+   "ig_manual": true
+  },
+  "2026-10-14_1200_mito-ia-humano": {
+   "status": "publicado",
+   "enviado_em": "2026-10-13T22:13:11.158112+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6acf98fc38098deaf9e5c23e",
+    "feito": "buffer"
+   },
+   "msg_id": 651,
+   "ig_id": null,
+   "publicado_em": "2026-10-14T15:00:05.198886+00:00",
+   "ig_manual": true
+  },
+  "2026-10-14_1800_ferramentas-gestao-equipe": {
+   "status": "publicado",
+   "enviado_em": "2026-10-13T22:13:12.172443+00:00",
+   "msg_id": 659,
+   "ig_id": null,
+   "publicado_em": "2026-10-14T21:00:09.002106+00:00",
+   "ig_manual": true
+  },
+  "2026-10-14_1900_dor-historico-cliente": {
+   "status": "publicado",
+   "enviado_em": "2026-10-13T22:13:15.052634+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6acffb6efd7b73f9b828119a",
+    "feito": "buffer"
+   },
+   "msg_id": 661,
+   "ig_id": null,
+   "publicado_em": "2026-10-14T22:00:09.967497+00:00",
+   "ig_manual": true
+  },
+  "2026-10-15_0800_cameras-com-cerebro": {
+   "status": "publicado",
+   "enviado_em": "2026-10-14T15:28:12.460649+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad0b2458e44c0222ce2cfbf",
+    "feito": "buffer"
+   },
+   "msg_id": 673,
+   "ig_id": null,
+   "publicado_em": "2026-10-15T11:00:18.396490+00:00",
+   "ig_manual": true
+  },
+  "2026-10-15_1200_software-burro-vs-ia": {
+   "status": "publicado",
+   "enviado_em": "2026-10-14T15:28:16.977005+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad0ea7c4ed96805c7c14b56",
+    "feito": "buffer"
+   },
+   "msg_id": 675,
+   "ig_id": null,
+   "publicado_em": "2026-10-15T15:00:04.476726+00:00",
+   "ig_manual": true
+  },
+  "2026-10-15_1900_ia-nao-e-google": {
+   "status": "publicado",
+   "enviado_em": "2026-10-14T20:00:06.867843+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad14ced4ed7d375a43278c5",
+    "feito": "buffer"
+   },
+   "msg_id": 677,
+   "ig_id": null,
+   "publicado_em": "2026-10-15T22:00:10.693655+00:00",
+   "ig_manual": true
+  },
+  "2026-10-16_1800_4-rotinas-para-eliminar-retrabalho": {
+   "status": "publicado",
+   "enviado_em": "2026-10-15T19:00:18.200608+00:00",
+   "msg_id": 725,
+   "ig_id": "18100566569536967",
+   "publicado_em": "2026-10-16T21:01:07.778042+00:00",
+   "ig_manual": false
+  },
+  "2026-10-16_1900_patio-travado-oficina-mecanica": {
+   "status": "publicado",
+   "enviado_em": "2026-10-15T20:00:19.819674+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad29ea652adf2bfae636447",
+    "feito": "buffer"
+   },
+   "msg_id": 727,
+   "ig_id": "18114110519172881",
+   "publicado_em": "2026-10-16T22:01:09.153982+00:00",
+   "ig_manual": false
+  },
+  "2026-10-15_1800_4-automacoes-escritorio": {
+   "status": "publicado",
+   "enviado_em": "2026-10-15T20:05:00.159637+00:00",
+   "msg_id": 736,
+   "ig_id": null,
+   "publicado_em": "2026-10-15T21:00:18.049595+00:00",
+   "ig_manual": true
+  },
+  "2026-10-16_0800_compras-duplicadas-ralo-invisivel": {
+   "status": "publicado",
+   "enviado_em": "2026-10-15T20:05:03.905866+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad203b3b948bf9e9d8ee120",
+    "feito": "buffer"
+   },
+   "msg_id": 738,
+   "ig_id": null,
+   "publicado_em": "2026-10-16T11:00:01.149067+00:00",
+   "ig_manual": true
+  },
+  "2026-10-16_1200_ia-que-usa-computador-sozinha": {
+   "status": "publicado",
+   "enviado_em": "2026-10-15T20:05:06.817971+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad23c187521b87606150cb7",
+    "feito": "buffer"
+   },
+   "msg_id": 740,
+   "ig_id": "18236962966319873",
+   "publicado_em": "2026-10-16T15:00:39.517501+00:00",
+   "ig_manual": false
+  },
+  "2026-10-17_0800_ia-traduz-sua-voz-tempo-real": {
+   "status": "publicado",
+   "enviado_em": "2026-10-16T13:52:35.654755+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad35558938409f1d080e5a7",
+    "feito": "buffer"
+   },
+   "msg_id": 764,
+   "ig_id": "17982823109904650",
+   "publicado_em": "2026-10-17T11:00:39.514178+00:00",
+   "ig_manual": false
+  },
+  "2026-10-17_1200_como-organizar-caixa-de-entrada-ia": {
+   "status": "publicado",
+   "enviado_em": "2026-10-16T13:52:38.352121+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "erro": "Buffer recusou: Invalid post: Video thumbnailUrl is not supported: social networks do not accept custom video thumbnail images, so this value is never sent to the network. Remove thumbnailUrl from the video asset. To pick the video thumbnail, set metadata.thumbnailOffset on the video (offset into th"
+   },
+   "msg_id": 766,
+   "ig_id": "18124665034925640",
+   "publicado_em": "2026-10-17T15:01:06.826799+00:00",
+   "ig_manual": false
+  },
+  "2026-10-17_1800_5-coisas-para-ia-analisar-hoje": {
+   "status": "agendado",
+   "enviado_em": "2026-10-16T19:00:25.453612+00:00",
+   "msg_id": 778
+  },
+  "2026-10-17_1900_perigo-senhas-bloco-de-notas": {
+   "status": "agendado",
+   "enviado_em": "2026-10-16T20:00:48.965621+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 780
+  },
+  "2026-10-18_0800_o-sumico-dos-comprovantes": {
+   "status": "agendado",
+   "enviado_em": "2026-10-17T09:00:06.852820+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 786
+  },
+  "2026-10-18_1200_usinas-nucleares-e-ia": {
+   "status": "agendado",
+   "enviado_em": "2026-10-17T13:00:05.694865+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 790
+  },
+  "2026-10-18_0930_passagem-de-bastao-venda-entrega": {
+   "status": "aguardando",
+   "enviado_em": "2026-10-17T13:44:55.912110+00:00",
+   "msg_id": 799
+  },
+  "2026-10-18_1400_teste-dobro-de-clientes": {
+   "status": "aguardando",
+   "enviado_em": "2026-10-17T15:00:14.545648+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 808
+  },
+  "2026-10-19_0900_o-que-e-a-seraphim": {
+   "status": "publicado",
+   "enviado_em": "2026-10-18T10:00:15.711717+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "feito": "provavel (rodada anterior)"
+   },
+   "msg_id": 817,
+   "ig_id": "18111140717190514",
+   "publicado_em": "2026-10-19T12:14:29.699447+00:00",
+   "duplicado_evitado": true
+  },
+  "2026-10-19_1230_v1-prazer-seraphim": {
+   "status": "publicado",
+   "enviado_em": "2026-10-18T13:30:27.503402+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad6379f052a3a25666a2c18",
+    "feito": "buffer"
+   },
+   "msg_id": 819,
+   "ig_id": "18642768544015680",
+   "publicado_em": "2026-10-19T15:30:38.535666+00:00",
+   "ig_manual": false
+  },
+  "2026-10-19_1730_nosso-manifesto": {
+   "status": "publicado",
+   "enviado_em": "2026-10-18T18:30:22.606915+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad67e13651afa7ffa10c3a6",
+    "feito": "buffer"
+   },
+   "msg_id": 827,
+   "ig_id": "18118430734986931",
+   "publicado_em": "2026-10-19T20:31:14.350922+00:00",
+   "ig_manual": false
+  },
+  "2026-10-20_1230_custo-invisivel-trabalho-repetido": {
+   "status": "publicado",
+   "enviado_em": "2026-10-19T13:30:19.867465+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad789638cf9a879674accd1",
+    "feito": "buffer"
+   },
+   "msg_id": 875,
+   "ig_id": "18130646806792004",
+   "publicado_em": "2026-10-20T15:31:42.563424+00:00",
+   "ig_manual": false
+  },
+  "2026-10-19_1930_tres-coisas-em-que-acreditamos": {
+   "status": "publicado",
+   "enviado_em": "2026-10-19T13:46:33.632467+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad69a1dfb737fdba8f30c02",
+    "feito": "buffer"
+   },
+   "msg_id": 877,
+   "ig_id": "17958600879252990",
+   "publicado_em": "2026-10-19T22:30:53.046538+00:00",
+   "ig_manual": false
+  },
+  "2026-10-20_0900_5-sinais-passou-das-ferramentas": {
+   "status": "publicado",
+   "enviado_em": "2026-10-19T13:46:34.921728+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad757f241bc4976d5449f7c",
+    "feito": "buffer"
+   },
+   "msg_id": 885,
+   "ig_id": "17954999091280599",
+   "publicado_em": "2026-10-20T12:00:49.569808+00:00",
+   "ig_manual": false
+  },
+  "2026-10-20_1730_por-que-a-seraphim-existe": {
+   "status": "publicado",
+   "enviado_em": "2026-10-19T18:30:17.337666+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad7cf73ed28fb758abc9352",
+    "feito": "buffer"
+   },
+   "msg_id": 897,
+   "ig_id": "18112358165124668",
+   "publicado_em": "2026-10-20T20:30:43.027520+00:00",
+   "ig_manual": false
+  },
+  "2026-10-20_1930_planilha-nao-e-sistema": {
+   "status": "publicado",
+   "enviado_em": "2026-10-19T20:30:29.155645+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad7eb90294af05c91bb21cf",
+    "feito": "buffer"
+   },
+   "msg_id": 899,
+   "ig_id": "18118306066966721",
+   "publicado_em": "2026-10-20T22:30:39.845837+00:00",
+   "ig_manual": false
+  },
+  "2026-10-21_0900_as-tres-frentes-da-seraphim": {
+   "status": "publicado",
+   "enviado_em": "2026-10-20T10:00:25.847204+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad8a9750807acdda12721a8",
+    "feito": "buffer"
+   },
+   "msg_id": 916,
+   "ig_id": "18485846998108685",
+   "publicado_em": "2026-10-21T12:00:53.061066+00:00",
+   "ig_manual": false
+  },
+  "2026-10-21_1230_sistema-sob-medida-na-pratica": {
+   "status": "publicado",
+   "enviado_em": "2026-10-20T13:30:25.534429+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad8daa7ee069bfcd23537c7",
+    "feito": "buffer"
+   },
+   "msg_id": 921,
+   "ig_id": "17908764210330182",
+   "publicado_em": "2026-10-21T15:30:46.261357+00:00",
+   "ig_manual": false
+  },
+  "2026-10-21_1730_voce-precisa-de-sistema-proprio": {
+   "status": "publicado",
+   "enviado_em": "2026-10-20T18:30:08.398399+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad920ff74b7720f7e7ee147",
+    "feito": "buffer"
+   },
+   "msg_id": 932,
+   "ig_id": "18057367853801033",
+   "publicado_em": "2026-10-21T20:30:54.376758+00:00",
+   "ig_manual": false
+  },
+  "2026-10-21_1930_pronto-ou-sob-medida": {
+   "status": "publicado",
+   "enviado_em": "2026-10-20T20:30:05.820540+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad93d1d9b7af5217d151be2",
+    "feito": "buffer"
+   },
+   "msg_id": 934,
+   "ig_id": "17885850330689918",
+   "publicado_em": "2026-10-21T22:30:52.817732+00:00",
+   "ig_manual": false
+  },
+  "2026-10-22_0900_integracao-explicada-cozinha": {
+   "status": "publicado",
+   "enviado_em": "2026-10-21T10:00:19.668111+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ad9faf4ebec8224f3bea5a2",
+    "feito": "buffer"
+   },
+   "msg_id": 950,
+   "ig_id": "17879455455632220",
+   "publicado_em": "2026-10-22T12:00:49.064069+00:00",
+   "ig_manual": false
+  },
+  "2026-10-22_1230_uma-tarefa-tres-sistemas": {
+   "status": "publicado",
+   "enviado_em": "2026-10-21T13:30:04.285244+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ada2c3aa6a09108d272af28",
+    "feito": "buffer"
+   },
+   "msg_id": 956,
+   "ig_id": "18076263524462051",
+   "publicado_em": "2026-10-22T15:31:05.780773+00:00",
+   "ig_manual": false
+  },
+  "2026-10-22_1730_glossario-api-webhook": {
+   "status": "publicado",
+   "enviado_em": "2026-10-21T18:30:09.493637+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ada728ef2eceac43739aa89",
+    "feito": "buffer"
+   },
+   "msg_id": 966,
+   "ig_id": "18106170838983260",
+   "publicado_em": "2026-10-22T20:31:09.909416+00:00",
+   "ig_manual": false
+  },
+  "2026-10-22_1930_segunda-no-automatico": {
+   "status": "publicado",
+   "enviado_em": "2026-10-21T20:30:08.990705+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ada8ea5eed382c2d35aa472",
+    "feito": "buffer"
+   },
+   "msg_id": 968,
+   "ig_id": "18090392594274542",
+   "publicado_em": "2026-10-22T22:31:00.815585+00:00",
+   "ig_manual": false
+  },
+  "2026-10-23_0900_nosso-processo-5-etapas": {
+   "status": "publicado",
+   "enviado_em": "2026-10-22T10:00:11.913965+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6adb4c746556f503c42db474",
+    "feito": "buffer"
+   },
+   "msg_id": 986,
+   "ig_id": "18136604602727830",
+   "publicado_em": "2026-10-23T12:00:52.041384+00:00",
+   "ig_manual": false
+  },
+  "2026-10-23_1230_como-comecamos-um-projeto": {
+   "status": "publicado",
+   "enviado_em": "2026-10-22T13:30:10.140128+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6adb7db07af932dee4e9d724",
+    "feito": "buffer"
+   },
+   "msg_id": 992,
+   "ig_id": "18127973881872469",
+   "publicado_em": "2026-10-23T15:30:55.431409+00:00",
+   "ig_manual": false
+  },
+  "2026-10-23_1730_o-que-nao-fazemos": {
+   "status": "publicado",
+   "enviado_em": "2026-10-22T18:30:16.254116+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6adbc411e4be8a4d8624dc3a",
+    "feito": "buffer"
+   },
+   "msg_id": 1000,
+   "ig_id": "17925258984441229",
+   "publicado_em": "2026-10-23T20:31:13.384053+00:00",
+   "ig_manual": false
+  },
+  "2026-10-23_1930_perguntas-antes-do-codigo": {
+   "status": "publicado",
+   "enviado_em": "2026-10-22T20:30:20.560558+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6adbe00d3d5b27036b552f00",
+    "feito": "buffer"
+   },
+   "msg_id": 1002,
+   "ig_id": "17929461612182371",
+   "publicado_em": "2026-10-23T22:30:36.540911+00:00",
+   "ig_manual": false
+  },
+  "2026-10-24_0900_por-que-comecamos-pelas-oficinas": {
+   "status": "publicado",
+   "enviado_em": "2026-10-23T10:00:17.741964+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6adc9df48b3d437ddcb851fe",
+    "feito": "buffer"
+   },
+   "msg_id": 1021,
+   "ig_id": "18106127048363138",
+   "publicado_em": "2026-10-24T12:00:51.141285+00:00",
+   "ig_manual": false
+  },
+  "2026-10-24_1730_autoflow-em-6-slides": {
+   "status": "publicado",
+   "enviado_em": "2026-10-23T18:30:14.605166+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6add15803d5b27036ba06594",
+    "feito": "buffer"
+   },
+   "msg_id": 1033,
+   "ig_id": "18190390684414043",
+   "publicado_em": "2026-10-24T20:30:55.652160+00:00",
+   "ig_manual": false
+  },
+  "2026-10-24_1930_do-caderno-ao-sistema": {
+   "status": "publicado",
+   "enviado_em": "2026-10-23T20:30:26.732532+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6add31c5e4be8a4d867db8ee",
+    "feito": "buffer"
+   },
+   "msg_id": 1035,
+   "ig_id": "18119430635060098",
+   "publicado_em": "2026-10-24T22:31:32.777885+00:00",
+   "ig_manual": false
+  },
+  "2026-10-25_0900_perguntas-sobre-o-autoflow": {
+   "status": "publicado",
+   "enviado_em": "2026-10-24T10:00:17.089005+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6addef6b8b3d437ddc06ceaf",
+    "feito": "buffer"
+   },
+   "msg_id": 1052,
+   "ig_id": "18091099877298672",
+   "publicado_em": "2026-10-25T12:00:43.289895+00:00",
+   "ig_manual": false
+  },
+  "2026-10-25_1230_um-dia-na-oficina": {
+   "status": "publicado",
+   "enviado_em": "2026-10-24T13:30:19.272961+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ade20b3bd33ce99c37abeb8",
+    "feito": "buffer"
+   },
+   "msg_id": 1056,
+   "ig_id": "18123778529475808",
+   "publicado_em": "2026-10-25T15:30:58.759060+00:00",
+   "ig_manual": false
+  },
+  "2026-10-25_1730_o-que-podemos-construir": {
+   "status": "publicado",
+   "enviado_em": "2026-10-24T18:30:20.870052+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ade66f1bd33ce99c38d870e",
+    "feito": "buffer"
+   },
+   "msg_id": 1064,
+   "ig_id": "18636689482028196",
+   "publicado_em": "2026-10-25T20:30:40.875720+00:00",
+   "ig_manual": false
+  },
+  "2026-10-25_1930_sete-dias-uma-ideia": {
+   "status": "publicado",
+   "enviado_em": "2026-10-24T20:30:10.053018+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ade83470b5343d070f51e81",
+    "feito": "buffer"
+   },
+   "msg_id": 1069,
+   "ig_id": "18115693781520259",
+   "publicado_em": "2026-10-25T22:31:34.551855+00:00",
+   "ig_manual": false
+  },
+  "2026-10-27_1230_ia-na-operacao": {
+   "status": "publicado",
+   "enviado_em": "2026-10-26T23:40:18.258272+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae0c3f324d07dab298cb425",
+    "feito": "buffer"
+   },
+   "msg_id": 1097,
+   "ig_id": "18108151298205185",
+   "publicado_em": "2026-10-27T15:32:02.972932+00:00",
+   "ig_manual": false
+  },
+  "2026-10-28_1230_tecnologia-que-comeca-ouvindo": {
+   "status": "publicado",
+   "enviado_em": "2026-10-27T13:30:16.761066+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae21506aa69cd87977972b7",
+    "feito": "buffer"
+   },
+   "msg_id": 1099,
+   "ig_id": "18009620201781533",
+   "publicado_em": "2026-10-28T15:30:13.455553+00:00",
+   "ig_manual": false
+  },
+  "2026-10-28_0830_padronizar-antes-do-sistema": {
+   "status": "publicado",
+   "enviado_em": "2026-10-27T22:38:52.776828+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae1dce663bb1a485a2a10f3",
+    "feito": "buffer"
+   },
+   "msg_id": 1108,
+   "ig_id": "18160631905503873",
+   "publicado_em": "2026-10-28T11:30:45.977983+00:00",
+   "ig_manual": false
+  },
+  "2026-10-28_1130_lead-para-venda-sem-ruido": {
+   "status": "publicado",
+   "enviado_em": "2026-10-27T22:38:54.790950+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae20709620f841dd347b56e",
+    "feito": "buffer"
+   },
+   "msg_id": 1114,
+   "ig_id": "17936742366402327",
+   "publicado_em": "2026-10-28T14:30:32.159069+00:00",
+   "ig_manual": false
+  },
+  "2026-10-28_1500_visao-computacional-na-pratica": {
+   "status": "publicado",
+   "enviado_em": "2026-10-27T22:38:56.776763+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae2384d3990f55bf461ac44",
+    "feito": "buffer"
+   },
+   "msg_id": 1121,
+   "ig_id": null,
+   "publicado_em": "2026-10-28T18:00:44.763975+00:00",
+   "ig_manual": true
+  },
+  "2026-10-28_1830_do-caderno-a-tela-oficina": {
+   "status": "publicado",
+   "enviado_em": "2026-10-27T22:38:58.831666+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae2698c98678c04af5abac0",
+    "feito": "buffer"
+   },
+   "msg_id": 1128,
+   "ig_id": "18100982897640251",
+   "publicado_em": "2026-10-28T21:30:51.495251+00:00",
+   "ig_manual": false
+  },
+  "2026-10-28_1800_historico-cliente-oficina": {
+   "status": "publicado",
+   "enviado_em": "2026-10-27T22:47:24.713388+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae2627da840ef151b6699cc",
+    "feito": "buffer"
+   },
+   "msg_id": 1130,
+   "ig_id": "18025771985933332",
+   "publicado_em": "2026-10-28T21:00:44.206743+00:00",
+   "ig_manual": false
+  },
+  "2026-10-28_1130_proposta-com-preco-velho": {
+   "status": "publicado",
+   "enviado_em": "2026-10-27T22:49:51.757370+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae2073e00f35d308c7ff4b7",
+    "feito": "buffer"
+   },
+   "msg_id": 1132,
+   "ig_id": "17914010442489871",
+   "publicado_em": "2026-10-28T14:31:25.954517+00:00",
+   "ig_manual": false
+  },
+  "2026-10-28_1300_trabalho-braco-computador": {
+   "status": "publicado",
+   "enviado_em": "2026-10-27T22:49:54.788650+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae21c42e490badbade78f4c",
+    "feito": "buffer"
+   },
+   "msg_id": 1134,
+   "ig_id": "18466692310191630",
+   "publicado_em": "2026-10-28T16:01:05.744685+00:00",
+   "ig_manual": false
+  },
+  "2026-10-28_2030_resumo-reuniao-ia": {
+   "status": "publicado",
+   "enviado_em": "2026-10-27T22:49:58.342432+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae285a2b5c2969a071eea79",
+    "feito": "buffer"
+   },
+   "msg_id": 1136,
+   "ig_id": "18153060466543247",
+   "publicado_em": "2026-10-28T23:30:41.637897+00:00",
+   "ig_manual": false
+  },
+  "2026-10-28_0730_ia-aquecendo-cidades": {
+   "status": "publicado",
+   "enviado_em": "2026-10-28T00:30:11.108270+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae1cee34e936aa1bcbf82e2",
+    "feito": "buffer"
+   },
+   "msg_id": 1138,
+   "ig_id": "18121734091898236",
+   "publicado_em": "2026-10-28T10:30:58.674686+00:00",
+   "ig_manual": false
+  },
+  "2026-10-29_0830_habitos-produtividade-2027": {
+   "status": "publicado",
+   "enviado_em": "2026-10-28T17:01:20.435183+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae32e59a0a200dca8b997ce",
+    "feito": "buffer"
+   },
+   "msg_id": 1157,
+   "ig_id": "17920128201459940",
+   "publicado_em": "2026-10-29T11:30:32.805382+00:00",
+   "ig_manual": false
+  },
+  "2026-10-29_1130_erro-rastreio-caixa": {
+   "status": "publicado",
+   "enviado_em": "2026-10-28T17:01:22.733909+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae3589da87e7858ef1251ac",
+    "feito": "buffer"
+   },
+   "msg_id": 1163,
+   "ig_id": "17999665635039971",
+   "publicado_em": "2026-10-29T14:30:52.266635+00:00",
+   "ig_manual": false
+  },
+  "2026-10-29_1500_evolucao-ui-negocios": {
+   "status": "publicado",
+   "enviado_em": "2026-10-28T17:01:25.043313+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae389c7313060a14e20ebd6",
+    "feito": "buffer"
+   },
+   "msg_id": 1170,
+   "ig_id": "18099951041557354",
+   "publicado_em": "2026-10-29T18:00:39.058447+00:00",
+   "ig_manual": false
+  },
+  "2026-10-29_1300_protocolo-cliente-sumido": {
+   "status": "publicado",
+   "enviado_em": "2026-10-28T17:20:44.048838+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae36db925e7fa4a8db71ba2",
+    "feito": "buffer"
+   },
+   "msg_id": 1172,
+   "ig_id": "18134323120823035",
+   "publicado_em": "2026-10-29T16:00:56.389798+00:00",
+   "ig_manual": false
+  },
+  "2026-10-29_0730_ia-descoberta-antibiotico": {
+   "status": "publicado",
+   "enviado_em": "2026-10-28T17:27:16.863962+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae3205c7b777f7b03c148ed",
+    "feito": "buffer"
+   },
+   "msg_id": 1174,
+   "ig_id": "18027262949876712",
+   "publicado_em": "2026-10-29T10:30:51.277498+00:00",
+   "ig_manual": false
+  },
+  "2026-10-29_1130_segundo-cerebro-gestao": {
+   "status": "publicado",
+   "enviado_em": "2026-10-28T17:29:32.388527+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae35903a87e7858ef126b19",
+    "feito": "buffer"
+   },
+   "msg_id": 1176,
+   "ig_id": "17992129496863252",
+   "publicado_em": "2026-10-29T14:32:34.706000+00:00",
+   "ig_manual": false
+  },
+  "2026-10-29_1800_limpeza-digital-negocio": {
+   "status": "publicado",
+   "enviado_em": "2026-10-28T19:00:07.655176+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae3b414397c2ef8f345725d",
+    "feito": "buffer"
+   },
+   "msg_id": 1189,
+   "ig_id": "17932504578165671",
+   "publicado_em": "2026-10-29T21:01:07.081211+00:00",
+   "ig_manual": false
+  },
+  "2026-10-29_1830_custo-nao-ter-autoflow": {
+   "status": "publicado",
+   "enviado_em": "2026-10-28T19:30:22.572343+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae3bb1060532fc2b0d0f8ec",
+    "feito": "buffer"
+   },
+   "msg_id": 1196,
+   "ig_id": "18450927808121509",
+   "publicado_em": "2026-10-29T21:30:55.411586+00:00",
+   "ig_manual": false
+  },
+  "2026-10-29_1930_mais-uma-aba-aberta": {
+   "status": "publicado",
+   "enviado_em": "2026-10-28T20:30:21.945069+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae3c9298d19aa0a5be9a709",
+    "feito": "buffer"
+   },
+   "msg_id": 1198,
+   "ig_id": "18067896767789348",
+   "publicado_em": "2026-10-29T22:31:05.025111+00:00",
+   "ig_manual": false
+  },
+  "2026-10-29_2030_ia-leitura-mundo-real": {
+   "status": "publicado",
+   "enviado_em": "2026-10-28T21:30:05.936166+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae3d7264b8768bfb2cb66a2",
+    "feito": "buffer"
+   },
+   "msg_id": 1202,
+   "ig_id": "18094705853188552",
+   "publicado_em": "2026-10-29T23:30:45.527394+00:00",
+   "ig_manual": false
+  },
+  "2026-10-30_1230_checklist-fim-de-mes": {
+   "status": "publicado",
+   "enviado_em": "2026-10-29T13:30:19.373583+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae4b828df85d8ab2f416986",
+    "feito": "buffer"
+   },
+   "msg_id": 1218,
+   "ig_id": "18569313283079295",
+   "publicado_em": "2026-10-30T15:30:47.561620+00:00",
+   "ig_manual": false
+  },
+  "2026-10-30_0830_agilidade-no-caixa": {
+   "status": "publicado",
+   "enviado_em": "2026-10-29T17:26:34.505122+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae47fdfab6b84214cd0f8d7",
+    "feito": "buffer"
+   },
+   "msg_id": 1230,
+   "ig_id": "18646473187014541",
+   "publicado_em": "2026-10-30T11:30:38.352069+00:00",
+   "ig_manual": false
+  },
+  "2026-10-30_1130_funcoes-essenciais-sistema": {
+   "status": "publicado",
+   "enviado_em": "2026-10-29T17:26:36.591343+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae4aa1f9394ea34c11b7f72",
+    "feito": "buffer"
+   },
+   "msg_id": 1237,
+   "ig_id": "18226047814337262",
+   "publicado_em": "2026-10-30T14:30:54.679009+00:00",
+   "ig_manual": false
+  },
+  "2026-10-30_1500_adeus-papelada-oficina": {
+   "status": "publicado",
+   "enviado_em": "2026-10-29T17:26:38.613728+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae4db53cd8290b9b904c471",
+    "feito": "buffer"
+   },
+   "msg_id": 1244,
+   "ig_id": "17891621088685571",
+   "publicado_em": "2026-10-30T18:00:50.656042+00:00",
+   "ig_manual": false
+  },
+  "2026-10-30_1130_recuperar-orcamento": {
+   "status": "publicado",
+   "enviado_em": "2026-10-29T17:35:16.776386+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae4aa51df85d8ab2f3c7b67",
+    "feito": "buffer"
+   },
+   "msg_id": 1246,
+   "ig_id": "18020225975959712",
+   "publicado_em": "2026-10-30T14:31:44.393617+00:00",
+   "ig_manual": false
+  },
+  "2026-10-30_0730_ia-vendas-clima": {
+   "status": "publicado",
+   "enviado_em": "2026-10-29T17:37:31.450402+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae471d398895fbf5a469d5a",
+    "feito": "buffer"
+   },
+   "msg_id": 1248,
+   "ig_id": "18074618777753072",
+   "publicado_em": "2026-10-30T10:30:42.012250+00:00",
+   "ig_manual": false
+  },
+  "2026-10-30_1300_voz-comando-negocios": {
+   "status": "publicado",
+   "enviado_em": "2026-10-29T17:37:34.119537+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae4bf42a351214acf967e6d",
+    "feito": "buffer"
+   },
+   "msg_id": 1250,
+   "ig_id": "17889573831687060",
+   "publicado_em": "2026-10-30T16:01:05.536587+00:00",
+   "ig_manual": false
+  },
+  "2026-10-30_1800_oficina-lucro-escondido": {
+   "status": "publicado",
+   "enviado_em": "2026-10-29T19:00:25.962722+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae50580a1145743496c1b28",
+    "feito": "buffer"
+   },
+   "msg_id": 1254,
+   "ig_id": "17977273677153528",
+   "publicado_em": "2026-10-30T21:00:47.140931+00:00",
+   "ig_manual": false
+  },
+  "2026-10-30_1830_agentes-ia-explicados": {
+   "status": "publicado",
+   "enviado_em": "2026-10-29T19:30:22.397461+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae50c83406ab8a018837b71",
+    "feito": "buffer"
+   },
+   "msg_id": 1261,
+   "ig_id": "18134124151743233",
+   "publicado_em": "2026-10-30T21:30:41.159488+00:00",
+   "ig_manual": false
+  },
+  "2026-10-30_2030_mito-esforco-bruto": {
+   "status": "publicado",
+   "enviado_em": "2026-10-29T21:30:15.494874+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae528b1b84259308ba8d97a",
+    "feito": "buffer"
+   },
+   "msg_id": 1265,
+   "ig_id": null,
+   "publicado_em": "2026-10-30T23:30:56.222930+00:00",
+   "ig_manual": true
+  },
+  "2026-10-31_0730_chips-fotonicos-luz": {
+   "status": "publicado",
+   "enviado_em": "2026-10-30T08:30:06.831938+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae5c3671891472093c8c7fd",
+    "feito": "buffer"
+   },
+   "msg_id": 1273,
+   "ig_id": "17915359563538274",
+   "publicado_em": "2026-10-31T10:31:02.754383+00:00",
+   "ig_manual": false
+  },
+  "2026-10-31_0830_como-organizar-fila-atendimento": {
+   "status": "publicado",
+   "enviado_em": "2026-10-30T09:30:16.692175+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae5d16e1891472093ccd96c",
+    "feito": "buffer"
+   },
+   "msg_id": 1281,
+   "ig_id": "18065557502795709",
+   "publicado_em": "2026-10-31T11:30:53.552603+00:00",
+   "ig_manual": false
+  },
+  "2026-10-31_1130_anatomia-tarefa-automatizavel": {
+   "status": "publicado",
+   "enviado_em": "2026-10-30T12:30:15.958602+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae5fb8e5fdbd4dd6291690d",
+    "feito": "buffer"
+   },
+   "msg_id": 1291,
+   "ig_id": "18596606368069668",
+   "publicado_em": "2026-10-31T14:30:37.898076+00:00",
+   "ig_manual": false
+  },
+  "2026-10-31_1300_triagem-pedidos-caos": {
+   "status": "aguardando",
+   "enviado_em": "2026-10-30T14:00:05.995757+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1293
+  },
+  "2026-10-31_1130_o-telefone-fantasma": {
+   "status": "aguardando",
+   "enviado_em": "2026-10-30T15:34:05.958425+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1301
+  },
+  "2026-10-31_1500_diferenca-software-e-site": {
+   "status": "aguardando",
+   "enviado_em": "2026-10-30T16:00:24.046855+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1307
+  },
+  "2026-10-31_1800_ia-sintetica-colapso": {
+   "status": "publicado",
+   "enviado_em": "2026-10-30T19:00:22.396206+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae75f668755094b828fe762",
+    "feito": "buffer"
+   },
+   "msg_id": 1313,
+   "ig_id": "18106060520631673",
+   "publicado_em": "2026-11-01T15:48:53.993254+00:00",
+   "ig_manual": false
+  },
+  "2026-10-31_1830_seguranca-senhas-compartilhadas": {
+   "status": "publicado",
+   "enviado_em": "2026-10-30T19:30:06.882563+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae75f39fa39ab5d4d81d187",
+    "feito": "buffer"
+   },
+   "msg_id": 1320,
+   "ig_id": "18116039296844868",
+   "publicado_em": "2026-11-01T15:48:09.057163+00:00",
+   "ig_manual": false
+  },
+  "2026-10-31_1930_terror-da-operacao": {
+   "status": "publicado",
+   "enviado_em": "2026-10-30T20:30:13.442774+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae75f0fcd0d0de2bf844f01",
+    "feito": "buffer"
+   },
+   "msg_id": 1322,
+   "ig_id": "18127922981513801",
+   "publicado_em": "2026-11-01T15:47:26.385531+00:00",
+   "ig_manual": false
+  },
+  "2026-10-31_2030_fim-do-alt-tab": {
+   "status": "publicado",
+   "enviado_em": "2026-10-30T21:30:04.609553+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae75ea48755094b828fbe02",
+    "feito": "buffer"
+   },
+   "msg_id": 1326,
+   "ig_id": "18032098670906554",
+   "publicado_em": "2026-11-01T15:45:39.211404+00:00",
+   "ig_manual": false
+  },
+  "2026-11-01_0730_fim-do-silicio-grafeno": {
+   "status": "publicado",
+   "enviado_em": "2026-10-31T08:30:16.926567+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae75fc6dbb50f7b82dea62a",
+    "feito": "buffer"
+   },
+   "msg_id": 1337,
+   "ig_id": "18106973552261961",
+   "publicado_em": "2026-11-01T15:50:29.804416+00:00",
+   "ig_manual": false
+  },
+  "2026-11-01_0830_tarefas-agente-ia": {
+   "status": "aguardando",
+   "enviado_em": "2026-10-31T09:30:15.566301+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1344
+  },
+  "2026-11-01_1130_ralo-copia-e-cola": {
+   "status": "publicado",
+   "enviado_em": "2026-10-31T12:30:20.145093+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae75ff28755094b82900e24",
+    "feito": "buffer"
+   },
+   "msg_id": 1354,
+   "ig_id": "18034917557913035",
+   "publicado_em": "2026-11-01T15:51:13.389568+00:00",
+   "ig_manual": false
+  },
+  "2026-11-01_1130_triagem-whatsapp-filtro": {
+   "status": "publicado",
+   "enviado_em": "2026-10-31T12:30:23.792852+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae7602e36ecc998481345b1",
+    "feito": "buffer"
+   },
+   "msg_id": 1356,
+   "ig_id": "18008067432006032",
+   "publicado_em": "2026-11-01T15:52:13.904430+00:00",
+   "ig_manual": false
+  },
+  "2026-11-01_1230_construir-e-construir-clareza": {
+   "status": "publicado",
+   "enviado_em": "2026-10-31T13:30:25.903453+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae760458755094b82901f11",
+    "feito": "buffer"
+   },
+   "msg_id": 1358,
+   "ig_id": "18112462352463717",
+   "publicado_em": "2026-11-01T15:52:36.780083+00:00",
+   "ig_manual": false
+  },
+  "2026-11-01_1300_ia-manutencao-preditiva": {
+   "status": "publicado",
+   "enviado_em": "2026-10-31T14:01:26.326067+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae7623193985ec108e0462f",
+    "feito": "buffer"
+   },
+   "msg_id": 1360,
+   "ig_id": "18133561589495018",
+   "publicado_em": "2026-11-01T16:00:48.646074+00:00",
+   "ig_manual": false
+  },
+  "2026-11-01_1500_metodo-antes-da-ferramenta": {
+   "status": "publicado",
+   "enviado_em": "2026-10-31T16:00:21.770607+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae77e51cfdcf9feb717a0e1",
+    "feito": "buffer"
+   },
+   "msg_id": 1369,
+   "ig_id": "18453138457135676",
+   "publicado_em": "2026-11-01T18:00:48.305002+00:00",
+   "ig_manual": false
+  },
+  "2026-11-01_1800_autoflow-lucro-oficina": {
+   "status": "publicado",
+   "enviado_em": "2026-10-31T19:00:16.576181+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae7a87e07b774c8fb2e1366",
+    "feito": "buffer"
+   },
+   "msg_id": 1371,
+   "ig_id": "18228641374332684",
+   "publicado_em": "2026-11-01T21:00:45.193196+00:00",
+   "ig_manual": false
+  },
+  "2026-11-01_1830_planilha-virou-monstro": {
+   "status": "publicado",
+   "enviado_em": "2026-10-31T19:30:28.581906+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae7af9548ce42a6b429d061",
+    "feito": "buffer"
+   },
+   "msg_id": 1378,
+   "ig_id": "18120500359780921",
+   "publicado_em": "2026-11-01T21:31:00.289434+00:00",
+   "ig_manual": false
+  },
+  "2026-11-01_2030_equipe-resistencia-sistema": {
+   "status": "publicado",
+   "enviado_em": "2026-10-31T21:30:03.681312+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae7cbb0902c3fb1dec2b12d",
+    "feito": "buffer"
+   },
+   "msg_id": 1380,
+   "ig_id": "18090720104306265",
+   "publicado_em": "2026-11-01T23:30:55.281655+00:00",
+   "ig_manual": false
+  },
+  "2026-11-02_0730_agentes-ia-computador-sozinho": {
+   "status": "publicado",
+   "enviado_em": "2026-11-01T08:30:10.330752+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae8665d796ca84be0cf4780",
+    "feito": "buffer"
+   },
+   "msg_id": 1382,
+   "ig_id": "18126275218700733",
+   "publicado_em": "2026-11-02T10:30:52.600789+00:00",
+   "ig_manual": false
+  },
+  "2026-11-02_0830_agentes-ia-casos-uso": {
+   "status": "publicado",
+   "enviado_em": "2026-11-01T09:30:10.085997+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae8746b146ca029aa14fe02",
+    "feito": "buffer"
+   },
+   "msg_id": 1389,
+   "ig_id": "18127039174901179",
+   "publicado_em": "2026-11-02T11:30:50.750136+00:00",
+   "ig_manual": false
+  },
+  "2026-11-02_1130_ia-olhos-digitais-documentos": {
+   "status": "publicado",
+   "enviado_em": "2026-11-01T12:30:18.010177+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae89ea8c03187867e4258e7",
+    "feito": "buffer"
+   },
+   "msg_id": 1391,
+   "ig_id": "18106163794995191",
+   "publicado_em": "2026-11-02T14:31:03.592683+00:00",
+   "ig_manual": false
+  },
+  "2026-11-02_1130_whatsapp-prisao-operacional": {
+   "status": "publicado",
+   "enviado_em": "2026-11-01T12:30:20.121447+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae89ed6c03187867e42784b",
+    "feito": "buffer"
+   },
+   "msg_id": 1398,
+   "ig_id": "17964949170215821",
+   "publicado_em": "2026-11-02T14:31:48.666637+00:00",
+   "ig_manual": false
+  },
+  "2026-11-02_1300_gestao-caos-recibos-sumidos": {
+   "status": "publicado",
+   "enviado_em": "2026-11-01T14:00:14.411444+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae8b3d1a8c7e349215abd34",
+    "feito": "buffer"
+   },
+   "msg_id": 1400,
+   "ig_id": "17933178960163728",
+   "publicado_em": "2026-11-02T16:01:20.105245+00:00",
+   "ig_manual": false
+  },
+  "2026-11-02_1500_escolha-sistema-momento-certo": {
+   "status": "publicado",
+   "enviado_em": "2026-11-01T16:00:15.059442+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae8cfd86b1d49ecbdea6b1d",
+    "feito": "buffer"
+   },
+   "msg_id": 1423,
+   "ig_id": "18023979926934025",
+   "publicado_em": "2026-11-02T18:00:55.137555+00:00",
+   "ig_manual": false
+  },
+  "2026-11-02_1800_ia-faxina-inbox-foco": {
+   "status": "publicado",
+   "enviado_em": "2026-11-01T19:00:14.509978+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae8f9fa25a58c431d0508af",
+    "feito": "buffer"
+   },
+   "msg_id": 1429,
+   "ig_id": "18095332790163874",
+   "publicado_em": "2026-11-02T21:00:41.639666+00:00",
+   "ig_manual": false
+  },
+  "2026-11-02_1830_checklist-preparacao-escala": {
+   "status": "publicado",
+   "enviado_em": "2026-11-01T19:30:06.527725+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae90111d0e732df448dbd31",
+    "feito": "buffer"
+   },
+   "msg_id": 1435,
+   "ig_id": "18096165389168273",
+   "publicado_em": "2026-11-02T21:30:55.980965+00:00",
+   "ig_manual": false
+  },
+  "2026-11-02_2030_ia-previsao-vendas-estoque": {
+   "status": "publicado",
+   "enviado_em": "2026-11-01T21:30:18.441894+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae91d3e967eeee46f562f76",
+    "feito": "buffer"
+   },
+   "msg_id": 1439,
+   "ig_id": "18118096739322966",
+   "publicado_em": "2026-11-02T23:31:09.593507+00:00",
+   "ig_manual": false
+  },
+  "2026-11-03_0730_vidro-eterno-dados": {
+   "status": "publicado",
+   "enviado_em": "2026-11-02T08:30:06.311850+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae9b7f7f0e18de9ba17eacb",
+    "feito": "buffer"
+   },
+   "msg_id": 1445,
+   "ig_id": "18137754634677869",
+   "publicado_em": "2026-11-03T10:31:18.812311+00:00",
+   "ig_manual": false
+  },
+  "2026-11-03_0830_o-gargalo-primeiro-contato": {
+   "status": "publicado",
+   "enviado_em": "2026-11-02T09:30:12.346477+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae9c5e6e9a91b5943cd3e03",
+    "feito": "buffer"
+   },
+   "msg_id": 1451,
+   "ig_id": "17992075242116691",
+   "publicado_em": "2026-11-03T11:30:45.945045+00:00",
+   "ig_manual": false
+  },
+  "2026-11-03_1130_o-ex-funcionario-conectado": {
+   "status": "publicado",
+   "enviado_em": "2026-11-02T12:30:18.571223+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae9f00e985f73e5825066bf",
+    "feito": "buffer"
+   },
+   "msg_id": 1461,
+   "ig_id": "18137108032715498",
+   "publicado_em": "2026-11-03T14:30:38.005093+00:00",
+   "ig_manual": false
+  },
+  "2026-11-03_1130_o-produto-fantasma-estoque": {
+   "status": "publicado",
+   "enviado_em": "2026-11-02T12:30:22.360967+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6ae9f039b75704f9ac59156c",
+    "feito": "buffer"
+   },
+   "msg_id": 1463,
+   "ig_id": "18090921617502828",
+   "publicado_em": "2026-11-03T14:31:20.181711+00:00",
+   "ig_manual": false
+  },
+  "2026-11-03_1300_a-febre-do-vamos-marcar": {
+   "status": "publicado",
+   "enviado_em": "2026-11-02T14:00:17.743162+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aea06d301362e3aaea41d37",
+    "feito": "buffer"
+   },
+   "msg_id": 1465,
+   "ig_id": "18149227405561086",
+   "publicado_em": "2026-11-03T16:07:46.440836+00:00",
+   "ig_manual": false
+  },
+  "2026-11-03_1500_a-regra-da-tela-limpa": {
+   "status": "pulado",
+   "enviado_em": "2026-11-02T16:00:26.553121+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1475
+  },
+  "2026-11-03_1800_elevador-parado-oficina": {
+   "status": "publicado",
+   "enviado_em": "2026-11-02T19:00:14.068042+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aea675f7d619ce3a64479f7",
+    "feito": "buffer"
+   },
+   "msg_id": 1482,
+   "ig_id": "17870731623663086",
+   "publicado_em": "2026-11-03T22:59:42.567718+00:00",
+   "ig_manual": false
+  },
+  "2026-11-03_1830_anatomia-de-um-processo-enxuto": {
+   "status": "publicado",
+   "enviado_em": "2026-11-02T19:30:26.066293+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aea67932fbe315a4d654bc7",
+    "feito": "buffer"
+   },
+   "msg_id": 1488,
+   "ig_id": "18114646160268575",
+   "publicado_em": "2026-11-03T23:00:34.511060+00:00",
+   "ig_manual": false
+  },
+  "2026-11-03_2030_o-software-que-desaparece": {
+   "status": "publicado",
+   "enviado_em": "2026-11-02T21:30:27.936505+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aea6eaa87b7c6d24c7b3ec6",
+    "feito": "buffer"
+   },
+   "msg_id": 1493,
+   "ig_id": "18120313922004036",
+   "publicado_em": "2026-11-03T23:30:49.173957+00:00",
+   "ig_manual": false
+  },
+  "2026-11-04_0730_ia-de-tato-digital": {
+   "status": "publicado",
+   "enviado_em": "2026-11-03T08:30:09.345303+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aeb09790eea02ace32eba49",
+    "feito": "buffer"
+   },
+   "msg_id": 1499,
+   "ig_id": "18034428200676330",
+   "publicado_em": "2026-11-04T10:31:20.239922+00:00",
+   "ig_manual": false
+  },
+  "2026-11-04_0830_mapa-fluxo-trabalho": {
+   "status": "publicado",
+   "enviado_em": "2026-11-03T09:30:01.698429+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aeb17686e21919416d60991",
+    "feito": "buffer"
+   },
+   "msg_id": 1506,
+   "ig_id": "17996015553058266",
+   "publicado_em": "2026-11-04T11:30:47.863415+00:00",
+   "ig_manual": false
+  },
+  "2026-11-04_1130_custo-da-troca-contexto": {
+   "status": "publicado",
+   "enviado_em": "2026-11-03T12:30:22.603985+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aeb41958e3da7e721494905",
+    "feito": "buffer"
+   },
+   "msg_id": 1512,
+   "ig_id": "18113693519188001",
+   "publicado_em": "2026-11-04T14:30:44.806436+00:00",
+   "ig_manual": false
+  },
+  "2026-11-04_1130_perguntas-antes-de-contratar-dev": {
+   "status": "publicado",
+   "enviado_em": "2026-11-03T12:30:24.728356+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aeb41c2bf0b7294966a7bf7",
+    "feito": "buffer"
+   },
+   "msg_id": 1519,
+   "ig_id": "17969934177194168",
+   "publicado_em": "2026-11-04T14:31:29.726084+00:00",
+   "ig_manual": false
+  },
+  "2026-11-04_1300_o-cliente-que-esfriou": {
+   "status": "publicado",
+   "enviado_em": "2026-11-03T14:00:22.533963+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aeb56e872db9694c0478b86",
+    "feito": "buffer"
+   },
+   "msg_id": 1521,
+   "ig_id": "17949474474072470",
+   "publicado_em": "2026-11-04T16:01:43.825149+00:00",
+   "ig_manual": false
+  },
+  "2026-11-04_1500_checklist-gestao-fragil": {
+   "status": "publicado",
+   "enviado_em": "2026-11-03T16:07:15.788910+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aeb72deb60af5ca167c7258",
+    "feito": "buffer"
+   },
+   "msg_id": 1532,
+   "ig_id": "18132537922812624",
+   "publicado_em": "2026-11-04T18:01:01.613947+00:00",
+   "ig_manual": false
+  },
+  "2026-11-04_1800_ia-preve-estoque": {
+   "status": "publicado",
+   "enviado_em": "2026-11-03T19:09:00.464149+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aeb9d0eb080155a2dc3d456",
+    "feito": "buffer"
+   },
+   "msg_id": 1536,
+   "ig_id": "18107189534526745",
+   "publicado_em": "2026-11-04T21:01:01.559196+00:00",
+   "ig_manual": false
+  },
+  "2026-11-04_1830_custo-de-nao-ter-sistema": {
+   "status": "publicado",
+   "enviado_em": "2026-11-03T19:30:25.694041+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aeba413c91738fad50538b6",
+    "feito": "buffer"
+   },
+   "msg_id": 1543,
+   "ig_id": "18120646339769507",
+   "publicado_em": "2026-11-04T21:30:58.640592+00:00",
+   "ig_manual": false
+  },
+  "2026-11-04_2030_empresa-quebra-cabeca": {
+   "status": "publicado",
+   "enviado_em": "2026-11-03T22:59:05.499432+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aebc0349c5b05a1212e4564",
+    "feito": "buffer"
+   },
+   "msg_id": 1545,
+   "ig_id": "18136850911678421",
+   "publicado_em": "2026-11-04T23:30:59.809577+00:00",
+   "ig_manual": false
+  },
+  "2026-11-05_0730_ia-no-proprio-dispositivo": {
+   "status": "publicado",
+   "enviado_em": "2026-11-04T08:30:53.074014+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aec5adde37b539a4c1c2e4c",
+    "feito": "buffer"
+   },
+   "msg_id": 1553,
+   "ig_id": "17994225360073696",
+   "publicado_em": "2026-11-05T10:30:53.216241+00:00",
+   "ig_manual": false
+  },
+  "2026-11-05_0830_ciclo-invisivel-da-interrupcao": {
+   "status": "publicado",
+   "enviado_em": "2026-11-04T09:30:09.699188+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aec68eaf5b4b5564cb41d0a",
+    "feito": "buffer"
+   },
+   "msg_id": 1561,
+   "ig_id": "17992680789114820",
+   "publicado_em": "2026-11-05T11:30:49.632638+00:00",
+   "ig_manual": false
+  },
+  "2026-11-05_1130_banco-de-dados-explicado-facil": {
+   "status": "publicado",
+   "enviado_em": "2026-11-04T12:30:13.774678+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aec9311ee89f47b0fbfc811",
+    "feito": "buffer"
+   },
+   "msg_id": 1572,
+   "ig_id": "18115077044464595",
+   "publicado_em": "2026-11-05T14:30:40.521622+00:00",
+   "ig_manual": false
+  },
+  "2026-11-05_1130_o-caos-dos-audios-de-pedido": {
+   "status": "publicado",
+   "enviado_em": "2026-11-04T12:30:17.440114+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aec9344fe41022b90d7ccdd",
+    "feito": "buffer"
+   },
+   "msg_id": 1574,
+   "ig_id": "18358328437220303",
+   "publicado_em": "2026-11-05T14:31:31.616908+00:00",
+   "ig_manual": false
+  },
+  "2026-11-05_1300_abas-abertas-computador-lento": {
+   "status": "publicado",
+   "enviado_em": "2026-11-04T14:00:09.637350+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aeca83bf28015a0fe56daa8",
+    "feito": "buffer"
+   },
+   "msg_id": 1576,
+   "ig_id": "18120606887000641",
+   "publicado_em": "2026-11-05T16:00:58.359339+00:00",
+   "ig_manual": false
+  },
+  "2026-11-05_1500_seguranca-digital-pequena-empresa": {
+   "status": "pulado",
+   "enviado_em": "2026-11-04T16:00:04.562470+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1588
+  },
+  "2026-11-05_1800_balcao-versus-oficina-recados": {
+   "status": "publicado",
+   "enviado_em": "2026-11-04T19:00:23.774218+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aeceeaecf99e575e90c3466",
+    "feito": "buffer"
+   },
+   "msg_id": 1594,
+   "ig_id": "17914732623551023",
+   "publicado_em": "2026-11-05T21:01:32.707711+00:00",
+   "ig_manual": false
+  },
+  "2026-11-05_1830_como-desenhar-um-procedimento-sem-manual": {
+   "status": "publicado",
+   "enviado_em": "2026-11-04T19:30:22.360418+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aecf58b67d1d04c53171fee",
+    "feito": "buffer"
+   },
+   "msg_id": 1602,
+   "ig_id": "18113866559239901",
+   "publicado_em": "2026-11-05T21:30:50.923078+00:00",
+   "ig_manual": false
+  },
+  "2026-11-05_2030_computacao-espacial-sensores": {
+   "status": "publicado",
+   "enviado_em": "2026-11-04T21:30:24.841985+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aed1b1507f945cca92dd4c5",
+    "feito": "buffer"
+   },
+   "msg_id": 1607,
+   "ig_id": "17994722637052774",
+   "publicado_em": "2026-11-06T00:11:00.527690+00:00",
+   "ig_manual": false
+  },
+  "2026-11-06_1130_sinais-cobranca-automatica": {
+   "status": "publicado",
+   "enviado_em": "2026-11-05T18:07:15.679667+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aede499bbaeea3ce9f13f71",
+    "feito": "buffer"
+   },
+   "msg_id": 1628,
+   "ig_id": "18027036941935544",
+   "publicado_em": "2026-11-06T14:30:48.888649+00:00",
+   "ig_manual": false
+  },
+  "2026-11-06_1500_autoflow-painel-oficina": {
+   "status": "publicado",
+   "enviado_em": "2026-11-05T18:07:18.473346+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aee15c6229bf05daffed3e4",
+    "feito": "buffer"
+   },
+   "msg_id": 1634,
+   "ig_id": "18110153660577816",
+   "publicado_em": "2026-11-06T18:00:37.309990+00:00",
+   "ig_manual": false
+  },
+  "2026-11-06_0830_centralizacao-decisoes-dono": {
+   "status": "publicado",
+   "enviado_em": "2026-11-05T18:07:47.549096+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aedba65c57409593f9d29fb",
+    "feito": "buffer"
+   },
+   "msg_id": 1640,
+   "ig_id": "18025714718928274",
+   "publicado_em": "2026-11-06T11:30:44.771390+00:00",
+   "ig_manual": false
+  },
+  "2026-11-06_0730_data-centers-submarinos": {
+   "status": "publicado",
+   "enviado_em": "2026-11-05T18:15:45.504918+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aedac9007f945cca9594dd5",
+    "feito": "buffer"
+   },
+   "msg_id": 1642,
+   "ig_id": "17918645610532359",
+   "publicado_em": "2026-11-06T10:31:43.352835+00:00",
+   "ig_manual": false
+  },
+  "2026-11-06_1130_lixo-digital-servidor": {
+   "status": "publicado",
+   "enviado_em": "2026-11-05T18:15:49.608168+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aede4c8bbaeea3ce9f15a05",
+    "feito": "buffer"
+   },
+   "msg_id": 1644,
+   "ig_id": "18646740268000228",
+   "publicado_em": "2026-11-06T14:31:35.638754+00:00",
+   "ig_manual": false
+  },
+  "2026-11-06_1300_padrao-entrada-pedidos": {
+   "status": "publicado",
+   "enviado_em": "2026-11-05T18:15:52.756793+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aedf9a94525bf695e6cd08c",
+    "feito": "buffer"
+   },
+   "msg_id": 1646,
+   "ig_id": "18101209508536234",
+   "publicado_em": "2026-11-06T16:00:40.393558+00:00",
+   "ig_manual": false
+  },
+  "2026-11-06_1800_fim-dos-manuais-impressos": {
+   "status": "publicado",
+   "enviado_em": "2026-11-05T19:00:05.761374+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aee4034004e4879a7158755",
+    "feito": "buffer"
+   },
+   "msg_id": 1648,
+   "ig_id": "18443169973178819",
+   "publicado_em": "2026-11-06T21:01:39.210885+00:00",
+   "ig_manual": false
+  },
+  "2026-11-06_1830_memoria-contextual-ia": {
+   "status": "publicado",
+   "enviado_em": "2026-11-05T19:30:05.407435+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aee4701a7751de7c9abbe66",
+    "feito": "buffer"
+   },
+   "msg_id": 1655,
+   "ig_id": "18119924507078132",
+   "publicado_em": "2026-11-06T21:30:40.535066+00:00",
+   "ig_manual": false
+  },
+  "2026-11-06_2030_sensores-manutencao-preventiva": {
+   "status": "publicado",
+   "enviado_em": "2026-11-05T21:30:06.166962+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aee6457229bf05daf17d554",
+    "feito": "buffer"
+   },
+   "msg_id": 1659,
+   "ig_id": "18104732327457695",
+   "publicado_em": "2026-11-06T23:35:50.617441+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_0900_efeito-domino-atraso-proposta": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T17:59:28.894231+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef41d7004e4879a7641800",
+    "feito": "buffer"
+   },
+   "msg_id": 1681,
+   "ig_id": null,
+   "publicado_em": "2026-11-07T15:20:54.584364+00:00",
+   "ig_manual": true
+  },
+  "2026-11-07_1300_sinais-equipe-sobrecarregada-admin": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T17:59:31.434225+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef4b35229bf05daf5dbe1b",
+    "feito": "buffer"
+   },
+   "msg_id": 1688,
+   "ig_id": "17909729697597666",
+   "publicado_em": "2026-11-07T16:00:52.337802+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_1530_perguntas-antes-mudar-gestao-vendas": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T17:59:33.645156+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef6e59562f2e6de974181f",
+    "feito": "buffer"
+   },
+   "msg_id": 1695,
+   "ig_id": "17888997711506044",
+   "publicado_em": "2026-11-07T18:30:48.869750+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_1130_autoflow-fim-patio-cegas": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T18:10:40.706439+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef423851492b796ee511c4",
+    "feito": "buffer"
+   },
+   "msg_id": 1699,
+   "ig_id": "18139741435732602",
+   "publicado_em": "2026-11-07T15:22:31.540416+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_0700_ia-processamento-audio-nativa": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T18:15:12.099752+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef427e562f2e6de96604bd",
+    "feito": "buffer"
+   },
+   "msg_id": 1701,
+   "ig_id": "17968194822203298",
+   "publicado_em": "2026-11-07T15:23:41.547399+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_1400_memoria-humana-limites-gestao": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T18:17:27.592052+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef59719214322f68054e79",
+    "feito": "buffer"
+   },
+   "msg_id": 1703,
+   "ig_id": "18085525877356175",
+   "publicado_em": "2026-11-07T17:01:36.593936+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_1000_mitos-automacao-atendimento": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T18:19:45.646205+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef42bf9214322f68fdfdf3",
+    "feito": "buffer"
+   },
+   "msg_id": 1705,
+   "ig_id": "17990923701073651",
+   "publicado_em": "2026-11-07T15:24:46.939229+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_1700_valor-historico-cliente": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T18:24:13.710394+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef8379562f2e6de97a5d03",
+    "feito": "buffer"
+   },
+   "msg_id": 1707,
+   "ig_id": "17981308314132330",
+   "publicado_em": "2026-11-07T20:00:56.895629+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_0830_gargalo-agendamento-recepcao": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T18:43:44.728513+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef42f0229bf05daf5b27fc",
+    "feito": "buffer"
+   },
+   "msg_id": 1709,
+   "ig_id": "18037326080849574",
+   "publicado_em": "2026-11-07T15:25:36.045298+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_1830_rastreio-propostas-comerciais": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T19:30:21.625300+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef98d6229bf05daf75ad77",
+    "feito": "buffer"
+   },
+   "msg_id": 1711,
+   "ig_id": "18099064058651798",
+   "publicado_em": "2026-11-07T21:32:05.605677+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_1900_perigo-planilha-computador-unico": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T20:00:52.772902+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef9fa1004e4879a78064a7",
+    "feito": "buffer"
+   },
+   "msg_id": 1718,
+   "ig_id": "18221930704345472",
+   "publicado_em": "2026-11-07T22:01:05.017946+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_2100_filtro-invisivel-validacao-dados": {
+   "status": "publicado",
+   "enviado_em": "2026-11-06T22:00:14.310597+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aefbbb8d6bbae6fa1b9d1ed",
+    "feito": "buffer"
+   },
+   "msg_id": 1730,
+   "ig_id": "17965592910231617",
+   "publicado_em": "2026-11-08T00:00:55.194204+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_1230_sede-energia-ia": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T05:30:15.516713+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aef442dd6bbae6fa1968101",
+    "feito": "buffer"
+   },
+   "msg_id": 1734,
+   "ig_id": "17930741379431683",
+   "publicado_em": "2026-11-07T15:30:52.885184+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_0700_ia-programando-sozinha": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T08:00:11.817034+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af0485351492b796e2da287",
+    "feito": "buffer"
+   },
+   "msg_id": 1736,
+   "ig_id": "17970202380197305",
+   "publicado_em": "2026-11-08T10:00:49.822584+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_0830_estoque-lucro-escondido": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T09:30:19.969271+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af05d9e9214322f684d3b81",
+    "feito": "buffer"
+   },
+   "msg_id": 1738,
+   "ig_id": "18318820015304358",
+   "publicado_em": "2026-11-08T11:31:41.409391+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_0900_5-tarefas-automacao": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T10:00:12.402418+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af06527229bf05dafacb796",
+    "feito": "buffer"
+   },
+   "msg_id": 1744,
+   "ig_id": "18138045250631159",
+   "publicado_em": "2026-11-08T12:03:50.924395+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_2000_historia-agendamento-clinica-domingo": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T13:00:05.088955+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aefadae004e4879a7845ace",
+    "feito": "buffer"
+   },
+   "msg_id": 1746,
+   "ig_id": "18129166009899661",
+   "publicado_em": "2026-11-07T23:01:01.907179+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_1230_como-ia-le-imagens": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T13:30:27.139549+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af095b8229bf05dafbd4d50",
+    "feito": "buffer"
+   },
+   "msg_id": 1748,
+   "ig_id": "18103467350655087",
+   "publicado_em": "2026-11-08T15:31:03.089681+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_1300_pipeline-de-dados-explicado": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T14:00:26.205436+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af09ca451492b796e493c00",
+    "feito": "buffer"
+   },
+   "msg_id": 1754,
+   "ig_id": "18119697041069117",
+   "publicado_em": "2026-11-08T16:00:35.968036+00:00",
+   "ig_manual": false
+  },
+  "2026-11-07_2130_risco-whatsapp-pessoal-servidor": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T14:30:11.790908+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6aefc34b9214322f682434c0",
+    "feito": "buffer"
+   },
+   "msg_id": 1756,
+   "ig_id": "18146442379565719",
+   "publicado_em": "2026-11-08T00:33:14.937857+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_1400_automacao-ou-software": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T15:00:18.541208+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af0aacad6bbae6fa1fe5a43",
+    "feito": "buffer"
+   },
+   "msg_id": 1758,
+   "ig_id": "18132630058770040",
+   "publicado_em": "2026-11-08T17:00:56.700617+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_1000_o-retorno-dos-botoes": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T15:21:15.443172+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af09a9a229bf05dafbe922b",
+    "feito": "buffer"
+   },
+   "msg_id": 1772,
+   "ig_id": "18123744425059626",
+   "publicado_em": "2026-11-08T15:51:53.674225+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_1130_autoflow-gestao-oficina": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T15:21:18.725855+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af09ac2d6bbae6fa1f945fe",
+    "feito": "buffer"
+   },
+   "msg_id": 1774,
+   "ig_id": "17913133998584836",
+   "publicado_em": "2026-11-08T15:52:33.440896+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_1530_checklist-empresa-digital": {
+   "status": "pulado",
+   "enviado_em": "2026-11-07T16:30:26.812639+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1792
+  },
+  "2026-11-08_1700_armazenamento-dna": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T18:00:20.970557+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af0d504d6bbae6fa10b81f6",
+    "feito": "buffer"
+   },
+   "msg_id": 1796,
+   "ig_id": "18118545275017337",
+   "publicado_em": "2026-11-08T20:01:07.669239+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_1830_tempo-resposta-whatsapp": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T19:30:20.333915+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af0ea08d6bbae6fa111d07b",
+    "feito": "buffer"
+   },
+   "msg_id": 1800,
+   "ig_id": "18138142588662966",
+   "publicado_em": "2026-11-08T21:30:47.426670+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_1900_custo-software-legado": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T20:00:01.756296+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af0f1379214322f687c56b4",
+    "feito": "buffer"
+   },
+   "msg_id": 1806,
+   "ig_id": "18134671144773181",
+   "publicado_em": "2026-11-08T22:01:27.113054+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_2000_estoque-loja-bairro": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T21:00:08.145412+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af0ff2ed6bbae6fa1180830",
+    "feito": "buffer"
+   },
+   "msg_id": 1810,
+   "ig_id": "18012178452002707",
+   "publicado_em": "2026-11-08T23:01:01.068537+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_2100_suporte-cliente-agil": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T22:00:23.342601+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af10d2cd6bbae6fa11c0960",
+    "feito": "buffer"
+   },
+   "msg_id": 1818,
+   "ig_id": "18112008665235455",
+   "publicado_em": "2026-11-09T00:00:42.418541+00:00",
+   "ig_manual": false
+  },
+  "2026-11-08_2130_empresa-fabrica-papel": {
+   "status": "publicado",
+   "enviado_em": "2026-11-07T22:30:22.488511+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af1144251492b796e6e513e",
+    "feito": "buffer"
+   },
+   "msg_id": 1822,
+   "ig_id": "17887126131513577",
+   "publicado_em": "2026-11-09T00:30:57.505149+00:00",
+   "ig_manual": false
+  },
+  "2026-11-09_0700_ia-dados-sinteticos": {
+   "status": "publicado",
+   "enviado_em": "2026-11-08T08:00:27.063922+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af199d4f309feb7ee036e04",
+    "feito": "buffer"
+   },
+   "msg_id": 1830,
+   "ig_id": "18148141594588451",
+   "publicado_em": "2026-11-09T10:00:51.165603+00:00",
+   "ig_manual": false
+  },
+  "2026-11-09_0900_fluxo-aprovacao-reembolso-equipe": {
+   "status": "publicado",
+   "enviado_em": "2026-11-08T10:00:15.318116+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af1b62c8a471bd245b68aa4",
+    "feito": "buffer"
+   },
+   "msg_id": 1837,
+   "ig_id": "18016354148990911",
+   "publicado_em": "2026-11-09T12:01:47.465184+00:00",
+   "ig_manual": false
+  },
+  "2026-11-09_1300_zero-trust-seguranca-pequenas-empresas": {
+   "status": "publicado",
+   "enviado_em": "2026-11-08T14:00:05.812425+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af1ee2a6de9b6a6d77c54a3",
+    "feito": "buffer"
+   },
+   "msg_id": 1849,
+   "ig_id": "18117178784032041",
+   "publicado_em": "2026-11-09T16:00:41.696819+00:00",
+   "ig_manual": false
+  },
+  "2026-11-09_1530_formularios-inteligentes-operacao": {
+   "status": "aguardando",
+   "enviado_em": "2026-11-08T16:30:46.782299+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1865
+  },
+  "2026-11-09_1130_gestao-completa-oficina-autoflow": {
+   "status": "aguardando",
+   "enviado_em": "2026-11-08T17:12:38.038955+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1869
+  },
+  "2026-11-09_1230_agentes-de-voz-entendem-sotaque": {
+   "status": "aguardando",
+   "enviado_em": "2026-11-08T17:12:41.128010+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1871
+  },
+  "2026-11-09_0830_o-rombo-das-devolucoes-sem-registro": {
+   "status": "aguardando",
+   "enviado_em": "2026-11-08T17:19:12.923455+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1873
+  },
+  "2026-11-09_1400_o-comando-direto-zero-shot": {
+   "status": "publicado",
+   "enviado_em": "2026-11-08T17:25:05.676863+00:00",
+   "tiktok": {
+    "via": "buffer",
+    "id": "6af1fc7208578dcbeb67d698",
+    "feito": "buffer"
+   },
+   "msg_id": 1875,
+   "ig_id": "17964017583258818",
+   "publicado_em": "2026-11-09T17:01:37.878068+00:00",
+   "ig_manual": false
+  },
+  "2026-11-09_1830_mensagens-fora-do-expediente": {
+   "status": "pulado",
+   "enviado_em": "2026-11-08T19:30:03.944324+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1877,
+   "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
+  },
+  "2026-11-09_1900_jornada-nota-fiscal-contador": {
+   "status": "aguardando",
+   "enviado_em": "2026-11-08T20:00:24.658792+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1883
+  },
+  "2026-11-09_2000_visao-computacional-lendo-esquemas": {
+   "status": "pulado",
+   "enviado_em": "2026-11-08T21:00:14.910086+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1887,
+   "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
+  },
+  "2026-11-09_2100_checklist-backup-final-de-semana": {
+   "status": "aguardando",
+   "enviado_em": "2026-11-08T22:00:59.536560+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1894
+  },
+  "2026-11-09_2130_regras-fixas-vs-inteligencia-contextual": {
+   "status": "pulado",
+   "enviado_em": "2026-11-08T22:30:21.952188+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1898,
+   "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
+  },
+  "2026-11-09_1000_janela-de-contexto-gigante": {
+   "status": "aguardando",
+   "enviado_em": "2026-11-09T03:00:11.481370+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1906
+  },
+  "2026-11-10_0700_mensagem-fora-do-horario-atendimento": {
+   "status": "pulado",
+   "enviado_em": "2026-11-09T08:02:48.586533+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1908,
+   "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
+  },
+  "2026-11-10_0830_cabos-submarinos-espinha-da-nuvem": {
+   "status": "pulado",
+   "enviado_em": "2026-11-09T09:30:04.887978+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1910,
+   "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
+  },
+  "2026-11-09_1700_peso-do-acumulo-de-arquivos-digitais": {
+   "status": "pulado",
+   "enviado_em": "2026-11-09T10:00:09.292947+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1912,
+   "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
+  },
+  "2026-11-10_0900_sinais-arquivos-mandam-na-empresa": {
+   "status": "aguardando",
+   "enviado_em": "2026-11-09T10:00:11.575810+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1919
+  },
+  "2026-11-10_1000_autoflow-patio-sob-controle": {
+   "status": "pulado",
+   "enviado_em": "2026-11-09T11:00:05.327928+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1923,
+   "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
+  },
+  "2026-11-10_1130_busca-semantica-arquivos-locais": {
+   "status": "pulado",
+   "enviado_em": "2026-11-09T12:30:23.897582+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1927,
+   "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
+  },
+  "2026-11-10_1230_seguranca-nuvem-versus-hd": {
+   "status": "pulado",
+   "enviado_em": "2026-11-09T13:30:06.955514+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1929,
+   "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
+  },
+  "2026-11-10_1300_atrito-financeiro-comercial-empresa": {
+   "status": "aguardando",
+   "enviado_em": "2026-11-09T14:00:23.879309+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1936
+  },
+  "2026-11-10_1400_visao-computacional-defeitos-fabrica": {
+   "status": "pulado",
+   "enviado_em": "2026-11-09T15:00:09.224536+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1938,
+   "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
+  },
+  "2026-11-10_1530_o-que-e-latencia-sistema-pesado": {
+   "status": "aguardando",
+   "enviado_em": "2026-11-09T16:30:09.940015+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1946
+  },
+  "2026-11-10_1700_compras-duplicadas-estoque-invisivel": {
+   "status": "pulado",
+   "enviado_em": "2026-11-09T18:03:17.289947+00:00",
+   "tiktok": {
+    "via": "buffer"
+   },
+   "msg_id": 1950,
+   "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
   }
+ },
+ "respondidos": {},
+ "stories": {
+  "2026-10-19_1-enquete": {
+   "status": "aprovado",
+   "msg_id": 869,
+   "lembrado": true
+  },
+  "2026-10-19_2-nova-fase": {
+   "status": "publicado",
+   "msg_id": 871,
+   "ig_id": "17987324007080634",
+   "publicado_em": "2026-10-19T16:15:07.138965+00:00"
+  },
+  "2026-10-20_1-onde-mora": {
+   "status": "aprovado",
+   "msg_id": 906,
+   "lembrado": true
+  },
+  "2026-10-20_2-tarefa-repetida": {
+   "status": "aprovado",
+   "msg_id": 909,
+   "lembrado": true
+  },
+  "2026-10-21_1-uma-tarefa": {
+   "status": "publicado",
+   "msg_id": 940,
+   "ig_id": "17915626773529904",
+   "publicado_em": "2026-10-21T13:00:00.855108+00:00"
+  },
+  "2026-10-21_2-pronto-ou-medida": {
+   "status": "aprovado",
+   "msg_id": 943,
+   "lembrado": true
+  },
+  "2026-10-22_1-quiz-webhook": {
+   "status": "aprovado",
+   "msg_id": 975,
+   "lembrado": true
+  },
+  "2026-10-22_2-segunda": {
+   "status": "publicado",
+   "msg_id": 978,
+   "ig_id": "18113986706124343",
+   "publicado_em": "2026-10-22T23:15:09.216008+00:00"
+  },
+  "2026-10-23_1-pergunte": {
+   "status": "aprovado",
+   "msg_id": 1010,
+   "lembrado": true
+  },
+  "2026-10-23_2-cinco-perguntas": {
+   "status": "publicado",
+   "msg_id": 1013,
+   "ig_id": "18118332469976502",
+   "publicado_em": "2026-10-23T23:15:10.530333+00:00"
+  },
+  "2026-10-24_1-oficina": {
+   "status": "aprovado",
+   "msg_id": 1043,
+   "lembrado": true
+  },
+  "2026-10-24_2-dor-oficina": {
+   "status": "aprovado",
+   "msg_id": 1045,
+   "lembrado": true
+  },
+  "2026-10-25_1-conversa": {
+   "status": "publicado",
+   "msg_id": 1089,
+   "ig_id": "18162574225495148",
+   "publicado_em": "2026-10-26T16:49:19.152560+00:00"
+  },
+  "2026-10-25_2-construir": {
+   "status": "aguardando",
+   "msg_id": 1078
+  }
+ }
 }
