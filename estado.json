@@ -2300,20 +2300,30 @@
       "ig_manual": false
     },
     "2026-11-08_2100_suporte-cliente-agil": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T22:00:23.342601+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af10d2cd6bbae6fa11c0960",
+        "feito": "buffer"
       },
-      "msg_id": 1818
+      "msg_id": 1818,
+      "ig_id": "18112008665235455",
+      "publicado_em": "2026-11-09T00:00:42.418541+00:00",
+      "ig_manual": false
     },
     "2026-11-08_2130_empresa-fabrica-papel": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-07T22:30:22.488511+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af1144251492b796e6e513e",
+        "feito": "buffer"
       },
-      "msg_id": 1822
+      "msg_id": 1822,
+      "ig_id": "17887126131513577",
+      "publicado_em": "2026-11-09T00:30:57.505149+00:00",
+      "ig_manual": false
     },
     "2026-11-09_0700_ia-dados-sinteticos": {
       "status": "agendado",
