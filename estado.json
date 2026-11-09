@@ -2555,6 +2555,14 @@
       },
       "msg_id": 1950,
       "motivo": "pausa de vídeos 09/11 (pedido do Pabllo)"
+    },
+    "2026-11-10_1900_rotina-fechamento-caixa-sem-susto": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-09T20:01:48.841620+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1956
     }
   },
   "respondidos": {},
