@@ -2352,12 +2352,17 @@
       "ig_manual": false
     },
     "2026-11-09_1300_zero-trust-seguranca-pequenas-empresas": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-08T14:00:05.812425+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af1ee2a6de9b6a6d77c54a3",
+        "feito": "buffer"
       },
-      "msg_id": 1849
+      "msg_id": 1849,
+      "ig_id": "18117178784032041",
+      "publicado_em": "2026-11-09T16:00:41.696819+00:00",
+      "ig_manual": false
     },
     "2026-11-09_1530_formularios-inteligentes-operacao": {
       "status": "aguardando",
