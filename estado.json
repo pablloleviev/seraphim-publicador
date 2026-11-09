@@ -2397,12 +2397,17 @@
       "msg_id": 1873
     },
     "2026-11-09_1400_o-comando-direto-zero-shot": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-08T17:25:05.676863+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af1fc7208578dcbeb67d698",
+        "feito": "buffer"
       },
-      "msg_id": 1875
+      "msg_id": 1875,
+      "ig_id": "17964017583258818",
+      "publicado_em": "2026-11-09T17:01:37.878068+00:00",
+      "ig_manual": false
     },
     "2026-11-09_1830_mensagens-fora-do-expediente": {
       "status": "aguardando",
@@ -2523,6 +2528,14 @@
         "via": "buffer"
       },
       "msg_id": 1938
+    },
+    "2026-11-10_1530_o-que-e-latencia-sistema-pesado": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-09T16:30:09.940015+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1946
     }
   },
   "respondidos": {},
