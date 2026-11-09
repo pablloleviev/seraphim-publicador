@@ -2326,12 +2326,17 @@
       "ig_manual": false
     },
     "2026-11-09_0700_ia-dados-sinteticos": {
-      "status": "agendado",
+      "status": "publicado",
       "enviado_em": "2026-11-08T08:00:27.063922+00:00",
       "tiktok": {
-        "via": "buffer"
+        "via": "buffer",
+        "id": "6af199d4f309feb7ee036e04",
+        "feito": "buffer"
       },
-      "msg_id": 1830
+      "msg_id": 1830,
+      "ig_id": "18148141594588451",
+      "publicado_em": "2026-11-09T10:00:51.165603+00:00",
+      "ig_manual": false
     },
     "2026-11-09_0900_fluxo-aprovacao-reembolso-equipe": {
       "status": "agendado",
@@ -2444,6 +2449,30 @@
         "via": "buffer"
       },
       "msg_id": 1908
+    },
+    "2026-11-10_0830_cabos-submarinos-espinha-da-nuvem": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-09T09:30:04.887978+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1910
+    },
+    "2026-11-09_1700_peso-do-acumulo-de-arquivos-digitais": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-09T10:00:09.292947+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1912
+    },
+    "2026-11-10_0900_sinais-arquivos-mandam-na-empresa": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-09T10:00:11.575810+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1919
     }
   },
   "respondidos": {},
