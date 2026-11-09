@@ -2436,6 +2436,14 @@
         "via": "buffer"
       },
       "msg_id": 1906
+    },
+    "2026-11-10_0700_mensagem-fora-do-horario-atendimento": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-09T08:02:48.586533+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1908
     }
   },
   "respondidos": {},
