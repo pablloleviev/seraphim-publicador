@@ -2563,6 +2563,14 @@
         "via": "buffer"
       },
       "msg_id": 1956
+    },
+    "2026-11-10_2100_esteira-pos-venda-servicos": {
+      "status": "aguardando",
+      "enviado_em": "2026-11-09T22:00:24.107307+00:00",
+      "tiktok": {
+        "via": "buffer"
+      },
+      "msg_id": 1964
     }
   },
   "respondidos": {},
