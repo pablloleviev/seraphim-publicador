@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 183630436,
+  "telegram_offset": 183630437,
   "itens": {
     "2026-10-09_1800_3-sinais-perdendo-dinheiro": {
       "status": "publicado",
@@ -2382,7 +2382,7 @@
       "msg_id": 1873
     },
     "2026-11-09_1400_o-comando-direto-zero-shot": {
-      "status": "aguardando",
+      "status": "agendado",
       "enviado_em": "2026-11-08T17:25:05.676863+00:00",
       "tiktok": {
         "via": "buffer"
